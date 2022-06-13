@@ -4,14 +4,25 @@
 # 20_ec_fluxes
 #
 # The format for this file format is the same for all sites.
+#
+# "can_be_used_by_filescanner: false"
+#   Automatic data uploads are forbidden for this filetype, only the
+#   manual assignment of this filetype is allowed. This means that the
+#   'filescanner' module in the 'dataflow' script is not allowed to
+#   assign this filetype to found files automatically. This filetype
+#   can be assigned manually when uploading files using the script
+#   'dbc.upload'.
+
+
 
 PROC-FLUXNET-FULLSET-HH-CSV-30MIN:
   # FLUXNET FULLSET HH file (general format)
   # First file: -
   # Last file:  -
+  can_be_used_by_filescanner: false
   filetype_valid_from: 1900-01-01 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
-  filetype_id: eddypro_*_fluxnet_*.csv
+  filetype_id: -no-automation-for-this-filetype-
   filetype_dateparser: false
   filetype_gzip: false
   filegroup: 20_ec_fluxes
@@ -174,7 +185,7 @@ PROC-FLUXNET-FULLSET-HH-CSV-30MIN:
     NEE_VUT_USTAR50_RANDUNC: { field: false, units: umol CO2 m-2 s-1, gain: 1, measurement: RANDUNC }
     NEE_VUT_USTAR50_RANDUNC_METHOD: { field: false, units: nondimensional, gain: 1, measurement: RANDUNC }
     NEE_VUT_USTAR50_RANDUNC_N: { field: false, units: nondimensional, gain: 1, measurement: RANDUNC }
-    NETRAD: { field: false, units: false, gain: 1, measurement: NETRAD }
+    NETRAD: { field: false, units: W m-2, gain: 1, measurement: NETRAD }
     NIGHT: { field: false, units: "1=nighttime", gain: 1, measurement: SW }
     P: { field: PREC, units: mm, gain: 1, measurement: PREC }
     P_ERA: { field: PREC_ERA, units: mm, gain: 1, measurement: PREC }
@@ -184,7 +195,7 @@ PROC-FLUXNET-FULLSET-HH-CSV-30MIN:
     PA_ERA: { field: false, units: kPa, gain: 1, measurement: PA }
     PA_F: { field: false, units: kPa, gain: 1, measurement: PA }
     PA_F_QC: { field: false, units: nondimensional, gain: 1, measurement: FLAG }
-    PPFD_IN: { field: false, units: false, gain: 1, measurement: PPFD }
+    PPFD_IN: { field: false, units: umol m-2 s-1, gain: 1, measurement: PPFD }
     RECO_DT_CUT_05: { field: false, units: umol CO2 m-2 s-1, gain: 1, measurement: RECO }
     RECO_DT_CUT_16: { field: false, units: umol CO2 m-2 s-1, gain: 1, measurement: RECO }
     RECO_DT_CUT_25: { field: false, units: umol CO2 m-2 s-1, gain: 1, measurement: RECO }
@@ -231,14 +242,14 @@ PROC-FLUXNET-FULLSET-HH-CSV-30MIN:
     RECO_NT_VUT_USTAR50: { field: false, units: umol CO2 m-2 s-1, gain: 1, measurement: RECO }
     RECO_SR: { field: false, units: umol CO2 m-2 s-1, gain: 1, measurement: RECO }
     RECO_SR_N: { field: false, units: umol CO2 m-2 s-1, gain: 1, measurement: _AUX }
-    RH: { field: false, units: false, gain: 1, measurement: RH }
+    RH: { field: false, units: "%", gain: 1, measurement: RH }
     SW_IN_ERA: { field: false, units: W m-2, gain: 1, measurement: SW }
     SW_IN_F: { field: false, units: W m-2, gain: 1, measurement: SW }
     SW_IN_F_MDS: { field: false, units: W m-2, gain: 1, measurement: SW }
     SW_IN_F_MDS_QC: { field: false, units: nondimensional, gain: 1, measurement: FLAG }
     SW_IN_F_QC: { field: false, units: nondimensional, gain: 1, measurement: FLAG }
     SW_IN_POT: { field: false, units: W m-2, gain: 1, measurement: SW }
-    SW_OUT: { field: false, units: false, gain: 1, measurement: SW }
+    SW_OUT: { field: false, units: W m-2, gain: 1, measurement: SW }
     SWC_F_MDS_1: { field: false, units: "%", gain: 1, measurement: SWC }
     SWC_F_MDS_1_QC: { field: false, units: nondimensional, gain: 1, measurement: FLAG }
     TA_ERA: { field: false, units: deg C, gain: 1, measurement: TA }

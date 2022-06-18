@@ -6,6 +6,7 @@ DAV12-RAW-FF1-TOA5-DAT-TBL2-25H-201802281104:
   # TOA5
   # First file: CH-DAV_iDL_FF1_0_1_TBL2_2018_02_28_1104.dat (the very first CH-DAV_iDL_FF1_0_1_TBL2_*.dat)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2018-02-28 11:04:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-DAV_iDL_FF1_0_1_TBL2_*.dat

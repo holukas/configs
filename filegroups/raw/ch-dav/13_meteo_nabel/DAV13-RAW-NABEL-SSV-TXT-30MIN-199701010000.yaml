@@ -20,6 +20,7 @@ DAV13-RAW-NABEL-SSV-TXT-30MIN-199701010000:
   # SSV: space-separated files
   # First file: DAV_NABEL.30min.1997.01-12.txt
   # Last file:  DAV_NABEL.30min.1999.01-12.txt
+  can_be_used_by_filescanner: true
   filetype_valid_from: 1997-01-01 00:00:00
   filetype_valid_to: 1999-01-01 00:00:00
   filetype_id: DAV_NABEL.30min.*.01-12.txt

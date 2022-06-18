@@ -6,6 +6,7 @@ DAV17-RAW-TOA5-PRF-DAT-10S-202201030000:
   # TOA5 format
   # First file: CH-DAV_meteo-profile_20220103.dat (the very first CH-DAV_meteo-profile_*.dat file)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2022-01-03 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-DAV_meteo-profile_*.dat

@@ -6,6 +6,7 @@ DAV15-RAW-ICOS-DAT-1MIN-201911050000:
   # ICOS format
   # First file: CH-Dav_BM_20191105_L01_F06.dat (the very first CH-Dav_BM_*_L01_F06.dat file)
   # Last file:  CH-Dav_BM_20211118_L01_F06.dat
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2019-11-05 00:00:00
   filetype_valid_to: 2021-11-18 00:00:00
   filetype_id: CH-Dav_BM_*_L01_F06.dat

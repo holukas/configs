@@ -8,6 +8,7 @@ DAV11-RAW-TOA5-DAT-TBL1+-10MIN-201108250000:
   # Last file:  *currently running*
   # Two different namings (see filetype_id), but same data format
   # Due to multiple namings (not only TBL1) it has "TBL1+" in filetype name.
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2011-08-25 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: ['Davos10Min-*.dat', 'CH-DAV_iDL_H1_0_1_TBL1_*.dat']

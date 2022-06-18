@@ -7,6 +7,7 @@ DAV12-RAW-FF4-TOA5-DAT-TBL1-1MIN-202006241033:
   # First file: CH-DAV_iDL_FF4_0_1_TBL1_2020_06_24_1033.dat
   # Last file:  *currently running*
   # Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2020-06-24 10:33:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-DAV_iDL_FF4_0_1_TBL1_*.dat

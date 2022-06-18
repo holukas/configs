@@ -6,6 +6,7 @@ LAE12-RAW-TOA5-DAT-TBL1-1MIN-202103291559:
   # TOA5
   # First file: CH-LAE_iDL_FF1_0_1_TBL1_20210329-1559.dat (the very first 1MIN CH-LAE_iDL_FF1_0_1_TBL1_*.dat file)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2021-03-29 15:59:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-LAE_iDL_FF1_0_1_TBL1_*.dat
@@ -204,3 +205,9 @@ LAE12-RAW-TOA5-DAT-TBL1-1MIN-202103291559:
     LW_BC_VOUT_M1_2_1_Avg: { field: LW_VOUT_BC_M1_2_1, units: false, measurement: LW }
     LW_BC_TBIN_M1_2_1_Avg: { field: LW_TBIN_BC_M1_2_1, units: false, measurement: LW }
     LW_BC_TBOUT_M1_2_1_Avg: { field: LW_TBOUT_BC_M1_2_1, units: false, measurement: LW }
+    LEAF_WET_FF1_1x5_1_Avg: { field: LEAF_WET_FF1_1.5_1, units: false, measurement: LEAF_WET }
+    LEAF_WET_FF1_1x5_1_Std: { field: LEAF_WET_SD_FF1_1.5_1, units: false, measurement: _SD }
+    TA_M1_2_1_Avg: { field: TA_M1_2_1, units: false, measurement: TA }
+    RH_M1_2_1_Avg: { field: RH_M1_2_1, units: false, measurement: RH }
+    TA_M1_2_1_Std: { field: TA_SD_M1_2_1, units: false, measurement: _SD }
+    RH_M1_2_1_Std: { field: RH_SD_M1_2_1, units: false, measurement: _SD }

@@ -7,6 +7,7 @@ DAV30-RAW-ICOSSEQ-PRF-QCL-DAT-1S-20191003:
   # Contains QCL data N2O, CH4, H2O
   # First file: CH-Dav_ST_20191003_L10_F04.dat (the very first CH-Dav_ST_*_L10_F04.dat)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2019-10-03 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-Dav_ST_*_L10_F04.dat

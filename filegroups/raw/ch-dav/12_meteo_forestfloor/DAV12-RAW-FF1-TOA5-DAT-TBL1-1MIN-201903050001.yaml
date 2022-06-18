@@ -7,6 +7,7 @@ DAV12-RAW-FF1-TOA5-DAT-TBL1-1MIN-201903050001:
   # First file: CH-DAV_iDL_FF1_0_1_TBL1_2019_03_05_0001.dat
   # Last file:  CH-DAV_iDL_FF1_0_1_TBL1_2021_10_22_0001.dat
   # SWC units changed from m3 m-3 to %
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2019-03-05 00:01:00
   filetype_valid_to: 2021-10-22 00:01:00
   filetype_id: CH-DAV_iDL_FF1_0_1_TBL1_*.dat

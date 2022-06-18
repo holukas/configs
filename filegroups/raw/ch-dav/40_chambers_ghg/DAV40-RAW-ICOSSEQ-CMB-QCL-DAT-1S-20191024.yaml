@@ -10,6 +10,7 @@ DAV40-RAW-ICOSSEQ-CMB-QCL-DAT-1S-20191024:
   # Contains QCL data N2O, CH4, H2O
   # First file: CH-Dav_CM_20191024_L10_F05.dat (the very first CH-Dav_CM_*_L10_F05.dat file)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2019-10-24 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-Dav_CM_*_L10_F05.dat

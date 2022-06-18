@@ -8,6 +8,7 @@ DAV12-RAW-FF1-TOA5-DAT-TBL1-10MIN-201802281110:
   # Last file:  CH-DAV_iDL_FF1_0_1_TBL1_2018_07_18_0010.dat
   # 10MIN time resolution
   # SWC still in m3 m-3, gain 100 applied to convert to %
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2018-02-28 11:10:00
   filetype_valid_to: 2018-07-18 00:10:00
   filetype_id: CH-DAV_iDL_FF1_0_1_TBL1_*.dat

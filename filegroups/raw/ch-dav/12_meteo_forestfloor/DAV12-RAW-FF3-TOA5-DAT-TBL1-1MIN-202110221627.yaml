@@ -9,6 +9,7 @@ DAV12-RAW-FF3-TOA5-DAT-TBL1-1MIN-202110221627:
   # Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
   # First file has slight naming inconsistency b/c it uses a dash before time at the end
   # --> therefore two patterns for filetype_dateparser
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2021-10-22 16:27:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-DAV_iDL_FF3_0_1_TBL1_*.dat

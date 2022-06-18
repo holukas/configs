@@ -8,6 +8,7 @@ AWS13-RAW-CSV-1MIN-202001010100:
   # TOA5
   # First file: CH-AWS_EC_Press-202001010100.csv (the very first CH-AWS_EC_Press-*.csv file)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2020-01-01 01:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-AWS_EC_Press-*.csv

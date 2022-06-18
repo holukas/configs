@@ -6,6 +6,7 @@ LAE10-RAW-TOA5-DAT-TBL1-1MIN-201701230926:
   # TOA5
   # First file: CH-LAE_iDL_T1_47_1_TBL1_20170123-0926.dat (the very first CH-LAE_iDL_T1_47_1_TBL1_*.dat file)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2017-01-23 09:26:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-LAE_iDL_T1_47_1_TBL1_*.dat

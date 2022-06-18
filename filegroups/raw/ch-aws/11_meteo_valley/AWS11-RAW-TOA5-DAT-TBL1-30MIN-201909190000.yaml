@@ -14,6 +14,7 @@ AWS11-RAW-TOA5-DAT-TBL1-30MIN-201909190000:
   # TOA5
   # First file: CH-AWS_iDL_BOX4_0_1_TBL1_20190919-0000.dat (the very first CH-AWS_iDL_BOX4_0_1_TBL1_*.dat file)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2019-09-19 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-AWS_iDL_BOX4_0_1_TBL1_*.dat

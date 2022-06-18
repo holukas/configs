@@ -19,6 +19,7 @@ DAV13-RAW-NABEL-CSV-1MIN-201901010000:
   #     - https://en.wikipedia.org/wiki/Windows-1252
   #     - https://stackoverflow.com/questions/2014069/windows-1252-to-utf-8-encoding
   # Has some empty columns that are ignored.
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2019-01-01 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: DAV_Meteo_NABEL_*.CSV

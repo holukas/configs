@@ -38,6 +38,7 @@ DAV17-RAW-NABEL-PRF-SSV-DAT-P2-5MIN-200001010000:
   # SSV: space-separated files
   # First file: Davos_P2_2000-05Min.dat
   # Last file:  Davos_P2_2005-05Min.dat
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2000-01-01 00:00:00
   filetype_valid_to: 2005-01-01 00:00:00
   filetype_id: Davos_P2_*-05Min.dat

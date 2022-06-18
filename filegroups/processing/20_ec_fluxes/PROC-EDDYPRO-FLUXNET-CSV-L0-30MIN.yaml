@@ -7,6 +7,7 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
   # EddyPro fluxnet file (general format)
   # First file: -
   # Last file:  -
+  can_be_used_by_filescanner: true
   filetype_valid_from: 1900-01-01 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: eddypro_*_fluxnet_*.csv

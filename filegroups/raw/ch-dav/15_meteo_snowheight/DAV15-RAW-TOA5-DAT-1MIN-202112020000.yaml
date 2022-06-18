@@ -6,6 +6,7 @@ DAV15-RAW-TOA5-DAT-1MIN-202112020000:
   # TOA5 format
   # First file: CH-DAV_snowheight_20211202.dat (the very first CH-DAV_snowheight_*.dat file)
   # Last file:  *currently running*
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2021-12-02 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
   filetype_id: CH-DAV_snowheight_*.dat

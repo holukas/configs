@@ -9,6 +9,7 @@ DAV12-RAW-FF3-TOA5-DAT-TBL1-1MIN-201903041642:
   # TOA5
   # First file: CH-DAV_iDL_FF3_0_1_TBL1_2019_03_04_1642.dat
   # Last file:  CH-DAV_iDL_FF3_0_1_TBL1_2021_10_21_0001.dat
+  can_be_used_by_filescanner: true
   filetype_valid_from: 2019-03-04 16:42:00
   filetype_valid_to: 2021-10-21 00:01:00
   filetype_id: CH-DAV_iDL_FF3_0_1_TBL1_*.dat

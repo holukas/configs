@@ -33,7 +33,7 @@ DAV10-RAW-TOA5-DAT-TBL1-10S-201802281101:
     HEAT_HS50_T1B1_35_1_FLAG: { field: HEAT_HS50_T1_35_1, units: false, measurement: _instrumentmetrics }
     HEAT_R350_T1B1_35_1_FLAG: { field: HEAT_R350_T1_35_1, units: false, measurement: _instrumentmetrics }
     LW_IN_1_1_1: { field: LW_IN_T1_35_2, units: false, measurement: LW }
-    LW_IN_IU_1_1_1: { field: LW_IN_IU_T1_35_2, units: false, measurement: _IU }
+    LW_IN_IU_1_1_1: { field: LW_IN_IU_T1_35_2, units: false, measurement: _RAW }
     LW_IN_RAW_T1_35_1_Avg: { field: LW_IN_RAW_T1_35_1, units: false, measurement: _RAW }
     LW_IN_RAW_T1_35_1_Std: { field: LW_IN_RAW_SD_T1_35_1, units: false, measurement: _RAW }
     LW_IN_RAW_T1_35_2: { field: LW_IN_RAW_T1_35_2, units: false, measurement: _RAW }
@@ -44,7 +44,7 @@ DAV10-RAW-TOA5-DAT-TBL1-10S-201802281101:
     LW_IN_T1_35_2_Avg: { field: LW_IN_T1_35_2, units: false, measurement: LW }
     LW_IN_T1_35_2_Std: { field: LW_IN_SD_T1_35_2, units: false, measurement: _SD }
     LW_OUT_1_1_1: { field: LW_OUT_T1_35_2, units: false, measurement: LW }
-    LW_OUT_IU_1_1_1: { field: LW_OUT_IU_T1_35_2, units: false, measurement: _IU }
+    LW_OUT_IU_1_1_1: { field: LW_OUT_IU_T1_35_2, units: false, measurement: _RAW }
     LW_OUT_RAW_T1_35_1_Avg: { field: LW_OUT_RAW_T1_35_1, units: false, measurement: _RAW }
     LW_OUT_RAW_T1_35_1_Std: { field: LW_OUT_RAW_SD_T1_35_1, units: false, measurement: _RAW }
     LW_OUT_RAW_T1_35_2: { field: LW_OUT_RAW_T1_35_2, units: false, measurement: _RAW }
@@ -59,27 +59,27 @@ DAV10-RAW-TOA5-DAT-TBL1-10S-201802281101:
     PPFD_DIF_IN_T1_35_1_Avg: { field: PPFD_DIF_IN_T1_35_1, units: false, measurement: PPFD }
     PPFD_DIF_IN_T1_35_1_Std: { field: PPFD_DIF_IN_SD_T1_35_1, units: false, measurement: _SD }
     PPFD_IN_1_1_1: { field: PPFD_IN_T1_35_2, units: false, measurement: PPFD }
-    PPFD_IN_IU_1_1_1: { field: PPFD_IN_IU_T1_35_2, units: false, measurement: _IU }
+    PPFD_IN_IU_1_1_1: { field: PPFD_IN_IU_T1_35_2, units: false, measurement: _RAW }
     PPFD_IN_T1_35_2_Avg: { field: PPFD_IN_T1_35_2, units: false, measurement: PPFD }
     PPFD_IN_T1_35_2_Std: { field: PPFD_IN_SD_T1_35_2, units: false, measurement: _SD }
     PPFD_IN_T1_35_3: { field: PPFD_IN_T1_35_3, units: false, measurement: PPFD }
     PPFD_IN_T1_35_3_Avg: { field: PPFD_IN_T1_35_3, units: false, measurement: PPFD }
     PPFD_IN_T1_35_3_Std: { field: PPFD_IN_SD_T1_35_3, units: false, measurement: _SD }
     PPFD_OUT_1_1_1: { field: PPFD_OUT_T1_35_1, units: false, measurement: PPFD }
-    PPFD_OUT_IU_1_1_1: { field: PPFD_OUT_IU_T1_35_1, units: false, measurement: _IU }
+    PPFD_OUT_IU_1_1_1: { field: PPFD_OUT_IU_T1_35_1, units: false, measurement: _RAW }
     PPFD_OUT_T1_35_1_Avg: { field: PPFD_OUT_T1_35_1, units: false, measurement: PPFD }
     PPFD_OUT_T1_35_1_Std: { field: PPFD_OUT_SD_T1_35_1, units: false, measurement: _SD }
     RECORD: { field: RECORD_T1_0_1, units: false, measurement: _instrumentmetrics }
     SUN_T1_35_1: { field: SUN_T1_35_1, units: false, measurement: SUN }
     SV_LOGGER_T1_35_1: { field: SV_LOGGER_T1_35_1, units: false, measurement: _instrumentmetrics }
     SW_IN_1_1_1: { field: SW_IN_T1_35_2, units: false, measurement: SW }
-    SW_IN_IU_1_1_1: { field: SW_IN_IU_T1_35_2, units: false, measurement: _IU }
+    SW_IN_IU_1_1_1: { field: SW_IN_IU_T1_35_2, units: false, measurement: _RAW }
     SW_IN_T1_35_1_Avg: { field: SW_IN_T1_35_1, units: false, measurement: SW }
     SW_IN_T1_35_1_Std: { field: SW_IN_SD_T1_35_1, units: false, measurement: _SD }
     SW_IN_T1_35_2_Avg: { field: SW_IN_T1_35_2, units: false, measurement: SW }
     SW_IN_T1_35_2_Std: { field: SW_IN_SD_T1_35_2, units: false, measurement: _SD }
     SW_OUT_1_1_1: { field: SW_OUT_T1_35_2, units: false, measurement: SW }
-    SW_OUT_IU_1_1_1: { field: SW_OUT_IU_T1_35_2, units: false, measurement: _IU }
+    SW_OUT_IU_1_1_1: { field: SW_OUT_IU_T1_35_2, units: false, measurement: _RAW }
     SW_OUT_T1_35_1_Avg: { field: SW_OUT_T1_35_1, units: false, measurement: SW }
     SW_OUT_T1_35_1_Std: { field: SW_OUT_SD_T1_35_1, units: false, measurement: _SD }
     SW_OUT_T1_35_2_Avg: { field: SW_OUT_T1_35_2, units: false, measurement: SW }

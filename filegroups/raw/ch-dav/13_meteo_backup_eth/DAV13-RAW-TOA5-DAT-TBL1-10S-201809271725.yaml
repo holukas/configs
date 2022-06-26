@@ -40,7 +40,7 @@ DAV13-RAW-TOA5-DAT-TBL1-10S-201809271725:
     RH_4_1_1: { field: RH_T1_35_X, units: false, measurement: RH }
     SV_iDL_Min: { field: SV_iDL_Min_X_X_X, units: false, measurement: _instrumentmetrics }
     SW_IN_4_1_1: { field: SW_IN_T1_35_X, units: false, measurement: SW }
-    SW_IN_IU_4_1_1: { field: SW_IN_IU_T1_35_X, units: false, measurement: _IU }
+    SW_IN_IU_4_1_1: { field: SW_IN_IU_T1_35_X, units: false, measurement: _RAW }
     SW_IN_T1_35_3: { field: SW_IN_T1_35_3, units: false, measurement: SW }
     T_iDL: { field: T_iDL_X_X_X, units: false, measurement: _instrumentmetrics }
     T_RH_T1_35_2: { field: T_RH_T1_35_2_X_X_X, units: false, measurement: _instrumentmetrics }

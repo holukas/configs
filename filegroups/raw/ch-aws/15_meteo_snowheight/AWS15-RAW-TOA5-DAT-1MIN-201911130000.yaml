@@ -1,15 +1,21 @@
 # CH-AWS
 # 15_meteo_snowheight
 
+# Due to the empty unit row more lines have to be skipped than for regular TOA5 files,
+# i.e. in the setting 'data_skiprows' the 2nd row has also to be skipped [ 0, 2, 3 ].
+# This is necessary because it seems that 'data_headerrows' cannot handle empty unit
+# rows.
+
+# See GIN entry 12 Nov 2020:
+#   corrected the header of the snowheight file CH-AWS_snowheight_YYYYMMDD.dat:
+#     D_SNOW_1_1_1 becomes D_SNOW_GF0_0_1
+#     TA_M1_1.8_1 becomes TA_M3_2.5_1
+#   The file from tomorrow should have the new header implemented.
 
 AWS15-RAW-TOA5-DAT-1MIN-201911130000:
   # TOA5 (but with empty unit row)
   # First file: CH-AWS_snowheight_20191113.dat
   # Last file:  *currently running*
-  # Due to the empty unit row more lines have to be skipped than for regular TOA5 files,
-  #   i.e. in the setting 'data_skiprows' the 2nd row has also to be skipped [ 0, 2, 3 ].
-  #   This is necessary because it seems that 'data_headerrows' cannot handle empty unit
-  #   rows.
   can_be_used_by_filescanner: true
   filetype_valid_from: 2019-11-13 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
@@ -35,14 +41,15 @@ AWS15-RAW-TOA5-DAT-1MIN-201911130000:
   data_vars:
     D_SNOW_1_1_1: { field: D_SNOW_GF0_0_1, units: false, measurement: D_SNOW }
     D_SNOW_GF0_0_1: { field: D_SNOW_GF0_0_1, units: false, measurement: D_SNOW }
-    DIAG_SR50AT: { field: DIAG_SR50AT_X_X_X, units: false, measurement: _instrumentmetrics }
-    DIST_1: { field: DIST_1_X_X_X, units: false, measurement: D_SNOW }
-    DIST_2: { field: DIST_2_X_X_X, units: false, measurement: D_SNOW }
-    DIST_3: { field: DIST_3_X_X_X, units: false, measurement: D_SNOW }
-    ERROR_1: { field: ERROR_1_X_X_X, units: false, measurement: _instrumentmetrics }
-    ERROR_2: { field: ERROR_2_X_X_X, units: false, measurement: _instrumentmetrics }
-    ERROR_3: { field: ERROR_3_X_X_X, units: false, measurement: _instrumentmetrics }
-    QUALITY_SR50AT: { field: QUALITY_SR50AT_X_X_X, units: false, measurement: _instrumentmetrics }
-    TA_M1_1.8_1: { field: TA_M1_1.8_1, units: false, measurement: TA }
-    TA_M3_2.5_1: { field: TA_M3_2.5_1, units: false, measurement: TA }
+    DIAG_SR50AT: { field: DIAG_SR50AT_GF0_0_1, units: false, measurement: _instrumentmetrics }
+    DIST_1: { field: DIST_1_GF0_0_1, units: false, measurement: D_SNOW }
+    DIST_2: { field: DIST_2_GF0_0_1, units: false, measurement: D_SNOW }
+    DIST_3: { field: DIST_3_GF0_0_1, units: false, measurement: D_SNOW }
+    ERROR_1: { field: ERROR_1_GF0_0_1, units: false, measurement: _instrumentmetrics }
+    ERROR_2: { field: ERROR_2_GF0_0_1, units: false, measurement: _instrumentmetrics }
+    ERROR_3: { field: ERROR_3_GF0_0_1, units: false, measurement: _instrumentmetrics }
+    QUALITY_SR50AT: { field: QUALITY_SR50AT_GF0_0_1, units: false, measurement: _instrumentmetrics }
+    # Check TA
+    TA_M1_1.8_1: { field: TA_M3_2.5_1, units: degC, measurement: TA }
+    TA_M3_2.5_1: { field: TA_M3_2.5_1, units: degC, measurement: TA }
 

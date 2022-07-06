@@ -33,7 +33,7 @@ respective filetype.
 - `siteFile_20190419.CSV` is valid
 - `siteFile_20181231.CSV` is NOT valid
   
-## filetype_valid_to
+## `filetype_valid_to`
 The date/time info is read *from the filename* and then checked against
 this setting. It is assumed that the date/time info in the filename
 gives the starting date/time of the file. If the date/time from the

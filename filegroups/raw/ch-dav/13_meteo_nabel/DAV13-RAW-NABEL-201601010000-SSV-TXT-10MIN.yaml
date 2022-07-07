@@ -22,7 +22,7 @@
 #   gives the filenames of all valid files directly without wildcards.
 
 
-DAV13-RAW-201601010000-NABEL-SSV-TXT-10MIN:
+DAV13-RAW-NABEL-201601010000-SSV-TXT-10MIN:
   # SSV: space-separated files
   # First file: DAV_NABEL.10min_2016.01-12.txt
   # Last file:  DAV_NABEL.10min_2018.01-12.txt

@@ -2,7 +2,7 @@
 # 13_meteo_nabel
 
 
-DAV13-RAW-201901010000-NABEL-CSV-1MIN:
+DAV13-RAW-NABEL-201901010000-CSV-1MIN:
   # NABEL format
   # First file: DAV_Meteo_NABEL_190101.CSV (the very first DAV_Meteo_NABEL_*.CSV that is ingested to db)
   # Last file:  *currently running*

@@ -31,14 +31,14 @@ DAV11-RAW-TBL2-201804051700-TOA5-DAT-1H:
   data_vars:
     RECORD: { field: RECORD_FF0_0_1, units: false, measurement: _instrumentmetrics }
     SWC1_15_Avg: { field: SWC_LOWRES_FF0_0.15_1, units: false, measurement: SWC }
-    SWC1_50_Avg: { field: SWC_LOWRES_FF0_0.50_1, units: false, measurement: SWC }
-    SWC1_80_Avg: { field: SWC_LOWRES_FF0_0.80_1, units: false, measurement: SWC }
+    SWC1_50_Avg: { field: SWC_LOWRES_FF0_0.5_1, units: false, measurement: SWC }
+    SWC1_80_Avg: { field: SWC_LOWRES_FF0_0.8_1, units: false, measurement: SWC }
     SWC2_15_Avg: { field: SWC_LOWRES_FF0_0.15_2, units: false, measurement: SWC }
-    SWC2_50_Avg: { field: SWC_LOWRES_FF0_0.50_2, units: false, measurement: SWC }
-    SWC2_80_Avg: { field: SWC_LOWRES_FF0_0.80_2, units: false, measurement: SWC }
+    SWC2_50_Avg: { field: SWC_LOWRES_FF0_0.5_2, units: false, measurement: SWC }
+    SWC2_80_Avg: { field: SWC_LOWRES_FF0_0.8_2, units: false, measurement: SWC }
     SWC3_15_Avg: { field: SWC_LOWRES_FF0_0.15_3, units: false, measurement: SWC }
-    SWC3_50_Avg: { field: SWC_LOWRES_FF0_0.50_3, units: false, measurement: SWC }
-    SWC3_80_Avg: { field: SWC_LOWRES_FF0_0.80_3, units: false, measurement: SWC }
+    SWC3_50_Avg: { field: SWC_LOWRES_FF0_0.5_3, units: false, measurement: SWC }
+    SWC3_80_Avg: { field: SWC_LOWRES_FF0_0.8_3, units: false, measurement: SWC }
     SWC4_15_Avg: { field: SWC_LOWRES_FF0_0.15_4, units: false, measurement: SWC }
-    SWC4_50_Avg: { field: SWC_LOWRES_FF0_0.50_4, units: false, measurement: SWC }
-    SWC4_80_Avg: { field: SWC_LOWRES_FF0_0.80_4, units: false, measurement: SWC }
+    SWC4_50_Avg: { field: SWC_LOWRES_FF0_0.5_4, units: false, measurement: SWC }
+    SWC4_80_Avg: { field: SWC_LOWRES_FF0_0.8_4, units: false, measurement: SWC }

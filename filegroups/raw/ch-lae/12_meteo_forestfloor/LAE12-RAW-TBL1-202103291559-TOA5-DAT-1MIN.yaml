@@ -2,7 +2,7 @@
 # 12_meteo_forestfloor
 
 
-LAE12-RAW-TOA5-DAT-TBL1-1MIN-202103291559:
+LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-LAE_iDL_FF1_0_1_TBL1_20210329-1559.dat (the very first 1MIN CH-LAE_iDL_FF1_0_1_TBL1_*.dat file)
   # Last file:  *currently running*

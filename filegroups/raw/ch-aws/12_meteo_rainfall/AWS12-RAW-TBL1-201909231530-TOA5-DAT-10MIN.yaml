@@ -7,7 +7,7 @@
 # This is mast 2 (M2).
 
 
-AWS12-RAW-TOA5-DAT-TBL1-10MIN-201909231530:
+AWS12-RAW-TBL1-201909231530-TOA5-DAT-10MIN:
   # TOA5
   # First file: CH-AWS_iDL_BOX3_0_1_TBL1_20190923-1530.dat (the very first CH-AWS_iDL_BOX3_0_1_TBL1_*.dat file)
   # Last file:  *currently running*

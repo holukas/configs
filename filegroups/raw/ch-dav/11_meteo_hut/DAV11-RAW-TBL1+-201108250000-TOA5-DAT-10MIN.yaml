@@ -36,10 +36,10 @@ DAV11-RAW-TBL1+-201108250000-TOA5-DAT-10MIN:
     Batt_Volt_Avg: { field: BV_FF0_0_1, units: false, measurement: _instrumentmetrics }
     BodenFeu05_Avg: { field: SWC_FF0_0.05_1, units: "%", gain: 100, measurement: SWC }
     BodenFeu15_Avg: { field: SWC_FF0_0.15_1, units: "%", gain: 100, measurement: SWC }
-    BodenFeu50_Avg: { field: SWC_FF0_0.50_1, units: "%", gain: 100, measurement: SWC }
+    BodenFeu50_Avg: { field: SWC_FF0_0.5_1, units: "%", gain: 100, measurement: SWC }
     BodenTemp05_C_Avg: { field: TS_FF0_0.05_1, units: false, measurement: TS }
     BodenTemp15_C_Avg: { field: TS_FF0_0.15_1, units: false, measurement: TS }
-    BodenTemp50_C_Avg: { field: TS_FF0_0.50_1, units: false, measurement: TS }
+    BodenTemp50_C_Avg: { field: TS_FF0_0.5_1, units: false, measurement: TS }
     D1_150_Avg: { field: DENDRO_TREE150_1_1, units: false, measurement: DENDRO }
     D2_147_Avg: { field: DENDRO_TREE147_1_1, units: false, measurement: DENDRO }
     D3_148_Avg: { field: DENDRO_TREE148_1_1, units: false, measurement: DENDRO }
@@ -62,7 +62,7 @@ DAV11-RAW-TBL1+-201108250000-TOA5-DAT-10MIN:
     Net_Rad_Avg: { field: NETRAD_T1_0.05_1, units: false, measurement: NETRAD }
     P_1_1_1_Tot: { field: PREC_TOT_T1_20_1, units: false, measurement: PREC }
     PA_H1_0_2_Avg: { field: PA_H1_0_2, units: false, measurement: PA }
-    PAR_Avg: { field: PPFD_T1_35_1, units: false, measurement: PPFD }
+    PAR_Avg: { field: PPFD_IN_T1_35_1, units: false, measurement: PPFD }
     PsiSoil05_kPa_Avg: { field: WP_FF0_0.05_1, units: kPa, measurement: WP }
     PsiSoil15_kPa_Avg: { field: WP_FF0_0.15_1, units: kPa, measurement: WP }
     PsiSoil45_kPa_Avg: { field: WP_FF0_0.45_1, units: kPa, measurement: WP }
@@ -102,14 +102,14 @@ DAV11-RAW-TBL1+-201108250000-TOA5-DAT-10MIN:
     StemTC_148_Avg: { field: T_BOLE_TREE148_1_1, units: false, measurement: T_BOLE }
     StemTC_296_Avg: { field: T_BOLE_TREE296_1_1, units: false, measurement: T_BOLE }
     SWC1_15_Avg: { field: SWC_H1_0.15_1, units: "%", gain: 100, measurement: SWC }
-    SWC1_50_Avg: { field: SWC_H1_0.50_1, units: "%", gain: 100, measurement: SWC }
-    SWC1_80_Avg: { field: SWC_H1_0.80_1, units: "%", gain: 100, measurement: SWC }
+    SWC1_50_Avg: { field: SWC_H1_0.5_1, units: "%", gain: 100, measurement: SWC }
+    SWC1_80_Avg: { field: SWC_H1_0.8_1, units: "%", gain: 100, measurement: SWC }
     SWC2_15_Avg: { field: SWC_H1_0.15_2, units: "%", gain: 100, measurement: SWC }
-    SWC2_50_Avg: { field: SWC_H1_0.50_2, units: "%", gain: 100, measurement: SWC }
-    SWC2_80_Avg: { field: SWC_H1_0.80_2, units: "%", gain: 100, measurement: SWC }
+    SWC2_50_Avg: { field: SWC_H1_0.5_2, units: "%", gain: 100, measurement: SWC }
+    SWC2_80_Avg: { field: SWC_H1_0.8_2, units: "%", gain: 100, measurement: SWC }
     SWC3_15_Avg: { field: SWC_H1_0.15_3, units: "%", gain: 100, measurement: SWC }
-    SWC3_50_Avg: { field: SWC_H1_0.50_3, units: "%", gain: 100, measurement: SWC }
-    SWC3_80_Avg: { field: SWC_H1_0.80_3, units: "%", gain: 100, measurement: SWC }
+    SWC3_50_Avg: { field: SWC_H1_0.5_3, units: "%", gain: 100, measurement: SWC }
+    SWC3_80_Avg: { field: SWC_H1_0.8_3, units: "%", gain: 100, measurement: SWC }
     SWC4_15_Avg: { field: SWC_H1_0.15_4, units: "%", gain: 100, measurement: SWC }
-    SWC4_50_Avg: { field: SWC_H1_0.50_4, units: "%", gain: 100, measurement: SWC }
-    SWC4_80_Avg: { field: SWC_H1_0.80_4, units: "%", gain: 100, measurement: SWC }
+    SWC4_50_Avg: { field: SWC_H1_0.5_4, units: "%", gain: 100, measurement: SWC }
+    SWC4_80_Avg: { field: SWC_H1_0.8_4, units: "%", gain: 100, measurement: SWC }

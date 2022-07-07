@@ -2,7 +2,7 @@
 # 10_meteo
 
 
-LAE10-RAW-TOA5-DAT-TBL1-1MIN-201701230926:
+LAE10-RAW-TBL1-201701230926-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-LAE_iDL_T1_47_1_TBL1_20170123-0926.dat (the very first CH-LAE_iDL_T1_47_1_TBL1_*.dat file)
   # Last file:  *currently running*

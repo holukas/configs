@@ -37,7 +37,7 @@ DAV17-RAW-201807110000-ICOS-PRF-DAT-10S:
   data_keep_date_col: false
   data_version: raw
   data_vars:
-    PA_1_1_1: { field: PA_PRF_X_X_X, units: hPa, measurement: PA }
+    PA_1_1_1: { field: PA_H1_0_2, units: hPa, measurement: PA }
     RH_1_1_1: { field: RH_PRF_T1_1_1, units: "%", measurement: RH }
     RH_1_2_1: { field: RH_PRF_T1_2_1, units: "%", measurement: RH }
     RH_1_3_1: { field: RH_PRF_T1_10_1, units: "%", measurement: RH }

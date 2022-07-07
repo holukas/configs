@@ -12,7 +12,7 @@
 #     TA_M1_1.8_1 becomes TA_M3_2.5_1
 #   The file from tomorrow should have the new header implemented.
 
-AWS15-RAW-TOA5-DAT-1MIN-201911130000:
+AWS15-RAW-201911130000-TOA5-DAT-1MIN:
   # TOA5 (but with empty unit row)
   # First file: CH-AWS_snowheight_20191113.dat
   # Last file:  *currently running*

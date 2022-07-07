@@ -34,14 +34,14 @@ DAV13-RAW-TBL1-201809271725-TOA5-DAT-10S:
     LSD_T1_35_1: { field: LSD_BAK_T1_35_1, units: false, measurement: LS }
 #    Null: { field: NULL_X_X_X, units: false, measurement: XXX }
     P_4_1_1: { field: PREC_BAK_TOT_T1_35_1, units: false, measurement: PREC }
-    PA_T1_35_1: { field: PA_BAK_T1_35_1, units: false, measurement: PA }
+    PA_T1_35_1: { field: PA_T1_35_1, units: false, measurement: PA }
     PTemp: { field: PTemp_BAK_X_X_X, units: false, measurement: XXX }
     RECORD: { field: RECORD_BAK_T1_35_1, units: false, measurement: _instrumentmetrics }
     RH_4_1_1: { field: RH_BAK_T1_35_1, units: false, measurement: RH }
     SV_iDL_Min: { field: SV_iDL_MIN_BAK_T1_35_1, units: false, measurement: _instrumentmetrics }
     SW_IN_4_1_1: { field: SW_IN_BAK_T1_35_1, units: false, measurement: SW }
     SW_IN_IU_4_1_1: { field: SW_IN_IU_BAK_T1_35_1, units: false, measurement: _RAW }
-    SW_IN_T1_35_3: { field: SW_IN_BAK_T1_35_1, units: false, measurement: SW }
+    SW_IN_T1_35_3: { field: SW_IN_T1_35_3, units: false, measurement: SW }
     T_iDL: { field: T_iDL_BAK_T1_35_1, units: false, measurement: _instrumentmetrics }
     T_RH_T1_35_2: { field: T_RH_BAK_T1_35_2, units: false, measurement: _instrumentmetrics }
     TA_4_1_1: { field: TA_BAK_T1_35_1, units: false, measurement: TA }

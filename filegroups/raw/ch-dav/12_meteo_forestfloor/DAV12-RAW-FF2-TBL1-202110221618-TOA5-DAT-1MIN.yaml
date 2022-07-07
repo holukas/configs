@@ -39,42 +39,42 @@ DAV12-RAW-FF2-TBL1-202110221618-TOA5-DAT-1MIN:
     G_SF_2_1_1: { field: G_SF_FF2_0.06_1, units: false, gain: 1, measurement: _instrumentmetrics }
     RECORD: { field: RECORD_FF2_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     SDP_FF2_0x05_1_Avg: { field: SDP_FF2_0.05_1, units: false, gain: 1, measurement: SDP }
-    SDP_FF2_0x10_1_Avg: { field: SDP_FF2_0.10_1, units: false, gain: 1, measurement: SDP }
-    SDP_FF2_0x20_1_Avg: { field: SDP_FF2_0.20_1, units: false, gain: 1, measurement: SDP }
-    SDP_FF2_0x30_1_Avg: { field: SDP_FF2_0.30_1, units: false, gain: 1, measurement: SDP }
-    SDP_FF2_0x40_1_Avg: { field: SDP_FF2_0.40_1, units: false, gain: 1, measurement: SDP }
-    SDP_FF2_0x50_1_Avg: { field: SDP_FF2_0.50_1, units: false, gain: 1, measurement: SDP }
+    SDP_FF2_0x10_1_Avg: { field: SDP_FF2_0.1_1, units: false, gain: 1, measurement: SDP }
+    SDP_FF2_0x20_1_Avg: { field: SDP_FF2_0.2_1, units: false, gain: 1, measurement: SDP }
+    SDP_FF2_0x30_1_Avg: { field: SDP_FF2_0.3_1, units: false, gain: 1, measurement: SDP }
+    SDP_FF2_0x40_1_Avg: { field: SDP_FF2_0.4_1, units: false, gain: 1, measurement: SDP }
+    SDP_FF2_0x50_1_Avg: { field: SDP_FF2_0.5_1, units: false, gain: 1, measurement: SDP }
     SEC_FF2_0x05_1_Avg: { field: SEC_FF2_0.05_1, units: false, gain: 1, measurement: SEC }
-    SEC_FF2_0x10_1_Avg: { field: SEC_FF2_0.10_1, units: false, gain: 1, measurement: SEC }
-    SEC_FF2_0x20_1_Avg: { field: SEC_FF2_0.20_1, units: false, gain: 1, measurement: SEC }
-    SEC_FF2_0x30_1_Avg: { field: SEC_FF2_0.30_1, units: false, gain: 1, measurement: SEC }
-    SEC_FF2_0x40_1_Avg: { field: SEC_FF2_0.40_1, units: false, gain: 1, measurement: SEC }
-    SEC_FF2_0x50_1_Avg: { field: SEC_FF2_0.50_1, units: false, gain: 1, measurement: SEC }
+    SEC_FF2_0x10_1_Avg: { field: SEC_FF2_0.1_1, units: false, gain: 1, measurement: SEC }
+    SEC_FF2_0x20_1_Avg: { field: SEC_FF2_0.2_1, units: false, gain: 1, measurement: SEC }
+    SEC_FF2_0x30_1_Avg: { field: SEC_FF2_0.3_1, units: false, gain: 1, measurement: SEC }
+    SEC_FF2_0x40_1_Avg: { field: SEC_FF2_0.4_1, units: false, gain: 1, measurement: SEC }
+    SEC_FF2_0x50_1_Avg: { field: SEC_FF2_0.5_1, units: false, gain: 1, measurement: SEC }
     SV_LOGGER_FF2_0_1: { field: SV_LOGGER_FF2_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     SWC_2_1_1_Avg: { field: SWC_FF2_0.05_1, units: false, gain: 1, measurement: SWC }
     SWC_2_1_1_Std: { field: SWC_SD_FF2_0.05_1, units: false, gain: 1, measurement: _SD }
     SWC_2_1_2_Avg: { field: SWC_FF2_0.04_2, units: false, gain: 1, measurement: SWC }
     SWC_2_1_2_Std: { field: SWC_SD_FF2_0.04_2, units: false, gain: 1, measurement: _SD }
     SWC_2_1_3_Avg: { field: SWC_FF2_0.05_3, units: false, gain: 1, measurement: SWC }
-    SWC_2_2_1_Avg: { field: SWC_FF2_0.10_1, units: false, gain: 1, measurement: SWC }
-    SWC_2_2_1_Std: { field: SWC_SD_FF2_0.10_1, units: false, gain: 1, measurement: _SD }
-    SWC_2_2_2_Avg: { field: SWC_FF2_0.10_2, units: false, gain: 1, measurement: SWC }
+    SWC_2_2_1_Avg: { field: SWC_FF2_0.1_1, units: false, gain: 1, measurement: SWC }
+    SWC_2_2_1_Std: { field: SWC_SD_FF2_0.1_1, units: false, gain: 1, measurement: _SD }
+    SWC_2_2_2_Avg: { field: SWC_FF2_0.1_2, units: false, gain: 1, measurement: SWC }
     SWC_2_3_1_Avg: { field: SWC_FF2_0.21_1, units: false, gain: 1, measurement: SWC }
     SWC_2_3_1_Std: { field: SWC_SD_FF2_0.21_1, units: false, gain: 1, measurement: _SD }
-    SWC_2_3_2_Avg: { field: SWC_FF2_0.20_2, units: false, gain: 1, measurement: SWC }
-    SWC_2_4_1_Avg: { field: SWC_FF2_0.30_1, units: false, gain: 1, measurement: SWC }
-    SWC_2_5_1_Avg: { field: SWC_FF2_0.40_1, units: false, gain: 1, measurement: SWC }
-    SWC_2_6_1_Avg: { field: SWC_FF2_0.50_1, units: false, gain: 1, measurement: SWC }
-    SWC_2_6_1_Std: { field: SWC_SD_FF2_0.50_1, units: false, gain: 1, measurement: _SD }
-    SWC_2_6_2_Avg: { field: SWC_FF2_0.50_2, units: false, gain: 1, measurement: SWC }
-    SWC_2_7_1_Avg: { field: SWC_FF2_0.80_1, units: false, gain: 1, measurement: SWC }
-    SWC_2_7_1_Std: { field: SWC_SD_FF2_0.80_1, units: false, gain: 1, measurement: _SD }
+    SWC_2_3_2_Avg: { field: SWC_FF2_0.2_2, units: false, gain: 1, measurement: SWC }
+    SWC_2_4_1_Avg: { field: SWC_FF2_0.3_1, units: false, gain: 1, measurement: SWC }
+    SWC_2_5_1_Avg: { field: SWC_FF2_0.4_1, units: false, gain: 1, measurement: SWC }
+    SWC_2_6_1_Avg: { field: SWC_FF2_0.5_1, units: false, gain: 1, measurement: SWC }
+    SWC_2_6_1_Std: { field: SWC_SD_FF2_0.5_1, units: false, gain: 1, measurement: _SD }
+    SWC_2_6_2_Avg: { field: SWC_FF2_0.5_2, units: false, gain: 1, measurement: SWC }
+    SWC_2_7_1_Avg: { field: SWC_FF2_0.8_1, units: false, gain: 1, measurement: SWC }
+    SWC_2_7_1_Std: { field: SWC_SD_FF2_0.8_1, units: false, gain: 1, measurement: _SD }
     SWC_IU_2_1_1_Avg: { field: SWC_IU_FF2_0.05_1, units: false, gain: 1, measurement: _RAW }
     SWC_IU_2_1_2_Avg: { field: SWC_IU_FF2_0.04_2, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_2_2_1_Avg: { field: SWC_IU_FF2_0.10_1, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_2_2_1_Avg: { field: SWC_IU_FF2_0.1_1, units: false, gain: 1, measurement: _RAW }
     SWC_IU_2_3_1_Avg: { field: SWC_IU_FF2_0.21_1, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_2_6_1_Avg: { field: SWC_IU_FF2_0.50_1, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_2_7_1_Avg: { field: SWC_IU_FF2_0.80_1, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_2_6_1_Avg: { field: SWC_IU_FF2_0.5_1, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_2_7_1_Avg: { field: SWC_IU_FF2_0.8_1, units: false, gain: 1, measurement: _RAW }
     T_LOGGER_FF2_0_1: { field: T_LOGGER_FF2_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     TS_2_1_1_Avg: { field: TS_FF2_0.03_1, units: false, gain: 1, measurement: TS }
     TS_2_1_1_Std: { field: TS_SD_FF2_0.03_1, units: false, gain: 1, measurement: _SD }
@@ -85,22 +85,22 @@ DAV12-RAW-FF2-TBL1-202110221618-TOA5-DAT-1MIN:
     TS_2_2_3_Avg: { field: TS_FF2_0.05_3, units: false, gain: 1, measurement: TS }
     TS_2_3_1_Avg: { field: TS_FF2_0.11_1, units: false, gain: 1, measurement: TS }
     TS_2_3_1_Std: { field: TS_SD_FF2_0.11_1, units: false, gain: 1, measurement: _SD }
-    TS_2_3_2_Avg: { field: TS_FF2_0.10_2, units: false, gain: 1, measurement: TS }
+    TS_2_3_2_Avg: { field: TS_FF2_0.1_2, units: false, gain: 1, measurement: TS }
     TS_2_4_1_Avg: { field: TS_FF2_0.21_1, units: false, gain: 1, measurement: TS }
     TS_2_4_1_Std: { field: TS_SD_FF2_0.21_1, units: false, gain: 1, measurement: _SD }
-    TS_2_4_2_Avg: { field: TS_FF2_0.20_2, units: false, gain: 1, measurement: TS }
-    TS_2_5_1_Avg: { field: TS_FF2_0.30_1, units: false, gain: 1, measurement: TS }
-    TS_2_6_1_Avg: { field: TS_FF2_0.40_1, units: false, gain: 1, measurement: TS }
+    TS_2_4_2_Avg: { field: TS_FF2_0.2_2, units: false, gain: 1, measurement: TS }
+    TS_2_5_1_Avg: { field: TS_FF2_0.3_1, units: false, gain: 1, measurement: TS }
+    TS_2_6_1_Avg: { field: TS_FF2_0.4_1, units: false, gain: 1, measurement: TS }
     TS_2_7_1_Avg: { field: TS_FF2_0.53_1, units: false, gain: 1, measurement: TS }
     TS_2_7_1_Std: { field: TS_SD_FF2_0.53_1, units: false, gain: 1, measurement: _SD }
-    TS_2_7_2_Avg: { field: TS_FF2_0.50_2, units: false, gain: 1, measurement: TS }
-    TS_2_8_1_Avg: { field: TS_FF2_0.80_1, units: false, gain: 1, measurement: TS }
-    TS_2_8_1_Std: { field: TS_SD_FF2_0.80_1, units: false, gain: 1, measurement: _SD }
+    TS_2_7_2_Avg: { field: TS_FF2_0.5_2, units: false, gain: 1, measurement: TS }
+    TS_2_8_1_Avg: { field: TS_FF2_0.8_1, units: false, gain: 1, measurement: TS }
+    TS_2_8_1_Std: { field: TS_SD_FF2_0.8_1, units: false, gain: 1, measurement: _SD }
     TS_IU_2_1_1_Avg: { field: TS_IU_FF2_0.03_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_2_2_1_Avg: { field: TS_IU_FF2_0.05_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_2_2_2_Avg: { field: TS_IU_FF2_0.06_2, units: false, gain: 1, measurement: _RAW }
     TS_IU_2_3_1_Avg: { field: TS_IU_FF2_0.11_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_2_4_1_Avg: { field: TS_IU_FF2_0.21_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_2_7_1_Avg: { field: TS_IU_FF2_0.53_1, units: false, gain: 1, measurement: _RAW }
-    TS_IU_2_8_1_Avg: { field: TS_IU_FF2_0.80_1, units: false, gain: 1, measurement: _RAW }
+    TS_IU_2_8_1_Avg: { field: TS_IU_FF2_0.8_1, units: false, gain: 1, measurement: _RAW }
 

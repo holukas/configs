@@ -41,13 +41,13 @@ DAV12-RAW-FF1-TBL1-201802281110-TOA5-DAT-10MIN:
     TS_FF1_0x05_1_Avg: { field: TS_FF1_0.05_1, units: false, measurement: TS }
     TS_FF1_0x11_1_Avg: { field: TS_FF1_0.11_1, units: false, measurement: TS }
     TS_FF1_0x21_1_Avg: { field: TS_FF1_0.21_1, units: false, measurement: TS }
-    TS_FF1_0x50_1_Avg: { field: TS_FF1_0.50_1, units: false, measurement: TS }
-    TS_FF1_0x80_1_Avg: { field: TS_FF1_0.80_1, units: false, measurement: TS }
+    TS_FF1_0x50_1_Avg: { field: TS_FF1_0.5_1, units: false, measurement: TS }
+    TS_FF1_0x80_1_Avg: { field: TS_FF1_0.8_1, units: false, measurement: TS }
     TS_FF1_0x05_2_Avg: { field: TS_FF1_0.05_2, units: false, measurement: TS }
     SWC_FF1_0x05_1_Avg: { field: SWC_FF1_0.05_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_0x10_1_Avg: { field: SWC_FF1_0.10_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF1_0x10_1_Avg: { field: SWC_FF1_0.1_1, units: "%", gain: 100, measurement: SWC }
     SWC_FF1_0x24_1_Avg: { field: SWC_FF1_0.24_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_0x50_1_Avg: { field: SWC_FF1_0.50_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF1_0x50_1_Avg: { field: SWC_FF1_0.5_1, units: "%", gain: 100, measurement: SWC }
     SWC_FF1_0x84_1_Avg: { field: SWC_FF1_0.84_1, units: "%", gain: 100, measurement: SWC }
     SWC_FF1_0x05_2_Avg: { field: SWC_FF1_0.05_2, units: "%", gain: 100, measurement: SWC }
     G_FF1_0x06_1_Avg: { field: G_FF1_0.06_1, units: W m-2, measurement: G }
@@ -55,13 +55,13 @@ DAV12-RAW-FF1-TBL1-201802281110-TOA5-DAT-10MIN:
     TS_FF1_0x05_1_Std: { field: TS_SD_FF1_0.05_1, units: false, measurement: _SD }
     TS_FF1_0x11_1_Std: { field: TS_SD_FF1_0.11_1, units: false, measurement: _SD }
     TS_FF1_0x21_1_Std: { field: TS_SD_FF1_0.21_1, units: false, measurement: _SD }
-    TS_FF1_0x50_1_Std: { field: TS_SD_FF1_0.50_1, units: false, measurement: _SD }
-    TS_FF1_0x80_1_Std: { field: TS_SD_FF1_0.80_1, units: false, measurement: _SD }
+    TS_FF1_0x50_1_Std: { field: TS_SD_FF1_0.5_1, units: false, measurement: _SD }
+    TS_FF1_0x80_1_Std: { field: TS_SD_FF1_0.8_1, units: false, measurement: _SD }
     TS_FF1_0x05_2_Std: { field: TS_SD_FF1_0.05_2, units: false, measurement: _SD }
     SWC_FF1_0x05_1_Std: { field: SWC_SD_FF1_0.05_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF1_0x10_1_Std: { field: SWC_SD_FF1_0.10_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF1_0x10_1_Std: { field: SWC_SD_FF1_0.1_1, units: "%", gain: 100, measurement: _SD }
     SWC_FF1_0x24_1_Std: { field: SWC_SD_FF1_0.24_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF1_0x50_1_Std: { field: SWC_SD_FF1_0.50_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF1_0x50_1_Std: { field: SWC_SD_FF1_0.5_1, units: "%", gain: 100, measurement: _SD }
     SWC_FF1_0x84_1_Std: { field: SWC_SD_FF1_0.84_1, units: "%", gain: 100, measurement: _SD }
     SWC_FF1_0x05_2_Std: { field: SWC_SD_FF1_0.05_2, units: "%", gain: 100, measurement: _SD }
     G_FF1_0x06_1_Std: { field: G_SD_FF1_0.06_1, units: W m-2, measurement: _SD }

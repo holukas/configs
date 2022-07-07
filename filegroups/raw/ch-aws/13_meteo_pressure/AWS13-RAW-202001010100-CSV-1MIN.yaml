@@ -4,7 +4,7 @@
 # Pressure from the LI-7500, eddy covariance measurements
 
 
-AWS13-RAW-CSV-1MIN-202001010100:
+AWS13-RAW-202001010100-CSV-1MIN:
   # TOA5
   # First file: CH-AWS_EC_Press-202001010100.csv (the very first CH-AWS_EC_Press-*.csv file)
   # Last file:  *currently running*

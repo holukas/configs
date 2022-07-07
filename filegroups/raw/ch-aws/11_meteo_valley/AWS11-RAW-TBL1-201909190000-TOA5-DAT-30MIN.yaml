@@ -10,7 +10,7 @@
 #   Helvetica, 68(4), 249–263. https://doi.org/10.5194/gh-68-249-2013
 
 
-AWS11-RAW-TOA5-DAT-TBL1-30MIN-201909190000:
+AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
   # TOA5
   # First file: CH-AWS_iDL_BOX4_0_1_TBL1_20190919-0000.dat (the very first CH-AWS_iDL_BOX4_0_1_TBL1_*.dat file)
   # Last file:  *currently running*

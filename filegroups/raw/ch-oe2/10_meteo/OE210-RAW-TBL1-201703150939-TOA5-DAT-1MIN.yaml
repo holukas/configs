@@ -2,7 +2,7 @@
 # 10_meteo
 
 
-OE210-RAW-TOA5-DAT-TBL1-1MIN-201703150939:
+OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-OE2_iDL_BOX1_0_1_TBL1_20170315-0939.dat (the very first CH-OE2_iDL_BOX1_0_1_TBL1_*.dat file)
   # Last file:  *currently running*
@@ -67,10 +67,10 @@ OE210-RAW-TOA5-DAT-TBL1-1MIN-201703150939:
     SDP_CF1_0x05_1_Std: { field: SDP_SD_CF1_0.05_1, units: false, measurement: _SD }
     SDP_CF1_0x15_1_Avg: { field: SDP_CF1_0.15_1, units: false, measurement: SDP }
     SDP_CF1_0x15_1_Std: { field: SDP_SD_CF1_0.15_1, units: false, measurement: _SD }
-    SDP_CF1_0x30_1_Avg: { field: SDP_CF1_0.30_1, units: false, measurement: SDP }
-    SDP_CF1_0x30_1_Std: { field: SDP_SD_CF1_0.30_1, units: false, measurement: _SD }
-    SDP_CF1_0x50_1_Avg: { field: SDP_CF1_0.50_1, units: false, measurement: SDP }
-    SDP_CF1_0x50_1_Std: { field: SDP_SD_CF1_0.50_1, units: false, measurement: _SD }
+    SDP_CF1_0x30_1_Avg: { field: SDP_CF1_0.3_1, units: false, measurement: SDP }
+    SDP_CF1_0x30_1_Std: { field: SDP_SD_CF1_0.3_1, units: false, measurement: _SD }
+    SDP_CF1_0x50_1_Avg: { field: SDP_CF1_0.5_1, units: false, measurement: SDP }
+    SDP_CF1_0x50_1_Std: { field: SDP_SD_CF1_0.5_1, units: false, measurement: _SD }
     SW_IN_M1_1_1_Avg: { field: SW_IN_M1_1_1, units: false, measurement: SW }
     SW_IN_M1_1_1_Std: { field: SW_IN_SD_M1_1_1, units: false, measurement: _SD }
     SW_OUT_M1_1_1_Avg: { field: SW_OUT_M1_1_1, units: false, measurement: SW }
@@ -83,10 +83,10 @@ OE210-RAW-TOA5-DAT-TBL1-1MIN-201703150939:
     SWC_CF1_0x05_1_Std: { field: SWC_SD_CF1_0.05_1, units: false, measurement: _SD }
     SWC_CF1_0x15_1_Avg: { field: SWC_CF1_0.15_1, units: false, measurement: SWC }
     SWC_CF1_0x15_1_Std: { field: SWC_SD_CF1_0.15_1, units: false, measurement: _SD }
-    SWC_CF1_0x30_1_Avg: { field: SWC_CF1_0.30_1, units: false, measurement: SWC }
-    SWC_CF1_0x30_1_Std: { field: SWC_SD_CF1_0.30_1, units: false, measurement: _SD }
-    SWC_CF1_0x50_1_Avg: { field: SWC_CF1_0.50_1, units: false, measurement: SWC }
-    SWC_CF1_0x50_1_Std: { field: SWC_SD_CF1_0.50_1, units: false, measurement: _SD }
+    SWC_CF1_0x30_1_Avg: { field: SWC_CF1_0.3_1, units: false, measurement: SWC }
+    SWC_CF1_0x30_1_Std: { field: SWC_SD_CF1_0.3_1, units: false, measurement: _SD }
+    SWC_CF1_0x50_1_Avg: { field: SWC_CF1_0.5_1, units: false, measurement: SWC }
+    SWC_CF1_0x50_1_Std: { field: SWC_SD_CF1_0.5_1, units: false, measurement: _SD }
     T_iDL_BOX1_0_1_Avg: { field: T_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     T_iDL_BOX1_0_1_Std: { field: T_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     T_RAD_M1_1_1_Avg: { field: T_RAD_M1_1_1, units: false, measurement: _instrumentmetrics }
@@ -97,10 +97,10 @@ OE210-RAW-TOA5-DAT-TBL1-1MIN-201703150939:
     TS_CF1_0x05_1_Std: { field: TS_SD_CF1_0.05_1, units: false, measurement: _SD }
     TS_CF1_0x15_1_Avg: { field: TS_CF1_0.15_1, units: false, measurement: TS }
     TS_CF1_0x15_1_Std: { field: TS_SD_CF1_0.15_1, units: false, measurement: _SD }
-    TS_CF1_0x30_1_Avg: { field: TS_CF1_0.30_1, units: false, measurement: TS }
-    TS_CF1_0x30_1_Std: { field: TS_SD_CF1_0.30_1, units: false, measurement: _SD }
-    TS_CF1_0x50_1_Avg: { field: TS_CF1_0.50_1, units: false, measurement: TS }
-    TS_CF1_0x50_1_Std: { field: TS_SD_CF1_0.50_1, units: false, measurement: _SD }
+    TS_CF1_0x30_1_Avg: { field: TS_CF1_0.3_1, units: false, measurement: TS }
+    TS_CF1_0x30_1_Std: { field: TS_SD_CF1_0.3_1, units: false, measurement: _SD }
+    TS_CF1_0x50_1_Avg: { field: TS_CF1_0.5_1, units: false, measurement: TS }
+    TS_CF1_0x50_1_Std: { field: TS_SD_CF1_0.5_1, units: false, measurement: _SD }
     TS_CF2_0x015_1_Avg: { field: TS_CF2_0.015_1, units: false, measurement: TS }
     TS_CF2_0x015_1_Std: { field: TS_SD_CF2_0.015_1, units: false, measurement: _SD }
     TS_CF3_0x015_1_Avg: { field: TS_CF3_0.015_1, units: false, measurement: TS }

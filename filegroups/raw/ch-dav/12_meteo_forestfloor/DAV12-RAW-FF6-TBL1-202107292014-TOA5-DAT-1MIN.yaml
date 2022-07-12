@@ -33,11 +33,11 @@ DAV12-RAW-FF6-TBL1-202107292014-TOA5-DAT-1MIN:
     DNTP_LOGGER_T2_2x1_1: { field: DNTP_LOGGER_T2_2.1_1, units: false, measurement: _instrumentmetrics }
     G_FF6_0x05_1_Avg: { field: G_FF6_0.05_1, units: false, measurement: G }
     G_FF6_0x05_1_Std: { field: G_SD_FF6_0.05_1, units: false, measurement: _SD }
-    LW_IN_RAW_T2_2x1_1_Avg: { field: LW_IN_RAW_T2_2.1_1, units: false, measurement: LW }
+    LW_IN_RAW_T2_2x1_1_Avg: { field: LW_IN_RAW_T2_2.1_1, units: false, measurement: _RAW }
     LW_IN_RAW_T2_2x1_1_Std: { field: LW_IN_RAW_T2_2.1_1, units: false, measurement: _RAW }
     LW_IN_T2_2x1_1_Avg: { field: LW_IN_T2_2.1_1, units: false, measurement: LW }
     LW_IN_T2_2x1_1_Std: { field: LW_IN_SD_T2_2.1_1, units: false, measurement: _SD }
-    LW_OUT_RAW_T2_2x1_1_Avg: { field: LW_OUT_RAW_T2_2.1_1, units: false, measurement: LW }
+    LW_OUT_RAW_T2_2x1_1_Avg: { field: LW_OUT_RAW_T2_2.1_1, units: false, measurement: _RAW }
     LW_OUT_RAW_T2_2x1_1_Std: { field: LW_OUT_RAW_SD_T2_2.1_1, units: false, measurement: _RAW }
     LW_OUT_T2_2x1_1_Avg: { field: LW_OUT_T2_2.1_1, units: false, measurement: LW }
     LW_OUT_T2_2x1_1_Std: { field: LW_OUT_SD_T2_2.1_1, units: false, measurement: _SD }

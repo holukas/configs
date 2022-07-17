@@ -64,6 +64,7 @@ DAV17-RAW-P2-200001010000-NABEL-PRF-SSV-DAT-5MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     # First col also counts, but is ignored
     TIMESTAMP: this column is necessary but ignored!

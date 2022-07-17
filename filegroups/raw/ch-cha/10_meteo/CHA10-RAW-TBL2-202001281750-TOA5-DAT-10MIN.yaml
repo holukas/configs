@@ -28,6 +28,7 @@ CHA10-RAW-TBL2-202001281750-TOA5-DAT-10MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     RECORD: { field: RECORD_LOWRES_X_X_X, units: false, measurement: _instrumentmetrics }
     SDP_GF1_1x00_3_Avg: { field: SDP_LOWRES_GF1_1_3, units: false, measurement: SDP }

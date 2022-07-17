@@ -45,6 +45,7 @@ DAV13-RAW-NABEL-199701010000-SSV-TXT-30MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     YEAR:
     MONTH:

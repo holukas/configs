@@ -28,6 +28,7 @@ OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     BV_iDL_BOX1_0_1_Avg: { field: BV_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     BV_iDL_BOX1_0_1_Std: { field: BV_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics }

@@ -28,6 +28,7 @@ LAE10-RAW-TBL1-201701230926-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     BV_CR1000_INT_T1_47_1_Avg: { field: BV_CR1000_INT_T1_47_1, units: false, measurement: _instrumentmetrics }
     BV_CR1000_T1_47_1_Avg: { field: BV_CR1000_T1_47_1, units: false, measurement: _instrumentmetrics }

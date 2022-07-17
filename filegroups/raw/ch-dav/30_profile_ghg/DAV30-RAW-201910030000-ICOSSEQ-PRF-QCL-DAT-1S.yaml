@@ -29,6 +29,7 @@ DAV30-RAW-201910030000-ICOSSEQ-PRF-QCL-DAT-1S:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     CH4: { field: <<automatic>>, units: false, measurement: CH4 }
     CHANNEL_VICI: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }

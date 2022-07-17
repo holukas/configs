@@ -30,6 +30,7 @@ AWS13-RAW-202001010100-CSV-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     PA_T1_1.3_1_1: { field: PA_T1_1.3_1, units: hPa, measurement: PA }
     N_PA_T1_1.3_1_1: { field: NUMVALS_PA_T1_1.3_1, units: false, measurement: _instrumentmetrics }

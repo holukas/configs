@@ -29,6 +29,7 @@ DAV10-RAW-PA-202112020000-TOA5-DAT-10S:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     PA_H1_0_1_Avg: { field: PA_H1_0_1, units: false, measurement: PA }
     PA_H1_0_1_Std: { field: PA_SD_H1_0_1, units: false, measurement: _SD }

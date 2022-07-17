@@ -30,6 +30,7 @@ DAV12-RAW-FF1-TBL1-201802281110-TOA5-DAT-10MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     SENS_HFP_FF1_0x06_1: { field: SENS_HFP_FF1_0.06_1, units: false, measurement: _XXX }
     CAL_FLAG_FF1_0x06_1: { field: CAL_FLAG_FF1_0.06_1, units: false, measurement: _XXX }

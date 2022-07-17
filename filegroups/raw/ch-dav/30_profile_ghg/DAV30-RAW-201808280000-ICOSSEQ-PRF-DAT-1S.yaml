@@ -29,6 +29,7 @@ DAV30-RAW-201808280000-ICOSSEQ-PRF-DAT-1S:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     CHANNEL_VICI: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
     CO2: { field: <<automatic>>, units: umol mol-1, measurement: CO2 }

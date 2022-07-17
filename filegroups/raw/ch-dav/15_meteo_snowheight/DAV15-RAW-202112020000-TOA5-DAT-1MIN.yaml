@@ -28,6 +28,7 @@ DAV15-RAW-202112020000-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     D_SNOW_M1_1.8_1_Smp: { field: D_SNOW_M1_1.8_1, units: false, measurement: D_SNOW }
     DIAG_iSR50AT_M1_1.8_1_Smp: { field: DIAG_iSR50AT_M1_1.8_1, units: false, measurement: _instrumentmetrics }

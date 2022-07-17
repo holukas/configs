@@ -28,6 +28,7 @@ DAV12-RAW-FF6-TBL1-202107292014-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     DNTP_iDL_T2_2x1_1: { field: DNTP_iDL_T2_2.1_1, units: false, measurement: _instrumentmetrics }
     DNTP_LOGGER_T2_2x1_1: { field: DNTP_LOGGER_T2_2.1_1, units: false, measurement: _instrumentmetrics }

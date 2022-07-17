@@ -36,6 +36,7 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     AirTemp_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
     Batt_volt_Min: { field: BV_BOX4_0_1, units: false, measurement: _instrumentmetrics }

@@ -28,6 +28,7 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     BV_CR1000_BOX_0_1_Avg: { field: BV_CR1000_BOX_0_1, units: false, measurement: _instrumentmetrics }
     BV_CR1000_BOX_0_1_Std: { field: BV_CR1000_SD_BOX_0_1, units: false, measurement: _instrumentmetrics }
@@ -58,7 +59,7 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
     SW_IN_M1B2_1x40_1_Std: { field: SW_IN_SD_M1B2_1.4_1, units: false, measurement: _SD }
     SW_OUT_M1B2_1x40_1_Avg: { field: SW_OUT_M1B2_1.4_1, units: false, measurement: SW }
     SW_OUT_M1B2_1x40_1_Std: { field: SW_OUT_SD_M1B2_1.4_1, units: false, measurement: _SD }
-    SWC_GF2_0x05_1_Avg: { field: SWC_GF2_0.05_1, units: false, measurement: SWC }
+    SWC_GF2_0x05_1_Avg: { field: SWC_GF2_0.05_1, units: "%", gain: 100, measurement: SWC }
     SWC_GF2_0x05_1_Std: { field: SWC_SD_GF2_0.05_1, units: false, measurement: _SD }
     T_CR1000_BOX_0_1_Avg: { field: T_CR1000_BOX_0_1, units: false, measurement: _instrumentmetrics }
     T_CR1000_BOX_0_1_Std: { field: T_CR1000_SD_BOX_0_1, units: false, measurement: _instrumentmetrics }

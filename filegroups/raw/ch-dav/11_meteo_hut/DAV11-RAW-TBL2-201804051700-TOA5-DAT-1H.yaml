@@ -28,6 +28,7 @@ DAV11-RAW-TBL2-201804051700-TOA5-DAT-1H:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     RECORD: { field: RECORD_FF0_0_1, units: false, measurement: _instrumentmetrics }
     SWC1_15_Avg: { field: SWC_LOWRES_FF0_0.15_1, units: false, measurement: SWC }

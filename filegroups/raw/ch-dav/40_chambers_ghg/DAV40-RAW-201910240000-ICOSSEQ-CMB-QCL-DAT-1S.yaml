@@ -32,6 +32,7 @@ DAV40-RAW-201910240000-ICOSSEQ-CMB-QCL-DAT-1S:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     CH4: { field: <<automatic>>, units: false, measurement: CH4 }
     CO2: { field: <<automatic>>, units: false, measurement: CO2 }

@@ -28,6 +28,7 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     RECORD: { field: RECORD_X_X_X, units: false, measurement: _instrumentmetrics }
     Batt_Volt_Avg: { field: BV_X_X_X, units: false, measurement: _instrumentmetrics }

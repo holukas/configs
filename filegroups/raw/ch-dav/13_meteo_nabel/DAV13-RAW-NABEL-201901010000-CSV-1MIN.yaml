@@ -41,6 +41,7 @@ DAV13-RAW-NABEL-201901010000-CSV-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     TEMP: { field: TA_NABEL_T1_35_1, gain: 1, units: false, measurement: TA }
     FEUCHT: { field: RH_NABEL_T1_35_1, gain: 1, units: false, measurement: RH }

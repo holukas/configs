@@ -28,6 +28,7 @@ DAV12-RAW-FF1-TBL2-201802281104-TOA5-DAT-25H:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     CAL_G_SF_1_1_1: { field: CAL_G_SF_FF1_0.06_1, units: false, measurement: _instrumentmetrics }
     CAL_I_HEATAVG_1_1_1: { field: CAL_I_HEATAVG_FF1_0.06_1, units: false, measurement: _instrumentmetrics }

@@ -28,6 +28,7 @@ DAV17-RAW-202201040000-TOA5-PRF-DAT-10S:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     RH_T1_1_1_Avg: { field: RH_PRF_T1_1_1, units: false, measurement: RH }
     RH_T1_1_1_Std: { field: RH_PRF_SD_T1_1_1, units: false, measurement: _SD }

@@ -30,6 +30,7 @@ DAV12-RAW-FF1-TBL1-201807181445-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     RECORD: { field: RECORD_FF1_0_1, units: false, measurement: _instrumentmetrics }
     SV_LOGGER_FF1_0_1: { field: SV_LOGGER_FF1_0_1, units: false, measurement: _instrumentmetrics }

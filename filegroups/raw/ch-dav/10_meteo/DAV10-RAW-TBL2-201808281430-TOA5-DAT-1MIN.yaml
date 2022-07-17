@@ -28,5 +28,6 @@ DAV10-RAW-TBL2-201808281430-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     HEAT_HS50_T1B1_35_1_FLAG: { field: HEAT_HS50_T1_35_1, units: false, measurement: _instrumentmetrics }

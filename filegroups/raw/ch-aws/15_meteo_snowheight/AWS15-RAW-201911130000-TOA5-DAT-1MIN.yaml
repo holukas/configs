@@ -38,6 +38,7 @@ AWS15-RAW-201911130000-TOA5-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     D_SNOW_1_1_1: { field: D_SNOW_GF0_0_1, units: false, measurement: D_SNOW }
     D_SNOW_GF0_0_1: { field: D_SNOW_GF0_0_1, units: false, measurement: D_SNOW }

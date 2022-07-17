@@ -28,6 +28,7 @@ DAV17-RAW-AUX-202112140000-TOA5-PRF-DAT-1MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     ERROR_iWIND_T1_1_1: { field: ERROR_iWIND_T1_1_1, units: false, measurement: _instrumentmetrics }
     ERROR_iWIND_T1_2_1: { field: ERROR_iWIND_T1_2_1, units: false, measurement: _instrumentmetrics }

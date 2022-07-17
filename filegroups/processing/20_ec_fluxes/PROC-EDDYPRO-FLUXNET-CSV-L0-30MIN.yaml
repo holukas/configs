@@ -2,6 +2,8 @@
 # 20_ec_fluxes
 #
 # The format for this file format is the same for all sites.
+# This filetype is specifically for Level-0 fluxes (processed, but not final),
+# used in data checks during the year.
 
 PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
   # EddyPro fluxnet file (general format)
@@ -34,73 +36,74 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: Level-0
+  data_vars_parse_pos_indices: false
   data_vars:
 #    TIMESTAMP_START: { field: false, units: false, measurement: XXX }
 #    TIMESTAMP_END: { field: false, units: false, measurement: XXX }
 #    DOY_START: { field: false, units: false, measurement: XXX }
 #    DOY_END: { field: false, units: false, measurement: XXX }
 #    FILENAME_HF: { field: false, units: false, measurement: XXX }
-    SW_IN_POT: { field: false, units: W m-2, measurement: SW_IN_EC }
-    NIGHT: { field: false, units: flag, measurement: SW_IN_EC }
-    EXPECT_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    FILE_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    CUSTOM_FILTER_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    WD_FILTER_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    SONIC_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    T_SONIC_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    CO2_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    H2O_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    CH4_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    N2O_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
+    SW_IN_POT: { field: false, units: W m-2, measurement: SW }
+    NIGHT: { field: false, units: flag, measurement: SW }
+    EXPECT_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FILE_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    CUSTOM_FILTER_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    WD_FILTER_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    SONIC_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    T_SONIC_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    CO2_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    H2O_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    CH4_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    N2O_NR: { field: false, units: "#", measurement: NUMRECORDS }
 #    NONE_NR: { field: false, units: false, measurement: XXX }
-    TAU_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    H_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    FC_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    LE_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    FCH4_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
-    FN2O_NR: { field: false, units: "#", measurement: NUMRECORDS_EC }
+    TAU_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    H_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FC_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    LE_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FCH4_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FN2O_NR: { field: false, units: "#", measurement: NUMRECORDS }
 #    FNONE_NR: { field: false, units: false, measurement: XXX }
-    TAU: { field: false, units: kg m-1 s-2, measurement: FLUX_EC }
-    H: { field: false, units: W m-2, measurement: FLUX_EC }
-    LE: { field: false, units: W m-2, measurement: FLUX_EC }
-    ET: { field: false, units: mm h-1, measurement: FLUX_EC }
-    FC: { field: false, units: umol m-2 s-1, measurement: FLUX_EC }
-    FH2O: { field: false, units: mmol m-2 s-1, measurement: FLUX_EC }
-    FCH4: { field: false, units: nmol m-2 s-1, measurement: FLUX_EC }
-    FN2O: { field: false, units: nmol m-2 s-1, measurement: FLUX_EC }
+    TAU: { field: false, units: kg m-1 s-2, measurement: TAU }
+    H: { field: false, units: W m-2, measurement: H }
+    LE: { field: false, units: W m-2, measurement: LE }
+    ET: { field: false, units: mm h-1, measurement: ET }
+    FC: { field: false, units: umol m-2 s-1, measurement: FC }
+    FH2O: { field: false, units: mmol m-2 s-1, measurement: FH2O }
+    FCH4: { field: false, units: nmol m-2 s-1, measurement: FCH4 }
+    FN2O: { field: false, units: nmol m-2 s-1, measurement: FN2O }
 #    FNONE: { field: false, units: false, measurement: XXX }
-    TAU_RANDUNC_HF: { field: false, units: kg m-1 s-2, measurement: RANDUNC_EC }
-    H_RANDUNC_HF: { field: false, units: W m-2, measurement: RANDUNC_EC }
-    LE_RANDUNC_HF: { field: false, units: W m-2, measurement: RANDUNC_EC }
-    ET_RANDUNC_HF: { field: false, units: mm h-1, measurement: RANDUNC_EC }
-    FC_RANDUNC_HF: { field: false, units: umol m-2 s-1, measurement: RANDUNC_EC }
-    FH2O_RANDUNC_HF: { field: false, units: mmol m-2 s-1, measurement: RANDUNC_EC }
-    FCH4_RANDUNC_HF: { field: false, units: nmol m-2 s-1, measurement: RANDUNC_EC }
-    FN2O_RANDUNC_HF: { field: false, units: nmol m-2 s-1, measurement: RANDUNC_EC }
+    TAU_RANDUNC_HF: { field: false, units: kg m-1 s-2, measurement: TAU }
+    H_RANDUNC_HF: { field: false, units: W m-2, measurement: H }
+    LE_RANDUNC_HF: { field: false, units: W m-2, measurement: LE }
+    ET_RANDUNC_HF: { field: false, units: mm h-1, measurement: ET }
+    FC_RANDUNC_HF: { field: false, units: umol m-2 s-1, measurement: FC }
+    FH2O_RANDUNC_HF: { field: false, units: mmol m-2 s-1, measurement: FH2O }
+    FCH4_RANDUNC_HF: { field: false, units: nmol m-2 s-1, measurement: FCH4 }
+    FN2O_RANDUNC_HF: { field: false, units: nmol m-2 s-1, measurement: FN2O }
 #    FNONE_RANDUNC_HF: { field: false, units: false, measurement: XXX }
-    SH_SINGLE: { field: false, units: W m-2, measurement: STORAGE_EC }
-    SLE_SINGLE: { field: false, units: W m-2, measurement: STORAGE_EC }
+    SH_SINGLE: { field: false, units: W m-2, measurement: H }
+    SLE_SINGLE: { field: false, units: W m-2, measurement: LE }
 #    SET_SINGLE: { field: false, units: false, measurement: XXX }
-    SC_SINGLE: { field: false, units: umol m-2 s-1, measurement: STORAGE_EC }
-    SH2O_SINGLE: { field: false, units: mmol m-2 s-1, measurement: STORAGE_EC }
-    SCH4_SINGLE: { field: false, units: nmol m-2 s-1, measurement: STORAGE_EC }
-    SN2O_SINGLE: { field: false, units: nmol m-2 s-1, measurement: STORAGE_EC }
+    SC_SINGLE: { field: false, units: umol m-2 s-1, measurement: FC }
+    SH2O_SINGLE: { field: false, units: mmol m-2 s-1, measurement: FH2O }
+    SCH4_SINGLE: { field: false, units: nmol m-2 s-1, measurement: FCH4 }
+    SN2O_SINGLE: { field: false, units: nmol m-2 s-1, measurement: FN2O }
 #    SNONE_SINGLE: { field: false, units: false, measurement: XXX }
 #    FC_VADV: { field: false, units: false, measurement: XXX }
 #    FH2O_VADV: { field: false, units: false, measurement: XXX }
 #    FCH4_VADV: { field: false, units: false, measurement: XXX }
 #    FNONE_VADV: { field: false, units: false, measurement: XXX }
-    U_UNROT: { field: false, units: m s-1, measurement: WIND_EC }
-    V_UNROT: { field: false, units: m s-1, measurement: WIND_EC }
-    W_UNROT: { field: false, units: m s-1, measurement: WIND_EC }
-    U: { field: false, units: m s-1, measurement: WIND_EC }
-    V: { field: false, units: m s-1, measurement: WIND_EC }
-    W: { field: false, units: m s-1, measurement: WIND_EC }
-    WS: { field: false, units: m s-1, measurement: WIND_EC }
-    WS_MAX: { field: false, units: m s-1, measurement: WIND_EC }
-    WD: { field: false, units: deg from north, measurement: WIND_EC }
-    WD_SIGMA: { field: false, units: deg from north, measurement: _SD_EC }
-    USTAR: { field: false, units: m s-1, measurement: WIND_EC }
+    U_UNROT: { field: false, units: m s-1, measurement: WIND }
+    V_UNROT: { field: false, units: m s-1, measurement: WIND }
+    W_UNROT: { field: false, units: m s-1, measurement: WIND }
+    U: { field: false, units: m s-1, measurement: WIND }
+    V: { field: false, units: m s-1, measurement: WIND }
+    W: { field: false, units: m s-1, measurement: WIND }
+    WS: { field: false, units: m s-1, measurement: WIND }
+    WS_MAX: { field: false, units: m s-1, measurement: WIND }
+    WD: { field: false, units: deg from north, measurement: WIND }
+    WD_SIGMA: { field: false, units: deg from north, measurement: _SD }
+    USTAR: { field: false, units: m s-1, measurement: WIND }
 #    TKE: { field: false, units: false, measurement: XXX }
 #    MO_LENGTH: { field: false, units: false, measurement: XXX }
 #    ZL: { field: false, units: false, measurement: XXX }
@@ -125,17 +128,17 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
 #    SPECIFIC_HEAT_EVAP: { field: false, units: false, measurement: XXX }
 #    VAPOR_DRYAIR_RATIO: { field: false, units: false, measurement: XXX }
 #    CO2_MEAS_TYPE: { field: false, units: false, measurement: XXX }
-    CO2_MOLAR_DENSITY: { field: false, units: mmol m-3, measurement: CO2_EC }
-    CO2_MIXING_RATIO: { field: false, units: umol mol-1, measurement: CO2_EC }
-    CO2: { field: false, units: umol mol-1, measurement: CO2_EC }
+    CO2_MOLAR_DENSITY: { field: false, units: mmol m-3, measurement: CO2 }
+    CO2_MIXING_RATIO: { field: false, units: umol mol-1, measurement: CO2 }
+    CO2: { field: false, units: umol mol-1, measurement: CO2 }
 #    H2O_MEAS_TYPE: { field: false, units: false, measurement: XXX }
-    H2O_MOLAR_DENSITY: { field: false, units: mmol m-3, measurement: H2O_EC }
-    H2O_MIXING_RATIO: { field: false, units: mmol mol-1, measurement: H2O_EC }
-    H2O: { field: false, units: mmol mol-1, measurement: H2O_EC }
+    H2O_MOLAR_DENSITY: { field: false, units: mmol m-3, measurement: H2O }
+    H2O_MIXING_RATIO: { field: false, units: mmol mol-1, measurement: H2O }
+    H2O: { field: false, units: mmol mol-1, measurement: H2O }
 #    CH4_MEAS_TYPE: { field: false, units: false, measurement: XXX }
-    CH4_MOLAR_DENSITY: { field: false, units: mmol m-3, measurement: CH4_EC }
-    CH4_MIXING_RATIO: { field: false, units: nmol mol-1, measurement: CH4_EC }
-    CH4: { field: false, units: nmol mol-1, measurement: CH4_EC }
+    CH4_MOLAR_DENSITY: { field: false, units: mmol m-3, measurement: CH4 }
+    CH4_MIXING_RATIO: { field: false, units: nmol mol-1, measurement: CH4 }
+    CH4: { field: false, units: nmol mol-1, measurement: CH4 }
 #    NONE_MEAS_TYPE: { field: false, units: false, measurement: XXX }
 #    NONE_MOLAR_DENSITY: { field: false, units: false, measurement: XXX }
 #    NONE_MIXING_RATIO: { field: false, units: false, measurement: XXX }
@@ -220,14 +223,14 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
 #    H2O_MEAS_CH4_MEAS_COV: { field: false, units: false, measurement: XXX }
 #    H2O_MEAS_NONE_MEAS_COV: { field: false, units: false, measurement: XXX }
 #    CH4_MEAS_NONE_MEAS_COV: { field: false, units: false, measurement: XXX }
-    FETCH_MAX: { field: false, units: m, measurement: FETCH_EC }
-    FETCH_OFFSET: { field: false, units: m, measurement: FETCH_EC }
-    FETCH_10: { field: false, units: m, measurement: FETCH_EC }
-    FETCH_30: { field: false, units: m, measurement: FETCH_EC }
-    FETCH_50: { field: false, units: m, measurement: FETCH_EC }
-    FETCH_70: { field: false, units: m, measurement: FETCH_EC }
-    FETCH_80: { field: false, units: m, measurement: FETCH_EC }
-    FETCH_90: { field: false, units: m, measurement: FETCH_EC }
+    FETCH_MAX: { field: false, units: m, measurement: FETCH }
+    FETCH_OFFSET: { field: false, units: m, measurement: FETCH }
+    FETCH_10: { field: false, units: m, measurement: FETCH }
+    FETCH_30: { field: false, units: m, measurement: FETCH }
+    FETCH_50: { field: false, units: m, measurement: FETCH }
+    FETCH_70: { field: false, units: m, measurement: FETCH }
+    FETCH_80: { field: false, units: m, measurement: FETCH }
+    FETCH_90: { field: false, units: m, measurement: FETCH }
 #    USTAR_UNCORR: { field: false, units: false, measurement: XXX }
 #    MO_LENGTH_UNCORR: { field: false, units: false, measurement: XXX }
 #    ZL_UNCORR: { field: false, units: false, measurement: XXX }
@@ -275,12 +278,12 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
 #    SPEC_CORR_LI7700_B: { field: false, units: false, measurement: XXX }
 #    SPEC_CORR_LI7700_C: { field: false, units: false, measurement: XXX }
 #    TAU_SCF: { field: false, units: false, measurement: XXX }
-    H_SCF: { field: false, units: "#", measurement: SCF_EC }
-    LE_SCF: { field: false, units: "#", measurement: SCF_EC }
-    ET_SCF: { field: false, units: "#", measurement: SCF_EC }
-    FC_SCF: { field: false, units: "#", measurement: SCF_EC }
-    FH2O_SCF: { field: false, units: "#", measurement: SCF_EC }
-    FCH4_SCF: { field: false, units: "#", measurement: SCF_EC }
+    H_SCF: { field: false, units: "#", measurement: H }
+    LE_SCF: { field: false, units: "#", measurement: LE }
+    ET_SCF: { field: false, units: "#", measurement: ET }
+    FC_SCF: { field: false, units: "#", measurement: FC }
+    FH2O_SCF: { field: false, units: "#", measurement: FH2O }
+    FCH4_SCF: { field: false, units: "#", measurement: FCH4 }
 #    FNONE_SCF: { field: false, units: false, measurement: XXX }
 #    W_T_SONIC_COV_IBROM: { field: false, units: false, measurement: XXX }
 #    W_T_SONIC_COV_IBROM_N1626: { field: false, units: false, measurement: XXX }

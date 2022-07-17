@@ -28,6 +28,7 @@ DAV13-RAW-BAK-TBL1-201809271725-TOA5-DAT-10S:
   data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
+  data_vars_parse_pos_indices: true
   data_vars:
     batt_volt_Min: { field: BV_BAK_T1_35_1, units: false, measurement: _instrumentmetrics }
     LS_T1_35_1: { field: LS_BAK_T1_35_1, units: false, measurement: LS }

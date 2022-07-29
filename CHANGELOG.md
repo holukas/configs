@@ -1,6 +1,13 @@
 # Changelog
 
 
+## v20220729 | 29 Jul 2022
+- `OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN`: Added additional radiation variables
+from parallel measurements that started in June 2022.
+- `DAV11-RAW-TBL2-201804051700-TOA5-DAT-1H`: Changed `units` and `gain` for SWC variables
+to `units: "%", gain: 100`.
+
+
 ## v20220717 | 17 Jul 2022
 - Added new setting `data_vars_parse_pos_indices` to filegroups settings. If `true`, the
 script tries to parse the horizontal, vertical and replicate indices from the variable

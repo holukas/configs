@@ -1,6 +1,11 @@
 # Changelog
 
 
+## v20220816 and v20220817 | 17 Aug 2022
+- Updated PA info in `DAV10-RAW-PA-202112020000-TOA5-DAT-10S` and
+`DAV17-RAW-201807110000-ICOS-PRF-DAT-10S`.
+
+
 ## v20220729 | 29 Jul 2022
 - `OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN`: Added additional radiation variables
 from parallel measurements that started in June 2022.

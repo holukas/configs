@@ -62,7 +62,7 @@ DAV11-RAW-TBL1+-201108250000-TOA5-DAT-10MIN:
     HtFlx_Wm2_Avg: { field: G_FF0_0.02_1, units: false, measurement: G }
     Net_Rad_Avg: { field: NETRAD_T1_0.05_1, units: false, measurement: NETRAD }
     P_1_1_1_Tot: { field: PREC_TOT_T1_20_1, units: false, measurement: PREC }
-    PA_H1_0_2_Avg: { field: PA_H1_0_2, units: false, measurement: PA }
+    PA_H1_0_2_Avg: { field: PA_H1_0_2, units: kPa, gain: 0.001, measurement: PA }  # Pa --> kPa
     PAR_Avg: { field: PPFD_IN_T1_35_1, units: false, measurement: PPFD }
     PsiSoil05_kPa_Avg: { field: WP_FF0_0.05_1, units: kPa, measurement: WP }
     PsiSoil15_kPa_Avg: { field: WP_FF0_0.15_1, units: kPa, measurement: WP }

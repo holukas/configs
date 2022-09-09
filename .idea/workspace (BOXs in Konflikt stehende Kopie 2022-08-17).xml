@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a2818ca-1e6b-4505-9f1f-c04e228261b0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filegroups/raw/ch-dav/17_meteo_profile/DAV17-RAW-201807110000-ICOS-PRF-DAT-10S.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/filegroups/raw/ch-dav/17_meteo_profile/DAV17-RAW-201807110000-ICOS-PRF-DAT-10S.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2APFoAv13Rvx1qc8rMMM8ps3xre" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Dropbox/luhk_work/20 - CODING/22 - POET/configs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Dropbox\luhk_work\20 - CODING\22 - POET\configs\filegroups\raw\ch-lae\11_meteo_hut" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a2818ca-1e6b-4505-9f1f-c04e228261b0" name="Changes" comment="" />
+      <created>1654903486034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654903486034</updated>
+      <workItem from="1654903487345" duration="1080000" />
+      <workItem from="1654947989796" duration="9758000" />
+      <workItem from="1654996138442" duration="13000" />
+      <workItem from="1655024883706" duration="255000" />
+      <workItem from="1655147184425" duration="5105000" />
+      <workItem from="1655205248874" duration="4042000" />
+      <workItem from="1655300280968" duration="2746000" />
+      <workItem from="1655381512438" duration="206000" />
+      <workItem from="1655381729016" duration="287000" />
+      <workItem from="1655382026989" duration="3869000" />
+      <workItem from="1655409465858" duration="1261000" />
+      <workItem from="1655452583785" duration="7367000" />
+      <workItem from="1655581546843" duration="2479000" />
+      <workItem from="1655586944151" duration="2439000" />
+      <workItem from="1655635852359" duration="4285000" />
+      <workItem from="1656021744730" duration="597000" />
+      <workItem from="1656066162482" duration="1365000" />
+      <workItem from="1656159710074" duration="719000" />
+      <workItem from="1656189127483" duration="610000" />
+      <workItem from="1656257574241" duration="61000" />
+      <workItem from="1656273025148" duration="3456000" />
+      <workItem from="1656582252227" duration="1195000" />
+      <workItem from="1656710948203" duration="5083000" />
+      <workItem from="1656799581444" duration="3870000" />
+      <workItem from="1656806637900" duration="1624000" />
+      <workItem from="1656810708571" duration="14000" />
+      <workItem from="1656810910741" duration="522000" />
+      <workItem from="1656970735913" duration="797000" />
+      <workItem from="1657107341656" duration="12455000" />
+      <workItem from="1657180360517" duration="6712000" />
+      <workItem from="1657221939585" duration="6290000" />
+      <workItem from="1657385302926" duration="2930000" />
+      <workItem from="1657488083239" duration="842000" />
+      <workItem from="1657548656537" duration="841000" />
+      <workItem from="1657564491491" duration="2250000" />
+      <workItem from="1657630162328" duration="113000" />
+      <workItem from="1657634097161" duration="3415000" />
+      <workItem from="1657652310581" duration="2226000" />
+      <workItem from="1657694521949" duration="60000" />
+      <workItem from="1657694782460" duration="601000" />
+      <workItem from="1657708012157" duration="1157000" />
+      <workItem from="1657717596920" duration="4795000" />
+      <workItem from="1657786602937" duration="609000" />
+      <workItem from="1657828665396" duration="1840000" />
+      <workItem from="1657868353957" duration="1031000" />
+      <workItem from="1657908459739" duration="1797000" />
+      <workItem from="1657962883176" duration="176000" />
+      <workItem from="1657969406536" duration="1289000" />
+      <workItem from="1658062743397" duration="8478000" />
+      <workItem from="1658087034644" duration="1217000" />
+      <workItem from="1658138977260" duration="991000" />
+      <workItem from="1658173544770" duration="598000" />
+      <workItem from="1658271060325" duration="1738000" />
+      <workItem from="1658416512171" duration="612000" />
+      <workItem from="1658489423434" duration="1321000" />
+      <workItem from="1658516027832" duration="613000" />
+      <workItem from="1658529916974" duration="9000" />
+      <workItem from="1659095796469" duration="2105000" />
+      <workItem from="1659566565747" duration="627000" />
+      <workItem from="1659990066070" duration="608000" />
+      <workItem from="1660216109292" duration="1803000" />
+      <workItem from="1660256290795" duration="598000" />
+      <workItem from="1660343651589" duration="11000" />
+      <workItem from="1660512723976" duration="1192000" />
+      <workItem from="1660551017725" duration="594000" />
+      <workItem from="1660661978238" duration="555000" />
+      <workItem from="1660664912457" duration="3651000" />
+      <workItem from="1660679991248" duration="628000" />
+      <workItem from="1660681951772" duration="894000" />
+      <workItem from="1660691707368" duration="487000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

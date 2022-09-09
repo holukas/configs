@@ -47,8 +47,18 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
     Precipitation_Tot: { field: PREC_TOT_M3_2.5_1, units: false, measurement: PREC }
     RECORD: { field: RECORD_BOX4_0_1, units: false, measurement: _instrumentmetrics }
     rH_Avg: { field: RH_M3_2.5_1, units: false, measurement: RH }
+
+    # These two RHs were wrongly labelled as M1:
+    RH_M1_2x5_1_Avg: { field: RH_M3_2.5_1, units: false, measurement: RH }
+    RH_M1_2x5_1_Std: { field: RH_SD_M3_2.5_1, units: false, measurement: _SD }
+
     SoilTemp_Avg: { field: TS_M3_0.05_1, units: false, measurement: TS }
     # Station: { field: Station_X_X_X, units: false, measurement: XXX }
+
+    # These two TAs were wrongly labelled as M1:
+    TA_M1_2x5_1_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
+    TA_M1_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: false, measurement: _SD }
+
     WindDir_Avg: { field: WD_M3_X_1, units: false, measurement: WD }
     # Additional wind dirs WVT:
     WindDir_D1_WVT: { field: WD_D1_M3_X_1, units: false, measurement: _instrumentmetrics }

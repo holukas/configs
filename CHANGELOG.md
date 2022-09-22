@@ -1,5 +1,11 @@
 # Changelog
 
+## v20220922 | 22 Sep 2022
+
+### Changes to CH-LAE filetype
+
+- Adjusted variables in `LAE11-RAW-TBL1-202205311130-TOA5-DAT-30MIN.yaml`
+
 ## v20220921 | 21 Sep 2022
 
 ### Additional changes to CH-AWS filetypes

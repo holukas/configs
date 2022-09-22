@@ -1,6 +1,14 @@
 # Changelog
 
-- ## v20220909 | 9 Sep 2022
+## v20220921 | 21 Sep 2022
+
+### Additional changes to CH-AWS filetypes
+
+- Adjusted variable naming in `AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN.yaml`
+- Adjusted variable naming in `AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN.yaml`
+- Adjusted variable naming in `AWS15-RAW-201911130000-TOA5-DAT-1MIN.yaml`
+
+## v20220909 | 9 Sep 2022
 
 ### Changes to CH-AWS filetypes
 

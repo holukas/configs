@@ -2,7 +2,7 @@
 # 15_meteo_snowheight
 
 # This is mast 1 (M1).
-# The correct grassland floor is GF2.
+# The correct grassland floor for this location is GF2.
 
 # Due to the empty unit row more lines have to be skipped than for regular TOA5 files,
 # i.e. in the setting 'data_skiprows' the 2nd row has also to be skipped [ 0, 2, 3 ].
@@ -45,6 +45,7 @@ AWS15-RAW-201911130000-TOA5-DAT-1MIN:
   data_vars:
     D_SNOW_1_1_1: { field: D_SNOW_GF2_0_1, units: false, measurement: D_SNOW }
     D_SNOW_GF0_0_1: { field: D_SNOW_GF2_0_1, units: false, measurement: D_SNOW }
+    D_SNOW_GF2_0_1: { field: D_SNOW_GF2_0_1, units: false, measurement: D_SNOW }
     DIAG_SR50AT: { field: DIAG_SR50AT_GF2_0_1, units: false, measurement: _instrumentmetrics }
     DIST_1: { field: DIST_1_GF2_0_1, units: false, measurement: D_SNOW }
     DIST_2: { field: DIST_2_GF2_0_1, units: false, measurement: D_SNOW }
@@ -53,7 +54,8 @@ AWS15-RAW-201911130000-TOA5-DAT-1MIN:
     ERROR_2: { field: ERROR_2_GF2_0_1, units: false, measurement: _instrumentmetrics }
     ERROR_3: { field: ERROR_3_GF2_0_1, units: false, measurement: _instrumentmetrics }
     QUALITY_SR50AT: { field: QUALITY_SR50AT_GF2_0_1, units: false, measurement: _instrumentmetrics }
-
     # The correct mast for TA is M1 (was wrong in the past)
     TA_M1_1.8_1: { field: TA_M1_1.8_1, units: degC, measurement: TA }
     TA_M3_2.5_1: { field: TA_M1_2.5_1, units: degC, measurement: TA }
+    TA_M1_2.5_1: { field: TA_M1_2.5_1, units: degC, measurement: TA }
+

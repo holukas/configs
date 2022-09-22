@@ -1,6 +1,9 @@
 # CH-AWS
 # 11_meteo_valley
 #
+# This is mast 3 (M3).
+# The correct grassland floor for this location is GF1.
+#
 #  AWS valley bottom meteo station in approx. 1200m distance to the EC tower:
 #   the agrometeo station that Pavel Michna from University of Bern installed in 2005
 # This is mast 3 (M3), but in earlier records data were stored as mast 1 (M1).
@@ -41,28 +44,39 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
     AirTemp_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
     Batt_volt_Min: { field: BV_BOX4_0_1, units: false, measurement: _instrumentmetrics }
     GlobRad_Avg: { field: SW_IN_M3_2.5_1, units: false, measurement: SW }
-    GrassTemp_Avg: { field: TG_M3_0.05_1, units: false, measurement: TG }
-    LeafWet_1_Avg: { field: LEAF_WET_M3_X_1, units: false, measurement: LEAF_WET }
-    LeafWet_2_Avg: { field: LEAF_WET_M3_X_2, units: false, measurement: LEAF_WET }
+    SW_IN_M3_2x5_1_Avg: { field: SW_IN_M3_2.5_1, units: false, measurement: SW }
+    GrassTemp_Avg: { field: TG_GF1_0.05_1, units: false, measurement: TG }
+    TG_GF1_0x05_1_Avg: { field: TG_GF1_0.05_1, units: false, measurement: TG }
+    LeafWet_1_Avg: { field: LEAF_WET_GF1_0.05_1, units: false, measurement: LEAF_WET }
+    LeafWet_2_Avg: { field: LEAF_WET_GF1_0.05_2, units: false, measurement: LEAF_WET }
+    LEAF_WET_GF1_0x05_1_Avg: { field: LEAF_WET_GF1_0.05_1, units: false, measurement: LEAF_WET }
+    LEAF_WET_GF1_0x05_2_Avg: { field: LEAF_WET_GF1_0.05_2, units: false, measurement: LEAF_WET }
     Precipitation_Tot: { field: PREC_TOT_M3_2.5_1, units: false, measurement: PREC }
+    P_M3_2x5_1_Tot: { field: PREC_TOT_M3_2.5_1, units: false, measurement: PREC }
     RECORD: { field: RECORD_BOX4_0_1, units: false, measurement: _instrumentmetrics }
     rH_Avg: { field: RH_M3_2.5_1, units: false, measurement: RH }
-
+    PTemp_C: { field: PTemp_C_M3_X_1, units: false, measurement: XXX }
+    RH_M3_2x5_1_Avg: { field: RH_M3_2.5_1, units: false, measurement: RH }
+    RH_M3_2x5_1_Std: { field: RH_SD_M3_2.5_1, units: false, measurement: _SD }
     # These two RHs were wrongly labelled as M1:
     RH_M1_2x5_1_Avg: { field: RH_M3_2.5_1, units: false, measurement: RH }
     RH_M1_2x5_1_Std: { field: RH_SD_M3_2.5_1, units: false, measurement: _SD }
-
-    SoilTemp_Avg: { field: TS_M3_0.05_1, units: false, measurement: TS }
+    SoilTemp_Avg: { field: TS_GF1_0.1_1, units: false, measurement: TS }
+    TS_GF1_0x1_1_Avg: { field: TS_GF1_0.1_1, units: false, measurement: TS }
     # Station: { field: Station_X_X_X, units: false, measurement: XXX }
-
+    TA_M3_2x5_1_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
+    TA_M3_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: false, measurement: _SD }
     # These two TAs were wrongly labelled as M1:
     TA_M1_2x5_1_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
     TA_M1_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: false, measurement: _SD }
-
-    WindDir_Avg: { field: WD_M3_X_1, units: false, measurement: WD }
+    WindDir_Avg: { field: WD_M3_3.5_1, units: false, measurement: WD }
+    WD_M3_3x5_1_Avg: { field: WD_M3_3.5_1, units: false, measurement: WD }
     # Additional wind dirs WVT:
-    WindDir_D1_WVT: { field: WD_D1_M3_X_1, units: false, measurement: _instrumentmetrics }
-    WindDir_SD1_WVT: { field: WD_M3_X_1, units: false, measurement: _SD }
+    WindDir_D1_WVT: { field: WD_D1_WVT_M3_3.5_1, units: false, measurement: WD }
+    WD_M3_3x5_1_D1_WVT: { field: WD_D1_WVT_M3_3.5_1, units: false, measurement: WD }
+    WindDir_SD1_WVT: { field: WD_SD1_WVT_M3_3.5_1, units: false, measurement: WD }
+    WD_M3_3x5_1_SD1_WVT: { field: WD_SD1_WVT_M3_3.5_1, units: false, measurement: WD }
     WindSpeed_Avg: { field: WS_M3_X_1, units: false, measurement: WS }
+    WS_M3_3x5_1_Avg: { field: WS_M3_3.5_1, units: false, measurement: WS }
     # This seems to be a duplicate of WindSpeed_Avg:
     # WS_ms_S_WVT: { field: WS_M3_X_2, units: false, measurement: WS }

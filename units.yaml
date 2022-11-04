@@ -20,6 +20,8 @@ Deg C: degC
 deg from north: false
 "[deg_from_north]": deg from north
 dS.m-1: ds m-1
+"dS/m": ds m-1
+
 
 # F
 flag: false

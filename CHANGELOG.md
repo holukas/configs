@@ -1,5 +1,9 @@
 # Changelog
 
+## v20221104 | 4 Nov 2022
+
+- Added filetype `OE210-RAW-TBL2-202002112120-TOA5-DAT-10MIN`
+
 ## v20220922 | 22 Sep 2022
 
 ### Changes to CH-LAE filetype

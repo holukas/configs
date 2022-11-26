@@ -1,0 +1,53 @@
+# CH-DAV
+# 10_meteo
+
+
+DAV10-RAW-RAD-200612200949-A-30MIN:
+  # These are radiometer files
+  # - Does not have varnames in header, starts w/ data records
+  # - Timestamp needs to be built from DOY
+  # - Is often irregular (check *data_keep_good_rows* option)
+  # - data_keep_good_rows: [ 0, 123 ] --> 123 is good data
+  # - *data_vars* info used from file: grasslandserver.ethz.ch/export/home/davos/config/config-rad.header
+  # First file: radiometer2006122009.a49
+  # Last file:  radiometer2007041714.a03 (mixture of 30MIN records until row#10014 and 1MIN records starting #10015)
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2006-12-20 09:49:00
+  filetype_valid_to: 2007-04-17 14:03:00
+  filetype_id: radiometer*.a*
+  filetype_dateparser: radiometer%Y%m%d%H.a%M
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 30T
+  data_skiprows: false
+  data_headerrows: false
+  data_index_col: -9999
+  data_parse_dates: false
+  data_date_parser: false
+  data_build_timestamp: "YEAR+DOY+TIME"
+  # If 123 (int) is in the first column (index 0), the data row is good, otherwise bad data
+  data_keep_good_rows: [ 0, 123 ]
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_mangle_dupe_cols: true
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    # Since this filetype does not have column names in the data,
+    # the sequence of the variables given here is IMPORTANT!
+    # The variable names are built from this sequence and therefore
+    # the sequence must no be changed.
+    ID: { field: ID_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    YEAR: { field: XXX, units: XXX, gain: XXX, measurement: XXX }
+    DOY: { field: XXX, units: XXX, gain: XXX, measurement: XXX }
+    TIME: { field: XXX, units: XXX, gain: XXX, measurement: XXX }
+    Rad_Kin: { field: SW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
+    Rad_Kout: { field: SW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
+    Rad_Lin: { field: LW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
+    Rad_Lout: { field: LW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
+    Rad_T_CNR1: { field: T_RAD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    Rad_Batt_V: { field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    Rad_CR10_Temp: { field: T_LOGGER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }

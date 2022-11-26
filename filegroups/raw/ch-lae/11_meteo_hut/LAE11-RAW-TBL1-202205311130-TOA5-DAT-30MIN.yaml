@@ -2,6 +2,15 @@
 # 11_meteo_hut
 #
 # This filetype records data now in 30MIN resolution (was 1MIN before).
+#
+# Info from AS, regarding the measurement depth of MPS02H_T_Avg(1) etc sensors:
+#   Okay. So I cross-checked the MPS02H_T_Avg(1) [also 2, 3, 4, and 5} in the meteo_hut data
+#   in the archive server for random 10 dates (path- /archive/FluxData/CH-LAE_Laegeren/11_meteo_hut/2012/08)
+#   with data that Nadine has archived in her dropbox folder as part of her final PhD data:
+#   (path- P:/Dropboxes/Alumni/Nadine Brinkmann/FOR ARCHIVING/Secondary Data/#1 CHAPTER/CH-LAE.2016.Brinkmann.SOIL.csv).
+#   The data matched of MPS02H_T_Avg(1)/(2)/(3)/(4)/(5) { in meteo_hut archive}matches with SWP5/10/15/20/30 {in Nadine’s file}.
+#   To me it seems like a mistake in the depth entry by whoever did it back then.
+
 
 LAE11-RAW-TBL1-202205311130-TOA5-DAT-30MIN:
   # TOA5
@@ -31,56 +40,56 @@ LAE11-RAW-TBL1-202205311130-TOA5-DAT-30MIN:
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars:
-    RECORD: { field: RECORD_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    MPS02_TEMP_DISABLE_FLAG_Max: { field: MPS02_TEMP_DISABLE_FLAG_Max_X_X_X, units: false, gain: 1, measurement: _instrumentmetrics }
     Batt_Volt_Avg: { field: BV_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, gain: 1, measurement: XXX }
-    T109Dev2_Avg: { field: T109Dev2_Avg_X_X_X, units: false, gain: 1, measurement: XXX }
-    D8003_N150_Avg: { field: DENDRO_TREE8003_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8004_N150_Avg: { field: DENDRO_TREE8004_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8005_N150_Avg: { field: DENDRO_TREE8005_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8006_N150_Avg: { field: DENDRO_TREE8006_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8007_N150_Avg: { field: DENDRO_TREE8007_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8008_N150_Avg: { field: DENDRO_TREE8008_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8009_N150_Avg: { field: DENDRO_TREE8009_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8015_N150_Avg: { field: DENDRO_TREE8015_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8010_N150_Avg: { field: DENDRO_TREE8010_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8011_N150_Avg: { field: DENDRO_TREE8011_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    D8012_N150_Avg: { field: DENDRO_TREE8012_1.3_N150, units: false, gain: 1, measurement: DENDRO }
-    MPS02H1_P_Avg(1): { field: SWP_H1_X_1, units: false, gain: 1, measurement: SWP } #todo
-    MPS02H1_P_Avg(2): { field: SWP_H1_X_2, units: false, gain: 1, measurement: SWP } #todo
-    MPS02H1_P_Avg(3): { field: SWP_H1_X_3, units: false, gain: 1, measurement: SWP } #todo
-    MPS02H1_P_Avg(4): { field: SWP_H1_X_4, units: false, gain: 1, measurement: SWP } #todo
-    MPS02H1_P_Avg(5): { field: SWP_H1_X_5, units: false, gain: 1, measurement: SWP } #todo
-    MPS02H1_T_Avg(1): { field: TS_H1_X_1, units: false, gain: 1, measurement: TS } #todo
-    MPS02H1_T_Avg(2): { field: TS_H1_X_2, units: false, gain: 1, measurement: TS } #todo
-    MPS02H1_T_Avg(3): { field: TS_H1_X_3, units: false, gain: 1, measurement: TS } #todo
-    MPS02H1_T_Avg(4): { field: TS_H1_X_4, units: false, gain: 1, measurement: TS } #todo
-    MPS02H1_T_Avg(5): { field: TS_H1_X_5, units: false, gain: 1, measurement: TS } #todo
-    DNTP_iDL_H1_0_1: { field: DNTP_iDL_H1_0_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    BV_iDL_H1_0_1: { field: BV_iDL_H1_0_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    Batt_Volt_Std: { field: Batt_Volt_Std_X_X_X, units: false, gain: 1, measurement: XXX }
-    PTemp_C_Std: { field: PTemp_C_Std_X_X_X, units: false, gain: 1, measurement: XXX }
-    T109Dev2_Std: { field: T109Dev2_Std_X_X_X, units: false, gain: 1, measurement: XXX }
-    D8003_N150_Std: { field: DENDRO_SD_TREE8003_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8004_N150_Std: { field: DENDRO_SD_TREE8004_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8005_N150_Std: { field: DENDRO_SD_TREE8005_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8006_N150_Std: { field: DENDRO_SD_TREE8006_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8007_N150_Std: { field: DENDRO_SD_TREE8007_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8008_N150_Std: { field: DENDRO_SD_TREE8008_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8009_N150_Std: { field: DENDRO_SD_TREE8009_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8015_N150_Std: { field: DENDRO_SD_TREE8015_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8010_N150_Std: { field: DENDRO_SD_TREE8010_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8011_N150_Std: { field: DENDRO_SD_TREE8011_1.3_N150, units: false, gain: 1, measurement: _SD }
-    D8012_N150_Std: { field: DENDRO_SD_TREE8012_1.3_N150, units: false, gain: 1, measurement: _SD }
-    MPS02H1_P_Std(1): { field: SWP_SD_H1_X_1, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_P_Std(2): { field: SWP_SD_H1_X_2, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_P_Std(3): { field: SWP_SD_H1_X_3, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_P_Std(4): { field: SWP_SD_H1_X_4, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_P_Std(5): { field: SWP_SD_H1_X_5, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_T_Std(1): { field: TS_SD_H1_X_1, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_T_Std(2): { field: TS_SD_H1_X_2, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_T_Std(3): { field: TS_SD_H1_X_3, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_T_Std(4): { field: TS_SD_H1_X_4, units: false, gain: 1, measurement: _SD } #todo
-    MPS02H1_T_Std(5): { field: TS_SD_H1_X_5, units: false, gain: 1, measurement: _SD } #todo
-
+    Batt_Volt_Std: { field: Batt_Volt_Std_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
+    BV_iDL_H1_0_1: { field: BV_iDL_H1_0_1_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
+    # DENDRO measured at breast height (assumed 1.35m)
+    D8003_N150_Avg: { field: DENDRO_TREE8003_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8003_N150_Std: { field: DENDRO_SD_TREE8003_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8004_N150_Avg: { field: DENDRO_TREE8004_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8004_N150_Std: { field: DENDRO_SD_TREE8004_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8005_N150_Avg: { field: DENDRO_TREE8005_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8005_N150_Std: { field: DENDRO_SD_TREE8005_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8006_N150_Avg: { field: DENDRO_TREE8006_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8006_N150_Std: { field: DENDRO_SD_TREE8006_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8007_N150_Avg: { field: DENDRO_TREE8007_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8007_N150_Std: { field: DENDRO_SD_TREE8007_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8008_N150_Avg: { field: DENDRO_TREE8008_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8008_N150_Std: { field: DENDRO_SD_TREE8008_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8009_N150_Avg: { field: DENDRO_TREE8009_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8009_N150_Std: { field: DENDRO_SD_TREE8009_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8010_N150_Avg: { field: DENDRO_TREE8010_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8010_N150_Std: { field: DENDRO_SD_TREE8010_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8011_N150_Avg: { field: DENDRO_TREE8011_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8011_N150_Std: { field: DENDRO_SD_TREE8011_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8012_N150_Avg: { field: DENDRO_TREE8012_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8012_N150_Std: { field: DENDRO_SD_TREE8012_1.35_N150, units: false, gain: 1, measurement: _SD }
+    D8015_N150_Avg: { field: DENDRO_TREE8015_1.35_N150, units: false, gain: 1, measurement: DENDRO }
+    D8015_N150_Std: { field: DENDRO_SD_TREE8015_1.35_N150, units: false, gain: 1, measurement: _SD }
+    DNTP_iDL_H1_0_1: { field: DNTP_iDL_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    MPS02_TEMP_DISABLE_FLAG_Max: { field: MPS02_TEMP_DISABLE_FLAG_MAX_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    MPS02H1_P_Avg(1): { field: SWP_H1_0.05_1, units: false, gain: 1, measurement: SWP }
+    MPS02H1_P_Avg(2): { field: SWP_H1_0.1_1, units: false, gain: 1, measurement: SWP }
+    MPS02H1_P_Avg(3): { field: SWP_H1_0.15_1, units: false, gain: 1, measurement: SWP }
+    MPS02H1_P_Avg(4): { field: SWP_H1_0.2_1, units: false, gain: 1, measurement: SWP }
+    MPS02H1_P_Avg(5): { field: SWP_H1_0.3_1, units: false, gain: 1, measurement: SWP }
+    MPS02H1_P_Std(1): { field: SWP_SD_H1_0.05_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_P_Std(2): { field: SWP_SD_H1_0.1_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_P_Std(3): { field: SWP_SD_H1_0.15_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_P_Std(4): { field: SWP_SD_H1_0.2_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_P_Std(5): { field: SWP_SD_H1_0.3_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_T_Avg(1): { field: TS_H1_0.05_1, units: false, gain: 1, measurement: TS }
+    MPS02H1_T_Avg(2): { field: TS_H1_0.1_1, units: false, gain: 1, measurement: TS }
+    MPS02H1_T_Avg(3): { field: TS_H1_0.15_1, units: false, gain: 1, measurement: TS }
+    MPS02H1_T_Avg(4): { field: TS_H1_0.2_1, units: false, gain: 1, measurement: TS }
+    MPS02H1_T_Avg(5): { field: TS_H1_0.3_1, units: false, gain: 1, measurement: TS }
+    MPS02H1_T_Std(1): { field: TS_SD_H1_0.05_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_T_Std(2): { field: TS_SD_H1_0.1_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_T_Std(3): { field: TS_SD_H1_0.15_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_T_Std(4): { field: TS_SD_H1_0.2_1, units: false, gain: 1, measurement: _SD }
+    MPS02H1_T_Std(5): { field: TS_SD_H1_0.3_1, units: false, gain: 1, measurement: _SD }
+    PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
+    PTemp_C_Std: { field: PTemp_C_Std_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
+    RECORD: { field: RECORD_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    T109Dev2_Avg: { field: T109Dev2_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
+    T109Dev2_Std: { field: T109Dev2_Std_X_X_X, units: false, gain: 1, measurement: XXX }  #todo

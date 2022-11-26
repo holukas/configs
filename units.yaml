@@ -74,6 +74,7 @@ Pa: false
 PA: Pa
 ppm: false
 Percent: "%"
+perc: "%"
 
 # R
 RN: "record number"

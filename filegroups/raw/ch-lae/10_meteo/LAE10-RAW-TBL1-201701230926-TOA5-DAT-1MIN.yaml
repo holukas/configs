@@ -58,7 +58,7 @@ LAE10-RAW-TBL1-201701230926-TOA5-DAT-1MIN:
     PPFD_OUT_T1_47_2_Std: { field: PPFD_OUT_SD_T1_47_2, units: false, measurement: _SD }
     PREC_T1_47_1_Std: { field: PREC_SD_T1_47_1, units: false, measurement: _SD }
     PREC_T1_47_1_Tot: { field: PREC_TOT_T1_47_1, units: false, measurement: PREC }
-    RECORD: { field: RECORD_X_X_X, units: false, measurement: _instrumentmetrics }
+    RECORD: { field: RECORD_T1_0_1, units: false, measurement: _instrumentmetrics }
     RH_T1_47_1_Avg: { field: RH_T1_47_1, units: false, measurement: RH }
     RH_T1_47_1_Std: { field: RH_SD_T1_47_1, units: false, measurement: _SD }
     SW_IN_T1_47_1_Avg: { field: SW_IN_T1_47_1, units: false, measurement: SW }

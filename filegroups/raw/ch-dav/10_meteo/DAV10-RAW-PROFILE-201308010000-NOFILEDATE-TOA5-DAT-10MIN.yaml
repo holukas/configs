@@ -1,0 +1,200 @@
+# CH-DAV
+# 10_meteo
+
+
+DAV10-RAW-PROFILE-201308010000-NOFILEDATE-TOA5-DAT-10MIN:
+  # TOA5
+  # This file contains also profile measurements.
+  # Has same structure as DAV10-RAW-PROFILE-201108251403-TOA5-DAT-10MIN, however,
+  # files always have the name Davos-Logger.dat, without a filedate in the filename.
+  # Better to have this as a separate filetype due to the special *filetype_dateparser*
+  # setting (*get_from_filepath*).
+  # Originally started with meteo*.dat names, then was renamed to Davos-Logger.dat
+  # (without a date in the filename!).
+  # Some heights for the cryptically named profile vars can be found in the file:
+  # - grasslandserver/export/home/davos/config/config-co2.header.bis20130614
+  # These files have the same structure:
+  #   First meteo*.dat file: meteo201108251403.dat
+  #   Last meteo*.dat file:  meteo201301010003.dat
+  #   First Davos-Logger.dat file: Davos-Logger.dat (in 2013-08)
+  #   Last Davos-Logger.dat file:  Davos-Logger.dat (in 2015-07)
+  # Here, only the Davos-Logger.dat files are covered. There is a separate filetype
+  # for the meteo*.dat files (DAV10-RAW-PROFILE-201108251403-TOA5-DAT-10MIN).
+  # First file: Davos-Logger.dat (in 2013-08) (the very first Davos-Logger.dat file)
+  # Last file: Davos-Logger.dat (in 2015-07) (the very last Davos-Logger.dat file)
+  can_be_used_by_filescanner: true
+  # The *filetype_valid_from* and *filetype_valid_to* settings were chosen to
+  # include all Davos-Logger.dat files.
+  filetype_valid_from: 2013-08-01 00:00:00
+  filetype_valid_to: 2015-07-31 00:00:00
+  filetype_id: 'Davos-Logger.dat'
+  # Note: in *filetype_dateparser* the *get_from_filepath* setting means that
+  # the script tries to get some filedate info from the filepath. This is
+  # necessary for the Davos-Logger.dat files, which do not have a filedate in
+  # their filename.
+  filetype_dateparser: get_from_filepath
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 10T
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_mangle_dupe_cols: true
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    Band_147_Avg: { field: BAND_TREE147_1_1, units: false, measurement: BAND }
+    Band_148_Avg: { field: BAND_TREE148_1_1, units: false, measurement: BAND }
+    Band_Rock_Avg: { field: BAND_ROCK_1_1, units: false, gain: 1, measurement: BAND }
+    Baro_Avg: { field: Baro_Avg_X_X_X, units: false, gain: 1, measurement: XXX }
+    Batt_Volt_Avg: { field: BV_FF0_0_1, units: false, measurement: _instrumentmetrics }
+    BodenFeu05_Avg: { field: SWC_FF0_0.05_1, units: "%", gain: 100, measurement: SWC }
+    BodenFeu15_Avg: { field: SWC_FF0_0.15_1, units: "%", gain: 100, measurement: SWC }
+    BodenFeu50_Avg: { field: SWC_FF0_0.5_1, units: "%", gain: 100, measurement: SWC }
+    BodenTemp05_C_Avg: { field: TS_FF0_0.05_1, units: false, measurement: TS }
+    BodenTemp15_C_Avg: { field: TS_FF0_0.15_1, units: false, measurement: TS }
+    BodenTemp50_C_Avg: { field: TS_FF0_0.5_1, units: false, measurement: TS }
+    CO2(1): { field: CO2_PRF_T1_35_1, units: false, gain: 1, measurement: CO2 }
+    CO2(2): { field: CO2_PRF_T1_25_1, units: false, gain: 1, measurement: CO2 }
+    CO2(3): { field: CO2_PRF_T1_20_1, units: false, gain: 1, measurement: CO2 }
+    CO2(4): { field: CO2_PRF_T1_10_1, units: false, gain: 1, measurement: CO2 }
+    CO2(5): { field: CO2_PRF_T1_2_1, units: false, gain: 1, measurement: CO2 }
+    CO2(6): { field: CO2_PRF_T1_X_1, units: false, gain: 1, measurement: CO2 }
+    CO2(7): { field: CO2_PRF_T1_X_2, units: false, gain: 1, measurement: CO2 }
+    CO2(8): { field: CO2_PRF_T1_X_3, units: false, gain: 1, measurement: CO2 }
+    CO2(9): { field: CO2_PRF_T1_X_4, units: false, gain: 1, measurement: CO2 }
+    CO2(10): { field: CO2_PRF_T1_X_5, units: false, gain: 1, measurement: CO2 }
+    CO2(11): { field: CO2_PRF_T1_X_6, units: false, gain: 1, measurement: CO2 }
+    CO2(12): { field: CO2_PRF_T1_X_7, units: false, gain: 1, measurement: CO2 }
+    D1_150_Avg: { field: DENDRO_TREE150_1.3_1, units: false, measurement: DENDRO }
+    D2_147_Avg: { field: DENDRO_TREE147_1.3_1, units: false, measurement: DENDRO }
+    D3_148_Avg: { field: DENDRO_TREE148_1.3_1, units: false, measurement: DENDRO }
+    D4_37_Avg: { field: DENDRO_TREE37_1.3_1, units: false, measurement: DENDRO }
+    D5_296_Avg: { field: DENDRO_TREE296_1.3_1, units: false, measurement: DENDRO }
+    D6_411N_Avg: { field: DENDRO_TREE411_1.3_N, units: false, measurement: DENDRO }
+    D7_1_Avg: { field: DENDRO_TREE1_1.3_1, units: false, measurement: DENDRO }
+    D8_34_Avg: { field: DENDRO_TREE34_1.3_1, units: false, measurement: DENDRO }
+    D9_410_Avg: { field: DENDRO_TREE410_1.3_1, units: false, measurement: DENDRO }
+    D10_30_Avg: { field: DENDRO_TREE30_1.3_1, units: false, measurement: DENDRO }
+    D11_410Xylem_Avg: { field: DENDRO_XYLEM_TREE410_1_1, units: false, measurement: DENDRO }
+    D12_411RootS_Avg: { field: DENDRO_RootS_TREE411_1_1, units: false, measurement: DENDRO }
+    #    D13_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
+    #    D14_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
+    #    D15_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
+    #    D16_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
+    #    D17_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
+    #    D18_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
+    H2O(1): { field: H2O_PRF_T1_35_1, units: false, gain: 1, measurement: H2O }
+    H2O(2): { field: H2O_PRF_T1_25_1, units: false, gain: 1, measurement: H2O }
+    H2O(3): { field: H2O_PRF_T1_20_1, units: false, gain: 1, measurement: H2O }
+    H2O(4): { field: H2O_PRF_T1_10_1, units: false, gain: 1, measurement: H2O }
+    H2O(5): { field: H2O_PRF_T1_2_1, units: false, gain: 1, measurement: H2O }
+    H2O(6): { field: H2O_PRF_T1_X_1, units: false, gain: 1, measurement: H2O }
+    H2O(7): { field: H2O_PRF_T1_X_2, units: false, gain: 1, measurement: H2O }
+    H2O(8): { field: H2O_PRF_T1_X_3, units: false, gain: 1, measurement: H2O }
+    H2O(9): { field: H2O_PRF_T1_X_4, units: false, gain: 1, measurement: H2O }
+    H2O(10): { field: H2O_PRF_T1_X_5, units: false, gain: 1, measurement: H2O }
+    H2O(11): { field: H2O_PRF_T1_X_6, units: false, gain: 1, measurement: H2O }
+    H2O(12): { field: H2O_PRF_T1_X_7, units: false, gain: 1, measurement: H2O }
+    HtFlx_Wm2_Avg: { field: G_FF0_0.02_1, units: false, measurement: G }
+    IRGA_Press(1): { field: P_IRGA_PRF_T1_35_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(2): { field: P_IRGA_PRF_T1_25_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(3): { field: P_IRGA_PRF_T1_20_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(4): { field: P_IRGA_PRF_T1_10_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(5): { field: P_IRGA_PRF_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(6): { field: P_IRGA_PRF_T1_X_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(7): { field: P_IRGA_PRF_T1_X_2, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(8): { field: P_IRGA_PRF_T1_X_3, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(9): { field: P_IRGA_PRF_T1_X_4, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(10): { field: P_IRGA_PRF_T1_X_5, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(11): { field: P_IRGA_PRF_T1_X_6, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Press(12): { field: P_IRGA_PRF_T1_X_7, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(1): { field: T_IRGA_PRF_T1_35_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(2): { field: T_IRGA_PRF_T1_25_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(3): { field: T_IRGA_PRF_T1_20_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(4): { field: T_IRGA_PRF_T1_10_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(5): { field: T_IRGA_PRF_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(6): { field: T_IRGA_PRF_T1_X_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(7): { field: T_IRGA_PRF_T1_X_2, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(8): { field: T_IRGA_PRF_T1_X_3, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(9): { field: T_IRGA_PRF_T1_X_4, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(10): { field: T_IRGA_PRF_T1_X_5, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(11): { field: T_IRGA_PRF_T1_X_6, units: false, gain: 1, measurement: _instrumentmetrics }
+    IRGA_Temp(12): { field: T_IRGA_PRF_T1_X_7, units: false, gain: 1, measurement: _instrumentmetrics }
+    Net_Rad_Avg: { field: NETRAD_T1_0.05_1, units: false, gain: 1, measurement: NETRAD }
+    PAR_Avg: { field: PPFD_IN_T1_35_1, units: false, measurement: PPFD }
+    PsiSoil05_kPa_Avg: { field: WP_FF0_0.05_1, units: kPa, measurement: WP }
+    PsiSoil15_kPa_Avg: { field: WP_FF0_0.15_1, units: kPa, measurement: WP }
+    PsiSoil45_kPa_Avg: { field: WP_FF0_0.45_1, units: kPa, measurement: WP }
+    PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, measurement: XXX }
+    Rad_Avg: { field: RAD_X_X_X, units: false, gain: 1, measurement: XXX }
+    Rain: { field: PREC_TOT_T1_25_1, units: false, measurement: PREC }
+    RECORD: { field: RECORD_H0_0_1, units: false, measurement: _instrumentmetrics }
+    RelH_1m_Avg: { field: RH_PRF_T1_1_1, units: false, gain: 1, measurement: RH }
+    RelH_2m_Avg: { field: RH_PRF_T1_2_1, units: false, gain: 1, measurement: RH }
+    RelH_10m_Avg: { field: RH_PRF_T1_10_1, units: false, gain: 1, measurement: RH }
+    RelH_20m_Avg: { field: RH_PRF_T1_20_1, units: false, gain: 1, measurement: RH }
+    RelH_25m_Avg: { field: RH_PRF_T1_25_1, units: false, gain: 1, measurement: RH }
+    RelH_35m_Avg: { field: RH_PRF_T1_35_1, units: false, gain: 1, measurement: RH }
+    Sap_1N_Avg: { field: SAPFLOW_TREE1_1_N, units: false, measurement: SAPFLOW }
+    Sap_1S_Avg: { field: SAPFLOW_TREE1_1_S, units: false, measurement: SAPFLOW }
+    Sap_30N_Avg: { field: SAPFLOW_TREE30_1_N, units: false, measurement: SAPFLOW }
+    Sap_30S_Avg: { field: SAPFLOW_TREE30_1_S, units: false, measurement: SAPFLOW }
+    Sap_33N_Avg: { field: SAPFLOW_TREE33_1_N, units: false, measurement: SAPFLOW }
+    Sap_33S_Avg: { field: SAPFLOW_TREE33_1_S, units: false, measurement: SAPFLOW }
+    Sap_34N_Avg: { field: SAPFLOW_TREE34_1_N, units: false, measurement: SAPFLOW }
+    Sap_34S_Avg: { field: SAPFLOW_TREE34_1_S, units: false, measurement: SAPFLOW }
+    Sap_37N_Avg: { field: SAPFLOW_TREE37_1_N, units: false, measurement: SAPFLOW }
+    Sap_37S_Avg: { field: SAPFLOW_TREE37_1_S, units: false, measurement: SAPFLOW }
+    Sap_147N_Avg: { field: SAPFLOW_TREE147_1_N, units: false, measurement: SAPFLOW }
+    Sap_147S_Avg: { field: SAPFLOW_TREE147_1_S, units: false, measurement: SAPFLOW }
+    Sap_148N_Avg: { field: SAPFLOW_TREE148_1_N, units: false, measurement: SAPFLOW }
+    Sap_148S_Avg: { field: SAPFLOW_TREE148_1_S, units: false, measurement: SAPFLOW }
+    Sap_150N_Avg: { field: SAPFLOW_TREE150_1_N, units: false, measurement: SAPFLOW }
+    Sap_150S_Avg: { field: SAPFLOW_TREE150_1_S, units: false, measurement: SAPFLOW }
+    Sap_296N_Avg: { field: SAPFLOW_TREE296_1_N, units: false, measurement: SAPFLOW }
+    Sap_296S_Avg: { field: SAPFLOW_TREE296_1_S, units: false, measurement: SAPFLOW }
+    Sap_411N_Avg: { field: SAPFLOW_TREE411_1_N, units: false, measurement: SAPFLOW }
+    Sap_411S_Avg: { field: SAPFLOW_TREE411_1_S, units: false, measurement: SAPFLOW }
+    StemCO2_147_100_Avg: { field: CO2_BOLE_TREE147_1_1, units: false, measurement: CO2_BOLE }
+    StemCO2_147_800_Avg: { field: CO2_BOLE_TREE147_8_1, units: false, gain: 1, measurement: CO2_BOLE }
+    StemCO2_147_900_Avg: { field: CO2_BOLE_TREE147_9_1, units: false, measurement: CO2_BOLE }
+    StemCO2_147_Soil_Avg: { field: CO2_BOLE_SOIL_TREE147_0_1, units: false, measurement: CO2_BOLE }
+    StemCO2_148_100_Avg: { field: CO2_BOLE_TREE148_1_1, units: false, measurement: CO2_BOLE }
+    StemCO2_296_100_Avg: { field: CO2_BOLE_TREE296_1_1, units: false, measurement: CO2_BOLE }
+    StemCO2_296_150_Avg: { field: CO2_BOLE_TREE296_1.5_1, units: false, measurement: CO2_BOLE }
+    StemCO2_296_800_Avg: { field: CO2_BOLE_TREE296_8_1, units: false, gain: 1, measurement: CO2_BOLE }
+    StemCO2_296_900_Avg: { field: CO2_BOLE_TREE296_9_1, units: false, measurement: CO2_BOLE }
+    StemCO2_296_Soil_Avg: { field: CO2_BOLE_SOIL_TREE296_0_1, units: false, measurement: CO2_BOLE }
+    StemCO2_411_100_Avg: { field: CO2_BOLE_TREE411_1_1, units: false, measurement: CO2_BOLE }
+    StemCO2_411_600_Avg: { field: CO2_BOLE_TREE411_6_1, units: false, measurement: CO2_BOLE }
+    StemCO2_411_800_Avg: { field: CO2_BOLE_TREE411_8_1, units: false, gain: 1, measurement: CO2_BOLE }
+    StemTC_148_Avg: { field: T_BOLE_TREE148_1_1, units: false, measurement: T_BOLE }
+    StemTC_296_Avg: { field: T_BOLE_TREE296_1_1, units: false, measurement: T_BOLE }
+    SWC1_15_Avg: { field: SWC_H1_0.15_1, units: "%", gain: 100, measurement: SWC }
+    SWC1_50_Avg: { field: SWC_H1_0.5_1, units: "%", gain: 100, measurement: SWC }
+    SWC1_80_Avg: { field: SWC_H1_0.8_1, units: "%", gain: 100, measurement: SWC }
+    SWC2_15_Avg: { field: SWC_H1_0.15_2, units: "%", gain: 100, measurement: SWC }
+    SWC2_50_Avg: { field: SWC_H1_0.5_2, units: "%", gain: 100, measurement: SWC }
+    SWC2_80_Avg: { field: SWC_H1_0.8_2, units: "%", gain: 100, measurement: SWC }
+    SWC3_15_Avg: { field: SWC_H1_0.15_3, units: "%", gain: 100, measurement: SWC }
+    SWC3_50_Avg: { field: SWC_H1_0.5_3, units: "%", gain: 100, measurement: SWC }
+    SWC3_80_Avg: { field: SWC_H1_0.8_3, units: "%", gain: 100, measurement: SWC }
+    SWC4_15_Avg: { field: SWC_H1_0.15_4, units: "%", gain: 100, measurement: SWC }
+    SWC4_50_Avg: { field: SWC_H1_0.5_4, units: "%", gain: 100, measurement: SWC }
+    SWC4_80_Avg: { field: SWC_H1_0.8_4, units: "%", gain: 100, measurement: SWC }
+    Temp_1m_C_Avg: { field: TA_PRF_T1_1_1, units: false, gain: 1, measurement: TA }
+    Temp_2m_C_Avg: { field: TA_PRF_T1_2_1, units: false, gain: 1, measurement: TA }
+    Temp_10m_C_Avg: { field: TA_PRF_T1_10_1, units: false, gain: 1, measurement: TA }
+    Temp_20m_C_Avg: { field: TA_PRF_T1_20_1, units: false, gain: 1, measurement: TA }
+    Temp_25m_C_Avg: { field: TA_PRF_T1_25_1, units: false, gain: 1, measurement: TA }
+    Temp_35m_C_Avg: { field: TA_PRF_T1_35_1, units: false, gain: 1, measurement: TA }

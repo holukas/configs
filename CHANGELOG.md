@@ -1,5 +1,20 @@
 # Changelog
 
+## v20221205 | 5 Dec 2022
+
+### Working on `LAE` filetypes
+
+More `LAE` filetypes needed due to changing time resolutions in files.
+
+- Added filetype `LAE11-RAW-TBL1-201912191250-TOA5-DAT-10MIN`
+- Added filetype `LAE11-RAW-TBL1-202012010000-TOA5-DAT-1MIN`
+- Changed horizontal position index for `RH_T1_2_1_Avg` and `TA_T1_2_1_Avg`: both of them are mislabelled
+  in the raw data files and are correctly at hpos `M1`.
+
+### Working on `DAV` filetypes
+
+- Renamed filetype `DAV10-RAW-TBL1-201802281101-TOA5-DAT-1MIN`. Was wrongly named with `10S` before.
+
 ## v20221126 | 26 Nov 2022
 
 ### Working on `DAV10` filetypes

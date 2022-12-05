@@ -86,8 +86,8 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     RECORD: { field: RECORD_FF1_0_1, units: false, measurement: _instrumentmetrics }
     RH_M1_2_1_Avg: { field: RH_M1_2_1, units: false, measurement: RH }
     RH_M1_2_1_Std: { field: RH_SD_M1_2_1, units: false, measurement: _SD }
-    RH_T1_2_1_Avg: { field: RH_T1_2_1, units: false, measurement: RH }
-    RH_T1_2_1_Std: { field: RH_SD_T1_2_1, units: false, measurement: _SD }
+    RH_T1_2_1_Avg: { field: RH_M1_2_1, units: false, measurement: RH }
+    RH_T1_2_1_Std: { field: RH_SD_M1_2_1, units: false, measurement: _SD }
     # SAPFLOW measured at breast height (assumed 1.35m)
     SAPFLOW_TR2544_1x5_1_Avg: { field: SAPFLOW_TREE2544_1.35_1, units: false, measurement: SAPFLOW }
     SAPFLOW_TR2544_1x5_1_Std: { field: SAPFLOW_SD_TREE2544_1.35_1, units: false, measurement: _SD }
@@ -167,8 +167,8 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     T109Dev3_Avg: { field: T109Dev3_Avg_X_X_X, units: false, measurement: XXX }  #todo
     TA_M1_2_1_Avg: { field: TA_M1_2_1, units: false, measurement: TA }
     TA_M1_2_1_Std: { field: TA_SD_M1_2_1, units: false, measurement: _SD }
-    TA_T1_2_1_Avg: { field: TA_T1_2_1, units: false, measurement: TA }
-    TA_T1_2_1_Std: { field: TA_SD_T1_2_1, units: false, measurement: _SD }
+    TA_T1_2_1_Avg: { field: TA_M1_2_1, units: false, measurement: TA }
+    TA_T1_2_1_Std: { field: TA_SD_M1_2_1, units: false, measurement: _SD }
     TS_FF1_0x1_1_Avg: { field: TS_FF1_0.1_1, units: false, measurement: TS }
     TS_FF1_0x1_1_Std: { field: TS_SD_FF1_0.1_1, units: false, measurement: _SD }
     TS_FF1_0x1_2_Avg: { field: TS_FF1_0.1_2, units: false, measurement: TS }

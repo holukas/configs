@@ -1,7 +1,7 @@
 # CH-LAE
 # 11_meteo_hut
 #
-# Contains PROFILE data.
+# This filetype records data now in 30MIN resolution (was 1MIN before).
 #
 # Info from AS, regarding the measurement depth of MPS02H_T_Avg(1) etc sensors:
 #   Okay. So I cross-checked the MPS02H_T_Avg(1) [also 2, 3, 4, and 5} in the meteo_hut data
@@ -12,18 +12,18 @@
 #   To me it seems like a mistake in the depth entry by whoever did it back then.
 
 
-LAE11-RAW-TBL1-201605301110-TOA5-DAT-1MIN:
+LAE11-RAW-TBL1-201912191250-TOA5-DAT-10MIN:
   # TOA5
-  # First file: CH-LAE_iDL_H1_0_1_TBL1_20160530-1110.dat (first CH-LAE_iDL_H1_0_1_TBL1_*.dat file)
-  # Last file:  CH-LAE_iDL_H1_0_1_TBL1_20220501-0000.dat
+  # First file: CH-LAE_iDL_H1_0_1_TBL1_20191219-1250
+  # Last file:  CH-LAE_iDL_H1_0_1_TBL1_20201101-0000.dat (last file completely in 10MIN)
   can_be_used_by_filescanner: true
-  filetype_valid_from: 2016-05-30 11:10:00
-  filetype_valid_to: 2022-05-01 00:00:00
+  filetype_valid_from: 2019-12-19 12:50:00
+  filetype_valid_to: 2020-11-01 00:00:00
   filetype_id: CH-LAE_iDL_H1_0_1_TBL1_*.dat
   filetype_dateparser: CH-LAE_iDL_H1_0_1_TBL1_%Y%m%d-%H%M.dat
   filetype_gzip: false
   filegroup: 11_meteo_hut
-  data_raw_freq: T
+  data_raw_freq: 10T
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
   data_index_col: 0
@@ -42,19 +42,19 @@ LAE11-RAW-TBL1-201605301110-TOA5-DAT-1MIN:
   data_vars:
     Batt_Volt_Avg: { field: BV_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     Batt_Volt_Std: { field: BV_SD_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    BV_CR1000_INT_T1_47_1: {  field: BV_CR1000_INT_T1_47_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    BV_CR1000_INT_T1_47_1: { field: BV_CR1000_INT_T1_47_1, units: false, gain: 1, measurement: _instrumentmetrics }
     BV_iDL_H1_0_1: { field: BV_iDL_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     # CO2_BOLE *assumed* to be at breast height (assumed 1.35m)
-    CO2St8003_S150_Avg: {  field: CO2_BOLE_TREE8003_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8003_S150_Std: {  field: CO2_BOLE_SD_TREE8003_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8006_S150_Avg: {  field: CO2_BOLE_TREE8006_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8006_S150_Std: {  field: CO2_BOLE_SD_TREE8006_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8008_S150_Avg: {  field: CO2_BOLE_TREE8008_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8008_S150_Std: {  field: CO2_BOLE_SD_TREE8008_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8011_S150_Avg: {  field: CO2_BOLE_TREE8011_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8011_S150_Std: {  field: CO2_BOLE_SD_TREE8011_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8015_S150_Avg: {  field: CO2_BOLE_TREE8015_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8015_S150_Std: {  field: CO2_BOLE_SD_TREE8015_1.35_S150, units: false, gain: 1, measurement: _SD }
+    CO2St8003_S150_Avg: { field: CO2_BOLE_TREE8003_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
+    CO2St8003_S150_Std: { field: CO2_BOLE_SD_TREE8003_1.35_S150, units: false, gain: 1, measurement: _SD }
+    CO2St8006_S150_Avg: { field: CO2_BOLE_TREE8006_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
+    CO2St8006_S150_Std: { field: CO2_BOLE_SD_TREE8006_1.35_S150, units: false, gain: 1, measurement: _SD }
+    CO2St8008_S150_Avg: { field: CO2_BOLE_TREE8008_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
+    CO2St8008_S150_Std: { field: CO2_BOLE_SD_TREE8008_1.35_S150, units: false, gain: 1, measurement: _SD }
+    CO2St8011_S150_Avg: { field: CO2_BOLE_TREE8011_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
+    CO2St8011_S150_Std: { field: CO2_BOLE_SD_TREE8011_1.35_S150, units: false, gain: 1, measurement: _SD }
+    CO2St8015_S150_Avg: { field: CO2_BOLE_TREE8015_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
+    CO2St8015_S150_Std: { field: CO2_BOLE_SD_TREE8015_1.35_S150, units: false, gain: 1, measurement: _SD }
     # DENDRO measured to be at breast height (assumed 1.35m)
     D8003_N150_Avg: { field: DENDRO_TREE8003_1.35_N150, units: false, gain: 1, measurement: DENDRO }
     D8003_N150_Std: { field: DENDRO_SD_TREE8003_1.35_N150, units: false, gain: 1, measurement: _SD }
@@ -80,7 +80,7 @@ LAE11-RAW-TBL1-201605301110-TOA5-DAT-1MIN:
     D8015_N150_Std: { field: DENDRO_SD_TREE8015_1.35_N150, units: false, gain: 1, measurement: _SD }
     DNTP_iDL_H1_0_1: { field: DNTP_iDL_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     # Depth info from AS
-    MPS02_TEMP_DISABLE_FLAG_Max: { field: MPS02_TEMP_DISABLE_FLAG_MAX_H1_X_1, units: false, gain: 1, measurement: _instrumentmetrics} #todo
+    MPS02_TEMP_DISABLE_FLAG_Max: { field: MPS02_TEMP_DISABLE_FLAG_MAX_H1_X_1, units: false, gain: 1, measurement: _instrumentmetrics } #todo
     MPS02H1_P_Avg(1): { field: SWP_H1_0.05_1, units: false, gain: 1, measurement: SWP }
     MPS02H1_P_Avg(2): { field: SWP_H1_0.1_1, units: false, gain: 1, measurement: SWP }
     MPS02H1_P_Avg(3): { field: SWP_H1_0.15_1, units: false, gain: 1, measurement: SWP }
@@ -101,66 +101,66 @@ LAE11-RAW-TBL1-201605301110-TOA5-DAT-1MIN:
     MPS02H1_T_Std(3): { field: TS_SD_H1_0.15_1, units: false, gain: 1, measurement: _SD }
     MPS02H1_T_Std(4): { field: TS_SD_H1_0.2_1, units: false, gain: 1, measurement: _SD }
     MPS02H1_T_Std(5): { field: TS_SD_H1_0.3_1, units: false, gain: 1, measurement: _SD }
-    NTP_T1_47_1: {  field: NTP_T1_47_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    NTP_T1_47_1: { field: NTP_T1_47_1, units: false, gain: 1, measurement: _instrumentmetrics }
     PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, gain: 1, measurement: XXX } #todo
     PTemp_C_Std: { field: PTemp_C_Std_X_X_X, units: false, gain: 1, measurement: XXX } #todo
     RECORD: { field: RECORD_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    RefCycleFlag: {  field: RefCycleFlag_X_X_X, units: false, gain: 1, measurement: XXX } #todo
-    RefMeasFlag: {  field: RefMeasFlag_X_X_X, units: false, gain: 1, measurement: XXX } #todo
+    RefCycleFlag: { field: RefCycleFlag_X_X_X, units: false, gain: 1, measurement: XXX } #todo
+    RefMeasFlag: { field: RefMeasFlag_X_X_X, units: false, gain: 1, measurement: XXX } #todo
     # RH location info from TB, from site map
-    RHUM_01_Avg: {  field: RH_M4_1_1, units: false, gain: 1, measurement: RH }
-    RHUM_01_Std: {  field: RH_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
-    RHUM_04_Avg: {  field: RH_M3_1_1, units: false, gain: 1, measurement: RH }
-    RHUM_04_Std: {  field: RH_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
-    RHUM_10_Avg: {  field: RH_M2_1_1, units: false, gain: 1, measurement: RH }
-    RHUM_10_Std: {  field: RH_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
-    RHUM_27_Avg: {  field: RH_T1_17.5_1, units: false, gain: 1, measurement: RH }
-    RHUM_27_Std: {  field: RH_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
-    RHUM_44_Avg: {  field: RH_T1_35_1, units: false, gain: 1, measurement: RH }
-    RHUM_44_Std: {  field: RH_SD_T1_35_1, units: false, gain: 1, measurement: _SD }
+    RHUM_01_Avg: { field: RH_M4_1_1, units: false, gain: 1, measurement: RH }
+    RHUM_01_Std: { field: RH_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
+    RHUM_04_Avg: { field: RH_M3_1_1, units: false, gain: 1, measurement: RH }
+    RHUM_04_Std: { field: RH_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
+    RHUM_10_Avg: { field: RH_M2_1_1, units: false, gain: 1, measurement: RH }
+    RHUM_10_Std: { field: RH_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
+    RHUM_27_Avg: { field: RH_T1_17.5_1, units: false, gain: 1, measurement: RH }
+    RHUM_27_Std: { field: RH_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
+    RHUM_44_Avg: { field: RH_T1_35_1, units: false, gain: 1, measurement: RH }
+    RHUM_44_Std: { field: RH_SD_T1_35_1, units: false, gain: 1, measurement: _SD }
     T109Dev2_Avg: { field: T109Dev2_Avg_X_X_X, units: false, gain: 1, measurement: XXX } #todo
     T109Dev2_Std: { field: T109Dev2_Std_X_X_X, units: false, gain: 1, measurement: XXX } #todo
     # T_BOLE *assumed* to be at breast height (assumed 1.35m)
-    TCSt8003_S150_Avg: {  field: T_BOLE_TREE8003_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8003_S150_Std: {  field: T_BOLE_SD_TREE8003_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8006_S150_Avg: {  field: T_BOLE_TREE8006_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8006_S150_Std: {  field: T_BOLE_SD_TREE8006_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8008_S150_Avg: {  field: T_BOLE_TREE8008_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8008_S150_Std: {  field: T_BOLE_SD_TREE8008_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8011_S150_Avg: {  field: T_BOLE_TREE8011_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8011_S150_Std: {  field: T_BOLE_SD_TREE8011_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8015_S150_Avg: {  field: T_BOLE_TREE8015_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8015_S150_Std: {  field: T_BOLE_SD_TREE8015_1.35_S150, units: false, gain: 1, measurement: _SD }
+    TCSt8003_S150_Avg: { field: T_BOLE_TREE8003_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
+    TCSt8003_S150_Std: { field: T_BOLE_SD_TREE8003_1.35_S150, units: false, gain: 1, measurement: _SD }
+    TCSt8006_S150_Avg: { field: T_BOLE_TREE8006_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
+    TCSt8006_S150_Std: { field: T_BOLE_SD_TREE8006_1.35_S150, units: false, gain: 1, measurement: _SD }
+    TCSt8008_S150_Avg: { field: T_BOLE_TREE8008_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
+    TCSt8008_S150_Std: { field: T_BOLE_SD_TREE8008_1.35_S150, units: false, gain: 1, measurement: _SD }
+    TCSt8011_S150_Avg: { field: T_BOLE_TREE8011_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
+    TCSt8011_S150_Std: { field: T_BOLE_SD_TREE8011_1.35_S150, units: false, gain: 1, measurement: _SD }
+    TCSt8015_S150_Avg: { field: T_BOLE_TREE8015_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
+    TCSt8015_S150_Std: { field: T_BOLE_SD_TREE8015_1.35_S150, units: false, gain: 1, measurement: _SD }
     # TA location info from TB, from site map
-    TEMP_01_Avg: {  field: TA_M4_1_1, units: false, gain: 1, measurement: TA }
-    TEMP_01_Std: {  field: TA_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
-    TEMP_04_Avg: {  field: TA_M3_1_1, units: false, gain: 1, measurement: TA }
-    TEMP_04_Std: {  field: TA_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
-    TEMP_10_Avg: {  field: TA_M2_1_1, units: false, gain: 1, measurement: TA }
-    TEMP_10_Std: {  field: TA_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
-    TEMP_27_Avg: {  field: TA_T1_17.5_1, units: false, gain: 1, measurement: TA }
-    TEMP_27_Std: {  field: TA_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
-    TEMP_44_Avg: {  field: TA_T1_35_1, units: false, gain: 1, measurement: TA }
-    TEMP_44_Std: {  field: TA_SD_T1_35_1, units: false, gain: 1, measurement: _SD }
+    TEMP_01_Avg: { field: TA_M4_1_1, units: false, gain: 1, measurement: TA }
+    TEMP_01_Std: { field: TA_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
+    TEMP_04_Avg: { field: TA_M3_1_1, units: false, gain: 1, measurement: TA }
+    TEMP_04_Std: { field: TA_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
+    TEMP_10_Avg: { field: TA_M2_1_1, units: false, gain: 1, measurement: TA }
+    TEMP_10_Std: { field: TA_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
+    TEMP_27_Avg: { field: TA_T1_17.5_1, units: false, gain: 1, measurement: TA }
+    TEMP_27_Std: { field: TA_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
+    TEMP_44_Avg: { field: TA_T1_35_1, units: false, gain: 1, measurement: TA }
+    TEMP_44_Std: { field: TA_SD_T1_35_1, units: false, gain: 1, measurement: _SD }
     # WD location info *assumed* to be the same as for other similarly named sensors
-    WDIR_01_Avg: {  field: WD_M4_1_1, units: false, gain: 1, measurement: WD }
-    WDIR_01_Std: {  field: WD_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
-    WDIR_04_Avg: {  field: WD_M3_1_1, units: false, gain: 1, measurement: WD }
-    WDIR_04_Std: {  field: WD_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
-    WDIR_10_Avg: {  field: WD_M2_1_1, units: false, gain: 1, measurement: WD }
-    WDIR_10_Std: {  field: WD_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
-    WDIR_27_Avg: {  field: WD_T1_17.5_1, units: false, gain: 1, measurement: WD }
-    WDIR_27_Std: {  field: WD_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
-    WDIR_44_Avg: {  field: WD_T1_35_1, units: false, gain: 1, measurement: WD }
-    WDIR_44_Std: {  field: WD_SD_T1_35_1, units: false, gain: 1, measurement: _SD }
+    WDIR_01_Avg: { field: WD_M4_1_1, units: false, gain: 1, measurement: WD }
+    WDIR_01_Std: { field: WD_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
+    WDIR_04_Avg: { field: WD_M3_1_1, units: false, gain: 1, measurement: WD }
+    WDIR_04_Std: { field: WD_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
+    WDIR_10_Avg: { field: WD_M2_1_1, units: false, gain: 1, measurement: WD }
+    WDIR_10_Std: { field: WD_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
+    WDIR_27_Avg: { field: WD_T1_17.5_1, units: false, gain: 1, measurement: WD }
+    WDIR_27_Std: { field: WD_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
+    WDIR_44_Avg: { field: WD_T1_35_1, units: false, gain: 1, measurement: WD }
+    WDIR_44_Std: { field: WD_SD_T1_35_1, units: false, gain: 1, measurement: _SD }
     # WS location info *assumed* to be the same as for other similarly named sensors
-    WSPEED_01_Avg: {  field: WS_M4_1_1, units: false, gain: 1, measurement: WS }
-    WSPEED_01_Std: {  field: WS_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
-    WSPEED_04_Avg: {  field: WS_M3_1_1, units: false, gain: 1, measurement: WS }
-    WSPEED_04_Std: {  field: WS_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
-    WSPEED_10_Avg: {  field: WS_M2_1_1, units: false, gain: 1, measurement: WS }
-    WSPEED_10_Std: {  field: WS_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
-    WSPEED_27_Avg: {  field: WS_T1_17.5_1, units: false, gain: 1, measurement: WS }
-    WSPEED_27_Std: {  field: WS_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
-    WSPEED_44_Avg: {  field: WS_T1_35_1, units: false, gain: 1, measurement: WS }
-    WSPEED_44_Std: {  field: WS_SD_T1_35_1, units: false, gain: 1, measurement: _SD }
+    WSPEED_01_Avg: { field: WS_M4_1_1, units: false, gain: 1, measurement: WS }
+    WSPEED_01_Std: { field: WS_SD_M4_1_1, units: false, gain: 1, measurement: _SD }
+    WSPEED_04_Avg: { field: WS_M3_1_1, units: false, gain: 1, measurement: WS }
+    WSPEED_04_Std: { field: WS_SD_M3_1_1, units: false, gain: 1, measurement: _SD }
+    WSPEED_10_Avg: { field: WS_M2_1_1, units: false, gain: 1, measurement: WS }
+    WSPEED_10_Std: { field: WS_SD_M2_1_1, units: false, gain: 1, measurement: _SD }
+    WSPEED_27_Avg: { field: WS_T1_17.5_1, units: false, gain: 1, measurement: WS }
+    WSPEED_27_Std: { field: WS_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD }
+    WSPEED_44_Avg: { field: WS_T1_35_1, units: false, gain: 1, measurement: WS }
+    WSPEED_44_Std: { field: WS_SD_T1_35_1, units: false, gain: 1, measurement: _SD }

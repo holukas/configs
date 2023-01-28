@@ -2,7 +2,7 @@
 # 11_meteo_hut
 
 
-DAV11-RAW-TBL3-201812060001-TOA5-DAT-1H:
+DAV11-RAW-TBL3-201812060001-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-DAV_iDL_H1_0_1_TBL3_2018_12_06_0001.dat (the very first CH-DAV_iDL_H1_0_1_TBL3_*.dat file)
   # Last file:  *currently running*
@@ -31,4 +31,4 @@ DAV11-RAW-TBL3-201812060001-TOA5-DAT-1H:
   data_vars_parse_pos_indices: true
   data_vars:
     RECORD: { field: RECORD_LOWRES_T1_0_1, units: false, measurement: _instrumentmetrics }
-    P_1_1_1_Tot: { field: PREC_TOT_LOWRES_T1_20_1, units: false, measurement: PREC }
+    P_1_1_1_Tot: { field: PREC_TOT_T1_20_1, units: false, measurement: PREC }

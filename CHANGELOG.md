@@ -1,5 +1,18 @@
 # Changelog
 
+## v20230128 | 28 Jan 2023
+
+- Renamed `DAV11-RAW-TBL3-201812060001-TOA5-DAT-1H` to `DAV11-RAW-TBL3-201812060001-TOA5-DAT-1MIN`.
+  Configuration for this file was not correct because the data are indeed in 1MIN time resolution,
+  and not in 1H. File was adjusted accordingly.
+    - The precipitation in this files is the main precipitation for this site. Accordingly, it was
+      renamed to `PREC_TOT_T1_20_1`. (in `DAV11-RAW-TBL3-201812060001-TOA5-DAT-1MIN`)
+    - Precipitation was renamed to `PREC_TOT_LOWRES_T1_20_1` (in `DAV11-RAW-TBL1+-201108250000-TOA5-DAT-10MIN`)
+
+### Working on `FRU` filetypes
+
+- Added filetype `FRU10-RAW-201509160815-A-30MIN`
+
 ## v20221205 | 5 Dec 2022
 
 ### Working on `LAE` filetypes

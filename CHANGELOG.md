@@ -5,7 +5,8 @@
 - Added new parameter `ignore_after` in filetype settings.
   For example: `ignore_after: "2022-05-10 07:56:00"` would ignore all data for the
   respective variable after the given datetime. This option was implemented because
-  of overlapping time periods of equally named variables.
+  of overlapping time periods of equally named variables. First implemented for
+  filetype `LAE11-RAW-TBL1-202012010000-TOA5-DAT-1MIN.yaml`.
 
 ## v20230128 | 28 Jan 2023
 

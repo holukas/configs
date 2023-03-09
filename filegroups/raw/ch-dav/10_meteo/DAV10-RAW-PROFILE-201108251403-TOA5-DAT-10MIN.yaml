@@ -170,6 +170,7 @@ DAV10-RAW-PROFILE-201108251403-TOA5-DAT-10MIN:
     StemCO2_411_100_Avg: { field: CO2_BOLE_TREE411_1_1, units: false, measurement: CO2_BOLE }
     StemCO2_411_600_Avg: { field: CO2_BOLE_TREE411_6_1, units: false, measurement: CO2_BOLE }
     StemCO2_411_800_Avg: { field: CO2_BOLE_TREE411_8_1, units: false, gain: 1, measurement: CO2_BOLE }
+    StemCO2_411_900_Avg: { field: CO2_BOLE_TREE411_9_1, units: false, gain: 1, measurement: CO2_BOLE }
     StemTC_148_Avg: { field: T_BOLE_TREE148_1_1, units: false, measurement: T_BOLE }
     StemTC_296_Avg: { field: T_BOLE_TREE296_1_1, units: false, measurement: T_BOLE }
     SWC1_15_Avg: { field: SWC_H1_0.15_1, units: "%", gain: 100, measurement: SWC }

@@ -67,7 +67,7 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
     PPFD_OUT_M1B2_1x40_1_Std: { field: PPFD_OUT_SD_T1_1.4_1, units: false, measurement: _SD }
     PPFD_OUT_T1B2_1x40_1_Avg: { field: PPFD_OUT_T1_1.4_1, units: false, measurement: PPFD }
     PPFD_OUT_T1B2_1x40_1_Std: { field: PPFD_OUT_SD_T1_1.4_1, units: false, measurement: _SD }
-    RECORD: { field: RECORD_X_X_X, units: false, measurement: _instrumentmetrics }
+    RECORD: { field: RECORD_T1_0_1, units: false, measurement: _instrumentmetrics }
     RH_M1B1_1x50_1_Avg: { field: RH_T1_1.5_1, units: false, measurement: RH }
     RH_M1B1_1x50_1_Std: { field: RH_SD_T1_1.5_1, units: false, measurement: _SD }
     RH_T1B1_1x50_1_Avg: { field: RH_T1_1.5_1, units: false, measurement: RH }
@@ -110,4 +110,3 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
     TS_GF2_0x025_1_Std: { field: TS_SD_GF2_0.025_1, units: false, measurement: _SD }
     WP_GF2_0x05_1_Avg: { field: WP_GF2_0.05_1, units: false, measurement: WP }
     WP_GF2_0x05_1_Std: { field: WP_SD_GF2_0.05_1, units: false, measurement: _SD }
-

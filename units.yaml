@@ -92,6 +92,7 @@ umol s-1 m-2: umol m-2 s-1
 unitless: false
 uV.m2.W-1: uV (W m-2)-1
 uS/cm: uS cm-1
+unknown: false
 
 # V
 V: false
@@ -119,3 +120,4 @@ W/m^2: W m-2
 "% vol": "vol%"
 "°C": degC
 "1=nighttime": false
+"e’": "vol%"  # Found at CH-FRU for SWC SD

@@ -101,8 +101,9 @@ DAV10-RAW-PROFILE-200511081609-A-10MIN:
     Hum_20m_AVG: { field: RH_PRF_T1_20_1, units: "%", gain: 1, measurement: RH }
     Hum_25m_AVG: { field: RH_PRF_T1_25_1, units: "%", gain: 1, measurement: RH }
     Hum_35m_AVG: { field: RH_PRF_T1_35_1, units: "%", gain: 1, measurement: RH }
-    Pyran_Top_AVG: { field: SW_IN_X_X_X, units: "W m-2", gain: 1, measurement: SW }
-    Pyran_Bot_AVG: { field: SW_OUT_X_X_X, units: "W m-2", gain: 1, measurement: SW }
+    # The two SW variables look like they go together with the following SW_*_T1_35_1
+    Pyran_Top_AVG: { field: SW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
+    Pyran_Bot_AVG: { field: SW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
     HtFlx_Wm2_AVG: { field: G_FF0_0.02_1, units: "W m-2", gain: 1, measurement: G }
     Mimol_m2s_AVG: { field: PPFD_X_X_X, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
     SKP215_mV_AVG: { field: SKP215_X_X_X, units: "mV", gain: 1, measurement: XXX }

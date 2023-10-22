@@ -1,0 +1,49 @@
+# CH-FRU
+# 13_meteo_pressure
+#
+# This is *maybe* pressure from the LI-7500, from eddy covariance measurements
+
+
+FRU13-RAW-PRESS-200507050828-CSV-1MIN-IGNORE:
+  # ATTENTION:
+  # Data in these files must be ignored!
+  # These files seem to contain the AGC measurement from the open-path IRGA
+  # The min/max values are typical for AGC values (43.75, 93.75)
+  # I thought it might be pressure in kPa, but a drop from 93 to 43 from
+  # one half-hour to the next is not plausible.
+  # This filetype is still found and registered when searching raw data files,
+  # but is then ignored during data upload (VarScanner) because of the -IGNORE
+  # suffix in the filetype name.
+  #
+  # First file: CH-FRU_EC_Press-200507050828.csv (first CH-FRU_EC_Press-*.csv file)
+  # Last file: CH-FRU_EC_Press-201708100857.csv (last CH-FRU_EC_Press-*.csv file)
+  # First X* file: CH-FRU_EC_Press-2017112919.X00.csv (first CH-FRU_EC_Press-*.X*.csv file)
+  # Last X* file: CH-FRU_EC_Press-2018120919.X00.csv (last CH-FRU_EC_Press-*.X*.csv file)
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2005-07-05 08:28:00
+  filetype_valid_to: 2018-12-09 19:00:00
+  # Because there are two possible filetype_ids and both are very similar, parse the type with X*
+  # in filename first, otherwise all found files would be assigned to the filetype without the X*.
+  filetype_id: ['CH-FRU_EC_Press-*.X*.csv', 'CH-FRU_EC_Press-*.csv']
+  filetype_dateparser: ['CH-FRU_EC_Press-%Y%m%d%H.X%M.csv', 'CH-FRU_EC_Press-%Y%m%d%H%M.csv']
+  filetype_gzip: false
+  filegroup: 13_meteo_pressure
+  data_raw_freq: T
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_mangle_dupe_cols: true
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    PA_T1_1.3_1_1: { field: PA_T1_1.3_1, units: kPa, gain: 1, measurement: PA }  # This is NOT pressure, but AGC
+    N_PA_T1_1.3_1_1: { field: NUMVALS_PA_T1_1.3_1, units: false, gain: 1, measurement: _instrumentmetrics }

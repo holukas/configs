@@ -1,38 +1,14 @@
 # CH-FRU
 # 10_meteo
-#
-# @SW_IN: Info from CONFIG.XLSX from the old Python MeteoScreening tool:
-#   "A false calibration factor [1000/5.45 uV/W/m^2 from the CNR1 in Chamau (SN 051029)
-#   instead of 1000/6.72 uV/W/m^2 for the actual device SN 051030] was used during the
-#   site upgrade end of 2017."
-# This can be corrected by applying a gain of 0.80740740740 (5.45/6.75) (see below in data_vars)
-#
-# @SW_OUT: Info from CONFIG.XLSX from the old Python MeteoScreening tool:
-#   "A false calibration factor [1000/5.45 uV/W/m^2 from the CNR1 in Chamau (SN 051029)
-#   instead of 1000/6.72 uV/W/m^2 for the actual device SN 051030] was used during the
-#   site upgrade end of 2017."
-# This can be corrected by applying a gain of 0.80740740740 (5.45/6.75) (see below in data_vars)
-#
-# @LW_IN_RAW: Info from CONFIG.XLSX from the old Python MeteoScreening tool:
-#   "A false calibration factor [1000/5.45 uV/W/m^2 from the CNR1 in Chamau (SN 051029)
-#   instead of 1000/6.72 uV/W/m^2 for the actual device SN 051030] was used during the
-#   site upgrade end of 2017."
-# This can be corrected by applying a gain of 0.80740740740 (5.45/6.75) (see below in data_vars)
-#
-# @LW_OUT_RAW: Info from CONFIG.XLSX from the old Python MeteoScreening tool:
-#   "A false calibration factor [1000/5.45 uV/W/m^2 from the CNR1 in Chamau (SN 051029)
-#   instead of 1000/6.72 uV/W/m^2 for the actual device SN 051030] was used during the
-#   site upgrade end of 2017."
-# This can be corrected by applying a gain of 0.80740740740 (5.45/6.75) (see below in data_vars)
 
 
-FRU10-RAW-TBL1-201711201643-TOA5-DAT-1MIN:
+FRU10-RAW-TBL1-201811051615-TOA5-DAT-1MIN:
   # TOA5
-  # First file: CH-FRU_iDL_BOX1_0_1_TBL1_20171120-1643.dat (the very first CH-FRU_iDL_BOX1_0_1_TBL1_*.dat file)
-  # Last file:  CH-FRU_iDL_BOX1_0_1_TBL1_20181101-0000.dat (last file with calibration correction for SW_IN)
+  # First file: CH-FRU_iDL_BOX1_0_1_TBL1_20181105-1615.dat (the very first CH-FRU_iDL_BOX1_0_1_TBL1_*.dat file)
+  # Last file:  *currently running*
   can_be_used_by_filescanner: true
   filetype_valid_from: 2017-11-20 16:43:00
-  filetype_valid_to: 2018-11-01 00:00:00
+  filetype_valid_to: 2099-02-28 11:01:00
   filetype_id: CH-FRU_iDL_BOX1_0_1_TBL1_*.dat
   filetype_dateparser: CH-FRU_iDL_BOX1_0_1_TBL1_%Y%m%d-%H%M.dat
   filetype_gzip: false
@@ -62,12 +38,10 @@ FRU10-RAW-TBL1-201711201643-TOA5-DAT-1MIN:
     G_GF1_0x06_2_Avg: { field: G_GF1_0.06_2, units: false, measurement: G }
     G_GF1_0x06_2_Std: { field: G_GF1_SD_0.06_2, units: false, measurement: _SD }
     HEAT_HS50: { field: HEAT_HS50_X_X_X, units: false, measurement: _instrumentmetrics }
-    # Gain to correct for wrong calibration factor (see notes at the top)
-    LW_IN_RAW_T1_1_1_Avg: { field: LW_IN_RAW_T1_1_1, units: false, gain: 0.80740740740, measurement: _RAW }  # Gain
+    LW_IN_RAW_T1_1_1_Avg: { field: LW_IN_RAW_T1_1_1, units: false, measurement: _RAW }
     LW_IN_T1_1_1_Avg: { field: LW_IN_T1_1_1, units: false, measurement: LW }
     LW_IN_T1_1_1_Std: { field: LW_IN_SD_T1_1_1, units: false, measurement: _SD }
-    # Gain to correct for wrong calibration factor (see notes at the top)
-    LW_OUT_RAW_T1_1_1_Avg: { field: LW_OUT_RAW_T1_1_1, units: false, gain: 0.80740740740, measurement: _RAW }  # Gain
+    LW_OUT_RAW_T1_1_1_Avg: { field: LW_OUT_RAW_T1_1_1, units: false, measurement: _RAW }
     LW_OUT_T1_1_1_Avg: { field: LW_OUT_T1_1_1, units: false, measurement: LW }
     LW_OUT_T1_1_1_Std: { field: LW_OUT_SD_T1_1_1, units: false, measurement: _SD }
     PPFD_IN_T1_2_1_Avg: { field: PPFD_IN_T1_2_1, units: false, measurement: PPFD }
@@ -95,11 +69,10 @@ FRU10-RAW-TBL1-201711201643-TOA5-DAT-1MIN:
     SDP_GF1_0x95_1_Std: { field: SDP_SD_GF1_0.95_1, units: false, measurement: _SD }
     SV_iDL_BOX1_0_1_Avg: { field: SV_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     SV_iDL_BOX1_0_1_Std: { field: SV_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics }
-    # Gain to correct for wrong calibration factor (see notes at the top)
-    SW_IN_T1_1_1_Avg: { field: SW_IN_T1_1_1, units: false, gain: 0.80740740740, measurement: SW }  # Gain
-    SW_IN_T1_1_1_Std: { field: SW_IN_SD_T1_1_1, units: false, gain: 0.80740740740, measurement: _SD }  # Gain
-    SW_OUT_T1_1_1_Avg: { field: SW_OUT_T1_1_1, units: false, gain: 0.80740740740, measurement: SW }  # Gain
-    SW_OUT_T1_1_1_Std: { field: SW_OUT_SD_T1_1_1, units: false, gain: 0.80740740740, measurement: _SD }  # Gain
+    SW_IN_T1_1_1_Avg: { field: SW_IN_T1_1_1, units: false, measurement: SW }
+    SW_IN_T1_1_1_Std: { field: SW_IN_SD_T1_1_1, units: false, measurement: _SD }
+    SW_OUT_T1_1_1_Avg: { field: SW_OUT_T1_1_1, units: false, measurement: SW }
+    SW_OUT_T1_1_1_Std: { field: SW_OUT_SD_T1_1_1, units: false, measurement: _SD }
     SWC_GF1_1x00_2_Avg: { field: SWC_GF1_1_2, units: false, measurement: SWC }
     SWC_GF1_1x00_2_Std: { field: SWC_SD_GF1_1_2, units: false, measurement: _SD }
     SWC_GF1_0x05_1_Avg: { field: SWC_GF1_0.05_1, units: false, measurement: SWC }

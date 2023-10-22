@@ -1,0 +1,111 @@
+# CH-AWS
+# 10_meteo
+
+# This is not M1 like indicated in some raw vars, because M1 is only in 15_meteo_snowheight.
+# Here is GF2.
+
+
+AWS10-RAW-201512091404-CSV-1MIN:
+  # First file: CH-AWS_iDL_1min_20151209-1404.csv (the very first CH-AWS_iDL_1min_*.csv file)
+  # Last file:  CH-AWS_iDL_1min_20180201-0650.csv
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2015-12-09 14:04:00
+  filetype_valid_to: 2018-02-01 06:50:00
+  filetype_id: CH-AWS_iDL_1min_*.csv
+  filetype_dateparser: CH-AWS_iDL_1min_%Y%m%d-%H%M.csv
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: T
+  data_skiprows: [ ]
+  data_headerrows: [ 0 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_mangle_dupe_cols: true
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    BV_CR1000_BOX_0_1_Avg: { field: BV_CR1000_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    BV_CR1000_BOX_0_1_Std: { field: BV_CR1000_SD_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    BV_iDL_BOX_0_1_Avg: { field: BV_iDL_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    BV_iDL_BOX_0_1_Std: { field: BV_iDL_SD_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    DNTP_CR1000_BOX_0_1: { field: DNTP_CR1000_BOX_0_1, units: ms, measurement: _instrumentmetrics }
+    DNTP_iDL_BOX_0_1: { field: DNTP_iDL_BOX_0_1, units: ms, measurement: _instrumentmetrics }
+    G_GF2_0x05_1_Avg: { field: G_GF2_0.05_1, units: "W m-2", measurement: G }
+    G_GF2_0x05_1_Std: { field: G_SD_GF2_0.05_1, units: "W m-2", measurement: _SD }
+    LW_IN_M1B2_1x40_1_Avg: { field: LW_IN_T1_1.4_1, units: "W m-2", measurement: LW }
+    LW_IN_M1B2_1x40_1_Std: { field: LW_IN_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    LW_IN_RAW_M1B2_1x40_1_Avg: { field: LW_IN_RAW_T1_1.4_1, units: false, measurement: _RAW }
+    LW_IN_RAW_M1B2_1x40_1_Std: { field: LW_IN_RAW_SD_T1_1.4_1, units: false, measurement: _RAW }
+    LW_IN_RAW_T1B2_1x40_1_Avg: { field: LW_IN_RAW_T1_1.4_1, units: false, measurement: _RAW }
+    LW_IN_RAW_T1B2_1x40_1_Std: { field: LW_IN_RAW_SD_T1_1.4_1, units: false, measurement: _RAW }
+    LW_IN_T1B2_1x40_1_Avg: { field: LW_IN_T1_1.4_1, units: "W m-2", measurement: LW }
+    LW_IN_T1B2_1x40_1_Std: { field: LW_IN_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    LW_OUT_M1B2_1x40_1_Avg: { field: LW_OUT_T1_1.4_1, units: "W m-2", measurement: LW }
+    LW_OUT_M1B2_1x40_1_Std: { field: LW_OUT_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    LW_OUT_RAW_M1B2_1x40_1_Avg: { field: LW_OUT_RAW_T1_1.4_1, units: false, measurement: _RAW }
+    LW_OUT_RAW_M1B2_1x40_1_Std: { field: LW_OUT_RAW_SD_T1_1.4_1, units: false, measurement: _RAW }
+    LW_OUT_RAW_T1B2_1x40_1_Avg: { field: LW_OUT_RAW_T1_1.4_1, units: false, measurement: _RAW }
+    LW_OUT_RAW_T1B2_1x40_1_Std: { field: LW_OUT_RAW_SD_T1_1.4_1, units: false, measurement: _RAW }
+    LW_OUT_T1B2_1x40_1_Avg: { field: LW_OUT_T1_1.4_1, units: "W m-2", measurement: LW }
+    LW_OUT_T1B2_1x40_1_Std: { field: LW_OUT_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    OSO_CR1000_BOX_0_1_Max: { field: OSO_CR1000_MAX_BOX_0_1, units: unitless, measurement: OSO }
+    OSO_iDL_BOX_0_1_Max: { field: OSO_iDL_MAX_BOX_0_1, units: unitless, measurement: OSO }
+    PPFD_IN_M1B2_1x40_1_Avg: { field: PPFD_IN_T1_1.4_1, units: "umol m-2 s-2", measurement: PPFD }
+    PPFD_IN_M1B2_1x40_1_Std: { field: PPFD_IN_SD_T1_1.4_1, units: "umol m-2 s-2", measurement: _SD }
+    PPFD_IN_T1B2_1x40_1_Avg: { field: PPFD_IN_T1_1.4_1, units: "umol m-2 s-2", measurement: PPFD }
+    PPFD_IN_T1B2_1x40_1_Std: { field: PPFD_IN_SD_T1_1.4_1, units: "umol m-2 s-2", measurement: _SD }
+    PPFD_OUT_M1B2_1x40_1_Avg: { field: PPFD_OUT_T1_1.4_1, units: "umol m-2 s-2", measurement: PPFD }
+    PPFD_OUT_M1B2_1x40_1_Std: { field: PPFD_OUT_SD_T1_1.4_1, units: "umol m-2 s-2", measurement: _SD }
+    PPFD_OUT_T1B2_1x40_1_Avg: { field: PPFD_OUT_T1_1.4_1, units: "umol m-2 s-2", measurement: PPFD }
+    PPFD_OUT_T1B2_1x40_1_Std: { field: PPFD_OUT_SD_T1_1.4_1, units: "umol m-2 s-2", measurement: _SD }
+    RECORD: { field: RECORD_T1_0_1, units: RN, measurement: _instrumentmetrics }
+    RH_M1B1_1x50_1_Avg: { field: RH_T1_1.5_1, units: "%", measurement: RH }
+    RH_M1B1_1x50_1_Std: { field: RH_SD_T1_1.5_1, units: "%", measurement: _SD }
+    RH_T1B1_1x50_1_Avg: { field: RH_T1_1.5_1, units: "%", measurement: RH }
+    RH_T1B1_1x50_1_Std: { field: RH_SD_T1_1.5_1, units: "%", measurement: _SD }
+    SDP_GF2_0x05_1_Avg: { field: SDP_GF2_0.05_1, units: unitless, measurement: SDP }
+    SDP_GF2_0x05_1_Std: { field: SDP_SD_GF2_0.05_1, units: unitless, measurement: _SD }
+    SV_CR1000_BOX_0_1_Avg: { field: SV_CR1000_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    SV_CR1000_BOX_0_1_Std: { field: SV_CR1000_SD_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    SV_iDL_BOX_0_1_Avg: { field: SV_iDL_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    SV_iDL_BOX_0_1_Std: { field: SV_iDL_SD_BOX_0_1, units: V, measurement: _instrumentmetrics }
+    SW_IN_M1B2_1x40_1_Avg: { field: SW_IN_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_M1B2_1x40_1_Std: { field: SW_IN_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    SW_IN_T1B2_1x40_1_Avg: { field: SW_IN_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_T1B2_1x40_1_Std: { field: SW_IN_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    SW_OUT_M1B2_1x40_1_Avg: { field: SW_OUT_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_M1B2_1x40_1_Std: { field: SW_OUT_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    SW_OUT_T1B2_1x40_1_Avg: { field: SW_OUT_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_T1B2_1x40_1_Std: { field: SW_OUT_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    SWC_GF2_0x05_1_Avg: { field: SWC_GF2_0.05_1, units: "%", gain: 100, measurement: SWC }
+    SWC_GF2_0x05_1_Std: { field: SWC_SD_GF2_0.05_1, units: "%", gain: 100, measurement: _SD }
+    T_CR1000_BOX_0_1_Avg: { field: T_CR1000_BOX_0_1, units: degC, measurement: _instrumentmetrics }
+    T_CR1000_BOX_0_1_Std: { field: T_CR1000_SD_BOX_0_1, units: degC, measurement: _instrumentmetrics }
+    T_iDL_BOX_0_1_Avg: { field: T_iDL_BOX_0_1, units: degC, measurement: _instrumentmetrics }
+    T_iDL_BOX_0_1_Std: { field: T_iDL_SD_BOX_0_1, units: degC, measurement: _instrumentmetrics }
+    T_RAD_M1B2_1x40_1_Avg: { field: T_RAD_T1_1.4_1, units: degC, measurement: _instrumentmetrics }
+    T_RAD_M1B2_1x40_1_Std: { field: T_RAD_SD_T1_1.4_1, units: degC, measurement: _instrumentmetrics }
+    T_RAD_M1B2_1x40_2_Avg: { field: T_RAD_T1_1.4_2, units: degC, measurement: _instrumentmetrics }
+    T_RAD_M1B2_1x40_2_Std: { field: T_RAD_SD_T1_1.4_2, units: degC, measurement: _instrumentmetrics }
+    T_RAD_T1B2_1x40_1_Avg: { field: T_RAD_T1_1.4_1, units: degC, measurement: _instrumentmetrics }
+    T_RAD_T1B2_1x40_1_Std: { field: T_RAD_SD_T1_1.4_1, units: degC, measurement: _instrumentmetrics }
+    T_RAD_T1B2_1x40_2_Avg: { field: T_RAD_T1_1.4_2, units: degC, measurement: _instrumentmetrics }
+    T_RAD_T1B2_1x40_2_Std: { field: T_RAD_SD_T1_1.4_2, units: degC, measurement: _instrumentmetrics }
+    TA_M1B1_1x50_1_Avg: { field: TA_T1_1.5_1, units: degC, measurement: TA }
+    TA_M1B1_1x50_1_Std: { field: TA_SD_T1_1.5_1, units: degC, measurement: _SD }
+    TA_T1B1_1x50_1_Avg: { field: TA_T1_1.5_1, units: degC, measurement: TA }
+    TA_T1B1_1x50_1_Std: { field: TA_SD_T1_1.5_1, units: degC, measurement: _SD }
+    TS_GF2_0x05_1_Avg: { field: TS_GF2_0.05_1, units: degC, measurement: TS }
+    TS_GF2_0x05_1_Std: { field: TS_SD_GF2_0.05_1, units: degC, measurement: _SD }
+    TS_GF2_0x025_1_Avg: { field: TS_GF2_0.025_1, units: degC, measurement: TS }
+    TS_GF2_0x025_1_Std: { field: TS_SD_GF2_0.025_1, units: degC, measurement: _SD }
+    WP_GF2_0x05_1_Avg: { field: WP_GF2_0.05_1, units: kPa, measurement: WP }
+    WP_GF2_0x05_1_Std: { field: WP_SD_GF2_0.05_1, units: kPa, measurement: _SD }

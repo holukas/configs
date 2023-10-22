@@ -1,6 +1,37 @@
 # Changelog
 
-## v202300309 | 9 Mar 2023
+## v2023XXXX | X Sep 2023
+
+### Early logger meteo files
+
+TODO 
+
+DONE check CONFIG.XLSX for wrong calibration factor SW_IN 2017/2018
+
+NEEDS CHECK config.header Added more SWC variables in `FRU10-RAW-TBL1-201711201643-TOA5-DAT-1MIN.yaml`
+
+- Added `FRU10-RAW-LOGGER-2005071513-A-30MIN`: this is one of the earliest meteo files. These
+  early files do not have variable names in the header. Typically, there is a so-called `config.header`
+  file that gives info about variable names and column order. However, in this case the number of
+  variables given in the `config.header` file did not match the data files, there were two columns too
+  many.
+  I found info about variable names and column order in the file `CH-FRU_CONFIG_Linux.xlsx`, which
+  is the config file for the MeteoScreening Python script that was used previously. The info given
+  in this file shows two columns less than the `config.header` file and therefore matches the data
+  files.
+  The two variables that are listed in `CH-FRU_CONFIG_Linux.xlsx` but not in `config.header` are
+  `LiBatt_V_AVG` and `LiBatt_V_STD`.
+- Added new setting in config files: it is now possible to assign a data function `rawfunc` to
+  specific variables,
+  e.g., `Theta_11_STD: { field: SDP_SD_GF1_0.05_1, units: mV, gain: 1, rawfunc: calc_swc, measurement: _SD }`.
+  In this example a function that calculates SWC (soil water content) from SDP is applied. This setting
+  is currently picked up and applied by the Python script `dataflow`.
+- Two time resolutions can now be given for `-ALTERNATING-` formats, one for each ID: `data_raw_freq: [ 30T, 10T ]`.
+  It is also possible to define an irregular timestamp, e.g., `[ 30T, irregular ]`
+- Added and updated many FRU formats
+- Added more variables in `DAV10-RAW-TBL1-201807181036-TOA5-DAT-10S`
+
+## v20230309 | 9 Mar 2023
 
 - Added new parameter `ignore_after` in filetype settings.
   For example: `ignore_after: "2022-05-10 07:56:00"` would ignore all data for the

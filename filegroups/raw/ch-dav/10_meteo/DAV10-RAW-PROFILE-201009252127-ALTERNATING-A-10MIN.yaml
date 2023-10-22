@@ -69,7 +69,7 @@ DAV10-RAW-PROFILE-201009252127-ALTERNATING-A-10MIN:
     # Since this filetype does not have column names in the data,
     # the sequence of the variables given here is IMPORTANT!
     # The variable names are built from this sequence and therefore
-    # the sequence must no be changed.
+    # the sequence must not be changed.
     ID: { field: ID_T1_0_1, units: "#", gain: 1, measurement: _instrumentmetrics }
     YEAR: { field: YEAR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
     DOY: { field: DOY_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
@@ -113,7 +113,7 @@ DAV10-RAW-PROFILE-201009252127-ALTERNATING-A-10MIN:
     # Since this filetype does not have column names in the data,
     # the sequence of the variables given here is IMPORTANT!
     # The variable names are built from this sequence and therefore
-    # the sequence must no be changed.
+    # the sequence must not be changed.
     ID: { field: ID_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     YEAR: { field: YEAR_X_X_X, units: false, gain: 1, measurement: XXX }  # Removed after timestamp building
     DOY: { field: DOY_X_X_X, units: false, gain: 1, measurement: XXX }  # Removed after timestamp building

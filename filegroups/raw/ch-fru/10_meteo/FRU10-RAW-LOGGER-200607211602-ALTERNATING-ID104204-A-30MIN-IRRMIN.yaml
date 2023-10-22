@@ -1,0 +1,171 @@
+# CH-FRU
+# 10_meteo
+
+# ALTERNATING FILE
+# SPECIAL FORMAT: indicated by -ALTERNATING- in the filename
+# - Combines data from two different data sources
+# - Rows start w/ data record ID
+# - The ID indicates where data for the respective data row come from, i.e.
+#   the record ID at the start of each data row shows which data were
+#   recorded in the respective row.
+# - There are two different IDs: ID 104 and ID 204
+# - To take both IDs into account this filetype needs the setting:
+#   *data_keep_good_rows: [ 0, 104, 204 ]*
+# - In case of two different IDs, the time resolution of each ID must be
+#   specified separately, where the first element is the time resolution
+#   of the data with the first ID, the second element of the second ID:
+#   *data_raw_freq: [ 30T, irregular ]*
+# - Because of these two IDs this filetype needs an additional set of
+#   *data_vars*, which is defined below as *data_vars2*.
+#
+# - ID 104:
+#     - Variables are defined in *data_vars*
+#     - *data_vars* info for ID 104 comes from the Python MeteoScreening Tool CONFIG
+#       XLSX file from table EDL1_76_C version V2630, it seems to match the original
+#       config.header file
+#     - The CONFIG XLSX file seems to give correct info about the variables and their order.
+#       In this CONFIG XLSX file the variables are already renamed from the original names.
+#       For early files, a config.header typically gives info about the column order
+#       and original variable names. Such a config.header file that gives info about
+#       the columns is also available for this filetype, and it seems to match the XLSX.
+#     - Rows have 30MIN time resolution
+#     - Original *data_vars* info for ID104 in this file:
+#       grasslandserver.ethz.ch/export/home/fruebuel/config/config.header
+#     - the corresponding original .header file is config.header_until20140410
+#
+# - ID 204:
+#     - Variable info taken from CONFIG XLSX table EDL1_07_C version V1095 for ID204 data
+#
+# General info:
+#     - Does not have varnames in header
+#     - Timestamp needs to be built from DOY
+#     - Is often irregular (check *data_keep_good_rows* option)
+
+
+FRU10-RAW-LOGGER-200607211602-ALTERNATING-ID104204-A-30MIN-IRRMIN:
+  # First file: logger2006072116.a02 (first file with 104, 204 good rows)
+  # Last file: logger2014040904.a21
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2006-07-21 16:02:00
+  filetype_valid_to: 2014-04-09 04:21:00
+  filetype_id: logger*.a*
+  filetype_dateparser: logger%Y%m%d%H.a%M
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: [ 30T, irregular ]
+  data_skiprows: false
+  data_headerrows: false
+  data_index_col: -9999
+  data_parse_dates: false
+  data_date_parser: false
+  data_build_timestamp: "YEAR+DOY+TIME"
+  # If 104 (int) is in the first column (index 0), the data row is good, otherwise bad data
+  data_keep_good_rows: [ 0, 104, 204 ]
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_mangle_dupe_cols: true
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    # Since this filetype does not have column names in the data,
+    # the sequence of the variables given here is IMPORTANT!
+    # The variable names are built from this sequence and therefore
+    # the sequence must not be changed.
+    ID: { field: ID_T1_0_1, units: "#", gain: 1, measurement: _instrumentmetrics }
+    YEAR: { field: YEAR_X_X_X, units: false, gain: 1, measurement: XXX }
+    DOY: { field: DOY_X_X_X, units: false, gain: 1, measurement: XXX }
+    TIME: { field: TIME_X_X_X, units: false, gain: 1, measurement: XXX }
+    Tintern_AVG: { field: T_iDL_BOX1_0_1, units: degC, gain: 1, measurement: _instrumentmetrics }
+    BatVolt_AVG: { field: BV_iDL_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
+    Tair_2_AVG: { field: TA_T1_2_1, units: degC, gain: 1, measurement: TA }
+    RHair_2_AVG: { field: RH_T1_2_1, units: "%", gain: 1, measurement: RH }
+    Wvel_2_AVG: { field: WS_CUP_SCALAR_T1_2_2, units: m s-1, gain: 1, measurement: WS }
+    SHF_5_AVG: { field: G_GF1_0.03_1, units: W m-2, gain: 1, measurement: G }
+    SHF_6_AVG: { field: G_GF1_0.03_2, units: W m-2, gain: 1, measurement: G }
+    SHF_7_AVG: {  field: G_GF1_0.03_3, units: false, gain: 1, measurement: G }
+    SHF_8_AVG: {  field: G_GF1_0.03_4, units: false, gain: 1, measurement: G }
+    SWin_2_AVG: { field: SW_IN_T1_2_1, units: W m-2, gain: 1, measurement: SW }
+    # Calculate Boltzmann corrected for LW_IN
+    LWin_2_AVG: { field: LW_IN_RAW_T1_2_1, units: false, gain: 1, rawfunc: [ calc_lw, PT100_2_AVG, LWin_2_AVG, LW_IN_T1_2_1 ], measurement: _RAW }  # rawfunc
+    SWout_2_AVG: { field: SW_OUT_T1_2_1, units: W m-2, gain: 1, measurement: SW }
+    # Calculate Boltzmann corrected for LW_OUT
+    LWout_2_AVG: { field: LW_OUT_RAW_T1_2_1, units: false, gain: 1, rawfunc: [ calc_lw, PT100_2_AVG, LWout_2_AVG, LW_OUT_T1_2_1 ], measurement: _RAW }
+    # Calculate Boltzmann corrected for LW_IN, LW_OUT
+    PT100_2_AVG: { field: T_RAD_T1_2_1, units: degC, gain: 1, rawfunc: [ calc_lw, PT100_2_AVG, LWin_2_AVG, LW_IN_T1_2_1 ], measurement: _instrumentmetrics }  # rawfunc
+    PAR_2_AVG: { field: PPFD_IN_T1_2_1, units: "umol s-1 m-2", gain: 1, measurement: PPFD }
+    Tsoil_11_AVG: { field: TS_GF1_0.01_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_12_AVG: { field: TS_GF1_0.02_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_13_AVG: { field: TS_GF1_0.04_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_14_AVG: { field: TS_GF1_0.07_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_15_AVG: { field: TS_GF1_0.1_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_16_AVG: { field: TS_GF1_0.15_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_17_AVG: { field: TS_GF1_0.25_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_18_AVG: { field: TS_GF1_0.4_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_19_AVG: { field: TS_GF1_0.95_1, units: degC, gain: 1, measurement: TS }
+    Tsoil_20_AVG: { field: TS_GF1_0.01_2, units: degC, gain: 1, measurement: TS }
+    Theta_11_AVG: { field: SDP_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_12_AVG: { field: SDP_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_13_AVG: { field: SDP_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_14_AVG: { field: SDP_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_15_AVG: { field: SDP_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_16_AVG: {  field: SDP_AVG_GF1_X_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_17_AVG: {  field: SDP_AVG_GF1_X_2, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_18_AVG: {  field: SDP_AVG_GF1_X_3, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_19_AVG: {  field: SDP_AVG_GF1_X_4, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    LiBatt_V_AVG: { field: BV_iDL_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
+    Tintern_STD: { field: T_iDL_SD_BOX1_0_1, units: degC, gain: 1, measurement: _instrumentmetrics }
+    BatVolt_STD: { field: SV_iDL_SD_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
+    Tair_2_STD: { field: TA_SD_T1_2_1, units: degC, gain: 1, measurement: _SD }
+    RHair_2_STD: { field: RH_SD_T1_2_1, units: "%", gain: 1, measurement: RH }
+    Wvel_2_STD: { field: WS_CUP_SCALAR_SD_T1_2_2, units: m s-1, gain: 1, measurement: _SD }
+    SHF_5_STD: { field: G_SD_GF1_0.03_1, units: W m-2, gain: 1, measurement: _SD }
+    SHF_6_STD: { field: G_SD_GF1_0.03_2, units: W m-2, gain: 1, measurement: _SD }
+    SHF_7_STD: {  field: G_SD_GF1_0.03_3, units: W m-2, gain: 1, measurement: _SD }
+    SHF_8_STD: {  field: G_SD_GF1_0.03_4, units: W m-2, gain: 1, measurement: _SD }
+    SWin_2_STD: { field: SW_IN_SD_T1_2_1, units: W m-2, gain: 1, measurement: _SD }
+    LWin_2_STD: { field: LW_IN_RAW_SD_T1_2_1, units: false, gain: 1, measurement: _RAW }
+    SWout_2_STD: { field: SW_OUT_SD_T1_2_1, units: W m-2, gain: 1, measurement: _SD }
+    LWout_2_STD: { field: LW_OUT_RAW_T1_2_1, units: false, gain: 1, measurement: _RAW }
+    PT100_2_STD: { field: T_RAD_SD_T1_2_1, units: degC, gain: 1, measurement: _instrumentmetrics }
+    PAR_2_STD: { field: PPFD_IN_SD_T1_2_1, units: "umol s-1 m-2", gain: 1, measurement: _SD }
+    Tsoil_11_STD: { field: TS_SD_GF1_0.01_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_12_STD: { field: TS_SD_GF1_0.02_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_13_STD: { field: TS_SD_GF1_0.04_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_14_STD: { field: TS_SD_GF1_0.07_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_15_STD: { field: TS_SD_GF1_0.1_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_16_STD: { field: TS_SD_GF1_0.15_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_17_STD: { field: TS_SD_GF1_0.25_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_18_STD: { field: TS_SD_GF1_0.4_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_19_STD: { field: TS_SD_GF1_0.95_1, units: degC, gain: 1, measurement: _SD }
+    Tsoil_20_STD: { field: TS_SD_GF1_0.01_2, units: degC, gain: 1, measurement: _SD }
+    Theta_11_STD: { field: SDP_SD_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_12_STD: { field: SDP_SD_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_13_STD: { field: SDP_SD_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_14_STD: { field: SDP_SD_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_15_STD: { field: SDP_SD_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_16_STD: {  field: SDP_SD_GF1_X_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_17_STD: {  field: SDP_SD_GF1_X_2, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_18_STD: {  field: SDP_SD_GF1_X_3, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    Theta_19_STD: {  field: SDP_SD_GF1_X_4, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }
+    LiBatt_V_STD: { field: BV_iDL_SD_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
+    Precip_2_TOT: { field: PREC_TOT_GF1_1_1, units: mm, gain: 1, measurement: PREC }  # Was labelled as M1 in old screenings
+    Wvel_2_S_WVT: { field: WS_CUP_SCALAR_AVG_T1_2_1, units: m s-1, gain: 1, measurement: WS }
+    Wvel_2_U_WVT: { field: WS_CUP_VECTOR_AVG_T1_2_1, units: m s-1, gain: 1, measurement: WS }
+    Wdir_2_DU_WVT: { field: WD_VANE_VECTOR_AVG_T1_2_1, units: deg, gain: 1, measurement: WD }
+    Wdir_2_SDU_WVT: { field: WD_VANE_VECTOR_SD_T1_2_1, units: deg, gain: 1, measurement: _SD }
+  data_vars2:
+    # Variables with ID 204 at the start of the record row
+    # Variable info taken directly from the CONFIG XLSX file
+    ID: { field: ID_T1_0_1, units: "#", gain: 1, measurement: _instrumentmetrics }
+    YEAR: { field: YEAR_X_X_X, units: false, gain: 1, measurement: XXX }
+    DOY: { field: DOY_X_X_X, units: false, gain: 1, measurement: XXX }
+    TIME: { field: TIME_X_X_X, units: false, gain: 1, measurement: XXX }
+    HEAT_CUP_DUR_TOT_T1_2_1: { field: false, units: false, gain: 1, measurement: _instrumentmetrics }
+    HEAT_CUP_FLAG_MAX_T1_2_1: { field: false, units: flag, gain: 1, measurement: _instrumentmetrics }
+    HEAT_R3_50_DUR_TOT_T1_2.5_1: { field: false, units: false, gain: 1, measurement: _instrumentmetrics }
+    HEAT_R3_50_FLAG_MAX_T1_2.5_1: { field: false, units: flag, gain: 1, measurement: _instrumentmetrics }
+    HEAT_TUBES_DUR_TOT_T1_0_1: { field: false, units: false, gain: 1, measurement: _instrumentmetrics }
+    HEAT_TUBES_FLAG_MAX_T1_0_1: { field: false, units: flag, gain: 1, measurement: _instrumentmetrics }

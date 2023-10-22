@@ -37,6 +37,8 @@ DAV10-RAW-PROFILE-200704171410-ALTERNATING-A-10MIN:
   # Variable names based on file config.header.bis20080627 and config-co2.header.bis20130614
   # First file: meteo2007041714.a10
   # Last file:  meteo2008060516.a05
+  # The file meteo200806060000.a05 is ignored on purpose because it
+  # is a (slightly shorter) duplicate of meteo2008060516.a05.
   can_be_used_by_filescanner: true
   filetype_valid_from: 2007-04-17 14:10:00
   filetype_valid_to: 2008-06-05 16:05:00

@@ -104,4 +104,3 @@ DAV12-RAW-FF2-TBL1-202110221618-TOA5-DAT-1MIN:
     TS_IU_2_4_1_Avg: { field: TS_IU_FF2_0.21_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_2_7_1_Avg: { field: TS_IU_FF2_0.53_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_2_8_1_Avg: { field: TS_IU_FF2_0.8_1, units: false, gain: 1, measurement: _RAW }
-

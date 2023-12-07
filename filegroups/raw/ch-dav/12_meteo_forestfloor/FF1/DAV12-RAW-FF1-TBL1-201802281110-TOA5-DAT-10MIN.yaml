@@ -1,13 +1,14 @@
 # CH-DAV
 # 12_meteo_forestfloor
+#
+# 10MIN time resolution
+# SWC still in m3 m-3, gain 100 applied to convert to %
 
 
 DAV12-RAW-FF1-TBL1-201802281110-TOA5-DAT-10MIN:
   # TOA5
   # First file: CH-DAV_iDL_FF1_0_1_TBL1_2018_02_28_1110.dat
   # Last file:  CH-DAV_iDL_FF1_0_1_TBL1_2018_07_18_0010.dat
-  # 10MIN time resolution
-  # SWC still in m3 m-3, gain 100 applied to convert to %
   can_be_used_by_filescanner: true
   filetype_valid_from: 2018-02-28 11:10:00
   filetype_valid_to: 2018-07-18 00:10:00

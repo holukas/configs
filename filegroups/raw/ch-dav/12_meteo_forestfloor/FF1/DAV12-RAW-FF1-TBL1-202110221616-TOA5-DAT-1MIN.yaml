@@ -2,6 +2,23 @@
 # 12_meteo_forestfloor
 #
 # Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
+# SoilVUE variables according to logger code (https://gitlab.ethz.ch/gl/ch-dav_idl_ff3_0_1):
+#
+#'SoilVUE
+#Alias SoilVUE(1) = SWC_1_1_3   'SWC_FF1_0x05_3
+#Alias SoilVUE(5) = SWC_1_2_2   'SWC_FF1_0x10_2
+#Alias SoilVUE(9) = SWC_1_3_2   'SWC_FF1_0x20_2
+#Alias SoilVUE(13) = SWC_1_4_1  'SWC_FF1_0x30_1
+#Alias SoilVUE(17) = SWC_1_5_1  'SWC_FF1_0x40_1
+#Alias SoilVUE(21) = SWC_1_6_2  'SWC_FF1_0x50_2
+#
+#'SoilVUE
+#Alias SoilVUE(3) = TS_1_2_3   'SoilVUE
+#Alias SoilVUE(7) = TS_1_3_2   'SoilVUE
+#Alias SoilVUE(11) = TS_1_4_2  'SoilVUE
+#Alias SoilVUE(15) = TS_1_5_1  'SoilVUE
+#Alias SoilVUE(19) = TS_1_6_1  'SoilVUE
+#Alias SoilVUE(23) = TS_1_7_2  'SoilVUE
 
 
 DAV12-RAW-FF1-TBL1-202110221616-TOA5-DAT-1MIN:

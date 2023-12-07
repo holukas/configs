@@ -40,18 +40,18 @@ DAV12-RAW-FF1-TBL1-201903050001-TOA5-DAT-1MIN:
     G_SF_1_1_1: { field: G_SF_FF1_0.06_1, units: false, measurement: _instrumentmetrics }
     RECORD: { field: RECORD_FF1_0_1, units: false, measurement: _instrumentmetrics }
     SV_LOGGER_FF1_0_1: { field: SV_LOGGER_FF1_0_1, units: false, measurement: _instrumentmetrics }
-    SWC_1_1_1_Avg: { field: SWC_FF1_0.05_1, units: false, measurement: SWC }
-    SWC_1_1_1_Std: { field: SWC_SD_FF1_0.05_1, units: false, measurement: _SD }
-    SWC_1_1_2_Avg: { field: SWC_FF1_0.05_2, units: false, measurement: SWC }
-    SWC_1_1_2_Std: { field: SWC_SD_FF1_0.05_2, units: false, measurement: _SD }
-    SWC_1_2_1_Avg: { field: SWC_FF1_0.1_1, units: false, measurement: SWC }
-    SWC_1_2_1_Std: { field: SWC_SD_FF1_0.1_1, units: false, measurement: _SD }
-    SWC_1_3_1_Avg: { field: SWC_FF1_0.24_1, units: false, measurement: SWC }
-    SWC_1_3_1_Std: { field: SWC_SD_FF1_0.24_1, units: false, measurement: _SD }
-    SWC_1_4_1_Avg: { field: SWC_FF1_0.5_1, units: false, measurement: SWC }
-    SWC_1_4_1_Std: { field: SWC_SD_FF1_0.5_1, units: false, measurement: _SD }
-    SWC_1_5_1_Avg: { field: SWC_FF1_0.84_1, units: false, measurement: SWC }
-    SWC_1_5_1_Std: { field: SWC_SD_FF1_0.84_1, units: false, measurement: _SD }
+    SWC_1_1_1_Avg: { field: SWC_FF1_0.05_1, units: false, gain: 1, measurement: SWC }
+    SWC_1_1_1_Std: { field: SWC_SD_FF1_0.05_1, units: false, gain: 1, measurement: _SD }
+    SWC_1_1_2_Avg: { field: SWC_FF1_0.05_2, units: false, gain: 1, measurement: SWC }
+    SWC_1_1_2_Std: { field: SWC_SD_FF1_0.05_2, units: false, gain: 1, measurement: _SD }
+    SWC_1_2_1_Avg: { field: SWC_FF1_0.1_1, units: false, gain: 1, measurement: SWC }
+    SWC_1_2_1_Std: { field: SWC_SD_FF1_0.1_1, units: false, gain: 1, measurement: _SD }
+    SWC_1_3_1_Avg: { field: SWC_FF1_0.24_1, units: false, gain: 1, measurement: SWC }
+    SWC_1_3_1_Std: { field: SWC_SD_FF1_0.24_1, units: false, gain: 1, measurement: _SD }
+    SWC_1_4_1_Avg: { field: SWC_FF1_0.5_1, units: false, gain: 1, measurement: SWC }
+    SWC_1_4_1_Std: { field: SWC_SD_FF1_0.5_1, units: false, gain: 1, measurement: _SD }
+    SWC_1_5_1_Avg: { field: SWC_FF1_0.84_1, units: false, gain: 1, measurement: SWC }
+    SWC_1_5_1_Std: { field: SWC_SD_FF1_0.84_1, units: false, gain: 1, measurement: _SD }
     SWC_IU_1_1_1_Avg: { field: SWC_IU_FF1_0.05_1, units: false, measurement: _RAW }
     SWC_IU_1_1_2_Avg: { field: SWC_IU_FF1_0.05_2, units: false, measurement: _RAW }
     SWC_IU_1_2_1_Avg: { field: SWC_IU_FF1_0.1_1, units: false, measurement: _RAW }

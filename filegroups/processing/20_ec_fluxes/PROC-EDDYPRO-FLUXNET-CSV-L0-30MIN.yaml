@@ -33,7 +33,6 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: Level-0
   data_vars_parse_pos_indices: false

@@ -1,6 +1,6 @@
 # CH-DAV
 # 12_meteo_forestfloor
-
+#
 # SWC is now logged in % instead of m-3 m-3
 # FLAG_G_ISCAL_ETH_3_1_1 available since CH-DAV_iDL_FF3_0_1_TBL1_2020_06_24_1040.dat
 
@@ -28,7 +28,6 @@ DAV12-RAW-FF3-TBL1-201903041642-TOA5-DAT-1MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true

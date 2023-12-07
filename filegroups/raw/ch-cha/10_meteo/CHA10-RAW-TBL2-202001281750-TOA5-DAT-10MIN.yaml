@@ -1,6 +1,8 @@
 # CH-CHA
 # 10_meteo
-
+#
+# New variables (SWC, TS) were added to this file on 29 Nov 2023. No new filetype required
+# because file structure remained the same as before. Only additional vars added.
 
 CHA10-RAW-TBL2-202001281750-TOA5-DAT-10MIN:
   # TOA5
@@ -25,7 +27,6 @@ CHA10-RAW-TBL2-202001281750-TOA5-DAT-10MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
@@ -73,41 +74,77 @@ CHA10-RAW-TBL2-202001281750-TOA5-DAT-10MIN:
     SEC_GF1_0x100_3_Std: { field: SEC_LOWRES_SD_GF1_1_3, units: false, measurement: _SD }
     SWC_GF1_1x00_3_Avg: { field: SWC_LOWRES_GF1_1_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_1x00_3_Std: { field: SWC_LOWRES_SD_GF1_1_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x05_2_Avg: { field: SWC_LOWRES_GF1_0.05_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x05_2_Std: { field: SWC_LOWRES_SD_GF1_0.05_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x05_3_Avg: { field: SWC_LOWRES_GF1_0.05_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x05_3_Std: { field: SWC_LOWRES_SD_GF1_0.05_3, units: "%", gain: 100, measurement: _SD }
     SWC_GF1_0x10_3_Avg: { field: SWC_LOWRES_GF1_0.1_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x10_3_Std: { field: SWC_LOWRES_SD_GF1_0.1_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x15_2_Avg: { field: SWC_LOWRES_GF1_0.15_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x15_2_Std: { field: SWC_LOWRES_SD_GF1_0.15_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x20_3_Avg: { field: SWC_LOWRES_GF1_0.2_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x20_3_Std: { field: SWC_LOWRES_SD_GF1_0.2_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x25_2_Avg: { field: SWC_LOWRES_GF1_0.25_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x25_2_Std: { field: SWC_LOWRES_SD_GF1_0.25_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x30_3_Avg: { field: SWC_LOWRES_GF1_0.3_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x30_3_Std: { field: SWC_LOWRES_SD_GF1_0.3_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x35_2_Avg: { field: SWC_LOWRES_GF1_0.35_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x35_2_Std: { field: SWC_LOWRES_SD_GF1_0.35_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x40_3_Avg: { field: SWC_LOWRES_GF1_0.4_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x40_3_Std: { field: SWC_LOWRES_SD_GF1_0.4_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x45_2_Avg: { field: SWC_LOWRES_GF1_0.45_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x45_2_Std: { field: SWC_LOWRES_SD_GF1_0.45_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x50_3_Avg: { field: SWC_LOWRES_GF1_0.5_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x50_3_Std: { field: SWC_LOWRES_SD_GF1_0.5_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x55_2_Avg: { field: SWC_LOWRES_GF1_0.55_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x55_2_Std: { field: SWC_LOWRES_SD_GF1_0.55_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x60_3_Avg: { field: SWC_LOWRES_GF1_0.6_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x60_3_Std: { field: SWC_LOWRES_SD_GF1_0.6_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x65_2_Avg: { field: SWC_LOWRES_GF1_0.65_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x65_2_Std: { field: SWC_LOWRES_SD_GF1_0.65_2, units: false, measurement: _SD }  # since 29 Nov 2023
+    SWC_GF1_0x75_2_Avg: { field: SWC_LOWRES_GF1_0.75_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x75_2_Std: { field: SWC_LOWRES_SD_GF1_0.75_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x75_3_Avg: { field: SWC_LOWRES_GF1_0.75_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x75_3_Std: { field: SWC_LOWRES_SD_GF1_0.75_3, units: "%", gain: 100, measurement: _SD }
+    SWC_GF1_0x85_2_Avg: { field: SWC_LOWRES_GF1_0.85_2, units: false, measurement: SWC }  # since 29 Nov 2023
+    SWC_GF1_0x85_2_Std: { field: SWC_LOWRES_SD_GF1_0.85_2, units: false, measurement: _SD }  # since 29 Nov 2023
     SWC_GF1_0x100_3_Avg: { field: SWC_LOWRES_GF1_1_3, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x100_3_Std: { field: SWC_LOWRES_SD_GF1_1_3, units: "%", gain: 100, measurement: _SD }
     TS_GF1_1x00_3_Avg: { field: TS_LOWRES_GF1_1_3, units: false, measurement: TS }
     TS_GF1_1x00_3_Std: { field: TS_LOWRES_SD_GF1_1_3, units: false, measurement: _SD }
+    TS_GF1_0x05_2_Avg: { field: TS_LOWRES_GF1_0.05_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x05_2_Std: { field: TS_LOWRES_SD_GF1_0.05_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x05_3_Avg: { field: TS_LOWRES_GF1_0.05_3, units: false, measurement: TS }
     TS_GF1_0x05_3_Std: { field: TS_LOWRES_SD_GF1_0.05_3, units: false, measurement: _SD }
     TS_GF1_0x10_3_Avg: { field: TS_LOWRES_GF1_0.1_3, units: false, measurement: TS }
     TS_GF1_0x10_3_Std: { field: TS_LOWRES_SD_GF1_0.1_3, units: false, measurement: _SD }
+    TS_GF1_0x15_2_Avg: { field: TS_LOWRES_GF1_0.15_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x15_2_Std: { field: TS_LOWRES_SD_GF1_0.15_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x20_3_Avg: { field: TS_LOWRES_GF1_0.2_3, units: false, measurement: TS }
     TS_GF1_0x20_3_Std: { field: TS_LOWRES_SD_GF1_0.2_3, units: false, measurement: _SD }
+    TS_GF1_0x25_2_Avg: { field: TS_LOWRES_GF1_0.25_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x25_2_Std: { field: TS_LOWRES_SD_GF1_0.25_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x30_3_Avg: { field: TS_LOWRES_GF1_0.3_3, units: false, measurement: TS }
     TS_GF1_0x30_3_Std: { field: TS_LOWRES_SD_GF1_0.3_3, units: false, measurement: _SD }
+    TS_GF1_0x35_2_Avg: { field: TS_LOWRES_GF1_0.35_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x35_2_Std: { field: TS_LOWRES_SD_GF1_0.35_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x40_3_Avg: { field: TS_LOWRES_GF1_0.4_3, units: false, measurement: TS }
     TS_GF1_0x40_3_Std: { field: TS_LOWRES_SD_GF1_0.4_3, units: false, measurement: _SD }
+    TS_GF1_0x45_2_Avg: { field: TS_LOWRES_GF1_0.45_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x45_2_Std: { field: TS_LOWRES_SD_GF1_0.45_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x50_3_Avg: { field: TS_LOWRES_GF1_0.5_3, units: false, measurement: TS }
     TS_GF1_0x50_3_Std: { field: TS_LOWRES_SD_GF1_0.5_3, units: false, measurement: _SD }
+    TS_GF1_0x55_2_Avg: { field: TS_LOWRES_GF1_0.55_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x55_2_Std: { field: TS_LOWRES_SD_GF1_0.55_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x60_3_Avg: { field: TS_LOWRES_GF1_0.6_3, units: false, measurement: TS }
     TS_GF1_0x60_3_Std: { field: TS_LOWRES_SD_GF1_0.6_3, units: false, measurement: _SD }
+    TS_GF1_0x65_2_Avg: { field: TS_LOWRES_GF1_0.65_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x65_2_Std: { field: TS_LOWRES_SD_GF1_0.65_2, units: false, measurement: _SD }  # since 29 Nov 2023
+    TS_GF1_0x75_2_Avg: { field: TS_LOWRES_GF1_0.75_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x75_2_Std: { field: TS_LOWRES_SD_GF1_0.75_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x75_3_Avg: { field: TS_LOWRES_GF1_0.75_3, units: false, measurement: TS }
     TS_GF1_0x75_3_Std: { field: TS_LOWRES_SD_GF1_0.75_3, units: false, measurement: _SD }
+    TS_GF1_0x85_2_Avg: { field: TS_LOWRES_GF1_0.85_2, units: false, measurement: TS }  # since 29 Nov 2023
+    TS_GF1_0x85_2_Std: { field: TS_LOWRES_SD_GF1_0.85_2, units: false, measurement: _SD }  # since 29 Nov 2023
     TS_GF1_0x100_3_Avg: { field: TS_LOWRES_GF1_1_3, units: false, measurement: TS }
     TS_GF1_0x100_3_Std: { field: TS_LOWRES_SD_GF1_1_3, units: false, measurement: _SD }

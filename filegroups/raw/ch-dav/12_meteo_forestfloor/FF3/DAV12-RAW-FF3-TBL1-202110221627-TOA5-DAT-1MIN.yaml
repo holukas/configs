@@ -1,14 +1,15 @@
 # CH-DAV
 # 12_meteo_forestfloor
+#
+# Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
+# First file has slight naming inconsistency b/c it uses a dash before time at the end
+# --> therefore two patterns for filetype_dateparser
 
 
 DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-DAV_iDL_FF3_0_1_TBL1_2021_10_22-1627.dat
   # Last file:  *currently running*
-  # Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
-  # First file has slight naming inconsistency b/c it uses a dash before time at the end
-  # --> therefore two patterns for filetype_dateparser
   can_be_used_by_filescanner: true
   filetype_valid_from: 2021-10-22 16:27:00
   filetype_valid_to: 2099-12-31 23:59:59
@@ -28,7 +29,6 @@ DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true

@@ -1,14 +1,8 @@
 # Changelog
 
-## v2023XXXX | X Sep 2023
+## v2023XXXX | X Dec 2023
 
-### Early logger meteo files
-
-TODO 
-
-DONE check CONFIG.XLSX for wrong calibration factor SW_IN 2017/2018
-
-NEEDS CHECK config.header Added more SWC variables in `FRU10-RAW-TBL1-201711201643-TOA5-DAT-1MIN.yaml`
+### Early logger meteo files FRU10
 
 - Added `FRU10-RAW-LOGGER-2005071513-A-30MIN`: this is one of the earliest meteo files. These
   early files do not have variable names in the header. Typically, there is a so-called `config.header`
@@ -28,8 +22,49 @@ NEEDS CHECK config.header Added more SWC variables in `FRU10-RAW-TBL1-2017112016
   is currently picked up and applied by the Python script `dataflow`.
 - Two time resolutions can now be given for `-ALTERNATING-` formats, one for each ID: `data_raw_freq: [ 30T, 10T ]`.
   It is also possible to define an irregular timestamp, e.g., `[ 30T, irregular ]`
-- Added and updated many FRU formats
+- Added and updated many FRU filetypes
+
+### Forest floor TBL1 and TBL2 files DAV12
+
+- Added new filetype `DAV12-RAW-FF1-TBL1-201410231208-CSV-GZ-30MIN`
+- Added new filetype `DAV12-RAW-FF1-TBL1-201411121850-CSV-GZ-10MIN`
+- Added new filetype `DAV12-RAW-FF1-TBL2-201507021347-CSV-GZ-25H`
+- Added new filetype `DAV12-RAW-FF2-TBL1-201410231208-CSV-GZ-30MIN`
+- Added new filetype `DAV12-RAW-FF2-TBL1-201412041850-CSV-GZ-10MIN`
+- Added new filetype `DAV12-RAW-FF2-TBL1-201802281110-TOA5-DAT-10MIN`
+- Added new filetype `DAV12-RAW-FF2-TBL1-201807181510-TOA5-DAT-1MIN`
+- Added new filetype `DAV12-RAW-FF2-TBL2-201507021850-CSV-GZ-25H`
+- Added new filetype `DAV12-RAW-FF2-TBL2-201802281304-TOA5-DAT-25H`
+- Added new filetype `DAV12-RAW-FF3-TBL1-201410231208-CSV-GZ-30MIN`
+- Added new filetype `DAV12-RAW-FF3-TBL1-201412041850-CSV-GZ-10MIN`
+- Added new filetype `DAV12-RAW-FF3-TBL1-201802281110-TOA5-DAT-10MIN`
+- Added new filetype `DAV12-RAW-FF3-TBL1-201807181512-TOA5-DAT-1MIN`
+- Added new filetype `DAV12-RAW-FF3-TBL2-201507021850-CSV-GZ-25H`
+- Added new filetype `DAV12-RAW-FF3-TBL2-201802281504-TOA5-DAT-25H`
+- Added new filetype `DAV12-RAW-FF4-TBL1-201410231208-CSV-GZ-30MIN`
+- Added new filetype `DAV12-RAW-FF4-TBL1-201412041850-CSV-GZ-10MIN`
+- Added new filetype `DAV12-RAW-FF4-TBL1-201802281110-TOA5-DAT-10MIN`
+- Added new filetype `DAV12-RAW-FF4-TBL1-201807181521-TOA5-DAT-1MIN`
+- Added new filetype `DAV12-RAW-FF4-TBL1-201903041641-TOA5-DAT-1MIN`
+- Added new filetype `DAV12-RAW-FF4-TBL2-201507021850-CSV-GZ-25H`
+- Added new filetype `DAV12-RAW-FF4-TBL2-201803011804-TOA5-DAT-25H`
+- Added new filetype `DAV12-RAW-FF5-TBL1-201410231208-CSV-GZ-30MIN`
+- Added new filetype `DAV12-RAW-FF5-TBL1-201412041850-CSV-GZ-10MIN`
+- Added new filetype `DAV12-RAW-FF5-TBL1-201802281100-TOA5-DAT-10MIN`
+- Added new filetype `DAV12-RAW-FF5-TBL1-201807181525-TOA5-DAT-1MIN`
+- Added new filetype `DAV12-RAW-FF5-TBL1-201903041640-TOA5-DAT-1MIN`
+- Added new filetype `DAV12-RAW-FF5-TBL2-201507021850-CSV-GZ-25H`
+- Added new filetype `DAV12-RAW-FF5-TBL2-201802281904-TOA5-DAT-25H`
+- Added new filetype `DAV12-RAW-FF6-TBL2-202310261047-TOA5-DAT-1MIN`
+
+### More additions
+
 - Added more variables in `DAV10-RAW-TBL1-201807181036-TOA5-DAT-10S`
+- Added more variables in `CHA10-RAW-TBL2-202001281750-TOA5-DAT-10MIN`
+
+### Other changes
+
+- Removed setting `data_mangle_dupe_cols` from filetype configs, not supported by pandas in newer versions
 
 ## v20230309 | 9 Mar 2023
 

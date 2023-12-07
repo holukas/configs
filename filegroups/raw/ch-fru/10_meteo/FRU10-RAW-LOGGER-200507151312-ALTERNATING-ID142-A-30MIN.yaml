@@ -62,7 +62,6 @@ FRU10-RAW-LOGGER-200507151312-ALTERNATING-ID142-A-30MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
@@ -103,15 +102,15 @@ FRU10-RAW-LOGGER-200507151312-ALTERNATING-ID142-A-30MIN:
     Tsoil_18_AVG: { field: TS_GF1_0.4_1, units: degC, gain: 1, measurement: TS }
     Tsoil_19_AVG: { field: TS_GF1_0.95_1, units: degC, gain: 1, measurement: TS }
     Tsoil_20_AVG: { field: TS_GF1_0.01_2, units: degC, gain: 1, measurement: TS }
-    Theta_11_AVG: { field: SDP_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_12_AVG: { field: SDP_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_13_AVG: { field: SDP_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_14_AVG: { field: SDP_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_15_AVG: { field: SDP_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_16_AVG: { field: SDP_AVG_GF1_X_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_17_AVG: { field: SDP_AVG_GF1_X_2, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_18_AVG: { field: SDP_AVG_GF1_X_3, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_19_AVG: { field: SDP_AVG_GF1_X_4, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_11_AVG: { field: SDP_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_12_AVG: { field: SDP_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_13_AVG: { field: SDP_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_14_AVG: { field: SDP_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_15_AVG: { field: SDP_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_16_AVG: { field: SDP_AVG_GF1_X_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_17_AVG: { field: SDP_AVG_GF1_X_2, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_18_AVG: { field: SDP_AVG_GF1_X_3, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_19_AVG: { field: SDP_AVG_GF1_X_4, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
     LiBatt_V_AVG: { field: BV_iDL_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
     Tintern_STD: { field: T_iDL_SD_BOX1_0_1, units: degC, gain: 1, measurement: _instrumentmetrics }
     BatVolt_STD: { field: SV_iDL_SD_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }

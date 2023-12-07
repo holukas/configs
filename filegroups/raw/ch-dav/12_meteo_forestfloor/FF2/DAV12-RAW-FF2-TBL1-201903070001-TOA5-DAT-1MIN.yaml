@@ -1,12 +1,12 @@
 # CH-DAV
 # 12_meteo_forestfloor
-
+#
+# SWC units changed from m3 m-3 to %
 
 DAV12-RAW-FF2-TBL1-201903070001-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-DAV_iDL_FF2_0_1_TBL1_2019_03_07_0001.dat
   # Last file:  CH-DAV_iDL_FF2_0_1_TBL1_2021_10_22_0001.dat
-  # SWC units changed from m3 m-3 to %
   can_be_used_by_filescanner: true
   filetype_valid_from: 2019-03-07 00:01:00
   filetype_valid_to: 2021-10-22 00:01:00
@@ -26,7 +26,6 @@ DAV12-RAW-FF2-TBL1-201903070001-TOA5-DAT-1MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true

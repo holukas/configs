@@ -1,12 +1,29 @@
 # CH-DAV
 # 12_meteo_forestfloor
-
+#
+# Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
+# SoilVUE variables according to logger code (https://gitlab.ethz.ch/gl/ch-dav_idl_ff5_0_1):
+#
+# Soil water content:
+#   SWC_5_1_3 --> SWC_FF5_0x05_3
+#   SWC_5_2_2 --> SWC_FF5_0x10_2
+#   SWC_5_3_2 --> SWC_FF5_0x20_2
+#   SWC_5_4_1 --> SWC_FF5_0x30_1
+#   SWC_5_5_1 --> SWC_FF5_0x40_1
+#   SWC_5_6_2 --> SWC_FF5_0x50_2
+#
+# Same depths for SoilVUE TS with these names:
+#   TS_5_2_3
+#   TS_5_3_2
+#   TS_5_4_2
+#   TS_5_5_1
+#   TS_5_6_1
+#   TS_5_7_2
 
 DAV12-RAW-FF5-TBL1-202006240958-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-DAV_iDL_FF5_0_1_TBL1_2020_06_24_0958.dat
   # Last file:  *currently running*
-  # Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
   can_be_used_by_filescanner: true
   filetype_valid_from: 2020-06-24 09:58:00
   filetype_valid_to: 2099-12-31 23:59:59
@@ -26,7 +43,6 @@ DAV12-RAW-FF5-TBL1-202006240958-TOA5-DAT-1MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true

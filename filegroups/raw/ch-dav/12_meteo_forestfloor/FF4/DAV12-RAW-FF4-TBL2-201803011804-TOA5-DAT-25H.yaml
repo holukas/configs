@@ -1,0 +1,52 @@
+# CH-DAV
+# 12_meteo_forestfloor
+
+
+DAV12-RAW-FF4-TBL2-201803011804-TOA5-DAT-25H:
+  # TOA5
+  # First file: CH-DAV_iDL_FF4_0_1_TBL2_2018_03_01_1804.dat (the very first CH-DAV_iDL_FF4_0_1_TBL2_*.dat)
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2018-03-01 18:04:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-DAV_iDL_FF4_0_1_TBL2_*.dat
+  filetype_dateparser: CH-DAV_iDL_FF4_0_1_TBL2_%Y_%m_%d_%H%M.dat
+  filetype_gzip: false
+  filegroup: 12_meteo_forestfloor
+  data_raw_freq: 25H
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    CAL_G_SF_4_1_1: { field: CAL_G_SF_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_I_HEATAVG_4_1_1: { field: CAL_I_HEATAVG_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_I_HEATAVG_FF4_0x05_1: { field: CAL_I_HEATAVG_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    CAL_I_HEATT1_4_1_1: { field: CAL_I_HEATT1_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_I_HEATT1_FF4_0x05_1: { field: CAL_I_HEATT1_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    CAL_I_HEATT0_4_1_1: { field: CAL_I_HEATT0_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_I_HEATT0_FF4_0x05_1: { field: CAL_I_HEATT0_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    CAL_SENS_HFP_FF4_0x05_1: { field: CAL_SENS_HFP_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENSDIFF_4_1_1: { field: CAL_V_SENSDIFF_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENSDIFF_FF4_0x05_1: { field: CAL_V_SENSDIFF_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENST1_4_1_1: { field: CAL_V_SENST1_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENST1_FF4_0x05_1: { field: CAL_V_SENST1_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENST2_4_1_1: { field: CAL_V_SENST2_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENST2_FF4_0x05_1: { field: CAL_V_SENST2_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENST0_4_1_1: { field: CAL_V_SENST0_FF4_1_1, units: false, measurement: _instrumentmetrics }
+    CAL_V_SENST0_FF4_0x05_1: { field: CAL_V_SENST0_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    DNTP_LOGGER_FF4_0_1: { field: DNTP_LOGGER_FF4_0_1, units: false, measurement: _instrumentmetrics }
+    RECORD: { field: RECORD, units: false, measurement: _instrumentmetrics }
+    SV_LOGGER_FF4_0_1: { field: SV_LOGGER_FF4_0_1, units: false, measurement: _instrumentmetrics }
+    T_LOGGER_FF4_0_1: { field: T_LOGGER_FF4_0_1, units: false, measurement: _instrumentmetrics }
+

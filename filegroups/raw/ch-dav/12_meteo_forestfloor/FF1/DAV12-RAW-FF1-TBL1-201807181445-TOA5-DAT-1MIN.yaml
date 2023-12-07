@@ -1,13 +1,13 @@
 # CH-DAV
 # 12_meteo_forestfloor
-
+#
+# Time resolution changed to 1MIN
+# SWC still in m3 m-3, gain 100 applied to convert to %
 
 DAV12-RAW-FF1-TBL1-201807181445-TOA5-DAT-1MIN:
   # TOA5
   # First file: CH-DAV_iDL_FF1_0_1_TBL1_2018_07_18_1445.dat
   # Last file:  CH-DAV_iDL_FF1_0_1_TBL1_2019_03_04_0001.dat
-  # Time resolution changed to 1MIN
-  # SWC still in m3 m-3, gain 100 applied to convert to %
   can_be_used_by_filescanner: true
   filetype_valid_from: 2018-07-18 14:45:00
   filetype_valid_to: 2019-03-04 00:01:00
@@ -27,7 +27,6 @@ DAV12-RAW-FF1-TBL1-201807181445-TOA5-DAT-1MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true

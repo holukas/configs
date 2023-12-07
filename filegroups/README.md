@@ -24,7 +24,41 @@ would be valid for this filetype, but not a file `DAV_Meteo_NABEL_181231.CSV`. H
 the starting datetime from the ID is not used to check the datetime validity of datafiles,
 but this is done with the settings below.
 
-## `filetype_valid_from`
+## Filetype settings
+
+
+
+  
+  filegroup: 10_meteo
+  data_raw_freq: 10T
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+
+### can_be_used_by_filescanner
+
+`true` or `false`
+
+Defines whether the filetype is "seen" during the automatic execution
+of the `filescanner` script. Useful to exclude certain files during automatic
+uploads to the database. For example, final flux calculations are uploaded
+manually (on-demand) to the database, but the results files are still stored on
+the server but should be ignored during the daily automatic data upload of other datafiles. 
+
+### filetype_valid_from
+
+datetime in the format `YYYY-MM-DD hh:mm:ss`
 
 The date/time info is read *from the filename* and then checked against
 this setting. It is assumed that the date/time info in the filename
@@ -36,7 +70,9 @@ respective filetype.
 - `siteFile_20190419.CSV` is valid
 - `siteFile_20181231.CSV` is NOT valid
 
-## `filetype_valid_to`
+### filetype_valid_to
+
+datetime in the format `YYYY-MM-DD hh:mm:ss`
 
 The date/time info is read *from the filename* and then checked against
 this setting. It is assumed that the date/time info in the filename
@@ -48,49 +84,25 @@ respective filetype.
 - `siteFile_20190419.CSV` is valid
 - `siteFile_20190727.CSV` is NOT valid
 
-NABEL format
-First file: DAV_Meteo_NABEL_190101.CSV (the very first DAV_Meteo_NABEL_*.CSV that is ingested to db)
-Last file:  *currently running*
-The very first file is DAV_Meteo_NABEL_181004.CSV, but for 2018 we are using
-the 10MIN data.
-**This file has ANSI encoding**
-This encoding is used by default in the legacy components
-of Microsoft Windows.
-To read this file in Linux, we use data_encoding='cp1252',
-which is the same as 'windows-1252'. 'cp1252' works under
-Linux and Windows.
-see:
-- https://docs.python.org/2/library/codecs.html#python-specific-encodings
-- https://en.wikipedia.org/wiki/Windows-1252
-- https://stackoverflow.com/questions/2014069/windows-1252-to-utf-8-encoding
-Has some empty columns that are ignored.
-filetype_valid_from: 2019-01-01 00:00:00
-filetype_valid_to: 2099-12-31 23:59:59
-filetype_id: DAV_Meteo_NABEL_*.CSV
-filetype_dateparser: DAV_Meteo_NABEL_%y%m%d.CSV
-filetype_gzip: false
-filegroup: 13_meteo_nabel
-data_raw_freq: T
-data_skiprows: [ 0, 3 ]
-data_headerrows: [ 0, 1 ]
-data_index_col: 0
-data_parse_dates: [ 0 ]
-data_date_parser: '%d.%m.%Y %H:%M'
-data_build_timestamp: false
-data_keep_good_rows: false
-data_remove_bad_rows: false
-data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
-data_encoding: cp1252
-data_delimiter: ';'
-data_mangle_dupe_cols: true
-data_keep_date_col: false
-data_version: raw
-data_vars:
-TEMP: { field: TA_NABEL_T1_35_1, gain: 1, units: false, measurement: TA }
-FEUCHT: { field: RH_NABEL_T1_35_1, gain: 1, units: false, measurement: RH }
-STRGLO: { field: SW_IN_NABEL_T1_35_1, gain: 1, units: false, measurement: SW }
-REGEN: { field: PREC_TOT_NABEL_T1_20_1, gain: 1, units: false, measurement: PREC }
-Reg_Menge: { field: PREC_CUM_NABEL_T1_20_1, gain: 1, units: false, measurement: PREC }
+### filetype_id
+
+string to identify files of this filetype
+
+Example: `FILE_*.dat` for the file `FILE_20231201-1450.dat`
+
+### filetype_dateparser
+
+parsing string to parse datetime info from filename
+
+Example: `FILE_%Y%m%d-%H%M.dat` for the file `FILE_20231201-1450.dat`
+
+### filetype_gzip
+
+`true` or `false`; select `true` to directly use `.gz` compressed files
+
+
+
+
 
 `RAWVAR: { field: VAR, units: UNITS, gain: 1, rawfunc: [ calc_lw, PT100_2_AVG, LWin_2_AVG, LW_IN_T1_2_1 ], measurement: _instrumentmetrics } # rawfunc`
 

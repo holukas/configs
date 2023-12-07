@@ -1,0 +1,52 @@
+# CH-DAV
+# 12_meteo_forestfloor
+#
+# Two possible filenames for this filetype.
+# FF1 measurements are now recorded at 10MIN time resolution.
+
+DAV12-RAW-FF2-TBL1-201412041850-CSV-GZ-10MIN:
+  # First file: CH-DAV_CR1000_FF2_1_TABLE1_20141204-1850.csv.gz (the very first file for this filetype)
+  # Last file:  CH-DAV_CR1000_FF2_1_TBL1_20180621-0603.csv.gz (the last file)
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2014-12-04 18:50:00
+  filetype_valid_to: 2018-06-21 06:03:00
+  filetype_id: ['CH-DAV_CR1000_FF2_1_TABLE1_*.csv.gz', 'CH-DAV_CR1000_FF2_1_TBL1_*.csv.gz']
+  filetype_dateparser: ['CH-DAV_CR1000_FF2_1_TABLE1_%Y%m%d-%H%M.csv.gz', 'CH-DAV_CR1000_FF2_1_TBL1_%Y%m%d-%H%M.csv.gz']
+  filetype_gzip: true
+  filegroup: 12_meteo_forestfloor
+  data_raw_freq: 10T
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    G_FF2_006_1_Avg: { field: G_FF2_0.06_1, units: "W m-2", measurement: G }
+    Record: { field: RECORD_FF2_0_1, units: "RN", measurement: _instrumentmetrics }
+    SENShfp_FF2_006_1: { field: SENS_HFP_FF2_0.06_1, units: false, measurement: _instrumentmetrics }
+    SWC_FF2_004_2_Avg: { field: SWC_FF2_0.04_2, units: "%", gain: 100, measurement: SWC }
+    SWC_FF2_005_1_Avg: { field: SWC_FF2_0.05_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF2_010_1_Avg: { field: SWC_FF2_0.10_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF2_021_1_Avg: { field: SWC_FF2_0.21_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF2_050_1_Avg: { field: SWC_FF2_0.50_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF2_080_1_Avg: { field: SWC_FF2_0.80_1, units: "%", gain: 100, measurement: SWC }
+    Tlogger_FF2_0_1: { field: T_LOGGER_FF2_0_1, units: "deg C", measurement: _instrumentmetrics }
+    Ts_FF2_003_1_Avg: { field: TS_FF2_0.03_1, units: "deg C", measurement: TS }
+    Ts_FF2_003_1_Std: { field: TS_SD_FF2_0.03_1, units: "deg C", measurement: _SD }
+    Ts_FF2_005_1_Avg: { field: TS_FF2_0.05_1, units: "deg C", measurement: TS }
+    Ts_FF2_005_1_Std: { field: TS_SD_FF2_0.05_1, units: "deg C", measurement: _SD }
+    Ts_FF2_006_2_Avg: { field: TS_FF2_0.06_2, units: "deg C", measurement: TS }
+    Ts_FF2_011_1_Avg: { field: TS_FF2_0.11_1, units: "deg C", measurement: TS }
+    Ts_FF2_021_1_Avg: { field: TS_FF2_0.21_1, units: "deg C", measurement: TS }
+    Ts_FF2_053_1_Avg: { field: TS_FF2_0.53_1, units: "deg C", measurement: TS }
+    Ts_FF2_080_1_Avg: { field: TS_FF2_0.80_1, units: "deg C", measurement: TS }
+    Ulogger_FF2_0_1: { field: SV_LOGGER_FF2_0_1, units: "V", measurement: _instrumentmetrics }

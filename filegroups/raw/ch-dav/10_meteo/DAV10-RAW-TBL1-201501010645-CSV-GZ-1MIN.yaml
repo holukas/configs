@@ -1,15 +1,17 @@
 # CH-DAV
 # 10_meteo
+#
+# ** THIS FILETYPE CONTAINS DATA OVERLAPPING WITH DAV10-RAW-TBL1-201802281101-TOA5-DAT-10S **
+# ** SINCE DAV10-RAW-TBL1-201802281101-TOA5-DAT-10S CONTAINS THE SAME DATA BUT AT HIGHER **
+# ** TIME RESOLUTION, IT IS GIVEN PREFERENCE --> SEE SETTING filetype_valid_to AND LAST USED FILE **
+#
+# Some of the files have NULL bytes in some data rows. From what I
+# saw not many rows per file are affected, sometimes we lose one row,
+# sometimes five or so.
 
 
 DAV10-RAW-TBL1-201501010645-CSV-GZ-1MIN:
-  # ** THIS FILETYPE CONTAINS DATA OVERLAPPING WITH DAV10-RAW-TBL1-201802281101-TOA5-DAT-10S **
-  # ** SINCE DAV10-RAW-TBL1-201802281101-TOA5-DAT-10S CONTAINS THE SAME DATA BUT AT HIGHER **
-  # ** TIME RESOLUTION, IT IS GIVEN PREFERENCE --> SEE SETTING filetype_valid_to AND LAST USED FILE **
   # CR1000 (gzipped)
-  # Some of the files have NULL bytes in some data rows. From what I
-  # saw not many rows per file are affected, sometimes we lose one row,
-  # sometimes five or so.
   # First file: CH-DAV_CR1000_T1_35m_20150101-0645.csv.gz (the very first file for this filetype)
   # Last file:  CH-DAV_CR1000_T1_35_1_TBL1_20180621-0603.csv.gz (the last file)
   # LAST USED FILE: CH-DAV_CR1000_T1_35_1_TBL1_20180228-1003.csv.gz (because of data overlaps with next filetype)
@@ -32,7 +34,6 @@ DAV10-RAW-TBL1-201501010645-CSV-GZ-1MIN:
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
   data_encoding: utf-8
   data_delimiter: ','
-  data_mangle_dupe_cols: true
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true

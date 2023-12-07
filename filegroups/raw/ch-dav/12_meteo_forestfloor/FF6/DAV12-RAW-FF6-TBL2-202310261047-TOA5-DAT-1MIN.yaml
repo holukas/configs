@@ -1,0 +1,56 @@
+# CH-DAV
+# 12_meteo_forestfloor
+
+
+DAV12-RAW-FF6-TBL2-202310261047-TOA5-DAT-1MIN:
+  # TOA5
+  # First file: CH-DAV_iDL_FF6_0_1_TBL2_2023_10_26_1047.dat (the very first CH-DAV_iDL_FF6_0_1_TBL2_*.dat)
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2023-10-26 10:47:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-DAV_iDL_FF6_0_1_TBL2_*.dat
+  filetype_dateparser: CH-DAV_iDL_FF6_0_1_TBL2_%Y_%m_%d_%H%M.dat
+  filetype_gzip: false
+  filegroup: 12_meteo_forestfloor
+  data_raw_freq: T
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    RECORD: { field: RECORD_FF6_X_X, units: false, measurement: _instrumentmetrics }
+    SWC_FF6_0x05_2_Avg: { field: SWC_FF6_0.05_2, units: false, measurement: SWC }
+    SWC_FF6_0x15_2_Avg: { field: SWC_FF6_0.15_2, units: false, measurement: SWC }
+    SWC_FF6_0x25_2_Avg: { field: SWC_FF6_0.25_2, units: false, measurement: SWC }
+    SWC_FF6_0x35_2_Avg: { field: SWC_FF6_0.35_2, units: false, measurement: SWC }
+    SWC_FF6_0x45_2_Avg: { field: SWC_FF6_0.45_2, units: false, measurement: SWC }
+    SWC_FF6_0x55_2_Avg: { field: SWC_FF6_0.55_2, units: false, measurement: SWC }
+    SWC_FF6_0x05_2_Std: { field: SWC_SD_FF6_0.05_2, units: false, measurement: _SD }
+    SWC_FF6_0x15_2_Std: { field: SWC_SD_FF6_0.15_2, units: false, measurement: _SD }
+    SWC_FF6_0x25_2_Std: { field: SWC_SD_FF6_0.25_2, units: false, measurement: _SD }
+    SWC_FF6_0x35_2_Std: { field: SWC_SD_FF6_0.35_2, units: false, measurement: _SD }
+    SWC_FF6_0x45_2_Std: { field: SWC_SD_FF6_0.45_2, units: false, measurement: _SD }
+    SWC_FF6_0x55_2_Std: { field: SWC_SD_FF6_0.55_2, units: false, measurement: _SD }
+    TS_FF6_0x05_2_Avg: { field: TS_FF6_0.05_2, units: false, measurement: TS }
+    TS_FF6_0x15_2_Avg: { field: TS_FF6_0.15_2, units: false, measurement: TS }
+    TS_FF6_0x25_2_Avg: { field: TS_FF6_0.25_2, units: false, measurement: TS }
+    TS_FF6_0x35_2_Avg: { field: TS_FF6_0.35_2, units: false, measurement: TS }
+    TS_FF6_0x45_2_Avg: { field: TS_FF6_0.45_2, units: false, measurement: TS }
+    TS_FF6_0x55_2_Avg: { field: TS_FF6_0.55_2, units: false, measurement: TS }
+    TS_FF6_0x05_2_Std: { field: TS_SD_FF6_0.05_2, units: false, measurement: _SD }
+    TS_FF6_0x15_2_Std: { field: TS_SD_FF6_0.15_2, units: false, measurement: _SD }
+    TS_FF6_0x25_2_Std: { field: TS_SD_FF6_0.25_2, units: false, measurement: _SD }
+    TS_FF6_0x35_2_Std: { field: TS_SD_FF6_0.35_2, units: false, measurement: _SD }
+    TS_FF6_0x45_2_Std: { field: TS_SD_FF6_0.45_2, units: false, measurement: _SD }
+    TS_FF6_0x55_2_Std: { field: TS_SD_FF6_0.55_2, units: false, measurement: _SD }

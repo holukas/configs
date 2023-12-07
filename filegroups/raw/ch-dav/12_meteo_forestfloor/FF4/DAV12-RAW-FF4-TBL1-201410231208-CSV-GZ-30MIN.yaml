@@ -1,0 +1,62 @@
+# CH-DAV
+# 12_meteo_forestfloor
+
+
+DAV12-RAW-FF4-TBL1-201410231208-CSV-GZ-30MIN:
+  # First file: CH-DAV_CR1000_FF4_1_TABLE1_20141023-1208.csv.gz (the very first file for this filetype)
+  # Last file:  CH-DAV_CR1000_FF4_1_TABLE1_20141204-0650.csv.gz (the last file)
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2014-10-23 12:08:00
+  filetype_valid_to: 2014-12-04 06:50:00
+  filetype_id: CH-DAV_CR1000_FF4_1_TABLE1_*.csv.gz
+  filetype_dateparser: CH-DAV_CR1000_FF4_1_TABLE1_%Y%m%d-%H%M.csv.gz
+  filetype_gzip: true
+  filegroup: 12_meteo_forestfloor
+  data_raw_freq: 30T
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    G_FF4_005_1_Avg: { field: G_FF4_0.05_1, units: "W m-2", measurement: G }
+    G_FF4_005_1_Std: { field: G_SD_FF4_0.05_1, units: "W m-2", measurement: _SD }
+    Record: { field: RECORD_FF4_0_1, units: "RN", measurement: _instrumentmetrics }
+    SENShfp_FF4_005_1: { field: SENS_HFP_FF4_0.05_1, units: false, measurement: _instrumentmetrics }
+    SWC_FF4_005_1_Avg: { field: SWC_FF4_0.05_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF4_005_1_Std: { field: SWC_SD_FF4_0.05_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF4_006_2_Avg: { field: SWC_FF4_0.06_2, units: "%", gain: 100, measurement: SWC }
+    SWC_FF4_006_2_Std: { field: SWC_SD_FF4_0.06_2, units: "%", gain: 100, measurement: _SD }
+    SWC_FF4_010_1_Avg: { field: SWC_FF4_0.10_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF4_010_1_Std: { field: SWC_SD_FF4_0.10_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF4_020_1_Avg: { field: SWC_FF4_0.20_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF4_020_1_Std: { field: SWC_SD_FF4_0.20_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF4_049_1_Avg: { field: SWC_FF4_0.49_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF4_049_1_Std: { field: SWC_SD_FF4_0.49_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF4_069_1_Avg: { field: SWC_FF4_0.69_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF4_069_1_Std: { field: SWC_SD_FF4_0.69_1, units: "%", gain: 100, measurement: _SD }
+    Tlogger_FF4_0_1: { field: T_LOGGER_FF4_0_1, units: "deg C", measurement: _instrumentmetrics }
+    Ts_FF4_002_1_Avg: { field: TS_FF4_0.02_1, units: "deg C", measurement: TS }
+    Ts_FF4_002_1_Std: { field: TS_SD_FF4_0.02_1, units: "deg C", measurement: _SD }
+    Ts_FF4_005_2_Avg: { field: TS_FF4_0.05_2, units: "deg C", measurement: TS }
+    Ts_FF4_005_2_Std: { field: TS_SD_FF4_0.05_2, units: "deg C", measurement: _SD }
+    Ts_FF4_006_1_Avg: { field: TS_FF4_0.06_1, units: "deg C", measurement: TS }
+    Ts_FF4_006_1_Std: { field: TS_SD_FF4_0.06_1, units: "deg C", measurement: _SD }
+    Ts_FF4_011_1_Avg: { field: TS_FF4_0.11_1, units: "deg C", measurement: TS }
+    Ts_FF4_011_1_Std: { field: TS_SD_FF4_0.11_1, units: "deg C", measurement: _SD }
+    Ts_FF4_021_1_Avg: { field: TS_FF4_0.21_1, units: "deg C", measurement: TS }
+    Ts_FF4_021_1_Std: { field: TS_SD_FF4_0.21_1, units: "deg C", measurement: _SD }
+    Ts_FF4_051_1_Avg: { field: TS_FF4_0.51_1, units: "deg C", measurement: TS }
+    Ts_FF4_051_1_Std: { field: TS_SD_FF4_0.51_1, units: "deg C", measurement: _SD }
+    Ts_FF4_066_1_Avg: { field: TS_FF4_0.66_1, units: "deg C", measurement: TS }
+    Ts_FF4_066_1_Std: { field: TS_SD_FF4_0.66_1, units: "deg C", measurement: _SD }
+    Ulogger_FF4_0_1: { field: SV_LOGGER_FF4_0_1, units: "V", measurement: _instrumentmetrics }

@@ -1,0 +1,49 @@
+# CH-DAV
+# 12_meteo_forestfloor
+
+
+DAV12-RAW-FF3-TBL2-201507021850-CSV-GZ-25H:
+  # First file: CH-DAV_CR1000_FF3_1_TBL2_20150702-1850.csv.gz (the very first file for this filetype)
+  # Last file:  CH-DAV_CR1000_FF3_1_TBL2_20180621-0603.csv.gz (the last file)
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2015-07-02 18:50:00
+  filetype_valid_to: 2018-06-21 06:03:00
+  filetype_id: CH-DAV_CR1000_FF3_1_TBL2_*.csv.gz
+  filetype_dateparser: CH-DAV_CR1000_FF3_1_TBL2_%Y%m%d-%H%M.csv.gz
+  filetype_gzip: true
+  filegroup: 12_meteo_forestfloor
+  data_raw_freq: 25H
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    CAL_I_HEATAVG_FF3_0x05_1: { field: CAL_I_HEATAVG_FF3_0.05_1, units: "mA", measurement: _instrumentmetrics }
+    CAL_I_HEATT1_FF3_0x05_1: { field: CAL_I_HEATT1_FF3_0.05_1, units: "mA", measurement: _instrumentmetrics }
+    CAL_I_HEATT0_FF3_0x05_1: { field: CAL_I_HEATT0_FF3_0.05_1, units: "mA", measurement: _instrumentmetrics }
+    CAL_Iheat_avg: { field: CAL_I_HEATAVG_FF3_0.05_1, units: "mA", measurement: _instrumentmetrics }
+    CAL_Iheat_t1: { field: CAL_I_HEATT1_FF3_0.05_1, units: "mA", measurement: _instrumentmetrics }
+    CAL_Iheat_t0: { field: CAL_I_HEATT0_FF3_0.05_1, units: "mA", measurement: _instrumentmetrics }
+    CAL_V_SENSDIFF_FF3_0x05_1: { field: CAL_V_SENSDIFF_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    CAL_V_SENST1_FF3_0x05_1: { field: CAL_V_SENST1_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    CAL_V_SENST2_FF3_0x05_1: { field: CAL_V_SENST2_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    CAL_V_SENST0_FF3_0x05_1: { field: CAL_V_SENST0_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    CAL_Vsen_diff: { field: CAL_V_SENSDIFF_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    CAL_Vsen_t1: { field: CAL_V_SENST1_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    CAL_Vsen_t2: { field: CAL_V_SENST2_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    CAL_Vsen_t0: { field: CAL_V_SENST0_FF3_0.05_1, units: "mV", measurement: _instrumentmetrics }
+    DNTP_LOGGER_FF3_0_1: { field: DNTP_LOGGER_FF3_0_1, units: "ms", measurement: _instrumentmetrics }
+    Record: { field: RECORD_FF3_0_1, units: "RN", measurement: _instrumentmetrics }
+    SENShfp: { field: CAL_SENS_HFP_FF3_0.05_1, units: "mV*m^2/W", measurement: _instrumentmetrics }
+    SV_LOGGER_FF3_0_1: { field: SV_LOGGER_FF3_0_1, units: "V", measurement: _instrumentmetrics }
+    T_LOGGER_FF3_0_1: { field: T_LOGGER_FF3_0_1, units: "deg C", measurement: _instrumentmetrics }

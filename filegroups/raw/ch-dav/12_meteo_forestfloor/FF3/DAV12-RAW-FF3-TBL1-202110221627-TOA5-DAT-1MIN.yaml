@@ -4,6 +4,23 @@
 # Added SoilVUE variables, additional depths (5, 10, 20, 30, 40 and 50 cm), replicates
 # First file has slight naming inconsistency b/c it uses a dash before time at the end
 # --> therefore two patterns for filetype_dateparser
+# SoilVUE variables according to logger code (https://gitlab.ethz.ch/gl/ch-dav_idl_ff3_0_1):
+#
+# Soil water content:
+#Alias SoilVUE(1) = SWC_3_1_3   'SWC_FF3_0x05_3
+#Alias SoilVUE(5) = SWC_3_2_2   'SWC_FF3_0x10_2
+#Alias SoilVUE(9) = SWC_3_3_2   'SWC_FF3_0x20_2
+#Alias SoilVUE(13) = SWC_3_4_1  'SWC_FF3_0x30_1
+#Alias SoilVUE(17) = SWC_3_5_1  'SWC_FF3_0x40_1
+#Alias SoilVUE(21) = SWC_3_6_2  'SWC_FF3_0x50_2
+#
+#'SoilVUE
+#Alias SoilVUE(3) = TS_3_2_3   'SoilVUE
+#Alias SoilVUE(7) = TS_3_3_2   'SoilVUE
+#Alias SoilVUE(11) = TS_3_4_2  'SoilVUE
+#Alias SoilVUE(15) = TS_3_5_1  'SoilVUE
+#Alias SoilVUE(19) = TS_3_6_1  'SoilVUE
+#Alias SoilVUE(23) = TS_3_7_2  'SoilVUE
 
 
 DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
@@ -79,8 +96,8 @@ DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
     SWC_IU_3_6_1_Avg: { field: SWC_IU_FF3_0.52_1, units: false, gain: 1, measurement: _RAW }
     SWC_IU_3_7_1_Avg: { field: SWC_IU_FF3_0.68_1, units: false, gain: 1, measurement: _RAW }
     T_LOGGER_FF3_0_1: { field: T_LOGGER_FF3_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    TS_3_1_1_Avg: { field: TS_FF3_0.03_1, units: false, gain: 1, measurement: TS }
-    TS_3_1_1_Std: { field: TS_SD_FF3_0.03_1, units: false, gain: 1, measurement: _SD }
+    TS_3_1_1_Avg: { field: TS_FF3_0.02_1, units: false, gain: 1, measurement: TS }
+    TS_3_1_1_Std: { field: TS_SD_FF3_0.02_1, units: false, gain: 1, measurement: _SD }
     TS_3_2_1_Avg: { field: TS_FF3_0.05_1, units: false, gain: 1, measurement: TS }
     TS_3_2_1_Std: { field: TS_SD_FF3_0.05_1, units: false, gain: 1, measurement: _SD }
     TS_3_2_2_Avg: { field: TS_FF3_0.05_2, units: false, gain: 1, measurement: TS }
@@ -99,7 +116,7 @@ DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
     TS_3_7_2_Avg: { field: TS_FF3_0.5_2, units: false, gain: 1, measurement: TS }
     TS_3_8_1_Avg: { field: TS_FF3_0.6_1, units: false, gain: 1, measurement: TS }
     TS_3_8_1_Std: { field: TS_SD_FF3_0.6_1, units: false, gain: 1, measurement: _SD }
-    TS_IU_3_1_1_Avg: { field: TS_IU_FF3_0.03_1, units: false, gain: 1, measurement: _RAW }
+    TS_IU_3_1_1_Avg: { field: TS_IU_FF3_0.02_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_3_2_1_Avg: { field: TS_IU_FF3_0.05_1, units: false, gain: 1, measurement: _RAW }
     TS_IU_3_2_2_Avg: { field: TS_IU_FF3_0.05_2, units: false, gain: 1, measurement: _RAW }
     TS_IU_3_3_1_Avg: { field: TS_IU_FF3_0.11_1, units: false, gain: 1, measurement: _RAW }

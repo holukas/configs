@@ -41,41 +41,41 @@ DAV12-RAW-FF4-TBL1-201903041641-TOA5-DAT-1MIN:
     SV_LOGGER_FF4_0_1: { field: SV_LOGGER_FF4_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     SWC_4_1_1_Avg: { field: SWC_FF4_0.05_1, units: false, gain: 1, measurement: SWC }
     SWC_4_1_1_Std: { field: SWC_SD_FF4_0.05_1, units: false, gain: 1, measurement: _SD }
-    SWC_4_1_2_Avg: { field: SWC_FF4_0.05_2, units: false, gain: 1, measurement: SWC }
-    SWC_4_1_2_Std: { field: SWC_SD_FF4_0.05_2, units: false, gain: 1, measurement: _SD }
+    SWC_4_1_2_Avg: { field: SWC_FF4_0.06_2, units: false, gain: 1, measurement: SWC }
+    SWC_4_1_2_Std: { field: SWC_SD_FF4_0.06_2, units: false, gain: 1, measurement: _SD }
     SWC_4_2_1_Avg: { field: SWC_FF4_0.1_1, units: false, gain: 1, measurement: SWC }
     SWC_4_2_1_Std: { field: SWC_SD_FF4_0.1_1, units: false, gain: 1, measurement: _SD }
-    SWC_4_3_1_Avg: { field: SWC_FF4_0.21_1, units: false, gain: 1, measurement: SWC }
-    SWC_4_3_1_Std: { field: SWC_SD_FF4_0.21_1, units: false, gain: 1, measurement: _SD }
-    SWC_4_4_1_Avg: { field: SWC_FF4_0.52_1, units: false, gain: 1, measurement: SWC }
-    SWC_4_4_1_Std: { field: SWC_SD_FF4_0.52_1, units: false, gain: 1, measurement: _SD }
-    SWC_4_5_1_Avg: { field: SWC_FF4_0.68_1, units: false, gain: 1, measurement: SWC }
-    SWC_4_5_1_Std: { field: SWC_SD_FF4_0.68_1, units: false, gain: 1, measurement: _SD }
-    SWC_IU_4_1_1_Avg: { field: SWC_IU_FF4_0.05_1, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_4_1_2_Avg: { field: SWC_IU_FF4_0.05_2, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_4_2_1_Avg: { field: SWC_IU_FF4_0.1_1, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_4_3_1_Avg: { field: SWC_IU_FF4_0.21_1, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_4_4_1_Avg: { field: SWC_IU_FF4_0.52_1, units: false, gain: 1, measurement: _RAW }
-    SWC_IU_4_5_1_Avg: { field: SWC_IU_FF4_0.68_1, units: false, gain: 1, measurement: _RAW }
+    SWC_4_3_1_Avg: { field: SWC_FF4_0.2_1, units: false, gain: 1, measurement: SWC }
+    SWC_4_3_1_Std: { field: SWC_SD_FF4_0.2_1, units: false, gain: 1, measurement: _SD }
+    SWC_4_4_1_Avg: { field: SWC_FF4_0.49_1, units: false, gain: 1, measurement: SWC }
+    SWC_4_4_1_Std: { field: SWC_SD_FF4_0.49_1, units: false, gain: 1, measurement: _SD }
+    SWC_4_5_1_Avg: { field: SWC_FF4_0.69_1, units: false, gain: 1, measurement: SWC }
+    SWC_4_5_1_Std: { field: SWC_SD_FF4_0.69_1, units: false, gain: 1, measurement: _SD }
+    SWC_IU_4_1_1_Avg: { field: SWC_IU_FF4_0.05_1, units: false, measurement: _RAW }
+    SWC_IU_4_1_2_Avg: { field: SWC_IU_FF4_0.06_2, units: false, measurement: _RAW }
+    SWC_IU_4_2_1_Avg: { field: SWC_IU_FF4_0.1_1, units: false, measurement: _RAW }
+    SWC_IU_4_3_1_Avg: { field: SWC_IU_FF4_0.2_1, units: false, measurement: _RAW }
+    SWC_IU_4_4_1_Avg: { field: SWC_IU_FF4_0.49_1, units: false, measurement: _RAW }
+    SWC_IU_4_5_1_Avg: { field: SWC_IU_FF4_0.69_1, units: false, measurement: _RAW }
     T_LOGGER_FF4_0_1: { field: T_LOGGER_FF4_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    TS_4_1_1_Avg: { field: TS_FF4_0.03_1, units: false, gain: 1, measurement: TS }
-    TS_4_1_1_Std: { field: TS_SD_FF4_0.03_1, units: false, gain: 1, measurement: _SD }
-    TS_4_2_1_Avg: { field: TS_FF4_0.05_1, units: false, gain: 1, measurement: TS }
-    TS_4_2_1_Std: { field: TS_SD_FF4_0.05_1, units: false, gain: 1, measurement: _SD }
-    TS_4_2_2_Avg: { field: TS_FF4_0.05_2, units: false, gain: 1, measurement: TS }
-    TS_4_2_2_Std: { field: TS_SD_FF4_0.05_2, units: false, gain: 1, measurement: _SD }
-    TS_4_3_1_Avg: { field: TS_FF4_0.11_1, units: false, gain: 1, measurement: TS }
-    TS_4_3_1_Std: { field: TS_SD_FF4_0.11_1, units: false, gain: 1, measurement: _SD }
-    TS_4_4_1_Avg: { field: TS_FF4_0.2_1, units: false, gain: 1, measurement: TS }
-    TS_4_4_1_Std: { field: TS_SD_FF4_0.2_1, units: false, gain: 1, measurement: _SD }
-    TS_4_5_1_Avg: { field: TS_FF4_0.5_1, units: false, gain: 1, measurement: TS }
-    TS_4_5_1_Std: { field: TS_SD_FF4_0.5_1, units: false, gain: 1, measurement: _SD }
-    TS_4_6_1_Avg: { field: TS_FF4_0.6_1, units: false, gain: 1, measurement: TS }
-    TS_4_6_1_Std: { field: TS_SD_FF4_0.6_1, units: false, gain: 1, measurement: _SD }
-    TS_IU_4_1_1_Avg: { field: TS_IU_FF4_0.03_1, units: false, gain: 1, measurement: _RAW }
-    TS_IU_4_2_1_Avg: { field: TS_IU_FF4_0.05_1, units: false, gain: 1, measurement: _RAW }
-    TS_IU_4_2_2_Avg: { field: TS_IU_FF4_0.05_2, units: false, gain: 1, measurement: _RAW }
-    TS_IU_4_3_1_Avg: { field: TS_IU_FF4_0.11_1, units: false, gain: 1, measurement: _RAW }
-    TS_IU_4_4_1_Avg: { field: TS_IU_FF4_0.2_1, units: false, gain: 1, measurement: _RAW }
-    TS_IU_4_5_1_Avg: { field: TS_IU_FF4_0.5_1, units: false, gain: 1, measurement: _RAW }
-    TS_IU_4_6_1_Avg: { field: TS_IU_FF4_0.6_1, units: false, gain: 1, measurement: _RAW }
+    TS_4_1_1_Avg: { field: TS_FF4_0.02_1, units: false, measurement: TS }
+    TS_4_1_1_Std: { field: TS_SD_FF4_0.02_1, units: false, measurement: _SD }
+    TS_4_2_1_Avg: { field: TS_FF4_0.06_1, units: false, measurement: TS }
+    TS_4_2_1_Std: { field: TS_SD_FF4_0.06_1, units: false, measurement: _SD }
+    TS_4_2_2_Avg: { field: TS_FF4_0.05_2, units: false, measurement: TS }
+    TS_4_2_2_Std: { field: TS_SD_FF4_0.05_2, units: false, measurement: _SD }
+    TS_4_3_1_Avg: { field: TS_FF4_0.11_1, units: false, measurement: TS }
+    TS_4_3_1_Std: { field: TS_SD_FF4_0.11_1, units: false, measurement: _SD }
+    TS_4_4_1_Avg: { field: TS_FF4_0.21_1, units: false, measurement: TS }
+    TS_4_4_1_Std: { field: TS_SD_FF4_0.21_1, units: false, measurement: _SD }
+    TS_4_5_1_Avg: { field: TS_FF4_0.51_1, units: false, measurement: TS }
+    TS_4_5_1_Std: { field: TS_SD_FF4_0.51_1, units: false, measurement: _SD }
+    TS_4_6_1_Avg: { field: TS_FF4_0.66_1, units: false, measurement: TS }
+    TS_4_6_1_Std: { field: TS_SD_FF4_0.66_1, units: false, measurement: _SD }
+    TS_IU_4_1_1_Avg: { field: TS_IU_FF4_0.02_1, units: false, measurement: _RAW }
+    TS_IU_4_2_1_Avg: { field: TS_IU_FF4_0.06_1, units: false, measurement: _RAW }
+    TS_IU_4_2_2_Avg: { field: TS_IU_FF4_0.05_2, units: false, measurement: _RAW }
+    TS_IU_4_3_1_Avg: { field: TS_IU_FF4_0.11_1, units: false, measurement: _RAW }
+    TS_IU_4_4_1_Avg: { field: TS_IU_FF4_0.21_1, units: false, measurement: _RAW }
+    TS_IU_4_5_1_Avg: { field: TS_IU_FF4_0.51_1, units: false, measurement: _RAW }
+    TS_IU_4_6_1_Avg: { field: TS_IU_FF4_0.66_1, units: false, measurement: _RAW }

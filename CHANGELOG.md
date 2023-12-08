@@ -56,6 +56,7 @@
 - Added new filetype `DAV12-RAW-FF5-TBL2-201507021850-CSV-GZ-25H`
 - Added new filetype `DAV12-RAW-FF5-TBL2-201802281904-TOA5-DAT-25H`
 - Added new filetype `DAV12-RAW-FF6-TBL2-202310261047-TOA5-DAT-1MIN`
+- Checked depths for DAV12 TBL1 files, some depths were fixed (slightly wrong)
 
 ### More additions
 

@@ -8,7 +8,7 @@ DAV12-RAW-FF1-TBL1-201411121850-CSV-GZ-10MIN:
   # First file: CH-DAV_CR1000_FF1_1_TABLE1_20141112-1850.csv.gz (the very first file for this filetype)
   # Last file:  CH-DAV_CR1000_FF1_1_TBL1_20180621-0603.csv.gz (the last file)
   can_be_used_by_filescanner: true
-  filetype_valid_from: 2015-07-02 13:47:00
+  filetype_valid_from: 2014-11-12 18:50:00
   filetype_valid_to: 2018-06-21 06:03:00
   filetype_id: ['CH-DAV_CR1000_FF1_1_TABLE1_*.csv.gz', 'CH-DAV_CR1000_FF1_1_TBL1_*.csv.gz']
   filetype_dateparser: ['CH-DAV_CR1000_FF1_1_TABLE1_%Y%m%d-%H%M.csv.gz', 'CH-DAV_CR1000_FF1_1_TBL1_%Y%m%d-%H%M.csv.gz']

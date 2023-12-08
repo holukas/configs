@@ -10,7 +10,7 @@ DAV12-RAW-FF2-TBL1-201807181510-TOA5-DAT-1MIN:
   # First file: CH-DAV_iDL_FF2_0_1_TBL1_2018_07_18_1510.dat
   # Last file:  CH-DAV_iDL_FF2_0_1_TBL1_2019_03_03_0001.dat
   can_be_used_by_filescanner: true
-  filetype_valid_from: 2018-07-18 15:10:00
+  filetype_valid_from: 2018-07-18 15:09:00
   filetype_valid_to: 2019-03-03 00:01:00
   filetype_id: CH-DAV_iDL_FF2_0_1_TBL1_*.dat
   filetype_dateparser: CH-DAV_iDL_FF2_0_1_TBL1_%Y_%m_%d_%H%M.dat

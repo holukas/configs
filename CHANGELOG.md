@@ -1,5 +1,19 @@
 # Changelog
 
+## v20240102 | 2 Jan 2024
+
+- Added new setting `data_special_format`, added info for `-ALTERNATING-` and `-ICOSSEQ-` filetypes, all
+  other filetypes are set to `false`.
+- Added new setting `data_vars_order` in filetype configs, which defines whether the variables listed in
+  `data_vars` are listed in the exact sequence they appear in the file (`strict`), or if they are
+  listed freely (`free`) and their sequence does not matter. The `strict` setting is important for
+  old filetypes that do not have variable names in their headers.
+- Fixed typo bug in settings
+- Renamed `DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN`
+- Added LEAF_WET variables to `DAV12-RAW-FF6-TBL1-202107292014-TOA5-DAT-1MIN`
+- Added LEAF_WET variables to `LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN`
+- Much more info added to `README`
+
 ## v20231208 | 8 Dec 2023
 
 ### Early logger meteo files FRU10

@@ -1,6 +1,8 @@
 # CH-DAV
 # 17_meteo_profile
 #
+# These are ICOS files, following the ICOS naming convention.
+#
 # There are more files of this filetype after 'Last file'. However, we
 # switched to a new filename that follows the GL naming convention:
 # see filetype 'DAV17-RAW-202201040000-TOA5-PRF-DAT-10S', starting on 4 Jan 2022.
@@ -31,11 +33,13 @@ DAV17-RAW-201807110000-ICOS-PRF-DAT-10S:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     PA_1_1_1: { field: PA_H1_0_1, units: kPa, measurement: PA }  # Same as "PA_H1_0_2" but logged in digital signals for ICOS, was named "PA_H1_0_3" in old meteoscreening
     RH_1_1_1: { field: RH_PRF_T1_1_1, units: "%", measurement: RH }

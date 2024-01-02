@@ -23,11 +23,13 @@ LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     AirTM_Avg: { field: AirTM_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
     Batt_Volt_Avg: { field: BV_FF1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }

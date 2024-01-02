@@ -23,11 +23,13 @@ LAE10-RAW-TBL1-201701230926-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     BV_CR1000_INT_T1_47_1_Avg: { field: BV_CR1000_INT_T1_47_1, units: false, measurement: _instrumentmetrics }
     BV_CR1000_T1_47_1_Avg: { field: BV_CR1000_T1_47_1, units: false, measurement: _instrumentmetrics }

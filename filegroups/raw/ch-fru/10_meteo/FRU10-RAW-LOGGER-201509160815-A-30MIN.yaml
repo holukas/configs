@@ -36,11 +36,13 @@ FRU10-RAW-LOGGER-201509160815-A-30MIN:
   data_keep_good_rows: [ 0, 104 ]
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: strict  # strict: the variables sequence must not be changed.
   data_vars:
     # Since this filetype does not have column names in the data,
     # the sequence of the variables given here is IMPORTANT!
@@ -84,7 +86,7 @@ FRU10-RAW-LOGGER-201509160815-A-30MIN:
     Tintern_STD: { field: T_iDL_SD_BOX1_0_1, units: degC, gain: 1, measurement: _instrumentmetrics }
     BatVolt_STD: { field: SV_iDL_SD_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
     Tair_2_STD: { field: TA_SD_T1_2_1, units: degC, gain: 1, measurement: _SD }
-    RHair_2_STD: { field: RH_SD_T1_2_1, units: "%", gain: 1, measurement: RH }
+    RHair_2_STD: { field: RH_SD_T1_2_1, units: "%", gain: 1, measurement: _SD }
     Wvel_2_STD: { field: WS_CUP_SCALAR_SD_T1_2_2, units: m s-1, gain: 1, measurement: _SD }
     SHF_5_STD: { field: G_SD_GF1_0.03_1, units: W m-2, gain: 1, measurement: _SD }
     SHF_6_STD: { field: G_SD_GF1_0.03_2, units: W m-2, gain: 1, measurement: _SD }

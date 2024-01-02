@@ -22,11 +22,13 @@ DAV12-RAW-FF5-TBL2-201507021850-CSV-GZ-25H:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     CAL_I_HEATAVG_FF5_0x05_1: { field: CAL_I_HEATAVG_FF5_0.05_1, units: "mA", measurement: _instrumentmetrics }
     CAL_I_HEATT1_FF5_0x05_1: { field: CAL_I_HEATT1_FF5_0.05_1, units: "mA", measurement: _instrumentmetrics }

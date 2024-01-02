@@ -1,13 +1,13 @@
 # CH-DAV
 # 11_meteo_hut
+#
+# Two different namings (see filetype_id), but same data format
 
 
-DAV11-RAW-TBL1+-201108250000-TOA5-DAT-10MIN:
+DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
   # TOA5
   # First file: Davos10Min-20110825-1403-10.dat (the very first Davos10Min-*.dat file)
   # Last file:  *currently running*
-  # Two different namings (see filetype_id), but same data format
-  # Due to multiple namings (not only TBL1) it has "TBL1+" in filetype name.
   can_be_used_by_filescanner: true
   filetype_valid_from: 2011-08-25 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
@@ -25,11 +25,13 @@ DAV11-RAW-TBL1+-201108250000-TOA5-DAT-10MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     Band_147_Avg: { field: BAND_TREE147_1_1, units: false, measurement: BAND }
     Band_148_Avg: { field: BAND_TREE148_1_1, units: false, measurement: BAND }

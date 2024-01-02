@@ -63,11 +63,13 @@ FRU10-RAW-LOGGER-201404090546-ALTERNATING-ID104204-A-30MIN-IRRMIN:
   data_keep_good_rows: [ 0, 104, 204 ]
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: strict  # strict: the variables sequence must not be changed.
   data_vars:
     # Variables with ID 104 at the start of the record row
     # Since this filetype does not have column names in the data,

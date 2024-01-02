@@ -23,11 +23,13 @@ DAV10-RAW-TBL1-201802281101-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     DNTP_LOGGER_T1_35_1: { field: false, units: false, measurement: _instrumentmetrics }
     HEAT_HS50_T1B1_35_1_FLAG: { field: HEAT_HS50_T1_35_1, units: false, measurement: _instrumentmetrics }

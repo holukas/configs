@@ -26,11 +26,13 @@ DAV12-RAW-FF3-TBL1-201802281110-TOA5-DAT-10MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     CAL_FLAG_FF3_0x05_1: { field: CAL_FLAG_FF3_0.05_1, units: false, measurement: _instrumentmetrics }
     DNTP_LOGGER_FF3_0_1: { field: DNTP_LOGGER_FF3_0_1, units: false, measurement: _instrumentmetrics }

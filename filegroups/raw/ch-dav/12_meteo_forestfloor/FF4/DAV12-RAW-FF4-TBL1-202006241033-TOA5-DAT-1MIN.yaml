@@ -25,11 +25,13 @@ DAV12-RAW-FF4-TBL1-202006241033-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     DNTP_LOGGER_FF4_0_1: { field: DNTP_LOGGER_FF4_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     FLAG_G_ISCAL_ETH_4_1_1: { field: FLAG_G_ISCAL_ETH_FF4_1_1, units: false, gain: 1, measurement: _instrumentmetrics }

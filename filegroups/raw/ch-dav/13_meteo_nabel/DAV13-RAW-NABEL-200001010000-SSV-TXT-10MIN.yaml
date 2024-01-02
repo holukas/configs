@@ -56,17 +56,19 @@ DAV13-RAW-NABEL-200001010000-SSV-TXT-10MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: cp1252
   data_delimiter: '\s+'
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
-    YEAR:
-    MONTH:
-    DAY:
-    HOUR:
-    MINUTE:
+    YEAR: { field: YEAR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    MONTH: { field: MONTH_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    DAY: { field: DAY_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    HOUR: { field: HOUR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    MINUTE: { field: MINUTE_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
     Windrichtung: { field: WD_VANE_NABEL_T1_35_1, gain: 1, units: deg, measurement: WD }
     Windgeschwindigkeit: { field: WS_CUP_NABEL_T1_35_1, gain: 1, units: m s-1, measurement: WS }
     Windspitze: { field: WS_CUP_MAX_NABEL_T1_35_1, gain: 1, units: m s-1, measurement: WS }

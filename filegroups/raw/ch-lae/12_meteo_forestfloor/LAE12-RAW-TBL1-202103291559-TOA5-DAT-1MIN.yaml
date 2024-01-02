@@ -23,11 +23,13 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     Batt_Volt_Avg: { field: BV_FF1_0_1, units: false, measurement: _instrumentmetrics }
     # DENDRO measured at breast height (assumed 1.35m)
@@ -213,3 +215,5 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     WP_FF1_0x05_1_Std: { field: SWP_SD_FF1_0.05_1, units: false, measurement: _SD }
     WP_FF1_0x6_1_Avg: { field: SWP_FF1_0.6_1, units: false, measurement: WP }
     WP_FF1_0x6_1_Std: { field: SWP_SD_FF1_0.6_1, units: false, measurement: _SD }
+    LEAF_WET_FF1_1x5_2_Avg: { field: LEAF_WET_FF1_1.5_2, units: false, measurement: LEAF }
+    LEAF_WET_FF1_1x5_2_Std: { field: LEAF_WET_SD_FF1_1.5_2, units: false, measurement: _SD }

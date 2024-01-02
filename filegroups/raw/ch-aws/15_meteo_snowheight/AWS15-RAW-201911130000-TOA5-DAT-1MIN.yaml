@@ -36,11 +36,13 @@ AWS15-RAW-201911130000-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     D_SNOW_1_1_1: { field: D_SNOW_GF2_0_1, units: false, measurement: D_SNOW }
     D_SNOW_GF0_0_1: { field: D_SNOW_GF2_0_1, units: false, measurement: D_SNOW }

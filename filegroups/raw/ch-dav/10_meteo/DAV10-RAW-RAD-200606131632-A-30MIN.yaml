@@ -29,11 +29,13 @@ DAV10-RAW-RAD-200606131632-A-30MIN:
   data_keep_good_rows: [ 0, 120 ]
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     # Since this filetype does not have column names in the data,
     # the sequence of the variables given here is IMPORTANT!

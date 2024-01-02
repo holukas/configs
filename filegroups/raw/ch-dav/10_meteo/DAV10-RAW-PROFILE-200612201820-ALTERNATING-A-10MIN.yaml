@@ -59,6 +59,7 @@ DAV10-RAW-PROFILE-200612201820-ALTERNATING-A-10MIN:
   data_keep_good_rows: [ 0, 225, 1 ]
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false

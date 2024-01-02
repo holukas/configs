@@ -26,11 +26,13 @@ DAV10-RAW-RAD-201407161745-CSV-GZ-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     Record: { field: RECORD_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     Batt_V: { field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }

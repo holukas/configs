@@ -1,0 +1,37 @@
+# CH-DAV
+# 10_meteo
+#
+# This file contains CO2 reference measurements of unknown origin.
+
+
+DAV10-RAW-SINGLE-201403180000-TOA5-DAT-24H:
+  # TOA5
+  # First file: DAV_Hut_IP_CR1000_Table24hr.20140318.dat (same as last file)
+  # Last file: DAV_Hut_IP_CR1000_Table24hr.20140318.dat (same as first file)
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2014-03-18 00:00:00
+  filetype_valid_to: 2014-03-18 00:00:00
+  filetype_id: DAV_Hut_IP_CR1000_Table24hr.*.dat
+  filetype_dateparser: DAV_Hut_IP_CR1000_Table24hr.%Y%m%d.dat
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 24H
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    RECORD: { field: RECORD_X_X_X, units: false, measurement: _instrumentsmetrics }
+    CO2_Ref_Avg: { field: CO2_REF_X_X_X, units: ppm, measurement: CO2 }

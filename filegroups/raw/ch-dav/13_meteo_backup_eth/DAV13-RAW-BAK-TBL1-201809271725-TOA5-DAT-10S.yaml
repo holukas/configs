@@ -23,11 +23,13 @@ DAV13-RAW-BAK-TBL1-201809271725-TOA5-DAT-10S:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     batt_volt_Min: { field: BV_BAK_T1_35_1, units: false, measurement: _instrumentmetrics }
     LS_T1_35_1: { field: LS_BAK_T1_35_1, units: false, measurement: LS }

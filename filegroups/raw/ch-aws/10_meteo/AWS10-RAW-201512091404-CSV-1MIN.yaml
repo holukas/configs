@@ -25,11 +25,13 @@ AWS10-RAW-201512091404-CSV-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     BV_CR1000_BOX_0_1_Avg: { field: BV_CR1000_BOX_0_1, units: V, measurement: _instrumentmetrics }
     BV_CR1000_BOX_0_1_Std: { field: BV_CR1000_SD_BOX_0_1, units: V, measurement: _instrumentmetrics }

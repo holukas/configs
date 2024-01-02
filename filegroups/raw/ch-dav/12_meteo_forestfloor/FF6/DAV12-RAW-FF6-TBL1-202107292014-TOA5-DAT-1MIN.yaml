@@ -23,11 +23,13 @@ DAV12-RAW-FF6-TBL1-202107292014-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     DNTP_iDL_T2_2x1_1: { field: DNTP_iDL_T2_2.1_1, units: false, measurement: _instrumentmetrics }
     DNTP_LOGGER_T2_2x1_1: { field: DNTP_LOGGER_T2_2.1_1, units: false, measurement: _instrumentmetrics }
@@ -80,3 +82,7 @@ DAV12-RAW-FF6-TBL1-202107292014-TOA5-DAT-1MIN:
     TS_FF6_0x30_1: { field: TS_FF6_0.3_1, units: false, measurement: TS }
     TS_FF6_0x40_1: { field: TS_FF6_0.4_1, units: false, measurement: TS }
     TS_FF6_0x50_1: { field: TS_FF6_0.5_1, units: false, measurement: TS }
+    LEAF_WET_FF6_1x5_1: { field: LEAF_WET_FF6_1.5_1, units: false, measurement: LEAF }
+    LEAF_WET_T2_2x1_1: { field: LEAF_WET_T2_2.1_1, units: false, measurement: LEAF }
+    LEAF_WET_FF6_1x5_1_Std: { field: LEAF_WET_SD_FF6_1.5_1, units: false, measurement: _SD }
+    LEAF_WET_T2_2x1_1_Std: { field: LEAF_WET_SD_T2_2.1_1, units: false, measurement: _SD }

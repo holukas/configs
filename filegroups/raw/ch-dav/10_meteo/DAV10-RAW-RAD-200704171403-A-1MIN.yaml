@@ -12,10 +12,11 @@ DAV10-RAW-RAD-200704171403-A-1MIN:
   # First file: First radio file: radiometer2007041714.a03 (mixture of 30MIN records until row#10014 and 1MIN records starting #10015)
   # Last radio file:  radiometer2012092517.a51 (the very last radiometer*.a* file)
   # First logger file: logger2012120518.a19 (the very first logger*.a* file w/ more than zero bytes)
-  # Last file: Last logger file:  logger2014070315.a21 (the very last logger*.a* file w/ more than zero bytes)
+  # Last logger file:  logger2014070315.a21 (the very last logger*.a* file w/ more than zero bytes)
+  # Last logger file:  logger2014071618.a29 (the very last logger*.a* file)
   can_be_used_by_filescanner: true
   filetype_valid_from: 2007-04-17 14:03:00
-  filetype_valid_to: 2014-07-03 15:21:00
+  filetype_valid_to: 2014-07-16 18:29:00
   filetype_id: ['logger*.a*', 'radiometer*.a*']
   filetype_dateparser: ['logger%Y%m%d%H.a%M', 'radiometer%Y%m%d%H.a%M']
   filetype_gzip: false
@@ -31,11 +32,13 @@ DAV10-RAW-RAD-200704171403-A-1MIN:
   data_keep_good_rows: [ 0, 123 ]
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     # Since this filetype does not have column names in the data,
     # the sequence of the variables given here is IMPORTANT!

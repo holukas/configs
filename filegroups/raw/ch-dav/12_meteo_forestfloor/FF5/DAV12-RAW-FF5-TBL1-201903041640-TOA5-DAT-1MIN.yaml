@@ -25,11 +25,13 @@ DAV12-RAW-FF5-TBL1-201903041640-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     DNTP_LOGGER_FF5_0_1: { field: DNTP_LOGGER_FF5_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
     G_5_1_1_Avg: { field: G_FF5_0.05_1, units: false, gain: 1, measurement: G }

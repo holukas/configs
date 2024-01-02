@@ -16,13 +16,14 @@ DAV12-RAW-FF1-TBL2-201802281104-TOA5-DAT-25H:
   data_raw_freq: 25H
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0e
+  data_index_col: 0
   data_parse_dates: [ 0 ]
   data_date_parser: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false

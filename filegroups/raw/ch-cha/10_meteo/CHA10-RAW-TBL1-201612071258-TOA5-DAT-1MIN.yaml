@@ -23,11 +23,13 @@ CHA10-RAW-TBL1-201612071258-TOA5-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     BV_iDL_BOX1_0_1_Avg: { field: BV_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     BV_iDL_BOX1_0_1_Std: { field: BV_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics }

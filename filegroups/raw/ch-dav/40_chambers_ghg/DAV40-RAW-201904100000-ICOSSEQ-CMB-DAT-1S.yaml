@@ -27,11 +27,13 @@ DAV40-RAW-201904100000-ICOSSEQ-CMB-DAT-1S:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: "-ICOSSEQ-"
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     #    0: { field: <<automatic>>, units: false, measurement: XXX }
     CHANNEL_VICI: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }

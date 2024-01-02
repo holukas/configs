@@ -48,17 +48,19 @@ DAV13-RAW-NABEL-200901010000-SSV-TXT-10MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: cp1252
   data_delimiter: '\s+'
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
-    YEAR:
-    MONTH:
-    DAY:
-    HOUR:
-    MINUTE:
+    YEAR: { field: YEAR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    MONTH: { field: MONTH_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    DAY: { field: DAY_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    HOUR: { field: HOUR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
+    MINUTE: { field: MINUTE_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
     Temperatur: { field: TA_NABEL_T1_35_1, gain: 1, units: degC, measurement: TA }
     rel. Feuchte: { field: RH_NABEL_T1_35_1, gain: 1, units: "%", measurement: RH }
     Druck: { field: PA_NABEL_H1_2_1, gain: 1, units: hPa, measurement: PA }

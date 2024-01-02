@@ -24,11 +24,13 @@ DAV12-RAW-FF2-TBL1-201412041850-CSV-GZ-10MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     G_FF2_006_1_Avg: { field: G_FF2_0.06_1, units: "W m-2", measurement: G }
     Record: { field: RECORD_FF2_0_1, units: "RN", measurement: _instrumentmetrics }

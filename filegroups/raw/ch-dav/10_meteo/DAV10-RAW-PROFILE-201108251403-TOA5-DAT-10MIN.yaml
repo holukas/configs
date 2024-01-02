@@ -1,30 +1,38 @@
 # CH-DAV
 # 10_meteo
+#
+# This file contains also profile measurements.
+# Started with meteo*.dat names, then was renamed to Davos-Logger.dat
+# (without a date in the filename!).
+# And there is a single file CR1000_Davos_Table10Min.20140114.dat in Jan 2014
+# that has also this filetype.
+# And there is another single file DAV_Hut_IP_CR1000_Table10Min.20140318.
+# Variable names can also be seen in this file:
+# - grasslandserver/export/home/davos/config/config.header.bis20131010
+# Some heights for the cryptically named profile vars can be found in the file:
+# - grasslandserver/export/home/davos/config/config-co2.header.bis20130614
+# These files all have the same structure:
+#   First meteo*.dat file: meteo201108251403.dat
+#   Last meteo*.dat file:  meteo201301010003.dat
+#   First Davos-Logger.dat file: Davos-Logger.dat (in 2013-08)
+#   Last Davos-Logger.dat file:  Davos-Logger.dat (in 2015-07)
+#   Single file: CR1000_Davos_Table10Min.20140114.dat
+#   Single file: DAV_Hut_IP_CR1000_Table10Min.20140318
+# Here, only the meteo*.dat files are covered. There is a separate filetype
+# for the Davos-Logger.dat files (DAV10-RAW-PROFILE-201308010000-NOFILEDATE-TOA5-DAT-10MIN).
 
 
 DAV10-RAW-PROFILE-201108251403-TOA5-DAT-10MIN:
   # TOA5
-  # This file contains also profile measurements.
-  # Started with meteo*.dat names, then was renamed to Davos-Logger.dat
-  # (without a date in the filename!).
-  # Variable names can also be seen in this file:
-  # - grasslandserver/export/home/davos/config/config.header.bis20131010
-  # Some heights for the cryptically named profile vars can be found in the file:
-  # - grasslandserver/export/home/davos/config/config-co2.header.bis20130614
-  # These files all have the same structure:
-  #   First meteo*.dat file: meteo201108251403.dat
-  #   Last meteo*.dat file:  meteo201301010003.dat
-  #   First Davos-Logger.dat file: Davos-Logger.dat (in 2013-08)
-  #   Last Davos-Logger.dat file:  Davos-Logger.dat (in 2015-07)
-  # Here, only the meteo*.dat files are covered. There is a separate filetype
-  # for the Davos-Logger.dat files (DAV10-RAW-PROFILE-201308010000-NOFILEDATE-TOA5-DAT-10MIN).
-  # First file: meteo201108251403.dat
-  # Last file: meteo201301010003.dat
+  # First meteo* file: meteo201108251403.dat
+  # Last meteo* file: meteo201301010003.dat
+  # Single file: CR1000_Davos_Table10Min.20140114.dat
+  # Single file: DAV_Hut_IP_CR1000_Table10Min.20140318
   can_be_used_by_filescanner: true
   filetype_valid_from: 2011-08-25 14:03:00
-  filetype_valid_to: 2013-01-01 00:03:00
-  filetype_id: 'meteo*.dat'
-  filetype_dateparser: 'meteo%Y%m%d%H%M.dat'
+  filetype_valid_to: 2014-03-18 00:00:00
+  filetype_id: [ 'meteo*.dat', 'CR1000_Davos_Table10Min.*.dat', 'DAV_Hut_IP_CR1000_Table10Min.*.dat' ]
+  filetype_dateparser: [ 'meteo%Y%m%d%H%M.dat', 'CR1000_Davos_Table10Min.%Y%m%d.dat', 'DAV_Hut_IP_CR1000_Table10Min.%Y%m%d.dat' ]
   filetype_gzip: false
   filegroup: 10_meteo
   data_raw_freq: 10T
@@ -37,11 +45,13 @@ DAV10-RAW-PROFILE-201108251403-TOA5-DAT-10MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     Band_147_Avg: { field: BAND_TREE147_1_1, units: false, measurement: BAND }
     Band_148_Avg: { field: BAND_TREE148_1_1, units: false, measurement: BAND }

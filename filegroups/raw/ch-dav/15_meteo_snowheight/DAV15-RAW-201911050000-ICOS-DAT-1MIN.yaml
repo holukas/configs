@@ -23,11 +23,13 @@ DAV15-RAW-201911050000-ICOS-DAT-1MIN:
   data_keep_good_rows: false
   data_remove_bad_rows: false
   data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
   data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
+  data_vars_order: free
   data_vars:
     D_SNOW_1_1_1: { field: D_SNOW_M1_1.8_1, units: false, measurement: D_SNOW }
     DIAG_SR50AT: { field: DIAG_SR50AT_M1_X_1, units: false, measurement: _instrumentmetrics }

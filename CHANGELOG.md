@@ -1,5 +1,9 @@
 # Changelog
 
+## v20240129 | 29 Jan 2024
+
+- Fixed wrong `filetype_valid_from` in `FRU10-RAW-TBL1-201811051615-TOA5-DAT-1MIN`
+
 ## v20240102 | 2 Jan 2024
 
 - Added new setting `data_special_format`, added info for `-ALTERNATING-` and `-ICOSSEQ-` filetypes, all

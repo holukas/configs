@@ -7,7 +7,7 @@ FRU10-RAW-TBL1-201811051615-TOA5-DAT-1MIN:
   # First file: CH-FRU_iDL_BOX1_0_1_TBL1_20181105-1615.dat (the very first CH-FRU_iDL_BOX1_0_1_TBL1_*.dat file)
   # Last file:  *currently running*
   can_be_used_by_filescanner: true
-  filetype_valid_from: 2017-11-20 16:43:00
+  filetype_valid_from: 2018-11-05 16:15:00
   filetype_valid_to: 2099-02-28 11:01:00
   filetype_id: CH-FRU_iDL_BOX1_0_1_TBL1_*.dat
   filetype_dateparser: CH-FRU_iDL_BOX1_0_1_TBL1_%Y%m%d-%H%M.dat

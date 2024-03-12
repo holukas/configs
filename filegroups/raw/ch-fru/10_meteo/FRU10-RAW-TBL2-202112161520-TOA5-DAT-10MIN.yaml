@@ -32,76 +32,75 @@ FRU10-RAW-TBL2-202112161520-TOA5-DAT-10MIN:
   data_vars_order: free
   data_vars:
     RECORD: { field: RECORD_X_X_X, units: false, measurement: _instrumentmetrics }
-    TS_GF1_1x00_2_Avg: { field: TS_GF1_1_2, units: false, measurement: TS }
-    TS_GF1_0x05_2_Avg: { field: TS_GF1_0.05_2, units: false, measurement: TS }
-    TS_GF1_0x10_2_Avg: { field: TS_GF1_0.1_2, units: false, measurement: TS }
-    TS_GF1_0x20_2_Avg: { field: TS_GF1_0.2_2, units: false, measurement: TS }
-    TS_GF1_0x30_2_Avg: { field: TS_GF1_0.3_2, units: false, measurement: TS }
-    TS_GF1_0x40_2_Avg: { field: TS_GF1_0.4_2, units: false, measurement: TS }
-    TS_GF1_0x50_2_Avg: { field: TS_GF1_0.5_2, units: false, measurement: TS }
-    TS_GF1_0x60_2_Avg: { field: TS_GF1_0.6_2, units: false, measurement: TS }
-    TS_GF1_0x75_2_Avg: { field: TS_GF1_0.75_2, units: false, measurement: TS }
     SDP_GF1_1x00_2_Avg: { field: SDP_GF1_1_2, units: false, measurement: SDP }
-    SDP_GF1_0x05_2_Avg: { field: SDP_GF1_0.05_2, units: false, measurement: SDP }
-    SDP_GF1_0x10_2_Avg: { field: SDP_GF1_0.1_2, units: false, measurement: SDP }
-    SDP_GF1_0x20_2_Avg: { field: SDP_GF1_0.2_2, units: false, measurement: SDP }
-    SDP_GF1_0x30_2_Avg: { field: SDP_GF1_0.3_2, units: false, measurement: SDP }
-    SDP_GF1_0x40_2_Avg: { field: SDP_GF1_0.4_2, units: false, measurement: SDP }
-    SDP_GF1_0x50_2_Avg: { field: SDP_GF1_0.5_2, units: false, measurement: SDP }
-    SDP_GF1_0x60_2_Avg: { field: SDP_GF1_0.6_2, units: false, measurement: SDP }
-    SDP_GF1_0x75_2_Avg: { field: SDP_GF1_0.75_2, units: false, measurement: SDP }
-    SEC_GF1_1x00_2_Avg: { field: SEC_GF1_1_2, units: false, measurement: SEC }
-    SEC_GF1_0x05_2_Avg: { field: SEC_GF1_0.05_2, units: false, measurement: SEC }
-    SEC_GF1_0x10_2_Avg: { field: SEC_GF1_0.1_2, units: false, measurement: SEC }
-    SEC_GF1_0x20_2_Avg: { field: SEC_GF1_0.2_2, units: false, measurement: SEC }
-    SEC_GF1_0x30_2_Avg: { field: SEC_GF1_0.3_2, units: false, measurement: SEC }
-    SEC_GF1_0x40_2_Avg: { field: SEC_GF1_0.4_2, units: false, measurement: SEC }
-    SEC_GF1_0x50_2_Avg: { field: SEC_GF1_0.5_2, units: false, measurement: SEC }
-    SEC_GF1_0x60_2_Avg: { field: SEC_GF1_0.6_2, units: false, measurement: SEC }
-    SEC_GF1_0x75_2_Avg: { field: SEC_GF1_0.75_2, units: false, measurement: SEC }
-    SWC_GF1_1x00_2_Avg: { field: SWC_GF1_1_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x05_2_Avg: { field: SWC_GF1_0.05_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x10_2_Avg: { field: SWC_GF1_0.1_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x20_2_Avg: { field: SWC_GF1_0.2_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x30_2_Avg: { field: SWC_GF1_0.3_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x40_2_Avg: { field: SWC_GF1_0.4_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x50_2_Avg: { field: SWC_GF1_0.5_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x60_2_Avg: { field: SWC_GF1_0.6_2, units: "%", gain: 100, measurement: SWC }
-    SWC_GF1_0x75_2_Avg: { field: SWC_GF1_0.75_2, units: "%", gain: 100, measurement: SWC }
-    TS_GF1_1x00_2_Std: { field: TS_SD_GF1_1_2, units: false, measurement: _SD }
-    TS_GF1_0x05_2_Std: { field: TS_SD_GF1_0.05_2, units: false, measurement: _SD }
-    TS_GF1_0x10_2_Std: { field: TS_SD_GF1_0.1_2, units: false, measurement: _SD }
-    TS_GF1_0x20_2_Std: { field: TS_SD_GF1_0.2_2, units: false, measurement: _SD }
-    TS_GF1_0x30_2_Std: { field: TS_SD_GF1_0.3_2, units: false, measurement: _SD }
-    TS_GF1_0x40_2_Std: { field: TS_SD_GF1_0.4_2, units: false, measurement: _SD }
-    TS_GF1_0x50_2_Std: { field: TS_SD_GF1_0.5_2, units: false, measurement: _SD }
-    TS_GF1_0x60_2_Std: { field: TS_SD_GF1_0.6_2, units: false, measurement: _SD }
-    TS_GF1_0x75_2_Std: { field: TS_SD_GF1_0.75_2, units: false, measurement: _SD }
     SDP_GF1_1x00_2_Std: { field: SDP_SD_GF1_1_2, units: false, measurement: _SD }
+    SDP_GF1_0x05_2_Avg: { field: SDP_GF1_0.05_2, units: false, measurement: SDP }
     SDP_GF1_0x05_2_Std: { field: SDP_SD_GF1_0.05_2, units: false, measurement: _SD }
+    SDP_GF1_0x10_2_Avg: { field: SDP_GF1_0.1_2, units: false, measurement: SDP }
     SDP_GF1_0x10_2_Std: { field: SDP_SD_GF1_0.1_2, units: false, measurement: _SD }
+    SDP_GF1_0x20_2_Avg: { field: SDP_GF1_0.2_2, units: false, measurement: SDP }
     SDP_GF1_0x20_2_Std: { field: SDP_SD_GF1_0.2_2, units: false, measurement: _SD }
+    SDP_GF1_0x30_2_Avg: { field: SDP_GF1_0.3_2, units: false, measurement: SDP }
     SDP_GF1_0x30_2_Std: { field: SDP_SD_GF1_0.3_2, units: false, measurement: _SD }
+    SDP_GF1_0x40_2_Avg: { field: SDP_GF1_0.4_2, units: false, measurement: SDP }
     SDP_GF1_0x40_2_Std: { field: SDP_SD_GF1_0.4_2, units: false, measurement: _SD }
+    SDP_GF1_0x50_2_Avg: { field: SDP_GF1_0.5_2, units: false, measurement: SDP }
     SDP_GF1_0x50_2_Std: { field: SDP_SD_GF1_0.5_2, units: false, measurement: _SD }
+    SDP_GF1_0x60_2_Avg: { field: SDP_GF1_0.6_2, units: false, measurement: SDP }
     SDP_GF1_0x60_2_Std: { field: SDP_SD_GF1_0.6_2, units: false, measurement: _SD }
+    SDP_GF1_0x75_2_Avg: { field: SDP_GF1_0.75_2, units: false, measurement: SDP }
     SDP_GF1_0x75_2_Std: { field: SDP_SD_GF1_0.75_2, units: false, measurement: _SD }
+    SEC_GF1_1x00_2_Avg: { field: SEC_GF1_1_2, units: false, measurement: SEC }
     SEC_GF1_1x00_2_Std: { field: SEC_SD_GF1_1_2, units: false, measurement: _SD }
+    SEC_GF1_0x05_2_Avg: { field: SEC_GF1_0.05_2, units: false, measurement: SEC }
     SEC_GF1_0x05_2_Std: { field: SEC_SD_GF1_0.05_2, units: false, measurement: _SD }
+    SEC_GF1_0x10_2_Avg: { field: SEC_GF1_0.1_2, units: false, measurement: SEC }
     SEC_GF1_0x10_2_Std: { field: SEC_SD_GF1_0.1_2, units: false, measurement: _SD }
+    SEC_GF1_0x20_2_Avg: { field: SEC_GF1_0.2_2, units: false, measurement: SEC }
     SEC_GF1_0x20_2_Std: { field: SEC_SD_GF1_0.2_2, units: false, measurement: _SD }
+    SEC_GF1_0x30_2_Avg: { field: SEC_GF1_0.3_2, units: false, measurement: SEC }
     SEC_GF1_0x30_2_Std: { field: SEC_SD_GF1_0.3_2, units: false, measurement: _SD }
+    SEC_GF1_0x40_2_Avg: { field: SEC_GF1_0.4_2, units: false, measurement: SEC }
     SEC_GF1_0x40_2_Std: { field: SEC_SD_GF1_0.4_2, units: false, measurement: _SD }
+    SEC_GF1_0x50_2_Avg: { field: SEC_GF1_0.5_2, units: false, measurement: SEC }
     SEC_GF1_0x50_2_Std: { field: SEC_SD_GF1_0.5_2, units: false, measurement: _SD }
+    SEC_GF1_0x60_2_Avg: { field: SEC_GF1_0.6_2, units: false, measurement: SEC }
     SEC_GF1_0x60_2_Std: { field: SEC_SD_GF1_0.6_2, units: false, measurement: _SD }
+    SEC_GF1_0x75_2_Avg: { field: SEC_GF1_0.75_2, units: false, measurement: SEC }
     SEC_GF1_0x75_2_Std: { field: SEC_SD_GF1_0.75_2, units: false, measurement: _SD }
+    SWC_GF1_1x00_2_Avg: { field: SWC_GF1_1_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_1x00_2_Std: { field: SWC_SD_GF1_1_2, units: false, measurement: _SD }
+    SWC_GF1_0x05_2_Avg: { field: SWC_GF1_0.05_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x05_2_Std: { field: SWC_SD_GF1_0.05_2, units: false, measurement: _SD }
+    SWC_GF1_0x10_2_Avg: { field: SWC_GF1_0.1_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x10_2_Std: { field: SWC_SD_GF1_0.1_2, units: false, measurement: _SD }
+    SWC_GF1_0x20_2_Avg: { field: SWC_GF1_0.2_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x20_2_Std: { field: SWC_SD_GF1_0.2_2, units: false, measurement: _SD }
+    SWC_GF1_0x30_2_Avg: { field: SWC_GF1_0.3_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x30_2_Std: { field: SWC_SD_GF1_0.3_2, units: false, measurement: _SD }
+    SWC_GF1_0x40_2_Avg: { field: SWC_GF1_0.4_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x40_2_Std: { field: SWC_SD_GF1_0.4_2, units: false, measurement: _SD }
+    SWC_GF1_0x50_2_Avg: { field: SWC_GF1_0.5_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x50_2_Std: { field: SWC_SD_GF1_0.5_2, units: false, measurement: _SD }
+    SWC_GF1_0x60_2_Avg: { field: SWC_GF1_0.6_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x60_2_Std: { field: SWC_SD_GF1_0.6_2, units: false, measurement: _SD }
+    SWC_GF1_0x75_2_Avg: { field: SWC_GF1_0.75_2, units: "%", gain: 100, measurement: SWC }
     SWC_GF1_0x75_2_Std: { field: SWC_SD_GF1_0.75_2, units: false, measurement: _SD }
-
+    TS_GF1_1x00_2_Avg: { field: TS_GF1_1_2, units: false, measurement: TS }
+    TS_GF1_1x00_2_Std: { field: TS_SD_GF1_1_2, units: false, measurement: _SD }
+    TS_GF1_0x05_2_Avg: { field: TS_GF1_0.05_2, units: false, measurement: TS }
+    TS_GF1_0x05_2_Std: { field: TS_SD_GF1_0.05_2, units: false, measurement: _SD }
+    TS_GF1_0x10_2_Avg: { field: TS_GF1_0.1_2, units: false, measurement: TS }
+    TS_GF1_0x10_2_Std: { field: TS_SD_GF1_0.1_2, units: false, measurement: _SD }
+    TS_GF1_0x20_2_Avg: { field: TS_GF1_0.2_2, units: false, measurement: TS }
+    TS_GF1_0x20_2_Std: { field: TS_SD_GF1_0.2_2, units: false, measurement: _SD }
+    TS_GF1_0x30_2_Avg: { field: TS_GF1_0.3_2, units: false, measurement: TS }
+    TS_GF1_0x30_2_Std: { field: TS_SD_GF1_0.3_2, units: false, measurement: _SD }
+    TS_GF1_0x40_2_Avg: { field: TS_GF1_0.4_2, units: false, measurement: TS }
+    TS_GF1_0x40_2_Std: { field: TS_SD_GF1_0.4_2, units: false, measurement: _SD }
+    TS_GF1_0x50_2_Avg: { field: TS_GF1_0.5_2, units: false, measurement: TS }
+    TS_GF1_0x50_2_Std: { field: TS_SD_GF1_0.5_2, units: false, measurement: _SD }
+    TS_GF1_0x60_2_Avg: { field: TS_GF1_0.6_2, units: false, measurement: TS }
+    TS_GF1_0x60_2_Std: { field: TS_SD_GF1_0.6_2, units: false, measurement: _SD }
+    TS_GF1_0x75_2_Avg: { field: TS_GF1_0.75_2, units: false, measurement: TS }
+    TS_GF1_0x75_2_Std: { field: TS_SD_GF1_0.75_2, units: false, measurement: _SD }

@@ -1,5 +1,10 @@
 # Changelog
 
+## v20240313 | 13 Mar 2024
+
+- Added new site `ch-tan: CH-TAN_Taenikon` in `dirs.yaml`
+- Added new filetype `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN`
+
 ## v20240129 | 29 Jan 2024
 
 - Fixed wrong `filetype_valid_from` in `FRU10-RAW-TBL1-201811051615-TOA5-DAT-1MIN`

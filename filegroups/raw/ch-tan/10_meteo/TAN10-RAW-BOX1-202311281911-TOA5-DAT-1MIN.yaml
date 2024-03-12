@@ -1,0 +1,117 @@
+# CH-TAN
+# 10_meteo
+
+
+TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN:
+  # TOA5
+  # First file: CH-TAN_iDL_BOX1_0_1_20231128-1911.dat (the very first CH-TAN_iDL_BOX1_0_1_*.dat file)
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2023-11-28 19:11:00
+  filetype_valid_to: 2099-02-28 11:01:00
+  filetype_id: CH-TAN_iDL_BOX1_0_1_*.dat
+  filetype_dateparser: CH-TAN_iDL_BOX1_0_1_%Y%m%d-%H%M.dat
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: T
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_index_col: 0
+  data_parse_dates: [ 0 ]
+  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_keep_date_col: false
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    AW_IN_M1_2_1: { field: AW_IN_M1_2_1, units: false, gain: 1, measurement: SW }
+    batt_volt_Min: { field: BV_MIN_X_X_X, units: false, gain: 1, measurement: _instrumentmetrics }
+    DNTP_iDL_BOX1_0_1: { field: DNTP_iDL_BOX1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    G_CF1_0x05_1_Avg: { field: G_CF1_0.05_1, units: false, gain: 1, measurement: G }
+    G_CF1_0x05_1_Std: { field: G_SD_CF1_0.05_1, units: false, gain: 1, measurement: _SD }
+    LS_M1_2_1: { field: LS_M1_2_1, units: false, gain: 1, measurement: LS }
+    LSD_M1_2_1: { field: LSD_M1_2_1, units: false, gain: 1, measurement: LS }
+    LW_BC_IN_T1_2_1_Avg: { field: LW_BC_IN_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_BC_IN_T1_2_1_Std: { field: LW_BC_IN_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    LW_BC_OUT_T1_2_1_Avg: { field: LW_BC_OUT_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_BC_OUT_T1_2_1_Std: { field: LW_BC_OUT_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    LW_BC_TBIN_T1_2_1_Avg: { field: LW_BC_TBIN_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_BC_TBOUT_T1_2_1_Avg: { field: LW_BC_TBOUT_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_BC_VIN_T1_2_1_Avg: { field: LW_BC_VIN_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_BC_VOUT_T1_2_1_Avg: { field: LW_BC_VOUT_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_IN_T1_2_1_Avg: { field: LW_IN_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_IN_T1_2_1_Std: { field: LW_IN_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    LW_OUT_T1_2_1_Avg: { field: LW_OUT_T1_2_1, units: false, gain: 1, measurement: LW }
+    LW_OUT_T1_2_1_Std: { field: LW_OUT_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    LW_TBIN_T1_2_1_Avg: { field: LW_TBIN_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    LW_TBOUT_T1_2_1_Avg: { field: LW_TBOUT_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    LW_VIN_T1_2_1_Avg: { field: LW_VIN_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    LW_VOUT_T1_2_1_Avg: { field: LW_VOUT_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    PA_M1_2_1: { field: PA_M1_2_1, units: false, gain: 1, measurement: PA }
+    Power_Tot: { field: Power_Tot_X_X_X, units: false, gain: 1, measurement: _instrumentmetrics }
+    PPFD_IN_T1_2_1_Avg: { field: PPFD_IN_T1_2_1, units: false, gain: 1, measurement: PPFD }
+    PPFD_IN_T1_2_1_Std: { field: PPFD_IN__SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    PREC_M1_2_1: { field: PREC_M1_2_1, units: false, gain: 1, measurement: PREC }
+    PTemp: { field: PTemp_X_X_X, units: false, gain: 1, measurement: _instrumentmetrics }
+    RECORD: { field: RECORD_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    RH_M1_2_1: { field: RH_M1_2_1, units: false, gain: 1, measurement: RH }
+    SDP_CF2_0x05_1_Avg: { field: SDP_CF2_0.05_1, units: false, gain: 1, measurement: SDP }
+    SDP_CF2_0x15_1_Avg: { field: SDP_CF2_0.15_1, units: false, gain: 1, measurement: SDP }
+    SDP_CF2_0x30_1_Avg: { field: SDP_CF2_0.30_1, units: false, gain: 1, measurement: SDP }
+    SDP_CF3_0x05_3: { field: SDP_CF3_0.05_3, units: false, gain: 1, measurement: SDP }
+    SDP_CF3_0x10_3: { field: SDP_CF3_0.10_3, units: false, gain: 1, measurement: SDP }
+    SDP_CF3_0x20_3: { field: SDP_CF3_0.20_3, units: false, gain: 1, measurement: SDP }
+    SDP_CF3_0x30_3: { field: SDP_CF3_0.30_3, units: false, gain: 1, measurement: SDP }
+    SDP_CF3_0x40_3: { field: SDP_CF3_0.40_3, units: false, gain: 1, measurement: SDP }
+    SDP_CF3_0x50_3: { field: SDP_CF3_0.50_3, units: false, gain: 1, measurement: SDP }
+    SEC_CF3_0x05_3: { field: SEC_CF3_0.05_3, units: false, gain: 1, measurement: SDP }
+    SEC_CF3_0x10_3: { field: SEC_CF3_0.10_3, units: false, gain: 1, measurement: SDP }
+    SEC_CF3_0x20_3: { field: SEC_CF3_0.20_3, units: false, gain: 1, measurement: SDP }
+    SEC_CF3_0x30_3: { field: SEC_CF3_0.30_3, units: false, gain: 1, measurement: SDP }
+    SEC_CF3_0x40_3: { field: SEC_CF3_0.40_3, units: false, gain: 1, measurement: SDP }
+    SEC_CF3_0x50_3: { field: SEC_CF3_0.50_3, units: false, gain: 1, measurement: SDP }
+    SW_BC_IN_T1_2_1_Avg: { field: SW_BC_IN_T1_2_1, units: false, gain: 1, measurement: SW }
+    SW_BC_IN_T1_2_1_Std: { field: SW_BC_IN_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    SW_BC_OUT_T1_2_1_Avg: { field: SW_BC_OUT_T1_2_1, units: false, gain: 1, measurement: SW }
+    SW_BC_OUT_T1_2_1_Std: { field: SW_BC_OUT_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    SW_BC_VIN_T1_2_1_Avg: { field: SW_BC_VIN_T1_2_1, units: false, gain: 1, measurement: SW }
+    SW_BC_VOUT_T1_2_1_Avg: { field: SW_BC_VOUT_T1_2_1, units: false, gain: 1, measurement: SW }
+    SW_IN_T1_2_1_Avg: { field: SW_IN_T1_2_1, units: false, gain: 1, measurement: SW }
+    SW_IN_T1_2_1_Std: { field: SW_IN_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    SW_OUT_T1_2_1_Avg: { field: SW_OUT_T1_2_1, units: false, gain: 1, measurement: SW }
+    SW_OUT_T1_2_1_Std: { field: SW_OUT_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
+    SW_VIN_T1_2_1_Avg: { field: SW_VIN_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    SW_VOUT_T1_2_1_Avg: { field: SW_VOUT_T1_2_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    SWC_CF2_0x05_1_Avg: { field: SWC_CF2_0.05_1, units: false, gain: 1, measurement: SWC }
+    SWC_CF2_0x15_1_Avg: { field: SWC_CF2_0.15_1, units: false, gain: 1, measurement: SWC }
+    SWC_CF2_0x30_1_Avg: { field: SWC_CF2_0.30_1, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x05_3: { field: SWC_CF3_0.05_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x10_3: { field: SWC_CF3_0.10_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x20_3: { field: SWC_CF3_0.20_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x30_3: { field: SWC_CF3_0.30_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x40_3: { field: SWC_CF3_0.40_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x50_3: { field: SWC_CF3_0.50_3, units: false, gain: 1, measurement: SWC }
+    T_CF1_0x05_1_Avg: { field: TS_CF1_0.05_1, units: false, gain: 1, measurement: TS }
+    T_CF1_0x05_1_Std: { field: TS_SD_CF1_0.05_1, units: false, gain: 1, measurement: _SD }
+    TA_M1_2_1: { field: TA_M1_2_1, units: false, gain: 1, measurement: TA }
+    TRH_M1_2_1: { field: TRH_M1_2_1, units: false, gain: 1, measurement: RH }
+    TS_CF2_0x05_1_Avg: { field: TS_CF2_0.05_1, units: false, gain: 1, measurement: TS }
+    TS_CF2_0x15_1_Avg: { field: TS_CF2_0.15_1, units: false, gain: 1, measurement: TS }
+    TS_CF2_0x30_1_Avg: { field: TS_CF2_0.30_1, units: false, gain: 1, measurement: TS }
+    TS_CF3_0x05_3: { field: TS_CF3_0.05_3, units: false, gain: 1, measurement: TS }
+    TS_CF3_0x10_3: { field: TS_CF3_0.10_3, units: false, gain: 1, measurement: TS }
+    TS_CF3_0x20_3: { field: TS_CF3_0.20_3, units: false, gain: 1, measurement: TS }
+    TS_CF3_0x30_3: { field: TS_CF3_0.30_3, units: false, gain: 1, measurement: TS }
+    TS_CF3_0x40_3: { field: TS_CF3_0.40_3, units: false, gain: 1, measurement: TS }
+    TS_CF3_0x50_3: { field: TS_CF3_0.50_3, units: false, gain: 1, measurement: TS }
+    VP_M1_2_1: { field: VP_M1_2_1, units: false, gain: 1, measurement: VP }
+    WD_ATM41_M1_2_1: { field: WD_ATM41_M1_2_1, units: false, gain: 1, measurement: WIND }
+    WS_ATM41_M1_2_1: { field: WS_ATM41_M1_2_1, units: false, gain: 1, measurement: WIND }
+    WSG_ATM41_M1_2_1: { field: WSG_ATM41_M1_2_1, units: false, gain: 1, measurement: WIND }

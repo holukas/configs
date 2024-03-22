@@ -1,5 +1,9 @@
 # Changelog
 
+## v20240322 | 22 Mar 2024
+
+- Fixed TS name in `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN`
+
 ## v20240313 | 13 Mar 2024
 
 - Added new site `ch-tan: CH-TAN_Taenikon` in `dirs.yaml`

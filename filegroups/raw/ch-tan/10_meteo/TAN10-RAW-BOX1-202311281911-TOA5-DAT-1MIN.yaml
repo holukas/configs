@@ -98,10 +98,13 @@ TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN:
     SWC_CF3_0x30_3: { field: SWC_CF3_0.30_3, units: false, gain: 1, measurement: SWC }
     SWC_CF3_0x40_3: { field: SWC_CF3_0.40_3, units: false, gain: 1, measurement: SWC }
     SWC_CF3_0x50_3: { field: SWC_CF3_0.50_3, units: false, gain: 1, measurement: SWC }
+    TS_CF1_0x05_1: { field: TS_CF1_0.05_1, units: false, gain: 1, measurement: TS }
     T_CF1_0x05_1_Avg: { field: TS_CF1_0.05_1, units: false, gain: 1, measurement: TS }
     T_CF1_0x05_1_Std: { field: TS_SD_CF1_0.05_1, units: false, gain: 1, measurement: _SD }
     TA_M1_2_1: { field: TA_M1_2_1, units: false, gain: 1, measurement: TA }
     TRH_M1_2_1: { field: TRH_M1_2_1, units: false, gain: 1, measurement: RH }
+    TS_CF1_0x05_1_Avg: { field: TS_CF1_0.05_1, units: false, gain: 1, measurement: TS }
+    TS_CF1_0x05_1_Std: { field: TS_SD_CF1_0.05_1, units: false, gain: 1, measurement: _SD }
     TS_CF2_0x05_1_Avg: { field: TS_CF2_0.05_1, units: false, gain: 1, measurement: TS }
     TS_CF2_0x15_1_Avg: { field: TS_CF2_0.15_1, units: false, gain: 1, measurement: TS }
     TS_CF2_0x30_1_Avg: { field: TS_CF2_0.30_1, units: false, gain: 1, measurement: TS }

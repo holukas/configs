@@ -1,5 +1,9 @@
 # Changelog
 
+## v20240405 | 5 Apr 2024
+
+- Updated Basedirs network addresses from Windows (network locations) in `dirs.yaml`
+
 ## v20240322 | 22 Mar 2024
 
 - Fixed TS name in `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN`

@@ -1,5 +1,33 @@
 # Changelog
 
+TODO check more rows in some files than in datavars2, might need separate filetype
+TODO update docstrings CHA
+
+## v202404XX | XX Apr 2024
+
+### Multiple IDs to identify data rows
+
+It is now possible to define multiple IDs that identify good data rows. This is done by specifying
+e.g. `data_keep_good_rows: [ 0, [ 102, 103 ], [ 202, 203 ] ]`, which means that all data rows that start with
+either `102` or `103` are kept and use variable info in `data_vars`, and `202` or `203` use the variable info given
+in `data_vars2`.
+Up to this update always single integers were given instead of a list, which is also still possible like before. In
+this case all records that start with that integer are kept. For example, `data_keep_good_rows: [ 0, 102, 202 ]`,
+which means that all data rows that start with `102` are kept and use variable info in `data_vars`, and all data rows
+that start with `202` use the variable info given in `data_vars2`.
+
+### Changes
+
+- TODO Udpated all frequency settings in `data_raw_freq` to new `pandas` DateOffsets (
+  see [here](https://pandas.pydata.org/docs/user_guide/timeseries.html#dateoffset-objects)). This means that e.g. a file
+  with 30-minute time resolution now has the setting `30min` (previously it was `30T`).
+- Added `99999` and `-99999` as pre-defined code for missing values in all settings
+  files: `data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]`
+
+### New filetypes
+
+- Added new filetype: `CHA10-RAW-LOGGER-200507151448-ALTERNATING-ID-A-30MIN`
+
 ## v20240405 | 5 Apr 2024
 
 - Updated Basedirs network addresses from Windows (network locations) in `dirs.yaml`
@@ -51,8 +79,8 @@
   e.g., `Theta_11_STD: { field: SDP_SD_GF1_0.05_1, units: mV, gain: 1, rawfunc: calc_swc, measurement: _SD }`.
   In this example a function that calculates SWC (soil water content) from SDP is applied. This setting
   is currently picked up and applied by the Python script `dataflow`.
-- Two time resolutions can now be given for `-ALTERNATING-` formats, one for each ID: `data_raw_freq: [ 30T, 10T ]`.
-  It is also possible to define an irregular timestamp, e.g., `[ 30T, irregular ]`
+- Two time resolutions can now be given for `-ALTERNATING-` formats, one for each ID: `data_raw_freq: [ 30min, 10min ]`.
+  It is also possible to define an irregular timestamp, e.g., `[ 30min, irregular ]`
 - Added and updated many FRU filetypes
 
 ### Forest floor TBL1 and TBL2 files DAV12

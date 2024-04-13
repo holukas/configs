@@ -37,7 +37,7 @@ FRU10-RAW-TBL1-201711201643-TOA5-DAT-1MIN:
   filetype_dateparser: CH-FRU_iDL_BOX1_0_1_TBL1_%Y%m%d-%H%M.dat
   filetype_gzip: false
   filegroup: 10_meteo
-  data_raw_freq: T
+  data_raw_freq: min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
   data_index_col: 0
@@ -46,7 +46,7 @@ FRU10-RAW-TBL1-201711201643-TOA5-DAT-1MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

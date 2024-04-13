@@ -28,7 +28,7 @@ FRU13-RAW-PRESS-200507050828-CSV-1MIN-IGNORE:
   filetype_dateparser: ['CH-FRU_EC_Press-%Y%m%d%H.X%M.csv', 'CH-FRU_EC_Press-%Y%m%d%H%M.csv']
   filetype_gzip: false
   filegroup: 13_meteo_pressure
-  data_raw_freq: T
+  data_raw_freq: min
   data_skiprows: false
   data_headerrows: [ 0 ]
   data_index_col: 0
@@ -37,7 +37,7 @@ FRU13-RAW-PRESS-200507050828-CSV-1MIN-IGNORE:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

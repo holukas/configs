@@ -14,9 +14,9 @@
 # - In case of two different IDs, the time resolution of each ID must be
 #   specified separately, where the first element is the time resolution
 #   of the data with the first ID, the second element of the second ID:
-#   *data_raw_freq: [ 30T, irregular ]*
+#   *data_raw_freq: [ 30min, irregular ]*
 # - However, this file seems to have only ID 142 in 30MIN resolution,
-#   therefore *data_raw_freq: 30T*
+#   therefore *data_raw_freq: 30min*
 #
 # - ID 142:
 #     - Variables are defined in *data_vars*
@@ -49,7 +49,7 @@ FRU10-RAW-LOGGER-200507151312-ALTERNATING-ID142-A-30MIN:
   filetype_dateparser: logger%Y%m%d%H.a%M
   filetype_gzip: false
   filegroup: 10_meteo
-  data_raw_freq: 30T
+  data_raw_freq: 30min
   data_skiprows: false
   data_headerrows: false
   data_index_col: -9999
@@ -59,7 +59,7 @@ FRU10-RAW-LOGGER-200507151312-ALTERNATING-ID142-A-30MIN:
   # If 142 (int) is in the first column (index 0), the data row is good, otherwise bad data
   data_keep_good_rows: [ 0, 142 ]
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','

@@ -17,7 +17,7 @@ DAV40-RAW-201904100000-ICOSSEQ-CMB-DAT-1S:
   filetype_dateparser: CH-Dav_CM_%Y%m%d_L10_F03.dat
   filetype_gzip: false
   filegroup: 40_chambers_ghg
-  data_raw_freq: S
+  data_raw_freq: s
   data_skiprows: [ ]
   data_headerrows: [ 0 ]
   data_index_col: 0
@@ -26,7 +26,7 @@ DAV40-RAW-201904100000-ICOSSEQ-CMB-DAT-1S:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: "-ICOSSEQ-"
   data_encoding: utf-8
   data_delimiter: ','

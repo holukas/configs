@@ -16,7 +16,7 @@ DAV12-RAW-FF1-TBL1-201802281110-TOA5-DAT-10MIN:
   filetype_dateparser: CH-DAV_iDL_FF1_0_1_TBL1_%Y_%m_%d_%H%M.dat
   filetype_gzip: false
   filegroup: 12_meteo_forestfloor
-  data_raw_freq: 10T
+  data_raw_freq: 10min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
   data_index_col: 0
@@ -25,7 +25,7 @@ DAV12-RAW-FF1-TBL1-201802281110-TOA5-DAT-10MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

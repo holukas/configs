@@ -21,7 +21,7 @@ DAV10-RAW-RAD-200704171403-A-1MIN:
   filetype_dateparser: ['logger%Y%m%d%H.a%M', 'radiometer%Y%m%d%H.a%M']
   filetype_gzip: false
   filegroup: 10_meteo
-  data_raw_freq: T
+  data_raw_freq: min
   data_skiprows: false
   data_headerrows: false
   data_index_col: -9999
@@ -31,7 +31,7 @@ DAV10-RAW-RAD-200704171403-A-1MIN:
   # If 123 (int) is in the first column (index 0), the data row is good, otherwise bad data
   data_keep_good_rows: [ 0, 123 ]
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

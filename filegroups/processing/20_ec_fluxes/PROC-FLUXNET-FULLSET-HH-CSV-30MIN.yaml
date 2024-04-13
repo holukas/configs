@@ -29,7 +29,7 @@ PROC-FLUXNET-FULLSET-HH-CSV-30MIN:
   filetype_dateparser: false
   filetype_gzip: false
   filegroup: 20_ec_fluxes
-  data_raw_freq: 30T
+  data_raw_freq: 30min
   data_skiprows: false
   data_headerrows: [ 0 ]
   # 'data_index_col' has to be zero even though the timestamp column
@@ -43,7 +43,7 @@ PROC-FLUXNET-FULLSET-HH-CSV-30MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

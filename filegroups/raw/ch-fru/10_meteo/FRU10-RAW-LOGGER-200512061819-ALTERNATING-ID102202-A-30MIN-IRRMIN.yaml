@@ -14,7 +14,7 @@
 # - In case of two different IDs, the time resolution of each ID must be
 #   specified separately, where the first element is the time resolution
 #   of the data with the first ID, the second element of the second ID:
-#   *data_raw_freq: [ 30T, irregular ]*
+#   *data_raw_freq: [ 30min, irregular ]*
 # - Because of these two IDs this filetype needs an additional set of
 #   *data_vars*, which is defined below as *data_vars2*.
 #
@@ -52,17 +52,17 @@ FRU10-RAW-LOGGER-200512061819-ALTERNATING-ID102202-A-30MIN-IRRMIN:
   filetype_dateparser: logger%Y%m%d%H.a%M
   filetype_gzip: false
   filegroup: 10_meteo
-  data_raw_freq: [ 30T, irregular ]
+  data_raw_freq: [ 30min, irregular ]
   data_skiprows: false
   data_headerrows: false
   data_index_col: -9999
   data_parse_dates: false
   data_date_parser: false
   data_build_timestamp: "YEAR+DOY+TIME"
-  # If 102 (int) is in the first column (index 0), the data row is good, otherwise bad data
+  # If 102 or 202 (int) is in the first column (index 0), the data row is good, otherwise bad data
   data_keep_good_rows: [ 0, 102, 202 ]
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','
@@ -107,15 +107,15 @@ FRU10-RAW-LOGGER-200512061819-ALTERNATING-ID102202-A-30MIN-IRRMIN:
     Tsoil_18_AVG: { field: TS_GF1_0.4_1, units: degC, gain: 1, measurement: TS }
     Tsoil_19_AVG: { field: TS_GF1_0.95_1, units: degC, gain: 1, measurement: TS }
     Tsoil_20_AVG: { field: TS_GF1_0.01_2, units: degC, gain: 1, measurement: TS }
-    Theta_11_AVG: { field: SDP_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_12_AVG: { field: SDP_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_13_AVG: { field: SDP_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_14_AVG: { field: SDP_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_15_AVG: { field: SDP_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_16_AVG: {  field: SDP_AVG_GF1_X_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_17_AVG: {  field: SDP_AVG_GF1_X_2, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_18_AVG: {  field: SDP_AVG_GF1_X_3, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
-    Theta_19_AVG: {  field: SDP_AVG_GF1_X_4, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }
+    Theta_11_AVG: { field: SDP_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_12_AVG: { field: SDP_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_13_AVG: { field: SDP_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_14_AVG: { field: SDP_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_15_AVG: { field: SDP_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_16_AVG: {  field: SDP_AVG_GF1_X_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_17_AVG: {  field: SDP_AVG_GF1_X_2, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_18_AVG: {  field: SDP_AVG_GF1_X_3, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_19_AVG: {  field: SDP_AVG_GF1_X_4, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
     LiBatt_V_AVG: { field: BV_iDL_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
     Tintern_STD: { field: T_iDL_SD_BOX1_0_1, units: degC, gain: 1, measurement: _instrumentmetrics }
     BatVolt_STD: { field: SV_iDL_SD_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
@@ -158,7 +158,7 @@ FRU10-RAW-LOGGER-200512061819-ALTERNATING-ID102202-A-30MIN-IRRMIN:
     Wdir_2_DU_WVT: { field: WD_VANE_VECTOR_AVG_T1_2_1, units: deg, gain: 1, measurement: WD }
     Wdir_2_SDU_WVT: { field: WD_VANE_VECTOR_SD_T1_2_1, units: deg, gain: 1, measurement: _SD }
   data_vars2:
-    # Variables with ID 204 at the start of the record row
+    # Variables with ID 202 at the start of the record row
     # Variable info taken directly from the CONFIG XLSX file
     ID: { field: ID_T1_0_1, units: "#", gain: 1, measurement: _instrumentmetrics }
     YEAR: { field: YEAR_X_X_X, units: false, gain: 1, measurement: XXX }

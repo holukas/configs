@@ -25,7 +25,7 @@ FRU10-RAW-LOGGER-201509160815-A-30MIN:
   filetype_dateparser: logger%Y%m%d%H.a%M
   filetype_gzip: false
   filegroup: 10_meteo
-  data_raw_freq: 30T
+  data_raw_freq: 30min
   data_skiprows: false
   data_headerrows: false
   data_index_col: -9999
@@ -35,7 +35,7 @@ FRU10-RAW-LOGGER-201509160815-A-30MIN:
   # If 104 (int) is in the first column (index 0), the data row is good, otherwise bad data
   data_keep_good_rows: [ 0, 104 ]
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

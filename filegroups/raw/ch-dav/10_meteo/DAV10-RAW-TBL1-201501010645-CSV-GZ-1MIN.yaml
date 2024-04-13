@@ -22,7 +22,7 @@ DAV10-RAW-TBL1-201501010645-CSV-GZ-1MIN:
   filetype_dateparser: ['CH-DAV_CR1000_T1_35m_%Y%m%d-%H%M.csv.gz', 'CH-DAV_CR1000_T1_35_1_TBL1_%Y%m%d-%H%M.csv.gz']
   filetype_gzip: true
   filegroup: 10_meteo
-  data_raw_freq: T
+  data_raw_freq: min
   data_skiprows: false
   data_headerrows: [ 0 ]
   data_index_col: 0
@@ -31,7 +31,7 @@ DAV10-RAW-TBL1-201501010645-CSV-GZ-1MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

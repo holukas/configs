@@ -13,7 +13,7 @@ DAV17-RAW-AUX-202112140000-TOA5-PRF-DAT-1MIN:
   filetype_dateparser: CH-DAV_meteo-profile-aux_%Y%m%d.dat
   filetype_gzip: false
   filegroup: 17_meteo_profile
-  data_raw_freq: T
+  data_raw_freq: min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
   data_index_col: 0
@@ -22,7 +22,7 @@ DAV17-RAW-AUX-202112140000-TOA5-PRF-DAT-1MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

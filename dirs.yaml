@@ -1,5 +1,5 @@
 # Basedirs network addresses, from Windows
-raw_server: \\nas12.ethz.ch\green_groups_gl_rawdata
+raw_server: \\nas12.ethz.ch\green_groups_gl_rawdata\FluxData
 #raw_server: \\grasslandserver.ethz.ch\archive\FluxData
 processing_server: \\nas12.ethz.ch\green_groups_gl_processing
 #processing_server: \\grasslandserver.ethz.ch\processing

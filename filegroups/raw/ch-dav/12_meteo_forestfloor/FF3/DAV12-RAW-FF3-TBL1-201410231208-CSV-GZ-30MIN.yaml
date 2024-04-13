@@ -12,7 +12,7 @@ DAV12-RAW-FF3-TBL1-201410231208-CSV-GZ-30MIN:
   filetype_dateparser: CH-DAV_CR1000_FF3_1_TABLE1_%Y%m%d-%H%M.csv.gz
   filetype_gzip: true
   filegroup: 12_meteo_forestfloor
-  data_raw_freq: 30T
+  data_raw_freq: 30min
   data_skiprows: false
   data_headerrows: [ 0 ]
   data_index_col: 0
@@ -21,7 +21,7 @@ DAV12-RAW-FF3-TBL1-201410231208-CSV-GZ-30MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' ]
+  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','

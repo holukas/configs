@@ -18,7 +18,7 @@ that start with `202` use the variable info given in `data_vars2`.
 
 ### Changes
 
-- TODO Udpated all frequency settings in `data_raw_freq` to new `pandas` DateOffsets (
+- Udpated all frequency settings in `data_raw_freq` to new `pandas` DateOffsets (
   see [here](https://pandas.pydata.org/docs/user_guide/timeseries.html#dateoffset-objects)). This means that e.g. a file
   with 30-minute time resolution now has the setting `30min` (previously it was `30T`).
 - Added `99999` and `-99999` as pre-defined code for missing values in all settings

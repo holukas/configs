@@ -1,5 +1,5 @@
 # Basedirs network addresses, from Windows
-#raw_server: F:\Sync\luhk_work\20 - CODING\22 - POET\_filetype_docs\CH-CHA\raw\10_meteo\New folder  # FOR LOCAL TESTING
+#raw_server: L:\Sync\luhk_work\20 - CODING\22 - POET\_filetype_docs\CH-CHA\raw\10_meteo\New folder  # FOR LOCAL TESTING
 raw_server: \\nas12.ethz.ch\green_groups_gl_rawdata\FluxData
 #raw_server: \\grasslandserver.ethz.ch\archive\FluxData
 processing_server: \\nas12.ethz.ch\green_groups_gl_processing
@@ -12,7 +12,7 @@ processing_mount: /mnt/gl-processing/
 
 # Output dirs
 out_dataflow_mount: /home/holukas/source_code/test_out
-out_dataflow: F:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
+out_dataflow: L:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
 
 # Sites subfolders
 ch-aws: CH-AWS_CrapAlv

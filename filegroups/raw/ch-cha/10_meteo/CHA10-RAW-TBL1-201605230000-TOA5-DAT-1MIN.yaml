@@ -2,16 +2,22 @@
 # 10_meteo
 
 
-CHA10-RAW-TBL1-201612071258-TOA5-DAT-1MIN:
+CHA10-RAW-TBL1-201605230000-TOA5-DAT-1MIN:
   # TOA5
+  # There are several differently named files that all have the same structure.
+  # First file: CH-CHA_iDL_BOX1_1min_20160523-0000.dat (the very first CH-CHA_iDL_BOX1_1min_*.dat file)
+  #     This is the very first file with this structure, still has different name than later.
+  # First file: CH-CHA-iDL_BOX1_0_1_iDL_BOX1_1min_20161207-0000.dat (the very first CH-CHA-iDL_BOX1_0_1_TBL1_*.dat file)
+  #     There was still a typo in the filename (- instead of underscore _).
   # First file: CH-CHA_iDL_BOX1_0_1_TBL1_20161207-1258.dat (the very first CH-CHA_iDL_BOX1_0_1_TBL1_*.dat file)
+  #     This is the first *real* first file, correctly named, without the typo.
+  # First file: CH-CHA_iDL_BOX1_0_1_1min_20160910.dat (only two files are named like this)
   # Last file:  *currently running*
   can_be_used_by_filescanner: true
-  filetype_valid_from: 2098-12-07 12:58:00
-#  filetype_valid_from: 2016-12-07 12:58:00
+  filetype_valid_from: 2016-05-23 00:00:00
   filetype_valid_to: 2099-02-28 11:01:00
-  filetype_id: CH-CHA_iDL_BOX1_0_1_TBL1_*.dat
-  filetype_dateparser: CH-CHA_iDL_BOX1_0_1_TBL1_%Y%m%d-%H%M.dat
+  filetype_id: [ 'CH-CHA_iDL_BOX1_0_1_TBL1_*.dat', 'CH-CHA-iDL_BOX1_0_1_iDL_BOX1_1min_*.dat', 'CH-CHA_iDL_BOX1_1min_*.dat', 'CH-CHA_iDL_BOX1_0_1_1min_*.dat' ]
+  filetype_dateparser: [ 'CH-CHA_iDL_BOX1_0_1_TBL1_%Y%m%d-%H%M.dat', 'CH-CHA-iDL_BOX1_0_1_iDL_BOX1_1min_%Y%m%d-%H%M.dat', 'CH-CHA_iDL_BOX1_1min_%Y%m%d-%H%M.dat', 'CH-CHA_iDL_BOX1_0_1_1min_%Y%m%d.dat' ]
   filetype_gzip: false
   filegroup: 10_meteo
   data_raw_freq: min
@@ -23,7 +29,7 @@ CHA10-RAW-TBL1-201612071258-TOA5-DAT-1MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
@@ -35,8 +41,8 @@ CHA10-RAW-TBL1-201612071258-TOA5-DAT-1MIN:
     BV_iDL_BOX1_0_1_Avg: { field: BV_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     BV_iDL_BOX1_0_1_Std: { field: BV_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     DNTP_iDL_BOX1_0_1: { field: DNTP_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
-    FOG_M1_1_1_Avg:   { field: FOG_M1_1_1, units: false, measurement: FOG }
-    FOG_M1_1_1_Std:   { field: FOG_SD_M1_1_1, units: false, measurement: _SD }
+    FOG_M1_1_1_Avg: { field: FOG_M1_1_1, units: false, measurement: FOG }
+    FOG_M1_1_1_Std: { field: FOG_SD_M1_1_1, units: false, measurement: _SD }
     G_GF1_0x03_1_Avg: { field: G_GF1_0.03_1, units: false, measurement: G }
     G_GF1_0x03_1_Std: { field: G_SD_GF1_0.03_1, units: false, measurement: _SD }
     G_GF1_0x05_1_Avg: { field: G_GF1_0.05_1, units: false, measurement: G }
@@ -78,8 +84,8 @@ CHA10-RAW-TBL1-201612071258-TOA5-DAT-1MIN:
     RH_T1_2_1_Avg: { field: RH_T1_2_1, units: false, measurement: RH }
     RH_T1_2_1_Std: { field: RH_SD_T1_2_1, units: false, measurement: _SD }
     SDI12_Power: { field: SDI12_Power_X_X_X, units: false, measurement: _instrumentmetrics }
-    SDP_GF1_0x1_2_Avg:  { field: SDP_GF1_0.1_2, units: false, measurement: SDP }
-    SDP_GF1_0x1_2_Std:  { field: SDP_SD_GF1_0.1_2, units: false, measurement: _SD }
+    SDP_GF1_0x1_2_Avg: { field: SDP_GF1_0.1_2, units: false, measurement: SDP }
+    SDP_GF1_0x1_2_Std: { field: SDP_SD_GF1_0.1_2, units: false, measurement: _SD }
     SDP_GF1_0x05_1_Avg: { field: SDP_GF1_0.05_1, units: false, measurement: SDP }
     SDP_GF1_0x05_1_Std: { field: SDP_SD_GF1_0.05_1, units: false, measurement: _SD }
     SDP_GF1_0x05_2_Avg: { field: SDP_GF1_0.05_2, units: false, measurement: SDP }

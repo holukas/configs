@@ -58,7 +58,7 @@ DAV10-RAW-PROFILE-200612201820-ALTERNATING-A-10MIN:
   # Keep rows that have 225 or 1 as first entry (index 0) (record ID)
   data_keep_good_rows: [ 0, 225, 1 ]
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
   data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','

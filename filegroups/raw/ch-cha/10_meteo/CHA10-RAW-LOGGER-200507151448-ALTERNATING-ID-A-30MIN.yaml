@@ -74,7 +74,7 @@ CHA10-RAW-LOGGER-200507151448-ALTERNATING-ID-A-30MIN:
   data_build_timestamp: "YEAR+DOY+TIME"
   data_keep_good_rows: [ 0, [ 142, 148, 102, 103, 104, 105 ], [ 202, 203, 204, 205 ] ]  # See description above
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
   data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','

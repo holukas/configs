@@ -46,7 +46,7 @@ DAV13-RAW-NABEL-201601010000-SSV-TXT-10MIN:
   data_build_timestamp: "YEAR0+MONTH1+DAY2+HOUR3+MINUTE4"
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN, -6999, '-' , 99999, -99999]
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
   data_special_format: false
   data_encoding: cp1252
   data_delimiter: '\s+'

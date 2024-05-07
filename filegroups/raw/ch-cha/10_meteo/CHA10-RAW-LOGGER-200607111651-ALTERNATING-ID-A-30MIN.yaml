@@ -9,21 +9,21 @@
 #   the record ID at the start of each data row shows which data were
 #   recorded in the respective row.
 # - There are multiple IDs in this time range:
-#     - Rows that start with ID 142, 148 or 102 use variable info from *data_vars*
-#     - Rows that start with ID 202 use variable info from *data_vars2*
+#     - Rows that start with ID 103, 104 or 105 use variable info from *data_vars*
+#     - Rows that start with ID 203, 204 or 205 use variable info from *data_vars2*
 # - To take this ID into account this filetype needs the setting:
-#     *data_keep_good_rows: [ 0, [ 142, 148, 102 ], [ 202 ] ]*
+#     *data_keep_good_rows: [ 0, [ 103, 104, 105 ], [ 203, 204, 205 ] ]*
 #     This setting means:
 #       - check the first column (index 0) for IDs
-#       - keep all data records that start with 142, 148 or 102 and use info from *data_vars*
-#       - keep all data records that start with 202 and use info from *data_vars2*
+#       - keep all data records that start with 103, 104 or 105 and use info from *data_vars*
+#       - keep all data records that start with 203, 204 or 205 and use info from *data_vars2*
 # - In case of two different sets of IDs, the time resolution of each set must be
 #   specified separately, where the first element is the time resolution
-#   of the data with the first set (here [ 142, 148, 102 ]), the second element of the second set
-#   (here [ 202 ]):
+#   of the data with the first set (here [ 103, 104, 105 ]), the second element of the second set
+#   (here [ 203, 204, 205 ]):
 #     *data_raw_freq: [ 30min, irregular ]*
 #
-# - IDs 142, 148, 102:
+# - IDs 103, 104, 105:
 #     - Variables are defined in *data_vars*
 #     - *data_vars* info for ID 142 comes from the Python MeteoScreening Tool settings
 #       file CH-CHA_CONFIG.xlsx (1) in combination with info from the file config.header.20070606 (2).
@@ -42,7 +42,7 @@
 #       grasslandserver.ethz.ch/export/home/fruebuel/config/config.header
 #     - The original .header file for this time period is *most likely* config.header.20070606.
 #
-# - ID 202:
+# - ID 203, 204, 205:
 #     - Variable info taken from CONFIG XLSX table EDL1_07_C version V1095
 #
 # General info:
@@ -53,10 +53,10 @@
 
 CHA10-RAW-LOGGER-200607111651-ALTERNATING-ID-A-30MIN:
   # First file: logger2006071116.a51 (first file with ID 103, 203 good rows with more columns than before)
-  #x Last file: logger2006070707.a37 (last file with ID 103, 203 good rows)
-  #x Last file: logger2006082519.a27 (last file with ID 104, 204 good rows)
-  #x First file: logger2006082519.a27 (last file with ID 105, 205 good rows)
-  #x Last file: logger2007052313.a27 (last file with ID 105, 205 good rows)
+  # Last file: logger2006070707.a37 (last file with ID 103, 203 good rows)
+  # Last file: logger2006082519.a27 (last file with ID 104, 204 good rows)
+  # First file: logger2006082519.a27 (last file with ID 105, 205 good rows)
+  # Last file: logger2007052313.a27 (last file with ID 105, 205 good rows)
   can_be_used_by_filescanner: true
   filetype_valid_from: 2006-07-11 16:51:00
   filetype_valid_to: 2007-05-23 13:27:00
@@ -64,7 +64,7 @@ CHA10-RAW-LOGGER-200607111651-ALTERNATING-ID-A-30MIN:
   filetype_dateparser: logger%Y%m%d%H.a%M
   filetype_gzip: false
   filegroup: 10_meteo
-  data_raw_freq: [ 30min, irregular ]  # Records with ID 202 are irregular
+  data_raw_freq: [ 30min, irregular ]
   data_skiprows: false
   data_headerrows: false
   data_index_col: -9999

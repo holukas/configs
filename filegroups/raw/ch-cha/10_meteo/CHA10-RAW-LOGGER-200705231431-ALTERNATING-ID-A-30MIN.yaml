@@ -9,40 +9,36 @@
 #   the record ID at the start of each data row shows which data were
 #   recorded in the respective row.
 # - There are multiple IDs in this time range:
-#     - Rows that start with ID 142, 148 or 102 use variable info from *data_vars*
-#     - Rows that start with ID 202 use variable info from *data_vars2*
+#     - Rows that start with ID 106 use variable info from *data_vars*
+#     - Rows that start with ID 206 use variable info from *data_vars2*
 # - To take this ID into account this filetype needs the setting:
-#     *data_keep_good_rows: [ 0, [ 142, 148, 102 ], [ 202 ] ]*
+#     *data_keep_good_rows: [ 0, 106, 206 ]*
 #     This setting means:
 #       - check the first column (index 0) for IDs
-#       - keep all data records that start with 142, 148 or 102 and use info from *data_vars*
-#       - keep all data records that start with 202 and use info from *data_vars2*
+#       - keep all data records that start with 106 and use info from *data_vars*
+#       - keep all data records that start with 206 and use info from *data_vars2*
 # - In case of two different sets of IDs, the time resolution of each set must be
 #   specified separately, where the first element is the time resolution
-#   of the data with the first set (here [ 142, 148, 102 ]), the second element of the second set
-#   (here [ 202 ]):
+#   of the data with the first set (here 106), the second element of the second set
+#   (here 206):
 #     *data_raw_freq: [ 30min, irregular ]*
 #
-# - IDs 142, 148, 102:
+# - ID 106:
 #     - Variables are defined in *data_vars*
-#     - *data_vars* info for ID 142 comes from the Python MeteoScreening Tool settings
-#       file CH-CHA_CONFIG.xlsx (1) in combination with info from the file config.header.20070606 (2).
-#     - However, there are more variables listed in (1) than in (2).
-#     - In addition, (2) does not match with the data files. (2) gives 2 additional columns
-#       that do not seem to be in the data files (UK_1, UK_2).
+#     - *data_vars* info for ID 106 comes from the Python MeteoScreening Tool settings
+#       file CH-CHA_CONFIG.xlsx (1) in combination with info from the file config.header (2).
 #     - (1) also lists variable names renamed from the original names.
 #     - I matched the original variable names as given in (2) with the original and renamed
 #       variable names given in (1), and then adjusted the renamed variable names in
 #       this filetype setting file.
-#     - (1) and (2) seem to have a very similar variable sequence, but (1) lists more variables.
 #     - Generally, for early files, a config.header typically gives info about the column order
-#       and original variable names. In this case, (2) nearly matched the data files.
+#       and original variable names.
 #     - Rows have 30MIN time resolution
 #     - Generally, original *data_vars* info can be found in this file:
 #       grasslandserver.ethz.ch/export/home/fruebuel/config/config.header
-#     - The original .header file for this time period is *most likely* config.header.20070606.
+#     - The original .header file for this time period is *most likely* config.header.20150715.
 #
-# - ID 202:
+# - ID 206:
 #     - Variable info taken from CONFIG XLSX table EDL1_07_C version V1095
 #
 # General info:

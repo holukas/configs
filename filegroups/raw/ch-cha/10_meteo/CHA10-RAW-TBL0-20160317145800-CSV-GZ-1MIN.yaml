@@ -50,16 +50,16 @@ CHA10-RAW-TBL0-20160317145800-CSV-GZ-1MIN:
     G_GF5_0x02_1_Avg: { field: G_GF5_0.02_1, units: false, measurement: G }
     G_GF5_0x02_1_Std: { field: G_SD_GF5_0.02_1, units: false, measurement: _SD }
     HEAT_HS50: { field: HEAT_HS50_X_X_X, units: false, measurement: _instrumentmetrics }
-    LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1B2_2_1, units: false, measurement: _RAW }
-    LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1B2_2_1, units: false, measurement: _RAW }
-    LW_IN_T1B2_2_1_Avg: { field: LW_IN_T1B2_2_1, units: false, measurement: LW }
-    LW_IN_T1B2_2_1_Std: { field: LW_IN_SD_T1B2_2_1, units: false, measurement: _SD }
-    LW_OUT_RAW_T1B2_2_1_Avg: { field: LW_OUT_RAW_T1B2_2_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1B2_2_1_Std: { field: LW_OUT_RAW_SD_T1B2_2_1, units: false, measurement: _RAW }
-    LW_OUT_T1B2_2_1_Avg: { field: LW_OUT_T1B2_2_1, units: false, measurement: LW }
-    LW_OUT_T1B2_2_1_Std: { field: LW_OUT_SD_T1B2_2_1, units: false, measurement: _SD }
-    NETRAD_T1B2_2_1_Avg: { field: NETRAD_T1B2_2_1, units: false, measurement: NETRAD }
-    NETRAD_T1B2_2_1_Std: { field: NETRAD_SD_T1B2_2_1, units: false, measurement: _SD }
+    LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: false, measurement: _RAW }
+    LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LW_IN_T1B2_2_1_Avg: { field: LW_IN_T1_2_1, units: false, measurement: LW }
+    LW_IN_T1B2_2_1_Std: { field: LW_IN_SD_T1_2_1, units: false, measurement: _SD }
+    LW_OUT_RAW_T1B2_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: false, measurement: _RAW }
+    LW_OUT_RAW_T1B2_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LW_OUT_T1B2_2_1_Avg: { field: LW_OUT_T1_2_1, units: false, measurement: LW }
+    LW_OUT_T1B2_2_1_Std: { field: LW_OUT_SD_T1_2_1, units: false, measurement: _SD }
+    NETRAD_T1B2_2_1_Avg: { field: NETRAD_T1_2_1, units: false, measurement: NETRAD }
+    NETRAD_T1B2_2_1_Std: { field: NETRAD_SD_T1_2_1, units: false, measurement: _SD }
     O2_GF4_0x1_1_Avg: { field: O2_GF4_0.1_1, units: false, measurement: O2 }
     O2_GF4_0x1_1_Std: { field: O2_SD_GF4_0.1_1, units: false, measurement: _SD }
     O2_GF5_0x1_1_Avg: { field: O2_GF5_0.1_1, units: false, measurement: O2 }
@@ -70,12 +70,12 @@ CHA10-RAW-TBL0-20160317145800-CSV-GZ-1MIN:
     P_RAIN_GF1_0x5_1_Tot: { field: PREC_RAIN_TOT_GF1_0.5_1, units: false, measurement: PREC }
     PA_GF1_0x9_1_Avg: { field: PA_GF1_0.9_1, units: false, measurement: PA }
     PA_GF1_0x9_1_Std: { field: PA_SD_GF1_0.9_1, units: false, measurement: _SD }
-    PPFD_IN_T1B2_2_1_Avg: { field: PPFD_IN_T1B2_2_1, units: false, measurement: PPFD }
-    PPFD_IN_T1B2_2_1_Std: { field: PPFD_IN_SD_T1B2_2_1, units: false, measurement: _SD }
-    PPFD_IN_T1B2_2_2_Avg: { field: PPFD_IN_T1B2_2_2, units: false, measurement: PPFD }
-    PPFD_IN_T1B2_2_2_Std: { field: PPFD_IN_SD_T1B2_2_2, units: false, measurement: _SD }
-    PPFD_OUT_T1B2_2_2_Avg: { field: PPFD_OUT_T1B2_2_2, units: false, measurement: PPFD }
-    PPFD_OUT_T1B2_2_2_Std: { field: PPFD_OUT_SD_T1B2_2_2, units: false, measurement: _SD }
+    PPFD_IN_T1B2_2_1_Avg: { field: PPFD_IN_T1_2_1, units: false, measurement: PPFD }
+    PPFD_IN_T1B2_2_1_Std: { field: PPFD_IN_SD_T1_2_1, units: false, measurement: _SD }
+    PPFD_IN_T1B2_2_2_Avg: { field: PPFD_IN_T1_2_2, units: false, measurement: PPFD }
+    PPFD_IN_T1B2_2_2_Std: { field: PPFD_IN_SD_T1_2_2, units: false, measurement: _SD }
+    PPFD_OUT_T1B2_2_2_Avg: { field: PPFD_OUT_T1_2_2, units: false, measurement: PPFD }
+    PPFD_OUT_T1B2_2_2_Std: { field: PPFD_OUT_SD_T1_2_2, units: false, measurement: _SD }
     Record: { field: RECORD_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     RECORD: { field: RECORD_X_X_X, units: false, measurement: _instrumentmetrics }
     RH_T1_2_1_Avg: { field: RH_T1_2_1, units: false, measurement: RH }
@@ -131,10 +131,10 @@ CHA10-RAW-TBL0-20160317145800-CSV-GZ-1MIN:
     SV_iDL_BOX1_0_1_Std: { field: SV_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     SV_iDL_BOX_0_1_Avg: { field: SV_iDL_BOX_0_1, units: V, measurement: _instrumentmetrics }
     SV_iDL_BOX_0_1_Std: { field: SV_iDL_SD_BOX_0_1, units: V, measurement: _SD }
-    SW_IN_T1B2_2_1_Avg: { field: SW_IN_T1B2_2_1, units: false, measurement: SW }
-    SW_IN_T1B2_2_1_Std: { field: SW_IN_SD_T1B2_2_1, units: false, measurement: _SD }
-    SW_OUT_T1B2_2_1_Avg: { field: SW_OUT_T1B2_2_1, units: false, measurement: SW }
-    SW_OUT_T1B2_2_1_Std: { field: SW_OUT_SD_T1B2_2_1, units: false, measurement: _SD }
+    SW_IN_T1B2_2_1_Avg: { field: SW_IN_T1_2_1, units: false, measurement: SW }
+    SW_IN_T1B2_2_1_Std: { field: SW_IN_SD_T1_2_1, units: false, measurement: _SD }
+    SW_OUT_T1B2_2_1_Avg: { field: SW_OUT_T1_2_1, units: false, measurement: SW }
+    SW_OUT_T1B2_2_1_Std: { field: SW_OUT_SD_T1_2_1, units: false, measurement: _SD }
     SWC_GF1_0x1_2_Avg: { field: SWC_GF1_0.1_2, units: false, measurement: SWC }
     SWC_GF1_0x1_2_Std: { field: SWC_SD_GF1_0.1_2, units: false, measurement: _SD }
     SWC_GF1_0x05_1_Avg: { field: SWC_GF1_0.05_1, units: false, measurement: SWC }
@@ -203,8 +203,8 @@ CHA10-RAW-TBL0-20160317145800-CSV-GZ-1MIN:
     T_iDL_BOX1_0_1_Std: { field: T_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     T_iDL_BOX_0_1_Avg: { field: T_iDL_BOX_0_1, units: degC, measurement: _instrumentmetrics }
     T_iDL_BOX_0_1_Std: { field: T_iDL_SD_BOX_0_1, units: degC, measurement: _SD }
-    T_RAD_T1B2_2_1_Avg: { field: T_RAD_T1B2_2_1, units: false, measurement: _instrumentmetrics }
-    T_RAD_T1B2_2_1_Std: { field: T_RAD_SD_T1B2_2_1, units: false, measurement: _instrumentmetrics }
+    T_RAD_T1B2_2_1_Avg: { field: T_RAD_T1_2_1, units: false, measurement: _instrumentmetrics }
+    T_RAD_T1B2_2_1_Std: { field: T_RAD_SD_T1_2_1, units: false, measurement: _instrumentmetrics }
     TA_T1_2_1_Avg: { field: TA_T1_2_1, units: false, measurement: TA }
     TA_T1_2_1_Std: { field: TA_SD_T1_2_1, units: false, measurement: _SD }
     TM_GF4_0x1_1_Avg: { field: TM_GF4_0.1_1, units: false, measurement: TM }

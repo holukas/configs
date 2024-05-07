@@ -1,9 +1,6 @@
 # Changelog
 
-TODO check more rows in some files than in datavars2, might need separate filetype
-TODO update docstrings CHA
-
-## v202404XX | XX Apr 2024
+## v20240507 | 7 May 2024
 
 ### Multiple IDs to identify data rows
 
@@ -22,7 +19,7 @@ that start with `202` use the variable info given in `data_vars2`.
   see [here](https://pandas.pydata.org/docs/user_guide/timeseries.html#dateoffset-objects)). This means that e.g. a file
   with 30-minute time resolution now has the setting `30min` (previously it was `30T`).
 - Added `99999` and `-99999` as pre-defined code for missing values in all settings
-  files: `data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]`
+  files: `data_na_values: [ -9999, nan, NaN, NAN, NA, -6999, '-' , 99999, -99999]`
 
 ### New filetypes
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## v20240527 | 27 May 2024
+
+- Added new site `CH-FOR`
+- Added new site `CH-HON`
+
 ## v20240507 | 7 May 2024
 
 ### Multiple IDs to identify data rows

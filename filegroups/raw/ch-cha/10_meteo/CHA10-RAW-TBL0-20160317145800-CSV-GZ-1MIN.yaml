@@ -5,10 +5,12 @@
 CHA10-RAW-TBL0-20160317145800-CSV-GZ-1MIN:
   # TOA5
   # First file: CH-CHA_iDL_BOX1_1min_20160317-1458.csv.gz (the very first CH-CHA_iDL_BOX1_1min_*.csv.gz file)
+  # Last used file:  CH-CHA_iDL_BOX1_1min_20161231-2145.csv.gz (the last CH-CHA_iDL_BOX1_1min_*.csv.gz file considered)
   # Last file:  CH-CHA_iDL_BOX1_1min_20180201-1245.csv.gz (the very last CH-CHA_iDL_BOX1_1min_*.csv.gz file)
+  # All files after 20161231-2145 are ignored for this filetype due to overlapping data with
   can_be_used_by_filescanner: true
   filetype_valid_from: 2016-03-17 14:58:00
-  filetype_valid_to: 2018-02-01 12:45:00
+  filetype_valid_to: 2016-12-31 12:45:00
   filetype_id: CH-CHA_iDL_BOX1_1min_*.csv.gz
   filetype_dateparser: CH-CHA_iDL_BOX1_1min_%Y%m%d-%H%M.csv.gz
   filetype_gzip: true
@@ -39,16 +41,16 @@ CHA10-RAW-TBL0-20160317145800-CSV-GZ-1MIN:
     DNTP_iDL_BOX_0_1: { field: DNTP_iDL_BOX_0_1, units: ms, measurement: _instrumentmetrics }
     FOG_M1_1_1_Avg: { field: FOG_M1_1_1, units: false, measurement: FOG }
     FOG_M1_1_1_Std: { field: FOG_SD_M1_1_1, units: false, measurement: _SD }
-    G_GF1_0x03_1_Avg: { field: G_GF1_0.03_1, units: false, measurement: G }
-    G_GF1_0x03_1_Std: { field: G_SD_GF1_0.03_1, units: false, measurement: _SD }
-    G_GF1_0x05_1_Avg: { field: G_GF1_0.05_1, units: false, measurement: G }
-    G_GF1_0x05_1_Std: { field: G_SD_GF1_0.05_1, units: false, measurement: _SD }
-    G_GF1_0x05_2_Avg: { field: G_GF1_0.05_2, units: false, measurement: G }
-    G_GF1_0x05_2_Std: { field: G_SD_GF1_0.05_2, units: false, measurement: _SD }
-    G_GF4_0x02_1_Avg: { field: G_GF4_0.02_1, units: false, measurement: G }
-    G_GF4_0x02_1_Std: { field: G_SD_GF4_0.02_1, units: false, measurement: _SD }
-    G_GF5_0x02_1_Avg: { field: G_GF5_0.02_1, units: false, measurement: G }
-    G_GF5_0x02_1_Std: { field: G_SD_GF5_0.02_1, units: false, measurement: _SD }
+    G_GF1_0x03_1_Avg: { field: G_GF1_0.03_1, units: "W m-2", measurement: G }
+    G_GF1_0x03_1_Std: { field: G_SD_GF1_0.03_1, units: "W m-2", measurement: _SD }
+    G_GF1_0x05_1_Avg: { field: G_GF1_0.05_1, units: "W m-2", measurement: G }
+    G_GF1_0x05_1_Std: { field: G_SD_GF1_0.05_1, units: "W m-2", measurement: _SD }
+    G_GF1_0x05_2_Avg: { field: G_GF1_0.05_2, units: "W m-2", measurement: G }
+    G_GF1_0x05_2_Std: { field: G_SD_GF1_0.05_2, units: "W m-2", measurement: _SD }
+    G_GF4_0x02_1_Avg: { field: G_GF4_0.02_1, units: "W m-2", measurement: G }
+    G_GF4_0x02_1_Std: { field: G_SD_GF4_0.02_1, units: "W m-2", measurement: _SD }
+    G_GF5_0x02_1_Avg: { field: G_GF5_0.02_1, units: "W m-2", measurement: G }
+    G_GF5_0x02_1_Std: { field: G_SD_GF5_0.02_1, units: "W m-2", measurement: _SD }
     HEAT_HS50: { field: HEAT_HS50_X_X_X, units: false, measurement: _instrumentmetrics }
     LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: false, measurement: _RAW }
     LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _RAW }

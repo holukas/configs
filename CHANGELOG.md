@@ -1,5 +1,12 @@
 # Changelog
 
+## v20240611 | 11 Jun 2024
+
+- Updated settings for `CHA10` files to avoid data overlaps, renamed `CHA10-RAW-TBL1-201605230000-TOA5-DAT-1MIN.yaml`
+  to `CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN`
+- Added updated raw variable names in `CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN`
+- Added units in `CHA10-RAW-TBL0-20160317145800-CSV-GZ-1MIN`
+
 ## v20240527 | 27 May 2024
 
 - Added new site `CH-FOR`

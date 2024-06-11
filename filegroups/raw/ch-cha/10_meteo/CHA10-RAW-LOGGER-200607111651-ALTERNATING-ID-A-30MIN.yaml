@@ -95,10 +95,10 @@ CHA10-RAW-LOGGER-200607111651-ALTERNATING-ID-A-30MIN:
     Tair_1_AVG: { field: TA_T1_2_1, units: degC, gain: 1, measurement: TA }
     RHair_1_AVG: { field: RH_T1_2_1, units: "%", gain: 1, measurement: RH }
     Wvel_1_AVG: { field: WS_CUP_SCALAR_T1_2_1, units: m s-1, gain: 1, measurement: WS }
-    SHF_1_AVG: { field: G_GF1_0.03_1, units: W m-2, gain: 1, measurement: SHF }
-    SHF_2_AVG: { field: G_GF1_0.03_2, units: W m-2, gain: 1, measurement: SHF }
-    SHF_3_AVG: { field: G_GF1_0.03_3, units: W m-2, gain: 1, measurement: SHF }
-    SHF_4_AVG: { field: G_GF1_0.03_4, units: W m-2, gain: 1, measurement: SHF }
+    SHF_1_AVG: { field: G_GF1_0.03_1, units: W m-2, gain: 1, measurement: G }
+    SHF_2_AVG: { field: G_GF1_0.03_2, units: W m-2, gain: 1, measurement: G }
+    SHF_3_AVG: { field: G_GF1_0.03_3, units: W m-2, gain: 1, measurement: G }
+    SHF_4_AVG: { field: G_GF1_0.03_4, units: W m-2, gain: 1, measurement: G }
     SWin_1_AVG: { field: SW_IN_T1_2_1, units: W m-2, gain: 1, measurement: SW }
     # Calculate Boltzmann corrected for LW_IN
     LWin_1_AVG: { field: LW_IN_RAW_T1_2_1, units: false, gain: 1, rawfunc: [ calc_lw, PT100_1_AVG, LWin_1_AVG, LW_IN_T1_2_1 ], measurement: _RAW }  # rawfunc

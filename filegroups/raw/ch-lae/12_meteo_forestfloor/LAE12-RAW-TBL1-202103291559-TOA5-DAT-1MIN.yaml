@@ -73,10 +73,10 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     LW_BC_IN_M1_2_1_Std: { field: LW_IN_BC_SD_M1_2_1, units: false, measurement: _SD }
     LW_BC_OUT_M1_2_1_Avg: { field: LW_OUT_BC_M1_2_1, units: false, measurement: LW }
     LW_BC_OUT_M1_2_1_Std: { field: LW_OUT_BC_SD_M1_2_1, units: false, measurement: _SD }
-    LW_BC_TBIN_M1_2_1_Avg: { field: LW_TBIN_BC_M1_2_1, units: false, measurement: LW }
-    LW_BC_TBOUT_M1_2_1_Avg: { field: LW_TBOUT_BC_M1_2_1, units: false, measurement: LW }
-    LW_BC_VIN_M1_2_1_Avg: { field: LW_VIN_BC_M1_2_1, units: false, measurement: LW }
-    LW_BC_VOUT_M1_2_1_Avg: { field: LW_VOUT_BC_M1_2_1, units: false, measurement: LW }
+    LW_BC_TBIN_M1_2_1_Avg: { field: LW_TBIN_BC_M1_2_1, units: false, measurement: _instrumentmetrics }
+    LW_BC_TBOUT_M1_2_1_Avg: { field: LW_TBOUT_BC_M1_2_1, units: false, measurement: _instrumentmetrics }
+    LW_BC_VIN_M1_2_1_Avg: { field: LW_VIN_BC_M1_2_1, units: false, measurement: _RAW }
+    LW_BC_VOUT_M1_2_1_Avg: { field: LW_VOUT_BC_M1_2_1, units: false, measurement: _RAW }
     NetRadM_Avg: { field: NETRAD_FF1_2_1, units: false, measurement: NETRAD }
     NetRadM_Std: { field: NETRAD_SD_FF1_2_1, units: false, measurement: _SD }
     PPFD_BC_IN_M1_2_1_Avg: { field: PPFD_IN_BC_M1_2_1, units: false, measurement: PPFD }
@@ -143,8 +143,8 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     SW_BC_IN_M1_2_1_Std: { field: SW_IN_BC_SD_M1_2_1, units: false, measurement: _SD }
     SW_BC_OUT_M1_2_1_Avg: { field: SW_OUT_BC_M1_2_1, units: false, measurement: SW }
     SW_BC_OUT_M1_2_1_Std: { field: SW_OUT_BC_SD_M1_2_1, units: false, measurement: _SD }
-    SW_BC_VIN_M1_2_1_Avg: { field: SW_VIN_BC_M1_2_1, units: false, measurement: SW }
-    SW_BC_VOUT_M1_2_1_Avg: { field: SW_VOUT_BC_M1_2_1, units: false, measurement: SW }
+    SW_BC_VIN_M1_2_1_Avg: { field: SW_VIN_BC_M1_2_1, units: false, measurement: _RAW }
+    SW_BC_VOUT_M1_2_1_Avg: { field: SW_VOUT_BC_M1_2_1, units: false, measurement: _RAW }
     SWC_FF1_0x1_1_Avg: { field: SWC_FF1_0.1_1, units: "%", gain: 100, measurement: SWC }
     SWC_FF1_0x1_1_Std: { field: SWC_SD_FF1_0.1_1, units: false, measurement: _SD }
     SWC_FF1_0x2_1_Avg: { field: SWC_FF1_0.2_1, units: "%", gain: 100, measurement: SWC }

@@ -1,5 +1,11 @@
 # Changelog
 
+## v20240612 | 12 Jun 2024
+
+- Added new filetype `FOR10-RAW-202403141026-TOA5-DAT-1MIN`
+- Added new filetype `HON10-RAW-202402261031-TOA5-DAT-1MIN`
+- Changed some `measurement` settings
+
 ## v20240611 | 11 Jun 2024
 
 - Updated settings for `CHA10` files to avoid data overlaps, renamed `CHA10-RAW-TBL1-201605230000-TOA5-DAT-1MIN.yaml`

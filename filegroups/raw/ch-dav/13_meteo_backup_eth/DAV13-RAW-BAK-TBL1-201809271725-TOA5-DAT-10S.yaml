@@ -47,7 +47,7 @@ DAV13-RAW-BAK-TBL1-201809271725-TOA5-DAT-10S:
     T_iDL: { field: T_iDL_BAK_T1_35_1, units: false, measurement: _instrumentmetrics }
     T_RH_T1_35_2: { field: T_RH_BAK_T1_35_2, units: false, measurement: _instrumentmetrics }
     TA_4_1_1: { field: TA_BAK_T1_35_1, units: false, measurement: TA }
-    VP_T1_35_1: { field: VP_BAK_T1_35_1, units: false, measurement: XXX }
+    VP_T1_35_1: { field: VP_BAK_T1_35_1, units: false, measurement: VP }
     WD_T1_35_2: { field: WD_BAK_T1_35_2, units: false, measurement: WD }
     WS_E_T1_35_2: { field: WS_E_BAK_T1_35_2, units: false, measurement: WS }
     WS_N_T1_35_2: { field: WS_N_BAK_T1_35_2, units: false, measurement: WS }

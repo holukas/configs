@@ -29,9 +29,9 @@ DAV13-RAW-NABEL-201901010000-CSV-1MIN:
   data_raw_freq: min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%d.%m.%Y %H:%M'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%d.%m.%Y %H:%M'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -39,15 +39,14 @@ DAV13-RAW-NABEL-201901010000-CSV-1MIN:
   data_special_format: false
   data_encoding: cp1252
   data_delimiter: ';'
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    TEMP: { field: TA_NABEL_T1_35_1, gain: 1, units: false, measurement: TA }
-    FEUCHT: { field: RH_NABEL_T1_35_1, gain: 1, units: false, measurement: RH }
-    STRGLO: { field: SW_IN_NABEL_T1_35_1, gain: 1, units: false, measurement: SW }
-    REGEN: { field: PREC_TOT_NABEL_T1_20_1, gain: 1, units: false, measurement: PREC }
-    Reg_Menge: { field: PREC_CUM_NABEL_T1_20_1, gain: 1, units: false, measurement: PREC }
+    TEMP: { field: TA_NABEL_T1_35_1, units: false, measurement: TA }
+    FEUCHT: { field: RH_NABEL_T1_35_1, units: false, measurement: RH }
+    STRGLO: { field: SW_IN_NABEL_T1_35_1, units: false, measurement: SW }
+    REGEN: { field: PREC_TOT_NABEL_T1_20_1, units: false, measurement: PREC }
+    Reg_Menge: { field: PREC_CUM_NABEL_T1_20_1, units: false, measurement: PREC }
 
 

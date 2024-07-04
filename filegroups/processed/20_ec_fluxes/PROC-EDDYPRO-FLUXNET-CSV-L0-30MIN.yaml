@@ -1,0 +1,534 @@
+# EDDYPRO FLUXNET FILE
+# 20_ec_fluxes
+#
+# The format for this file format is the same for all sites.
+# This filetype is specifically for Level-0 fluxes (processed, but not final),
+# used in data checks during the year.
+
+PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
+  # EddyPro fluxnet file (general format)
+  # First file: -
+  # Last file:  -
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: eddypro_*_fluxnet_*.csv
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 20_ec_fluxes
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 'TIMESTAMP_END'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y%m%d%H%M'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: eddypro_level-0
+  data_vars_parse_pos_indices: false
+  data_vars_order: free
+  data_vars:
+    BOWEN: { field: false, units: "#", measurement: TURBULENCE }
+    CH4: { field: false, units: "nmol mol-1", measurement: CH4 }
+    CH4_MIXING_RATIO: { field: false, units: "nmol mol-1", measurement: CH4 }
+    CH4_MOLAR_DENSITY: { field: false, units: "mmol m-3", measurement: CH4 }
+    CH4_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    CH4_TLAG_ACTUAL: { field: false, units: "s", measurement: LAG }
+    CH4_TLAG_MAX: { field: false, units: "s", measurement: LAG }
+    CH4_TLAG_MIN: { field: false, units: "s", measurement: LAG }
+    CH4_TLAG_NOMINAL: { field: false, units: "s", measurement: LAG }
+    CH4_TLAG_USED: { field: false, units: "s", measurement: LAG }
+    CO2: { field: false, units: "umol mol-1", measurement: CO2 }
+    CO2_MIXING_RATIO: { field: false, units: "umol mol-1", measurement: CO2 }
+    CO2_MOLAR_DENSITY: { field: false, units: "mmol m-3", measurement: CO2 }
+    CO2_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    CO2_TLAG_ACTUAL: { field: false, units: "s", measurement: LAG }
+    CO2_TLAG_MAX: { field: false, units: "s", measurement: LAG }
+    CO2_TLAG_MIN: { field: false, units: "s", measurement: LAG }
+    CO2_TLAG_NOMINAL: { field: false, units: "s", measurement: LAG }
+    CO2_TLAG_USED: { field: false, units: "s", measurement: LAG }
+    CUSTOM_FILTER_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    ET: { field: false, units: "mm h-1", measurement: ET }
+    ET_RANDUNC_HF: { field: false, units: "mm h-1", measurement: ET }
+    ET_SCF: { field: false, units: "factor", measurement: ET }
+    EXPECT_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FC: { field: false, units: "umol m-2 s-1", measurement: FC }
+    FC_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FC_RANDUNC_HF: { field: false, units: "umol m-2 s-1", measurement: FC }
+    FC_SCF: { field: false, units: "factor", measurement: FC }
+    FC_VADV: { field: false, units: "umol m-2 s-1", measurement: FC }
+    FCH4: { field: false, units: "nmol m-2 s-1", measurement: FCH4 }
+    FCH4_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FCH4_RANDUNC_HF: { field: false, units: "nmol m-2 s-1", measurement: FCH4 }
+    FCH4_SCF: { field: false, units: "factor", measurement: FCH4 }
+    FCH4_VADV: { field: false, units: "nmol m-2 s-1", measurement: FCH4 }
+    FETCH_10: { field: false, units: "m", measurement: FETCH }
+    FETCH_30: { field: false, units: "m", measurement: FETCH }
+    FETCH_50: { field: false, units: "m", measurement: FETCH }
+    FETCH_70: { field: false, units: "m", measurement: FETCH }
+    FETCH_80: { field: false, units: "m", measurement: FETCH }
+    FETCH_90: { field: false, units: "m", measurement: FETCH }
+    FETCH_MAX: { field: false, units: "m", measurement: FETCH }
+    FETCH_OFFSET: { field: false, units: "m", measurement: FETCH }
+    FH2O: { field: false, units: "mmol m-2 s-1", measurement: FH2O }
+    FH2O_RANDUNC_HF: { field: false, units: "mmol m-2 s-1", measurement: FH2O }
+    FH2O_SCF: { field: false, units: "factor", measurement: FH2O }
+    FH2O_VADV: { field: false, units: "mmol m-2 s-1", measurement: FH2O }
+    FILE_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FN2O: { field: false, units: "nmol m-2 s-1", measurement: FN2O }
+    FN2O_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    FN2O_RANDUNC_HF: { field: false, units: "nmol m-2 s-1", measurement: FN2O }
+    FOOTPRINT_MODEL: { field: false, units: "#", measurement: FETCH }
+    H2O: { field: false, units: "mmol mol-1", measurement: H2O }
+    H2O_MIXING_RATIO: { field: false, units: "mmol mol-1", measurement: H2O }
+    H2O_MOLAR_DENSITY: { field: false, units: "mmol m-3", measurement: H2O }
+    H2O_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    H2O_TLAG_ACTUAL: { field: false, units: "s", measurement: LAG }
+    H2O_TLAG_MAX: { field: false, units: "s", measurement: LAG }
+    H2O_TLAG_MIN: { field: false, units: "s", measurement: LAG }
+    H2O_TLAG_NOMINAL: { field: false, units: "s", measurement: LAG }
+    H2O_TLAG_USED: { field: false, units: "s", measurement: LAG }
+    H: { field: false, units: "W m-2", measurement: H }
+    H_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    H_RANDUNC_HF: { field: false, units: "W m-2", measurement: H }
+    H_SCF: { field: false, units: "factor", measurement: H }
+    LE: { field: false, units: "W m-2", measurement: LE }
+    LE_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    LE_RANDUNC_HF: { field: false, units: "W m-2", measurement: LE }
+    LE_SCF: { field: false, units: "factor", measurement: LE }
+    MO_LENGTH: { field: false, units: "m", measurement: TURBULENCE }
+    N2O_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    NIGHT: { field: false, units: "1=nighttime", measurement: SW }
+#    NONE_TLAG_ACTUAL: { field: false, units: false, measurement: LAG }
+#    NONE_TLAG_MAX: { field: false, units: false, measurement: LAG }
+#    NONE_TLAG_MIN: { field: false, units: false, measurement: LAG }
+#    NONE_TLAG_NOMINAL: { field: false, units: false, measurement: LAG }
+#    NONE_TLAG_USED: { field: false, units: false, measurement: LAG }
+    PA_EP: { field: false, units: "kPa", measurement: PA }
+    RH_EP: { field: false, units: "%", measurement: RH }
+    SC_SINGLE: { field: false, units: "umol m-2 s-1", measurement: FC }
+    SCH4_SINGLE: { field: false, units: "nmol m-2 s-1", measurement: FCH4 }
+    SET_SINGLE: { field: false, units: "mm h-1", measurement: ET }
+    SH2O_SINGLE: { field: false, units: "mmol m-2 s-1", measurement: FH2O }
+    SH_SINGLE: { field: false, units: "W m-2", measurement: H }
+    SLE_SINGLE: { field: false, units: "W m-2", measurement: LE }
+    SN2O_SINGLE: { field: false, units: "nmol m-2 s-1", measurement: FN2O }
+    SONIC_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    SW_IN_POT: { field: false, units: "W m-2", measurement: SW }
+    T_SONIC: { field: false, units: "degC", measurement: TA }
+    T_SONIC_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    TA_EP: { field: false, units: "degC", measurement: TA }
+    TAU: { field: false, units: "kg m-1 s-2", measurement: TAU }
+    TAU_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    TAU_RANDUNC_HF: { field: false, units: "kg m-1 s-2", measurement: TAU }
+    TKE: { field: false, units: "m2 s-2", measurement: TURBULENCE }
+    TSTAR: { field: false, units: "K", measurement: TURBULENCE }
+    U: { field: false, units: "m s-1", measurement: WIND }
+    U_KUR: { field: false, units: "unitless", measurement: WIND }
+    U_MEDIAN: { field: false, units: "m s-1", measurement: WIND }
+    U_P25: { field: false, units: "m s-1", measurement: WIND }
+    U_P75: { field: false, units: "m s-1", measurement: WIND }
+    U_SIGMA: { field: false, units: false, measurement: WIND }
+    U_SKW: { field: false, units: false, measurement: WIND }
+    U_UNROT: { field: false, units: "m s-1", measurement: WIND }
+    USTAR: { field: false, units: "m s-1", measurement: TURBULENCE }
+    USTAR_UNCORR: { field: false, units: "m s-1", measurement: TURBULENCE }
+    V: { field: false, units: "m s-1", measurement: WIND }
+    V_KUR: { field: false, units: "unitless", measurement: WIND }
+    V_MEDIAN: { field: false, units: "m s-1", measurement: WIND }
+    V_P25: { field: false, units: "m s-1", measurement: WIND }
+    V_P75: { field: false, units: "m s-1", measurement: WIND }
+    V_SIGMA: { field: false, units: false, measurement: WIND }
+    V_SKW: { field: false, units: false, measurement: WIND }
+    V_UNROT: { field: false, units: "m s-1", measurement: WIND }
+    VPD_EP: { field: false, units: hPa, measurement: VPD }
+    W: { field: false, units: "m s-1", measurement: WIND }
+    W_KUR: { field: false, units: "unitless", measurement: WIND }
+    W_MEDIAN: { field: false, units: "m s-1", measurement: WIND }
+    W_P25: { field: false, units: "m s-1", measurement: WIND }
+    W_P75: { field: false, units: "m s-1", measurement: WIND }
+    W_SIGMA: { field: false, units: false, measurement: WIND }
+    W_SKW: { field: false, units: false, measurement: WIND }
+    W_UNROT: { field: false, units: "m s-1", measurement: WIND }
+    WD: { field: false, units: deg from north, measurement: WIND }
+    WD_FILTER_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    WD_SIGMA: { field: false, units: deg from north, measurement: _SD }
+    WS: { field: false, units: "m s-1", measurement: WIND }
+    WS_MAX: { field: false, units: "m s-1", measurement: WIND }
+    ZL: { field: false, units: "#", measurement: TURBULENCE }
+#    NOT YET CHECKED:
+    AIR_DENSITY: { field: false, units: false, measurement: AIR }
+    AIR_MV: { field: false, units: false, measurement: AIR }
+    AIR_RHO_CP: { field: false, units: false, measurement: AIR }
+    AOA_METHOD: { field: false, units: false, measurement: _instrumentmetrics }
+    AXES_ROTATION_METHOD: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_HEIGHTC: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_AVERAGING_INT: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_HEIGHT_SA: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_MODEL_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_MODEL_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_MODEL_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_MODEL_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_MODEL_SA: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_SA_GILL_ALIGN: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_SA_WIND_FORMAT: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INST_SAMPLING_INT: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_EASTWARD_SEP_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_EASTWARD_SEP_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_EASTWARD_SEP_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_EASTWARD_SEP_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_HEIGHT_SEP_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_HEIGHT_SEP_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_HEIGHT_SEP_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_HEIGHT_SEP_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_LOCATION_ELEV: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_LOCATION_LAT: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_LOCATION_LONG: { field: false, units: false, measurement: _instrumentmetrics }
+    BADM_SA_OFFSET_NORTH: { field: false, units: false, measurement: _instrumentmetrics }
+    BURBA_METHOD: { field: false, units: false, measurement: _instrumentmetrics }
+    CH4_ABSLIM_NREX: { field: false, units: false, measurement: CH4 }
+    CH4_DIAG_NREX: { field: false, units: false, measurement: CH4 }
+    CH4_KID: { field: false, units: false, measurement: CH4 }
+    CH4_MEAS_KUR: { field: false, units: "unitless", measurement: CH4 }
+    CH4_MEAS_MEDIAN: { field: false, units: false, measurement: CH4 }
+#    CH4_MEAS_NONE_MEAS_COV: { field: false, units: false, measurement: CH4 }
+    CH4_MEAS_P25: { field: false, units: false, measurement: CH4 }
+    CH4_MEAS_P75: { field: false, units: false, measurement: CH4 }
+    CH4_MEAS_SIGMA: { field: false, units: false, measurement: CH4 }
+    CH4_MEAS_SKW: { field: false, units: false, measurement: CH4 }
+    CH4_MEAS_TYPE: { field: false, units: false, measurement: CH4 }
+    CH4_NUM_SPIKES: { field: false, units: false, measurement: CH4 }
+    CH4_SPIKE_NREX: { field: false, units: false, measurement: CH4 }
+    CH4_VM97_TEST: { field: false, units: false, measurement: CH4 }
+    CH4_ZCD: { field: false, units: false, measurement: CH4 }
+    CO2_ABSLIM_NREX: { field: false, units: false, measurement: CO2 }
+    CO2_DIAG_NREX: { field: false, units: false, measurement: CO2 }
+    CO2_KID: { field: false, units: false, measurement: CO2 }
+    CO2_MEAS_CH4_MEAS_COV: { field: false, units: false, measurement: COV }
+    CO2_MEAS_H2O_MEAS_COV: { field: false, units: false, measurement: COV }
+    CO2_MEAS_KUR: { field: false, units: "unitless", measurement: CO2 }
+    CO2_MEAS_MEDIAN: { field: false, units: false, measurement: CO2 }
+    CO2_MEAS_NONE_MEAS_COV: { field: false, units: false, measurement: COV }
+    CO2_MEAS_P25: { field: false, units: false, measurement: CO2 }
+    CO2_MEAS_P75: { field: false, units: false, measurement: CO2 }
+    CO2_MEAS_SIGMA: { field: false, units: false, measurement: CO2 }
+    CO2_MEAS_SKW: { field: false, units: false, measurement: CO2 }
+    CO2_MEAS_TYPE: { field: false, units: false, measurement: CO2 }
+    CO2_NUM_SPIKES: { field: false, units: false, measurement: CO2 }
+    CO2_SPIKE_NREX: { field: false, units: false, measurement: CO2 }
+    CO2_VM97_TEST: { field: false, units: false, measurement: CO2 }
+    CO2_ZCD: { field: false, units: false, measurement: CO2 }
+    CUSTOM_AIR_P_MEAN: { field: false, units: false, measurement: PA }
+    CUSTOM_CELL_T_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_CH4_MEAN: { field: false, units: false, measurement: CH4 }
+    CUSTOM_CO2_MEAN: { field: false, units: false, measurement: CO2 }
+    CUSTOM_COOLER_V_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_DATA_SIZE_IRGA72_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_DATA_SIZE_QCL_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_FILTER_NREX: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_FLOW_VOLRATE_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_GA_DIAG_CODE_IRGA72_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_H2O_MEAN: { field: false, units: false, measurement: H2O }
+    CUSTOM_INT_P_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_N2O_MEAN: { field: false, units: false, measurement: N2O }
+    CUSTOM_SIGNAL_STRENGTH_IRGA72_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_STATUS_CODE_IRGA72_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_STATUS_CODE_QCL_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_STATUS_QCL_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_STATUS_WORD_QCL_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    CUSTOM_VICI_QCL_MEAN: { field: false, units: false, measurement: _instrumentmetrics }
+    DENTRENDING_TIME_CONSTANT: { field: false, units: false, measurement: _instrumentmetrics }
+    DETRENDING_METHOD: { field: false, units: false, measurement: _instrumentmetrics }
+    DISPLACEMENT_HEIGHT: { field: false, units: false, measurement: TURBULENCE }
+    DOY_END: { field: false, units: false, measurement: _instrumentmetrics }
+    DOY_START: { field: false, units: false, measurement: _instrumentmetrics }
+    DRYAIR_DENSITY: { field: false, units: false, measurement: AIR }
+    DRYAIR_MV: { field: false, units: false, measurement: AIR }
+    DRYAIR_PARTIAL_PRESSURE: { field: false, units: false, measurement: AIR }
+    ET_CORRDIFF: { field: false, units: false, measurement: ET }
+    ET_SSITC_TEST: { field: false, units: false, measurement: ET }
+    ET_STAGE1: { field: false, units: false, measurement: ET }
+    ET_STAGE2: { field: false, units: false, measurement: ET }
+    ET_UNCORR: { field: false, units: false, measurement: ET }
+    FC_CORRDIFF: { field: false, units: false, measurement: FC }
+    FC_NSR: { field: false, units: false, measurement: FC }
+    FC_SS: { field: false, units: false, measurement: FC }
+    FC_SS_TEST: { field: false, units: false, measurement: FC }
+    FC_SSITC_TEST: { field: false, units: false, measurement: FC }
+    FC_STAGE1: { field: false, units: false, measurement: FC }
+    FC_STAGE2: { field: false, units: false, measurement: FC }
+    FC_UNCORR: { field: false, units: false, measurement: FC }
+    FCH4_CORRDIFF: { field: false, units: false, measurement: FCH4 }
+    FCH4_NSR: { field: false, units: false, measurement: FCH4 }
+    FCH4_SS: { field: false, units: false, measurement: FCH4 }
+    FCH4_SS_TEST: { field: false, units: false, measurement: FCH4 }
+    FCH4_SSITC_TEST: { field: false, units: false, measurement: FCH4 }
+    FCH4_STAGE1: { field: false, units: false, measurement: FCH4 }
+    FCH4_STAGE2: { field: false, units: false, measurement: FCH4 }
+    FCH4_UNCORR: { field: false, units: false, measurement: FCH4 }
+    FH2O_CELL_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    FH2O_CELL_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+#    FH2O_CELL_NONE: { field: false, units: false, measurement: XXX }
+    FH2O_CORRDIFF: { field: false, units: false, measurement: FH2O }
+    FH2O_NSR: { field: false, units: false, measurement: FH2O }
+    FH2O_SS: { field: false, units: false, measurement: FH2O }
+    FH2O_SS_TEST: { field: false, units: false, measurement: FH2O }
+    FH2O_SSITC_TEST: { field: false, units: false, measurement: FH2O }
+    FH2O_STAGE1: { field: false, units: false, measurement: FH2O }
+    FH2O_STAGE2: { field: false, units: false, measurement: FH2O }
+    FH2O_UNCORR: { field: false, units: false, measurement: FH2O }
+    FILE_TIME_DURATION: { field: false, units: false, measurement: _instrumentmetrics }
+    FILENAME_HF: { field: false, units: false, measurement: _instrumentmetrics }
+#    FNONE: { field: false, units: false, measurement: XXX }
+#    FNONE_CORRDIFF: { field: false, units: false, measurement: XXX }
+#    FNONE_NR: { field: false, units: false, measurement: XXX }
+#    FNONE_NSR: { field: false, units: false, measurement: XXX }
+#    FNONE_RANDUNC_HF: { field: false, units: false, measurement: XXX }
+#    FNONE_SCF: { field: false, units: false, measurement: XXX }
+#    FNONE_SS: { field: false, units: false, measurement: XXX }
+#    FNONE_SS_TEST: { field: false, units: false, measurement: XXX }
+#    FNONE_SSITC_TEST: { field: false, units: false, measurement: XXX }
+#    FNONE_STAGE1: { field: false, units: false, measurement: XXX }
+#    FNONE_STAGE2: { field: false, units: false, measurement: XXX }
+#    FNONE_UNCORR: { field: false, units: false, measurement: XXX }
+#    FNONE_VADV: { field: false, units: false, measurement: XXX }
+    H2O_ABSLIM_NREX: { field: false, units: false, measurement: H2O }
+    H2O_DIAG_NREX: { field: false, units: false, measurement: H2O }
+    H2O_KID: { field: false, units: false, measurement: H2O }
+    H2O_MEAS_CH4_MEAS_COV: { field: false, units: false, measurement: COV }
+    H2O_MEAS_KUR: { field: false, units: "unitless", measurement: H2O }
+    H2O_MEAS_MEDIAN: { field: false, units: false, measurement: H2O }
+    H2O_MEAS_NONE_MEAS_COV: { field: false, units: false, measurement: COV }
+    H2O_MEAS_P25: { field: false, units: false, measurement: H2O }
+    H2O_MEAS_P75: { field: false, units: false, measurement: H2O }
+    H2O_MEAS_SIGMA: { field: false, units: false, measurement: H2O }
+    H2O_MEAS_SKW: { field: false, units: false, measurement: H2O }
+    H2O_MEAS_TYPE: { field: false, units: false, measurement: H2O }
+    H2O_NUM_SPIKES: { field: false, units: false, measurement: H2O }
+    H2O_SPIKE_NREX: { field: false, units: false, measurement: H2O }
+    H2O_VM97_TEST: { field: false, units: false, measurement: H2O }
+    H2O_ZCD: { field: false, units: false, measurement: H2O }
+    H_BU_BOT: { field: false, units: false, measurement: _instrumentmetrics }
+    H_BU_SPAR: { field: false, units: false, measurement: _instrumentmetrics }
+    H_BU_TOP: { field: false, units: false, measurement: _instrumentmetrics }
+    H_CELL_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    H_CELL_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    H_CELL_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    H_CELL_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    H_CORRDIFF: { field: false, units: false, measurement: H }
+    H_NSR: { field: false, units: false, measurement: H }
+    H_SS: { field: false, units: false, measurement: H }
+    H_SS_TEST: { field: false, units: false, measurement: H }
+    H_SSITC_TEST: { field: false, units: false, measurement: H }
+    H_STAGE1: { field: false, units: false, measurement: H }
+    H_STAGE2: { field: false, units: false, measurement: H }
+    H_UNCORR: { field: false, units: false, measurement: H }
+    HPATH_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    HPATH_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    HPATH_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    HPATH_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    HPATH_SA: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_AGC_OR_RSSI: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_AUX_IN: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_CHOPPER: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_DELTA_P: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_DETECTOR: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_HEAD_DETECT: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_PLL: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_SYNC: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_T_IN: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7200_T_OUT: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7500_AGC_OR_RSSI: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7500_CHOPPER: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7500_DETECTOR: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7500_PLL: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7500_SYNC: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_BAD_AUX_TC1: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_BAD_AUX_TC2: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_BAD_AUX_TC3: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_BAD_TEMP: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_BOTTOM_HEATER_ON: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_BOX_CONNECTED: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_CALIBRATING: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_CLOCK_T_UNREG: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_LASER_T_UNREG: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_MOTOR_FAILURE: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_MOTOR_SPINNING: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_NO_SIGNAL: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_NOT_READY: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_PUMP_ON: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_RE_UNLOCKED: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_RSSI: { field: false, units: false, measurement: _instrumentmetrics }
+    INST_LI7700_TOP_HEATER_ON: { field: false, units: false, measurement: _instrumentmetrics }
+    KRYPTON_HYDRO_KH2O_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    KRYPTON_HYDRO_KO2_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    LE_CORRDIFF: { field: false, units: false, measurement: LE }
+    LE_SSITC_TEST: { field: false, units: false, measurement: LE }
+    LE_STAGE1: { field: false, units: false, measurement: LE }
+    LE_STAGE2: { field: false, units: false, measurement: LE }
+    LE_UNCORR: { field: false, units: false, measurement: LE }
+    LOGGER_SWVER_MAJOR: { field: false, units: false, measurement: _instrumentmetrics }
+    LOGGER_SWVER_MINOR: { field: false, units: false, measurement: _instrumentmetrics }
+    LOGGER_SWVER_REVISION: { field: false, units: false, measurement: _instrumentmetrics }
+    LW_IN_1_1_1: { field: false, units: "W m-2", measurement: LW }
+    MANUFACTURER_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    MANUFACTURER_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    MANUFACTURER_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    MANUFACTURER_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    MANUFACTURER_SA: { field: false, units: false, measurement: _instrumentmetrics }
+    MO_LENGTH_UNCORR: { field: false, units: false, measurement: TURBULENCE }
+    MV_AIR_CELL_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    MV_AIR_CELL_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    MV_AIR_CELL_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    MV_AIR_CELL_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+#    NONE: { field: false, units: false, measurement: XXX }
+#    NONE_ABSLIM_NREX: { field: false, units: false, measurement: XXX }
+#    NONE_DIAG_NREX: { field: false, units: false, measurement: XXX }
+#    NONE_KID: { field: false, units: false, measurement: XXX }
+#    NONE_MEAS_KUR: { field: false, units: false, measurement: XXX }
+#    NONE_MEAS_MEDIAN: { field: false, units: false, measurement: XXX }
+#    NONE_MEAS_P25: { field: false, units: false, measurement: XXX }
+#    NONE_MEAS_P75: { field: false, units: false, measurement: XXX }
+#    NONE_MEAS_SIGMA: { field: false, units: false, measurement: XXX }
+#    NONE_MEAS_SKW: { field: false, units: false, measurement: XXX }
+#    NONE_MEAS_TYPE: { field: false, units: false, measurement: XXX }
+#    NONE_MIXING_RATIO: { field: false, units: false, measurement: XXX }
+#    NONE_MOLAR_DENSITY: { field: false, units: false, measurement: XXX }
+#    NONE_NR: { field: false, units: false, measurement: XXX }
+#    NONE_NUM_SPIKES: { field: false, units: false, measurement: XXX }
+#    NONE_SPIKE_NREX: { field: false, units: false, measurement: XXX }
+#    NONE_VM97_TEST: { field: false, units: false, measurement: XXX }
+#    NONE_ZCD: { field: false, units: false, measurement: XXX }
+    NUM_BIOMET_VARS: { field: false, units: false, measurement: _instrumentmetrics }
+    NUM_CUSTOM_VARS: { field: false, units: false, measurement: _instrumentmetrics }
+    PA_1_1_1: { field: false, units: false, measurement: PA }
+    PA_CELL: { field: false, units: false, measurement: _instrumentmetrics }
+    PPFD_IN_1_1_1: { field: false, units: "umol m-2 s-1", measurement: PPFD }
+    RESPONSE_TIME_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    RESPONSE_TIME_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    RESPONSE_TIME_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    RESPONSE_TIME_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    RESPONSE_TIME_SA: { field: false, units: false, measurement: _instrumentmetrics }
+
+    ROT_PITCH: { field: false, units: false, measurement: _instrumentmetrics }
+    ROT_ROLL: { field: false, units: false, measurement: _instrumentmetrics }
+    ROT_YAW: { field: false, units: false, measurement: _instrumentmetrics }
+    ROUGHNESS_LENGTH: { field: false, units: false, measurement: TURBULENCE }
+#    SNONE_SINGLE: { field: false, units: false, measurement: XXX }
+    SONIC_DIAG_NREX: { field: false, units: false, measurement: _instrumentmetrics }
+    SPEC_CORR_LI7700_A: { field: false, units: false, measurement: _instrumentmetrics }
+    SPEC_CORR_LI7700_B: { field: false, units: false, measurement: _instrumentmetrics }
+    SPEC_CORR_LI7700_C: { field: false, units: false, measurement: _instrumentmetrics }
+    SPECIFIC_HEAT_EVAP: { field: false, units: false, measurement: AIR }
+    SPECIFIC_HUMIDITY: { field: false, units: false, measurement: AIR }
+    SPECTRAL_CORRECTION_METHOD: { field: false, units: false, measurement: _instrumentmetrics }
+
+    RH_1_1_1: { field: false, units: "%", measurement: RH }
+    SW_IN_1_1_1: { field: false, units: "W m-2", measurement: SW }
+
+    T_CELL: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_ABSLIM_NREX: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_ITC: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_ITC_TEST: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_KID: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_KUR: { field: false, units: "unitless", measurement: _instrumentmetrics }
+    T_SONIC_MEDIAN: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_NUM_SPIKES: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_P25: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_P75: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_SIGMA: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_SKW: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_SPIKE_NREX: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_VM97_TEST: { field: false, units: false, measurement: _instrumentmetrics }
+    T_SONIC_ZCD: { field: false, units: false, measurement: _instrumentmetrics }
+    TA_1_1_1: { field: false, units: "degC", measurement: TA }
+    TAU_CORRDIFF: { field: false, units: false, measurement: TAU }
+    TAU_NSR: { field: false, units: false, measurement: TAU }
+    TAU_SCF: { field: false, units: "factor", measurement: TAU }
+    TAU_SS: { field: false, units: false, measurement: TAU }
+    TAU_SS_TEST: { field: false, units: false, measurement: TAU }
+    TAU_SSITC_TEST: { field: false, units: false, measurement: TAU }
+    TAU_STAGE1: { field: false, units: false, measurement: TAU }
+    TAU_STAGE2: { field: false, units: false, measurement: TAU }
+    TAU_UNCORR: { field: false, units: false, measurement: TAU }
+    TDEW: { field: false, units: false, measurement: AIR }
+    TIMELAG_DETECTION_METHOD: { field: false, units: false, measurement: _instrumentmetrics }
+    TIMESTAMP_END: { field: false, units: false, measurement: _instrumentmetrics }
+    TIMESTAMP_START: { field: false, units: false, measurement: _instrumentmetrics }
+    U_ABSLIM_NREX: { field: false, units: false, measurement: WIND }
+    U_ITC: { field: false, units: false, measurement: WIND }
+    U_ITC_TEST: { field: false, units: false, measurement: WIND }
+    U_KID: { field: false, units: false, measurement: WIND }
+    U_NUM_SPIKES: { field: false, units: false, measurement: WIND }
+    U_SPIKE_NREX: { field: false, units: false, measurement: WIND }
+    U_VM97_TEST: { field: false, units: false, measurement: WIND }
+    U_ZCD: { field: false, units: false, measurement: WIND }
+    V_ABSLIM_NREX: { field: false, units: false, measurement: WIND }
+    V_KID: { field: false, units: false, measurement: WIND }
+    V_NUM_SPIKES: { field: false, units: false, measurement: WIND }
+    V_SPIKE_NREX: { field: false, units: false, measurement: WIND }
+    V_VM97_TEST: { field: false, units: false, measurement: WIND }
+    V_ZCD: { field: false, units: false, measurement: WIND }
+    VAPOR_DENSITY: { field: false, units: false, measurement: AIR }
+    VAPOR_DRYAIR_RATIO: { field: false, units: false, measurement: AIR }
+    VAPOR_PARTIAL_PRESSURE: { field: false, units: false, measurement: AIR }
+    VAPOR_PARTIAL_PRESSURE_SAT: { field: false, units: false, measurement: AIR }
+    VM97_AOA_HF: { field: false, units: false, measurement: WIND }
+    VM97_NSHW_HF: { field: false, units: false, measurement: WIND }
+    VM97_TLAG_HF: { field: false, units: false, measurement: LAG }
+    VM97_TLAG_SF: { field: false, units: false, measurement: LAG }
+    VPATH_GA_CH4: { field: false, units: false, measurement: _instrumentmetrics }
+    VPATH_GA_CO2: { field: false, units: false, measurement: _instrumentmetrics }
+    VPATH_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
+    VPATH_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
+    VPATH_SA: { field: false, units: false, measurement: _instrumentmetrics }
+    W_ABSLIM_NREX: { field: false, units: false, measurement: WIND }
+    W_CH4_MEAS_COV: { field: false, units: false, measurement: COV }
+    W_CO2_MEAS_COV: { field: false, units: false, measurement: COV }
+    W_H2O_MEAS_COV: { field: false, units: false, measurement: COV }
+    W_ITC: { field: false, units: false, measurement: WIND }
+    W_ITC_TEST: { field: false, units: false, measurement: WIND }
+    W_KID: { field: false, units: false, measurement: WIND }
+#    W_NONE_MEAS_COV: { field: false, units: false, measurement: XXX }
+    W_NUM_SPIKES: { field: false, units: false, measurement: WIND }
+    W_SPIKE_NREX: { field: false, units: false, measurement: WIND }
+    W_T_SONIC_COV: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0004: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0008: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0016: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0032: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0065: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0133: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0277: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N0614: { field: false, units: false, measurement: COV }
+    W_T_SONIC_COV_IBROM_N1626: { field: false, units: false, measurement: COV }
+    W_U_COV: { field: false, units: false, measurement: COV }
+    W_VM97_TEST: { field: false, units: false, measurement: WIND }
+    W_ZCD: { field: false, units: false, measurement: WIND }
+    WBOOST_APPLIED: { field: false, units: false, measurement: _instrumentmetrics }
+    WD_FILTER_NREX: { field: false, units: false, measurement: WIND }
+    WPL_APPLIED: { field: false, units: false, measurement: _instrumentmetrics }
+    ZL_UNCORR: { field: false, units: false, measurement: TURBULENCE }
+

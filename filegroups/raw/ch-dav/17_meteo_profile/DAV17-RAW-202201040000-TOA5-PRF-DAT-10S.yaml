@@ -16,9 +16,9 @@ DAV17-RAW-202201040000-TOA5-PRF-DAT-10S:
   data_raw_freq: 10s
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -26,7 +26,6 @@ DAV17-RAW-202201040000-TOA5-PRF-DAT-10S:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
@@ -55,16 +54,16 @@ DAV17-RAW-202201040000-TOA5-PRF-DAT-10S:
     TA_T1_25_1_Std: { field: TA_PRF_SD_T1_25_1, units: false, measurement: _SD }
     TA_T1_35_1_Avg: { field: TA_PRF_T1_35_1, units: false, measurement: TA }
     TA_T1_35_1_Std: { field: TA_PRF_SD_T1_35_1, units: false, measurement: _SD }
-    WD_T1_1_1: { field: WD_PRF_T1_1_1, units: false, measurement: WD }
-    WD_T1_2_1: { field: WD_PRF_T1_2_1, units: false, measurement: WD }
-    WD_T1_10_1: { field: WD_PRF_T1_10_1, units: false, measurement: WD }
-    WD_T1_20_1: { field: WD_PRF_T1_20_1, units: false, measurement: WD }
-    WD_T1_25_1: { field: WD_PRF_T1_25_1, units: false, measurement: WD }
-    WD_T1_35_1: { field: WD_PRF_T1_35_1, units: false, measurement: WD }
-    WS_T1_1_1: { field: WS_PRF_T1_1_1, units: false, measurement: WS }
-    WS_T1_2_1: { field: WS_PRF_T1_2_1, units: false, measurement: WS }
-    WS_T1_10_1: { field: WS_PRF_T1_10_1, units: false, measurement: WS }
-    WS_T1_20_1: { field: WS_PRF_T1_20_1, units: false, measurement: WS }
-    WS_T1_25_1: { field: WS_PRF_T1_25_1, units: false, measurement: WS }
-    WS_T1_35_1: { field: WS_PRF_T1_35_1, units: false, measurement: WS }
+    WD_T1_1_1: { field: WD_PRF_T1_1_1, units: false, measurement: WIND }
+    WD_T1_2_1: { field: WD_PRF_T1_2_1, units: false, measurement: WIND }
+    WD_T1_10_1: { field: WD_PRF_T1_10_1, units: false, measurement: WIND }
+    WD_T1_20_1: { field: WD_PRF_T1_20_1, units: false, measurement: WIND }
+    WD_T1_25_1: { field: WD_PRF_T1_25_1, units: false, measurement: WIND }
+    WD_T1_35_1: { field: WD_PRF_T1_35_1, units: false, measurement: WIND }
+    WS_T1_1_1: { field: WS_PRF_T1_1_1, units: false, measurement: WIND }
+    WS_T1_2_1: { field: WS_PRF_T1_2_1, units: false, measurement: WIND }
+    WS_T1_10_1: { field: WS_PRF_T1_10_1, units: false, measurement: WIND }
+    WS_T1_20_1: { field: WS_PRF_T1_20_1, units: false, measurement: WIND }
+    WS_T1_25_1: { field: WS_PRF_T1_25_1, units: false, measurement: WIND }
+    WS_T1_35_1: { field: WS_PRF_T1_35_1, units: false, measurement: WIND }
 

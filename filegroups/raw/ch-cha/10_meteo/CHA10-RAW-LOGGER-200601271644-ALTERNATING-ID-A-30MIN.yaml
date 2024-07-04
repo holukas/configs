@@ -64,9 +64,9 @@ CHA10-RAW-LOGGER-200601271644-ALTERNATING-ID-A-30MIN:
   data_raw_freq: [ 30min, irregular ]  # Records with ID 202 are irregular
   data_skiprows: false
   data_headerrows: false
-  data_index_col: -9999
-  data_parse_dates: false
-  data_date_parser: false
+  data_timestamp_column: -9999
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: false
   data_build_timestamp: "YEAR+DOY+TIME"
   data_keep_good_rows: [ 0, [ 103, 104, 105 ], [ 203, 204, 205 ] ]  # See description above
   data_remove_bad_rows: false
@@ -74,7 +74,6 @@ CHA10-RAW-LOGGER-200601271644-ALTERNATING-ID-A-30MIN:
   data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: strict  # strict: the variables sequence must not be changed.
@@ -83,101 +82,105 @@ CHA10-RAW-LOGGER-200601271644-ALTERNATING-ID-A-30MIN:
     # the sequence of the variables given here is IMPORTANT!
     # The variable names are built from this sequence and therefore
     # the sequence must not be changed.
-    ID: { field: ID_iDL_SMP_BOX1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    YEAR: { field: YEAR_X_X_X, units: false, gain: 1, measurement: XXX }
-    DOY: { field: DOY_X_X_X, units: false, gain: 1, measurement: XXX }
-    TIME: { field: TIME_X_X_X, units: false, gain: 1, measurement: XXX }
-    Tintern_AVG: { field: T_iDL_BOX1_0_1, units: degC, gain: 1, measurement: _instrumentmetrics }
-    BatVolt_AVG: { field: BV_iDL_BOX1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    Tair_1_AVG: { field: TA_T1_2_1, units: degC, gain: 1, measurement: TA }
-    RHair_1_AVG: { field: RH_T1_2_1, units: "%", gain: 1, measurement: RH }
-    Wvel_1_AVG: { field: WS_CUP_SCALAR_T1_2_1, units: m s-1, gain: 1, measurement: WS }
-    SHF_1_AVG: { field: G_GF1_0.03_1, units: W m-2, gain: 1, measurement: G }
-    SHF_2_AVG: { field: G_GF1_0.03_2, units: W m-2, gain: 1, measurement: G }
-    SHF_3_AVG: { field: G_GF1_0.03_3, units: W m-2, gain: 1, measurement: G }
-    SHF_4_AVG: { field: G_GF1_0.03_4, units: W m-2, gain: 1, measurement: G }
-    SWin_1_AVG: { field: SW_IN_T1_2_1, units: W m-2, gain: 1, measurement: SW }
+    ID: { field: ID_iDL_SMP_BOX1_0_1, units: false, measurement: _instrumentmetrics }
+    YEAR: { field: YEAR_X_X_X, units: false, measurement: XXX }
+    DOY: { field: DOY_X_X_X, units: false, measurement: XXX }
+    TIME: { field: TIME_X_X_X, units: false, measurement: XXX }
+    Tintern_AVG: { field: T_iDL_BOX1_0_1, units: degC, measurement: _instrumentmetrics }
+    BatVolt_AVG: { field: BV_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
+    Tair_1_AVG: { field: TA_T1_2_1, units: degC, measurement: TA }
+    RHair_1_AVG: { field: RH_T1_2_1, units: "%", measurement: RH }
+    Wvel_1_AVG: { field: WS_CUP_SCALAR_T1_2_1, units: m s-1, measurement: WIND }
+    SHF_1_AVG: { field: G_GF1_0.03_1, units: W m-2, measurement: G }
+    SHF_2_AVG: { field: G_GF1_0.03_2, units: W m-2, measurement: G }
+    SHF_3_AVG: { field: G_GF1_0.03_3, units: W m-2, measurement: G }
+    SHF_4_AVG: { field: G_GF1_0.03_4, units: W m-2, measurement: G }
+    SWin_1_AVG: { field: SW_IN_T1_2_1, units: W m-2, measurement: SW }
     # Calculate Boltzmann corrected for LW_IN
-    LWin_1_AVG: { field: LW_IN_RAW_T1_2_1, units: false, gain: 1, rawfunc: [ calc_lw, PT100_1_AVG, LWin_1_AVG, LW_IN_T1_2_1 ], measurement: _RAW }  # rawfunc
-    SWout_1_AVG: { field: SW_OUT_T1_2_1, units: W m-2, gain: 1, measurement: SW }
+    LWin_1_AVG: { field: LW_IN_RAW_T1_2_1, units: false, rawfunc: [ calc_lw, PT100_1_AVG, LWin_1_AVG, LW_IN_T1_2_1 ], measurement: _RAW }  # rawfunc
+    SWout_1_AVG: { field: SW_OUT_T1_2_1, units: W m-2, measurement: SW }
     # Calculate Boltzmann corrected for LW_OUT
-    LWout_1_AVG: { field: LW_OUT_RAW_T1_2_1, units: false, gain: 1, rawfunc: [ calc_lw, PT100_1_AVG, LWout_1_AVG, LW_OUT_T1_2_1 ], measurement: _RAW }  # rawfunc
+    LWout_1_AVG: { field: LW_OUT_RAW_T1_2_1, units: false, rawfunc: [ calc_lw, PT100_1_AVG, LWout_1_AVG, LW_OUT_T1_2_1 ], measurement: _RAW }  # rawfunc
     # Calculate Boltzmann corrected for LW_IN, LW_OUT
-    PT100_1_AVG: { field: T_RAD_T1_2_1, units: degC, gain: 1, rawfunc: [ calc_lw, PT100_1_AVG, LWin_1_AVG, LW_IN_T1_2_1 ], measurement: _instrumentmetrics }  # rawfunc
-    PAR_1_AVG: { field: PPFD_IN_T1_2_1, units: "umol s-1 m-2", gain: 1, measurement: PPFD }
-    Tsoil_1_AVG: { field: TS_GF1_0.01_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_2_AVG: { field: TS_GF1_0.02_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_3_AVG: { field: TS_GF1_0.04_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_4_AVG: { field: TS_GF1_0.07_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_5_AVG: { field: TS_GF1_0.1_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_6_AVG: { field: TS_GF1_0.15_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_7_AVG: { field: TS_GF1_0.25_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_8_AVG: { field: TS_GF1_0.4_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_9_AVG: { field: TS_GF1_0.95_1, units: degC, gain: 1, measurement: TS }
-    Tsoil_10_AVG: { field: TS_GF1_0.02_2, units: degC, gain: 1, measurement: TS }
-    Theta_1_AVG: { field: SDP_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_2_AVG: { field: SDP_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_3_AVG: { field: SDP_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_4_AVG: { field: SDP_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_5_AVG: { field: SDP_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_6_AVG: { field: SDP_GF1_NA_6, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_7_AVG: { field: SDP_GF1_NA_7, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_8_AVG: { field: SDP_GF1_NA_8, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Theta_9_AVG: { field: SDP_GF1_NA_9, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
-    Tintern_STD: { field: T_iDL_SD_BOX1_0_1, units: degC, gain: 1, measurement: _instrumentmetrics }
-    BatVolt_STD: { field: SV_iDL_SD_BOX1_0_1, units: V, gain: 1, measurement: _instrumentmetrics }
-    Tair_1_STD: { field: TA_SD_T1_2_1, units: degC, gain: 1, measurement: _SD }
-    RHair_1_STD: { field: RH_SD_T1_2_1, units: "%", gain: 1, measurement: _SD }
-    Wvel_1_STD: { field: WS_CUP_SD_T1_2_1, units: m s-1, gain: 1, measurement: _SD }
-    SHF_1_STD: { field: G_SD_GF1_0.03_1, units: W m-2, gain: 1, measurement: _SD }
-    SHF_2_STD: { field: G_SD_GF1_0.03_2, units: W m-2, gain: 1, measurement: _SD }
-    SHF_3_STD: { field: G_SD_GF1_0.03_3, units: W m-2, gain: 1, measurement: _SD }
-    SHF_4_STD: { field: G_SD_GF1_0.03_4, units: W m-2, gain: 1, measurement: _SD }
-    SWin_1_STD: { field: SW_IN_SD_T1_2_1, units: W m-2, gain: 1, measurement: _SD }
-    LWin_1_STD: { field: LW_IN_RAW_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
-    SWout_1_STD: { field: SW_OUT_SD_T1_2_1, units: W m-2, gain: 1, measurement: _SD }
-    LWout_1_STD: { field: LW_OUT_RAW_SD_T1_2_1, units: false, gain: 1, measurement: _SD }
-    PT100_1_STD: { field: T_RAD_SD_T1_2_1, units: degC, gain: 1, measurement: _SD }
-    PAR_1_STD: { field: PPFD_IN_SD_T1_2_1, units: "umol s-1 m-2", gain: 1, measurement: _SD }
-    Tsoil_1_STD: { field: TS_SD_GF1_0.01_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_2_STD: { field: TS_SD_GF1_0.02_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_3_STD: { field: TS_SD_GF1_0.04_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_4_STD: { field: TS_SD_GF1_0.07_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_5_STD: { field: TS_SD_GF1_0.1_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_6_STD: { field: TS_SD_GF1_0.15_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_7_STD: { field: TS_SD_GF1_0.25_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_8_STD: { field: TS_SD_GF1_0.4_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_9_STD: { field: TS_SD_GF1_0.95_1, units: degC, gain: 1, measurement: _SD }
-    Tsoil_10_STD: { field: TS_SD_GF1_0.02_2, units: degC, gain: 1, measurement: _SD }
-    Theta_1_STD: { field: SDP_SD_GF1_0.05_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_2_STD: { field: SDP_SD_GF1_0.15_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_3_STD: { field: SDP_SD_GF1_0.25_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_4_STD: { field: SDP_SD_GF1_0.4_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_5_STD: { field: SDP_SD_GF1_0.75_1, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_6_STD: { field: SDP_SD_GF1_NA_6, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_7_STD: { field: SDP_SD_GF1_NA_7, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_8_STD: { field: SDP_SD_GF1_NA_8, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Theta_9_STD: { field: SDP_SD_GF1_NA_9, units: mV, gain: 1, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
-    Precip_1_TOT: { field: P_RAIN_TOT_M1_1_1, units: mm, gain: 1, measurement: PREC }
-    Wvel_1_S_WVT: { field: WS_CUP_SCALAR_T1_2_1, units: m s-1, gain: 1, measurement: WS }
-    Wvel_1_U_WVT: { field: WS_CUP_VECTOR_T1_2_1, units: m s-1, gain: 1, measurement: WS }
-    Wdir_1_DU_WVT: { field: WD_VANE_VECTOR_T1_2_1, units: deg, gain: 1, measurement: WD }
-    Wdir_1_SDU_WVT: { field: WD_VANE_VECTOR_SD_T1_2_1, units: deg, gain: 1, measurement: _SD }
+    PT100_1_AVG: { field: T_RAD_T1_2_1, units: degC, rawfunc: [ calc_lw, PT100_1_AVG, LWin_1_AVG, LW_IN_T1_2_1 ], measurement: _instrumentmetrics }  # rawfunc
+    PAR_1_AVG: { field: PPFD_IN_T1_2_1, units: "umol s-1 m-2", measurement: PPFD }
+    Tsoil_1_AVG: { field: TS_GF1_0.01_1, units: degC, measurement: TS }
+    Tsoil_2_AVG: { field: TS_GF1_0.02_1, units: degC, measurement: TS }
+    Tsoil_3_AVG: { field: TS_GF1_0.04_1, units: degC, measurement: TS }
+    Tsoil_4_AVG: { field: TS_GF1_0.07_1, units: degC, measurement: TS }
+    Tsoil_5_AVG: { field: TS_GF1_0.1_1, units: degC, measurement: TS }
+    Tsoil_6_AVG: { field: TS_GF1_0.15_1, units: degC, measurement: TS }
+    Tsoil_7_AVG: { field: TS_GF1_0.25_1, units: degC, measurement: TS }
+    Tsoil_8_AVG: { field: TS_GF1_0.4_1, units: degC, measurement: TS }
+    Tsoil_9_AVG: { field: TS_GF1_0.95_1, units: degC, measurement: TS }
+    Tsoil_10_AVG: { field: TS_GF1_0.02_2, units: degC, measurement: TS }
+    # Needs SDP calculation in addition to SWC, see Note#4:
+    Theta_1_AVG: { field: SDP_GF1_0.05_1, units: mV, rawfunc: [ calc_swc_sdp ], measurement: SDP }  # rawfunc
+    # Needs SDP calculation in addition to SWC, see Note#4:
+    Theta_2_AVG: { field: SDP_GF1_0.15_1, units: mV, rawfunc: [ calc_swc_sdp ], measurement: SDP }  # rawfunc
+    Theta_3_AVG: { field: SDP_GF1_0.25_1, units: mV, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    Theta_4_AVG: { field: SDP_GF1_0.4_1, units: mV, rawfunc: [ calc_swc ], measurement: SDP }  # rawfunc
+    # Needs SDP calculation in addition to SWC, see Note#4:
+    Theta_5_AVG: { field: SDP_GF1_0.75_1, units: mV, rawfunc: [ calc_swc_sdp ], measurement: SDP }  # rawfunc
+    Theta_6_AVG: { field: SDP_GF1_NA_6, units: mV, measurement: _RAW }
+    Theta_7_AVG: { field: SDP_GF1_NA_7, units: mV, measurement: _RAW }
+    Theta_8_AVG: { field: SDP_GF1_NA_8, units: mV, measurement: _RAW }
+    Theta_9_AVG: { field: SDP_GF1_NA_9, units: mV, measurement: _RAW }
+    Tintern_STD: { field: T_iDL_SD_BOX1_0_1, units: degC, measurement: _instrumentmetrics }
+    BatVolt_STD: { field: SV_iDL_SD_BOX1_0_1, units: V, measurement: _instrumentmetrics }
+    Tair_1_STD: { field: TA_SD_T1_2_1, units: degC, measurement: _SD }
+    RHair_1_STD: { field: RH_SD_T1_2_1, units: "%", measurement: _SD }
+    Wvel_1_STD: { field: WS_CUP_SD_T1_2_1, units: m s-1, measurement: _SD }
+    SHF_1_STD: { field: G_SD_GF1_0.03_1, units: W m-2, measurement: _SD }
+    SHF_2_STD: { field: G_SD_GF1_0.03_2, units: W m-2, measurement: _SD }
+    SHF_3_STD: { field: G_SD_GF1_0.03_3, units: W m-2, measurement: _SD }
+    SHF_4_STD: { field: G_SD_GF1_0.03_4, units: W m-2, measurement: _SD }
+    SWin_1_STD: { field: SW_IN_SD_T1_2_1, units: W m-2, measurement: _SD }
+    LWin_1_STD: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _SD }
+    SWout_1_STD: { field: SW_OUT_SD_T1_2_1, units: W m-2, measurement: _SD }
+    LWout_1_STD: { field: LW_OUT_RAW_SD_T1_2_1, units: false, measurement: _SD }
+    PT100_1_STD: { field: T_RAD_SD_T1_2_1, units: degC, measurement: _SD }
+    PAR_1_STD: { field: PPFD_IN_SD_T1_2_1, units: "umol s-1 m-2", measurement: _SD }
+    Tsoil_1_STD: { field: TS_SD_GF1_0.01_1, units: degC, measurement: _SD }
+    Tsoil_2_STD: { field: TS_SD_GF1_0.02_1, units: degC, measurement: _SD }
+    Tsoil_3_STD: { field: TS_SD_GF1_0.04_1, units: degC, measurement: _SD }
+    Tsoil_4_STD: { field: TS_SD_GF1_0.07_1, units: degC, measurement: _SD }
+    Tsoil_5_STD: { field: TS_SD_GF1_0.1_1, units: degC, measurement: _SD }
+    Tsoil_6_STD: { field: TS_SD_GF1_0.15_1, units: degC, measurement: _SD }
+    Tsoil_7_STD: { field: TS_SD_GF1_0.25_1, units: degC, measurement: _SD }
+    Tsoil_8_STD: { field: TS_SD_GF1_0.4_1, units: degC, measurement: _SD }
+    Tsoil_9_STD: { field: TS_SD_GF1_0.95_1, units: degC, measurement: _SD }
+    Tsoil_10_STD: { field: TS_SD_GF1_0.02_2, units: degC, measurement: _SD }
+    Theta_1_STD: { field: SDP_SD_GF1_0.05_1, units: mV, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
+    Theta_2_STD: { field: SDP_SD_GF1_0.15_1, units: mV, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
+    Theta_3_STD: { field: SDP_SD_GF1_0.25_1, units: mV, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
+    Theta_4_STD: { field: SDP_SD_GF1_0.4_1, units: mV, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
+    Theta_5_STD: { field: SDP_SD_GF1_0.75_1, units: mV, rawfunc: [ calc_swc ], measurement: _SD }  # rawfunc
+    Theta_6_STD: { field: SDP_SD_GF1_NA_6, units: mV, measurement: _RAW }
+    Theta_7_STD: { field: SDP_SD_GF1_NA_7, units: mV, measurement: _RAW }
+    Theta_8_STD: { field: SDP_SD_GF1_NA_8, units: mV, measurement: _RAW }
+    Theta_9_STD: { field: SDP_SD_GF1_NA_9, units: mV, measurement: _RAW }
+    # gain: see Note#1 in NOTES.md
+    Precip_1_TOT: { field: P_RAIN_TOT_M1_1_1, units: mm, gain: 1.317, measurement: PREC }
+    Wvel_1_S_WVT: { field: WS_CUP_SCALAR_T1_2_1, units: m s-1, measurement: WIND }
+    Wvel_1_U_WVT: { field: WS_CUP_VECTOR_T1_2_1, units: m s-1, measurement: WIND }
+    Wdir_1_DU_WVT: { field: WD_VANE_VECTOR_T1_2_1, units: deg, measurement: WIND }
+    Wdir_1_SDU_WVT: { field: WD_VANE_VECTOR_SD_T1_2_1, units: deg, measurement: _SD }
     # The following 2 variables are listed in the config.header file,
     # but seem to be missing from the data files:
-    # UK_1: { field: UK_1, units: false, gain: 1, measurement: XXX }
-    # UK_2: { field: UK_2, units: false, gain: 1, measurement: XXX }
+    # UK_1: { field: UK_1, units: false, measurement: XXX }
+    # UK_2: { field: UK_2, units: false, measurement: XXX }
   data_vars2:
     # Variables with ID 202 at the start of the record row
     # Variable info taken directly from the CONFIG XLSX file, but files contain only 5 columns
-    ID: { field: ID_iDL_SMP_BOX1_0_1, units: "#", gain: 1, measurement: _instrumentmetrics }
-    YEAR: { field: YEAR_X_X_X, units: false, gain: 1, measurement: XXX }
-    DOY: { field: DOY_X_X_X, units: false, gain: 1, measurement: XXX }
-    TIME: { field: TIME_X_X_X, units: false, gain: 1, measurement: XXX }
-    HTimer_Wind: { field: HTIMER_WIND_GF1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    TStat_Wind: { field: TSTAT_WIND_GF1_0_1, units: flag, gain: 1, measurement: _instrumentmetrics }
-    HTimer_Sonic: { field: HTIMER_SONIC_GF1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    TStat_Sonic: { field: TSTAT_SONIC_GF1_0_1, units: flag, gain: 1, measurement: _instrumentmetrics }
-    HTimer_Tubes: { field: HTIMER_TUBES_GF1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    HStat_Tubes: { field: TSTAT_TUBES_GF1_0_1, units: flag, gain: 1, measurement: _instrumentmetrics }
+    ID: { field: ID_iDL_SMP_BOX1_0_1, units: "#", measurement: _instrumentmetrics }
+    YEAR: { field: YEAR_X_X_X, units: false, measurement: XXX }
+    DOY: { field: DOY_X_X_X, units: false, measurement: XXX }
+    TIME: { field: TIME_X_X_X, units: false, measurement: XXX }
+    HTimer_Wind: { field: HTIMER_WIND_GF1_0_1, units: false, measurement: _instrumentmetrics }
+    TStat_Wind: { field: TSTAT_WIND_GF1_0_1, units: flag, measurement: _instrumentmetrics }
+    HTimer_Sonic: { field: HTIMER_SONIC_GF1_0_1, units: false, measurement: _instrumentmetrics }
+    TStat_Sonic: { field: TSTAT_SONIC_GF1_0_1, units: flag, measurement: _instrumentmetrics }
+    HTimer_Tubes: { field: HTIMER_TUBES_GF1_0_1, units: false, measurement: _instrumentmetrics }
+    HStat_Tubes: { field: TSTAT_TUBES_GF1_0_1, units: flag, measurement: _instrumentmetrics }
 

@@ -47,9 +47,9 @@ DAV10-RAW-PROFILE-200806271118-ALTERNATING-A-10MIN:
   data_raw_freq: 10min
   data_skiprows: false
   data_headerrows: false
-  data_index_col: -9999
-  data_parse_dates: false
-  data_date_parser: false
+  data_timestamp_column: -9999
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: false
   data_build_timestamp: "YEAR+DOY+TIME"
   # If 225 (int) is in the first column (index 0) data are for the conventional profiles
   #   --> respective variables are given in *data_vars*
@@ -62,7 +62,6 @@ DAV10-RAW-PROFILE-200806271118-ALTERNATING-A-10MIN:
   data_special_format: "-ALTERNATING-"
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
@@ -71,96 +70,96 @@ DAV10-RAW-PROFILE-200806271118-ALTERNATING-A-10MIN:
     # the sequence of the variables given here is IMPORTANT!
     # The variable names are built from this sequence and therefore
     # the sequence must no be changed.
-    ID: { field: ID_T1_0_1, units: "#", gain: 1, measurement: _instrumentmetrics }
-    YEAR: { field: YEAR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    DOY: { field: DOY_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    TIME: { field: TIME_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    W_Vel_2m_S_WVT: { field: WS_CUP_PRF_T1_2_2, units: "m s-1", gain: 1, measurement: WS }
-    W_Vel_2m_U_WVT: { field: WS_CUP_PRF_T1_2_1, units: "m s-1", gain: 1, measurement: WS }
-    W_Dir_2m_DU_WVT: { field: WD_CUP_PRF_T1_2_1, units: "deg from north", gain: 1, measurement: WD }
+    ID: { field: ID_T1_0_1, units: "#", measurement: _instrumentmetrics }
+    YEAR: { field: YEAR_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    DOY: { field: DOY_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    TIME: { field: TIME_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    W_Vel_2m_S_WVT: { field: WS_CUP_PRF_T1_2_2, units: "m s-1", measurement: WIND }
+    W_Vel_2m_U_WVT: { field: WS_CUP_PRF_T1_2_1, units: "m s-1", measurement: WIND }
+    W_Dir_2m_DU_WVT: { field: WD_CUP_PRF_T1_2_1, units: "deg from north", measurement: WIND }
     # The W_Dir_*m_SDU_WVT variables look like some sort of SD/range per 10MIN measurement???
-    W_Dir_2m_SDU_WVT: { field: WD_CUP_PRF_X_T1_2_1, units: "deg from north", gain: 1, measurement: XXX }
-    W_Vel_10m_S_WVT: { field: WS_CUP_PRF_T1_10_2, units: "m s-1", gain: 1, measurement: WS }
-    W_Vel_10m_U_WVT: { field: WS_CUP_PRF_T1_10_1, units: "m s-1", gain: 1, measurement: WS }
-    W_Dir_10m_DU_WVT: { field: WD_CUP_PRF_T1_10_1, units: "deg from north", gain: 1, measurement: WD }
-    W_Dir_10m_SDU_WVT: { field: WD_CUP_PRF_X_T1_10_1, units: "deg from north", gain: 1, measurement: XXX }
-    W_Vel_20m_S_WVT: { field: WS_CUP_PRF_T1_20_2, units: "m s-1", gain: 1, measurement: WS }
-    W_Vel_20m_U_WVT: { field: WS_CUP_PRF_T1_20_1, units: "m s-1", gain: 1, measurement: WS }
-    W_Dir_20m_DU_WVT: { field: WD_CUP_PRF_T1_20_1, units: "deg from north", gain: 1, measurement: WD }
-    W_Dir_20m_SDU_WVT: { field: WD_CUP_PRF_X_T1_20_1, units: "deg from north", gain: 1, measurement: XXX }
-    W_Vel_25m_S_WVT: { field: WS_CUP_PRF_T1_25_2, units: "m s-1", gain: 1, measurement: WS }
-    W_Vel_25m_U_WVT: { field: WS_CUP_PRF_T1_25_1, units: "m s-1", gain: 1, measurement: WS }
-    W_Dir_25m_DU_WVT: { field: WD_CUP_PRF_T1_25_1, units: "deg from north", gain: 1, measurement: WD }
-    W_Dir_25m_SDU_WVT: { field: WD_CUP_PRF_X_T1_25_1, units: "deg from north", gain: 1, measurement: XXX }
-    W_Vel_35m_S_WVT: { field: WS_CUP_PRF_T1_35_2, units: "m s-1", gain: 1, measurement: WS }
-    W_Vel_35m_U_WVT: { field: WS_CUP_PRF_T1_35_1, units: "m s-1", gain: 1, measurement: WS }
-    W_Dir_35m_DU_WVT: { field: WD_CUP_PRF_T1_35_1, units: "deg from north", gain: 1, measurement: WD }
+    W_Dir_2m_SDU_WVT: { field: WD_CUP_PRF_X_T1_2_1, units: "deg from north", measurement: XXX }
+    W_Vel_10m_S_WVT: { field: WS_CUP_PRF_T1_10_2, units: "m s-1", measurement: WIND }
+    W_Vel_10m_U_WVT: { field: WS_CUP_PRF_T1_10_1, units: "m s-1", measurement: WIND }
+    W_Dir_10m_DU_WVT: { field: WD_CUP_PRF_T1_10_1, units: "deg from north", measurement: WIND }
+    W_Dir_10m_SDU_WVT: { field: WD_CUP_PRF_X_T1_10_1, units: "deg from north", measurement: XXX }
+    W_Vel_20m_S_WVT: { field: WS_CUP_PRF_T1_20_2, units: "m s-1", measurement: WIND }
+    W_Vel_20m_U_WVT: { field: WS_CUP_PRF_T1_20_1, units: "m s-1", measurement: WIND }
+    W_Dir_20m_DU_WVT: { field: WD_CUP_PRF_T1_20_1, units: "deg from north", measurement: WIND }
+    W_Dir_20m_SDU_WVT: { field: WD_CUP_PRF_X_T1_20_1, units: "deg from north", measurement: XXX }
+    W_Vel_25m_S_WVT: { field: WS_CUP_PRF_T1_25_2, units: "m s-1", measurement: WIND }
+    W_Vel_25m_U_WVT: { field: WS_CUP_PRF_T1_25_1, units: "m s-1", measurement: WIND }
+    W_Dir_25m_DU_WVT: { field: WD_CUP_PRF_T1_25_1, units: "deg from north", measurement: WIND }
+    W_Dir_25m_SDU_WVT: { field: WD_CUP_PRF_X_T1_25_1, units: "deg from north", measurement: XXX }
+    W_Vel_35m_S_WVT: { field: WS_CUP_PRF_T1_35_2, units: "m s-1", measurement: WIND }
+    W_Vel_35m_U_WVT: { field: WS_CUP_PRF_T1_35_1, units: "m s-1", measurement: WIND }
+    W_Dir_35m_DU_WVT: { field: WD_CUP_PRF_T1_35_1, units: "deg from north", measurement: WIND }
     # The W_Dir_*m_SDU_WVT variables look like some sort of SD/range per 10MIN measurement???
-    W_Dir_35m_SDU_WVT: { field: WD_CUP_PRF_X_T1_35_1, units: "deg from north", gain: 1, measurement: XXX }
-    Temp_2m_AVG: { field: TA_PRF_T1_2_1, units: "degC", gain: 1, measurement: TA }
-    Temp_10m_AVG: { field: TA_PRF_T1_10_1, units: "degC", gain: 1, measurement: TA }
-    Temp_20m_AVG: { field: TA_PRF_T1_20_1, units: "degC", gain: 1, measurement: TA }
-    Temp_25m_AVG: { field: TA_PRF_T1_25_1, units: "degC", gain: 1, measurement: TA }
-    Temp_35m_AVG: { field: TA_PRF_T1_35_1, units: "degC", gain: 1, measurement: TA }
-    Hum_2m_AVG: { field: RH_PRF_T1_2_1, units: "%", gain: 1, measurement: RH }
-    Hum_10m_AVG: { field: RH_PRF_T1_10_1, units: "%", gain: 1, measurement: RH }
-    Hum_20m_AVG: { field: RH_PRF_T1_20_1, units: "%", gain: 1, measurement: RH }
-    Hum_25m_AVG: { field: RH_PRF_T1_25_1, units: "%", gain: 1, measurement: RH }
-    Hum_35m_AVG: { field: RH_PRF_T1_35_1, units: "%", gain: 1, measurement: RH }
-    BodenT05_AVG: { field: TS_FF0_0.05_1, units: "degC", gain: 1, measurement: TS }
-    BodenT15_AVG: { field: TS_FF0_0.15_1, units: "degC", gain: 1, measurement: TS }
-    BodenT50_AVG: { field: TS_FF0_0.50_1, units: "degC", gain: 1, measurement: TS }
-    BoFeu05_AVG: { field: SWC_FF0_0.05_1, units: "%", gain: 1, measurement: SWC }
-    BoFeu15_AVG: { field: SWC_FF0_0.15_1, units: "%", gain: 1, measurement: SWC }
-    BoFeu45_AVG: { field: SWC_FF0_0.45_1, units: "%", gain: 1, measurement: SWC }
-    BARO_AVG: { field: Baro_Avg_X_X_X, units: false, gain: 1, measurement: XXX }
-    HtFlx_Wm2_AVG: { field: G_FF0_0.02_1, units: "W m-2", gain: 1, measurement: G }
-    Mimol_m2s_AVG: { field: PPFD_X_X_X, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    W_Dir_35m_SDU_WVT: { field: WD_CUP_PRF_X_T1_35_1, units: "deg from north", measurement: XXX }
+    Temp_2m_AVG: { field: TA_PRF_T1_2_1, units: "degC", measurement: TA }
+    Temp_10m_AVG: { field: TA_PRF_T1_10_1, units: "degC", measurement: TA }
+    Temp_20m_AVG: { field: TA_PRF_T1_20_1, units: "degC", measurement: TA }
+    Temp_25m_AVG: { field: TA_PRF_T1_25_1, units: "degC", measurement: TA }
+    Temp_35m_AVG: { field: TA_PRF_T1_35_1, units: "degC", measurement: TA }
+    Hum_2m_AVG: { field: RH_PRF_T1_2_1, units: "%", measurement: RH }
+    Hum_10m_AVG: { field: RH_PRF_T1_10_1, units: "%", measurement: RH }
+    Hum_20m_AVG: { field: RH_PRF_T1_20_1, units: "%", measurement: RH }
+    Hum_25m_AVG: { field: RH_PRF_T1_25_1, units: "%", measurement: RH }
+    Hum_35m_AVG: { field: RH_PRF_T1_35_1, units: "%", measurement: RH }
+    BodenT05_AVG: { field: TS_FF0_0.05_1, units: "degC", measurement: TS }
+    BodenT15_AVG: { field: TS_FF0_0.15_1, units: "degC", measurement: TS }
+    BodenT50_AVG: { field: TS_FF0_0.50_1, units: "degC", measurement: TS }
+    BoFeu05_AVG: { field: SWC_FF0_0.05_1, units: "%", measurement: SWC }
+    BoFeu15_AVG: { field: SWC_FF0_0.15_1, units: "%", measurement: SWC }
+    BoFeu45_AVG: { field: SWC_FF0_0.45_1, units: "%", measurement: SWC }
+    BARO_AVG: { field: Baro_Avg_X_X_X, units: false, measurement: XXX }
+    HtFlx_Wm2_AVG: { field: G_FF0_0.02_1, units: "W m-2", measurement: G }
+    Mimol_m2s_AVG: { field: PPFD_X_X_X, units: "umol m-2 s-1", measurement: PPFD }
     # I am not completely sure the cryptically named SWC variables have
     # the correct field name. Needs to be checked in data.
-    SWC01_AVG: { field: SWC_H1_0.15_1, units: "%", gain: 1, measurement: SWC }
-    SWC02_AVG: { field: SWC_H1_0.5_1, units: "%", gain: 1, measurement: SWC }
-    SWC03_AVG: { field: SWC_H1_0.8_1, units: "%", gain: 1, measurement: SWC }
-    SWC04_AVG: { field: SWC_H1_0.15_2, units: "%", gain: 1, measurement: SWC }
-    SWC05_AVG: { field: SWC_H1_0.5_2, units: "%", gain: 1, measurement: SWC }
-    SWC06_AVG: { field: SWC_H1_0.8_2, units: "%", gain: 1, measurement: SWC }
-    SWC07_AVG: { field: SWC_H1_0.15_3, units: "%", gain: 1, measurement: SWC }
-    SWC08_AVG: { field: SWC_H1_0.5_3, units: "%", gain: 1, measurement: SWC }
-    SWC09_AVG: { field: SWC_H1_0.8_3, units: "%", gain: 1, measurement: SWC }
-    SWC10_AVG: { field: SWC_H1_0.15_4, units: "%", gain: 1, measurement: SWC }
-    SWC11_AVG: { field: SWC_H1_0.5_4, units: "%", gain: 1, measurement: SWC }
-    SWC12_AVG: { field: SWC_H1_0.8_4, units: "%", gain: 1, measurement: SWC }
+    SWC01_AVG: { field: SWC_H1_0.15_1, units: "%", measurement: SWC }
+    SWC02_AVG: { field: SWC_H1_0.5_1, units: "%", measurement: SWC }
+    SWC03_AVG: { field: SWC_H1_0.8_1, units: "%", measurement: SWC }
+    SWC04_AVG: { field: SWC_H1_0.15_2, units: "%", measurement: SWC }
+    SWC05_AVG: { field: SWC_H1_0.5_2, units: "%", measurement: SWC }
+    SWC06_AVG: { field: SWC_H1_0.8_2, units: "%", measurement: SWC }
+    SWC07_AVG: { field: SWC_H1_0.15_3, units: "%", measurement: SWC }
+    SWC08_AVG: { field: SWC_H1_0.5_3, units: "%", measurement: SWC }
+    SWC09_AVG: { field: SWC_H1_0.8_3, units: "%", measurement: SWC }
+    SWC10_AVG: { field: SWC_H1_0.15_4, units: "%", measurement: SWC }
+    SWC11_AVG: { field: SWC_H1_0.5_4, units: "%", measurement: SWC }
+    SWC12_AVG: { field: SWC_H1_0.8_4, units: "%", measurement: SWC }
   data_vars2:
     # Since this filetype does not have column names in the data,
     # the sequence of the variables given here is IMPORTANT!
     # The variable names are built from this sequence and therefore
     # the sequence must no be changed.
-    ID: { field: ID_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    YEAR: { field: YEAR_X_X_X, units: false, gain: 1, measurement: XXX }  # Removed after timestamp building
-    DOY: { field: DOY_X_X_X, units: false, gain: 1, measurement: XXX }  # Removed after timestamp building
-    TIME: { field: TIME_X_X_X, units: false, gain: 1, measurement: XXX }  # Removed after timestamp building
-    Seconds: { field: SECONDS_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }  # Not really needed
-    H35m_CO2: { field: CO2_PRF_T1_35_1, units: "ppm", gain: 1, measurement: CO2 }
-    H25m_CO2: { field: CO2_PRF_T1_25_1, units: "ppm", gain: 1, measurement: CO2 }
-    H20m_CO2: { field: CO2_PRF_T1_20_1, units: "ppm", gain: 1, measurement: CO2 }
-    H10m_CO2: { field: CO2_PRF_T1_10_1, units: "ppm", gain: 1, measurement: CO2 }
-    H02m_CO2: { field: CO2_PRF_T1_2_1, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_06: { field: CO2_PRF_T1_X_1, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_07: { field: CO2_PRF_T1_X_2, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_08: { field: CO2_PRF_T1_X_3, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_09: { field: CO2_PRF_T1_X_4, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_10: { field: CO2_PRF_T1_X_5, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_11: { field: CO2_PRF_T1_X_6, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_12: { field: CO2_PRF_T1_X_7, units: "ppm", gain: 1, measurement: CO2 }
-    H35m_H2O: { field: H2O_PRF_T1_35_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H25m_H2O: { field: H2O_PRF_T1_25_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H20m_H2O: { field: H2O_PRF_T1_20_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H10m_H2O: { field: H2O_PRF_T1_10_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H02m_H2O: { field: H2O_PRF_T1_2_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_06: { field: H2O_PRF_T1_X_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_07: { field: H2O_PRF_T1_X_2, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_08: { field: H2O_PRF_T1_X_3, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_09: { field: H2O_PRF_T1_X_4, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_10: { field: H2O_PRF_T1_X_5, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_11: { field: H2O_PRF_T1_X_6, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_12: { field: H2O_PRF_T1_X_7, units: "mmol mol-1", gain: 1, measurement: H2O }
+    ID: { field: ID_T1_0_1, units: false, measurement: _instrumentmetrics }
+    YEAR: { field: YEAR_X_X_X, units: false, measurement: XXX }  # Removed after timestamp building
+    DOY: { field: DOY_X_X_X, units: false, measurement: XXX }  # Removed after timestamp building
+    TIME: { field: TIME_X_X_X, units: false, measurement: XXX }  # Removed after timestamp building
+    Seconds: { field: SECONDS_T1_0_1, units: false, measurement: _instrumentmetrics }  # Not really needed
+    H35m_CO2: { field: CO2_PRF_T1_35_1, units: "ppm", measurement: CO2 }
+    H25m_CO2: { field: CO2_PRF_T1_25_1, units: "ppm", measurement: CO2 }
+    H20m_CO2: { field: CO2_PRF_T1_20_1, units: "ppm", measurement: CO2 }
+    H10m_CO2: { field: CO2_PRF_T1_10_1, units: "ppm", measurement: CO2 }
+    H02m_CO2: { field: CO2_PRF_T1_2_1, units: "ppm", measurement: CO2 }
+    CO2_06: { field: CO2_PRF_T1_X_1, units: "ppm", measurement: CO2 }
+    CO2_07: { field: CO2_PRF_T1_X_2, units: "ppm", measurement: CO2 }
+    CO2_08: { field: CO2_PRF_T1_X_3, units: "ppm", measurement: CO2 }
+    CO2_09: { field: CO2_PRF_T1_X_4, units: "ppm", measurement: CO2 }
+    CO2_10: { field: CO2_PRF_T1_X_5, units: "ppm", measurement: CO2 }
+    CO2_11: { field: CO2_PRF_T1_X_6, units: "ppm", measurement: CO2 }
+    CO2_12: { field: CO2_PRF_T1_X_7, units: "ppm", measurement: CO2 }
+    H35m_H2O: { field: H2O_PRF_T1_35_1, units: "mmol mol-1", measurement: H2O }
+    H25m_H2O: { field: H2O_PRF_T1_25_1, units: "mmol mol-1", measurement: H2O }
+    H20m_H2O: { field: H2O_PRF_T1_20_1, units: "mmol mol-1", measurement: H2O }
+    H10m_H2O: { field: H2O_PRF_T1_10_1, units: "mmol mol-1", measurement: H2O }
+    H02m_H2O: { field: H2O_PRF_T1_2_1, units: "mmol mol-1", measurement: H2O }
+    H2O_06: { field: H2O_PRF_T1_X_1, units: "mmol mol-1", measurement: H2O }
+    H2O_07: { field: H2O_PRF_T1_X_2, units: "mmol mol-1", measurement: H2O }
+    H2O_08: { field: H2O_PRF_T1_X_3, units: "mmol mol-1", measurement: H2O }
+    H2O_09: { field: H2O_PRF_T1_X_4, units: "mmol mol-1", measurement: H2O }
+    H2O_10: { field: H2O_PRF_T1_X_5, units: "mmol mol-1", measurement: H2O }
+    H2O_11: { field: H2O_PRF_T1_X_6, units: "mmol mol-1", measurement: H2O }
+    H2O_12: { field: H2O_PRF_T1_X_7, units: "mmol mol-1", measurement: H2O }

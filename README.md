@@ -3,9 +3,16 @@
 This folder contains configuration files needed to run `POET` scripts. Currently used by the
 packages [dataflow](https://github.com/holukas/dataflow) and [dbc-influxdb](https://github.com/holukas/dbc-influxdb).
 
-Note that the database configuration is not stored in `configs`, but in a separate folder that has the same name as
-the `configs` folder but with the suffix `_secret`. If the `configs` folder is given e.g. in the script `dataflow`
-as `C:\configs`, then the database configuration is assumed to be stored in folder `C:\configs_secret`.
+Note that the database configuration is not stored in `configs`, but in a separate folder that has the same name as  
+the `configs` folder but with the suffix `_secret`. If the `configs` folder is given e.g. in the script `dataflow`  
+as `C:\configs`, then the database configuration is assumed to be stored in folder `C:\configs_secret`. The `_secret`  
+folder only contains one single file `dbconf.yaml` with the following info:
+
+```
+url: <URL AND PORT OF DATABASE>
+token: <TOKEN FROM INFLUXDB>
+org: <ORG>
+```
 
 ## dirs.yaml
 
@@ -26,7 +33,7 @@ as `C:\configs`, then the database configuration is assumed to be stored in fold
 
 ## filegroups folder
 
-- Generalized, the hierarchy is:
+- In general, the hierarchy is:
     - `configs` > `filegroups` > `<datatype>` > `<site>` > `<filegroup>` > `<filetype>`
     - `filegroups` ... name of the folder in the repo
     - `<datatype>` ... `raw` or `processing`
@@ -110,11 +117,11 @@ as `C:\configs`, then the database configuration is assumed to be stored in fold
 
 #### data_raw_freq
 
-- string that describes the (nominal) time resolution of data files, e.g. `30min`
-- can be a list of strings for `-ALTERNATING-` filetypes, e.g. `[ 30min, irregular ]`
+- string that describes the (nominal) time resolution of data files, e.g. `30T`
+- can be a list of strings for `-ALTERNATING-` filetypes, e.g. `[ 30T, irregular ]`
 - follows the convention of
   the `pandas` [period aliases](https://pandas.pydata.org/docs/user_guide/timeseries.html#period-aliases)
-- `T` for 1MIN time resolution, `30min` for 30MIN time resolution, `1H` for hourly etc...
+- `T` for 1MIN time resolution, `30T` for 30MIN time resolution, `1H` for hourly etc...
 
 #### data_skiprows
 
@@ -134,22 +141,24 @@ as `C:\configs`, then the database configuration is assumed to be stored in fold
   files contain only variable names (first row).
 - Is `false` if the file does not contain any header row, this is the case especially for older files.
 
-#### data_index_col
+#### data_timestamp_column
 
-- `int` or `-9999`
+- `int` or `str` or `-9999`
 - location of the timestamp column
 - Example: `0` if the timestamp is found in the first column of the file
+- Example: `TIMESTAMP_END` if the timestamp is found in the column with this name
 - Example: `-9999` if there is no timestamp info in the file. Instead, in this case the timestamp has to be constructed
   from other available time/date info using a method defined in `data_build_timestamp`.
 
-#### data_parse_dates
+#### data_timestamp_timezone_offset_to_utc_hours
 
-- `list` of `int` or `false`
-- typically `[ 0 ]` to parse dates using the first column
-- `false` if there is no timestamp info in the file. Instead, in this case the timestamp has to be constructed from
-  other available time/date info using a method defined in `data_build_timestamp`.
+- `int`
+- offset of the timestamp in relation to UTC
+- important because the database stores all data in UTC
+- Example: `1` sets the data timestamp index to timezone `UTC+01:00`, which corresponds to CET. Note that the timestamp
+  per se is not altered, only the timezone info is added.
 
-#### data_date_parser
+#### data_timestamp_format
 
 - `string` or `false`
 - parsing string to parse the datetime info
@@ -165,27 +174,19 @@ as `C:\configs`, then the database configuration is assumed to be stored in fold
       index 0), month (second column), day (third column), hour (fourth column) and minutes (fifth column, column index
       4).
     - `"YEAR+DOY+TIME"` to build the timestamp from the columns `YEAR`, `DOY` and `TIME`.
-    - In these cases the `data_index_column` must be `-9999` because there is no index column in these data files.
-    - In these cases `data_parse_dates` must be `false` because there is no index column in these data files.
-    - In these cases `data_date_parser` must be `false` because there is no index column in these data files.
+    - In these cases the `data_timestamp_column` must be `-9999` because there is no index column in these data files.
+    - In these cases `data_timestamp_format` must be `false` because there is no index column in these data files.
 
 #### data_keep_good_rows
 
-- `list` of `int` or `list` of 1x int and 2x `list` or `false`
-- Some files have an identifier in the first column that identifies good data rows or different data sources.
+- `list` of `int` or `false`
+- some files have an identifier in the first column that identifies good data rows
 - this setting was introduced because some data files stored data from different data sources in the same file-
 - `[ 0, 104 ]` keeps all data rows where the data row starts with `104`, whereby `0` means that the `104` is searched in
-  the first column.
+  the first column
 - `[ 0, 102, 202 ]` keeps all data rows where the data row starts with `102` *or* `202`, whereby `0` means that `102`
   and `202` are searched in the first column. In this case the variables for ID `102` are described in `data_vars`, for
-  ID `202` in `data_vars2`. Files with this setting produce two dataframes (internally), one for each ID.
-- `[ 0, [ 103, 104, 105 ], [ 203, 204, 205 ] ]` keeps all data rows where the data row starts with `103` *or* `204`
-  *or* `105`, and then uses variable info from `data_vars`. Also keeps all data rows where the data row starts
-  with `203` *or* `204` *or* `205`, and then uses variable info from `data_vars2`. `0` means that all IDs are searched
-  in the first column. Files with this setting produce two dataframes (internally), one for each ID. In this case it is
-  important that two lists are provided, it does not work with one list and one int
-  e.g. ~~`[ 0, [ 103, 104, 105 ], 203 ] ]`~~. Generally, this settings is used when files have the same structure except
-  for the ID numbers.
+  ID `202` in `data_vars2`. Files with this setting produce two dataframes, one for each ID.
 - Different IDs can have different time resolutions, see setting `data_raw_freq`.
 - Yes this makes a lot much more confusing, doesn't it?
 
@@ -237,10 +238,15 @@ as `C:\configs`, then the database configuration is assumed to be stored in fold
 
 #### data_version
 
-- `string`
-- used to describe the version of the data
-- `raw` for raw data
-- `Level-0` for Level-0 (preliminary) flux data
+- `string`, used to describe the version of the data
+- `raw`: raw data
+- `eddypro_level-0`: Level-0 (preliminary) flux data,
+  see [Flux Processing Chain](https://www.swissfluxnet.ethz.ch/index.php/data/ecosystem-fluxes/flux-processing-chain/)
+- `eddypro_level-1`: Level-1 flux data,
+  see [Flux Processing Chain](https://www.swissfluxnet.ethz.ch/index.php/data/ecosystem-fluxes/flux-processing-chain/)
+- `fluxnet_ww2020`: [FLUXNET/ICOS Warm Winter 2020 ecosystem eddy covariance flux product release 2022-1](https://www.icos-cp.eu/data-products/2G60-ZHAK)
+- `meteoscreening_mst`: quality-screened meteo data, using the old Python MeteoScreeningTool
+- `meteoscreening_diive`: quality-screened meteo data, using `diive`, e.g. using its meteoscreening notebooks
 - more will be added in the future
 
 #### data_vars_parse_pos_indices
@@ -265,23 +271,55 @@ as `C:\configs`, then the database configuration is assumed to be stored in fold
     - `<RAWVAR>: { field: <VAR>, units: <UNITS>, measurement: <MEASUREMENT> }`
         - `<RAWVAR>` ... name of original raw data variable, e.g. `PT100_2_AVG`
         - `<VAR>` ... name of renamed variable, following naming convention, e.g. `T_RAD_T1_2_1`
-        - `<UNITS>` ... `false` if units are given in data file, otherwise a string e.g. `degC`; units of `VAR`, after
+        - `<UNITS>` ... `false` if units are given in data file, otherwise a string e.g. `degC`; units of `VAR`, *after*
           applying `gain`, e.g. `degC`
     - There are some optional parameters that can be
       used: `<RAWVAR>: { field: <VAR>, units: <UNITS>, gain: <GAIN>, rawfunc: <RAWFUNC>, measurement: <MEASUREMENT> }`
         - `<GAIN>` ... OPTIONAL gain (`float` or `int`) that is applied to `<RAWVAR>` before upload to the
           database, `<UNITS>` describes the units of `<RAWVAR>` *after* the application of `<GAIN>`. Assumed `1` if not
-          given. Typically used to e.g. convert soil water content from `m3 m-3` to `%` by applying `gain: 100`.
+          given. Typically used to e.g. convert soil water content from `m3 m-3` to `%` by applying `gain: 100.0` (
+          float).
         - `<RAWFUNC>` ... OPTIONAL list; function executed on raw data to produce a new variable, e.g. for the
-          calculation of `LW_IN_T1_2_1` from `PT100_2_AVG` and `LWin_2_AVG`, using the function `calc_lwin`.
-          Important: `rawfunc: <RAWFUNC>` must not be given if no rawfunc is executed, this means that `rawfunc: false`
-          will not work. Currently there are some rawfuncs defined where they were needed, here are some example:
-            - `rawfunc: [ calc_lw, PT100_2_AVG, LWin_2_AVG, LW_IN_T1_2_1 ]` uses the function `calc_lw` to calculate the
-              new variable `LW_IN_T1_2_1` from the available raw data variables `PT100_2_AVG` and `LWin_2_AVG`.
-            - `rawfunc: [ calc_swc ]` calculates soil water content from `SDP` variables, see e.g.
-              filetype `FRU10-RAW-LOGGER-200507151312-ALTERNATING-ID142-A-30MIN`. In this example, a site specific
-              calculation is performed, `dataflow` checks the site and then applies the correct function to
-              run `calc_swc`.
+          calculation of `LW_IN_T1_2_1` from `PT100_2_AVG` and `LWin_2_AVG`, using the function `calc_lwin`. The
+          relevant function is defined in the Python script [dataflow](https://github.com/holukas/dataflow).
+          Important: `rawfunc: <RAWFUNC>` must not be given if no rawfunc is required, this means that `rawfunc: false`
+          will not work. Currently there are some rawfuncs defined where they were needed, see the *List of rawfuncs*
+          below. The currently implemented functions are shown in
+          the [dataflow repo here](https://github.com/holukas/dataflow/tree/main/dataflow/rawfuncs).
+
+##### List of rawfuncs
+
+- **Calculate long-wave incoming radiation (`LW_IN`)**:
+  `LWin_1_AVG: { field: LW_IN_RAW_T1_2_1, units: false, rawfunc: [ calc_lw, PT100_1_AVG, LWin_1_AVG, LW_IN_T1_2_1 ], measurement: _RAW }`
+  The rawfunc `calc_lw` is used to calculate the new variable `LW_IN_T1_2_1` from the available raw data
+  variables `PT100_2_AVG` (temperature of the radiation sensor in °C) and `LWin_1_AVG` (raw signal of LW_IN in mV).
+- **Calculate soil water content (`SWC`) from SDP**:
+  `Theta_11_AVG: { field: SDP_GF1_0.05_1, units: mV, rawfunc: [ calc_swc ], measurement: SDP }`
+  The rawfunc `calc_swc` is used to calculate the new variable `SWC` from `SDP` (soil dielectric permittivity,
+  unitless), whereby in this example the original raw name for `SDP` is called `Theta_11_AVG`. The calculation is
+  site-specific, `dataflow` checks the site and then applies the correct function to run `calc_swc`.
+- **Temperature-correction for `O2` measurements**:
+  `O2_GF4_0x1_1_Avg: { field: O2_GF4_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF4_0x1_1_Avg, TO2_GF4_0x1_1_Avg ], measurement: O2 }`
+  The rawfunc `correct_o2` is used to calculate temperature-corrected *soil* O2 (in %) from the original O2
+  measurement `O2_GF4_0x1_1_Avg` (in %) and `TO2_GF4_0x1_1_Avg` (temperature of the O2 sensor in degC). The calculation
+  is site-specific, `dataflow` checks the site and then applies the correct function to run `correct_o2`. The original
+  O2 measurement is replaced by the corrected version.
+    - **Apply gain between dates**:
+      `SHF_2_AVG: { field: G_GF1_0.03_2, units: W m-2, gain: 1.0, rawfunc: [ apply_gain_between_dates, "2010-03-31 10:30:00", "2010-07-28 09:30:00", 1.0115667782544568 ], measurement: G }`
+      The rawfunc `apply_gain_between_dates` is used to apply gain `1.0115667782544568` to the variable `SHF_2_AVG`, but
+      only between the provided dates, in this case all values between `2010-03-31 10:30:00` and `2010-07-28 09:30:00`
+      are multiplied by the gain. The dates include the time and are inclusive (gain is applied also to the provided
+      start and stop dates). Important: for this rawfunc the regular gain of the respetive time series also needs to be
+      provided as float, here `gain: 1.0`. The original measurement `SHF_2_AVG` is replaced by the corrected values and
+      is stored to the database as `G_GF1_0.03_2`.
+    - **Add offset between dates**:
+      `TS_GF1_0x40_1: { field: TS_GF1_0.4_1, units: false, offset: 0.0, rawfunc: [ add_offset_between_dates, "2018-11-04 17:59:00", "2018-12-20 10:33:00", 52 ], measurement: TS }`  ``
+      The rawfunc `add_offset_between_dates` is used to add offset `52` to the variable `TS_GF1_0x40_1`, but only
+      between the provided dates, in this case the offset is added to all values between `2018-11-04 17:59:00`
+      and `2018-12-20 10:33:00`. The dates include the time and are inclusive (offset is added also to the provided
+      start and stop dates). Important: for this rawfunc the regular offset of the respetive time series also needs to
+      be provided as float, here `offset: 0.0`. The original measurement `TS_GF1_0x40_1` is replaced by the corrected
+      values and is stored to the database as `TS_GF1_0.4_1`.
 
 #### data_vars2
 

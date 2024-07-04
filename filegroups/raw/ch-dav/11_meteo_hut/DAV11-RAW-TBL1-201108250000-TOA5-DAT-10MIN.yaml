@@ -18,9 +18,9 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
   data_raw_freq: 10min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -28,7 +28,6 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
@@ -36,9 +35,9 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
     Band_147_Avg: { field: BAND_TREE147_1_1, units: false, measurement: BAND }
     Band_148_Avg: { field: BAND_TREE148_1_1, units: false, measurement: BAND }
     Batt_Volt_Avg: { field: BV_FF0_0_1, units: false, measurement: _instrumentmetrics }
-    BodenFeu05_Avg: { field: SWC_FF0_0.05_1, units: "%", gain: 100, measurement: SWC }
-    BodenFeu15_Avg: { field: SWC_FF0_0.15_1, units: "%", gain: 100, measurement: SWC }
-    BodenFeu50_Avg: { field: SWC_FF0_0.5_1, units: "%", gain: 100, measurement: SWC }
+    BodenFeu05_Avg: { field: SWC_FF0_0.05_1, units: "%", gain: 100.0, measurement: SWC }
+    BodenFeu15_Avg: { field: SWC_FF0_0.15_1, units: "%", gain: 100.0, measurement: SWC }
+    BodenFeu50_Avg: { field: SWC_FF0_0.5_1, units: "%", gain: 100.0, measurement: SWC }
     BodenTemp05_C_Avg: { field: TS_FF0_0.05_1, units: false, measurement: TS }
     BodenTemp15_C_Avg: { field: TS_FF0_0.15_1, units: false, measurement: TS }
     BodenTemp50_C_Avg: { field: TS_FF0_0.5_1, units: false, measurement: TS }
@@ -103,15 +102,15 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
     StemCO2_411_600_Avg: { field: CO2_BOLE_TREE411_6_1, units: false, measurement: CO2_BOLE }
     StemTC_148_Avg: { field: T_BOLE_TREE148_1_1, units: false, measurement: T_BOLE }
     StemTC_296_Avg: { field: T_BOLE_TREE296_1_1, units: false, measurement: T_BOLE }
-    SWC1_15_Avg: { field: SWC_H1_0.15_1, units: "%", gain: 100, measurement: SWC }
-    SWC1_50_Avg: { field: SWC_H1_0.5_1, units: "%", gain: 100, measurement: SWC }
-    SWC1_80_Avg: { field: SWC_H1_0.8_1, units: "%", gain: 100, measurement: SWC }
-    SWC2_15_Avg: { field: SWC_H1_0.15_2, units: "%", gain: 100, measurement: SWC }
-    SWC2_50_Avg: { field: SWC_H1_0.5_2, units: "%", gain: 100, measurement: SWC }
-    SWC2_80_Avg: { field: SWC_H1_0.8_2, units: "%", gain: 100, measurement: SWC }
-    SWC3_15_Avg: { field: SWC_H1_0.15_3, units: "%", gain: 100, measurement: SWC }
-    SWC3_50_Avg: { field: SWC_H1_0.5_3, units: "%", gain: 100, measurement: SWC }
-    SWC3_80_Avg: { field: SWC_H1_0.8_3, units: "%", gain: 100, measurement: SWC }
-    SWC4_15_Avg: { field: SWC_H1_0.15_4, units: "%", gain: 100, measurement: SWC }
-    SWC4_50_Avg: { field: SWC_H1_0.5_4, units: "%", gain: 100, measurement: SWC }
-    SWC4_80_Avg: { field: SWC_H1_0.8_4, units: "%", gain: 100, measurement: SWC }
+    SWC1_15_Avg: { field: SWC_H1_0.15_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC1_50_Avg: { field: SWC_H1_0.5_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC1_80_Avg: { field: SWC_H1_0.8_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC2_15_Avg: { field: SWC_H1_0.15_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC2_50_Avg: { field: SWC_H1_0.5_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC2_80_Avg: { field: SWC_H1_0.8_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC3_15_Avg: { field: SWC_H1_0.15_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC3_50_Avg: { field: SWC_H1_0.5_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC3_80_Avg: { field: SWC_H1_0.8_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC4_15_Avg: { field: SWC_H1_0.15_4, units: "%", gain: 100.0, measurement: SWC }
+    SWC4_50_Avg: { field: SWC_H1_0.5_4, units: "%", gain: 100.0, measurement: SWC }
+    SWC4_80_Avg: { field: SWC_H1_0.8_4, units: "%", gain: 100.0, measurement: SWC }

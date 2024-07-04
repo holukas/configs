@@ -25,9 +25,9 @@ DAV10-RAW-TBL1-201501010645-CSV-GZ-1MIN:
   data_raw_freq: min
   data_skiprows: false
   data_headerrows: [ 0 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -35,78 +35,77 @@ DAV10-RAW-TBL1-201501010645-CSV-GZ-1MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
     Batt_V: { field: SV_LOGGER_T1_35_1, units: "V", measurement: _instrumentmetrics }
-    DNTP_LOGGER_T1_35_1: { field: DNTP_LOGGER_T1_35_1, units: "ms", gain: 1, measurement: _instrumentmetrics }
-    HEAT_HS50_T1B1_35_1_FLAG: { field: HEAT_HS50_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
+    DNTP_LOGGER_T1_35_1: { field: DNTP_LOGGER_T1_35_1, units: "ms", measurement: _instrumentmetrics }
+    HEAT_HS50_T1B1_35_1_FLAG: { field: HEAT_HS50_T1B1_35_1, units: "flag", measurement: _instrumentmetrics }
     HEAT_LI72_T1B1_35_1_FLAG: { field: HEAT_IRGA72_T1_35_1, units: "flag", measurement: _instrumentmetrics }
-    HEAT_R350_T1B1_35_1_FLAG: { field: HEAT_R350_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
-    LW_IN_RAW_T1_35_1_Avg: { field: LW_IN_RAW_T1_35_1, units: "W m-2", gain: 1, measurement: _RAW }
-    LW_IN_RAW_T1_35_1_Std: { field: LW_IN_RAW_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _RAW }
-    LW_IN_RAW_T1_35_2_Avg: { field: LW_IN_RAW_T1_35_2, units: "W m-2", gain: 1, measurement: _RAW }
-    LW_IN_RAW_T1_35_2_Std: { field: LW_IN_RAW_SD_T1_35_2, units: "W m-2", gain: 1, measurement: _RAW }
-    LW_IN_T1_35_1_Avg: { field: LW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_IN_T1_35_1_Std: { field: LW_IN_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
-    LW_IN_T1_35_2_Avg: { field: LW_IN_T1_35_2, units: "W m-2", gain: 1, measurement: LW }
-    LW_IN_T1_35_2_Std: { field: LW_IN_SD_T1_35_2, units: "W m-2", gain: 1, measurement: _SD }
-    LW_IN_T1B3_35_1_Avg: { field: LW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_IN_T1B3_35_1_Std: { field: LW_IN_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
-    LW_OUT_RAW_T1_35_1_Avg: { field: LW_OUT_RAW_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_RAW_T1_35_1_Std: { field: LW_OUT_RAW_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
-    LW_OUT_RAW_T1_35_2_Avg: { field: LW_OUT_RAW_T1_35_2, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_RAW_T1_35_2_Std: { field: LW_OUT_RAW_SD_T1_35_2, units: "W m-2", gain: 1, measurement: _SD }
-    LW_OUT_T1_35_1_Avg: { field: LW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_T1_35_1_Std: { field: LW_OUT_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
-    LW_OUT_T1_35_2_Avg: { field: LW_OUT_T1_35_2, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_T1_35_2_Std: { field: LW_OUT_SD_T1_35_2, units: "W m-2", gain: 1, measurement: _SD }
-    LW_OUT_T1B3_35_1_Avg: { field: LW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_T1B3_35_1_Std: { field: LW_OUT_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
+    HEAT_R350_T1B1_35_1_FLAG: { field: HEAT_R350_T1B1_35_1, units: "flag", measurement: _instrumentmetrics }
+    LW_IN_RAW_T1_35_1_Avg: { field: LW_IN_RAW_T1_35_1, units: "W m-2", measurement: _RAW }
+    LW_IN_RAW_T1_35_1_Std: { field: LW_IN_RAW_SD_T1_35_1, units: "W m-2", measurement: _RAW }
+    LW_IN_RAW_T1_35_2_Avg: { field: LW_IN_RAW_T1_35_2, units: "W m-2", measurement: _RAW }
+    LW_IN_RAW_T1_35_2_Std: { field: LW_IN_RAW_SD_T1_35_2, units: "W m-2", measurement: _RAW }
+    LW_IN_T1_35_1_Avg: { field: LW_IN_T1_35_1, units: "W m-2", measurement: LW }
+    LW_IN_T1_35_1_Std: { field: LW_IN_SD_T1_35_1, units: "W m-2", measurement: _SD }
+    LW_IN_T1_35_2_Avg: { field: LW_IN_T1_35_2, units: "W m-2", measurement: LW }
+    LW_IN_T1_35_2_Std: { field: LW_IN_SD_T1_35_2, units: "W m-2", measurement: _SD }
+    LW_IN_T1B3_35_1_Avg: { field: LW_IN_T1_35_1, units: "W m-2", measurement: LW }
+    LW_IN_T1B3_35_1_Std: { field: LW_IN_SD_T1_35_1, units: "W m-2", measurement: _SD }
+    LW_OUT_RAW_T1_35_1_Avg: { field: LW_OUT_RAW_T1_35_1, units: "W m-2", measurement: LW }
+    LW_OUT_RAW_T1_35_1_Std: { field: LW_OUT_RAW_SD_T1_35_1, units: "W m-2", measurement: _SD }
+    LW_OUT_RAW_T1_35_2_Avg: { field: LW_OUT_RAW_T1_35_2, units: "W m-2", measurement: LW }
+    LW_OUT_RAW_T1_35_2_Std: { field: LW_OUT_RAW_SD_T1_35_2, units: "W m-2", measurement: _SD }
+    LW_OUT_T1_35_1_Avg: { field: LW_OUT_T1_35_1, units: "W m-2", measurement: LW }
+    LW_OUT_T1_35_1_Std: { field: LW_OUT_SD_T1_35_1, units: "W m-2", measurement: _SD }
+    LW_OUT_T1_35_2_Avg: { field: LW_OUT_T1_35_2, units: "W m-2", measurement: LW }
+    LW_OUT_T1_35_2_Std: { field: LW_OUT_SD_T1_35_2, units: "W m-2", measurement: _SD }
+    LW_OUT_T1B3_35_1_Avg: { field: LW_OUT_T1_35_1, units: "W m-2", measurement: LW }
+    LW_OUT_T1B3_35_1_Std: { field: LW_OUT_SD_T1_35_1, units: "W m-2", measurement: _SD }
     LWin_T1B3_35m_1_Avg: { field: LW_IN_T1_35_1, units: "W m-2", measurement: LW }
     LWout_T1B3_35m_1_Avg: { field: LW_OUT_T1_35_1, units: "W m-2", measurement: LW }
-    PPFD_DIF_IN_T1_35_1_Avg: { field: PPFD_DIF_IN_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
-    PPFD_DIF_IN_T1_35_1_Std: { field: PPFD_DIF_IN_SD_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: _SD }
-    PPFD_IN_T1_35_2_Avg: { field: PPFD_IN_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
-    PPFD_IN_T1_35_2_Std: { field: PPFD_IN_SD_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: _SD }
-    PPFD_IN_T1_35_3_Avg: { field: PPFD_IN_T1_35_3, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
-    PPFD_IN_T1_35_3_Std: { field: PPFD_IN_SD_T1_35_3, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+    PPFD_DIF_IN_T1_35_1_Avg: { field: PPFD_DIF_IN_T1_35_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_DIF_IN_T1_35_1_Std: { field: PPFD_DIF_IN_SD_T1_35_1, units: "umol m-2 s-1", measurement: _SD }
+    PPFD_IN_T1_35_2_Avg: { field: PPFD_IN_T1_35_2, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_T1_35_2_Std: { field: PPFD_IN_SD_T1_35_2, units: "umol m-2 s-1", measurement: _SD }
+    PPFD_IN_T1_35_3_Avg: { field: PPFD_IN_T1_35_3, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_T1_35_3_Std: { field: PPFD_IN_SD_T1_35_3, units: "umol m-2 s-1", measurement: _SD }
     PPFD_IN_T1B3_35_2_Avg: { field: PPFD_IN_T1_35_2, units: "umol m-2 s-1", measurement: PPFD }
     PPFD_IN_T1B3_35_2_Std: { field: PPFD_IN_SD_T1_35_2, units: "umol m-2 s-1", measurement: _SD }
-    PPFD_OUT_T1_35_1_Avg: { field: PPFD_OUT_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
-    PPFD_OUT_T1_35_1_Std: { field: PPFD_OUT_SD_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+    PPFD_OUT_T1_35_1_Avg: { field: PPFD_OUT_T1_35_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_OUT_T1_35_1_Std: { field: PPFD_OUT_SD_T1_35_1, units: "umol m-2 s-1", measurement: _SD }
     PPFD_OUT_T1B3_35_1_Avg: { field: PPFD_OUT_T1_35_1, units: "umol m-2 s-1", measurement: PPFD }
     PPFD_OUT_T1B3_35_1_Std: { field: PPFD_OUT_SD_T1_35_1, units: "umol m-2 s-1", measurement: _SD }
-    Record: { field: RECORD_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    SUN_T1_35_1: { field: SUN_T1_35_1, units: "boolean", gain: 1, measurement: SUN }
-    SV_LOGGER_T1_35_1: { field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
-    SW_IN_T1_35_1_Avg: { field: SW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    SW_IN_T1_35_1_Std: { field: SW_IN_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
-    SW_IN_T1_35_2_Avg: { field: SW_IN_T1_35_2, units: "W m-2", gain: 1, measurement: SW }
-    SW_IN_T1_35_2_Std: { field: SW_IN_SD_T1_35_2, units: "W m-2", gain: 1, measurement: _SD }
-    SW_IN_T1B3_35_1_Avg: { field: SW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    SW_IN_T1B3_35_1_Std: { field: SW_IN_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
-    SW_OUT_T1_35_1_Avg: { field: SW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    SW_OUT_T1_35_1_Std: { field: SW_OUT_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
-    SW_OUT_T1_35_2_Avg: { field: SW_OUT_T1_35_2, units: "W m-2", gain: 1, measurement: SW }
-    SW_OUT_T1_35_2_Std: { field: SW_OUT_SD_T1_35_2, units: "W m-2", gain: 1, measurement: _SD }
-    SW_OUT_T1B3_35_1_Avg: { field: SW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    SW_OUT_T1B3_35_1_Std: { field: SW_OUT_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
+    Record: { field: RECORD_T1_0_1, units: false, measurement: _instrumentmetrics }
+    SUN_T1_35_1: { field: SUN_T1_35_1, units: "boolean", measurement: SUN }
+    SV_LOGGER_T1_35_1: { field: SV_LOGGER_T1_35_1, units: "V", measurement: _instrumentmetrics }
+    SW_IN_T1_35_1_Avg: { field: SW_IN_T1_35_1, units: "W m-2", measurement: SW }
+    SW_IN_T1_35_1_Std: { field: SW_IN_SD_T1_35_1, units: "W m-2", measurement: _SD }
+    SW_IN_T1_35_2_Avg: { field: SW_IN_T1_35_2, units: "W m-2", measurement: SW }
+    SW_IN_T1_35_2_Std: { field: SW_IN_SD_T1_35_2, units: "W m-2", measurement: _SD }
+    SW_IN_T1B3_35_1_Avg: { field: SW_IN_T1_35_1, units: "W m-2", measurement: SW }
+    SW_IN_T1B3_35_1_Std: { field: SW_IN_SD_T1_35_1, units: "W m-2", measurement: _SD }
+    SW_OUT_T1_35_1_Avg: { field: SW_OUT_T1_35_1, units: "W m-2", measurement: SW }
+    SW_OUT_T1_35_1_Std: { field: SW_OUT_SD_T1_35_1, units: "W m-2", measurement: _SD }
+    SW_OUT_T1_35_2_Avg: { field: SW_OUT_T1_35_2, units: "W m-2", measurement: SW }
+    SW_OUT_T1_35_2_Std: { field: SW_OUT_SD_T1_35_2, units: "W m-2", measurement: _SD }
+    SW_OUT_T1B3_35_1_Avg: { field: SW_OUT_T1_35_1, units: "W m-2", measurement: SW }
+    SW_OUT_T1B3_35_1_Std: { field: SW_OUT_SD_T1_35_1, units: "W m-2", measurement: _SD }
     SWin_T1B3_35m_1_Avg: { field: SW_IN_T1_35_1, units: "W m-2", measurement: SW }
     SWout_T1B3_35m_1_Avg: { field: SW_OUT_T1_35_1, units: "W m-2", measurement: SW }
-    T_LOGGER_T1_35_1: { field: T_LOGGER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_RAD_T1_35_1_Avg: { field: T_RAD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_RAD_T1_35_1_Std: { field: T_RAD_SD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_RAD_T1_35_2_Avg: { field: T_RAD_T1_35_2, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_RAD_T1_35_2_Std: { field: T_RAD_SD_T1_35_2, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_RAD_T1B3_35_1_Avg: { field: T_RAD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_RAD_T1B3_35_1_Std: { field: T_RAD_SD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    TA_HEAT_T1_35_1_Avg: { field: TA_HEAT_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    TA_HEAT_T1_35_1_Std: { field: TA_HEAT_SD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    TA_HEAT_T1B3_35_1_Avg: { field: TA_HEAT_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    TA_HEAT_T1B3_35_1_Std: { field: TA_HEAT_SD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_T1_35_1: { field: T_LOGGER_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_T1_35_1_Avg: { field: T_RAD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_T1_35_1_Std: { field: T_RAD_SD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_T1_35_2_Avg: { field: T_RAD_T1_35_2, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_T1_35_2_Std: { field: T_RAD_SD_T1_35_2, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_T1B3_35_1_Avg: { field: T_RAD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_T1B3_35_1_Std: { field: T_RAD_SD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    TA_HEAT_T1_35_1_Avg: { field: TA_HEAT_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    TA_HEAT_T1_35_1_Std: { field: TA_HEAT_SD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    TA_HEAT_T1B3_35_1_Avg: { field: TA_HEAT_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    TA_HEAT_T1B3_35_1_Std: { field: TA_HEAT_SD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
     TaHeat_T1_35m_Avg: { field: TA_HEAT_T1_35_1, units: "degC", measurement: _instrumentmetrics }
     TCNR1_T1B3_35m_1_Avg: { field: T_RAD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
     Tlog2_T1_35m: { field: T_LOGGER_T1_35_1, units: "degC", measurement: _instrumentmetrics }

@@ -19,9 +19,9 @@ DAV10-RAW-RAD-201407161745-CSV-GZ-1MIN:
   data_raw_freq: min
   data_skiprows: false
   data_headerrows: [ 0 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -29,17 +29,16 @@ DAV10-RAW-RAD-201407161745-CSV-GZ-1MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    Record: { field: RECORD_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    Batt_V: { field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
-    TCNR1_T1B3_35m_1_Avg: { field: T_RAD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    Tlog2_T1_35m: { field: T_LOGGER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    SWin_T1B3_35m_1_Avg: { field: SW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    LWin_T1B3_35m_1_Avg: { field: LW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    SWout_T1B3_35m_1_Avg: { field: SW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    LWout_T1B3_35m_1_Avg: { field: LW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    TaHeat_T1_35m_Avg: { field: TA_HEAT_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    Record: { field: RECORD_T1_0_1, units: false, measurement: _instrumentmetrics }
+    Batt_V: { field: SV_LOGGER_T1_35_1, units: "V", measurement: _instrumentmetrics }
+    TCNR1_T1B3_35m_1_Avg: { field: T_RAD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    Tlog2_T1_35m: { field: T_LOGGER_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    SWin_T1B3_35m_1_Avg: { field: SW_IN_T1_35_1, units: "W m-2", measurement: SW }
+    LWin_T1B3_35m_1_Avg: { field: LW_IN_T1_35_1, units: "W m-2", measurement: LW }
+    SWout_T1B3_35m_1_Avg: { field: SW_OUT_T1_35_1, units: "W m-2", measurement: SW }
+    LWout_T1B3_35m_1_Avg: { field: LW_OUT_T1_35_1, units: "W m-2", measurement: LW }
+    TaHeat_T1_35m_Avg: { field: TA_HEAT_T1_35_1, units: "degC", measurement: _instrumentmetrics }

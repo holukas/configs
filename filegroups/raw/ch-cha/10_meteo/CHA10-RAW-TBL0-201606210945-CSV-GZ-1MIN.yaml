@@ -1,0 +1,338 @@
+# CH-CHA
+# 10_meteo
+#
+# Note@LW:
+#   During this short time period, the variables LW_IN_T1_2_1 and LW_OUT_T1_2_1 are empty.
+#   Therefore, the variables LW_IN_T1_2_1 and LW_OUT_T1_2_1 are directly calculated
+#   from LW_IN_RAW_AVG_T1_2_1, LW_OUT_RAW_AVG_T1_2_1 and TA_T1_2_1. The (empty) measurements
+#   in the raw data files are ignored.
+#   Calculation of LW variables between 2016-06-20 19:06:00 and 2016-06-29 14:03:00 needed,
+#   this filetype covers a slightly longer time period than that.
+#
+# Note the 'ignore_after: "2016-06-29 15:24:00"' setting for each variable. Used because
+# the last file for this filetype (CH-CHA_iDL_BOX1_1min_20160629-1545.csv.gz) overlaps
+# with the first file (CH-CHA_iDL_BOX1_1min_20160629-1845.csv.gz) of the next filetype
+# (CHA10-RAW-TBL0-201606291845-CSV-GZ-1MIN), which starts already with the
+# timestamp 29/06/2016  15:25:00 as the first record.
+
+
+CHA10-RAW-TBL0-201606210945-CSV-GZ-1MIN:
+  # TOA5
+  # First file: CH-CHA_iDL_BOX1_1min_20160621-0945.csv.gz (starts with record 20/06/2016  18:45:00)
+  # Last file:  CH-CHA_iDL_BOX1_1min_20160629-1545.csv.gz (ends with record 29/06/2016  15:44:00)
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2016-06-21 09:45:00
+  filetype_valid_to: 2016-06-29 15:45:00
+  filetype_id: CH-CHA_iDL_BOX1_1min_*.csv.gz
+  filetype_dateparser: CH-CHA_iDL_BOX1_1min_%Y%m%d-%H%M.csv.gz
+  filetype_gzip: true
+  filegroup: 10_meteo
+  data_raw_freq: min
+  data_skiprows: [ ]
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    BV_iDL_BOX1_0_1_Avg: { field: BV_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    BV_iDL_BOX1_0_1_Std: { field: BV_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    BV_iDL_BOX_0_1_Avg: { field: BV_iDL_BOX_0_1, units: V, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    BV_iDL_BOX_0_1_Std: { field: BV_iDL_SD_BOX_0_1, units: V, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    DNTP_iDL_BOX1_0_1: { field: DNTP_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    DNTP_iDL_BOX_0_1: { field: DNTP_iDL_BOX_0_1, units: ms, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    FOG_M1_1_1_Avg: { field: FOG_M1_1_1, units: false, measurement: FOG, ignore_after: "2016-06-29 15:24:00" }
+    FOG_M1_1_1_Std: { field: FOG_SD_M1_1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    G_GF1_0x03_1_Avg: { field: G_GF1_0.03_1, units: "W m-2", measurement: G, ignore_after: "2016-06-29 15:24:00" }
+    G_GF1_0x03_1_Std: { field: G_SD_GF1_0.03_1, units: "W m-2", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    G_GF1_0x05_1_Avg: { field: G_GF1_0.05_1, units: "W m-2", measurement: G, ignore_after: "2016-06-29 15:24:00" }
+    G_GF1_0x05_1_Std: { field: G_SD_GF1_0.05_1, units: "W m-2", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    G_GF1_0x05_2_Avg: { field: G_GF1_0.05_2, units: "W m-2", measurement: G, ignore_after: "2016-06-29 15:24:00" }
+    G_GF1_0x05_2_Std: { field: G_SD_GF1_0.05_2, units: "W m-2", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    G_GF4_0x02_1_Avg: { field: G_GF4_0.02_1, units: "W m-2", measurement: G, ignore_after: "2016-06-29 15:24:00" }
+    G_GF4_0x02_1_Std: { field: G_SD_GF4_0.02_1, units: "W m-2", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    G_GF5_0x02_1_Avg: { field: G_GF5_0.02_1, units: "W m-2", measurement: G, ignore_after: "2016-06-29 15:24:00" }
+    G_GF5_0x02_1_Std: { field: G_SD_GF5_0.02_1, units: "W m-2", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    HEAT_HS50: { field: HEAT_HS50_X_X_X, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    # Use to calculate Boltzmann corrected for LW_IN, see Note@LW at the top
+    LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: false, rawfunc: [ calc_lw, TA_T1_2_1_Avg, LW_IN_RAW_T1B2_2_1_Avg, LW_IN_T1_2_1 ], measurement: _RAW, ignore_after: "2016-06-29 15:24:00" }
+    LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _RAW, ignore_after: "2016-06-29 15:24:00" }
+    # Ignored, see Note@LW at the top:
+    # LW_IN_T1B2_2_1_Avg: { field: LW_IN_T1_2_1, units: false, measurement: LW, ignore_after: "2016-06-29 15:24:00" }
+    # Ignored, see Note@LW at the top:
+    # LW_IN_T1B2_2_1_Std: { field: LW_IN_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    LW_OUT_RAW_T1B2_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: false, measurement: _RAW, ignore_after: "2016-06-29 15:24:00" }
+    LW_OUT_RAW_T1B2_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: false, measurement: _RAW, ignore_after: "2016-06-29 15:24:00" }
+    # Ignored, see Note@LW at the top:
+    # LW_OUT_T1B2_2_1_Avg: { field: LW_OUT_T1_2_1, units: false, measurement: LW, ignore_after: "2016-06-29 15:24:00" }
+    # Ignored, see Note@LW at the top:
+    # LW_OUT_T1B2_2_1_Std: { field: LW_OUT_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    NETRAD_T1B2_2_1_Avg: { field: NETRAD_T1_2_1, units: false, measurement: NETRAD, ignore_after: "2016-06-29 15:24:00" }
+    NETRAD_T1B2_2_1_Std: { field: NETRAD_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+
+    O2_GF4_0x1_1_Avg: { field: O2_GF4_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF4_0x1_1_Avg, TO2_GF4_0x1_1_Avg ], measurement: O2, ignore_after: "2016-06-29 15:24:00" }
+    O2_GF5_0x1_1_Avg: { field: O2_GF5_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x1_1_Avg, TO2_GF5_0x1_1_Avg ], measurement: O2, ignore_after: "2016-06-29 15:24:00" }
+    O2_GF5_0x2_1_Avg: { field: O2_GF5_0.2_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x2_1_Avg, TO2_GF5_0x2_1_Avg ], measurement: O2, ignore_after: "2016-06-29 15:24:00" }
+
+    O2_GF4_0x1_1_Std: { field: O2_SD_GF4_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    O2_GF5_0x1_1_Std: { field: O2_SD_GF5_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    O2_GF5_0x2_1_Std: { field: O2_SD_GF5_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    P_RAIN_GF1_0x5_1_Std: { field: PREC_RAIN_SD_GF1_0.5_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    P_RAIN_GF1_0x5_1_Tot: { field: PREC_RAIN_TOT_GF1_0.5_1, units: false, measurement: PREC, ignore_after: "2016-06-29 15:24:00" }
+    PA_GF1_0x9_1_Avg: { field: PA_GF1_0.9_1, units: false, measurement: PA, ignore_after: "2016-06-29 15:24:00" }
+    PA_GF1_0x9_1_Std: { field: PA_SD_GF1_0.9_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    PPFD_IN_T1B2_2_1_Avg: { field: PPFD_IN_T1_2_1, units: false, measurement: PPFD, ignore_after: "2016-06-29 15:24:00" }
+    PPFD_IN_T1B2_2_1_Std: { field: PPFD_IN_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    PPFD_IN_T1B2_2_2_Avg: { field: PPFD_IN_T1_2_2, units: false, measurement: PPFD, ignore_after: "2016-06-29 15:24:00" }
+    PPFD_IN_T1B2_2_2_Std: { field: PPFD_IN_SD_T1_2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    PPFD_OUT_T1B2_2_2_Avg: { field: PPFD_OUT_T1_2_2, units: false, measurement: PPFD, ignore_after: "2016-06-29 15:24:00" }
+    PPFD_OUT_T1B2_2_2_Std: { field: PPFD_OUT_SD_T1_2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    Record: { field: RECORD_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    RECORD: { field: RECORD_X_X_X, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    RH_T1_2_1_Avg: { field: RH_T1_2_1, units: false, measurement: RH, ignore_after: "2016-06-29 15:24:00" }
+    RH_T1_2_1_Std: { field: RH_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDI12_Power: { field: SDI12_Power_X_X_X, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x1_2_Avg: { field: SDP_GF1_0.1_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x1_2_Std: { field: SDP_SD_GF1_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x05_1_Avg: { field: SDP_GF1_0.05_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x05_1_Std: { field: SDP_SD_GF1_0.05_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x05_2_Avg: { field: SDP_GF1_0.05_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x05_2_Std: { field: SDP_SD_GF1_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x10_1_Avg: { field: SDP_GF1_0.1_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x10_1_Std: { field: SDP_SD_GF1_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x15_1_Avg: { field: SDP_GF1_0.15_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x15_1_Std: { field: SDP_SD_GF1_0.15_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x15_2_Avg: { field: SDP_GF1_0.15_2, units: V, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x15_2_Std: { field: SDP_SD_GF1_0x15_2, units: V, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x20_1_Avg: { field: SDP_GF1_0.2_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x20_1_Std: { field: SDP_SD_GF1_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x20_2_Avg: { field: SDP_GF1_0.2_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x20_2_Std: { field: SDP_SD_GF1_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x25_2_Avg: { field: SDP_GF1_0.25_2, units: V, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x25_2_Std: { field: SDP_SD_GF1_0x25_2, units: V, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x30_1_Avg: { field: SDP_GF1_0.3_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x30_1_Std: { field: SDP_SD_GF1_0.3_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x30_2_Avg: { field: SDP_GF1_0.3_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x30_2_Std: { field: SDP_SD_GF1_0.3_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x40_1_Avg: { field: SDP_GF1_0.4_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x40_1_Std: { field: SDP_SD_GF1_0.4_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x40_2_Avg: { field: SDP_GF1_0.40_2, units: V, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x40_2_Std: { field: SDP_SD_GF1_0x40_2, units: V, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x50_1_Avg: { field: SDP_GF1_0.5_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x50_1_Std: { field: SDP_SD_GF1_0.5_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x50_2_Avg: { field: SDP_GF1_0.5_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x50_2_Std: { field: SDP_SD_GF1_0.5_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x60_2_Avg: { field: SDP_GF1_0.60_2, units: V, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x60_2_Std: { field: SDP_SD_GF1_0x60_2, units: V, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x75_1_Avg: { field: SDP_GF1_0.75_1, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF1_0x75_1_Std: { field: SDP_SD_GF1_0.75_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF4_0x1_2_Avg: { field: SDP_GF4_0.1_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF4_0x1_2_Std: { field: SDP_SD_GF4_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF4_0x2_2_Avg: { field: SDP_GF4_0.2_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF4_0x2_2_Std: { field: SDP_SD_GF4_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF4_0x05_2_Avg: { field: SDP_GF4_0.05_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF4_0x05_2_Std: { field: SDP_SD_GF4_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF5_0x1_2_Avg: { field: SDP_GF5_0.1_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF5_0x1_2_Std: { field: SDP_SD_GF5_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF5_0x2_2_Avg: { field: SDP_GF5_0.2_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF5_0x2_2_Std: { field: SDP_SD_GF5_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF5_0x05_2_Avg: { field: SDP_GF5_0.05_2, units: false, measurement: SDP, ignore_after: "2016-06-29 15:24:00" }
+    SDP_GF5_0x05_2_Std: { field: SDP_SD_GF5_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SV_iDL_BOX1_0_1_Avg: { field: SV_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    SV_iDL_BOX1_0_1_Std: { field: SV_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    SV_iDL_BOX_0_1_Avg: { field: SV_iDL_BOX_0_1, units: V, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    SV_iDL_BOX_0_1_Std: { field: SV_iDL_SD_BOX_0_1, units: V, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SW_IN_T1B2_2_1_Avg: { field: SW_IN_T1_2_1, units: false, measurement: SW, ignore_after: "2016-06-29 15:24:00" }
+    SW_IN_T1B2_2_1_Std: { field: SW_IN_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SW_OUT_T1B2_2_1_Avg: { field: SW_OUT_T1_2_1, units: false, measurement: SW, ignore_after: "2016-06-29 15:24:00" }
+    SW_OUT_T1B2_2_1_Std: { field: SW_OUT_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x1_2_Avg: { field: SWC_GF1_0.1_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x1_2_Std: { field: SWC_SD_GF1_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x05_1_Avg: { field: SWC_GF1_0.05_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x05_1_Std: { field: SWC_SD_GF1_0.05_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x05_2_Avg: { field: SWC_GF1_0.05_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x05_2_Std: { field: SWC_SD_GF1_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x10_1_Avg: { field: SWC_GF1_0.1_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x10_1_Std: { field: SWC_SD_GF1_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x15_1_Avg: { field: SWC_GF1_0.15_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x15_1_Std: { field: SWC_SD_GF1_0.15_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x15_2_Avg: { field: SWC_GF1_0.15_2, units: "%", measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x15_2_Std: { field: SWC_SD_GF1_0x15_2, units: "%", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x20_1_Avg: { field: SWC_GF1_0.2_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x20_1_Std: { field: SWC_SD_GF1_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x20_2_Avg: { field: SWC_GF1_0.2_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x20_2_Std: { field: SWC_SD_GF1_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x25_2_Avg: { field: SWC_GF1_0.25_2, units: "%", measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x25_2_Std: { field: SWC_SD_GF1_0x25_2, units: "%", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x30_1_Avg: { field: SWC_GF1_0.3_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x30_1_Std: { field: SWC_SD_GF1_0.3_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x30_2_Avg: { field: SWC_GF1_0.3_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x30_2_Std: { field: SWC_SD_GF1_0.3_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x40_1_Avg: { field: SWC_GF1_0.4_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x40_1_Std: { field: SWC_SD_GF1_0.4_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x40_2_Avg: { field: SWC_GF1_0.40_2, units: "%", measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x40_2_Std: { field: SWC_SD_GF1_0x40_2, units: "%", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x50_1_Avg: { field: SWC_GF1_0.5_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x50_1_Std: { field: SWC_SD_GF1_0.5_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x50_2_Avg: { field: SWC_GF1_0.5_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x50_2_Std: { field: SWC_SD_GF1_0.5_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x60_2_Avg: { field: SWC_GF1_0.60_2, units: "%", measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x60_2_Std: { field: SWC_SD_GF1_0x60_2, units: "%", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x75_1_Avg: { field: SWC_GF1_0.75_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF1_0x75_1_Std: { field: SWC_SD_GF1_0.75_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_1_1_Avg: { field: SWC_GF4_1_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_1_1_Std: { field: SWC_SD_GF4_1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x1_2_Avg: { field: SWC_GF4_0.1_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x1_2_Std: { field: SWC_SD_GF4_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x2_1_Avg: { field: SWC_GF4_0.2_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x2_1_Std: { field: SWC_SD_GF4_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x2_2_Avg: { field: SWC_GF4_0.2_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x2_2_Std: { field: SWC_SD_GF4_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x05_1_Avg: { field: SWC_GF4_0.05_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x05_1_Std: { field: SWC_SD_GF4_0.05_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x05_2_Avg: { field: SWC_GF4_0.05_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF4_0x05_2_Std: { field: SWC_SD_GF4_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x1_1_Avg: { field: SWC_GF5_0.1_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x1_1_Std: { field: SWC_SD_GF5_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x1_2_Avg: { field: SWC_GF5_0.1_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x1_2_Std: { field: SWC_SD_GF5_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x2_2_Avg: { field: SWC_GF5_0.2_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x2_2_Std: { field: SWC_SD_GF5_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x05_1_Avg: { field: SWC_GF5_0.05_1, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x05_1_Std: { field: SWC_SD_GF5_0.05_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x05_2_Avg: { field: SWC_GF5_0.05_2, units: false, measurement: SWC, ignore_after: "2016-06-29 15:24:00" }
+    SWC_GF5_0x05_2_Std: { field: SWC_SD_GF5_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX1_0x40_1_Avg: { field: T_BOX1_0.4_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX1_0x40_1_Std: { field: T_SD_BOX1_0.4_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX1_0x95_1_Avg: { field: T_BOX1_0.95_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX1_0x95_1_Std: { field: T_SD_BOX1_0.95_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX_0x40_1_Avg: { field: T_BOX_0.40_1, units: degC, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX_0x40_1_Std: { field: T_SD_BOX_0x40_1, units: degC, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX_0x95_1_Avg: { field: T_BOX_0.95_1, units: degC, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_BOX_0x95_1_Std: { field: T_SD_BOX_0x95_1, units: degC, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    T_iDL_BOX1_0_1_Avg: { field: T_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_iDL_BOX1_0_1_Std: { field: T_iDL_SD_BOX1_0_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_iDL_BOX_0_1_Avg: { field: T_iDL_BOX_0_1, units: degC, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_iDL_BOX_0_1_Std: { field: T_iDL_SD_BOX_0_1, units: degC, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    T_RAD_T1B2_2_1_Avg: { field: T_RAD_T1_2_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    T_RAD_T1B2_2_1_Std: { field: T_RAD_SD_T1_2_1, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-29 15:24:00" }
+    # Use to calculate Boltzmann corrected for LW_IN, see Note@LW at the top
+    TA_T1_2_1_Avg: { field: TA_T1_2_1, units: false, rawfunc: [ calc_lw, TA_T1_2_1_Avg, LW_IN_RAW_T1B2_2_1_Avg, LW_IN_T1_2_1 ], measurement: TA, ignore_after: "2016-06-29 15:24:00" }
+    TA_T1_2_1_Std: { field: TA_SD_T1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF4_0x1_1_Avg: { field: TM_GF4_0.1_1, units: "hPa", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF4_0x1_1_fill_ind_Avg: { field: TM_fill_ind_GF4_0.1_1, units: "unitless", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF4_0x1_1_Std: { field: TM_SD_GF4_0.1_1, units: "hPa", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF4_0x2_1_Avg: { field: TM_GF4_0.2_1, units: "hPa", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF4_0x2_1_fill_ind_Avg: { field: TM_fill_ind_GF4_0.2_1, units: "unitless", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF4_0x2_1_Std: { field: TM_SD_GF4_0.2_1, units: "hPa", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF5_0x1_1_Avg: { field: TM_GF5_0.1_1, units: "hPa", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF5_0x1_1_fill_ind_Avg: { field: TM_fill_ind_GF5_0.1_1, units: "unitless", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF5_0x1_1_Std: { field: TM_SD_GF5_0.1_1, units: "hPa", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF5_0x2_1_Avg: { field: TM_GF5_0.2_1, units: "hPa", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF5_0x2_1_fill_ind_Avg: { field: TM_fill_ind_GF5_0.2_1, units: "unitless", measurement: TM, ignore_after: "2016-06-29 15:24:00" }
+    TM_GF5_0x2_1_Std: { field: TM_SD_GF5_0.2_1, units: "hPa", measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+
+    TO2_GF4_0x1_1_Avg: { field: TO2_GF4_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF4_0x1_1_Avg, TO2_GF4_0x1_1_Avg ], measurement: O2, ignore_after: "2016-06-29 15:24:00" }
+    TO2_GF5_0x1_1_Avg: { field: TO2_GF5_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x1_1_Avg, TO2_GF5_0x1_1_Avg ], measurement: O2, ignore_after: "2016-06-29 15:24:00" }
+    TO2_GF5_0x2_1_Avg: { field: TO2_GF5_0.2_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x2_1_Avg, TO2_GF5_0x2_1_Avg ], measurement: O2, ignore_after: "2016-06-29 15:24:00" }
+
+    TO2_GF4_0x1_1_Std: { field: TO2_SD_GF4_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TO2_GF5_0x1_1_Std: { field: TO2_SD_GF5_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TO2_GF5_0x2_1_Std: { field: TO2_SD_GF5_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x01_1_Avg: { field: TS_GF1_0.01_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x01_1_Std: { field: TS_SD_GF1_0.01_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x04_1_Avg: { field: TS_GF1_0.04_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x04_1_Std: { field: TS_SD_GF1_0.04_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x05_1_Avg: { field: TS_GF1_0.05_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x05_1_Std: { field: TS_SD_GF1_0.05_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.5:
+    TS_GF1_0x05_2_Avg: { field: TS_GF1_0.5_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.5:
+    TS_GF1_0x05_2_Std: { field: TS_SD_GF1_0.5_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x07_1_Avg: { field: TS_GF1_0.07_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x07_1_Std: { field: TS_SD_GF1_0.07_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x10_1_Avg: { field: TS_GF1_0.1_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x10_1_Std: { field: TS_SD_GF1_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.3:
+    TS_GF1_0x10_2_Avg: { field: TS_GF1_0.3_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.3:
+    TS_GF1_0x10_2_Std: { field: TS_SD_GF1_0.3_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x15_1_Avg: { field: TS_GF1_0.15_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x15_1_Std: { field: TS_SD_GF1_0.15_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x15_2_Avg: { field: TS_GF1_0.15_2, units: degC, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x15_2_Std: { field: TS_SD_GF1_0x15_2, units: degC, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x20_1_Avg: { field: TS_GF1_0.2_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x20_1_Std: { field: TS_SD_GF1_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x20_2_Avg: { field: TS_GF1_0.2_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x20_2_Std: { field: TS_SD_GF1_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x25_1_Avg: { field: TS_GF1_0.25_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x25_1_Std: { field: TS_SD_GF1_0.25_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x25_2_Avg: { field: TS_GF1_0.25_2, units: degC, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x025_2_Avg: { field: TS_GF1_0.025_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x025_2_Std: { field: TS_SD_GF1_0.025_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x25_2_Std: { field: TS_SD_GF1_0x25_2, units: degC, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x30_1_Avg: { field: TS_GF1_0.3_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x30_1_Std: { field: TS_SD_GF1_0.3_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.1:
+    TS_GF1_0x30_2_Avg: { field: TS_GF1_0.1_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.1:
+    TS_GF1_0x30_2_Std: { field: TS_SD_GF1_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x40_1_Avg: { field: TS_GF1_0.4_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x40_1_Std: { field: TS_SD_GF1_0.4_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x40_2_Avg: { field: TS_GF1_0.40_2, units: degC, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x40_2_Std: { field: TS_SD_GF1_0x40_2, units: degC, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x50_1_Avg: { field: TS_GF1_0.5_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x50_1_Std: { field: TS_SD_GF1_0.5_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.05:
+    TS_GF1_0x50_2_Avg: { field: TS_GF1_0.05_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    # See Note#2 in NOTES.md, this is depth 0.05:
+    TS_GF1_0x50_2_Std: { field: TS_SD_GF1_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x60_2_Avg: { field: TS_GF1_0.60_2, units: degC, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF1_0x60_2_Std: { field: TS_SD_GF1_0x60_2, units: degC, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_1_1_Avg: { field: TS_GF4_1_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_1_1_Std: { field: TS_SD_GF4_1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x1_1_Avg: { field: TS_GF4_0.1_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x1_1_Std: { field: TS_SD_GF4_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x1_2_Avg: { field: TS_GF4_0.1_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x1_2_Std: { field: TS_SD_GF4_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x2_1_Avg: { field: TS_GF4_0.2_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x2_1_Std: { field: TS_SD_GF4_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x2_2_Avg: { field: TS_GF4_0.2_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x2_2_Std: { field: TS_SD_GF4_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x5_1_Avg: { field: TS_GF4_0.5_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x05_1_Avg: { field: TS_GF4_0.05_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x5_1_Std: { field: TS_SD_GF4_0.5_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x05_1_Std: { field: TS_SD_GF4_0.05_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x05_2_Avg: { field: TS_GF4_0.05_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF4_0x05_2_Std: { field: TS_SD_GF4_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_1_1_Avg: { field: TS_GF5_1_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_1_1_Std: { field: TS_SD_GF5_1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x1_1_Avg: { field: TS_GF5_0.1_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x1_1_Std: { field: TS_SD_GF5_0.1_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x1_2_Avg: { field: TS_GF5_0.1_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x1_2_Std: { field: TS_SD_GF5_0.1_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x2_1_Avg: { field: TS_GF5_0.2_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x2_1_Std: { field: TS_SD_GF5_0.2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x2_2_Avg: { field: TS_GF5_0.2_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x2_2_Std: { field: TS_SD_GF5_0.2_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x5_1_Avg: { field: TS_GF5_0.5_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x05_1_Avg: { field: TS_GF5_0.05_1, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x5_1_Std: { field: TS_SD_GF5_0.5_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x05_1_Std: { field: TS_SD_GF5_0.05_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x05_2_Avg: { field: TS_GF5_0.05_2, units: false, measurement: TS, ignore_after: "2016-06-29 15:24:00" }
+    TS_GF5_0x05_2_Std: { field: TS_SD_GF5_0.05_2, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    WD_VANE_T1B1_2_1_Std: { field: WD_VANE_SD_T1B1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    WS_CUP_T1B1_2_1_Std: { field: WS_CUP_SD_T1B1_2_1, units: false, measurement: _SD, ignore_after: "2016-06-29 15:24:00" }
+    WS_CUP_T1B1_2_1_WVc(1): { field: WS_CUP_WVc(1)_T1B1_2_1, units: false, measurement: WIND, ignore_after: "2016-06-29 15:24:00" }
+    WS_CUP_T1B1_2_1_WVc(2): { field: WS_CUP_WVc(2)_T1B1_2_1, units: false, measurement: WIND, ignore_after: "2016-06-29 15:24:00" }
+    WS_CUP_T1B1_2_1_WVc(3): { field: WS_CUP_WVc(3)_T1B1_2_1, units: false, measurement: WIND, ignore_after: "2016-06-29 15:24:00" }
+    WS_CUP_T1B1_2_1_WVc(4): { field: WS_CUP_WVc(4)_T1B1_2_1, units: false, measurement: WIND, ignore_after: "2016-06-29 15:24:00" }

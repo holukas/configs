@@ -49,9 +49,9 @@ DAV13-RAW-NABEL-200001010000-SSV-TXT-10MIN:
 #  data_skiprows: [ 0 ]
   data_headerrows: 0
 #  data_headerrows: [ 0 ]
-  data_index_col: -9999
-  data_parse_dates: false
-  data_date_parser: false
+  data_timestamp_column: -9999
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: false
   data_build_timestamp: "YEAR0+MONTH1+DAY2+HOUR3+MINUTE4"
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -59,22 +59,21 @@ DAV13-RAW-NABEL-200001010000-SSV-TXT-10MIN:
   data_special_format: false
   data_encoding: cp1252
   data_delimiter: '\s+'
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    YEAR: { field: YEAR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    MONTH: { field: MONTH_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    DAY: { field: DAY_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    HOUR: { field: HOUR_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    MINUTE: { field: MINUTE_X_X_X, units: XXX, gain: 1, measurement: XXX }  # Removed after timestamp building
-    Windrichtung: { field: WD_VANE_NABEL_T1_35_1, gain: 1, units: deg, measurement: WD }
-    Windgeschwindigkeit: { field: WS_CUP_NABEL_T1_35_1, gain: 1, units: m s-1, measurement: WS }
-    Windspitze: { field: WS_CUP_MAX_NABEL_T1_35_1, gain: 1, units: m s-1, measurement: WS }
-    Druck: { field: PA_NABEL_H1_2_1, gain: 1, units: hPa, measurement: PA }
-    Globalstrahlung: { field: SW_IN_NABEL_T1_35_1, gain: 1, units: W m-2, measurement: SW }
-    Strahlungsbilanz: { field: NETRAD_NABEL_T1_35_1, gain: 1, units: W m-2, measurement: NETRAD }
-    Niederschlagsmenge: { field: PREC_TOT_NABEL_T1_25_1, gain: 1, units: mm, measurement: PREC }
-    rel. Feuchte: { field: RH_NABEL_T1_35_1, gain: 1, units: "%", measurement: RH }
-    Temperatur: { field: TA_NABEL_T1_35_1, gain: 1, units: degC, measurement: TA }
+    YEAR: { field: YEAR_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    MONTH: { field: MONTH_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    DAY: { field: DAY_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    HOUR: { field: HOUR_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    MINUTE: { field: MINUTE_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    Windrichtung: { field: WD_VANE_NABEL_T1_35_1, units: deg, measurement: WIND }
+    Windgeschwindigkeit: { field: WS_CUP_NABEL_T1_35_1, units: m s-1, measurement: WIND }
+    Windspitze: { field: WS_CUP_MAX_NABEL_T1_35_1, units: m s-1, measurement: WIND }
+    Druck: { field: PA_NABEL_H1_2_1, units: hPa, measurement: PA }
+    Globalstrahlung: { field: SW_IN_NABEL_T1_35_1, units: W m-2, measurement: SW }
+    Strahlungsbilanz: { field: NETRAD_NABEL_T1_35_1, units: W m-2, measurement: NETRAD }
+    Niederschlagsmenge: { field: PREC_TOT_NABEL_T1_25_1, units: mm, measurement: PREC }
+    rel. Feuchte: { field: RH_NABEL_T1_35_1, units: "%", measurement: RH }
+    Temperatur: { field: TA_NABEL_T1_35_1, units: degC, measurement: TA }

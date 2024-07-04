@@ -16,9 +16,9 @@ LAE10-RAW-PROFILE-202205100000-TOA5-DAT-1MIN:
   data_raw_freq: min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -26,38 +26,37 @@ LAE10-RAW-PROFILE-202205100000-TOA5-DAT-1MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    CO2_M2_1_1_AVG: { field: CO2_M2_1_1, units: false, gain: 1, measurement: CO2 }
-    CO2_M3_1_1_AVG: { field: CO2_M3_1_1, units: false, gain: 1, measurement: CO2 }
-    CO2_M4_1_1_AVG: { field: CO2_M4_1_1, units: false, gain: 1, measurement: CO2 }
-    CO2_T1_35_1_AVG: { field: CO2_T1_35_1, units: false, gain: 1, measurement: CO2 }
-    CO2_T1_17.5_1_AVG: { field: CO2_T1_17.5_1, units: false, gain: 1, measurement: CO2 }
-    PA_M2_1_1_AVG: { field: PA_M2_1_1, units: false, gain: 1, measurement: PA }
-    PA_M3_1_1_AVG: { field: PA_M3_1_1, units: false, gain: 1, measurement: PA }
-    PA_M4_1_1_AVG: { field: PA_M4_1_1, units: false, gain: 1, measurement: PA }
-    PA_T1_35_1_AVG: { field: PA_T1_35_1, units: false, gain: 1, measurement: PA }
-    PA_T1_17.5_1_AVG: { field: PA_T1_17.5_1, units: false, gain: 1, measurement: PA }
-    RH_M2_1_1_AVG: { field: RH_M2_1_1, units: false, gain: 1, measurement: RH }
-    RH_M3_1_1_AVG: { field: RH_M3_1_1, units: false, gain: 1, measurement: RH }
-    RH_M4_1_1_AVG: { field: RH_M4_1_1, units: false, gain: 1, measurement: RH }
-    RH_T1_35_1_AVG: { field: RH_T1_35_1, units: false, gain: 1, measurement: RH }
-    RH_T1_17.5_1_AVG: { field: RH_T1_17.5_1, units: false, gain: 1, measurement: RH }
-    Ta_M2_1_1_AVG: { field: TA_M2_1_1, units: false, gain: 1, measurement: TA }
-    Ta_M3_1_1_AVG: { field: TA_M3_1_1, units: false, gain: 1, measurement: TA }
-    Ta_M4_1_1_AVG: { field: TA_M4_1_1, units: false, gain: 1, measurement: TA }
-    Ta_T1_35_1_AVG: { field: TA_T1_35_1, units: false, gain: 1, measurement: TA }
-    Ta_T1_17.5_1_AVG: { field: TA_T1_17.5_1, units: false, gain: 1, measurement: TA }
-    WD_M2_1_1_AVG: { field: WD_M2_1_1, units: false, gain: 1, measurement: WD }
-    WD_M3_1_1_AVG: { field: WD_M3_1_1, units: false, gain: 1, measurement: WD }
-    WD_M4_1_1_AVG: { field: WD_M4_1_1, units: false, gain: 1, measurement: WD }
-    WD_T1_35_1_AVG: { field: WD_T1_35_1, units: false, gain: 1, measurement: WD }
-    WD_T1_17.5_1_AVG: { field: WD_T1_17.5_1, units: false, gain: 1, measurement: WD }
-    WS_M2_1_1_AVG: { field: WS_M2_1_1, units: false, gain: 1, measurement: WS }
-    WS_M3_1_1_AVG: { field: WS_M3_1_1, units: false, gain: 1, measurement: WS }
-    WS_M4_1_1_AVG: { field: WS_M4_1_1, units: false, gain: 1, measurement: WS }
-    WS_T1_35_1_AVG: { field: WS_T1_35_1, units: false, gain: 1, measurement: WS }
-    WS_T1_17.5_1_AVG: { field: WS_T1_17.5_1, units: false, gain: 1, measurement: WS }
+    CO2_M2_1_1_AVG: { field: CO2_M2_1_1, units: false, measurement: CO2 }
+    CO2_M3_1_1_AVG: { field: CO2_M3_1_1, units: false, measurement: CO2 }
+    CO2_M4_1_1_AVG: { field: CO2_M4_1_1, units: false, measurement: CO2 }
+    CO2_T1_35_1_AVG: { field: CO2_T1_35_1, units: false, measurement: CO2 }
+    CO2_T1_17.5_1_AVG: { field: CO2_T1_17.5_1, units: false, measurement: CO2 }
+    PA_M2_1_1_AVG: { field: PA_M2_1_1, units: false, measurement: PA }
+    PA_M3_1_1_AVG: { field: PA_M3_1_1, units: false, measurement: PA }
+    PA_M4_1_1_AVG: { field: PA_M4_1_1, units: false, measurement: PA }
+    PA_T1_35_1_AVG: { field: PA_T1_35_1, units: false, measurement: PA }
+    PA_T1_17.5_1_AVG: { field: PA_T1_17.5_1, units: false, measurement: PA }
+    RH_M2_1_1_AVG: { field: RH_M2_1_1, units: false, measurement: RH }
+    RH_M3_1_1_AVG: { field: RH_M3_1_1, units: false, measurement: RH }
+    RH_M4_1_1_AVG: { field: RH_M4_1_1, units: false, measurement: RH }
+    RH_T1_35_1_AVG: { field: RH_T1_35_1, units: false, measurement: RH }
+    RH_T1_17.5_1_AVG: { field: RH_T1_17.5_1, units: false, measurement: RH }
+    Ta_M2_1_1_AVG: { field: TA_M2_1_1, units: false, measurement: TA }
+    Ta_M3_1_1_AVG: { field: TA_M3_1_1, units: false, measurement: TA }
+    Ta_M4_1_1_AVG: { field: TA_M4_1_1, units: false, measurement: TA }
+    Ta_T1_35_1_AVG: { field: TA_T1_35_1, units: false, measurement: TA }
+    Ta_T1_17.5_1_AVG: { field: TA_T1_17.5_1, units: false, measurement: TA }
+    WD_M2_1_1_AVG: { field: WD_M2_1_1, units: false, measurement: WIND }
+    WD_M3_1_1_AVG: { field: WD_M3_1_1, units: false, measurement: WIND }
+    WD_M4_1_1_AVG: { field: WD_M4_1_1, units: false, measurement: WIND }
+    WD_T1_35_1_AVG: { field: WD_T1_35_1, units: false, measurement: WIND }
+    WD_T1_17.5_1_AVG: { field: WD_T1_17.5_1, units: false, measurement: WIND }
+    WS_M2_1_1_AVG: { field: WS_M2_1_1, units: false, measurement: WIND }
+    WS_M3_1_1_AVG: { field: WS_M3_1_1, units: false, measurement: WIND }
+    WS_M4_1_1_AVG: { field: WS_M4_1_1, units: false, measurement: WIND }
+    WS_T1_35_1_AVG: { field: WS_T1_35_1, units: false, measurement: WIND }
+    WS_T1_17.5_1_AVG: { field: WS_T1_17.5_1, units: false, measurement: WIND }

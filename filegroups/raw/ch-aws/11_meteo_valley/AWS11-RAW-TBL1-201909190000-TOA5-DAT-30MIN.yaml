@@ -27,9 +27,9 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
   data_raw_freq: 30min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -37,7 +37,6 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
@@ -70,14 +69,14 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
     # These two TAs were wrongly labelled as M1:
     TA_M1_2x5_1_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
     TA_M1_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: false, measurement: _SD }
-    WindDir_Avg: { field: WD_M3_3.5_1, units: false, measurement: WD }
-    WD_M3_3x5_1_Avg: { field: WD_M3_3.5_1, units: false, measurement: WD }
+    WindDir_Avg: { field: WD_M3_3.5_1, units: false, measurement: WIND }
+    WD_M3_3x5_1_Avg: { field: WD_M3_3.5_1, units: false, measurement: WIND }
     # Additional wind dirs WVT:
-    WindDir_D1_WVT: { field: WD_D1_WVT_M3_3.5_1, units: false, measurement: WD }
-    WD_M3_3x5_1_D1_WVT: { field: WD_D1_WVT_M3_3.5_1, units: false, measurement: WD }
-    WindDir_SD1_WVT: { field: WD_SD1_WVT_M3_3.5_1, units: false, measurement: WD }
-    WD_M3_3x5_1_SD1_WVT: { field: WD_SD1_WVT_M3_3.5_1, units: false, measurement: WD }
-    WindSpeed_Avg: { field: WS_M3_X_1, units: false, measurement: WS }
-    WS_M3_3x5_1_Avg: { field: WS_M3_3.5_1, units: false, measurement: WS }
+    WindDir_D1_WVT: { field: WD_D1_WVT_M3_3.5_1, units: false, measurement: WIND }
+    WD_M3_3x5_1_D1_WVT: { field: WD_D1_WVT_M3_3.5_1, units: false, measurement: WIND }
+    WindDir_SD1_WVT: { field: WD_SD1_WVT_M3_3.5_1, units: false, measurement: WIND }
+    WD_M3_3x5_1_SD1_WVT: { field: WD_SD1_WVT_M3_3.5_1, units: false, measurement: WIND }
+    WindSpeed_Avg: { field: WS_M3_X_1, units: false, measurement: WIND }
+    WS_M3_3x5_1_Avg: { field: WS_M3_3.5_1, units: false, measurement: WIND }
     # This seems to be a duplicate of WindSpeed_Avg:
-    # WS_ms_S_WVT: { field: WS_M3_X_2, units: false, measurement: WS }
+    # WS_ms_S_WVT: { field: WS_M3_X_2, units: false, measurement: WIND }

@@ -1,14 +1,15 @@
 # Basedirs network addresses, from Windows
-#raw_server: L:\Sync\luhk_work\20 - CODING\22 - POET\_filetype_docs\CH-CHA\raw\10_meteo\New folder  # FOR LOCAL TESTING
 raw_server: \\nas12.ethz.ch\green_groups_gl_rawdata\FluxData
-#raw_server: \\grasslandserver.ethz.ch\archive\FluxData
-processing_server: \\nas12.ethz.ch\green_groups_gl_processing
-#processing_server: \\grasslandserver.ethz.ch\processing
+processed_server: \\nas12.ethz.ch\green_groups_gl_processing
 export_server: \\grasslandserver.ethz.ch\export
 
 # Basedirs from gl-calcs
 raw_mount: /mnt/gl-raw-data/FluxData
-processing_mount: /mnt/gl-processing/
+processed_mount: /mnt/gl-processing/
+
+# Basedirs custom
+processed_local: L:\Sync\luhk_work\80 - SITES\CH-CHA\DATA\DATASETS\FLUXNET_WW2020_2005-2020\FLX_CH-Cha_FLUXNET2015_FULLSET_2005-2020_beta-3
+#processed_local: L:\Sync\luhk_work\80 - SITES\CH-CHA\DATA\DATASETS\METEOSCREENINGTOOL_2005-2021
 
 # Output dirs
 out_dataflow_mount: /home/holukas/source_code/test_out

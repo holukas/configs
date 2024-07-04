@@ -15,9 +15,9 @@ DAV12-RAW-FF1-TBL1-201410231208-CSV-GZ-30MIN:
   data_raw_freq: 30min
   data_skiprows: false
   data_headerrows: [ 0 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -25,7 +25,6 @@ DAV12-RAW-FF1-TBL1-201410231208-CSV-GZ-30MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars:
@@ -33,18 +32,18 @@ DAV12-RAW-FF1-TBL1-201410231208-CSV-GZ-30MIN:
     G_FF1_006_1_Std: { field: G_SD_FF1_0.06_1, units: "W m-2", measurement: _SD }
     Record: { field: Record_X_X_X, units: "RN", measurement: _instrumentmetrics }
     SENShfp_FF1_006_1: { field: SENS_HFP_FF1_0.06_1, units: false, measurement: _instrumentmetrics }
-    SWC_FF1_005_1_Avg: { field: SWC_FF1_0.05_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_005_1_Std: { field: SWC_SD_FF1_0.05_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF1_005_2_Avg: { field: SWC_FF1_0.05_2, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_005_2_Std: { field: SWC_SD_FF1_0.05_2, units: "%", gain: 100, measurement: _SD }
-    SWC_FF1_010_1_Avg: { field: SWC_FF1_0.10_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_010_1_Std: { field: SWC_SD_FF1_0.10_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF1_024_1_Avg: { field: SWC_FF1_0.24_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_024_1_Std: { field: SWC_SD_FF1_0.24_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF1_050_1_Avg: { field: SWC_FF1_0.50_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_050_1_Std: { field: SWC_SD_FF1_0.50_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF1_084_1_Avg: { field: SWC_FF1_0.84_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_084_1_Std: { field: SWC_SD_FF1_0.84_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF1_005_1_Avg: { field: SWC_FF1_0.05_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF1_005_1_Std: { field: SWC_SD_FF1_0.05_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF1_005_2_Avg: { field: SWC_FF1_0.05_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF1_005_2_Std: { field: SWC_SD_FF1_0.05_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF1_010_1_Avg: { field: SWC_FF1_0.10_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF1_010_1_Std: { field: SWC_SD_FF1_0.10_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF1_024_1_Avg: { field: SWC_FF1_0.24_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF1_024_1_Std: { field: SWC_SD_FF1_0.24_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF1_050_1_Avg: { field: SWC_FF1_0.50_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF1_050_1_Std: { field: SWC_SD_FF1_0.50_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF1_084_1_Avg: { field: SWC_FF1_0.84_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF1_084_1_Std: { field: SWC_SD_FF1_0.84_1, units: "%", gain: 100.0, measurement: _SD }
     Tlogger_FF1_0_1: { field: T_LOGGER_FF1_0_1, units: "deg C", measurement: _instrumentmetrics }
     Ts_FF1_003_1_Avg: { field: TS_FF1_0.03_1, units: "deg C", measurement: TS }
     Ts_FF1_003_1_Std: { field: TS_SD_FF1_0.03_1, units: "deg C", measurement: _SD }

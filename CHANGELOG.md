@@ -1,5 +1,32 @@
 # Changelog
 
+## 20240704 | 4 Jul 2024
+
+- Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CSV-30MIN` for meteo data screened using the MeteoScreeningTool
+- Added new filetype `PROC-FLUXNET-WW2020-FULLSET-HH-CSV-30MIN` for
+  the [WW2020 FLUXNET/ICOS data product](https://www.icos-cp.eu/data-products/2G60-ZHAK)
+- Added new setting `offset` to filetype configs. If not specifically given, `offset=0.0` (float) is assumed
+- Added new setting `ignore_between` to filetype configs to ignore data between two dates
+- Renamed and adjusted time range in filetype `CHA10-RAW-TBL0-201603171458-CSV-GZ-1MIN`
+- Fixed TS depths in `CHA10-RAW-TBL0-201603171458-CSV-GZ-1MIN`
+- Added new filetype `CHA10-RAW-TBL0-201606210945-CSV-GZ-1MIN` to calculate LW variables from raw variables during a
+  short time period where the original measurements are not available
+- Added new filetype `CHA10-RAW-TBL0-201606291845-CSV-GZ-1MIN`
+- Fixed TS depths in `CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN`
+- Added units for `TM` measurements in `CHA10-RAW` files
+- Adding corrections (gain, rawfuncs) from the previous Python MeteoScreeningTool for `CH-CHA`
+- All `WS` and `WD` both are now measurement `WIND`
+- Changed type of `gain` from integer to float, e.g. `gain: 100` is now `gain: 100.0` to be consistent. Likewise, if
+  no `gain` is provided, then `gain: 1.0` (float) is assumed
+- Removed all `gain: 1` settings from all filetype configs, because it is assumed `1.0` if not specifically given
+- Updated README
+- Folder for filetypes processed is now named `processed`
+- Removed: filetype setting `data_keep_date_col`
+- Renamed settings to `data_timestamp_column`, `data_timestamp_timezone_offset_to_utc_hours` and `data_timestamp_format`
+- Removed setting `data_date_parser`
+- Changed: Level-0 fluxes from EddyPro now have the setting `data_version: eddypro_level-0`
+  or `data_version: eddypro_level-0`
+
 ## v20240612 | 12 Jun 2024
 
 - Added new filetype `FOR10-RAW-202403141026-TOA5-DAT-1MIN`

@@ -26,9 +26,9 @@ LAE11-RAW-TBL1-202012010000-TOA5-DAT-1MIN:
   data_raw_freq: min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -36,132 +36,131 @@ LAE11-RAW-TBL1-202012010000-TOA5-DAT-1MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    Batt_Volt_Avg: { field: BV_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    Batt_Volt_Std: { field: BV_SD_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    BV_CR1000_INT_T1_47_1: { field: BV_CR1000_INT_T1_47_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    BV_iDL_H1_0_1: { field: BV_iDL_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    Batt_Volt_Avg: { field: BV_H1_0_1, units: false, measurement: _instrumentmetrics }
+    Batt_Volt_Std: { field: BV_SD_H1_0_1, units: false, measurement: _instrumentmetrics }
+    BV_CR1000_INT_T1_47_1: { field: BV_CR1000_INT_T1_47_1, units: false, measurement: _instrumentmetrics }
+    BV_iDL_H1_0_1: { field: BV_iDL_H1_0_1, units: false, measurement: _instrumentmetrics }
     # CO2_BOLE *assumed* to be at breast height (assumed 1.35m)
-    CO2St8003_S150_Avg: { field: CO2_BOLE_TREE8003_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8003_S150_Std: { field: CO2_BOLE_SD_TREE8003_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8006_S150_Avg: { field: CO2_BOLE_TREE8006_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8006_S150_Std: { field: CO2_BOLE_SD_TREE8006_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8008_S150_Avg: { field: CO2_BOLE_TREE8008_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8008_S150_Std: { field: CO2_BOLE_SD_TREE8008_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8011_S150_Avg: { field: CO2_BOLE_TREE8011_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8011_S150_Std: { field: CO2_BOLE_SD_TREE8011_1.35_S150, units: false, gain: 1, measurement: _SD }
-    CO2St8015_S150_Avg: { field: CO2_BOLE_TREE8015_1.35_S150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8015_S150_Std: { field: CO2_BOLE_SD_TREE8015_1.35_S150, units: false, gain: 1, measurement: _SD }
+    CO2St8003_S150_Avg: { field: CO2_BOLE_TREE8003_1.35_S150, units: false, measurement: CO2_BOLE }
+    CO2St8003_S150_Std: { field: CO2_BOLE_SD_TREE8003_1.35_S150, units: false, measurement: _SD }
+    CO2St8006_S150_Avg: { field: CO2_BOLE_TREE8006_1.35_S150, units: false, measurement: CO2_BOLE }
+    CO2St8006_S150_Std: { field: CO2_BOLE_SD_TREE8006_1.35_S150, units: false, measurement: _SD }
+    CO2St8008_S150_Avg: { field: CO2_BOLE_TREE8008_1.35_S150, units: false, measurement: CO2_BOLE }
+    CO2St8008_S150_Std: { field: CO2_BOLE_SD_TREE8008_1.35_S150, units: false, measurement: _SD }
+    CO2St8011_S150_Avg: { field: CO2_BOLE_TREE8011_1.35_S150, units: false, measurement: CO2_BOLE }
+    CO2St8011_S150_Std: { field: CO2_BOLE_SD_TREE8011_1.35_S150, units: false, measurement: _SD }
+    CO2St8015_S150_Avg: { field: CO2_BOLE_TREE8015_1.35_S150, units: false, measurement: CO2_BOLE }
+    CO2St8015_S150_Std: { field: CO2_BOLE_SD_TREE8015_1.35_S150, units: false, measurement: _SD }
     # DENDRO measured to be at breast height (assumed 1.35m)
-    D8003_N150_Avg: { field: DENDRO_TREE8003_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8003_N150_Std: { field: DENDRO_SD_TREE8003_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8004_N150_Avg: { field: DENDRO_TREE8004_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8004_N150_Std: { field: DENDRO_SD_TREE8004_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8005_N150_Avg: { field: DENDRO_TREE8005_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8005_N150_Std: { field: DENDRO_SD_TREE8005_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8006_N150_Avg: { field: DENDRO_TREE8006_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8006_N150_Std: { field: DENDRO_SD_TREE8006_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8007_N150_Avg: { field: DENDRO_TREE8007_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8007_N150_Std: { field: DENDRO_SD_TREE8007_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8008_N150_Avg: { field: DENDRO_TREE8008_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8008_N150_Std: { field: DENDRO_SD_TREE8008_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8009_N150_Avg: { field: DENDRO_TREE8009_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8009_N150_Std: { field: DENDRO_SD_TREE8009_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8010_N150_Avg: { field: DENDRO_TREE8010_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8010_N150_Std: { field: DENDRO_SD_TREE8010_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8011_N150_Avg: { field: DENDRO_TREE8011_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8011_N150_Std: { field: DENDRO_SD_TREE8011_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8012_N150_Avg: { field: DENDRO_TREE8012_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8012_N150_Std: { field: DENDRO_SD_TREE8012_1.35_N150, units: false, gain: 1, measurement: _SD }
-    D8015_N150_Avg: { field: DENDRO_TREE8015_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8015_N150_Std: { field: DENDRO_SD_TREE8015_1.35_N150, units: false, gain: 1, measurement: _SD }
-    DNTP_iDL_H1_0_1: { field: DNTP_iDL_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    D8003_N150_Avg: { field: DENDRO_TREE8003_1.35_N150, units: false, measurement: DENDRO }
+    D8003_N150_Std: { field: DENDRO_SD_TREE8003_1.35_N150, units: false, measurement: _SD }
+    D8004_N150_Avg: { field: DENDRO_TREE8004_1.35_N150, units: false, measurement: DENDRO }
+    D8004_N150_Std: { field: DENDRO_SD_TREE8004_1.35_N150, units: false, measurement: _SD }
+    D8005_N150_Avg: { field: DENDRO_TREE8005_1.35_N150, units: false, measurement: DENDRO }
+    D8005_N150_Std: { field: DENDRO_SD_TREE8005_1.35_N150, units: false, measurement: _SD }
+    D8006_N150_Avg: { field: DENDRO_TREE8006_1.35_N150, units: false, measurement: DENDRO }
+    D8006_N150_Std: { field: DENDRO_SD_TREE8006_1.35_N150, units: false, measurement: _SD }
+    D8007_N150_Avg: { field: DENDRO_TREE8007_1.35_N150, units: false, measurement: DENDRO }
+    D8007_N150_Std: { field: DENDRO_SD_TREE8007_1.35_N150, units: false, measurement: _SD }
+    D8008_N150_Avg: { field: DENDRO_TREE8008_1.35_N150, units: false, measurement: DENDRO }
+    D8008_N150_Std: { field: DENDRO_SD_TREE8008_1.35_N150, units: false, measurement: _SD }
+    D8009_N150_Avg: { field: DENDRO_TREE8009_1.35_N150, units: false, measurement: DENDRO }
+    D8009_N150_Std: { field: DENDRO_SD_TREE8009_1.35_N150, units: false, measurement: _SD }
+    D8010_N150_Avg: { field: DENDRO_TREE8010_1.35_N150, units: false, measurement: DENDRO }
+    D8010_N150_Std: { field: DENDRO_SD_TREE8010_1.35_N150, units: false, measurement: _SD }
+    D8011_N150_Avg: { field: DENDRO_TREE8011_1.35_N150, units: false, measurement: DENDRO }
+    D8011_N150_Std: { field: DENDRO_SD_TREE8011_1.35_N150, units: false, measurement: _SD }
+    D8012_N150_Avg: { field: DENDRO_TREE8012_1.35_N150, units: false, measurement: DENDRO }
+    D8012_N150_Std: { field: DENDRO_SD_TREE8012_1.35_N150, units: false, measurement: _SD }
+    D8015_N150_Avg: { field: DENDRO_TREE8015_1.35_N150, units: false, measurement: DENDRO }
+    D8015_N150_Std: { field: DENDRO_SD_TREE8015_1.35_N150, units: false, measurement: _SD }
+    DNTP_iDL_H1_0_1: { field: DNTP_iDL_H1_0_1, units: false, measurement: _instrumentmetrics }
     # Depth info from AS
-    MPS02_TEMP_DISABLE_FLAG_Max: { field: MPS02_TEMP_DISABLE_FLAG_MAX_H1_X_1, units: false, gain: 1, measurement: _instrumentmetrics } #todo
-    MPS02H1_P_Avg(1): { field: SWP_H1_0.05_1, units: false, gain: 1, measurement: SWP }
-    MPS02H1_P_Avg(2): { field: SWP_H1_0.1_1, units: false, gain: 1, measurement: SWP }
-    MPS02H1_P_Avg(3): { field: SWP_H1_0.15_1, units: false, gain: 1, measurement: SWP }
-    MPS02H1_P_Avg(4): { field: SWP_H1_0.2_1, units: false, gain: 1, measurement: SWP }
-    MPS02H1_P_Avg(5): { field: SWP_H1_0.3_1, units: false, gain: 1, measurement: SWP }
-    MPS02H1_P_Std(1): { field: SWP_SD_H1_0.05_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_P_Std(2): { field: SWP_SD_H1_0.1_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_P_Std(3): { field: SWP_SD_H1_0.15_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_P_Std(4): { field: SWP_SD_H1_0.2_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_P_Std(5): { field: SWP_SD_H1_0.3_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_T_Avg(1): { field: TS_H1_0.05_1, units: false, gain: 1, measurement: TS }
-    MPS02H1_T_Avg(2): { field: TS_H1_0.1_1, units: false, gain: 1, measurement: TS }
-    MPS02H1_T_Avg(3): { field: TS_H1_0.15_1, units: false, gain: 1, measurement: TS }
-    MPS02H1_T_Avg(4): { field: TS_H1_0.2_1, units: false, gain: 1, measurement: TS }
-    MPS02H1_T_Avg(5): { field: TS_H1_0.3_1, units: false, gain: 1, measurement: TS }
-    MPS02H1_T_Std(1): { field: TS_SD_H1_0.05_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_T_Std(2): { field: TS_SD_H1_0.1_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_T_Std(3): { field: TS_SD_H1_0.15_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_T_Std(4): { field: TS_SD_H1_0.2_1, units: false, gain: 1, measurement: _SD }
-    MPS02H1_T_Std(5): { field: TS_SD_H1_0.3_1, units: false, gain: 1, measurement: _SD }
-    NTP_T1_47_1: { field: NTP_T1_47_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, gain: 1, measurement: XXX } #todo
-    PTemp_C_Std: { field: PTemp_C_Std_X_X_X, units: false, gain: 1, measurement: XXX } #todo
-    RECORD: { field: RECORD_H1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
-    RefCycleFlag: { field: RefCycleFlag_X_X_X, units: false, gain: 1, measurement: XXX } #todo
-    RefMeasFlag: { field: RefMeasFlag_X_X_X, units: false, gain: 1, measurement: XXX } #todo
+    MPS02_TEMP_DISABLE_FLAG_Max: { field: MPS02_TEMP_DISABLE_FLAG_MAX_H1_X_1, units: false, measurement: _instrumentmetrics } #todo
+    MPS02H1_P_Avg(1): { field: SWP_H1_0.05_1, units: false, measurement: SWP }
+    MPS02H1_P_Avg(2): { field: SWP_H1_0.1_1, units: false, measurement: SWP }
+    MPS02H1_P_Avg(3): { field: SWP_H1_0.15_1, units: false, measurement: SWP }
+    MPS02H1_P_Avg(4): { field: SWP_H1_0.2_1, units: false, measurement: SWP }
+    MPS02H1_P_Avg(5): { field: SWP_H1_0.3_1, units: false, measurement: SWP }
+    MPS02H1_P_Std(1): { field: SWP_SD_H1_0.05_1, units: false, measurement: _SD }
+    MPS02H1_P_Std(2): { field: SWP_SD_H1_0.1_1, units: false, measurement: _SD }
+    MPS02H1_P_Std(3): { field: SWP_SD_H1_0.15_1, units: false, measurement: _SD }
+    MPS02H1_P_Std(4): { field: SWP_SD_H1_0.2_1, units: false, measurement: _SD }
+    MPS02H1_P_Std(5): { field: SWP_SD_H1_0.3_1, units: false, measurement: _SD }
+    MPS02H1_T_Avg(1): { field: TS_H1_0.05_1, units: false, measurement: TS }
+    MPS02H1_T_Avg(2): { field: TS_H1_0.1_1, units: false, measurement: TS }
+    MPS02H1_T_Avg(3): { field: TS_H1_0.15_1, units: false, measurement: TS }
+    MPS02H1_T_Avg(4): { field: TS_H1_0.2_1, units: false, measurement: TS }
+    MPS02H1_T_Avg(5): { field: TS_H1_0.3_1, units: false, measurement: TS }
+    MPS02H1_T_Std(1): { field: TS_SD_H1_0.05_1, units: false, measurement: _SD }
+    MPS02H1_T_Std(2): { field: TS_SD_H1_0.1_1, units: false, measurement: _SD }
+    MPS02H1_T_Std(3): { field: TS_SD_H1_0.15_1, units: false, measurement: _SD }
+    MPS02H1_T_Std(4): { field: TS_SD_H1_0.2_1, units: false, measurement: _SD }
+    MPS02H1_T_Std(5): { field: TS_SD_H1_0.3_1, units: false, measurement: _SD }
+    NTP_T1_47_1: { field: NTP_T1_47_1, units: false, measurement: _instrumentmetrics }
+    PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, measurement: XXX } #todo
+    PTemp_C_Std: { field: PTemp_C_Std_X_X_X, units: false, measurement: XXX } #todo
+    RECORD: { field: RECORD_H1_0_1, units: false, measurement: _instrumentmetrics }
+    RefCycleFlag: { field: RefCycleFlag_X_X_X, units: false, measurement: XXX } #todo
+    RefMeasFlag: { field: RefMeasFlag_X_X_X, units: false, measurement: XXX } #todo
     # RH location info from TB, from site map
-    RHUM_01_Avg: { field: RH_M4_1_1, units: false, gain: 1, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_01_Std: { field: RH_SD_M4_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_04_Avg: { field: RH_M3_1_1, units: false, gain: 1, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_04_Std: { field: RH_SD_M3_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_10_Avg: { field: RH_M2_1_1, units: false, gain: 1, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_10_Std: { field: RH_SD_M2_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_27_Avg: { field: RH_T1_17.5_1, units: false, gain: 1, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_27_Std: { field: RH_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_44_Avg: { field: RH_T1_35_1, units: false, gain: 1, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
-    RHUM_44_Std: { field: RH_SD_T1_35_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    T109Dev2_Avg: { field: T109Dev2_Avg_X_X_X, units: false, gain: 1, measurement: XXX } #todo
-    T109Dev2_Std: { field: T109Dev2_Std_X_X_X, units: false, gain: 1, measurement: XXX } #todo
+    RHUM_01_Avg: { field: RH_M4_1_1, units: false, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_01_Std: { field: RH_SD_M4_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_04_Avg: { field: RH_M3_1_1, units: false, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_04_Std: { field: RH_SD_M3_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_10_Avg: { field: RH_M2_1_1, units: false, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_10_Std: { field: RH_SD_M2_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_27_Avg: { field: RH_T1_17.5_1, units: false, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_27_Std: { field: RH_SD_T1_17.5_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_44_Avg: { field: RH_T1_35_1, units: false, measurement: RH, ignore_after: "2022-05-10 07:56:00" }
+    RHUM_44_Std: { field: RH_SD_T1_35_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    T109Dev2_Avg: { field: T109Dev2_Avg_X_X_X, units: false, measurement: XXX } #todo
+    T109Dev2_Std: { field: T109Dev2_Std_X_X_X, units: false, measurement: XXX } #todo
     # T_BOLE *assumed* to be at breast height (assumed 1.35m)
-    TCSt8003_S150_Avg: { field: T_BOLE_TREE8003_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8003_S150_Std: { field: T_BOLE_SD_TREE8003_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8006_S150_Avg: { field: T_BOLE_TREE8006_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8006_S150_Std: { field: T_BOLE_SD_TREE8006_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8008_S150_Avg: { field: T_BOLE_TREE8008_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8008_S150_Std: { field: T_BOLE_SD_TREE8008_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8011_S150_Avg: { field: T_BOLE_TREE8011_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8011_S150_Std: { field: T_BOLE_SD_TREE8011_1.35_S150, units: false, gain: 1, measurement: _SD }
-    TCSt8015_S150_Avg: { field: T_BOLE_TREE8015_1.35_S150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8015_S150_Std: { field: T_BOLE_SD_TREE8015_1.35_S150, units: false, gain: 1, measurement: _SD }
+    TCSt8003_S150_Avg: { field: T_BOLE_TREE8003_1.35_S150, units: false, measurement: T_BOLE }
+    TCSt8003_S150_Std: { field: T_BOLE_SD_TREE8003_1.35_S150, units: false, measurement: _SD }
+    TCSt8006_S150_Avg: { field: T_BOLE_TREE8006_1.35_S150, units: false, measurement: T_BOLE }
+    TCSt8006_S150_Std: { field: T_BOLE_SD_TREE8006_1.35_S150, units: false, measurement: _SD }
+    TCSt8008_S150_Avg: { field: T_BOLE_TREE8008_1.35_S150, units: false, measurement: T_BOLE }
+    TCSt8008_S150_Std: { field: T_BOLE_SD_TREE8008_1.35_S150, units: false, measurement: _SD }
+    TCSt8011_S150_Avg: { field: T_BOLE_TREE8011_1.35_S150, units: false, measurement: T_BOLE }
+    TCSt8011_S150_Std: { field: T_BOLE_SD_TREE8011_1.35_S150, units: false, measurement: _SD }
+    TCSt8015_S150_Avg: { field: T_BOLE_TREE8015_1.35_S150, units: false, measurement: T_BOLE }
+    TCSt8015_S150_Std: { field: T_BOLE_SD_TREE8015_1.35_S150, units: false, measurement: _SD }
     # TA location info from TB, from site map
-    TEMP_01_Avg: { field: TA_M4_1_1, units: false, gain: 1, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_01_Std: { field: TA_SD_M4_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_04_Avg: { field: TA_M3_1_1, units: false, gain: 1, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_04_Std: { field: TA_SD_M3_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_10_Avg: { field: TA_M2_1_1, units: false, gain: 1, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_10_Std: { field: TA_SD_M2_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_27_Avg: { field: TA_T1_17.5_1, units: false, gain: 1, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_27_Std: { field: TA_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_44_Avg: { field: TA_T1_35_1, units: false, gain: 1, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
-    TEMP_44_Std: { field: TA_SD_T1_35_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_01_Avg: { field: TA_M4_1_1, units: false, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_01_Std: { field: TA_SD_M4_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_04_Avg: { field: TA_M3_1_1, units: false, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_04_Std: { field: TA_SD_M3_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_10_Avg: { field: TA_M2_1_1, units: false, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_10_Std: { field: TA_SD_M2_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_27_Avg: { field: TA_T1_17.5_1, units: false, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_27_Std: { field: TA_SD_T1_17.5_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_44_Avg: { field: TA_T1_35_1, units: false, measurement: TA, ignore_after: "2022-05-10 07:56:00" }
+    TEMP_44_Std: { field: TA_SD_T1_35_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
     # WD location info *assumed* to be the same as for other similarly named sensors
-    WDIR_01_Avg: { field: WD_M4_1_1, units: false, gain: 1, measurement: WD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_01_Std: { field: WD_SD_M4_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_04_Avg: { field: WD_M3_1_1, units: false, gain: 1, measurement: WD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_04_Std: { field: WD_SD_M3_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_10_Avg: { field: WD_M2_1_1, units: false, gain: 1, measurement: WD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_10_Std: { field: WD_SD_M2_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_27_Avg: { field: WD_T1_17.5_1, units: false, gain: 1, measurement: WD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_27_Std: { field: WD_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_44_Avg: { field: WD_T1_35_1, units: false, gain: 1, measurement: WD, ignore_after: "2022-05-10 07:56:00" }
-    WDIR_44_Std: { field: WD_SD_T1_35_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_01_Avg: { field: WD_M4_1_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_01_Std: { field: WD_SD_M4_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_04_Avg: { field: WD_M3_1_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_04_Std: { field: WD_SD_M3_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_10_Avg: { field: WD_M2_1_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_10_Std: { field: WD_SD_M2_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_27_Avg: { field: WD_T1_17.5_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_27_Std: { field: WD_SD_T1_17.5_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_44_Avg: { field: WD_T1_35_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WDIR_44_Std: { field: WD_SD_T1_35_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
     # WS location info *assumed* to be the same as for other similarly named sensors
-    WSPEED_01_Avg: { field: WS_M4_1_1, units: false, gain: 1, measurement: WS, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_01_Std: { field: WS_SD_M4_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_04_Avg: { field: WS_M3_1_1, units: false, gain: 1, measurement: WS, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_04_Std: { field: WS_SD_M3_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_10_Avg: { field: WS_M2_1_1, units: false, gain: 1, measurement: WS, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_10_Std: { field: WS_SD_M2_1_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_27_Avg: { field: WS_T1_17.5_1, units: false, gain: 1, measurement: WS, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_27_Std: { field: WS_SD_T1_17.5_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_44_Avg: { field: WS_T1_35_1, units: false, gain: 1, measurement: WS, ignore_after: "2022-05-10 07:56:00" }
-    WSPEED_44_Std: { field: WS_SD_T1_35_1, units: false, gain: 1, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_01_Avg: { field: WS_M4_1_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_01_Std: { field: WS_SD_M4_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_04_Avg: { field: WS_M3_1_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_04_Std: { field: WS_SD_M3_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_10_Avg: { field: WS_M2_1_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_10_Std: { field: WS_SD_M2_1_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_27_Avg: { field: WS_T1_17.5_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_27_Std: { field: WS_SD_T1_17.5_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_44_Avg: { field: WS_T1_35_1, units: false, measurement: WIND, ignore_after: "2022-05-10 07:56:00" }
+    WSPEED_44_Std: { field: WS_SD_T1_35_1, units: false, measurement: _SD, ignore_after: "2022-05-10 07:56:00" }

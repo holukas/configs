@@ -15,9 +15,9 @@ DAV12-RAW-FF2-TBL2-201507021850-CSV-GZ-25H:
   data_raw_freq: 25h
   data_skiprows: false
   data_headerrows: [ 0 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -25,7 +25,6 @@ DAV12-RAW-FF2-TBL2-201507021850-CSV-GZ-25H:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free

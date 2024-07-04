@@ -23,9 +23,9 @@ DAV10-RAW-RAD-200612200949-A-30MIN:
   data_raw_freq: 30min
   data_skiprows: false
   data_headerrows: false
-  data_index_col: -9999
-  data_parse_dates: false
-  data_date_parser: false
+  data_timestamp_column: -9999
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: false
   data_build_timestamp: "YEAR+DOY+TIME"
   # If 123 (int) is in the first column (index 0), the data row is good, otherwise bad data
   data_keep_good_rows: [ 0, 123 ]
@@ -34,7 +34,6 @@ DAV10-RAW-RAD-200612200949-A-30MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
@@ -43,14 +42,14 @@ DAV10-RAW-RAD-200612200949-A-30MIN:
     # the sequence of the variables given here is IMPORTANT!
     # The variable names are built from this sequence and therefore
     # the sequence must no be changed.
-    ID: { field: ID_T1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    ID: { field: ID_T1_0_1, units: false, measurement: _instrumentmetrics }
     YEAR: { field: XXX, units: XXX, gain: XXX, measurement: XXX }
     DOY: { field: XXX, units: XXX, gain: XXX, measurement: XXX }
     TIME: { field: XXX, units: XXX, gain: XXX, measurement: XXX }
-    Rad_Kin: { field: SW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    Rad_Kout: { field: SW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
-    Rad_Lin: { field: LW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    Rad_Lout: { field: LW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    Rad_T_CNR1: { field: T_RAD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    Rad_Batt_V: { field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
-    Rad_CR10_Temp: { field: T_LOGGER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    Rad_Kin: { field: SW_IN_T1_35_1, units: "W m-2", measurement: SW }
+    Rad_Kout: { field: SW_OUT_T1_35_1, units: "W m-2", measurement: SW }
+    Rad_Lin: { field: LW_IN_T1_35_1, units: "W m-2", measurement: LW }
+    Rad_Lout: { field: LW_OUT_T1_35_1, units: "W m-2", measurement: LW }
+    Rad_T_CNR1: { field: T_RAD_T1_35_1, units: "degC", measurement: _instrumentmetrics }
+    Rad_Batt_V: { field: SV_LOGGER_T1_35_1, units: "V", measurement: _instrumentmetrics }
+    Rad_CR10_Temp: { field: T_LOGGER_T1_35_1, units: "degC", measurement: _instrumentmetrics }

@@ -16,9 +16,9 @@ LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN:
   data_raw_freq: 10min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -26,120 +26,119 @@ LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    AirTM_Avg: { field: AirTM_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
-    Batt_Volt_Avg: { field: BV_FF1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    AirTM_Avg: { field: AirTM_Avg_X_X_X, units: false, measurement: XXX }  #todo
+    Batt_Volt_Avg: { field: BV_FF1_0_1, units: false, measurement: _instrumentmetrics }
     # CO2_BOLE *assumed* to be at breast height (assumed 1.35m)
-    CO2St2577_W150_Avg: { field: CO2_BOLE_TREE2577_1.35_W150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St2585_W150_Avg: { field: CO2_BOLE_TREE2585_1.35_W150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St2591_W150_Avg: { field: CO2_BOLE_TREE2591_1.35_W150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8001_W150_Avg: { field: CO2_BOLE_TREE8001_1.35_W150, units: false, gain: 1, measurement: CO2_BOLE }
-    CO2St8002_W150_Avg: { field: CO2_BOLE_TREE8002_1.35_W150, units: false, gain: 1, measurement: CO2_BOLE }
+    CO2St2577_W150_Avg: { field: CO2_BOLE_TREE2577_1.35_W150, units: false, measurement: CO2_BOLE }
+    CO2St2585_W150_Avg: { field: CO2_BOLE_TREE2585_1.35_W150, units: false, measurement: CO2_BOLE }
+    CO2St2591_W150_Avg: { field: CO2_BOLE_TREE2591_1.35_W150, units: false, measurement: CO2_BOLE }
+    CO2St8001_W150_Avg: { field: CO2_BOLE_TREE8001_1.35_W150, units: false, measurement: CO2_BOLE }
+    CO2St8002_W150_Avg: { field: CO2_BOLE_TREE8002_1.35_W150, units: false, measurement: CO2_BOLE }
     # DENDRO measured at breast height (assumed 1.35m)
-    D2544_E150_Avg: { field: DENDRO_TREE2544_1.35_E150, units: false, gain: 1, measurement: DENDRO }
-    D2577_N150_Avg: { field: DENDRO_TREE2577_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D2585_E150_Avg: { field: DENDRO_TREE2585_1.35_E150, units: false, gain: 1, measurement: DENDRO }
-    D2586_E150_Avg: { field: DENDRO_TREE2586_1.35_E150, units: false, gain: 1, measurement: DENDRO }
-    D2587_E150_Avg: { field: DENDRO_TREE2587_1.35_E150, units: false, gain: 1, measurement: DENDRO }
-    D2591_N150_Avg: { field: DENDRO_TREE2591_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D2632_E150_Avg: { field: DENDRO_TREE2632_1.35_E150, units: false, gain: 1, measurement: DENDRO }
-    D8001_N150_Avg: { field: DENDRO_TREE8001_1.35_N150, units: false, gain: 1, measurement: DENDRO }
-    D8002_E150_Avg: { field: DENDRO_TREE8002_1.35_E150, units: false, gain: 1, measurement: DENDRO }
-    DJ_E150_Avg: { field: DJ_E150_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
-    EC_RAW_FF1_0x1_1_Avg: { field: EC_RAW_FF1_0.1_1, units: false, gain: 1, measurement: _RAW }
-    EC_RAW_FF1_0x2_1_Avg: { field: EC_RAW_FF1_0.2_1, units: false, gain: 1, measurement: _RAW }
-    EC_RAW_FF1_0x3_1_Avg: { field: EC_RAW_FF1_0.3_1, units: false, gain: 1, measurement: _RAW }
-    EC_RAW_FF1_0x5_1_Avg: { field: EC_RAW_FF1_0.5_1, units: false, gain: 1, measurement: _RAW }
-    EC_RAW_FF1_0x05_1_Avg: { field: EC_RAW_FF1_0.05_1, units: false, gain: 1, measurement: _RAW }
-    LeafWetM_Avg: { field: LEAF_WET_FF1_1.5_1, units: false, gain: 1, measurement: LEAF_WET }
+    D2544_E150_Avg: { field: DENDRO_TREE2544_1.35_E150, units: false, measurement: DENDRO }
+    D2577_N150_Avg: { field: DENDRO_TREE2577_1.35_N150, units: false, measurement: DENDRO }
+    D2585_E150_Avg: { field: DENDRO_TREE2585_1.35_E150, units: false, measurement: DENDRO }
+    D2586_E150_Avg: { field: DENDRO_TREE2586_1.35_E150, units: false, measurement: DENDRO }
+    D2587_E150_Avg: { field: DENDRO_TREE2587_1.35_E150, units: false, measurement: DENDRO }
+    D2591_N150_Avg: { field: DENDRO_TREE2591_1.35_N150, units: false, measurement: DENDRO }
+    D2632_E150_Avg: { field: DENDRO_TREE2632_1.35_E150, units: false, measurement: DENDRO }
+    D8001_N150_Avg: { field: DENDRO_TREE8001_1.35_N150, units: false, measurement: DENDRO }
+    D8002_E150_Avg: { field: DENDRO_TREE8002_1.35_E150, units: false, measurement: DENDRO }
+    DJ_E150_Avg: { field: DJ_E150_Avg_X_X_X, units: false, measurement: XXX }  #todo
+    EC_RAW_FF1_0x1_1_Avg: { field: EC_RAW_FF1_0.1_1, units: false, measurement: _RAW }
+    EC_RAW_FF1_0x2_1_Avg: { field: EC_RAW_FF1_0.2_1, units: false, measurement: _RAW }
+    EC_RAW_FF1_0x3_1_Avg: { field: EC_RAW_FF1_0.3_1, units: false, measurement: _RAW }
+    EC_RAW_FF1_0x5_1_Avg: { field: EC_RAW_FF1_0.5_1, units: false, measurement: _RAW }
+    EC_RAW_FF1_0x05_1_Avg: { field: EC_RAW_FF1_0.05_1, units: false, measurement: _RAW }
+    LeafWetM_Avg: { field: LEAF_WET_FF1_1.5_1, units: false, measurement: LEAF_WET }
     # Depth info from AS
-    MPS02HP_Avg(1): { field: SWP_H1_0.05_1, units: false, gain: 1, measurement: SWP }
-    MPS02HP_Avg(2): { field: SWP_H1_0.1_1, units: false, gain: 1, measurement: SWP }
-    MPS02HP_Avg(3): { field: SWP_H1_0.15_1, units: false, gain: 1, measurement: SWP }
-    MPS02HP_Avg(4): { field: SWP_H1_0.2_1, units: false, gain: 1, measurement: SWP }
-    MPS02HT_Avg(1): { field: TS_H1_0.05_1, units: false, gain: 1, measurement: TS }
-    MPS02HT_Avg(2): { field: TS_H1_0.1_1, units: false, gain: 1, measurement: TS }
-    MPS02HT_Avg(3): { field: TS_H1_0.15_1, units: false, gain: 1, measurement: TS }
-    MPS02HT_Avg(4): { field: TS_H1_0.2_1, units: false, gain: 1, measurement: TS }
-    NetRadM_Avg: { field: NETRAD_FF1_2_1, units: false, gain: 1, measurement: NETRAD }
-    PPFDM_Avg: { field: PPFD_IN_AVG_FF1_2_1, units: false, gain: 1, measurement: PPFD }
-    PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, gain: 1, measurement: XXX }
-    RECORD: { field: RECORD_FF1_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    MPS02HP_Avg(1): { field: SWP_H1_0.05_1, units: false, measurement: SWP }
+    MPS02HP_Avg(2): { field: SWP_H1_0.1_1, units: false, measurement: SWP }
+    MPS02HP_Avg(3): { field: SWP_H1_0.15_1, units: false, measurement: SWP }
+    MPS02HP_Avg(4): { field: SWP_H1_0.2_1, units: false, measurement: SWP }
+    MPS02HT_Avg(1): { field: TS_H1_0.05_1, units: false, measurement: TS }
+    MPS02HT_Avg(2): { field: TS_H1_0.1_1, units: false, measurement: TS }
+    MPS02HT_Avg(3): { field: TS_H1_0.15_1, units: false, measurement: TS }
+    MPS02HT_Avg(4): { field: TS_H1_0.2_1, units: false, measurement: TS }
+    NetRadM_Avg: { field: NETRAD_FF1_2_1, units: false, measurement: NETRAD }
+    PPFDM_Avg: { field: PPFD_IN_AVG_FF1_2_1, units: false, measurement: PPFD }
+    PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, measurement: XXX }
+    RECORD: { field: RECORD_FF1_0_1, units: false, measurement: _instrumentmetrics }
     # RH assumed to be the same as in succeeding filetype
-    RelHumM_Avg: { field: RH_M1_2_1, units: false, gain: 1, measurement: RH }
+    RelHumM_Avg: { field: RH_M1_2_1, units: false, measurement: RH }
     # SAPFLOW measured at breast height (assumed 1.35m)
-    Sap2577_N150_Avg: { field: SAPFLOW_TREE2577_1.35_N150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2577_S150_Avg: { field: SAPFLOW_TREE2577_1.35_S150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2585_N150_Avg: { field: SAPFLOW_TREE2585_1.35_N150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2585_S150_Avg: { field: SAPFLOW_TREE2585_1.35_S150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2586_N150_Avg: { field: SAPFLOW_TREE2586_1.35_N150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2586_S150_Avg: { field: SAPFLOW_TREE2586_1.35_S150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2587_N150_Avg: { field: SAPFLOW_TREE2587_1.35_N150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2587_S150_Avg: { field: SAPFLOW_TREE2587_1.35_S150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2591_N150_Avg: { field: SAPFLOW_TREE2591_1.35_N150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2591_S150_Avg: { field: SAPFLOW_TREE2591_1.35_S150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2632_N150_Avg: { field: SAPFLOW_TREE2632_1.35_N150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap2632_S150_Avg: { field: SAPFLOW_TREE2632_1.35_S150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap8001_N150_Avg: { field: SAPFLOW_TREE8001_1.35_N150, units: false, gain: 1, measurement: SAPFLOW }
-    Sap8001_S150_Avg: { field: SAPFLOW_TREE8001_1.35_S150, units: false, gain: 1, measurement: SAPFLOW }
-    SAPFLOW_TR2544_1x5_1_Avg: { field: SAPFLOW_TREE2544_1.35_1, units: false, gain: 1, measurement: SAPFLOW }
-    SAPFLOW_TR8002_1x5_1_Avg: { field: SAPFLOW_TREE8002_1.35_1, units: false, gain: 1, measurement: SAPFLOW }
-    SAPFLOW_TR9957_1x5_1_Avg: { field: SAPFLOW_TREE9957_1.35_1, units: false, gain: 1, measurement: SAPFLOW }
-    SapJ_N150_Avg: { field: SapJ_N150_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
-    SapJ_S150_Avg: { field: SapJ_S150_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
-    SHFM1_05_Avg: { field: G_M1_0.05_1, units: false, gain: 1, measurement: G }
-    SHFM2_05_Avg: { field: G_M2_0.05_1, units: false, gain: 1, measurement: G }
-    SHFM3_05_Avg: { field: G_M3_0.05_1, units: false, gain: 1, measurement: G }
-    SoilMM5_05_Avg: { field: SWC_M5_0.05_1, units: false, gain: 100, measurement: SWC }
-    SoilMM5_10_Avg: { field: SWC_M5_0.1_1, units: false, gain: 100, measurement: SWC }
-    SoilMM5_20_Avg: { field: SWC_M5_0.2_1, units: false, gain: 100, measurement: SWC }
-    SoilMM5_30_Avg: { field: SWC_M5_0.3_1, units: false, gain: 100, measurement: SWC }
-    SoilTM1_05_Avg: { field: TS_M1_0.05_1, units: false, gain: 1, measurement: TS }
-    SoilTM2_05_Avg: { field: TS_M2_0.05_1, units: false, gain: 1, measurement: TS }
-    SoilTM3_05_Avg: { field: TS_M3_0.05_1, units: false, gain: 1, measurement: TS }
-    SoilTM4_05_Avg: { field: TS_M4_0.05_1, units: false, gain: 1, measurement: TS }
-    SoilTM4_10_Avg: { field: TS_M4_0.1_1, units: false, gain: 1, measurement: TS }
-    SoilTM4_15_Avg: { field: TS_M4_0.15_1, units: false, gain: 1, measurement: TS }
-    SoilTM4_30_Avg: { field: TS_M4_0.3_1, units: false, gain: 1, measurement: TS }
-    SoilTM4_50_Avg: { field: TS_M4_0.5_1, units: false, gain: 1, measurement: TS }
-    SWC_FF1_0x1_1_Avg: { field: SWC_FF1_0.1_1, units: false, gain: 100, measurement: SWC }
-    SWC_FF1_0x2_1_Avg: { field: SWC_FF1_0.2_1, units: false, gain: 100, measurement: SWC }
-    SWC_FF1_0x3_1_Avg: { field: SWC_FF1_0.3_1, units: false, gain: 100, measurement: SWC }
-    SWC_FF1_0x5_1_Avg: { field: SWC_FF1_0.5_1, units: false, gain: 100, measurement: SWC }
-    SWC_FF1_0x05_1_Avg: { field: SWC_FF1_0.05_1, units: false, gain: 100, measurement: SWC }
-    SWC_RAW_FF1_0x1_1_Avg: { field: SWC_RAW_FF1_0.1_1, units: false, gain: 1, measurement: _RAW }
-    SWC_RAW_FF1_0x2_1_Avg: { field: SWC_RAW_FF1_0.2_1, units: false, gain: 1, measurement: _RAW }
-    SWC_RAW_FF1_0x3_1_Avg: { field: SWC_RAW_FF1_0.3_1, units: false, gain: 1, measurement: _RAW }
-    SWC_RAW_FF1_0x5_1_Avg: { field: SWC_RAW_FF1_0.5_1, units: false, gain: 1, measurement: _RAW }
-    SWC_RAW_FF1_0x05_1_Avg: { field: SWC_RAW_FF1_0.05_1, units: false, gain: 1, measurement: _RAW }
-    T109Dev3_Avg: { field: T109Dev3_Avg_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
-    T109Dev3_Std: { field: T109Dev3_Std_X_X_X, units: false, gain: 1, measurement: XXX }  #todo
+    Sap2577_N150_Avg: { field: SAPFLOW_TREE2577_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap2577_S150_Avg: { field: SAPFLOW_TREE2577_1.35_S150, units: false, measurement: SAPFLOW }
+    Sap2585_N150_Avg: { field: SAPFLOW_TREE2585_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap2585_S150_Avg: { field: SAPFLOW_TREE2585_1.35_S150, units: false, measurement: SAPFLOW }
+    Sap2586_N150_Avg: { field: SAPFLOW_TREE2586_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap2586_S150_Avg: { field: SAPFLOW_TREE2586_1.35_S150, units: false, measurement: SAPFLOW }
+    Sap2587_N150_Avg: { field: SAPFLOW_TREE2587_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap2587_S150_Avg: { field: SAPFLOW_TREE2587_1.35_S150, units: false, measurement: SAPFLOW }
+    Sap2591_N150_Avg: { field: SAPFLOW_TREE2591_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap2591_S150_Avg: { field: SAPFLOW_TREE2591_1.35_S150, units: false, measurement: SAPFLOW }
+    Sap2632_N150_Avg: { field: SAPFLOW_TREE2632_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap2632_S150_Avg: { field: SAPFLOW_TREE2632_1.35_S150, units: false, measurement: SAPFLOW }
+    Sap8001_N150_Avg: { field: SAPFLOW_TREE8001_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap8001_S150_Avg: { field: SAPFLOW_TREE8001_1.35_S150, units: false, measurement: SAPFLOW }
+    SAPFLOW_TR2544_1x5_1_Avg: { field: SAPFLOW_TREE2544_1.35_1, units: false, measurement: SAPFLOW }
+    SAPFLOW_TR8002_1x5_1_Avg: { field: SAPFLOW_TREE8002_1.35_1, units: false, measurement: SAPFLOW }
+    SAPFLOW_TR9957_1x5_1_Avg: { field: SAPFLOW_TREE9957_1.35_1, units: false, measurement: SAPFLOW }
+    SapJ_N150_Avg: { field: SapJ_N150_Avg_X_X_X, units: false, measurement: XXX }  #todo
+    SapJ_S150_Avg: { field: SapJ_S150_Avg_X_X_X, units: false, measurement: XXX }  #todo
+    SHFM1_05_Avg: { field: G_M1_0.05_1, units: false, measurement: G }
+    SHFM2_05_Avg: { field: G_M2_0.05_1, units: false, measurement: G }
+    SHFM3_05_Avg: { field: G_M3_0.05_1, units: false, measurement: G }
+    SoilMM5_05_Avg: { field: SWC_M5_0.05_1, units: false, gain: 100.0, measurement: SWC }
+    SoilMM5_10_Avg: { field: SWC_M5_0.1_1, units: false, gain: 100.0, measurement: SWC }
+    SoilMM5_20_Avg: { field: SWC_M5_0.2_1, units: false, gain: 100.0, measurement: SWC }
+    SoilMM5_30_Avg: { field: SWC_M5_0.3_1, units: false, gain: 100.0, measurement: SWC }
+    SoilTM1_05_Avg: { field: TS_M1_0.05_1, units: false, measurement: TS }
+    SoilTM2_05_Avg: { field: TS_M2_0.05_1, units: false, measurement: TS }
+    SoilTM3_05_Avg: { field: TS_M3_0.05_1, units: false, measurement: TS }
+    SoilTM4_05_Avg: { field: TS_M4_0.05_1, units: false, measurement: TS }
+    SoilTM4_10_Avg: { field: TS_M4_0.1_1, units: false, measurement: TS }
+    SoilTM4_15_Avg: { field: TS_M4_0.15_1, units: false, measurement: TS }
+    SoilTM4_30_Avg: { field: TS_M4_0.3_1, units: false, measurement: TS }
+    SoilTM4_50_Avg: { field: TS_M4_0.5_1, units: false, measurement: TS }
+    SWC_FF1_0x1_1_Avg: { field: SWC_FF1_0.1_1, units: false, gain: 100.0, measurement: SWC }
+    SWC_FF1_0x2_1_Avg: { field: SWC_FF1_0.2_1, units: false, gain: 100.0, measurement: SWC }
+    SWC_FF1_0x3_1_Avg: { field: SWC_FF1_0.3_1, units: false, gain: 100.0, measurement: SWC }
+    SWC_FF1_0x5_1_Avg: { field: SWC_FF1_0.5_1, units: false, gain: 100.0, measurement: SWC }
+    SWC_FF1_0x05_1_Avg: { field: SWC_FF1_0.05_1, units: false, gain: 100.0, measurement: SWC }
+    SWC_RAW_FF1_0x1_1_Avg: { field: SWC_RAW_FF1_0.1_1, units: false, measurement: _RAW }
+    SWC_RAW_FF1_0x2_1_Avg: { field: SWC_RAW_FF1_0.2_1, units: false, measurement: _RAW }
+    SWC_RAW_FF1_0x3_1_Avg: { field: SWC_RAW_FF1_0.3_1, units: false, measurement: _RAW }
+    SWC_RAW_FF1_0x5_1_Avg: { field: SWC_RAW_FF1_0.5_1, units: false, measurement: _RAW }
+    SWC_RAW_FF1_0x05_1_Avg: { field: SWC_RAW_FF1_0.05_1, units: false, measurement: _RAW }
+    T109Dev3_Avg: { field: T109Dev3_Avg_X_X_X, units: false, measurement: XXX }  #todo
+    T109Dev3_Std: { field: T109Dev3_Std_X_X_X, units: false, measurement: XXX }  #todo
     # T_BOLE *assumed* to be at breast height (assumed 1.35m)
-    TCSt2577_W150_Avg: { field: T_BOLE_TREE2577_1.35_W150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt2585_W150_Avg: { field: T_BOLE_TREE2585_1.35_W150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt2591_W150_Avg: { field: T_BOLE_TREE2591_1.35_W150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8001_W150_Avg: { field: T_BOLE_TREE8001_1.35_W150, units: false, gain: 1, measurement: T_BOLE }
-    TCSt8002_W150_Avg: { field: T_BOLE_TREE8002_1.35_W150, units: false, gain: 1, measurement: T_BOLE }
-    TS_FF1_0x1_1_Avg: { field: TS_FF1_0.1_1, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x1_2_Avg: { field: TS_FF1_0.1_2, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x2_1_Avg: { field: TS_FF1_0.2_1, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x2_2_Avg: { field: TS_FF1_0.2_2, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x3_1_Avg: { field: TS_FF1_0.3_1, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x3_2_Avg: { field: TS_FF1_0.3_2, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x5_1_Avg: { field: TS_FF1_0.5_1, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x05_1_Avg: { field: TS_FF1_0.05_1, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x5_2_Avg: { field: TS_FF1_0.5_2, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x05_2_Avg: { field: TS_FF1_0.05_2, units: false, gain: 1, measurement: TS }
-    TS_FF1_0x6_1_Avg: { field: TS_FF1_0.6_1, units: false, gain: 1, measurement: TS }
-    WinddirM_Avg: { field: WD_FF1_X_1, units: false, gain: 1, measurement: WD }  #todo
-    Windspeed_Avg: { field: WS_FF1_X_1, units: false, gain: 1, measurement: WS }  #todo
-    WP_FF1_0x1_1_Avg: { field: SWP_FF1_0.1_1, units: false, gain: 1, measurement: SWP }
-    WP_FF1_0x2_1_Avg: { field: SWP_FF1_0.2_1, units: false, gain: 1, measurement: SWP }
-    WP_FF1_0x3_1_Avg: { field: SWP_FF1_0.3_1, units: false, gain: 1, measurement: SWP }
-    WP_FF1_0x5_1_Avg: { field: SWP_FF1_0.5_1, units: false, gain: 1, measurement: SWP }
-    WP_FF1_0x05_1_Avg: { field: SWP_FF1_0.05_1, units: false, gain: 1, measurement: SWP }
-    WP_FF1_0x6_1_Avg: { field: SWP_FF1_0.6_1, units: false, gain: 1, measurement: SWP }
+    TCSt2577_W150_Avg: { field: T_BOLE_TREE2577_1.35_W150, units: false, measurement: T_BOLE }
+    TCSt2585_W150_Avg: { field: T_BOLE_TREE2585_1.35_W150, units: false, measurement: T_BOLE }
+    TCSt2591_W150_Avg: { field: T_BOLE_TREE2591_1.35_W150, units: false, measurement: T_BOLE }
+    TCSt8001_W150_Avg: { field: T_BOLE_TREE8001_1.35_W150, units: false, measurement: T_BOLE }
+    TCSt8002_W150_Avg: { field: T_BOLE_TREE8002_1.35_W150, units: false, measurement: T_BOLE }
+    TS_FF1_0x1_1_Avg: { field: TS_FF1_0.1_1, units: false, measurement: TS }
+    TS_FF1_0x1_2_Avg: { field: TS_FF1_0.1_2, units: false, measurement: TS }
+    TS_FF1_0x2_1_Avg: { field: TS_FF1_0.2_1, units: false, measurement: TS }
+    TS_FF1_0x2_2_Avg: { field: TS_FF1_0.2_2, units: false, measurement: TS }
+    TS_FF1_0x3_1_Avg: { field: TS_FF1_0.3_1, units: false, measurement: TS }
+    TS_FF1_0x3_2_Avg: { field: TS_FF1_0.3_2, units: false, measurement: TS }
+    TS_FF1_0x5_1_Avg: { field: TS_FF1_0.5_1, units: false, measurement: TS }
+    TS_FF1_0x05_1_Avg: { field: TS_FF1_0.05_1, units: false, measurement: TS }
+    TS_FF1_0x5_2_Avg: { field: TS_FF1_0.5_2, units: false, measurement: TS }
+    TS_FF1_0x05_2_Avg: { field: TS_FF1_0.05_2, units: false, measurement: TS }
+    TS_FF1_0x6_1_Avg: { field: TS_FF1_0.6_1, units: false, measurement: TS }
+    WinddirM_Avg: { field: WD_FF1_X_1, units: false, measurement: WIND }  #todo
+    Windspeed_Avg: { field: WS_FF1_X_1, units: false, measurement: WIND }  #todo
+    WP_FF1_0x1_1_Avg: { field: SWP_FF1_0.1_1, units: false, measurement: SWP }
+    WP_FF1_0x2_1_Avg: { field: SWP_FF1_0.2_1, units: false, measurement: SWP }
+    WP_FF1_0x3_1_Avg: { field: SWP_FF1_0.3_1, units: false, measurement: SWP }
+    WP_FF1_0x5_1_Avg: { field: SWP_FF1_0.5_1, units: false, measurement: SWP }
+    WP_FF1_0x05_1_Avg: { field: SWP_FF1_0.05_1, units: false, measurement: SWP }
+    WP_FF1_0x6_1_Avg: { field: SWP_FF1_0.6_1, units: false, measurement: SWP }

@@ -16,9 +16,9 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
   data_raw_freq: min
   data_skiprows: [ 0, 3 ]
   data_headerrows: [ 0, 1 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -26,7 +26,6 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
@@ -145,14 +144,14 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     SW_BC_OUT_M1_2_1_Std: { field: SW_OUT_BC_SD_M1_2_1, units: false, measurement: _SD }
     SW_BC_VIN_M1_2_1_Avg: { field: SW_VIN_BC_M1_2_1, units: false, measurement: _RAW }
     SW_BC_VOUT_M1_2_1_Avg: { field: SW_VOUT_BC_M1_2_1, units: false, measurement: _RAW }
-    SWC_FF1_0x1_1_Avg: { field: SWC_FF1_0.1_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF1_0x1_1_Avg: { field: SWC_FF1_0.1_1, units: "%", gain: 100.0, measurement: SWC }
     SWC_FF1_0x1_1_Std: { field: SWC_SD_FF1_0.1_1, units: false, measurement: _SD }
-    SWC_FF1_0x2_1_Avg: { field: SWC_FF1_0.2_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF1_0x2_1_Avg: { field: SWC_FF1_0.2_1, units: "%", gain: 100.0, measurement: SWC }
     SWC_FF1_0x2_1_Std: { field: SWC_SD_FF1_0.2_1, units: false, measurement: _SD }
-    SWC_FF1_0x3_1_Avg: { field: SWC_FF1_0.3_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF1_0x3_1_Avg: { field: SWC_FF1_0.3_1, units: "%", gain: 100.0, measurement: SWC }
     SWC_FF1_0x3_1_Std: { field: SWC_SD_FF1_0.3_1, units: false, measurement: _SD }
-    SWC_FF1_0x5_1_Avg: { field: SWC_FF1_0.5_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF1_0x05_1_Avg: { field: SWC_FF1_0.05_1, units: "%", gain: 100, measurement: SWC }
+    SWC_FF1_0x5_1_Avg: { field: SWC_FF1_0.5_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF1_0x05_1_Avg: { field: SWC_FF1_0.05_1, units: "%", gain: 100.0, measurement: SWC }
     SWC_FF1_0x5_1_Std: { field: SWC_SD_FF1_0.5_1, units: false, measurement: _SD }
     SWC_FF1_0x05_1_Std: { field: SWC_SD_FF1_0.05_1, units: false, measurement: _SD }
     SWC_RAW_FF1_0x1_1_Avg: { field: SWC_RAW_FF1_0.1_1, units: false, measurement: _RAW }
@@ -196,9 +195,9 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     TS_FF1_0x05_4_Std: { field: TS_SD_FF1_0.05_4, units: false, measurement: _SD }
     TS_FF1_0x6_1_Avg: { field: TS_FF1_0.6_1, units: false, measurement: TS }
     TS_FF1_0x6_1_Std: { field: TS_SD_FF1_0.6_1, units: false, measurement: _SD }
-    WinddirM_Avg: { field: WD_FF1_X_X, units: false, measurement: WD }  #todo
+    WinddirM_Avg: { field: WD_FF1_X_X, units: false, measurement: WIND }  #todo
     WinddirM_Std: { field: WD_SD_FF1_X_X, units: false, measurement: _SD }  #todo
-    Windspeed_Avg: { field: WS_FF1_X_X, units: false, measurement: WS }  #todo
+    Windspeed_Avg: { field: WS_FF1_X_X, units: false, measurement: WIND }  #todo
     Windspeed_Std: { field: WS_SD_FF1_X_X, units: false, measurement: _SD }  #todo
     Windspeed_WVc(1): { field: WS_WVc(1)_X_X_X, units: false, measurement: XXX }  #todo
     Windspeed_WVc(2): { field: WS_WVc(2)_X_X_X, units: false, measurement: XXX }  #todo

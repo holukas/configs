@@ -119,5 +119,14 @@ W/m^2: W m-2
 "%": false
 "% vol": "vol%"
 "°C": degC
-"1=nighttime": false
 "e’": "vol%"  # Found at CH-FRU for SWC SD
+"number of records": false
+"method": false
+
+## Flags
+"1=nighttime": false
+"0=measured; 1/2/3=good/medium/poor quality gapfill": false
+"0=measured; 1=good quality gapfill; 2=downscaled from ERA": false
+"0=measured; 2=downscaled from ERA": false
+"fraction 0-1": false
+"0=calculated from measured drivers; 1=calculated from good quality gapfilled drivers; 2=downscaled from ERA": false

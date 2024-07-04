@@ -17,9 +17,9 @@ DAV12-RAW-FF3-TBL1-201412041850-CSV-GZ-10MIN:
   data_raw_freq: 10min
   data_skiprows: false
   data_headerrows: [ 0 ]
-  data_index_col: 0
-  data_parse_dates: [ 0 ]
-  data_date_parser: '%Y-%m-%d %H:%M:%S.%f'
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
@@ -27,7 +27,6 @@ DAV12-RAW-FF3-TBL1-201412041850-CSV-GZ-10MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_keep_date_col: false
   data_version: raw
   data_vars_parse_pos_indices: true
   data_vars_order: free
@@ -44,33 +43,33 @@ DAV12-RAW-FF3-TBL1-201412041850-CSV-GZ-10MIN:
     SENShfp_FF3_005_1: {  field: SENS_HFP_FF3_0.05_1, units: false, measurement: _instrumentmetrics }
     SENShfp_FF3_006_1: { field: SENS_HFP_FF3_0.06_1, units: false, measurement: _instrumentmetrics }
     SV_LOGGER_FF3_0_1: {  field: SV_LOGGER_FF3_0_1, units: "V", measurement: _instrumentmetrics }
-    SWC_FF3_004_2_Avg: { field: SWC_FF3_0.04_2, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_005_1_Avg: { field: SWC_FF3_0.05_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_005_1_Std: {  field: SWC_SD_FF3_005_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_005_2_Avg: {  field: SWC_FF3_005_2, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_005_2_Std: {  field: SWC_SD_FF3_005_2, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_010_1_Avg: { field: SWC_FF3_0.10_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_010_1_Std: {  field: SWC_SD_FF3_010_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_021_1_Avg: { field: SWC_FF3_0.21_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_021_1_Std: {  field: SWC_SD_FF3_021_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_050_1_Avg: { field: SWC_FF3_0.50_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_052_1_Avg: {  field: SWC_FF3_052_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_052_1_Std: {  field: SWC_SD_FF3_052_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_068_1_Avg: {  field: SWC_FF3_068_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_068_1_Std: {  field: SWC_SD_FF3_068_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_080_1_Avg: { field: SWC_FF3_0.80_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_0x05_1_Avg: {  field: SWC_FF3_0.05_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_0x05_1_Std: {  field: SWC_SD_FF3_0.05_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_0x05_2_Avg: {  field: SWC_FF3_0.05_2, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_0x05_2_Std: {  field: SWC_SD_FF3_0.05_2, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_0x10_1_Avg: {  field: SWC_FF3_0.10_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_0x10_1_Std: {  field: SWC_SD_FF3_0.10_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_0x21_1_Avg: {  field: SWC_FF3_0.21_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_0x21_1_Std: {  field: SWC_SD_FF3_0.21_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_0x52_1_Avg: {  field: SWC_FF3_0.52_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_0x52_1_Std: {  field: SWC_SD_FF3_0.52_1, units: "%", gain: 100, measurement: _SD }
-    SWC_FF3_0x68_1_Avg: {  field: SWC_FF3_0.68_1, units: "%", gain: 100, measurement: SWC }
-    SWC_FF3_0x68_1_Std: {  field: SWC_SD_FF3_0.68_1, units: "%", gain: 100, measurement: _SD }
+    SWC_FF3_004_2_Avg: { field: SWC_FF3_0.04_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_005_1_Avg: { field: SWC_FF3_0.05_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_005_1_Std: {  field: SWC_SD_FF3_005_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_005_2_Avg: {  field: SWC_FF3_005_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_005_2_Std: {  field: SWC_SD_FF3_005_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_010_1_Avg: { field: SWC_FF3_0.10_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_010_1_Std: {  field: SWC_SD_FF3_010_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_021_1_Avg: { field: SWC_FF3_0.21_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_021_1_Std: {  field: SWC_SD_FF3_021_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_050_1_Avg: { field: SWC_FF3_0.50_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_052_1_Avg: {  field: SWC_FF3_052_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_052_1_Std: {  field: SWC_SD_FF3_052_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_068_1_Avg: {  field: SWC_FF3_068_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_068_1_Std: {  field: SWC_SD_FF3_068_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_080_1_Avg: { field: SWC_FF3_0.80_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_0x05_1_Avg: {  field: SWC_FF3_0.05_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_0x05_1_Std: {  field: SWC_SD_FF3_0.05_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_0x05_2_Avg: {  field: SWC_FF3_0.05_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_0x05_2_Std: {  field: SWC_SD_FF3_0.05_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_0x10_1_Avg: {  field: SWC_FF3_0.10_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_0x10_1_Std: {  field: SWC_SD_FF3_0.10_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_0x21_1_Avg: {  field: SWC_FF3_0.21_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_0x21_1_Std: {  field: SWC_SD_FF3_0.21_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_0x52_1_Avg: {  field: SWC_FF3_0.52_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_0x52_1_Std: {  field: SWC_SD_FF3_0.52_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_FF3_0x68_1_Avg: {  field: SWC_FF3_0.68_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_FF3_0x68_1_Std: {  field: SWC_SD_FF3_0.68_1, units: "%", gain: 100.0, measurement: _SD }
     T_LOGGER_FF3_0_1: {  field: T_LOGGER_FF3_0_1, units: "deg C", measurement: _instrumentmetrics }
     Tlogger_FF3_0_1: { field: T_LOGGER_FF3_0_1, units: "deg C", measurement: _instrumentmetrics }
     Ts_FF3_003_1_Avg: { field: TS_FF3_0.03_1, units: "deg C", measurement: TS }

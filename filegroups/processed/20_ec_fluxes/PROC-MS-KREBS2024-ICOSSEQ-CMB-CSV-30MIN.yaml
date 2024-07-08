@@ -1,0 +1,78 @@
+# MANUSCRIPT DATA
+# CH-DAV
+# 40_chambers_ghg
+#
+# Dataset used in the manuscript:
+#   Krebs, L., Burri, S., Feigenwinter, I., Gharun, M., Meier, P.,
+#   & Buchmann, N. (2024). Forest-floor respiration, N2O fluxes,
+#   and CH4 fluxes in a subalpine spruce forest: Drivers and annual
+#   budgets. Biogeosciences, 21(8), 2005–2028.
+# paper: https://doi.org/10.5194/bg-21-2005-2024
+# ETH Research Collection: https://doi.org/10.3929/ethz-b-000619728
+#
+# ONLY CH-DAV!
+
+PROC-MS-KREBS2024-ICOSSEQ-CMB-CSV-30MIN:
+  # ICOS format, special sequential format
+  # Different locations (horizontal var index) are in different rows
+  # instead different columns.
+  # Chambers
+  # Contains IRGA data CO2, H2O
+  # First file: Davos_chamber_GHG_2017_2020-2022_refactoredForDatabaseUpload.csv
+  # Last file:  Davos_chamber_GHG_2017_2020-2022_refactoredForDatabaseUpload.csv
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: Davos_chamber_GHG_2017_2020-2022_refactoredForDatabaseUpload.csv
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 40_chambers_ghg
+  data_raw_freq: 30min
+  data_skiprows: [ ]
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 'TIMESTAMP'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: "-ICOSSEQ-"
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: ms_krebs2024
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    time: { field: false, units: false, measurement: XXX }
+    chamber: { field: false, units: false, measurement: XXX }
+    flux.CO2: { field: false, units: false, measurement: XXX }
+    R.CO2: { field: false, units: false, measurement: XXX }
+    instr: { field: false, units: false, measurement: XXX }
+    flux.CH4: { field: false, units: false, measurement: XXX }
+    R.CH4: { field: false, units: false, measurement: XXX }
+    flux.N2O: { field: false, units: false, measurement: XXX }
+    R.N2O: { field: false, units: false, measurement: XXX }
+    RMSE.N2O: { field: false, units: false, measurement: XXX }
+    TS_0.05: { field: false, units: false, measurement: XXX }
+    wfps_0.05: { field: false, units: false, measurement: XXX }
+    TA: { field: false, units: false, measurement: XXX }
+    PPFD: { field: false, units: false, measurement: XXX }
+    PREC: { field: false, units: false, measurement: XXX }
+
+    #    0: { field: <<automatic>>, units: false, measurement: XXX }
+#    CHANNEL_VICI: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    CO2: { field: <<automatic>>, units: XXX, measurement: CO2 }
+#    FLOW_VOLRATE: { field: <<automatic>>, units: false, measurement: FLOW }
+#    H2O: { field: <<automatic>>, units: XXX, measurement: H2O }
+#    INLET: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    INLET_VICI: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    LIMITS: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    LOCATION: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    MOVEMENT: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    OUTLET_VICI: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    PA_CMB: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    PRESS_CELL: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    T_CELL: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    TA_CMB: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }
+#    VALVES: { field: <<automatic>>, units: false, measurement: _instrumentmetrics }

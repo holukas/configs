@@ -1,0 +1,174 @@
+# MANUSRIPT DATA
+# Dataset used in the manuscript:
+#   Feigenwinter I, Hörtnagl L, Zeeman MJ, Eugster W, Fuchs K,
+#   Merbold L, Buchmann N (2023) Large inter-annual variation in
+#   carbon sink strength of a permanent grassland over 16 years:
+#   Impacts of management practices and climate. Agricultural and
+#   Forest Meteorology 340: 109613, doi: 10.1016/j.agrformet.2023.109613
+# paper: https://doi.org/10.1016/j.agrformet.2023.109613
+# ETH Research Collection: https://doi.org/10.3929/ethz-b-000524199
+#
+# The file with this filetype was produced using the R library ReddyProc.
+# Description of ReddyProc output variables: https://www.bgc-jena.mpg.de/5624929/Output-Format
+# ONLY CH-CHA!
+
+PROC-MS-FEIGENWINTER2023A-HH-CSV-30MIN:
+  # First file: CH-Cha_meteo_flux_management_2005-2020_v20220818_refactoredForDatabaseUpload.csv
+  # Last file:  CH-Cha_meteo_flux_management_2005-2020_v20220818_refactoredForDatabaseUpload.csv
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-Cha_meteo_flux_management_2005-2020_v20220818_refactoredForDatabaseUpload.csv
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 20_ec_fluxes
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 'TIMESTAMP'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: ms_feigenwinter2023a
+  data_vars_parse_pos_indices: false
+  data_vars_order: free
+  data_vars:
+    TIMESTAMP: { field: false, units: false, measurement: XXX }
+#    NEE_U50_gC: { field: NEE_SUT_50, units: "gC m-2 s-1", measurement: NEE }
+    NEE_U05_f: { field: NEE_SUT_05, units: "umol m-2 s-1", measurement: NEE }
+    NEE_U50_f: { field: NEE_SUT_50, units: "umol m-2 s-1", measurement: NEE }
+    NEE_U95_f: { field: NEE_SUT_95, units: "umol m-2 s-1", measurement: NEE }
+    NEE_U50_fsd: { field: NEE_SUT_50_FSD, units: "umol m-2 s-1", measurement: _SD }
+    NEE_U05_fsd: { field: NEE_SUT_05_FSD, units: "umol m-2 s-1", measurement: _SD }
+    NEE_U95_fsd: { field: NEE_SUT_95_FSD, units: "umol m-2 s-1", measurement: _SD }
+    NEE_U50_fqc: { field: NEE_SUT_50_FQC, units: "0=original; 1/2/3=most/medium/least reliable gap-filling", measurement: NEE }
+    NEE_U05_fqc: { field: NEE_SUT_05_FQC, units: "0=original; 1/2/3=most/medium/least reliable gap-filling", measurement: NEE }
+    NEE_U95_fqc: { field: NEE_SUT_95_FQC, units: "0=original; 1/2/3=most/medium/least reliable gap-filling", measurement: NEE }
+    NEE_U05_fmeth: { field: NEE_SUT_05_FMETH, units: "1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC", measurement: NEE }
+    NEE_U50_fmeth: { field: NEE_SUT_50_FMETH, units: "1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC", measurement: NEE }
+    NEE_U95_fmeth: { field: NEE_SUT_95_FMETH, units: "1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC", measurement: NEE }
+    NEE_CO2_qcd: { field: NEE_SUT_50_QCF, units: "umol m-2 s-1", measurement: NEE }
+
+    GPP_NT_U05: { field: GPP_NT_SUT_05, units: "umol m-2 s-1", measurement: GPP }
+    GPP_NT_U50: { field: GPP_NT_SUT_50, units: "umol m-2 s-1", measurement: GPP }
+    GPP_NT_U95: { field: GPP_NT_SUT_95, units: "umol m-2 s-1", measurement: GPP }
+    GPP_DT_U05: { field: GPP_DT_SUT_05, units: "umol m-2 s-1", measurement: GPP }
+    GPP_DT_U50: { field: GPP_DT_SUT_50, units: "umol m-2 s-1", measurement: GPP }
+    GPP_DT_U95: { field: GPP_DT_SUT_95, units: "umol m-2 s-1", measurement: GPP }
+    Reco_NT_U05: { field: RECO_NT_SUT_05, units: "umol m-2 s-1", measurement: RECO }
+    Reco_NT_U50: { field: RECO_NT_SUT_50, units: "umol m-2 s-1", measurement: RECO }
+    Reco_NT_U95: { field: RECO_NT_SUT_95, units: "umol m-2 s-1", measurement: RECO }
+    Reco_DT_U05: { field: RECO_DT_SUT_05, units: "umol m-2 s-1", measurement: RECO }
+    Reco_DT_U50: { field: RECO_DT_SUT_50, units: "umol m-2 s-1", measurement: RECO }
+    Reco_DT_U95: { field: RECO_DT_SUT_95, units: "umol m-2 s-1", measurement: RECO }
+    ET_f: { field: ET, units: "mm h-1", measurement: ET }
+    QCF_ET: { field: FLAG_ET_QCF, units: "0/1/2=best/medium/bad quality", measurement: ET }
+    NEE_ET_qcd: { field: ET_QCF, units: "mm h-1", measurement: ET }
+    Rg_f: { field: SW_IN, units: "W m-2", measurement: SW }
+    Tair_f: { field: TA, units: "degC", measurement: TA }
+    VPD_f: { field: VPD, units: "hPa", measurement: VPD }
+    RH: { field: RH, units: "%", measurement: RH }
+    P_rain: { field: PREC_RAIN, units: "mm", measurement: PREC }
+    PA: { field: PA, units: "hPa", measurement: PA }
+    TS_0.04: { field: false, units: "degC", measurement: TS }
+    TS_0.15: { field: false, units: "degC", measurement: TS }
+    TS_0.4: { field: false, units: "degC", measurement: TS }
+    SWC_0.05: { field: false, units: "%", measurement: SWC }
+    SWC_0.15: { field: false, units: "%", measurement: SWC }
+    SWC_0.75: { field: false, units: "%", measurement: SWC }
+    PotRad: { field: SW_IN_POT, units: "W m-2", measurement: SW }
+    SW_OUT: { field: false, units: "W m-2", measurement: SW }
+    # Gap-filled SW_IN is already used above, skipping this not gap-filled variable:
+    # SW_IN: { field: false, units: "W m-2", measurement: SW }
+    LW_IN: { field: false, units: "W m-2", measurement: LW }
+    LW_OUT: { field: false, units: "W m-2", measurement: LW }
+    PPFD_IN: { field: false, units: "umol m-2 s-1", measurement: PPFD }
+    co2_flux: { field: FC, units: "umol m-2 s-1", measurement: FC }
+    co2_strg: { field: SC_SINGLE, units: "umol m-2 s-1", measurement: FC }
+    QCF_co2_flux: { field: FLAG_FC_QCF, units: "0/1/2=best/medium/bad quality", measurement: FC }
+    qc_co2_flux: { field: FC_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FC }
+    h2o_flux: { field: FH2O, units: "mmol m-2 s-1", measurement: FH2O }
+    h2o_strg: { field: SH2O_SINGLE, units: "mmol m-2 s-1", measurement: FH2O }
+    qc_h2o_flux: { field: FH2O_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FH2O }
+    QCF_h2o_flux: { field: FLAG_FH2O_QCF, units: "0/1/2=best/medium/bad quality", measurement: FH2O }
+    LE: { field: LE, units: "W m-2", measurement: LE }
+    LE_strg: { field: SLE, units: "W m-2", measurement: LE }
+    NEE_LE_qcd: { field: LE_QCF, units: "W m-2", measurement: LE }
+    qc_LE: { field: LE_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: LE }
+    QCF_LE: { field: FLAG_LE_QCF, units: "0/1/2=best/medium/bad quality", measurement: LE }
+    H: { field: H, units: "W m-2", measurement: H }
+    H_strg: { field: SH, units: "W m-2", measurement: H }
+    NEE_H_qcd: { field: H_QCF, units: "W m-2", measurement: H }
+    qc_H: { field: H_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: H }
+    QCF_H: { field: FLAG_H_QCF, units: "0/1/2=best/medium/bad quality", measurement: H }
+    G_0.03: { field: false, units: "W m-2", measurement: G }
+    wind_speed: { field: WS, units: "m s-1", measurement: WIND }
+#    v: { field: false, units: false, measurement: XXX }
+#    w: { field: false, units: false, measurement: XXX }
+    wind_dir: { field: WD, units: "deg", measurement: WIND }
+    sonic_temperature: { field: T_SONIC, units: "K", measurement: _instrumentmetrics }
+    ustar: { field: USTAR, units: "m s-1", measurement: TURBULENCE }
+    ustar_U05_Thres: { field: USTAR_SUT_05_THRES, units: "m s-1", measurement: TURBULENCE }
+    ustar_U50_Thres: { field: USTAR_SUT_50_THRES, units: "m s-1", measurement: TURBULENCE }
+    ustar_U95_Thres: { field: USTAR_SUT_95_THRES, units: "m s-1", measurement: TURBULENCE }
+    tau: { field: TAU, units: "kg m-1 s-2", measurement: TAU }
+    L: { field: MO_LENGTH, units: "m", measurement: TURBULENCE }
+    zdoL: { field: ZL, units: "#", measurement: TURBULENCE }
+    NEE_U05_f_source: { field: NEE_SUT_05_SOURCE, units: "0=measured; 1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC; 4=nighttime_mean; 5=nighttime_mean_1_night_before; 6=random_forest", measurement: NEE }
+    NEE_U50_f_source: { field: NEE_SUT_50_SOURCE, units: "0=measured; 1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC; 4=nighttime_mean; 5=nighttime_mean_1_night_before; 6=random_forest", measurement: NEE }
+    NEE_U95_f_source: { field: NEE_SUT_95_SOURCE, units: "0=measured; 1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC; 4=nighttime_mean; 5=nighttime_mean_1_night_before; 6=random_forest", measurement: NEE }
+    Rg_source: { field: SW_IN_SOURCE, units: "0=measured; 1=sFillMDC; 2=MeteoSwiss CHZ; 3=MeteoSwiss WAE", measurement: SW }
+    Tair_source: { field: TA_SOURCE, units: "0=measured; 1=sFillLUT_Rg; 2=sFillMDC; 3=MeteoSwiss CHZ", measurement: TA }
+    VPD_source: { field: VPD_SOURCE, units: "0=calculated_from_RH_Tair; 1=sFillLUT_Rg; 2=sFillMDC", measurement: VPD }
+    RH_source: { field: RH_SOURCE, units: "0=measured; 1=MeteoSwiss CHZ; 2=running median", measurement: RH }
+    P_rain_source: { field: PREC_RAIN_SOURCE, units: "0=measured; 1=MeteoSwiss CHZ; 2=set missing value to zero", measurement: PREC }
+    PA_source: { field: PA_SOURCE, units: "0=measured; 1=MeteoSwiss CHZ", measurement: PA }
+
+    # Start and end dates of managements where available, but this info is
+    # also available in other variables, skipped:
+    # Start: { field: false, units: false, measurement: XXX }
+    # End: { field: false, units: false, measurement: XXX }
+
+    C.harvest_kg.ha: { field: HARVEST_C, units: "kg ha-1", measurement: MANAGEMENT }
+    N.harvest_kg.ha: { field: HARVEST_N, units: "kg ha-1", measurement: MANAGEMENT }
+    Yield.harvest_kg.DM.ha: { field: HARVEST_YIELD, units: "kg DM ha-1", measurement: MANAGEMENT }
+    Fertilizer.DM_kg.ha: { field: FERTILIZER_AMOUNT, units: "kg DM ha-1", measurement: MANAGEMENT }
+    C.Fertilizer_kg.ha: { field: FERTILIZER_C, units: "kg ha-1", measurement: MANAGEMENT }
+    N.Fertilizer_kg.ha: { field: FERTILIZER_N, units: "kg ha-1", measurement: MANAGEMENT }
+
+    # The next variable contained lots of text info that was one hot encoded into
+    # different columns and is therefore ignored:
+    # Management: { field: false, units: false, measurement: XXX }
+
+    # Variables added by LH, one hot encoded from original 'Management':
+    Mowing: { field: MOWING, units: "1=yes", measurement: MANAGEMENT }
+    Organic fertilizer: { field: ORGANIC_FERTILIZER, units: "1=yes", measurement: MANAGEMENT }
+    Grazing: { field: GRAZING, units: "1=yes", measurement: MANAGEMENT }
+    Oversowing: { field: OVERSOWING, units: "1=yes", measurement: MANAGEMENT }
+    Harrowing: { field: HARROWING, units: "1=yes", measurement: MANAGEMENT }
+    Rolling: { field: ROLLING, units: "1=yes", measurement: MANAGEMENT }
+    Herbicide: { field: HERBICIDE, units: "1=yes", measurement: MANAGEMENT }
+    Ploughing: { field: PLOUGHING, units: "1=yes", measurement: MANAGEMENT }
+    Resowing: { field: RESOWING, units: "1=yes", measurement: MANAGEMENT }
+    Mineral fertilizer: { field: MINERAL_FERTILIZER, units: "1=yes", measurement: MANAGEMENT }
+    Pesticide: { field: PESTICIDE, units: "1=yes", measurement: MANAGEMENT }
+
+    # The following variable contains very specific information that cannot easily be
+    # displayed in a time series and is thus ignored:
+    # Management_specific: { field: false, units: false, measurement: XXX }
+
+    Management_parcel: { field: PARCEL, units: "0=none; 1=A; 2=B; 3=A+B", measurement: MANAGEMENT }
+    events: { field: EVENT, units: "1=yes", measurement: MANAGEMENT }
+    dayssincemgmt: { field: DAYS_SINCE_MANAGEMENT, units: "days", measurement: MANAGEMENT }
+    # Info is already in other variables, ignored:
+    # lastmgmt: { field: false, units: false, measurement: XXX }
+
+
+
+

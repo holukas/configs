@@ -1,0 +1,741 @@
+# MANUSRIPT DATA
+# Dataset used in the manuscript:
+#   Feigenwinter, I., Hörtnagl, L., & Buchmann, N. (2023). N2O and
+#   CH4 fluxes from intensively managed grassland: The importance of
+#   biological and environmental drivers vs. management. Science of
+#   The Total Environment, 903, 166389.
+# paper: https://doi.org/10.1016/j.scitotenv.2023.166389
+# ETH Research Collection: https://doi.org/10.3929/ethz-b-000618788
+#
+# The file with this filetype was produced using the R library ReddyProc.
+# Description of ReddyProc output variables: https://www.bgc-jena.mpg.de/5624929/Output-Format
+# ONLY CH-CHA!
+
+PROC-MS-FEIGENWINTER2023B-HH-CSV-30MIN:
+  # First file: CH-Cha_meteo_flux_management_N2O_CH4_2019-2020_refactoredForDatabaseUpload.csv
+  # Last file:  CH-Cha_meteo_flux_management_N2O_CH4_2019-2020_refactoredForDatabaseUpload.csv
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-Cha_meteo_flux_management_N2O_CH4_2019-2020_refactoredForDatabaseUpload.csv
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 20_ec_fluxes
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 'TIMESTAMP'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: ms_feigenwinter2023b
+  data_vars_parse_pos_indices: false
+  data_vars_order: free
+  data_vars:
+
+    TIMESTAMP: { field: false, units: false, measurement: XXX }
+
+    # AIR
+    air_density: { field: AIR_DENSITY, units: false, measurement: AIR }
+    air_heat_capacity: { field: AIR_HEAT_CAPACITY, units: false, measurement: AIR }
+    air_molar_volume: { field: AIR_MOLAR_VOLUME, units: false, measurement: AIR }
+
+    # CH4
+    ch4_flux_full: { field: FCH4, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_flux: { field: FCH4_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_flux_A: { field: FCH4_PARCEL_A, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_flux_A_meas: { field: FCH4_PARCEL_A_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_flux_B: { field: FCH4_PARCEL_B, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_flux_B_meas: { field: FCH4_PARCEL_B_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_flux_qcd: { field: FCH4_QCF, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_flux_ustar: { field: FCH4_QCF_USTAR, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+
+    ch4_strg: { field: SCH4_SINGLE, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    QCF_ch4_flux: { field: FLAG_FCH4_QCF, units: "0/1/2=best/medium/bad quality", measurement: FCH4 }
+    qc_ch4_flux: { field: FCH4_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FCH4 }
+    ch4_scf: { field: FCH4_SCF, units: "factor", measurement: FCH4 }
+    ch4_timelag: { field: CH4_TLAG_ACTUAL, units: "s", measurement: FCH4 }
+#    un_ch4_flux: { field: false, units: false, measurement: FCH4 }
+#    ch4_cov: { field: false, units: false, measurement: FCH4 }
+
+    # N2O
+    n2o_flux_full: { field: FN2O, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    n2o_flux: { field: FN2O_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    n2o_flux_A: { field: FN2O_PARCEL_A, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    n2o_flux_A_meas: { field: FN2O_PARCEL_A_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    n2o_flux_B: { field: FN2O_PARCEL_B, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    n2o_flux_B_meas: { field: FN2O_PARCEL_B_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    n2o_flux_qcd: { field: FN2O_QCF, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    n2o_flux_ustar: { field: FN2O_QCF_USTAR, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+
+    n2o_strg: { field: SN2O_SINGLE, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    QCF_n2o_flux: { field: FLAG_FN2O_QCF, units: "0/1/2=best/medium/bad quality", measurement: FN2O }
+    qc_n2o_flux: { field: FN2O_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FN2O }
+    n2o_scf: { field: FN2O_SCF, units: "factor", measurement: FN2O }
+    n2o_timelag: { field: N2O_TLAG_ACTUAL, units: "s", measurement: FN2O }
+#    un_n2o_flux: { field: false, units: false, measurement: XXX }
+#    n2o_cov: { field: false, units: false, measurement: XXX }
+
+    # MANAGEMENT
+    dayssincedef: { field: DAYS_SINCE_DEFOLIATION, units: "days", measurement: MANAGEMENT }
+    dayssincefert: { field: DAYS_SINCE_FERTILIZATION, units: "days", measurement: MANAGEMENT }
+    growth.cycle: { field: GROWTH_CYCLE, units: "#", measurement: MANAGEMENT }
+
+    # VEGETATION
+    LAI_A: { field: LAI_PARCEL_A, units: "m2 m-2", measurement: VEGETATION }
+    LAI_A_meas: { field: LAI_PARCEL_A_MEAS, units: "m2 m-2", measurement: VEGETATION }
+    LAI_B: { field: LAI_PARCEL_B, units: "m2 m-2", measurement: VEGETATION }
+    LAI_B_meas: { field: LAI_PARCEL_B_MEAS, units: "m2 m-2", measurement: VEGETATION }
+    LAI_full: { field: LAI, units: "m2 m-2", measurement: VEGETATION }
+    LAI_full_meas: { field: LAI_MEAS, units: "m2 m-2", measurement: VEGETATION }
+    vegh_A: { field: VEGH_PARCEL_A, units: "m", measurement: VEGETATION }
+    vegh_A_meas: { field: VEGH_PARCEL_A_MEAS, units: "m", measurement: VEGETATION }
+    vegh_B: { field: VEGH_PARCEL_B, units: "m", measurement: VEGETATION }
+    vegh_B_meas: { field: VEGH_PARCEL_B_MEAS, units: "m", measurement: VEGETATION }
+    vegh_full: { field: VEGH, units: "m", measurement: VEGETATION }
+    vegh_full_meas: { field: VEGH_MEAS, units: "m", measurement: VEGETATION }
+
+    # SWC
+    SWC_AVG_GF1_0.1_2: { field: SWC_GF1_0.1_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.1_3: { field: SWC_GF1_0.1_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.2_2: { field: SWC_GF1_0.2_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.2_3: { field: SWC_GF1_0.2_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.3_2: { field: SWC_GF1_0.3_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.3_3: { field: SWC_GF1_0.3_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.4_3: { field: SWC_GF1_0.4_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.5_3: { field: SWC_GF1_0.5_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.6_3: { field: SWC_GF1_0.6_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.1_1: { field: SWC_GF4_0.1_1, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.1_2: { field: SWC_GF4_0.1_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.1_3: { field: SWC_GF4_0.1_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.1_4: { field: SWC_GF4_0.1_4, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.1_5: { field: SWC_GF4_0.1_5, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.3_4: { field: SWC_GF4_0.3_4, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.3_5: { field: SWC_GF4_0.3_5, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.5_4: { field: SWC_GF4_0.5_4, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.5_5: { field: SWC_GF4_0.5_5, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.1_1: { field: SWC_GF5_0.1_1, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.1_2: { field: SWC_GF5_0.1_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.1_3: { field: SWC_GF5_0.1_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.1_4: { field: SWC_GF5_0.1_4, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.05_1: { field: SWC_GF1_0.05_1, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.05_2: { field: SWC_GF1_0.05_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.05_3: { field: SWC_GF1_0.05_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.15_1: { field: SWC_GF1_0.15_1, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.75_1: { field: SWC_GF1_0.75_1, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_0.75_3: { field: SWC_GF1_0.75_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.05_1: { field: SWC_GF4_0.05_1, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.05_2: { field: SWC_GF4_0.05_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.05_3: { field: SWC_GF4_0.05_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.05_4: { field: SWC_GF4_0.05_4, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF4_0.05_5: { field: SWC_GF4_0.05_5, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.05_1: { field: SWC_GF5_0.05_1, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.05_2: { field: SWC_GF5_0.05_2, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.05_3: { field: SWC_GF5_0.05_3, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF5_0.05_4: { field: SWC_GF5_0.05_4, units: "%", parse_pos_indices: true, measurement: SWC }
+    SWC_AVG_GF1_1_3: { field: SWC_GF1_1_3, units: "%", parse_pos_indices: true, measurement: SWC }
+
+
+
+    # TS
+    TS_AVG_GF1_0.1_1: { field: TS_GF1_0.1_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.1_2: { field: TS_GF1_0.1_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.1_3: { field: TS_GF1_0.1_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.2_2: { field: TS_GF1_0.2_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.2_3: { field: TS_GF1_0.2_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.3_2: { field: TS_GF1_0.3_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.3_3: { field: TS_GF1_0.3_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.4_1: { field: TS_GF1_0.4_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.4_3: { field: TS_GF1_0.4_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.5_3: { field: TS_GF1_0.5_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.6_3: { field: TS_GF1_0.6_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.1_1: { field: TS_GF4_0.1_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.1_2: { field: TS_GF4_0.1_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.1_3: { field: TS_GF4_0.1_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.1_4: { field: TS_GF4_0.1_4, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.1_5: { field: TS_GF4_0.1_5, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.3_4: { field: TS_GF4_0.3_4, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.3_5: { field: TS_GF4_0.3_5, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.5_4: { field: TS_GF4_0.5_4, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.5_5: { field: TS_GF4_0.5_5, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.1_1: { field: TS_GF5_0.1_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.1_2: { field: TS_GF5_0.1_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.1_3: { field: TS_GF5_0.1_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.1_4: { field: TS_GF5_0.1_4, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.04_1: { field: TS_GF1_0.04_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.05_2: { field: TS_GF1_0.05_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.05_3: { field: TS_GF1_0.05_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.07_1: { field: TS_GF1_0.07_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.15_1: { field: TS_GF1_0.15_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.25_1: { field: TS_GF1_0.25_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.75_3: { field: TS_GF1_0.75_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.05_1: { field: TS_GF4_0.05_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.05_2: { field: TS_GF4_0.05_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.05_3: { field: TS_GF4_0.05_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.05_4: { field: TS_GF4_0.05_4, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF4_0.05_5: { field: TS_GF4_0.05_5, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.05_1: { field: TS_GF5_0.05_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.05_2: { field: TS_GF5_0.05_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.05_3: { field: TS_GF5_0.05_3, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF5_0.05_4: { field: TS_GF5_0.05_4, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_0.025_2: { field: TS_AVG_GF1_0.025_2, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_AVG_GF1_1_3: { field: TS_AVG_GF1_1_3, units: "degC", parse_pos_indices: true, measurement: TS }
+
+    # WFPS
+    WFPS_AVG_GF1_0.1_2: { field: WFPS_GF1_0.1_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.1_3: { field: WFPS_GF1_0.1_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.2_2: { field: WFPS_GF1_0.2_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.2_3: { field: WFPS_GF1_0.2_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.3_2: { field: WFPS_GF1_0.3_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.3_3: { field: WFPS_GF1_0.3_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.4_3: { field: WFPS_GF1_0.4_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.5_3: { field: WFPS_GF1_0.5_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.6_3: { field: WFPS_GF1_0.6_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.1_1: { field: WFPS_GF4_0.1_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.1_2: { field: WFPS_GF4_0.1_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.1_3: { field: WFPS_GF4_0.1_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.1_4: { field: WFPS_GF4_0.1_4, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.1_5: { field: WFPS_GF4_0.1_5, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.3_4: { field: WFPS_GF4_0.3_4, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.3_5: { field: WFPS_GF4_0.3_5, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.5_4: { field: WFPS_GF4_0.5_4, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.5_5: { field: WFPS_GF4_0.5_5, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.1_1: { field: WFPS_GF5_0.1_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.1_2: { field: WFPS_GF5_0.1_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.1_3: { field: WFPS_GF5_0.1_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.1_4: { field: WFPS_GF5_0.1_4, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.05_1: { field: WFPS_GF1_0.05_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.05_2: { field: WFPS_GF1_0.05_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.05_3: { field: WFPS_GF1_0.05_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.15_1: { field: WFPS_GF1_0.15_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.75_1: { field: WFPS_GF1_0.75_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_0.75_3: { field: WFPS_GF1_0.75_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.05_1: { field: WFPS_GF4_0.05_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.05_2: { field: WFPS_GF4_0.05_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.05_3: { field: WFPS_GF4_0.05_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.05_4: { field: WFPS_GF4_0.05_4, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF4_0.05_5: { field: WFPS_GF4_0.05_5, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.05_1: { field: WFPS_GF5_0.05_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.05_2: { field: WFPS_GF5_0.05_2, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.05_3: { field: WFPS_GF5_0.05_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF5_0.05_4: { field: WFPS_GF5_0.05_4, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_AVG_GF1_1_3: { field: WFPS_AVG_GF1_1_3, units: "%", parse_pos_indices: true, measurement: WFPS }
+
+    # WIND
+    wind_dir: { field: WD, units: "deg", measurement: WIND }
+    wind_speed: { field: WS, units: "m s-1", measurement: WIND }
+    zdoL: { field: ZL, units: "#", measurement: TURBULENCE }
+
+    #    Already in ms_feigenwinter2023a:
+    #    co2_flux: { field: FC, units: false, measurement: XXX }
+    #    co2_flux_full: { field: NEE, units: false, measurement: XXX }
+    #    QCF_co2_flux: { field: FLAG_NEE_QCF, units: false, measurement: XXX }
+    #    h2o_flux: { field: false, units: false, measurement: XXX }
+    #    QCF_h2o_flux: { field: false, units: false, measurement: XXX }
+    #    H: { field: false, units: false, measurement: XXX }
+    #    QCF_H_flux: { field: false, units: false, measurement: XXX }
+    #    LE: { field: false, units: false, measurement: XXX }
+    #    G_0.03: { field: false, units: false, measurement: G }
+    #    P_rain: { field: false, units: false, measurement: XXX }
+    #    Management: { field: false, units: false, measurement: XXX }
+    #    Management_def: { field: false, units: false, measurement: XXX }
+    #    Management_fert: { field: false, units: false, measurement: XXX }
+    #    Management_fertdef: { field: false, units: false, measurement: XXX }
+    #    Management_parcel: { field: false, units: false, measurement: XXX }
+    #    Management_specific: { field: false, units: false, measurement: XXX }
+    #    mgmt_events: { field: false, units: false, measurement: XXX }
+    #    PA: { field: false, units: false, measurement: XXX }
+    #    Rg_f: { field: false, units: false, measurement: XXX }
+    #    RH: { field: false, units: false, measurement: XXX }
+    #    PotRad: { field: false, units: false, measurement: XXX }
+    #    SW_OUT: { field: false, units: false, measurement: XXX }
+    #    LW_IN: { field: false, units: false, measurement: XXX }
+    #    LW_OUT: { field: false, units: false, measurement: XXX }
+    #    PPFD_IN: { field: false, units: false, measurement: XXX }
+    #    PPFD_OUT: { field: false, units: false, measurement: XXX }
+    #    TA: { field: false, units: false, measurement: XXX }
+    #    ustar: { field: false, units: false, measurement: XXX }
+
+# Variables used for machine learning, not needed in database:
+#    TS_AVG_GF1_0.025_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.025_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.025_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.025_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.04_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.04_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.04_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.04_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.07_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.07_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.07_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.07_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.15_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.15_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.15_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.15_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.25_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.25_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.25_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.25_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.2_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.3_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.4_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.5_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.5_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.5_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.5_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.6_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.6_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.6_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.6_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.75_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.75_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.75_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_0.75_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF1_1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.05_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.1_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.3_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF4_0.5_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.05_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    TS_AVG_GF5_0.1_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.15_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.15_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.15_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.15_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.2_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.3_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.4_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.4_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.4_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.4_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.5_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.5_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.5_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.5_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.6_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.6_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.6_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.6_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_0.75_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF1_1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.05_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.1_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.3_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF4_0.5_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.05_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    SWC_AVG_GF5_0.1_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.15_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.15_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.15_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.15_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.2_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.3_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.4_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.4_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.4_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.4_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.5_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.5_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.5_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.5_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.6_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.6_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.6_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.6_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_0.75_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF1_1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.05_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.1_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.3_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_5_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_5_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_5_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF4_0.5_5_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.05_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_1_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_1_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_1_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_1_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_2_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_2_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_2_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_2_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_3_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_3_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_3_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_3_lag9h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_4_mean3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_4_lag3h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_4_lag6h_before: { field: false, units: false, measurement: XXX }
+#    WFPS_AVG_GF5_0.1_4_lag9h_before: { field: false, units: false, measurement: XXX }
+#    P_rain_lag3h_before: { field: false, units: false, measurement: XXX }
+#    P_rain_lag6h_before: { field: false, units: false, measurement: XXX }
+#    P_rain_lag9h_before: { field: false, units: false, measurement: XXX }
+#    P_rain_sum3h_before: { field: false, units: false, measurement: XXX }

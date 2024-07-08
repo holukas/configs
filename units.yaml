@@ -1,5 +1,8 @@
 # UNITMAPPER
 #
+# Units that do not show up as key in this file are ignored during
+# database upload and set to "-not-defined-".
+#
 # Renames key to value, e.g. "Deg C" to "degC"
 # Set to false if unit name should remain the same as key
 
@@ -17,21 +20,27 @@ Degrees: deg
 degC: false
 deg C: degC
 Deg C: degC
+degK: false
 deg from north: false
 "[deg_from_north]": deg from north
 dS.m-1: ds m-1
 "dS/m": ds m-1
+"days": false
 
 
 # F
 flag: false
+factor: false
 
 # H
 hPa: false
 
 # K
+kg DM ha-1: false
+kg ha-1: false
 kg m-1 s-2: false
 kPa: false
+K: degK
 
 # M
 m: false
@@ -61,6 +70,7 @@ mV.m2.W-1: mV (W m-2)-1
 mV*m^2/W: mV (W m-2)-1
 "m^3/m^3": m3 m-3
 m3.m-3: m3 m-3
+m2 m-2: false
 
 
 # N
@@ -78,6 +88,9 @@ perc: "%"
 
 # R
 RN: "record number"
+
+# S
+s: false
 
 # U
 umol mol-1: false
@@ -124,9 +137,21 @@ W/m^2: W m-2
 "method": false
 
 ## Flags
+"1=yes": false
 "1=nighttime": false
+"0=none; 1=A; 2=B; 3=A+B": false
 "0=measured; 1/2/3=good/medium/poor quality gapfill": false
 "0=measured; 1=good quality gapfill; 2=downscaled from ERA": false
 "0=measured; 2=downscaled from ERA": false
 "fraction 0-1": false
 "0=calculated from measured drivers; 1=calculated from good quality gapfilled drivers; 2=downscaled from ERA": false
+"0=measured; 1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC; 4=nighttime_mean; 5=nighttime_mean_1_night_before; 6=random_forest": false
+"0=measured; 1=sFillMDC; 2=MeteoSwiss CHZ; 3=MeteoSwiss WAE": false
+"0=measured; 1=sFillLUT_Rg; 2=sFillMDC; 3=MeteoSwiss CHZ": false
+"0=calculated_from_RH_Tair; 1=sFillLUT_Rg; 2=sFillMDC": false
+"0=measured; 1=MeteoSwiss CHZ; 2=running median": false
+"0=measured; 1=MeteoSwiss CHZ; 2=set missing value to zero": false
+"0=measured; 1=MeteoSwiss CHZ": false
+"0=original; 1/2/3=most/medium/least reliable gap-filling": false
+"1=sFillLUT; 2=sFillLUT_Rg; 3=sFillMDC": false
+"0/1/2=best/medium/bad quality": false

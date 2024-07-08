@@ -1,5 +1,22 @@
 # Changelog
 
+## 20240708 | 8 Jul 2024
+
+- Added new setting `parse_pos_indices` to parse position indices from specific variables where this information is
+  available from the variable name (field). If set to 'true' (not capitalized because YAML), this overrides the setting
+  `data_vars_parse_pos_indices` at the file-level. One example filetype where this is applied is the
+  filetype `PROC-MS-FEIGENWINTER2023B-HH-CSV-30MIN`, in which position indices are available for soil measurements, but
+  not for other variables. In this case, the corresponding settings are `data_vars_parse_pos_indices: false` at the
+  file-level, and `parse_pos_indices: true` in the settings for the specific variables. Nice!
+- Added new filetype `PROC-MS-FEIGENWINTER2023A-HH-CSV-30MIN` for data used in the manuscript
+  by [Feigenwinter et. al (2023a)](https://doi.org/10.1016/j.agrformet.2023.109613)
+- Added new filetype `PROC-MS-FEIGENWINTER2023B-HH-CSV-30MIN` for data used in the manuscript
+  by [Feigenwinter et. al (2023b)](https://doi.org/10.1016/j.scitotenv.2023.166389)
+- Added new filetype `PROC-ICOS-FLUXNET-L2-HH-CSV-30MIN` for the ICOS L2 data product
+- Added new filetype `PROC-MS-KREBS2024-ICOSSEQ-CMB-CSV-30MIN` for data used in the
+  manuscript [Krebs et al. (2024)](https://doi.org/10.5194/bg-21-2005-2024)
+- Updated filetype `HON10-RAW-202402261031-TOA5-DAT-1MIN`
+
 ## 20240704 | 4 Jul 2024
 
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CSV-30MIN` for meteo data screened using the MeteoScreeningTool

@@ -1,0 +1,337 @@
+# ICOS FILE
+# for ICOS L2 FLUXNET data product (https://www.icos-cp.eu/data-products/ecosystem-release)
+#
+# ONLY CH-DAV! This is from ICOS.
+
+PROC-ICOS-FLUXNET-L2-HH-CSV-30MIN:
+  # ICOS FLUXNET L2 HH file (general format)
+  # First file: -
+  # Last file:  -
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: ICOSETC_CH-Dav_FLUXNET_HH_L2.csv
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 20_ec_fluxes
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 'TIMESTAMP_END'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y%m%d%H%M'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: icos_level-2_2024-1
+  data_vars_parse_pos_indices: false
+  data_vars_order: free
+  data_vars:
+#    TIMESTAMP_START: { field: false, units: false, measurement: XXX }
+    TIMESTAMP_END: { field: false, units: false, measurement: XXX }
+    CO2_F_MDS: { field: false, units: "umol mol-1", measurement: CO2 }
+    CO2_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: CO2 }
+    EBC_CF_METHOD: { field: false, units: "method", measurement: _AUX }
+    EBC_CF_N: { field: false, units: "#", measurement: _AUX }
+    G_F_MDS: { field: false, units: "W m-2", measurement: G }
+    G_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: G }
+    GPP_DT_CUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_CUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_DT_VUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_CUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    GPP_NT_VUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: GPP }
+    H_CORR: { field: false, units: "W m-2", measurement: H }
+    H_CORR_25: { field: false, units: "W m-2", measurement: H }
+    H_CORR_75: { field: false, units: "W m-2", measurement: H }
+    H_CORR_JOINTUNC: { field: false, units: "W m-2", measurement: H }
+    H_F_MDS: { field: false, units: "W m-2", measurement: H }
+    H_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: H }
+    H_RANDUNC: { field: false, units: "W m-2", measurement: H }
+    H_RANDUNC_METHOD: { field: false, units: "method", measurement: H }
+    H_RANDUNC_N: { field: false, units: "#", measurement: H }
+    LE_CORR: { field: false, units: "W m-2", measurement: LE }
+    LE_CORR_25: { field: false, units: "W m-2", measurement: LE }
+    LE_CORR_75: { field: false, units: "W m-2", measurement: LE }
+    LE_CORR_JOINTUNC: { field: false, units: "W m-2", measurement: LE }
+    LE_F_MDS: { field: false, units: "W m-2", measurement: LE }
+    LE_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: LE }
+    LE_RANDUNC: { field: false, units: "W m-2", measurement: LE }
+    LE_RANDUNC_METHOD: { field: false, units: "method", measurement: LE }
+    LE_RANDUNC_N: { field: false, units: "#", measurement: LE }
+    LW_IN_ERA: { field: false, units: "W m-2", measurement: LW }
+    LW_IN_F: { field: false, units: "W m-2", measurement: LW }
+    LW_IN_F_MDS: { field: false, units: "W m-2", measurement: LW }
+    LW_IN_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: LW }
+    LW_IN_F_QC: { field: false, units: "0=measured; 1=good quality gapfill; 2=downscaled from ERA", measurement: LW }
+    LW_IN_JSB: { field: false, units: "W m-2", measurement: LW }
+    LW_IN_JSB_ERA: { field: false, units: "W m-2", measurement: LW }
+    LW_IN_JSB_F: { field: false, units: "W m-2", measurement: LW }
+    LW_IN_JSB_F_QC: { field: false, units: "0=calculated from measured drivers; 1=calculated from good quality gapfilled drivers; 2=downscaled from ERA", measurement: LW }
+    LW_IN_JSB_QC: { field: false, units: nondimensional, measurement: LW }
+    LW_OUT: {  field: false, units: "W m-2", measurement: LW }
+    NEE_CUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_05_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_16_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_25_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_50_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_75_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_84_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_95_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_MEAN_QC: { field: false, units: "fraction 0-1", measurement: NEE }
+    NEE_CUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_REF_JOINTUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_REF_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_REF_RANDUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_REF_RANDUNC_METHOD: { field: false, units: "method", measurement: NEE }
+    NEE_CUT_REF_RANDUNC_N: { field: false, units: "#", measurement: NEE }
+    NEE_CUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_USTAR50_JOINTUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_USTAR50_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_CUT_USTAR50_RANDUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_CUT_USTAR50_RANDUNC_METHOD: { field: false, units: "method", measurement: NEE }
+    NEE_CUT_USTAR50_RANDUNC_N: { field: false, units: "#", measurement: NEE }
+    NEE_VUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_05_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_16_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_25_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_50_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_75_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_84_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_95_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_MEAN_QC: { field: false, units: "fraction 0-1", measurement: NEE }
+    NEE_VUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_REF_JOINTUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_REF_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_REF_RANDUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_REF_RANDUNC_METHOD: { field: false, units: "method", measurement: NEE }
+    NEE_VUT_REF_RANDUNC_N: { field: false, units: "#", measurement: NEE }
+    NEE_VUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_USTAR50_JOINTUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_USTAR50_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: NEE }
+    NEE_VUT_USTAR50_RANDUNC: { field: false, units: "umol CO2 m-2 s-1", measurement: NEE }
+    NEE_VUT_USTAR50_RANDUNC_METHOD: { field: false, units: "method", measurement: NEE }
+    NEE_VUT_USTAR50_RANDUNC_N: { field: false, units: "#", measurement: NEE }
+    NETRAD: { field: false, units: "W m-2", measurement: NETRAD }
+    NIGHT: { field: false, units: "1=nighttime", measurement: SW }
+    P: { field: PREC, units: "mm", measurement: PREC }
+    P_ERA: { field: PREC_ERA, units: "mm", measurement: PREC }
+    P_F: { field: PREC_F, units: "mm", measurement: PREC }
+    P_F_QC: { field: PREC_F_QC, units: "0=measured; 2=downscaled from ERA", measurement: PREC }
+    PA: { field: false, units: "kPa", measurement: PA }
+    PA_ERA: { field: false, units: "kPa", measurement: PA }
+    PA_F: { field: false, units: "kPa", measurement: PA }
+    PA_F_QC: { field: false, units: "0=measured; 2=downscaled from ERA", measurement: PA }
+    PPFD_IN: { field: false, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_DIF: { field: false, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_OUT: { field: false, units: "umol m-2 s-1", measurement: PPFD }
+    RECO_DT_CUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_CUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_DT_VUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_CUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_05: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_16: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_25: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_75: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_84: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_95: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_MEAN: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_REF: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_SE: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_NT_VUT_USTAR50: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_SR: { field: false, units: "umol CO2 m-2 s-1", measurement: RECO }
+    RECO_SR_N: { field: false, units: "fraction 0-1", measurement: RECO }
+    RH: { field: false, units: "%", measurement: RH }
+    SW_IN_ERA: { field: false, units: "W m-2", measurement: SW }
+    SW_IN_F: { field: false, units: "W m-2", measurement: SW }
+    SW_IN_F_MDS: { field: false, units: "W m-2", measurement: SW }
+    SW_IN_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SW }
+    SW_IN_F_QC: { field: false, units: "0=measured; 1=good quality gapfill; 2=downscaled from ERA", measurement: SW }
+    SW_IN_POT: { field: false, units: "W m-2", measurement: SW }
+    SW_OUT: { field: false, units: "W m-2", measurement: SW }
+#     SWC can have many entries w/ incremental IDs, reserve 20
+    SWC_F_MDS_1: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_1_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_2: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_2_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_3: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_3_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_4: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_4_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_5: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_5_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_6: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_6_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_7: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_7_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_8: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_8_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_9: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_9_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_10: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_10_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_11: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_11_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_12: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_12_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_13: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_13_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_14: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_14_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_15: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_15_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_16: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_16_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_17: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_17_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_18: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_18_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_19: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_19_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    SWC_F_MDS_20: { field: false, units: "%", measurement: SWC }
+    SWC_F_MDS_20_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: SWC }
+    TA_ERA: { field: false, units: "degC", measurement: TA }
+    TA_F: { field: false, units: "degC", measurement: TA }
+    TA_F_MDS: { field: false, units: "degC", measurement: TA }
+    TA_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TA }
+    TA_F_QC: { field: false, units: "0=measured; 1=good quality gapfill; 2=downscaled from ERA", measurement: TA }
+    # TS can have many entries w/ incremental IDs, reserve 20
+    TS_F_MDS_1: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_1_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_2: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_2_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_3: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_3_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_4: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_4_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_5: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_5_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_6: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_6_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_7: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_7_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_8: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_8_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_9: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_9_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_10: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_10_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_11: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_11_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_12: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_12_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_13: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_13_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_14: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_14_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_15: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_15_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_16: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_16_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_17: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_17_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_18: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_18_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_19: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_19_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    TS_F_MDS_20: { field: false, units: "degC", measurement: TS }
+    TS_F_MDS_20_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: TS }
+    USTAR: { field: false, units: "m s-1", measurement: TURBULENCE }
+    VPD_ERA: { field: false, units: "hPa", measurement: VPD }
+    VPD_F: { field: false, units: "hPa", measurement: VPD }
+    VPD_F_MDS: { field: false, units: "hPa", measurement: VPD }
+    VPD_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: VPD }
+    VPD_F_QC: { field: false, units: "0=measured; 1=good quality gapfill; 2=downscaled from ERA", measurement: VPD }
+    WD: { field: false, units: "deg from north", measurement: WIND }
+    WS: { field: false, units: "m s-1", measurement: WIND }
+    WS_ERA: { field: false, units: "m s-1", measurement: WIND }
+    WS_F: { field: false, units: "m s-1", measurement: WIND }
+    WS_F_QC: { field: false, units: "0=measured; 2=downscaled from ERA", measurement: WIND }

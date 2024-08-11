@@ -10,11 +10,11 @@ processed_mount: /mnt/gl-processing/
 # Basedirs custom
 #processed_local: L:\Sync\luhk_work\80 - SITES\CH-DAV\Data\Datasets\2024_ICOSETC_CH-Dav_ARCHIVE_L2
 #processed_local: L:\Sync\luhk_work\80 - SITES\CH-CHA\Data\Datasets\METEOSCREENINGTOOL_METEO_2005-2021
-processed_local: L:\Sync\luhk_work\80 - SITES\CH-DAV\Data\Datasets\ms_KREBS-2024_CHAMBERS_2020-2022
+processed_local: L:\Sync\luhk_work\80 - SITES\CH-AES\Data\Datasets
 
 # Output dirs
 out_dataflow_mount: /home/holukas/source_code/test_out
-out_dataflow: F:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
+out_dataflow: L:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
 
 # Sites subfolders
 ch-aws: CH-AWS_CrapAlv

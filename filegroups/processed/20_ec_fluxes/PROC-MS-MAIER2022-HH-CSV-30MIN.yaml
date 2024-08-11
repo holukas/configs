@@ -1,0 +1,152 @@
+# MANUSRIPT DATA
+# Dataset used in the manuscript:
+#   Maier, R., Hörtnagl, L., & Buchmann, N. (2022). Greenhouse gas
+#   fluxes (CO2, N2O and CH4) of pea and maize during two cropping
+#   seasons: Drivers, budgets, and emission factors for nitrous oxide.
+#   Science of The Total Environment, 849, 157541.
+# paper: https://doi.org/10.1016/j.scitotenv.2022.157541
+# ETH Research Collection: -
+#
+# The file with this filetype was produced using the R library ReddyProc.
+# Description of ReddyProc output variables: https://www.bgc-jena.mpg.de/5624929/Output-Format
+# ONLY CH-AES!
+
+PROC-MS-MAIER2022-HH-CSV-30MIN:
+  # First file: CH-AES_FP2021_meteo_fluxes_cropping seasons 2019-2020_20240227_forDatabase.csv
+  # Last file:  CH-AES_FP2021_meteo_fluxes_cropping seasons 2019-2020_20240227_forDatabase.csv
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: "CH-AES_FP2021_meteo_fluxes_cropping_seasons_2019-2020_20240227_forDatabase.csv"
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 20_ec_fluxes
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 'TIMESTAMP_END'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: ms_maier2022
+  data_vars_parse_pos_indices: false
+  data_vars_order: free
+  data_vars:
+    TIMESTAMP: {  field: false, units: "%Y-%m-%d %H:%M", measurement: XXX }
+
+    # Meteo
+    TA: {  field: TA_M3_2_1, units: "degC", parse_pos_indices: true, measurement: TA }  # Atmos41
+    RH: {  field: RH_M3_2_1, units: "%", parse_pos_indices: true, measurement: RH }  # Atmos41
+    PA: {  field: PA_M3_2_1, units: "kPa", parse_pos_indices: true, measurement: PA }  # Atmos41
+    Rg: {  field: SW_IN_M3_2_1, units: "W m-2", parse_pos_indices: true, measurement: SW }  # Atmos41
+    TS_0.05: {  field: TS_CF1_0.05_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_0.15: {  field: TS_CF1_0.15_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_0.30: {  field: TS_CF1_0.30_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    WFPS_0.05: {  field: WFPS_CF1_0.05_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_0.15: {  field: WFPS_CF1_0.15_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_0.30: {  field: WFPS_CF1_0.30_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    PREC: {  field: PREC_M3_2_1, units: mm, parse_pos_indices: true, measurement: PREC }  # Atmos41
+    VPD: {  field: VPD_M3_2_1, units: "hPa", gain: 0.01, measurement: VPD }
+
+    # LGR fluxes not needed, IRGA fluxes better and thus prioritized:
+    # LE_LGR: {  field: false, units: W m-2, measurement: XXX }
+    # H2O_LGR: {  field: false, units: mmol m-2 s-1, measurement: XXX }
+    # QCF_H2O_LGR: {  field: false, units: 0 or 1 or 2, measurement: XXX }
+    # qc_h2o_flux_LGR: {  field: false, units: 0 or 1 or 2, measurement: XXX }
+    # H_LGR: {  field: false, units:  W m-2, measurement: XXX }
+    # ET_LGR: {  field: false, units: mm hour-1, measurement: XXX }
+    # zdL_LGR: {  field: false, units: #, measurement: XXX }
+    # ch4_cov: {  field: false, units: m umol s-1 mol-1, measurement: XXX }
+    # co2_cov: {  field: false, units: m umol s-1 mol-1, measurement: XXX }
+    # n2o_cov: {  field: false, units: m umol s-1 mol-1, measurement: XXX }
+
+    # LE / ET
+    LE_IRGA: {  field: LE, units: "W m-2", measurement: LE }
+    ET_IRGA: {  field: ET, units: "mm hour-1", measurement: ET }
+
+    # FH2O
+    H2O_IRGA: {  field: FH2O, units: "mmol m-2 s-1", measurement: FH2O }
+    QCF_H2O_IRGA: {  field: FLAG_FH2O_QCF, units: "0/1/2=best/medium/bad quality", measurement: FH2O }
+    qc_h2o_flux_IRGA: {  field: FH2O_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FH2O }
+
+    # H
+    H_IRGA: {  field: H, units:  "W m-2", measurement: H }
+
+    zdL_IRGA: {  field: ZL, units: "#", measurement: TURBULENCE }
+    ustar: {  field: USTAR, units: "m s-1", measurement: TURBULENCE }
+
+    air_density: {  field: AIR_DENSITY, units: "kg m-3", measurement: AIR }
+    air_heat_capacity: {  field: AIR_HEAT_CAPACITY, units: "J K-1 kg-1", measurement: AIR }
+    air_molar_volume: {  field: AIR_MOLAR_VOLUME, units: "m3 mol-1", measurement: AIR }
+
+    # WIND
+    wind_dir: {  field: WD, units: "deg", measurement: WIND }
+    wind_speed: {  field: WS, units: "m s-1", measurement: WIND }
+
+    # CH4
+    ch4_scf: {  field: FCH4_SCF, units: "factor", measurement: FCH4 }
+    ch4_strg: {  field: SCH4_SINGLE, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    ch4_time_lag: {  field: CH4_TLAG_ACTUAL, units: "s", measurement: LAG }
+    un_ch4_flux: {  field: FCH4_UNCORR, units: "nmol m-2 s-1", measurement: FCH4 }
+    QCF_ch4: {  field: FLAG_FCH4_QCF, units: "0/1/2=best/medium/bad quality", measurement: FCH4 }
+    qc_ch4_flux: {  field: FCH4_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FCH4 }
+    CH4: {  field: FCH4_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    CH4_flag0: {  field: FCH4_MEAS_QCF0, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    CH4_flag01: {  field: FCH4_MEAS_QCF01, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    CH4_flag0_ustar: {  field: FCH4_MEAS_QCF0_VUT_50, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    CH4_flag01_ustar: {  field: FCH4_MEAS_QCF01_VUT_50, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    CH4_gfMDS: {  field: FCH4_VUT_50_MDS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+    CH4_gfRF: {  field: FCH4_VUT_50_RF, units: "nmol m-2 s-1", gain: 1000.0, measurement: FCH4 }
+
+    # FC
+    CO2: {  field: FC, units: "umol m-2 s-1", measurement: FC }
+    co2_scf: {  field: FC_SCF, units: "factor", measurement: FC }
+    co2_strg: {  field: SC, units: "umol m-2 s-1", measurement: FC }
+    co2_time_lag: {  field: CO2_TLAG_ACTUAL, units: "s", measurement: LAG }
+    un_co2_flux: {  field: FC_UNCORR, units: "umol m-2 s-1", measurement: FC }
+    QCF_co2: {  field: FLAG_FC_QCF, units: "0/1/2=best/medium/bad quality", measurement: FC }
+    qc_co2_flux: {  field: FC_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FC }
+
+    # GPP / RECO
+    GPP: {  field: GPP_NT_VUT_50, units: "umol m-2 s-1", measurement: GPP }
+    Reco: {  field: RECO_NT_VUT_50, units: "umol m-2 s-1", measurement: RECO }
+
+    # NEE
+    NEE_gfMDS: {  field: NEE_VUT_50, units: "umol m-2 s-1", measurement: NEE }
+    NEE: {  field: NEE_MEAS, units: "umol m-2 s-1", measurement: NEE }
+    NEE_flag0: {  field: NEE_MEAS_QCF0, units: "umol m-2 s-1", measurement: NEE }
+    NEE_flag01: {  field: NEE_MEAS_QCF01, units: "umol m-2 s-1", measurement: NEE }
+    NEE_flag0_ustar: {  field: NEE_MEAS_QCF0_VUT_50, units: "umol m-2 s-1", measurement: NEE }
+    NEE_flag01_ustar: {  field: NEE_MEAS_QCF01_VUT_50, units: "umol m-2 s-1", measurement: NEE }
+
+    # FN2O
+    n2o_scf: {  field: FN2O_SCF, units: "factor", measurement: FN2O }
+    n2o_strg: {  field: SN2O_SINGLE, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    un_n2o_flux: {  field: FN2O_UNCORR, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    N2O: {  field: FN2O_MEAS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    N2O_flag0: {  field: FN2O_MEAS_QCF0, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    N2O_flag01: {  field: FN2O_MEAS_QCF01, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    N2O_flag0_ustar: {  field: FN2O_MEAS_QCF0_VUT_50, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    N2O_flag01_ustar: {  field: FN2O_MEAS_QCF01_VUT_50, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    N2O_gfMDS: {  field: FN2O_VUT_50_MDS, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    N2O_gfRF: {  field: FN2O_VUT_50_RF, units: "nmol m-2 s-1", gain: 1000.0, measurement: FN2O }
+    QCF_n2o: {  field: FLAG_FN2O_QCF, units: "0/1/2=best/medium/bad quality", measurement: FN2O }
+    qc_n2o_flux: {  field: FN2O_SSITC_TEST, units: "0/1/2=best/medium/bad quality", measurement: FN2O }
+    n2o_time_lag: {  field: N2O_TLAG_ACTUAL, units: "s", measurement: LAG }
+
+    herb: {  field: HERBICIDE, units: "1=yes", measurement: MANAGEMENT }
+    harvest: {  field: HARVEST, units: "1=yes", measurement: MANAGEMENT }
+    Nmin: {  field: MINERAL_FERTILIZER, units: "1=yes", measurement: MANAGEMENT }
+    Norg: {  field: ORGANIC_FERTILIZER, units: "1=yes", measurement: MANAGEMENT }
+    Nfert: {  field: NITROGEN_FERTILIZER, units: "1=yes", measurement: MANAGEMENT }
+    soil: {  field: SOIL_PREPARATION, units: "1=yes", measurement: MANAGEMENT }
+    sow: {  field: SOWING, units: "1=yes", measurement: MANAGEMENT }
+
+    veg.height: {  field: VEGH, units: "m", gain: 0.01, measurement: VEGETATION }
+    lai: {  field: LAI, units: "m2 m-2", measurement: VEGETATION }

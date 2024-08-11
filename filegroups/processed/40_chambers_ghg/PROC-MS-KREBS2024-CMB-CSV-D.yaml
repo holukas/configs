@@ -1,0 +1,106 @@
+# MANUSCRIPT DATA
+# CH-DAS
+# 40_chambers_ghg
+# DAILY TIME RESOLUTION
+#
+# Dataset used in the manuscript:
+#   Krebs, L., Burri, S., Feigenwinter, I., Gharun, M., Meier, P.,
+#   & Buchmann, N. (2024). Forest-floor respiration, N2O fluxes,
+#   and CH4 fluxes in a subalpine spruce forest: Drivers and annual
+#   budgets. Biogeosciences, 21(8), 2005–2028.
+# paper: https://doi.org/10.5194/bg-21-2005-2024
+# ETH Research Collection: https://doi.org/10.3929/ethz-b-000619728
+#
+# Data used for the database upload were re-formatted using diive.
+#
+# ONLY CH-DAS / CH-DAV!
+
+PROC-MS-KREBS2024-CMB-CSV-D:
+  # Chambers
+  # First file: multiple files
+  # Last file:  multiple files
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: [
+    'Davos_chamber_GHG_daily_gf_2017_2020-2022_FF1.csv',
+    'Davos_chamber_GHG_daily_gf_2017_2020-2022_FF2.csv',
+    'Davos_chamber_GHG_daily_gf_2017_2020-2022_FF3.csv',
+    'Davos_chamber_GHG_daily_gf_2017_2020-2022_FF5.csv',
+    'Davos_chamber_GHG_daily_gf_2017_2020-2022_TA_PPFD_PREC.csv'
+  ]
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 40_chambers_ghg
+  data_raw_freq: D
+  data_skiprows: [ ]
+  data_headerrows: [ 0 ]
+  data_timestamp_column: 'TIMESTAMP'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: ms_krebs2024
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    TIMESTAMP: { field: false, units: false, measurement: XXX }
+
+    # FF1
+    flux.CO2_FF1: {  field: FC_CMB_MEAS_FF1_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_FF1: {  field: FCH4_CMB_MEAS_FF1_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_modeled_FF1: {  field: FC_CMB_MODELED_FF1_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_modeled_FF1: {  field: FCH4_CMB_MODELED_FF1_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_gf_FF1: {  field: FC_CMB_FF1_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_gf_FF1: {  field: FCH4_CMB_FF1_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    snow_height_FF1: {  field: D_SNOW_FF1_0_1, units: "cm", measurement: D_SNOW }
+    # TS_0.05_FF1: { field: false, units: false, measurement: XXX }
+    # WFPS_0.05_FF1: { field: false, units: false, measurement: XXX }
+    # chamber_FF1: {  field: false, units: false, measurement: XXX }
+
+    # FF2
+    flux.CO2_FF2: { field: FC_CMB_MEAS_FF2_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_FF2: { field: FCH4_CMB_MEAS_FF2_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_modeled_FF2: { field: FC_CMB_MODELED_FF2_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_modeled_FF2: { field: FCH4_CMB_MODELED_FF2_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_gf_FF2: { field: FC_CMB_FF2_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_gf_FF2: { field: FCH4_CMB_FF2_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    snow_height_FF2: { field: D_SNOW_FF2_0_1, units: "cm", measurement: D_SNOW }
+    # TS_0.05_FF2: { field: false, units: false, measurement: XXX }
+    # WFPS_0.05_FF2: { field: false, units: false, measurement: XXX }
+    # chamber_FF2: {  field: false, units: false, measurement: XXX }
+
+    # FF3
+    flux.CO2_FF3: { field: FC_CMB_MEAS_FF3_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_FF3: { field: FCH4_CMB_MEAS_FF3_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_modeled_FF3: { field: FC_CMB_MODELED_FF3_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_modeled_FF3: { field: FCH4_CMB_MODELED_FF3_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_gf_FF3: { field: FC_CMB_FF3_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_gf_FF3: { field: FCH4_CMB_FF3_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    snow_height_FF3: { field: D_SNOW_FF3_0_1, units: "cm", measurement: D_SNOW }
+    # TS_0.05_FF3: { field: false, units: false, measurement: XXX }
+    # WFPS_0.05_FF3: { field: false, units: false, measurement: XXX }
+    # chamber_FF3: {  field: false, units: false, measurement: XXX }
+
+    # FF5
+    flux.CO2_FF5: { field: FC_CMB_MEAS_FF5_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_FF5: { field: FCH4_CMB_MEAS_FF5_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_modeled_FF5: { field: FC_CMB_MODELED_FF5_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_modeled_FF5: { field: FCH4_CMB_MODELED_FF5_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    flux.CO2_gf_FF5: { field: FC_CMB_FF5_0_1, units: "nmol m-2 s-1", measurement: FC }
+    flux.CH4_gf_FF5: { field: FCH4_CMB_FF5_0_1, units: "nmol m-2 s-1", measurement: FCH4 }
+    snow_height_FF5: { field: D_SNOW_FF5_0_1, units: "cm", measurement: D_SNOW }
+    # TS_0.05_FF5: { field: false, units: false, measurement: XXX }
+    # WFPS_0.05_FF5: { field: false, units: false, measurement: XXX }
+    # chamber_FF5: {  field: false, units: false, measurement: XXX }
+
+    # Meteo
+    # Daily average values of meteo are not uploaded to database
+    # TA: { field: TA_T1_35_X, units: "degC", measurement: TA }
+    # PPFD: { field: PPFD_T1_35_X, units: "umol m-2 s-1", measurement: PPFD }
+    # PREC: { field: PREC_TOT_T1_20_1, units: "mm", measurement: PREC }

@@ -1,5 +1,11 @@
 # Changelog
 
+## 20240811 | 11 Aug 2024
+
+- `PROC-MS-MAIER2022-HH-CSV-30MIN` for [Maier et al. (2022)](https://doi.org/10.1016/j.scitotenv.2022.157541)
+- `PROC-MS-KREBS2024-CMB-CSV-D` for [Krebs et al. (2024)](https://doi.org/10.5194/bg-21-2005-2024)
+- `PROC-MS-KREBS2024-CMB-CSV-30MIN` for [Krebs et al. (2024)](https://doi.org/10.5194/bg-21-2005-2024)
+
 ## 20240708 | 8 Jul 2024
 
 - Added new setting `parse_pos_indices` to parse position indices from specific variables where this information is
@@ -13,7 +19,7 @@
 - Added new filetype `PROC-MS-FEIGENWINTER2023B-HH-CSV-30MIN` for data used in the manuscript
   by [Feigenwinter et. al (2023b)](https://doi.org/10.1016/j.scitotenv.2023.166389)
 - Added new filetype `PROC-ICOS-FLUXNET-L2-HH-CSV-30MIN` for the ICOS L2 data product
-- Added new filetype `PROC-MS-KREBS2024-ICOSSEQ-CMB-CSV-30MIN` for data used in the
+- Added new filetype `PROC-MS-KREBS2024-CMB-CSV-30MIN` for data used in the
   manuscript [Krebs et al. (2024)](https://doi.org/10.5194/bg-21-2005-2024)
 - Updated filetype `HON10-RAW-202402261031-TOA5-DAT-1MIN`
 

@@ -2,7 +2,7 @@
 
 ## 202408XX | XX Aug 2024
 
-- Added lag variable for `N2O` in filetype `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`
+- Added lag variables for `N2O` in filetype `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`
 
 ## 20240811 | 11 Aug 2024
 

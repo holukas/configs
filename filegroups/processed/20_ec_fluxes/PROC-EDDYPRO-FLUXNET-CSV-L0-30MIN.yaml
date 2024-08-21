@@ -103,6 +103,11 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     LE_SCF: { field: false, units: "factor", measurement: LE }
     MO_LENGTH: { field: false, units: "m", measurement: TURBULENCE }
     N2O_NR: { field: false, units: "#", measurement: NUMRECORDS }
+    N2O_TLAG_ACTUAL: { field: false, units: "s", measurement: LAG }
+    N2O_TLAG_MAX: { field: false, units: "s", measurement: LAG }
+    N2O_TLAG_MIN: { field: false, units: "s", measurement: LAG }
+    N2O_TLAG_NOMINAL: { field: false, units: "s", measurement: LAG }
+    N2O_TLAG_USED: { field: false, units: "s", measurement: LAG }
     NIGHT: { field: false, units: "1=nighttime", measurement: SW }
 #    NONE_TLAG_ACTUAL: { field: false, units: false, measurement: LAG }
 #    NONE_TLAG_MAX: { field: false, units: false, measurement: LAG }

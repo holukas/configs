@@ -14,7 +14,7 @@ processed_local: L:\Sync\luhk_work\80 - SITES\CH-AES\Data\Datasets
 
 # Output dirs
 out_dataflow_mount: /home/holukas/source_code/test_out
-out_dataflow: L:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
+out_dataflow: F:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
 
 # Sites subfolders
 ch-aws: CH-AWS_CrapAlv

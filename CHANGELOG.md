@@ -1,5 +1,9 @@
 # Changelog
 
+## 202408XX | XX Aug 2024
+
+- Added lag variable for `N2O` in filetype `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`
+
 ## 20240811 | 11 Aug 2024
 
 - `PROC-MS-MAIER2022-HH-CSV-30MIN` for [Maier et al. (2022)](https://doi.org/10.1016/j.scitotenv.2022.157541)

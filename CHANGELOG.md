@@ -1,8 +1,9 @@
 # Changelog
 
-## 202408XX | XX Aug 2024
+## 20240828 | 28 Aug 2024
 
 - Added lag variables for `N2O` in filetype `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`
+- Units `vol%` was changed to `%`
 
 ## 20240811 | 11 Aug 2024
 

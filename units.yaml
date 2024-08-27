@@ -116,8 +116,8 @@ unknown: false
 
 # V
 V: false
-vol%: "vol%"
-Vol%: "vol%"
+vol%: "%"
+Vol%: "%"
 Volts: V
 volts: V
 
@@ -137,9 +137,9 @@ W/m^2: W m-2
 "#": false
 "[#]": "#"
 "%": false
-"% vol": "vol%"
+"% vol": "%"
 "°C": degC
-"e’": "vol%"  # Found at CH-FRU for SWC SD
+"e’": "%"  # Found at CH-FRU for SWC SD
 "number of records": false
 "method": false
 

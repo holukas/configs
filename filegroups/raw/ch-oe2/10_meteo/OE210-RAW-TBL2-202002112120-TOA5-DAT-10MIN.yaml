@@ -88,32 +88,32 @@ OE210-RAW-TBL2-202002112120-TOA5-DAT-10MIN:
     SEC_CF1_0x60_2_Std: { field: SEC_SD_CF1_0.6_2, units: false, measurement: _SD }
     SEC_CF1_0x75_2_Std: { field: SEC_SD_CF1_0.75_2, units: false, measurement: _SD }
 
-    SWC_CF1_1_3_Avg: { field: SWC_CF1_1_3, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_1x00_2_Avg: { field: SWC_CF1_1_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x1_3_Avg: { field: SWC_CF1_0.1_3, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x2_3_Avg: { field: SWC_CF1_0.2_3, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x3_3_Avg: { field: SWC_CF1_0.3_3, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x05_2_Avg: { field: SWC_CF1_0.05_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x5_3_Avg: { field: SWC_CF1_0.5_3, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x05_3_Avg: { field: SWC_CF1_0.05_3, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x7_3_Avg: { field: SWC_CF1_0.7_3, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x10_2_Avg: { field: SWC_CF1_0.1_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x20_2_Avg: { field: SWC_CF1_0.2_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x30_2_Avg: { field: SWC_CF1_0.3_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x40_2_Avg: { field: SWC_CF1_0.4_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x50_2_Avg: { field: SWC_CF1_0.5_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x60_2_Avg: { field: SWC_CF1_0.6_2, units: "vol%", gain: 100.0, measurement: SWC }
-    SWC_CF1_0x75_2_Avg: { field: SWC_CF1_0.75_2, units: "vol%", gain: 100.0, measurement: SWC }
+    SWC_CF1_1_3_Avg: { field: SWC_CF1_1_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_1x00_2_Avg: { field: SWC_CF1_1_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x1_3_Avg: { field: SWC_CF1_0.1_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x2_3_Avg: { field: SWC_CF1_0.2_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x3_3_Avg: { field: SWC_CF1_0.3_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x05_2_Avg: { field: SWC_CF1_0.05_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x5_3_Avg: { field: SWC_CF1_0.5_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x05_3_Avg: { field: SWC_CF1_0.05_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x7_3_Avg: { field: SWC_CF1_0.7_3, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x10_2_Avg: { field: SWC_CF1_0.1_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x20_2_Avg: { field: SWC_CF1_0.2_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x30_2_Avg: { field: SWC_CF1_0.3_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x40_2_Avg: { field: SWC_CF1_0.4_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x50_2_Avg: { field: SWC_CF1_0.5_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x60_2_Avg: { field: SWC_CF1_0.6_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_CF1_0x75_2_Avg: { field: SWC_CF1_0.75_2, units: "%", gain: 100.0, measurement: SWC }
 
-    SWC_CF1_1x00_2_Std: { field: SWC_SD_CF1_1_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x05_2_Std: { field: SWC_SD_CF1_0.05_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x10_2_Std: { field: SWC_SD_CF1_0.1_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x20_2_Std: { field: SWC_SD_CF1_0.2_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x30_2_Std: { field: SWC_SD_CF1_0.3_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x40_2_Std: { field: SWC_SD_CF1_0.4_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x50_2_Std: { field: SWC_SD_CF1_0.5_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x60_2_Std: { field: SWC_SD_CF1_0.6_2, units: "vol%", gain: 100.0, measurement: _SD }
-    SWC_CF1_0x75_2_Std: { field: SWC_SD_CF1_0.75_2, units: "vol%", gain: 100.0, measurement: _SD }
+    SWC_CF1_1x00_2_Std: { field: SWC_SD_CF1_1_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x05_2_Std: { field: SWC_SD_CF1_0.05_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x10_2_Std: { field: SWC_SD_CF1_0.1_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x20_2_Std: { field: SWC_SD_CF1_0.2_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x30_2_Std: { field: SWC_SD_CF1_0.3_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x40_2_Std: { field: SWC_SD_CF1_0.4_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x50_2_Std: { field: SWC_SD_CF1_0.5_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x60_2_Std: { field: SWC_SD_CF1_0.6_2, units: "%", gain: 100.0, measurement: _SD }
+    SWC_CF1_0x75_2_Std: { field: SWC_SD_CF1_0.75_2, units: "%", gain: 100.0, measurement: _SD }
 
     SWC_RAW_CF1_1_3_Std: { field: SWC_RAW_SD_CF1_1_3, units: false, measurement: _RAW }
     SWC_RAW_CF1_0x1_3_Std: { field: SWC_RAW_SD_CF1_0.1_3, units: false, measurement: _RAW }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240829 | 29 Aug 2024
+
+- Changed `vol%` to `%` as given units for SWC in `OE210-RAW-TBL2-202002112120-TOA5-DAT-10MIN`
+
 ## 20240828 | 28 Aug 2024
 
 - Added lag variables for `N2O` in filetype `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`

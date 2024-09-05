@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240905 | 5 Sep 2024
+
+- Added new variables to `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN.yaml`
+
 ## 20240829 | 29 Aug 2024
 
 - Changed `vol%` to `%` as given units for SWC in `OE210-RAW-TBL2-202002112120-TOA5-DAT-10MIN`

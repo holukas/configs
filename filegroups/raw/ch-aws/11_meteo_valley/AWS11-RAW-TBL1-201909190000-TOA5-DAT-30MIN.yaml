@@ -63,6 +63,7 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
     RH_M1_2x5_1_Std: { field: RH_SD_M3_2.5_1, units: false, measurement: _SD }
     SoilTemp_Avg: { field: TS_GF1_0.1_1, units: false, measurement: TS }
     TS_GF1_0x1_1_Avg: { field: TS_GF1_0.1_1, units: false, measurement: TS }
+    TS_GF1_0x1_2_Avg: { field: TS_GF1_0.1_2, units: false, measurement: TS }
     # Station: { field: Station_X_X_X, units: false, measurement: XXX }
     TA_M3_2x5_1_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
     TA_M3_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: false, measurement: _SD }

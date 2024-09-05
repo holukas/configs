@@ -6,6 +6,9 @@
 # Renames key to value, e.g. "Deg C" to "degC"
 # Set to false if unit name should remain the same as key
 
+# A
+A: false
+Ah: false
 
 # B
 Boolean: boolean
@@ -40,6 +43,7 @@ hPa: false
 J K-1 kg-1: false
 
 # K
+kWh: false
 kg DM ha-1: false
 kg ha-1: false
 kg m-1 s-2: false

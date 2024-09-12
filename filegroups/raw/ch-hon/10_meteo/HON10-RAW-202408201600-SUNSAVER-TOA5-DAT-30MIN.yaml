@@ -1,0 +1,41 @@
+# CH-HON
+# 10_meteo
+
+
+HON10-RAW-202408201600-SUNSAVER-TOA5-DAT-30MIN:
+  # TOA5
+  # First file: CH-HON_iDL_BOX1_0_1_SunSaver_MPPT_20240820-1600.dat (the very first CH-HON_iDL_BOX1_0_1_SunSaver_MPPT_*.dat file)
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2024-08-20 16:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-HON_iDL_BOX1_0_1_SunSaver_MPPT_*.dat
+  filetype_dateparser: CH-HON_iDL_BOX1_0_1_SunSaver_MPPT_%Y%m%d-%H%M.dat
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: min
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    RECORD: { field: RECORD_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }
+    LiFePo4_V: { field: BV_LIFEPO4_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # LiFePo4_V = Voltage der LiFePo4 Batterie
+    Solar_V: { field: CELL_V_SOLAR_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # Solar_V = Voltage der Solarzellen
+    Load_V: { field: LOAD_V_STATION_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # Load_V = Voltage der Station (Load)
+    LiFePo4_C: { field: CURRENT_LIFEPO4_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # LiFePo4_C = Current der LiFePo4
+    Load_C: { field: CURRENT_STATION_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # Load_C = Current der Load
+    Charge_Ah_resetable_counter: { field: CHARGE_RESETABLE_COUNTER_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # Charge_Ah_resetable_counter = solar amp-hours since last reset (resetable counter)
+    Charge_Ah_cummulative_counter: { field: CHARGE_CUMMULATIVE_COUNTER_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # Charge_Ah_cummulative_counter = solar amp-hours since last reset cummulative counter)
+    Charge: { field: CHARGE_T1_0_1, units: false, gain: 1.0, measurement: _instrumentmetrics }  # Charge = Charge kilowatt-hours (reset-able counter) since last reset

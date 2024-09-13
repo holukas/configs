@@ -17,10 +17,10 @@ CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN:
   # First files used:
   # - CH-CHA_iDL_BOX1_0_1_TBL1_20170101-0000.dat
   # - CH-CHA-iDL_BOX1_0_1_iDL_BOX1_1min_20170104-0000.dat
-  # Last file:  *currently running*
+  # Last file:  CH-CHA_iDL_BOX1_0_1_TBL1_20211101-0000.dat
   can_be_used_by_filescanner: true
   filetype_valid_from: 2017-01-01 00:00:00
-  filetype_valid_to: 2099-02-28 11:01:00
+  filetype_valid_to: 2021-11-01 00:00:00
   filetype_id: [ 'CH-CHA_iDL_BOX1_0_1_TBL1_*.dat', 'CH-CHA-iDL_BOX1_0_1_iDL_BOX1_1min_*.dat', 'CH-CHA_iDL_BOX1_1min_*.dat', 'CH-CHA_iDL_BOX1_0_1_1min_*.dat' ]
   filetype_dateparser: [ 'CH-CHA_iDL_BOX1_0_1_TBL1_%Y%m%d-%H%M.dat', 'CH-CHA-iDL_BOX1_0_1_iDL_BOX1_1min_%Y%m%d-%H%M.dat', 'CH-CHA_iDL_BOX1_1min_%Y%m%d-%H%M.dat', 'CH-CHA_iDL_BOX1_0_1_1min_%Y%m%d.dat' ]
   filetype_gzip: false
@@ -49,6 +49,8 @@ CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN:
     FOG_M1_1_1_Std: { field: FOG_SD_M1_1_1, units: false, measurement: _SD }
     G_GF1_0x03_1_Avg: { field: G_GF1_0.03_1, units: false, measurement: G }
     G_GF1_0x03_1_Std: { field: G_SD_GF1_0.03_1, units: false, measurement: _SD }
+    G_GF1_0x03_2_Avg: { field: G_GF1_0.03_2, units: false, measurement: G }
+    G_GF1_0x03_2_Std: { field: G_GF1_0.03_2, units: false, measurement: _SD }
     G_GF1_0x05_1_Avg: { field: G_GF1_0.05_1, units: false, measurement: G }
     G_GF1_0x05_1_Std: { field: G_SD_GF1_0.05_1, units: false, measurement: _SD }
     G_GF1_0x05_2_Avg: { field: G_GF1_0.05_2, units: false, measurement: G }
@@ -68,13 +70,11 @@ CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN:
     LW_OUT_T1B2_2_1_Std: { field: LW_OUT_SD_T1_2_1, units: false, measurement: _SD }
     NETRAD_T1B2_2_1_Avg: { field: NETRAD_T1_2_1, units: false, measurement: NETRAD }
     NETRAD_T1B2_2_1_Std: { field: NETRAD_SD_T1_2_1, units: false, measurement: _SD }
-
     O2_GF4_0x1_1_Avg: { field: O2_GF4_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF4_0x1_1_Avg, TO2_GF4_0x1_1_Avg ], measurement: O2 }  # rawfunc
-    O2_GF5_0x1_1_Avg: { field: O2_GF5_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x1_1_Avg, TO2_GF5_0x1_1_Avg ], measurement: O2 }  # rawfunc
-    O2_GF5_0x2_1_Avg: { field: O2_GF5_0.2_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x2_1_Avg, TO2_GF5_0x2_1_Avg ], measurement: O2 }  # rawfunc
-
     O2_GF4_0x1_1_Std: { field: O2_SD_GF4_0.1_1, units: false, measurement: _SD }
+    O2_GF5_0x1_1_Avg: { field: O2_GF5_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x1_1_Avg, TO2_GF5_0x1_1_Avg ], measurement: O2 }  # rawfunc
     O2_GF5_0x1_1_Std: { field: O2_SD_GF5_0.1_1, units: false, measurement: _SD }
+    O2_GF5_0x2_1_Avg: { field: O2_GF5_0.2_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x2_1_Avg, TO2_GF5_0x2_1_Avg ], measurement: O2 }  # rawfunc
     O2_GF5_0x2_1_Std: { field: O2_SD_GF5_0.2_1, units: false, measurement: _SD }
     P_RAIN_GF1_0x5_1_Std: { field: PREC_RAIN_SD_GF1_0.5_1, units: false, measurement: _SD }
     P_RAIN_GF1_0x5_1_Tot: { field: PREC_RAIN_TOT_GF1_0.5_1, units: false, measurement: PREC }
@@ -100,6 +100,8 @@ CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN:
     SDP_GF1_0x10_1: { field: SDP_GF1_0.1_1, units: false, measurement: SDP }
     SDP_GF1_0x10_1_Avg: { field: SDP_GF1_0.1_1, units: false, measurement: SDP }
     SDP_GF1_0x10_1_Std: { field: SDP_SD_GF1_0.1_1, units: false, measurement: _SD }
+    SDP_GF1_0x10_2_Avg: { field: SDP_GF1_0.1_2, units: false, measurement: SDP }
+    SDP_GF1_0x10_2_Std: { field: SDP_SD_GF1_0.1_2, units: false, measurement: _SD }
     SDP_GF1_0x15_1_Avg: { field: SDP_GF1_0.15_1, units: false, measurement: SDP }
     SDP_GF1_0x15_1_Std: { field: SDP_SD_GF1_0.15_1, units: false, measurement: _SD }
     SDP_GF1_0x20_1: { field: SDP_GF1_0.2_1, units: false, measurement: SDP }
@@ -150,6 +152,8 @@ CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN:
     SWC_GF1_0x10_1: { field: SWC_GF1_0.1_1, units: false, measurement: SWC }
     SWC_GF1_0x10_1_Avg: { field: SWC_GF1_0.1_1, units: false, measurement: SWC }
     SWC_GF1_0x10_1_Std: { field: SWC_SD_GF1_0.1_1, units: false, measurement: _SD }
+    SWC_GF1_0x10_2_Avg: { field: SWC_GF1_0.1_2, units: false, measurement: SWC }
+    SWC_GF1_0x10_2_Std: { field: SWC_SD_GF1_0.1_2, units: false, measurement: _SD }
     SWC_GF1_0x15_1_Avg: { field: SWC_GF1_0.15_1, units: false, measurement: SWC }
     SWC_GF1_0x15_1_Std: { field: SWC_SD_GF1_0.15_1, units: false, measurement: _SD }
     SWC_GF1_0x20_1: { field: SWC_GF1_0.2_1, units: false, measurement: SWC }
@@ -216,26 +220,24 @@ CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN:
     TM_GF5_0x2_1_Avg: { field: TM_GF5_0.2_1, units: false, measurement: TM }
     TM_GF5_0x2_1_fill_ind_Avg: { field: TM_fill_ind_GF5_0.2_1, units: false, measurement: TM }
     TM_GF5_0x2_1_Std: { field: TM_SD_GF5_0.2_1, units: false, measurement: _SD }
-
     TO2_GF4_0x1_1_Avg: { field: TO2_GF4_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF4_0x1_1_Avg, TO2_GF4_0x1_1_Avg ], measurement: O2 }
-    TO2_GF5_0x1_1_Avg: { field: TO2_GF5_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x1_1_Avg, TO2_GF5_0x1_1_Avg ], measurement: O2 }
-    TO2_GF5_0x2_1_Avg: { field: TO2_GF5_0.2_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x2_1_Avg, TO2_GF5_0x2_1_Avg ], measurement: O2 }
-
     TO2_GF4_0x1_1_Std: { field: TO2_SD_GF4_0.1_1, units: false, measurement: _SD }
+    TO2_GF5_0x1_1_Avg: { field: TO2_GF5_0.1_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x1_1_Avg, TO2_GF5_0x1_1_Avg ], measurement: O2 }
     TO2_GF5_0x1_1_Std: { field: TO2_SD_GF5_0.1_1, units: false, measurement: _SD }
+    TO2_GF5_0x2_1_Avg: { field: TO2_GF5_0.2_1, units: false, rawfunc: [ correct_o2, O2_GF5_0x2_1_Avg, TO2_GF5_0x2_1_Avg ], measurement: O2 }
     TO2_GF5_0x2_1_Std: { field: TO2_SD_GF5_0.2_1, units: false, measurement: _SD }
     TS_GF1_0x01_1_Avg: { field: TS_GF1_0.01_1, units: false, measurement: TS }
     TS_GF1_0x01_1_Std: { field: TS_SD_GF1_0.01_1, units: false, measurement: _SD }
     TS_GF1_0x04_1_Avg: { field: TS_GF1_0.04_1, units: false, measurement: TS }
+    TS_GF1_0x04_1_Std: { field: TS_SD_GF1_0.04_1, units: false, measurement: _SD }
+    TS_GF1_0x05_1: { field: TS_GF1_0.05_1, units: false, measurement: TS }
+    TS_GF1_0x05_1_Avg: { field: TS_GF1_0.05_1, units: false, measurement: TS }
+    TS_GF1_0x05_1_Std: { field: TS_SD_GF1_0.05_1, units: false, measurement: _SD }
     TS_GF1_0x07_1_Avg: { field: TS_GF1_0.07_1, units: false, measurement: TS }
     TS_GF1_0x10_1: { field: TS_GF1_0.1_1, units: false, measurement: TS }
     TS_GF1_0x15_1_Avg: { field: TS_GF1_0.15_1, units: false, measurement: TS }
     TS_GF1_0x25_1_Avg: { field: TS_GF1_0.25_1, units: false, measurement: TS }
     TS_GF1_0x40_1: { field: TS_GF1_0.4_1, units: false, measurement: TS }
-    TS_GF1_0x04_1_Std: { field: TS_SD_GF1_0.04_1, units: false, measurement: _SD }
-    TS_GF1_0x05_1: { field: TS_GF1_0.05_1, units: false, measurement: TS }
-    TS_GF1_0x05_1_Avg: { field: TS_GF1_0.05_1, units: false, measurement: TS }
-    TS_GF1_0x05_1_Std: { field: TS_SD_GF1_0.05_1, units: false, measurement: _SD }
     # See Note#2 in NOTES.md, this is depth 0.5:
     TS_GF1_0x05_2_Avg: { field: TS_GF1_0.5_2, units: false, measurement: TS }
     # See Note#2 in NOTES.md, this is depth 0.5:

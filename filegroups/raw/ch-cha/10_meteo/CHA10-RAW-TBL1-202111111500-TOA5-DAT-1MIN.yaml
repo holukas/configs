@@ -106,18 +106,18 @@ CHA10-RAW-TBL1-202111111500-TOA5-DAT-1MIN:
     TA_T1_2_1_Std: { field: TA_SD_T1_2_1, units: false, measurement: _SD }
 
     # TODO Need offset correction, see Note#5 in NOTES:
-    TS_GF1_0x05_1_Avg: { field: TS_GF1_0.05_1, units: false, offset: -3.88, measurement: TS }
-    TS_GF1_0x05_1_Std: { field: TS_SD_GF1_0.05_1, units: false, offset: -3.88, measurement: _SD }
-    TS_GF1_0x10_1_Avg: { field: TS_GF1_0.1_1, units: false, offset: -3.88, measurement: TS }
-    TS_GF1_0x10_1_Std: { field: TS_SD_GF1_0.1_1, units: false, offset: -3.88, measurement: _SD }
-    TS_GF1_0x20_1_Avg: { field: TS_GF1_0.2_1, units: false, offset: -3.88, measurement: TS }
-    TS_GF1_0x20_1_Std: { field: TS_SD_GF1_0.2_1, units: false, offset: -3.88, measurement: _SD }
-    TS_GF1_0x30_1_Avg: { field: TS_GF1_0.3_1, units: false, offset: -3.88, measurement: TS }
-    TS_GF1_0x30_1_Std: { field: TS_SD_GF1_0.3_1, units: false, offset: -3.88, measurement: _SD }
-    TS_GF1_0x40_1_Avg: { field: TS_GF1_0.4_1, units: false, offset: -3.88, measurement: TS }
-    TS_GF1_0x40_1_Std: { field: TS_SD_GF1_0.4_1, units: false, offset: -3.88, measurement: _SD }
-    TS_GF1_0x50_1_Avg: { field: TS_GF1_0.5_1, units: false, offset: -3.88, measurement: TS }
-    TS_GF1_0x50_1_Std: { field: TS_SD_GF1_0.5_1, units: false, offset: -3.88, measurement: _SD }
+    TS_GF1_0x05_1_Avg: { field: TS_GF1_0.05_1, units: false, offset: 0.0, measurement: TS }
+    TS_GF1_0x05_1_Std: { field: TS_SD_GF1_0.05_1, units: false, offset: 0.0, measurement: _SD }
+    TS_GF1_0x10_1_Avg: { field: TS_GF1_0.1_1, units: false, offset: 0.0, measurement: TS }
+    TS_GF1_0x10_1_Std: { field: TS_SD_GF1_0.1_1, units: false, offset: 0.0, measurement: _SD }
+    TS_GF1_0x20_1_Avg: { field: TS_GF1_0.2_1, units: false, offset: 0.0, measurement: TS }
+    TS_GF1_0x20_1_Std: { field: TS_SD_GF1_0.2_1, units: false, offset: 0.0, measurement: _SD }
+    TS_GF1_0x30_1_Avg: { field: TS_GF1_0.3_1, units: false, offset: 0.0, measurement: TS }
+    TS_GF1_0x30_1_Std: { field: TS_SD_GF1_0.3_1, units: false, offset: 0.0, measurement: _SD }
+    TS_GF1_0x40_1_Avg: { field: TS_GF1_0.4_1, units: false, offset: 0.0, measurement: TS }
+    TS_GF1_0x40_1_Std: { field: TS_SD_GF1_0.4_1, units: false, offset: 0.0, measurement: _SD }
+    TS_GF1_0x50_1_Avg: { field: TS_GF1_0.5_1, units: false, offset: 0.0, measurement: TS }
+    TS_GF1_0x50_1_Std: { field: TS_SD_GF1_0.5_1, units: false, offset: 0.0, measurement: _SD }
 
     WD_VANE_T1B1_2_1_Std: { field: WD_VANE_SD_T1B1_2_1, units: false, measurement: _SD }
     WS_CUP_T1B1_2_1_Std: { field: WS_CUP_SD_T1B1_2_1, units: false, measurement: _SD }

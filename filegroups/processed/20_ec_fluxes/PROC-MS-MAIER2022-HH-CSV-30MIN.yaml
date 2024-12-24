@@ -45,12 +45,12 @@ PROC-MS-MAIER2022-HH-CSV-30MIN:
     RH: {  field: RH_M3_2_1, units: "%", parse_pos_indices: true, measurement: RH }  # Atmos41
     PA: {  field: PA_M3_2_1, units: "kPa", parse_pos_indices: true, measurement: PA }  # Atmos41
     Rg: {  field: SW_IN_M3_2_1, units: "W m-2", parse_pos_indices: true, measurement: SW }  # Atmos41
-    TS_0.05: {  field: TS_CF1_0.05_1, units: "degC", parse_pos_indices: true, measurement: TS }
-    TS_0.15: {  field: TS_CF1_0.15_1, units: "degC", parse_pos_indices: true, measurement: TS }
-    TS_0.30: {  field: TS_CF1_0.30_1, units: "degC", parse_pos_indices: true, measurement: TS }
-    WFPS_0.05: {  field: WFPS_CF1_0.05_1, units: "%", parse_pos_indices: true, measurement: WFPS }
-    WFPS_0.15: {  field: WFPS_CF1_0.15_1, units: "%", parse_pos_indices: true, measurement: WFPS }
-    WFPS_0.30: {  field: WFPS_CF1_0.30_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    TS_0.05: {  field: TS_CF3_0.05_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_0.15: {  field: TS_CF3_0.15_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    TS_0.30: {  field: TS_CF3_0.3_1, units: "degC", parse_pos_indices: true, measurement: TS }
+    WFPS_0.05: {  field: WFPS_CF3_0.05_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_0.15: {  field: WFPS_CF3_0.15_1, units: "%", parse_pos_indices: true, measurement: WFPS }
+    WFPS_0.30: {  field: WFPS_CF3_0.3_1, units: "%", parse_pos_indices: true, measurement: WFPS }
     PREC: {  field: PREC_M3_2_1, units: mm, parse_pos_indices: true, measurement: PREC }  # Atmos41
     VPD: {  field: VPD_M3_2_1, units: "hPa", gain: 0.01, measurement: VPD }
 
@@ -61,6 +61,7 @@ PROC-MS-MAIER2022-HH-CSV-30MIN:
     # qc_h2o_flux_LGR: {  field: false, units: 0 or 1 or 2, measurement: XXX }
     # H_LGR: {  field: false, units:  W m-2, measurement: XXX }
     # ET_LGR: {  field: false, units: mm hour-1, measurement: XXX }
+
     # zdL_LGR: {  field: false, units: #, measurement: XXX }
     # ch4_cov: {  field: false, units: m umol s-1 mol-1, measurement: XXX }
     # co2_cov: {  field: false, units: m umol s-1 mol-1, measurement: XXX }

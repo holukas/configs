@@ -63,3 +63,5 @@ Equation from the old MeteoScreeningTool Excel config file to calculate SDP (uni
 > "calculates SDP from VOLT (mV/1000) measurement. This step got lost, was done in the previous screening though. mV
 > range [850,950], SDP range [20,35]. Equation from current loggerprogram where these sensors are still measured.
 > Originally from Werner's logger-cleaning.R" 
+
+# Note#5, CH-CHA

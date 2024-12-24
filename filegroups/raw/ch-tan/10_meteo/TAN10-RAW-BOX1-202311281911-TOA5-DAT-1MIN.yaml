@@ -35,8 +35,8 @@ TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN:
     DNTP_iDL_BOX1_0_1: { field: DNTP_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     G_CF1_0x05_1_Avg: { field: G_CF1_0.05_1, units: false, measurement: G }
     G_CF1_0x05_1_Std: { field: G_SD_CF1_0.05_1, units: false, measurement: _SD }
-    LS_M1_2_1: { field: LS_M1_2_1, units: false, measurement: LS }
-    LSD_M1_2_1: { field: LSD_M1_2_1, units: false, measurement: LS }
+    LS_M1_2_1: { field: LS_M1_2_1, units: "counts", measurement: LS }
+    LSD_M1_2_1: { field: LSD_M1_2_1, units: "km", measurement: LS }
     LW_BC_IN_T1_2_1_Avg: { field: LW_BC_IN_T1_2_1, units: false, measurement: LW }
     LW_BC_IN_T1_2_1_Std: { field: LW_BC_IN_SD_T1_2_1, units: false, measurement: _SD }
     LW_BC_OUT_T1_2_1_Avg: { field: LW_BC_OUT_T1_2_1, units: false, measurement: LW }

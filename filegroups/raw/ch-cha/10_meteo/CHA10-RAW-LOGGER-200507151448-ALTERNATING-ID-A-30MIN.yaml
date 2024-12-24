@@ -140,9 +140,9 @@ CHA10-RAW-LOGGER-200507151448-ALTERNATING-ID-A-30MIN:
     SHF_3_STD: { field: G_SD_GF1_0.03_3, units: W m-2, measurement: _SD }
     SHF_4_STD: { field: G_SD_GF1_0.03_4, units: W m-2, measurement: _SD }
     SWin_1_STD: { field: SW_IN_SD_T1_2_1, units: W m-2, measurement: _SD }
-    LWin_1_STD: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _SD }
+    LWin_1_STD: { field: LW_IN_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     SWout_1_STD: { field: SW_OUT_SD_T1_2_1, units: W m-2, measurement: _SD }
-    LWout_1_STD: { field: LW_OUT_RAW_SD_T1_2_1, units: false, measurement: _SD }
+    LWout_1_STD: { field: LW_OUT_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     PT100_1_STD: { field: T_RAD_SD_T1_2_1, units: degC, measurement: _SD }
     PAR_1_STD: { field: PPFD_IN_SD_T1_2_1, units: "umol s-1 m-2", measurement: _SD }
     Tsoil_1_STD: { field: TS_SD_GF1_0.01_1, units: degC, measurement: _SD }

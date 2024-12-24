@@ -126,9 +126,9 @@ FRU10-RAW-LOGGER-200607211602-ALTERNATING-ID104204-A-30MIN-IRRMIN:
     SHF_7_STD: {  field: G_SD_GF1_0.03_3, units: W m-2, measurement: _SD }
     SHF_8_STD: {  field: G_SD_GF1_0.03_4, units: W m-2, measurement: _SD }
     SWin_2_STD: { field: SW_IN_SD_T1_2_1, units: W m-2, measurement: _SD }
-    LWin_2_STD: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LWin_2_STD: { field: LW_IN_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     SWout_2_STD: { field: SW_OUT_SD_T1_2_1, units: W m-2, measurement: _SD }
-    LWout_2_STD: { field: LW_OUT_RAW_T1_2_1, units: false, measurement: _RAW }
+    LWout_2_STD: { field: LW_OUT_RAW_T1_2_1, units: "mV", measurement: _RAW }
     PT100_2_STD: { field: T_RAD_SD_T1_2_1, units: degC, measurement: _instrumentmetrics }
     PAR_2_STD: { field: PPFD_IN_SD_T1_2_1, units: "umol s-1 m-2", measurement: _SD }
     Tsoil_11_STD: { field: TS_SD_GF1_0.01_1, units: degC, measurement: _SD }

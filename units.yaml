@@ -115,6 +115,7 @@ umol s-1 m-2: umol m-2 s-1
 µmol m-2 s-1: umol m-2 s-1
 unitless: false
 uV.m2.W-1: uV (W m-2)-1
+uV (W m-2)-1: false
 uS/cm: uS cm-1
 unknown: false
 

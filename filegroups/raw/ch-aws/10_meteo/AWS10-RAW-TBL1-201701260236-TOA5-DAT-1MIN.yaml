@@ -42,18 +42,18 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
     G_GF2_0x05_1_Std: { field: G_SD_GF2_0.05_1, units: false, measurement: _SD }
     LW_IN_M1B2_1x40_1_Avg: { field: LW_IN_T1_1.4_1, units: false, measurement: LW }
     LW_IN_M1B2_1x40_1_Std: { field: LW_IN_SD_T1_1.4_1, units: false, measurement: _SD }
-    LW_IN_RAW_M1B2_1x40_1_Avg: { field: LW_IN_RAW_T1_1.4_1, units: false, measurement: _RAW }
-    LW_IN_RAW_M1B2_1x40_1_Std: { field: LW_IN_RAW_SD_T1_1.4_1, units: false, measurement: _SD }
-    LW_IN_RAW_T1B2_1x40_1_Avg: { field: LW_IN_RAW_T1_1.4_1, units: false, measurement: _RAW }
-    LW_IN_RAW_T1B2_1x40_1_Std: { field: LW_IN_RAW_SD_T1_1.4_1, units: false, measurement: _SD }
+    LW_IN_RAW_M1B2_1x40_1_Avg: { field: LW_IN_RAW_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_M1B2_1x40_1_Std: { field: LW_IN_RAW_SD_T1_1.4_1, units: "mV", measurement: _SD }
+    LW_IN_RAW_T1B2_1x40_1_Avg: { field: LW_IN_RAW_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1B2_1x40_1_Std: { field: LW_IN_RAW_SD_T1_1.4_1, units: "mV", measurement: _SD }
     LW_IN_T1B2_1x40_1_Avg: { field: LW_IN_T1_1.4_1, units: false, measurement: LW }
     LW_IN_T1B2_1x40_1_Std: { field: LW_IN_SD_T1_1.4_1, units: false, measurement: _SD }
     LW_OUT_M1B2_1x40_1_Avg: { field: LW_OUT_T1_1.4_1, units: false, measurement: LW }
     LW_OUT_M1B2_1x40_1_Std: { field: LW_OUT_SD_T1_1.4_1, units: false, measurement: _SD }
-    LW_OUT_RAW_M1B2_1x40_1_Avg: { field: LW_OUT_RAW_T1_1.4_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_M1B2_1x40_1_Std: { field: LW_OUT_RAW_SD_T1_1.4_1, units: false, measurement: _SD }
-    LW_OUT_RAW_T1B2_1x40_1_Avg: { field: LW_OUT_RAW_T1_1.4_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1B2_1x40_1_Std: { field: LW_OUT_RAW_SD_T1_1.4_1, units: false, measurement: _SD }
+    LW_OUT_RAW_M1B2_1x40_1_Avg: { field: LW_OUT_RAW_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_M1B2_1x40_1_Std: { field: LW_OUT_RAW_SD_T1_1.4_1, units: "mV", measurement: _SD }
+    LW_OUT_RAW_T1B2_1x40_1_Avg: { field: LW_OUT_RAW_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1B2_1x40_1_Std: { field: LW_OUT_RAW_SD_T1_1.4_1, units: "mV", measurement: _SD }
     LW_OUT_T1B2_1x40_1_Avg: { field: LW_OUT_T1_1.4_1, units: false, measurement: LW }
     LW_OUT_T1B2_1x40_1_Std: { field: LW_OUT_SD_T1_1.4_1, units: false, measurement: _SD }
     OSO_CR1000_BOX_0_1_Max: { field: OSO_CR1000_MAX_BOX_0_1, units: false, measurement: OSO }

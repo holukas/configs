@@ -41,8 +41,8 @@ PROC-ETH-METEOSCREENINGTOOL-CH-AES-CSV-30MIN:
     AW_IN_SD_T2_1_1: { field: SW_IN_SD_M3_1_1, units: "W m-2", gain: 1, measurement: _SD }
     BV_iDL_AVG_CF3_0_1: { field: BV_iDL_CF3_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
     DNTP_iDL_BOX3_0_1: { field: DNTP_iDL_BOX3_0_1, units: "ms", gain: 1, measurement: _instrumentmetrics }
-    LS_AVG_T2_1_1: { field: LS_M3_1_1, units: "#", gain: 1, measurement: LS }
-    LS_SD_T2_1_1: { field: LS_SD_M3_1_1, units: "#", gain: 1, measurement: _SD }
+    LS_AVG_T2_1_1: { field: LS_M3_1_1, units: "counts", gain: 1, measurement: LS }
+    LS_SD_T2_1_1: { field: LS_SD_M3_1_1, units: "counts", gain: 1, measurement: _SD }
     LSD_AVG_T2_1_1: { field: LSD_M3_1_1, units: "km", gain: 1, measurement: LS }
     LSD_SD_T2_1_1: { field: LSD_SD_M3_1_1, units: "km", gain: 1, measurement: _SD }
     PA_AVG_T2_1_1: { field: PA_M3_1_1, units: "kPa", gain: 1, measurement: PA }

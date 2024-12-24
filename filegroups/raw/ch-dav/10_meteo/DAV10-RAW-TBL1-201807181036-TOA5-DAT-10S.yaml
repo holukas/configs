@@ -34,26 +34,26 @@ DAV10-RAW-TBL1-201807181036-TOA5-DAT-10S:
     HEAT_HS50_T1B1_35_1_FLAG: { field: HEAT_HS50_T1_35_1, units: false, measurement: _instrumentmetrics }
     HEAT_R350_T1B1_35_1_FLAG: { field: HEAT_R350_T1_35_1, units: false, measurement: _instrumentmetrics }
     LW_IN_1_1_1: { field: LW_IN_T1_35_2, units: false, measurement: LW }
-    LW_IN_IU_1_1_1: { field: LW_IN_IU_T1_35_2, units: false, measurement: _RAW }
-    LW_IN_RAW_T1_35_1: { field: false, units: false, measurement: _RAW }
-    LW_IN_RAW_T1_35_1_Avg: { field: LW_IN_RAW_T1_35_1, units: false, measurement: _RAW }
-    LW_IN_RAW_T1_35_1_Std: { field: LW_IN_RAW_SD_T1_35_1, units: false, measurement: _RAW }
-    LW_IN_RAW_T1_35_2: { field: LW_IN_RAW_T1_35_2, units: false, measurement: _RAW }
-    LW_IN_RAW_T1_35_2_Avg: { field: LW_IN_RAW_T1_35_2, units: false, measurement: _RAW }
-    LW_IN_RAW_T1_35_2_Std: { field: LW_IN_RAW_SD_T1_35_2, units: false, measurement: _RAW }
+    LW_IN_IU_1_1_1: { field: LW_IN_IU_T1_35_2, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1_35_1: { field: false, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1_35_1_Avg: { field: LW_IN_RAW_T1_35_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1_35_1_Std: { field: LW_IN_RAW_SD_T1_35_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1_35_2: { field: LW_IN_RAW_T1_35_2, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1_35_2_Avg: { field: LW_IN_RAW_T1_35_2, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1_35_2_Std: { field: LW_IN_RAW_SD_T1_35_2, units: "mV", measurement: _RAW }
     LW_IN_T1_35_1: { field: false, units: false, measurement: LW }
     LW_IN_T1_35_1_Avg: { field: LW_IN_T1_35_1, units: false, measurement: LW }
     LW_IN_T1_35_1_Std: { field: LW_IN_SD_T1_35_1, units: false, measurement: _SD }
     LW_IN_T1_35_2_Avg: { field: LW_IN_T1_35_2, units: false, measurement: LW }
     LW_IN_T1_35_2_Std: { field: LW_IN_SD_T1_35_2, units: false, measurement: _SD }
     LW_OUT_1_1_1: { field: LW_OUT_T1_35_2, units: false, measurement: LW }
-    LW_OUT_IU_1_1_1: { field: LW_OUT_IU_T1_35_2, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1_35_1: { field: false, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1_35_1_Avg: { field: LW_OUT_RAW_T1_35_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1_35_1_Std: { field: LW_OUT_RAW_SD_T1_35_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1_35_2: { field: LW_OUT_RAW_T1_35_2, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1_35_2_Avg: { field: LW_OUT_RAW_T1_35_2, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1_35_2_Std: { field: LW_OUT_RAW_SD_T1_35_2, units: false, measurement: _RAW }
+    LW_OUT_IU_1_1_1: { field: LW_OUT_IU_T1_35_2, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1_35_1: { field: false, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1_35_1_Avg: { field: LW_OUT_RAW_T1_35_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1_35_1_Std: { field: LW_OUT_RAW_SD_T1_35_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1_35_2: { field: LW_OUT_RAW_T1_35_2, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1_35_2_Avg: { field: LW_OUT_RAW_T1_35_2, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1_35_2_Std: { field: LW_OUT_RAW_SD_T1_35_2, units: "mV", measurement: _RAW }
     LW_OUT_T1_35_1: { field: false, units: false, measurement: LW }
     LW_OUT_T1_35_1_Avg: { field: LW_OUT_T1_35_1, units: false, measurement: LW }
     LW_OUT_T1_35_1_Std: { field: LW_OUT_SD_T1_35_1, units: false, measurement: _SD }

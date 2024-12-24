@@ -1,8 +1,26 @@
 # Changelog
 
-## 20240905 | 5 Sep 2024
+## 20XXXXXX |
 
+- Added new filetype `PROC-FLUXNET-2024-FULLSET-HH-CSV-30MIN`
+- Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-CHA-CSV-30MIN`
+- Extended filetype `PROC-ETH-METEOSCREENINGTOOL-CH-CHA-CSV-30MIN`
+- Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-AES-CSV-30MIN`
+- Renamed measurements `CO2_BOLE` and `DENDRO` to measurement `BOLE`
+- Assigned units `um` (µm) to all `DENDRO` variables
+- Assigned units `counts` to all `LS` variables
+- Assigned units `km` to all `LSD` variables
+- Assigned units `mV` to all `LW_IN_RAW`, `LW_OUT_RAW`, `LW_IN_IU` and `LW_OUT_IU` variables
+
+## 20240913 | 13 Sep 2024
+
+- Added new filetype `CHA10-RAW-TBL1-202405291144-TOA5-DAT-1MIN`
+- Added new filetype `CHA10-RAW-TBL1-202111111500-TOA5-DAT-1MIN`
+- Added new filetype `CHA10-RAW-TBL1-201701010000-TOA5-DAT-1MIN`
+- Added new filetype `HON10-RAW-202408201600-SUNSAVER-TOA5-DAT-30MIN`
 - Added new variables to `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN.yaml`
+- Added new variable to `AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN`
+- Added new allowed units in `units.yaml`
 
 ## 20240829 | 29 Aug 2024
 

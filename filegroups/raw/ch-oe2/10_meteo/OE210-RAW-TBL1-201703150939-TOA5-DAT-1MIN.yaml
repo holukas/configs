@@ -47,18 +47,18 @@ OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN:
     LW_IN_M1_1_1_Std: { field: LW_IN_SD_M1_1_1, units: false, measurement: _SD }
     LW_IN_M1_1_2_Avg: { field: LW_IN_M1_1_2, units: false, measurement: LW }
     LW_IN_M1_1_2_Std: { field: LW_IN_SD_M1_1_2, units: false, measurement: _SD }
-    LW_IN_RAW_M1_1_1_Avg: { field: LW_IN_RAW_M1_1_1, units: false, measurement: _RAW }
-    LW_IN_RAW_M1_1_1_Std: { field: LW_IN_RAW_SD_M1_1_1, units: false, measurement: _SD }
-    LW_IN_RAW_M1_1_2_Avg: { field: LW_IN_RAW_M1_1_2, units: false, measurement: _RAW }
-    LW_IN_RAW_M1_1_2_Std: { field: LW_IN_RAW_SD_M1_1_2, units: false, measurement: _RAW }
+    LW_IN_RAW_M1_1_1_Avg: { field: LW_IN_RAW_M1_1_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_M1_1_1_Std: { field: LW_IN_RAW_SD_M1_1_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_M1_1_2_Avg: { field: LW_IN_RAW_M1_1_2, units: "mV", measurement: _RAW }
+    LW_IN_RAW_M1_1_2_Std: { field: LW_IN_RAW_SD_M1_1_2, units: "mV", measurement: _RAW }
     LW_OUT_M1_1_1_Avg: { field: LW_OUT_M1_1_1, units: false, measurement: LW }
     LW_OUT_M1_1_1_Std: { field: LW_OUT_SD_M1_1_1, units: false, measurement: _SD }
     LW_OUT_M1_1_2_Avg: { field: LW_OUT_M1_1_2, units: false, measurement: LW }
     LW_OUT_M1_1_2_Std: { field: LW_OUT_SD_M1_1_2, units: false, measurement: _SD }
-    LW_OUT_RAW_M1_1_1_Avg: { field: LW_OUT_RAW_M1_1_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_M1_1_1_Std: { field: LW_OUT_RAW_SD_M1_1_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_M1_1_2_Avg: { field: LW_OUT_RAW_M1_1_2, units: false, measurement: _RAW }
-    LW_OUT_RAW_M1_1_2_Std: { field: LW_OUT_RAW_SD_M1_1_2, units: false, measurement: _RAW }
+    LW_OUT_RAW_M1_1_1_Avg: { field: LW_OUT_RAW_M1_1_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_M1_1_1_Std: { field: LW_OUT_RAW_SD_M1_1_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_M1_1_2_Avg: { field: LW_OUT_RAW_M1_1_2, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_M1_1_2_Std: { field: LW_OUT_RAW_SD_M1_1_2, units: "mV", measurement: _RAW }
     PA_CF1_1_1_Avg: { field: PA_CF1_1_1, units: false, measurement: PA }
     PA_CF1_1_1_Std: { field: PA_SD_CF1_1_1, units: false, measurement: _SD }
     PPFD_DIF_M1_1_1_Avg: { field: PPFD_DIF_M1_1_1, units: false, measurement: PPFD }

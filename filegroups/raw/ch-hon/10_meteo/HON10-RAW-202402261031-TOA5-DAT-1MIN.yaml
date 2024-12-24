@@ -44,8 +44,8 @@ HON10-RAW-202402261031-TOA5-DAT-1MIN:
     G_FF2_0x05_1_Std: { field: G_SD_FF2_0.05_1, units: false, measurement: _SD }  # new
 
     # LS
-    LS_T1B2_4_1: { field: LS_T1_4_1, units: false, measurement: LS }
-    LSD_T1B2_4_1: { field: LSD_T1_4_1, units: false, measurement: LS }
+    LS_T1B2_4_1: { field: LS_T1_4_1, units: "counts", measurement: LS }
+    LSD_T1B2_4_1: { field: LSD_T1_4_1, units: "km", measurement: LS }
 
     # LW
     LW_BC_IN_T1B2_4_1_Avg: { field: LW_IN_T1_4_1, units: false, measurement: LW }

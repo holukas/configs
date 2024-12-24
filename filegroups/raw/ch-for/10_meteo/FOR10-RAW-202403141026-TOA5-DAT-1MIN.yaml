@@ -36,14 +36,14 @@ FOR10-RAW-202403141026-TOA5-DAT-1MIN:
     DNTP_iDL_BOX1_0_1: { field: DNTP_iDL_BOX1_0_1, units: false, measurement: _instrumentmetrics }
     G_GF3_0x05_1_Avg: { field: G_GF3_0.05_1, units: false, measurement: G }
     G_GF3_0x05_1_Std: { field: G_SD_GF3_0.05_1, units: false, measurement: _SD }
-    LS_M1_2_1: { field: LS_M1_2_1, units: false, measurement: LS }
-    LSD_M1_2_1: { field: LSD_M1_2_1, units: false, measurement: LS }
-    LW_IN_RAW_T1_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: false, measurement: _RAW }
-    LW_IN_RAW_T1_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LS_M1_2_1: { field: LS_M1_2_1, units: "counts", measurement: LS }
+    LSD_M1_2_1: { field: LSD_M1_2_1, units: "km", measurement: LS }
+    LW_IN_RAW_T1_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     LW_IN_T1_2_1_Avg: { field: LW_IN_T1_2_1, units: false, measurement: LW }
     LW_IN_T1_2_1_Std: { field: LW_IN_SD_T1_2_1, units: false, measurement: _SD }
-    LW_OUT_RAW_T1_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LW_OUT_RAW_T1_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     LW_OUT_T1_2_1_Avg: { field: LW_OUT_T1_2_1, units: false, measurement: LW }
     LW_OUT_T1_2_1_Std: { field: LW_OUT_SD_T1_2_1, units: false, measurement: _SD }
     LW_T_BODY_T1_2_1_Avg: { field: LW_T_BODY_T1_2_1, units: false, measurement: _instrumentmetrics }

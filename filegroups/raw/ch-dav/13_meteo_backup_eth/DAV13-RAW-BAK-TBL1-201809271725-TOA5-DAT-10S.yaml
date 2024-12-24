@@ -31,8 +31,8 @@ DAV13-RAW-BAK-TBL1-201809271725-TOA5-DAT-10S:
   data_vars_order: free
   data_vars:
     batt_volt_Min: { field: BV_BAK_T1_35_1, units: false, measurement: _instrumentmetrics }
-    LS_T1_35_1: { field: LS_BAK_T1_35_1, units: false, measurement: LS }
-    LSD_T1_35_1: { field: LSD_BAK_T1_35_1, units: false, measurement: LS }
+    LS_T1_35_1: { field: LS_BAK_T1_35_1, units: "counts", measurement: LS }
+    LSD_T1_35_1: { field: LSD_BAK_T1_35_1, units: "km", measurement: LS }
 #    Null: { field: NULL_X_X_X, units: false, measurement: XXX }
     P_4_1_1: { field: PREC_BAK_TOT_T1_35_1, units: false, measurement: PREC }
     PA_T1_35_1: { field: PA_T1_35_1, units: false, measurement: PA }

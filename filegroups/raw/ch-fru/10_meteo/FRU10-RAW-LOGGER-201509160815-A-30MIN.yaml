@@ -59,9 +59,9 @@ FRU10-RAW-LOGGER-201509160815-A-30MIN:
     SHF_5_AVG: { field: G_GF1_0.03_1, units: W m-2, measurement: G }
     SHF_6_AVG: { field: G_GF1_0.03_2, units: W m-2, measurement: G }
     SWin_2_AVG: { field: SW_IN_T1_2_1, units: W m-2, measurement: SW }
-    LWin_2_AVG: { field: LW_IN_RAW_T1_2_1, units: false, measurement: _RAW }
+    LWin_2_AVG: { field: LW_IN_RAW_T1_2_1, units: "mV", measurement: _RAW }
     SWout_2_AVG: { field: SW_OUT_T1_2_1, units: W m-2, measurement: SW }
-    LWout_2_AVG: { field: LW_OUT_RAW_T1_2_1, units: false, measurement: _RAW }
+    LWout_2_AVG: { field: LW_OUT_RAW_T1_2_1, units: "mV", measurement: _RAW }
     PT100_2_AVG: { field: T_RAD_T1_2_1, units: degC, measurement: _instrumentmetrics }
     PAR_2_AVG: { field: PPFD_IN_T1_2_1, units: "umol s-1 m-2", measurement: PPFD }
     Tsoil_11_AVG: { field: TS_GF1_0.01_1, units: degC, measurement: TS }
@@ -90,9 +90,9 @@ FRU10-RAW-LOGGER-201509160815-A-30MIN:
     SHF_5_STD: { field: G_SD_GF1_0.03_1, units: W m-2, measurement: _SD }
     SHF_6_STD: { field: G_SD_GF1_0.03_2, units: W m-2, measurement: _SD }
     SWin_2_STD: { field: SW_IN_SD_T1_2_1, units: W m-2, measurement: _SD }
-    LWin_2_STD: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LWin_2_STD: { field: LW_IN_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     SWout_2_STD: { field: SW_OUT_SD_T1_2_1, units: W m-2, measurement: _SD }
-    LWout_2_STD: { field: LW_OUT_RAW_T1_2_1, units: false, measurement: _RAW }
+    LWout_2_STD: { field: LW_OUT_RAW_T1_2_1, units: "mV", measurement: _RAW }
     PT100_2_STD: { field: T_RAD_SD_T1_2_1, units: degC, measurement: _instrumentmetrics }
     PAR_2_STD: { field: PPFD_IN_SD_T1_2_1, units: "umol s-1 m-2", measurement: _SD }
     Tsoil_11_STD: { field: TS_SD_GF1_0.01_1, units: degC, measurement: _SD }

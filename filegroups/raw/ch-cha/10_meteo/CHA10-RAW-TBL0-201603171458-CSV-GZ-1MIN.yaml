@@ -55,12 +55,12 @@ CHA10-RAW-TBL0-201603171458-CSV-GZ-1MIN:
     G_GF5_0x02_1_Avg: { field: G_GF5_0.02_1, units: "W m-2", measurement: G, ignore_after: "2016-06-20 18:44:00" }
     G_GF5_0x02_1_Std: { field: G_SD_GF5_0.02_1, units: "W m-2", measurement: _SD, ignore_after: "2016-06-20 18:44:00" }
     HEAT_HS50: { field: HEAT_HS50_X_X_X, units: false, measurement: _instrumentmetrics, ignore_after: "2016-06-20 18:44:00" }
-    LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: mV, measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
-    LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: mV, measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
+    LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: "mV", measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
+    LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: "mV", measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
     LW_IN_T1B2_2_1_Avg: { field: LW_IN_T1_2_1, units: W m-2, measurement: LW, ignore_after: "2016-06-20 18:44:00" }
     LW_IN_T1B2_2_1_Std: { field: LW_IN_SD_T1_2_1, units: W m-2, measurement: _SD, ignore_after: "2016-06-20 18:44:00" }
-    LW_OUT_RAW_T1B2_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: mV, measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
-    LW_OUT_RAW_T1B2_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: mV, measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
+    LW_OUT_RAW_T1B2_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: "mV", measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
+    LW_OUT_RAW_T1B2_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: "mV", measurement: _RAW, ignore_after: "2016-06-20 18:44:00" }
     LW_OUT_T1B2_2_1_Avg: { field: LW_OUT_T1_2_1, units: W m-2, measurement: LW, ignore_after: "2016-06-20 18:44:00" }
     LW_OUT_T1B2_2_1_Std: { field: LW_OUT_SD_T1_2_1, units: W m-2, measurement: _SD, ignore_after: "2016-06-20 18:44:00" }
     NETRAD_T1B2_2_1_Avg: { field: NETRAD_T1_2_1, units: W m-2, measurement: NETRAD, ignore_after: "2016-06-20 18:44:00" }

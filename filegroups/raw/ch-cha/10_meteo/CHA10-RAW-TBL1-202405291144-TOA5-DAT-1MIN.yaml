@@ -40,12 +40,12 @@ CHA10-RAW-TBL1-202405291144-TOA5-DAT-1MIN:
     G_GF1_0x05_1_Std: { field: G_SD_GF1_0.05_1, units: false, measurement: _SD }
     G_GF1_0x05_2_Avg: { field: G_GF1_0.05_2, units: false, measurement: G }
     G_GF1_0x05_2_Std: { field: G_SD_GF1_0.05_2, units: false, measurement: _SD }
-    LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: false, measurement: _RAW }
-    LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LW_IN_RAW_T1B2_2_1_Avg: { field: LW_IN_RAW_T1_2_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_T1B2_2_1_Std: { field: LW_IN_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     LW_IN_T1B2_2_1_Avg: { field: LW_IN_T1_2_1, units: false, measurement: LW }
     LW_IN_T1B2_2_1_Std: { field: LW_IN_SD_T1_2_1, units: false, measurement: _SD }
-    LW_OUT_RAW_T1B2_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: false, measurement: _RAW }
-    LW_OUT_RAW_T1B2_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: false, measurement: _RAW }
+    LW_OUT_RAW_T1B2_2_1_Avg: { field: LW_OUT_RAW_T1_2_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_T1B2_2_1_Std: { field: LW_OUT_RAW_SD_T1_2_1, units: "mV", measurement: _RAW }
     LW_OUT_T1B2_2_1_Avg: { field: LW_OUT_T1_2_1, units: false, measurement: LW }
     LW_OUT_T1B2_2_1_Std: { field: LW_OUT_SD_T1_2_1, units: false, measurement: _SD }
     NETRAD_T1B2_2_1_Avg: { field: NETRAD_T1_2_1, units: false, measurement: NETRAD }

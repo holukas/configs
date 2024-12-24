@@ -38,10 +38,10 @@ FRU10-RAW-TBL1-201811051615-TOA5-DAT-1MIN:
     G_GF1_0x06_2_Avg: { field: G_GF1_0.06_2, units: false, measurement: G }
     G_GF1_0x06_2_Std: { field: G_GF1_SD_0.06_2, units: false, measurement: _SD }
     HEAT_HS50: { field: HEAT_HS50_X_X_X, units: false, measurement: _instrumentmetrics }
-    LW_IN_RAW_T1_1_1_Avg: { field: LW_IN_RAW_T1_1_1, units: false, measurement: _RAW }
+    LW_IN_RAW_T1_1_1_Avg: { field: LW_IN_RAW_T1_1_1, units: "mV", measurement: _RAW }
     LW_IN_T1_1_1_Avg: { field: LW_IN_T1_1_1, units: false, measurement: LW }
     LW_IN_T1_1_1_Std: { field: LW_IN_SD_T1_1_1, units: false, measurement: _SD }
-    LW_OUT_RAW_T1_1_1_Avg: { field: LW_OUT_RAW_T1_1_1, units: false, measurement: _RAW }
+    LW_OUT_RAW_T1_1_1_Avg: { field: LW_OUT_RAW_T1_1_1, units: "mV", measurement: _RAW }
     LW_OUT_T1_1_1_Avg: { field: LW_OUT_T1_1_1, units: false, measurement: LW }
     LW_OUT_T1_1_1_Std: { field: LW_OUT_SD_T1_1_1, units: false, measurement: _SD }
     PPFD_IN_T1_2_1_Avg: { field: PPFD_IN_T1_2_1, units: false, measurement: PPFD }

@@ -1,0 +1,85 @@
+# METEOSCREENINGTOOL
+# 10_meteo
+#
+# Screened meteo data from ETH meteoscreening
+#
+# CF3: Raw meteo data from the CH-AES cropland floor (CF) were stored as CF3 in the data files.
+#
+# M3: Meteo variables were recorded on a separate mast, not on the main tower. The mast
+#   was labeled T2 in the data files, but was M3 in the publication dataset of Maier et al. (2022).
+#   Therefore, all T2 variables are renamed to M3.
+
+
+PROC-ETH-METEOSCREENINGTOOL-CH-AES-CSV-30MIN:
+  # First file: -
+  # Last file:  -
+  can_be_used_by_filescanner: false
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: "*_METEOSCREENINGTOOL_CH-AES_*.csv"
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: '__TIMESTAMP__'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: meteoscreening_mst
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    AW_IN_AVG_T2_1_1: { field: SW_IN_M3_1_1, units: "W m-2", gain: 1, measurement: SW }
+    AW_IN_SD_T2_1_1: { field: SW_IN_SD_M3_1_1, units: "W m-2", gain: 1, measurement: _SD }
+    BV_iDL_AVG_CF3_0_1: { field: BV_iDL_CF3_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    DNTP_iDL_BOX3_0_1: { field: DNTP_iDL_BOX3_0_1, units: "ms", gain: 1, measurement: _instrumentmetrics }
+    LS_AVG_T2_1_1: { field: LS_M3_1_1, units: "#", gain: 1, measurement: LS }
+    LS_SD_T2_1_1: { field: LS_SD_M3_1_1, units: "#", gain: 1, measurement: _SD }
+    LSD_AVG_T2_1_1: { field: LSD_M3_1_1, units: "km", gain: 1, measurement: LS }
+    LSD_SD_T2_1_1: { field: LSD_SD_M3_1_1, units: "km", gain: 1, measurement: _SD }
+    PA_AVG_T2_1_1: { field: PA_M3_1_1, units: "kPa", gain: 1, measurement: PA }
+    PA_SD_T2_1_1: { field: PA_SD_M3_1_1, units: "kPa", gain: 1, measurement: _SD }
+    PREC_SD_T2_1_1: { field: PREC_SD_M3_1_1, units: "mm", gain: 1, measurement: _SD }
+    PREC_TOT_T2_1_1: { field: PREC_TOT_M3_1_1, units: "mm", gain: 1, measurement: PREC }
+    RECORD_AVG_M3_0_1: { field: RECORD_M3_0_1, units: "#", gain: 1, measurement: _instrumentmetrics }
+    RH_AVG_T2_1_1: { field: RH_M3_1_1, units: "%", gain: 1, measurement: RH }
+    RH_SD_T2_1_1: { field: RH_SD_M3_1_1, units: "%", gain: 1, measurement: _SD }
+    SDP_AVG_CF3_0.3_1: { field: SDP_CF3_0.3_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF3_0.05_1: { field: SDP_CF3_0.05_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF3_0.15_1: { field: SDP_CF3_0.15_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_SD_CF3_0.3_1: { field: SDP_SD_CF3_0.3_1, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF3_0.05_1: { field: SDP_SD_CF3_0.05_1, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF3_0.15_1: { field: SDP_SD_CF3_0.15_1, units: "unitless", gain: 1, measurement: _SD }
+    SWC_AVG_CF3_0.3_1: { field: SWC_CF3_0.3_1, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF3_0.05_1: { field: SWC_CF3_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF3_0.15_1: { field: SWC_CF3_0.15_1, units: "%", gain: 1, measurement: SWC }
+    SWC_SD_CF3_0.3_1: { field: SWC_SD_CF3_0.3_1, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF3_0.05_1: { field: SWC_SD_CF3_0.05_1, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF3_0.15_1: { field: SWC_SD_CF3_0.15_1, units: "%", gain: 1, measurement: _SD }
+    TA_AVG_T2_1_1: { field: TA_M3_1_1, units: "degC", gain: 1, measurement: TA }
+    TA_SD_T2_1_1: { field: TA_SD_M3_1_1, units: "degC", gain: 1, measurement: _SD }
+    Tpanel_AVG_CF3_0_1: { field: TPANEL_CF3_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TRH_AVG_T2_1_1: { field: TRH_M3_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TRH_SD_T2_1_1: { field: TRH_SD_M3_1_1, units: "degC", gain: 1, measurement: _SD }
+    TS_AVG_CF3_0.3_1: { field: TS_CF3_0.3_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF3_0.05_1: { field: TS_CF3_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF3_0.15_1: { field: TS_CF3_0.15_1, units: "degC", gain: 1, measurement: TS }
+    TS_SD_CF3_0.3_1: { field: TS_SD_CF3_0.3_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF3_0.05_1: { field: TS_SD_CF3_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF3_0.15_1: { field: TS_SD_CF3_0.15_1, units: "degC", gain: 1, measurement: _SD }
+    VP_AVG_T2_1_1: { field: VP_M3_1_1, units: "kPa", gain: 1, measurement: VP }
+    VP_SD_T2_1_1: { field: VP_SD_M3_1_1, units: "kPa", gain: 1, measurement: _SD }
+    WD_AVG_T2_1_1: { field: WD_M3_1_1, units: "deg", gain: 1, measurement: WIND }
+    WD_SD_T2_1_1: { field: WD_SD_M3_1_1, units: "deg", gain: 1, measurement: _SD }
+    WS_AVG_T2_1_1: { field: WS_M3_1_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_SD_T2_1_1: { field: WS_SD_M3_1_1, units: "m s-1", gain: 1, measurement: _SD }
+    WSG_AVG_T2_1_1: { field: WSG_M3_1_1, units: "m s-1", gain: 1, measurement: WIND }
+    WSG_SD_T2_1_1: { field: WSG_SD_M3_1_1, units: "m s-1", gain: 1, measurement: _SD }

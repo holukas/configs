@@ -32,16 +32,16 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
   data_vars:
     Batt_Volt_Avg: { field: BV_FF1_0_1, units: false, measurement: _instrumentmetrics }
     # DENDRO measured at breast height (assumed 1.35m)
-    D2544_E150_Avg: { field: DENDRO_TREE2544_1.35_E150, units: false, measurement: DENDRO }
-    D2577_N150_Avg: { field: DENDRO_TREE2577_1.35_N150, units: false, measurement: DENDRO }
-    D2585_E150_Avg: { field: DENDRO_TREE2585_1.35_E150, units: false, measurement: DENDRO }
-    D2586_E150_Avg: { field: DENDRO_TREE2586_1.35_E150, units: false, measurement: DENDRO }
-    D2591_N150_Avg: { field: DENDRO_TREE2591_1.35_N150, units: false, measurement: DENDRO }
-    D2597_E150_Avg: { field: DENDRO_TREE2597_1.35_E150, units: false, measurement: DENDRO }
-    D2632_E150_Avg: { field: DENDRO_TREE2632_1.35_E150, units: false, measurement: DENDRO }
-    D8001_N150_Avg: { field: DENDRO_TREE8001_1.35_N150, units: false, measurement: DENDRO }
-    D8002_E150_Avg: { field: DENDRO_TREE8002_1.35_E150, units: false, measurement: DENDRO }
-    D9957_E150_Avg: { field: DENDRO_TREE9957_1.35_E150, units: false, measurement: DENDRO }
+    D2544_E150_Avg: { field: DENDRO_TREE2544_1.35_E150, units: false, measurement: BOLE }
+    D2577_N150_Avg: { field: DENDRO_TREE2577_1.35_N150, units: false, measurement: BOLE }
+    D2585_E150_Avg: { field: DENDRO_TREE2585_1.35_E150, units: false, measurement: BOLE }
+    D2586_E150_Avg: { field: DENDRO_TREE2586_1.35_E150, units: false, measurement: BOLE }
+    D2591_N150_Avg: { field: DENDRO_TREE2591_1.35_N150, units: false, measurement: BOLE }
+    D2597_E150_Avg: { field: DENDRO_TREE2597_1.35_E150, units: false, measurement: BOLE }
+    D2632_E150_Avg: { field: DENDRO_TREE2632_1.35_E150, units: false, measurement: BOLE }
+    D8001_N150_Avg: { field: DENDRO_TREE8001_1.35_N150, units: false, measurement: BOLE }
+    D8002_E150_Avg: { field: DENDRO_TREE8002_1.35_E150, units: false, measurement: BOLE }
+    D9957_E150_Avg: { field: DENDRO_TREE9957_1.35_E150, units: false, measurement: BOLE }
     D2544_E150_Std: { field: DENDRO_TREE2544_1.35_E150, units: false, measurement: _SD }
     D2577_N150_Std: { field: DENDRO_TREE2577_1.35_N150, units: false, measurement: _SD }
     D2585_E150_Std: { field: DENDRO_TREE2585_1.35_E150, units: false, measurement: _SD }

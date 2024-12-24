@@ -41,24 +41,24 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
     BodenTemp05_C_Avg: { field: TS_FF0_0.05_1, units: false, measurement: TS }
     BodenTemp15_C_Avg: { field: TS_FF0_0.15_1, units: false, measurement: TS }
     BodenTemp50_C_Avg: { field: TS_FF0_0.5_1, units: false, measurement: TS }
-    D1_150_Avg: { field: DENDRO_TREE150_1.3_1, units: false, measurement: DENDRO }
-    D2_147_Avg: { field: DENDRO_TREE147_1.3_1, units: false, measurement: DENDRO }
-    D3_148_Avg: { field: DENDRO_TREE148_1.3_1, units: false, measurement: DENDRO }
-    D4_37_Avg: { field: DENDRO_TREE37_1.3_1, units: false, measurement: DENDRO }
-    D5_296_Avg: { field: DENDRO_TREE296_1.3_1, units: false, measurement: DENDRO }
-    D6_411N_Avg: { field: DENDRO_TREE411_1.3_N, units: false, measurement: DENDRO }
-    D7_1_Avg: { field: DENDRO_TREE1_1.3_1, units: false, measurement: DENDRO }
-    D8_34_Avg: { field: DENDRO_TREE34_1.3_1, units: false, measurement: DENDRO }
-    D9_410_Avg: { field: DENDRO_TREE410_1.3_1, units: false, measurement: DENDRO }
-    D10_30_Avg: { field: DENDRO_TREE30_1.3_1, units: false, measurement: DENDRO }
-    D11_410Xylem_Avg: { field: DENDRO_XYLEM_TREE410_1_1, units: false, measurement: DENDRO }
-    D12_411RootS_Avg: { field: DENDRO_RootS_TREE411_1_1, units: false, measurement: DENDRO }
-#    D13_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
-#    D14_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
-#    D15_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
-#    D16_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
-#    D17_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
-#    D18_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: false, measurement: XXX }
+    D1_150_Avg: { field: DENDRO_TREE150_1.3_1, units: "um", measurement: BOLE }
+    D2_147_Avg: { field: DENDRO_TREE147_1.3_1, units: "um", measurement: BOLE }
+    D3_148_Avg: { field: DENDRO_TREE148_1.3_1, units: "um", measurement: BOLE }
+    D4_37_Avg: { field: DENDRO_TREE37_1.3_1, units: "um", measurement: BOLE }
+    D5_296_Avg: { field: DENDRO_TREE296_1.3_1, units: "um", measurement: BOLE }
+    D6_411N_Avg: { field: DENDRO_TREE411_1.3_N, units: "um", measurement: BOLE }
+    D7_1_Avg: { field: DENDRO_TREE1_1.3_1, units: "um", measurement: BOLE }
+    D8_34_Avg: { field: DENDRO_TREE34_1.3_1, units: "um", measurement: BOLE }
+    D9_410_Avg: { field: DENDRO_TREE410_1.3_1, units: "um", measurement: BOLE }
+    D10_30_Avg: { field: DENDRO_TREE30_1.3_1, units: "um", measurement: BOLE }
+    D11_410Xylem_Avg: { field: DENDRO_XYLEM_TREE410_1_1, units: "um", measurement: BOLE }
+    D12_411RootS_Avg: { field: DENDRO_RootS_TREE411_1_1, units: "um", measurement: BOLE }
+#    D13_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: "um", measurement: XXX }
+#    D14_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: "um", measurement: XXX }
+#    D15_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: "um", measurement: XXX }
+#    D16_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: "um", measurement: XXX }
+#    D17_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: "um", measurement: XXX }
+#    D18_empty_Avg: { field: DENDRO_empty_Avg_X_X_X, units: "um", measurement: XXX }
     HtFlx_Wm2_Avg: { field: G_FF0_0.02_1, units: false, measurement: G }
     Net_Rad_Avg: { field: NETRAD_T1_0.05_1, units: false, measurement: NETRAD }
     P_1_1_1_Tot: { field: PREC_TOT_LOWRES_T1_20_1, units: false, measurement: PREC }
@@ -90,16 +90,16 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
     Sap_296S_Avg: { field: SAPFLOW_TREE296_1_S, units: false, measurement: SAPFLOW }
     Sap_411N_Avg: { field: SAPFLOW_TREE411_1_N, units: false, measurement: SAPFLOW }
     Sap_411S_Avg: { field: SAPFLOW_TREE411_1_S, units: false, measurement: SAPFLOW }
-    StemCO2_147_100_Avg: { field: CO2_BOLE_TREE147_1_1, units: false, measurement: CO2_BOLE }
-    StemCO2_147_900_Avg: { field: CO2_BOLE_TREE147_9_1, units: false, measurement: CO2_BOLE }
-    StemCO2_147_Soil_Avg: { field: CO2_BOLE_SOIL_TREE147_0_1, units: false, measurement: CO2_BOLE }
-    StemCO2_148_100_Avg: { field: CO2_BOLE_TREE148_1_1, units: false, measurement: CO2_BOLE }
-    StemCO2_296_100_Avg: { field: CO2_BOLE_TREE296_1_1, units: false, measurement: CO2_BOLE }
-    StemCO2_296_150_Avg: { field: CO2_BOLE_TREE296_1.5_1, units: false, measurement: CO2_BOLE }
-    StemCO2_296_900_Avg: { field: CO2_BOLE_TREE296_9_1, units: false, measurement: CO2_BOLE }
-    StemCO2_296_Soil_Avg: { field: CO2_BOLE_SOIL_TREE296_0_1, units: false, measurement: CO2_BOLE }
-    StemCO2_411_100_Avg: { field: CO2_BOLE_TREE411_1_1, units: false, measurement: CO2_BOLE }
-    StemCO2_411_600_Avg: { field: CO2_BOLE_TREE411_6_1, units: false, measurement: CO2_BOLE }
+    StemCO2_147_100_Avg: { field: CO2_BOLE_TREE147_1_1, units: false, measurement: BOLE }
+    StemCO2_147_900_Avg: { field: CO2_BOLE_TREE147_9_1, units: false, measurement: BOLE }
+    StemCO2_147_Soil_Avg: { field: CO2_BOLE_SOIL_TREE147_0_1, units: false, measurement: BOLE }
+    StemCO2_148_100_Avg: { field: CO2_BOLE_TREE148_1_1, units: false, measurement: BOLE }
+    StemCO2_296_100_Avg: { field: CO2_BOLE_TREE296_1_1, units: false, measurement: BOLE }
+    StemCO2_296_150_Avg: { field: CO2_BOLE_TREE296_1.5_1, units: false, measurement: BOLE }
+    StemCO2_296_900_Avg: { field: CO2_BOLE_TREE296_9_1, units: false, measurement: BOLE }
+    StemCO2_296_Soil_Avg: { field: CO2_BOLE_SOIL_TREE296_0_1, units: false, measurement: BOLE }
+    StemCO2_411_100_Avg: { field: CO2_BOLE_TREE411_1_1, units: false, measurement: BOLE }
+    StemCO2_411_600_Avg: { field: CO2_BOLE_TREE411_6_1, units: false, measurement: BOLE }
     StemTC_148_Avg: { field: T_BOLE_TREE148_1_1, units: false, measurement: T_BOLE }
     StemTC_296_Avg: { field: T_BOLE_TREE296_1_1, units: false, measurement: T_BOLE }
     SWC1_15_Avg: { field: SWC_H1_0.15_1, units: "%", gain: 100.0, measurement: SWC }

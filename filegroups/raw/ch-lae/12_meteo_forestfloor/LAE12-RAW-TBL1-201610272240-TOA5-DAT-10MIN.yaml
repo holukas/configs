@@ -33,21 +33,21 @@ LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN:
     AirTM_Avg: { field: AirTM_Avg_X_X_X, units: false, measurement: XXX }  #todo
     Batt_Volt_Avg: { field: BV_FF1_0_1, units: false, measurement: _instrumentmetrics }
     # CO2_BOLE *assumed* to be at breast height (assumed 1.35m)
-    CO2St2577_W150_Avg: { field: CO2_BOLE_TREE2577_1.35_W150, units: false, measurement: CO2_BOLE }
-    CO2St2585_W150_Avg: { field: CO2_BOLE_TREE2585_1.35_W150, units: false, measurement: CO2_BOLE }
-    CO2St2591_W150_Avg: { field: CO2_BOLE_TREE2591_1.35_W150, units: false, measurement: CO2_BOLE }
-    CO2St8001_W150_Avg: { field: CO2_BOLE_TREE8001_1.35_W150, units: false, measurement: CO2_BOLE }
-    CO2St8002_W150_Avg: { field: CO2_BOLE_TREE8002_1.35_W150, units: false, measurement: CO2_BOLE }
+    CO2St2577_W150_Avg: { field: CO2_BOLE_TREE2577_1.35_W150, units: false, measurement: BOLE }
+    CO2St2585_W150_Avg: { field: CO2_BOLE_TREE2585_1.35_W150, units: false, measurement: BOLE }
+    CO2St2591_W150_Avg: { field: CO2_BOLE_TREE2591_1.35_W150, units: false, measurement: BOLE }
+    CO2St8001_W150_Avg: { field: CO2_BOLE_TREE8001_1.35_W150, units: false, measurement: BOLE }
+    CO2St8002_W150_Avg: { field: CO2_BOLE_TREE8002_1.35_W150, units: false, measurement: BOLE }
     # DENDRO measured at breast height (assumed 1.35m)
-    D2544_E150_Avg: { field: DENDRO_TREE2544_1.35_E150, units: false, measurement: DENDRO }
-    D2577_N150_Avg: { field: DENDRO_TREE2577_1.35_N150, units: false, measurement: DENDRO }
-    D2585_E150_Avg: { field: DENDRO_TREE2585_1.35_E150, units: false, measurement: DENDRO }
-    D2586_E150_Avg: { field: DENDRO_TREE2586_1.35_E150, units: false, measurement: DENDRO }
-    D2587_E150_Avg: { field: DENDRO_TREE2587_1.35_E150, units: false, measurement: DENDRO }
-    D2591_N150_Avg: { field: DENDRO_TREE2591_1.35_N150, units: false, measurement: DENDRO }
-    D2632_E150_Avg: { field: DENDRO_TREE2632_1.35_E150, units: false, measurement: DENDRO }
-    D8001_N150_Avg: { field: DENDRO_TREE8001_1.35_N150, units: false, measurement: DENDRO }
-    D8002_E150_Avg: { field: DENDRO_TREE8002_1.35_E150, units: false, measurement: DENDRO }
+    D2544_E150_Avg: { field: DENDRO_TREE2544_1.35_E150, units: false, measurement: BOLE }
+    D2577_N150_Avg: { field: DENDRO_TREE2577_1.35_N150, units: false, measurement: BOLE }
+    D2585_E150_Avg: { field: DENDRO_TREE2585_1.35_E150, units: false, measurement: BOLE }
+    D2586_E150_Avg: { field: DENDRO_TREE2586_1.35_E150, units: false, measurement: BOLE }
+    D2587_E150_Avg: { field: DENDRO_TREE2587_1.35_E150, units: false, measurement: BOLE }
+    D2591_N150_Avg: { field: DENDRO_TREE2591_1.35_N150, units: false, measurement: BOLE }
+    D2632_E150_Avg: { field: DENDRO_TREE2632_1.35_E150, units: false, measurement: BOLE }
+    D8001_N150_Avg: { field: DENDRO_TREE8001_1.35_N150, units: false, measurement: BOLE }
+    D8002_E150_Avg: { field: DENDRO_TREE8002_1.35_E150, units: false, measurement: BOLE }
     DJ_E150_Avg: { field: DJ_E150_Avg_X_X_X, units: false, measurement: XXX }  #todo
     EC_RAW_FF1_0x1_1_Avg: { field: EC_RAW_FF1_0.1_1, units: false, measurement: _RAW }
     EC_RAW_FF1_0x2_1_Avg: { field: EC_RAW_FF1_0.2_1, units: false, measurement: _RAW }

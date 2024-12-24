@@ -44,28 +44,28 @@ LAE11-RAW-TBL1-202205311130-TOA5-DAT-30MIN:
     Batt_Volt_Std: { field: Batt_Volt_Std_X_X_X, units: false, measurement: XXX }  #todo
     BV_iDL_H1_0_1: { field: BV_iDL_H1_0_1_X_X_X, units: false, measurement: XXX }  #todo
     # DENDRO measured at breast height (assumed 1.35m)
-    D8003_N150_Avg: { field: DENDRO_TREE8003_1.35_N150, units: false, measurement: DENDRO }
-    D8003_N150_Std: { field: DENDRO_SD_TREE8003_1.35_N150, units: false, measurement: _SD }
-    D8004_N150_Avg: { field: DENDRO_TREE8004_1.35_N150, units: false, measurement: DENDRO }
-    D8004_N150_Std: { field: DENDRO_SD_TREE8004_1.35_N150, units: false, measurement: _SD }
-    D8005_N150_Avg: { field: DENDRO_TREE8005_1.35_N150, units: false, measurement: DENDRO }
-    D8005_N150_Std: { field: DENDRO_SD_TREE8005_1.35_N150, units: false, measurement: _SD }
-    D8006_N150_Avg: { field: DENDRO_TREE8006_1.35_N150, units: false, measurement: DENDRO }
-    D8006_N150_Std: { field: DENDRO_SD_TREE8006_1.35_N150, units: false, measurement: _SD }
-    D8007_N150_Avg: { field: DENDRO_TREE8007_1.35_N150, units: false, measurement: DENDRO }
-    D8007_N150_Std: { field: DENDRO_SD_TREE8007_1.35_N150, units: false, measurement: _SD }
-    D8008_N150_Avg: { field: DENDRO_TREE8008_1.35_N150, units: false, measurement: DENDRO }
-    D8008_N150_Std: { field: DENDRO_SD_TREE8008_1.35_N150, units: false, measurement: _SD }
-    D8009_N150_Avg: { field: DENDRO_TREE8009_1.35_N150, units: false, measurement: DENDRO }
-    D8009_N150_Std: { field: DENDRO_SD_TREE8009_1.35_N150, units: false, measurement: _SD }
-    D8010_N150_Avg: { field: DENDRO_TREE8010_1.35_N150, units: false, measurement: DENDRO }
-    D8010_N150_Std: { field: DENDRO_SD_TREE8010_1.35_N150, units: false, measurement: _SD }
-    D8011_N150_Avg: { field: DENDRO_TREE8011_1.35_N150, units: false, measurement: DENDRO }
-    D8011_N150_Std: { field: DENDRO_SD_TREE8011_1.35_N150, units: false, measurement: _SD }
-    D8012_N150_Avg: { field: DENDRO_TREE8012_1.35_N150, units: false, measurement: DENDRO }
-    D8012_N150_Std: { field: DENDRO_SD_TREE8012_1.35_N150, units: false, measurement: _SD }
-    D8015_N150_Avg: { field: DENDRO_TREE8015_1.35_N150, units: false, measurement: DENDRO }
-    D8015_N150_Std: { field: DENDRO_SD_TREE8015_1.35_N150, units: false, measurement: _SD }
+    D8003_N150_Avg: { field: DENDRO_TREE8003_1.35_N150, units: "um", measurement: BOLE }
+    D8003_N150_Std: { field: DENDRO_SD_TREE8003_1.35_N150, units: "um", measurement: _SD }
+    D8004_N150_Avg: { field: DENDRO_TREE8004_1.35_N150, units: "um", measurement: BOLE }
+    D8004_N150_Std: { field: DENDRO_SD_TREE8004_1.35_N150, units: "um", measurement: _SD }
+    D8005_N150_Avg: { field: DENDRO_TREE8005_1.35_N150, units: "um", measurement: BOLE }
+    D8005_N150_Std: { field: DENDRO_SD_TREE8005_1.35_N150, units: "um", measurement: _SD }
+    D8006_N150_Avg: { field: DENDRO_TREE8006_1.35_N150, units: "um", measurement: BOLE }
+    D8006_N150_Std: { field: DENDRO_SD_TREE8006_1.35_N150, units: "um", measurement: _SD }
+    D8007_N150_Avg: { field: DENDRO_TREE8007_1.35_N150, units: "um", measurement: BOLE }
+    D8007_N150_Std: { field: DENDRO_SD_TREE8007_1.35_N150, units: "um", measurement: _SD }
+    D8008_N150_Avg: { field: DENDRO_TREE8008_1.35_N150, units: "um", measurement: BOLE }
+    D8008_N150_Std: { field: DENDRO_SD_TREE8008_1.35_N150, units: "um", measurement: _SD }
+    D8009_N150_Avg: { field: DENDRO_TREE8009_1.35_N150, units: "um", measurement: BOLE }
+    D8009_N150_Std: { field: DENDRO_SD_TREE8009_1.35_N150, units: "um", measurement: _SD }
+    D8010_N150_Avg: { field: DENDRO_TREE8010_1.35_N150, units: "um", measurement: BOLE }
+    D8010_N150_Std: { field: DENDRO_SD_TREE8010_1.35_N150, units: "um", measurement: _SD }
+    D8011_N150_Avg: { field: DENDRO_TREE8011_1.35_N150, units: "um", measurement: BOLE }
+    D8011_N150_Std: { field: DENDRO_SD_TREE8011_1.35_N150, units: "um", measurement: _SD }
+    D8012_N150_Avg: { field: DENDRO_TREE8012_1.35_N150, units: "um", measurement: BOLE }
+    D8012_N150_Std: { field: DENDRO_SD_TREE8012_1.35_N150, units: "um", measurement: _SD }
+    D8015_N150_Avg: { field: DENDRO_TREE8015_1.35_N150, units: "um", measurement: BOLE }
+    D8015_N150_Std: { field: DENDRO_SD_TREE8015_1.35_N150, units: "um", measurement: _SD }
     DNTP_iDL_H1_0_1: { field: DNTP_iDL_H1_0_1, units: false, measurement: _instrumentmetrics }
     MPS02_TEMP_DISABLE_FLAG_Max: { field: MPS02_TEMP_DISABLE_FLAG_MAX_H1_0_1, units: false, measurement: _instrumentmetrics }
     MPS02H1_P_Avg(1): { field: SWP_H1_0.05_1, units: false, measurement: SWP }

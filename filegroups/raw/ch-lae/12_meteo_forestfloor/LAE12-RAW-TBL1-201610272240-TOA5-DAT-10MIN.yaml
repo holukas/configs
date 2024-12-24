@@ -71,15 +71,15 @@ LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN:
     # RH assumed to be the same as in succeeding filetype
     RelHumM_Avg: { field: RH_M1_2_1, units: false, measurement: RH }
     # SAPFLOW measured at breast height (assumed 1.35m)
-    Sap2577_N150_Avg: { field: SAPFLOW_TREE2577_1.35_N150, units: false, measurement: SAPFLOW }
-    Sap2577_S150_Avg: { field: SAPFLOW_TREE2577_1.35_S150, units: false, measurement: SAPFLOW }
-    Sap2585_N150_Avg: { field: SAPFLOW_TREE2585_1.35_N150, units: false, measurement: SAPFLOW }
-    Sap2585_S150_Avg: { field: SAPFLOW_TREE2585_1.35_S150, units: false, measurement: SAPFLOW }
-    Sap2586_N150_Avg: { field: SAPFLOW_TREE2586_1.35_N150, units: false, measurement: SAPFLOW }
-    Sap2586_S150_Avg: { field: SAPFLOW_TREE2586_1.35_S150, units: false, measurement: SAPFLOW }
-    Sap2587_N150_Avg: { field: SAPFLOW_TREE2587_1.35_N150, units: false, measurement: SAPFLOW }
-    Sap2587_S150_Avg: { field: SAPFLOW_TREE2587_1.35_S150, units: false, measurement: SAPFLOW }
-    Sap2591_N150_Avg: { field: SAPFLOW_TREE2591_1.35_N150, units: false, measurement: SAPFLOW }
+    Sap2577_N150_Avg: { field: SAPFLOW_TREE2577_1.35_N150, units: false, measurement: BOLE }
+    Sap2577_S150_Avg: { field: SAPFLOW_TREE2577_1.35_S150, units: false, measurement: BOLE }
+    Sap2585_N150_Avg: { field: SAPFLOW_TREE2585_1.35_N150, units: false, measurement: BOLE }
+    Sap2585_S150_Avg: { field: SAPFLOW_TREE2585_1.35_S150, units: false, measurement: BOLE }
+    Sap2586_N150_Avg: { field: SAPFLOW_TREE2586_1.35_N150, units: false, measurement: BOLE }
+    Sap2586_S150_Avg: { field: SAPFLOW_TREE2586_1.35_S150, units: false, measurement: BOLE }
+    Sap2587_N150_Avg: { field: SAPFLOW_TREE2587_1.35_N150, units: false, measurement: BOLE }
+    Sap2587_S150_Avg: { field: SAPFLOW_TREE2587_1.35_S150, units: false, measurement: BOLE }
+    Sap2591_N150_Avg: { field: SAPFLOW_TREE2591_1.35_N150, units: false, measurement: BOLE }
     Sap2591_S150_Avg: { field: SAPFLOW_TREE2591_1.35_S150, units: false, measurement: SAPFLOW }
     Sap2632_N150_Avg: { field: SAPFLOW_TREE2632_1.35_N150, units: false, measurement: SAPFLOW }
     Sap2632_S150_Avg: { field: SAPFLOW_TREE2632_1.35_S150, units: false, measurement: SAPFLOW }

@@ -6,7 +6,7 @@
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-CHA-CSV-30MIN`
 - Extended filetype `PROC-ETH-METEOSCREENINGTOOL-CH-CHA-CSV-30MIN`
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-AES-CSV-30MIN`
-- Renamed measurements `CO2_BOLE` and `DENDRO` to measurement `BOLE`
+- Renamed measurements `CO2_BOLE`, `DENDRO` and `SAPFLOW` to measurement `BOLE`
 - Assigned units `um` (µm) to all `DENDRO` variables
 - Assigned units `counts` to all `LS` variables
 - Assigned units `km` to all `LSD` variables

@@ -145,26 +145,26 @@ DAV10-RAW-PROFILE-201108251403-TOA5-DAT-10MIN:
     RelH_20m_Avg: { field: RH_PRF_T1_20_1, units: false, measurement: RH }
     RelH_25m_Avg: { field: RH_PRF_T1_25_1, units: false, measurement: RH }
     RelH_35m_Avg: { field: RH_PRF_T1_35_1, units: false, measurement: RH }
-    Sap_1N_Avg: { field: SAPFLOW_TREE1_1_N, units: false, measurement: SAPFLOW }
-    Sap_1S_Avg: { field: SAPFLOW_TREE1_1_S, units: false, measurement: SAPFLOW }
-    Sap_30N_Avg: { field: SAPFLOW_TREE30_1_N, units: false, measurement: SAPFLOW }
-    Sap_30S_Avg: { field: SAPFLOW_TREE30_1_S, units: false, measurement: SAPFLOW }
-    Sap_33N_Avg: { field: SAPFLOW_TREE33_1_N, units: false, measurement: SAPFLOW }
-    Sap_33S_Avg: { field: SAPFLOW_TREE33_1_S, units: false, measurement: SAPFLOW }
-    Sap_34N_Avg: { field: SAPFLOW_TREE34_1_N, units: false, measurement: SAPFLOW }
-    Sap_34S_Avg: { field: SAPFLOW_TREE34_1_S, units: false, measurement: SAPFLOW }
-    Sap_37N_Avg: { field: SAPFLOW_TREE37_1_N, units: false, measurement: SAPFLOW }
-    Sap_37S_Avg: { field: SAPFLOW_TREE37_1_S, units: false, measurement: SAPFLOW }
-    Sap_147N_Avg: { field: SAPFLOW_TREE147_1_N, units: false, measurement: SAPFLOW }
-    Sap_147S_Avg: { field: SAPFLOW_TREE147_1_S, units: false, measurement: SAPFLOW }
-    Sap_148N_Avg: { field: SAPFLOW_TREE148_1_N, units: false, measurement: SAPFLOW }
-    Sap_148S_Avg: { field: SAPFLOW_TREE148_1_S, units: false, measurement: SAPFLOW }
-    Sap_150N_Avg: { field: SAPFLOW_TREE150_1_N, units: false, measurement: SAPFLOW }
-    Sap_150S_Avg: { field: SAPFLOW_TREE150_1_S, units: false, measurement: SAPFLOW }
-    Sap_296N_Avg: { field: SAPFLOW_TREE296_1_N, units: false, measurement: SAPFLOW }
-    Sap_296S_Avg: { field: SAPFLOW_TREE296_1_S, units: false, measurement: SAPFLOW }
-    Sap_411N_Avg: { field: SAPFLOW_TREE411_1_N, units: false, measurement: SAPFLOW }
-    Sap_411S_Avg: { field: SAPFLOW_TREE411_1_S, units: false, measurement: SAPFLOW }
+    Sap_1N_Avg: { field: SAPFLOW_TREE1_1_N, units: false, measurement: BOLE }
+    Sap_1S_Avg: { field: SAPFLOW_TREE1_1_S, units: false, measurement: BOLE }
+    Sap_30N_Avg: { field: SAPFLOW_TREE30_1_N, units: false, measurement: BOLE }
+    Sap_30S_Avg: { field: SAPFLOW_TREE30_1_S, units: false, measurement: BOLE }
+    Sap_33N_Avg: { field: SAPFLOW_TREE33_1_N, units: false, measurement: BOLE }
+    Sap_33S_Avg: { field: SAPFLOW_TREE33_1_S, units: false, measurement: BOLE }
+    Sap_34N_Avg: { field: SAPFLOW_TREE34_1_N, units: false, measurement: BOLE }
+    Sap_34S_Avg: { field: SAPFLOW_TREE34_1_S, units: false, measurement: BOLE }
+    Sap_37N_Avg: { field: SAPFLOW_TREE37_1_N, units: false, measurement: BOLE }
+    Sap_37S_Avg: { field: SAPFLOW_TREE37_1_S, units: false, measurement: BOLE }
+    Sap_147N_Avg: { field: SAPFLOW_TREE147_1_N, units: false, measurement: BOLE }
+    Sap_147S_Avg: { field: SAPFLOW_TREE147_1_S, units: false, measurement: BOLE }
+    Sap_148N_Avg: { field: SAPFLOW_TREE148_1_N, units: false, measurement: BOLE }
+    Sap_148S_Avg: { field: SAPFLOW_TREE148_1_S, units: false, measurement: BOLE }
+    Sap_150N_Avg: { field: SAPFLOW_TREE150_1_N, units: false, measurement: BOLE }
+    Sap_150S_Avg: { field: SAPFLOW_TREE150_1_S, units: false, measurement: BOLE }
+    Sap_296N_Avg: { field: SAPFLOW_TREE296_1_N, units: false, measurement: BOLE }
+    Sap_296S_Avg: { field: SAPFLOW_TREE296_1_S, units: false, measurement: BOLE }
+    Sap_411N_Avg: { field: SAPFLOW_TREE411_1_N, units: false, measurement: BOLE }
+    Sap_411S_Avg: { field: SAPFLOW_TREE411_1_S, units: false, measurement: BOLE }
     StemCO2_147_100_Avg: { field: CO2_BOLE_TREE147_1_1, units: false, measurement: BOLE }
     StemCO2_147_800_Avg: { field: CO2_BOLE_TREE147_8_1, units: false, measurement: BOLE }
     StemCO2_147_900_Avg: { field: CO2_BOLE_TREE147_9_1, units: false, measurement: BOLE }

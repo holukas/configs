@@ -202,64 +202,75 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-201601010000-CSV-30MIN:
 
     LW_T_BODY_AVG_T1_35_2: { field: LW_T_BODY_T1_35_2, units: "degC", gain: 1, measurement: _instrumentmetrics }
 
+    NETRAD_AVG_T1_0.05_1: { field: NETRAD_AVG_T1_0.05_1, units: "W m-2", gain: 1, measurement: NETRAD }
+    NETRAD_NABEL_AVG_T1_35_1: { field: NETRAD_NABEL_AVG_T1_35_1, units: "W m-2", gain: 1, measurement: NETRAD }
+
+    Null: { field: NULL_X_X_X, units: false, gain: 1, measurement: XXX }
+
+    P_4_1_1: { field: PREC_BAK_TOT_T1_35_1, units: "mm", gain: 1, measurement: PREC }
+    PREC_NABEL_CUM_T1_25_1: { field: PREC_NABEL_CUM_T1_25_1, units: "mm", gain: 1, measurement: PREC }
+    PREC_NABEL_TOT_T1_25_1: { field: PREC_NABEL_TOT_T1_25_1, units: "mm", gain: 1, measurement: PREC }
+    PREC_TOT_T1_25_1: { field: PREC_TOT_T1_25_1, units: "mm", gain: 1, measurement: PREC }
+
+    PA_AVG_H1_0_2: { field: PA_H1_0_2, units: "hPa", gain: 1, measurement: PA }
+    PA_AVG_H1_0_3: { field: PA_H1_0_3, units: "hPa", gain: 1, measurement: PA }
+    PA_AVG_H1_2_1: { field: PA_H1_2_1, units: "hPa", gain: 1, measurement: PA }
+    PA_NABEL_AVG_H1_2_1: { field: PA_NABEL_H1_2_1, units: "hPa", gain: 1, measurement: PA }
+    PA_T1_35_1: { field: PA_T1_35_1, units: "hPa", gain: 1, measurement: PA }
+
+    PAR_AVG_T1_35_1: { field: PAR_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_DIF_IN_AVG_T1_35_1: { field: PPFD_DIF_IN_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_T1_35_2: { field: PPFD_IN_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_T1_35_3: { field: PPFD_IN_T1_35_3, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_CORRECTED_AVG_T1_35_2: { field: PPFD_IN_CORRECTED_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_CORRECTED_AVG_T1_35_3: { field: PPFD_IN_CORRECTED_T1_35_3, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_OUT_AVG_T1_35_1: { field: PPFD_OUT_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_OUT_CORRECTED_AVG_T1_35_1: { field: PPFD_OUT_CORRECTED_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+
+    PPFD_IN_SD_T1_35_2: { field: PPFD_IN_SD_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+    PPFD_OUT_SD_T1_35_1: { field: PPFD_OUT_SD_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+
+    PPFD_OUT_IU_AVG_T1_35_1: { field: PPFD_OUT_IU_T1_35_1, units: "mV", gain: 1, measurement: _RAW }  # most likely in mV
+    PPFD_IN_IU_AVG_T1_35_2: { field: PPFD_IN_IU_T1_35_2, units: "mV", gain: 1, measurement: _RAW }  # most likely in mV
+
+    PTemp: { field: PTemp_X_X_X, units: false, gain: 1, measurement: XXX }  # unknown
+
+    RECORD: { field: RECORD_X_X_X, units: "#", gain: 1, measurement: _instrumentmetrics }
+
+    RH_4_1_1: { field: RH_BAK_T1_35_1, units: "%", gain: 1, measurement: RH }
+    RH_NABEL_AVG_T1_35_1: { field: RH_NABEL_T1_35_1, units: "%", gain: 1, measurement: RH }
+    RH_PROF_AVG_T1_1_1: { field: RH_PRF_T1_1_1, units: "%", gain: 1, measurement: RH }
+    RH_PROF_AVG_T1_10_1: { field: RH_PRF_T1_10_1, units: "%", gain: 1, measurement: RH }
+    RH_PROF_AVG_T1_2_1: { field: RH_PRF_T1_2_1, units: "%", gain: 1, measurement: RH }
+    RH_PROF_AVG_T1_20_1: { field: RH_PRF_T1_20_1, units: "%", gain: 1, measurement: RH }
+    RH_PROF_AVG_T1_25_1: { field: RH_PRF_T1_25_1, units: "%", gain: 1, measurement: RH }
+    RH_PROF_AVG_T1_35_1: { field: RH_PRF_T1_35_1, units: "%", gain: 1, measurement: RH }
+
     # todo hier weiter
     # todo hier weiter
     # todo hier weiter
 
-    NETRAD_AVG_T1_0.05_1: { field: NETRAD_AVG_T1_0.05_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    NETRAD_NABEL_AVG_T1_35_1: { field: NETRAD_NABEL_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    Null: { field: Null_X_X_X, units: false, gain: 1, measurement: XXX }
-    P_4_1_1: { field: P_4_1_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PA_AVG_H1_0_2: { field: PA_AVG_H1_0_2_X_X_X, units: false, gain: 1, measurement: XXX }
-    PA_AVG_H1_0_3: { field: PA_AVG_H1_0_3_X_X_X, units: false, gain: 1, measurement: XXX }
-    PA_AVG_H1_2_1: { field: PA_AVG_H1_2_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PA_NABEL_AVG_H1_2_1: { field: PA_NABEL_AVG_H1_2_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PA_T1_35_1: { field: PA_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PAR_AVG_T1_35_1: { field: PAR_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_DIF_IN_AVG_T1_35_1: { field: PPFD_DIF_IN_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_IN_AVG_T1_35_2: { field: PPFD_IN_AVG_T1_35_2_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_IN_AVG_T1_35_3: { field: PPFD_IN_AVG_T1_35_3_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_IN_CORRECTED_AVG_T1_35_2: { field: PPFD_IN_CORRECTED_AVG_T1_35_2_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_IN_CORRECTED_AVG_T1_35_3: { field: PPFD_IN_CORRECTED_AVG_T1_35_3_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_IN_IU_AVG_T1_35_2: { field: PPFD_IN_IU_AVG_T1_35_2_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_IN_SD_T1_35_2: { field: PPFD_IN_SD_T1_35_2_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_OUT_AVG_T1_35_1: { field: PPFD_OUT_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_OUT_CORRECTED_AVG_T1_35_1: { field: PPFD_OUT_CORRECTED_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_OUT_IU_AVG_T1_35_1: { field: PPFD_OUT_IU_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PPFD_OUT_SD_T1_35_1: { field: PPFD_OUT_SD_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PREC_NABEL_CUM_T1_25_1: { field: PREC_NABEL_CUM_T1_25_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PREC_NABEL_TOT_T1_25_1: { field: PREC_NABEL_TOT_T1_25_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PREC_TOT_T1_25_1: { field: PREC_TOT_T1_25_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    PTemp: { field: PTemp_X_X_X, units: false, gain: 1, measurement: XXX }
-    RECORD: { field: RECORD_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_4_1_1: { field: RH_4_1_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_NABEL_AVG_T1_35_1: { field: RH_NABEL_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_PROF_AVG_T1_1_1: { field: RH_PROF_AVG_T1_1_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_PROF_AVG_T1_10_1: { field: RH_PROF_AVG_T1_10_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_PROF_AVG_T1_2_1: { field: RH_PROF_AVG_T1_2_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_PROF_AVG_T1_20_1: { field: RH_PROF_AVG_T1_20_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_PROF_AVG_T1_25_1: { field: RH_PROF_AVG_T1_25_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    RH_PROF_AVG_T1_35_1: { field: RH_PROF_AVG_T1_35_1_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE1_1_N: { field: SAPFLOW_AVG_TREE1_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE1_1_S: { field: SAPFLOW_AVG_TREE1_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE147_1_N: { field: SAPFLOW_AVG_TREE147_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE147_1_S: { field: SAPFLOW_AVG_TREE147_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE148_1_N: { field: SAPFLOW_AVG_TREE148_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE148_1_S: { field: SAPFLOW_AVG_TREE148_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE150_1_N: { field: SAPFLOW_AVG_TREE150_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE150_1_S: { field: SAPFLOW_AVG_TREE150_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE296_1_N: { field: SAPFLOW_AVG_TREE296_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE296_1_S: { field: SAPFLOW_AVG_TREE296_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE30_1_N: { field: SAPFLOW_AVG_TREE30_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE30_1_S: { field: SAPFLOW_AVG_TREE30_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE33_1_N: { field: SAPFLOW_AVG_TREE33_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE33_1_S: { field: SAPFLOW_AVG_TREE33_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE34_1_N: { field: SAPFLOW_AVG_TREE34_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE34_1_S: { field: SAPFLOW_AVG_TREE34_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE37_1_N: { field: SAPFLOW_AVG_TREE37_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE37_1_S: { field: SAPFLOW_AVG_TREE37_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE411_1_N: { field: SAPFLOW_AVG_TREE411_1_N_X_X_X, units: false, gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE411_1_S: { field: SAPFLOW_AVG_TREE411_1_S_X_X_X, units: false, gain: 1, measurement: XXX }
+    SAPFLOW_AVG_TREE1_1_N: { field: SAPFLOW_TREE1_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE1_1_S: { field: SAPFLOW_TREE1_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE147_1_N: { field: SAPFLOW_TREE147_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE147_1_S: { field: SAPFLOW_TREE147_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE148_1_N: { field: SAPFLOW_TREE148_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE148_1_S: { field: SAPFLOW_TREE148_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE150_1_N: { field: SAPFLOW_TREE150_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE150_1_S: { field: SAPFLOW_TREE150_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE296_1_N: { field: SAPFLOW_TREE296_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE296_1_S: { field: SAPFLOW_TREE296_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE30_1_N: { field: SAPFLOW_TREE30_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE30_1_S: { field: SAPFLOW_TREE30_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE33_1_N: { field: SAPFLOW_TREE33_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE33_1_S: { field: SAPFLOW_TREE33_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE34_1_N: { field: SAPFLOW_TREE34_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE34_1_S: { field: SAPFLOW_TREE34_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE37_1_N: { field: SAPFLOW_TREE37_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE37_1_S: { field: SAPFLOW_TREE37_1_S, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE411_1_N: { field: SAPFLOW_TREE411_1_N, units: false, gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE411_1_S: { field: SAPFLOW_TREE411_1_S, units: false, gain: 1, measurement: BOLE }
+
     SDP_FF4_0x05_1_Avg: { field: SDP_FF4_0x05_1_Avg_X_X_X, units: false, gain: 1, measurement: XXX }
     SDP_FF4_0x10_1_Avg: { field: SDP_FF4_0x10_1_Avg_X_X_X, units: false, gain: 1, measurement: XXX }
     SDP_FF4_0x20_1_Avg: { field: SDP_FF4_0x20_1_Avg_X_X_X, units: false, gain: 1, measurement: XXX }

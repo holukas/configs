@@ -326,7 +326,7 @@ PROC-FLUXNET-2024-FULLSET-HH-CSV-30MIN:
     VPD_F_MDS: { field: false, units: "hPa", measurement: VPD }
     VPD_F_MDS_QC: { field: false, units: "0=measured; 1/2/3=good/medium/poor quality gapfill", measurement: VPD }
     VPD_F_QC: { field: false, units: "0=measured; 1=good quality gapfill; 2=downscaled from ERA", measurement: VPD }
-    WD: { field: false, units: "deg from north", measurement: WIND }
+    WD: { field: false, units: "deg", measurement: WIND }
     WS: { field: false, units: "m s-1", measurement: WIND }
     WS_ERA: { field: false, units: "m s-1", measurement: WIND }
     WS_F: { field: false, units: "m s-1", measurement: WIND }

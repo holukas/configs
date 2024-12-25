@@ -2,12 +2,14 @@
 
 ## 20XXXXXX |
 
+- Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN`
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-DAV-201601010000-CSV-30MIN`
 - Added new filetype `PROC-FLUXNET-2024-FULLSET-HH-CSV-30MIN`
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-CHA-CSV-30MIN`
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-AES-CSV-30MIN`
 - Extended filetype `PROC-ETH-METEOSCREENINGTOOL-CH-CHA-CSV-30MIN`
 - Renamed measurements `CO2_BOLE`, `DENDRO` and `SAPFLOW` to measurement `BOLE`
+- Renamed unit `deg from north` to `deg` for all wind directions
 - Assigned units `um` (µm) to all `DENDRO` variables
 - Assigned units `counts` to all `LS` variables
 - Assigned units `km` to all `LSD` variables

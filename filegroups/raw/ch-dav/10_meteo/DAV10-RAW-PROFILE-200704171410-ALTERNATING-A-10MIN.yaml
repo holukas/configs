@@ -78,26 +78,26 @@ DAV10-RAW-PROFILE-200704171410-ALTERNATING-A-10MIN:
     TIME: { field: TIME_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
     W_Vel_2m_S_WVT: { field: WS_CUP_PRF_T1_2_2, units: "m s-1", measurement: WIND }
     W_Vel_2m_U_WVT: { field: WS_CUP_PRF_T1_2_1, units: "m s-1", measurement: WIND }
-    W_Dir_2m_DU_WVT: { field: WD_CUP_PRF_T1_2_1, units: "deg from north", measurement: WIND }
+    W_Dir_2m_DU_WVT: { field: WD_CUP_PRF_T1_2_1, units: "deg", measurement: WIND }
     # The W_Dir_*m_SDU_WVT variables look like some sort of SD/range per 10MIN measurement???
-    W_Dir_2m_SDU_WVT: { field: WD_CUP_PRF_X_T1_2_1, units: "deg from north", measurement: XXX }
+    W_Dir_2m_SDU_WVT: { field: WD_CUP_PRF_X_T1_2_1, units: "deg", measurement: XXX }
     W_Vel_10m_S_WVT: { field: WS_CUP_PRF_T1_10_2, units: "m s-1", measurement: WIND }
     W_Vel_10m_U_WVT: { field: WS_CUP_PRF_T1_10_1, units: "m s-1", measurement: WIND }
-    W_Dir_10m_DU_WVT: { field: WD_CUP_PRF_T1_10_1, units: "deg from north", measurement: WIND }
-    W_Dir_10m_SDU_WVT: { field: WD_CUP_PRF_X_T1_10_1, units: "deg from north", measurement: XXX }
+    W_Dir_10m_DU_WVT: { field: WD_CUP_PRF_T1_10_1, units: "deg", measurement: WIND }
+    W_Dir_10m_SDU_WVT: { field: WD_CUP_PRF_X_T1_10_1, units: "deg", measurement: XXX }
     W_Vel_20m_S_WVT: { field: WS_CUP_PRF_T1_20_2, units: "m s-1", measurement: WIND }
     W_Vel_20m_U_WVT: { field: WS_CUP_PRF_T1_20_1, units: "m s-1", measurement: WIND }
-    W_Dir_20m_DU_WVT: { field: WD_CUP_PRF_T1_20_1, units: "deg from north", measurement: WIND }
-    W_Dir_20m_SDU_WVT: { field: WD_CUP_PRF_X_T1_20_1, units: "deg from north", measurement: XXX }
+    W_Dir_20m_DU_WVT: { field: WD_CUP_PRF_T1_20_1, units: "deg", measurement: WIND }
+    W_Dir_20m_SDU_WVT: { field: WD_CUP_PRF_X_T1_20_1, units: "deg", measurement: XXX }
     W_Vel_25m_S_WVT: { field: WS_CUP_PRF_T1_25_2, units: "m s-1", measurement: WIND }
     W_Vel_25m_U_WVT: { field: WS_CUP_PRF_T1_25_1, units: "m s-1", measurement: WIND }
-    W_Dir_25m_DU_WVT: { field: WD_CUP_PRF_T1_25_1, units: "deg from north", measurement: WIND }
-    W_Dir_25m_SDU_WVT: { field: WD_CUP_PRF_X_T1_25_1, units: "deg from north", measurement: XXX }
+    W_Dir_25m_DU_WVT: { field: WD_CUP_PRF_T1_25_1, units: "deg", measurement: WIND }
+    W_Dir_25m_SDU_WVT: { field: WD_CUP_PRF_X_T1_25_1, units: "deg", measurement: XXX }
     W_Vel_35m_S_WVT: { field: WS_CUP_PRF_T1_35_2, units: "m s-1", measurement: WIND }
     W_Vel_35m_U_WVT: { field: WS_CUP_PRF_T1_35_1, units: "m s-1", measurement: WIND }
-    W_Dir_35m_DU_WVT: { field: WD_CUP_PRF_T1_35_1, units: "deg from north", measurement: WIND }
+    W_Dir_35m_DU_WVT: { field: WD_CUP_PRF_T1_35_1, units: "deg", measurement: WIND }
     # The W_Dir_*m_SDU_WVT variables look like some sort of SD/range per 10MIN measurement???
-    W_Dir_35m_SDU_WVT: { field: WD_CUP_PRF_X_T1_35_1, units: "deg from north", measurement: XXX }
+    W_Dir_35m_SDU_WVT: { field: WD_CUP_PRF_X_T1_35_1, units: "deg", measurement: XXX }
     Temp_2m_AVG: { field: TA_PRF_T1_2_1, units: "degC", measurement: TA }
     Temp_10m_AVG: { field: TA_PRF_T1_10_1, units: "degC", measurement: TA }
     Temp_20m_AVG: { field: TA_PRF_T1_20_1, units: "degC", measurement: TA }

@@ -254,46 +254,46 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-201601010000-CSV-30MIN:
     RH_PROF_AVG_T1_25_1: { field: RH_PRF_T1_25_1, units: "%", gain: 1, measurement: RH }
     RH_PROF_AVG_T1_35_1: { field: RH_PRF_T1_35_1, units: "%", gain: 1, measurement: RH }
     RH_T2_2x1_1_Avg: { field: RH_T2_2.1_1, units: "%", gain: 1, measurement: RH }
-    SAPFLOW_AVG_TREE1_1_N: { field: SAPFLOW_TREE1_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE1_1_S: { field: SAPFLOW_TREE1_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE30_1_N: { field: SAPFLOW_TREE30_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE30_1_S: { field: SAPFLOW_TREE30_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE33_1_N: { field: SAPFLOW_TREE33_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE33_1_S: { field: SAPFLOW_TREE33_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE34_1_N: { field: SAPFLOW_TREE34_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE34_1_S: { field: SAPFLOW_TREE34_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE37_1_N: { field: SAPFLOW_TREE37_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE37_1_S: { field: SAPFLOW_TREE37_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE147_1_N: { field: SAPFLOW_TREE147_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE147_1_S: { field: SAPFLOW_TREE147_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE148_1_N: { field: SAPFLOW_TREE148_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE148_1_S: { field: SAPFLOW_TREE148_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE150_1_N: { field: SAPFLOW_TREE150_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE150_1_S: { field: SAPFLOW_TREE150_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE296_1_N: { field: SAPFLOW_TREE296_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE296_1_S: { field: SAPFLOW_TREE296_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE411_1_N: { field: SAPFLOW_TREE411_1_N, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_AVG_TREE411_1_S: { field: SAPFLOW_TREE411_1_S, units: "degC", gain: 1, measurement: BOLE }  # uncertain units
-    SAPFLOW_TR203_1x5_1_Avg: { field: SAPFLOW_TREE203_1.5_1, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR203_1x5_1_Std: { field: SAPFLOW_SD_TREE203_1.5_1, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR203_1x5_2_Avg: { field: SAPFLOW_TREE203_1.5_2, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR203_1x5_2_Std: { field: SAPFLOW_SD_TREE203_1.5_2, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR204_1x5_1_Avg: { field: SAPFLOW_TREE204_1.5_1, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR204_1x5_1_Std: { field: SAPFLOW_SD_TREE204_1.5_1, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR204_1x5_2_Avg: { field: SAPFLOW_TREE204_1.5_2, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR204_1x5_2_Std: { field: SAPFLOW_SD_TREE204_1.5_2, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR356_1x5_1_Avg: { field: SAPFLOW_TREE356_1.5_1, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR356_1x5_1_Std: { field: SAPFLOW_SD_TREE356_1.5_1, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR356_1x5_2_Avg: { field: SAPFLOW_TREE356_1.5_2, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR356_1x5_2_Std: { field: SAPFLOW_SD_TREE356_1.5_2, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR358_1x5_1_Avg: { field: SAPFLOW_TREE358_1.5_1, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR358_1x5_1_Std: { field: SAPFLOW_SD_TREE358_1.5_1, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR358_1x5_2_Avg: { field: SAPFLOW_TREE358_1.5_2, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR358_1x5_2_Std: { field: SAPFLOW_SD_TREE358_1.5_2, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR359_1x5_1_Avg: { field: SAPFLOW_TREE359_1.5_1, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR359_1x5_1_Std: { field: SAPFLOW_SD_TREE359_1.5_1, units: "degC", gain: 1, measurement: _SD }
-    SAPFLOW_TR359_1x5_2_Avg: { field: SAPFLOW_TREE359_1.5_2, units: "degC", gain: 1, measurement: BOLE }
-    SAPFLOW_TR359_1x5_2_Std: { field: SAPFLOW_SD_TREE359_1.5_2, units: "degC", gain: 1, measurement: _SD }
+    SAPFLOW_AVG_TREE1_1_N: { field: SAPFLOW_TREE1_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE1_1_S: { field: SAPFLOW_TREE1_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE30_1_N: { field: SAPFLOW_TREE30_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE30_1_S: { field: SAPFLOW_TREE30_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE33_1_N: { field: SAPFLOW_TREE33_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE33_1_S: { field: SAPFLOW_TREE33_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE34_1_N: { field: SAPFLOW_TREE34_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE34_1_S: { field: SAPFLOW_TREE34_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE37_1_N: { field: SAPFLOW_TREE37_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE37_1_S: { field: SAPFLOW_TREE37_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE147_1_N: { field: SAPFLOW_TREE147_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE147_1_S: { field: SAPFLOW_TREE147_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE148_1_N: { field: SAPFLOW_TREE148_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE148_1_S: { field: SAPFLOW_TREE148_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE150_1_N: { field: SAPFLOW_TREE150_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE150_1_S: { field: SAPFLOW_TREE150_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE296_1_N: { field: SAPFLOW_TREE296_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE296_1_S: { field: SAPFLOW_TREE296_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE411_1_N: { field: SAPFLOW_TREE411_1_N, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_AVG_TREE411_1_S: { field: SAPFLOW_TREE411_1_S, units: "g s-1", gain: 1, measurement: BOLE }  # uncertain units
+    SAPFLOW_TR203_1x5_1_Avg: { field: SAPFLOW_TREE203_1.5_1, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR203_1x5_1_Std: { field: SAPFLOW_SD_TREE203_1.5_1, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR203_1x5_2_Avg: { field: SAPFLOW_TREE203_1.5_2, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR203_1x5_2_Std: { field: SAPFLOW_SD_TREE203_1.5_2, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR204_1x5_1_Avg: { field: SAPFLOW_TREE204_1.5_1, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR204_1x5_1_Std: { field: SAPFLOW_SD_TREE204_1.5_1, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR204_1x5_2_Avg: { field: SAPFLOW_TREE204_1.5_2, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR204_1x5_2_Std: { field: SAPFLOW_SD_TREE204_1.5_2, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR356_1x5_1_Avg: { field: SAPFLOW_TREE356_1.5_1, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR356_1x5_1_Std: { field: SAPFLOW_SD_TREE356_1.5_1, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR356_1x5_2_Avg: { field: SAPFLOW_TREE356_1.5_2, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR356_1x5_2_Std: { field: SAPFLOW_SD_TREE356_1.5_2, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR358_1x5_1_Avg: { field: SAPFLOW_TREE358_1.5_1, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR358_1x5_1_Std: { field: SAPFLOW_SD_TREE358_1.5_1, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR358_1x5_2_Avg: { field: SAPFLOW_TREE358_1.5_2, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR358_1x5_2_Std: { field: SAPFLOW_SD_TREE358_1.5_2, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR359_1x5_1_Avg: { field: SAPFLOW_TREE359_1.5_1, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR359_1x5_1_Std: { field: SAPFLOW_SD_TREE359_1.5_1, units: "g s-1", gain: 1, measurement: _SD }
+    SAPFLOW_TR359_1x5_2_Avg: { field: SAPFLOW_TREE359_1.5_2, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_TR359_1x5_2_Std: { field: SAPFLOW_SD_TREE359_1.5_2, units: "g s-1", gain: 1, measurement: _SD }
     SDP_FF1_0x05_1_Avg: { field: SDP_FF1_0.05_1, units: "unitless", gain: 1, measurement: SDP }
     SDP_FF1_0x10_1_Avg: { field: SDP_FF1_0.1_1, units: "unitless", gain: 1, measurement: SDP }
     SDP_FF1_0x20_1_Avg: { field: SDP_FF1_0.2_1, units: "unitless", gain: 1, measurement: SDP }

@@ -36,23 +36,23 @@ DAV12-RAW-FF3-TBLSAP-202106071716-TOA5-DAT-1MIN:
     RECORD: { field: RECORD_FF3_0_2, units: false, measurement: _instrumentmetrics }
     Batt_Volt_Avg: { field: RECORD_FF3_0_2, units: false, measurement: _instrumentmetrics }
     PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, measurement: XXX }  # todo
-    SAPFLOW_TR356_1x5_1_Avg: { field: SAPFLOW_TREE356_1.5_1, units: false, measurement: BOLE }
-    SAPFLOW_TR356_1x5_2_Avg: { field: SAPFLOW_TREE356_1.5_2, units: false, measurement: BOLE }
-    SAPFLOW_TR203_1x5_1_Avg: { field: SAPFLOW_TREE203_1.5_1, units: false, measurement: BOLE }
-    SAPFLOW_TR203_1x5_2_Avg: { field: SAPFLOW_TREE203_1.5_2, units: false, measurement: BOLE }
-    SAPFLOW_TR204_1x5_1_Avg: { field: SAPFLOW_TREE204_1.5_1, units: false, measurement: BOLE }
-    SAPFLOW_TR204_1x5_2_Avg: { field: SAPFLOW_TREE204_1.5_2, units: false, measurement: BOLE }
-    SAPFLOW_TR358_1x5_1_Avg: { field: SAPFLOW_TREE358_1.5_1, units: false, measurement: SAPFLOW }
-    SAPFLOW_TR358_1x5_2_Avg: { field: SAPFLOW_TREE358_1.5_2, units: false, measurement: SAPFLOW }
-    SAPFLOW_TR359_1x5_1_Avg: { field: SAPFLOW_TREE359_1.5_1, units: false, measurement: SAPFLOW }
-    SAPFLOW_TR359_1x5_2_Avg: { field: SAPFLOW_TREE359_1.5_2, units: false, measurement: SAPFLOW }
-    SAPFLOW_TR356_1x5_1_Std: { field: SAPFLOW_SD_TREE356_1.5_1, units: false, measurement: _SD }
-    SAPFLOW_TR356_1x5_2_Std: { field: SAPFLOW_SD_TREE356_1.5_2, units: false, measurement: _SD }
-    SAPFLOW_TR203_1x5_1_Std: { field: SAPFLOW_SD_TREE203_1.5_1, units: false, measurement: _SD }
-    SAPFLOW_TR203_1x5_2_Std: { field: SAPFLOW_SD_TREE203_1.5_2, units: false, measurement: _SD }
-    SAPFLOW_TR204_1x5_1_Std: { field: SAPFLOW_SD_TREE204_1.5_1, units: false, measurement: _SD }
-    SAPFLOW_TR204_1x5_2_Std: { field: SAPFLOW_SD_TREE204_1.5_2, units: false, measurement: _SD }
-    SAPFLOW_TR358_1x5_1_Std: { field: SAPFLOW_SD_TREE358_1.5_1, units: false, measurement: _SD }
-    SAPFLOW_TR358_1x5_2_Std: { field: SAPFLOW_SD_TREE358_1.5_2, units: false, measurement: _SD }
-    SAPFLOW_TR359_1x5_1_Std: { field: SAPFLOW_SD_TREE359_1.5_1, units: false, measurement: _SD }
-    SAPFLOW_TR359_1x5_2_Std: { field: SAPFLOW_SD_TREE359_1.5_2, units: false, measurement: _SD }
+    SAPFLOW_TR356_1x5_1_Avg: { field: SAPFLOW_TREE356_1.5_1, units: "g s-1", measurement: BOLE }
+    SAPFLOW_TR356_1x5_2_Avg: { field: SAPFLOW_TREE356_1.5_2, units: "g s-1", measurement: BOLE }
+    SAPFLOW_TR203_1x5_1_Avg: { field: SAPFLOW_TREE203_1.5_1, units: "g s-1", measurement: BOLE }
+    SAPFLOW_TR203_1x5_2_Avg: { field: SAPFLOW_TREE203_1.5_2, units: "g s-1", measurement: BOLE }
+    SAPFLOW_TR204_1x5_1_Avg: { field: SAPFLOW_TREE204_1.5_1, units: "g s-1", measurement: BOLE }
+    SAPFLOW_TR204_1x5_2_Avg: { field: SAPFLOW_TREE204_1.5_2, units: "g s-1", measurement: BOLE }
+    SAPFLOW_TR358_1x5_1_Avg: { field: SAPFLOW_TREE358_1.5_1, units: "g s-1", measurement: SAPFLOW }
+    SAPFLOW_TR358_1x5_2_Avg: { field: SAPFLOW_TREE358_1.5_2, units: "g s-1", measurement: SAPFLOW }
+    SAPFLOW_TR359_1x5_1_Avg: { field: SAPFLOW_TREE359_1.5_1, units: "g s-1", measurement: SAPFLOW }
+    SAPFLOW_TR359_1x5_2_Avg: { field: SAPFLOW_TREE359_1.5_2, units: "g s-1", measurement: SAPFLOW }
+    SAPFLOW_TR356_1x5_1_Std: { field: SAPFLOW_SD_TREE356_1.5_1, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR356_1x5_2_Std: { field: SAPFLOW_SD_TREE356_1.5_2, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR203_1x5_1_Std: { field: SAPFLOW_SD_TREE203_1.5_1, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR203_1x5_2_Std: { field: SAPFLOW_SD_TREE203_1.5_2, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR204_1x5_1_Std: { field: SAPFLOW_SD_TREE204_1.5_1, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR204_1x5_2_Std: { field: SAPFLOW_SD_TREE204_1.5_2, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR358_1x5_1_Std: { field: SAPFLOW_SD_TREE358_1.5_1, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR358_1x5_2_Std: { field: SAPFLOW_SD_TREE358_1.5_2, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR359_1x5_1_Std: { field: SAPFLOW_SD_TREE359_1.5_1, units: "g s-1", measurement: _SD }
+    SAPFLOW_TR359_1x5_2_Std: { field: SAPFLOW_SD_TREE359_1.5_2, units: "g s-1", measurement: _SD }

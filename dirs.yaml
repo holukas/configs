@@ -8,7 +8,8 @@ raw_mount: /mnt/gl-raw-data/FluxData
 processed_mount: /mnt/gl-processing/
 
 # Basedirs custom
-processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\csv_2016-2021
+processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015
+#processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\csv_2016-2021
 #processed_local: F:\Sync\luhk_work\80 - SITES\CH-DAV\Data\Datasets\2024_ICOSETC_CH-Dav_ARCHIVE_L2
 #processed_local: L:\Sync\luhk_work\80 - SITES\CHA\Data\Datasets\METEOSCREENINGTOOL_METEO_2005-2021
 #processed_local: F:\Sync\luhk_work\80 - SITES\AWS\Data\Datasets\FLX_CH-Aws_FLUXNET2015_FULLSET_2006-2023_1-3

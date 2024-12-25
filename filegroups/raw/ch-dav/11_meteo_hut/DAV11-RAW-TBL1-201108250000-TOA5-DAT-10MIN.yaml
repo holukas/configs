@@ -70,26 +70,26 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
     PTemp_C_Avg: { field: PTemp_C_Avg_X_X_X, units: false, measurement: XXX }
     Rain: { field: PREC_TOT_T1_25_1, units: false, measurement: PREC }
     RECORD: { field: RECORD_H0_0_1, units: false, measurement: _instrumentmetrics }
-    Sap_1N_Avg: { field: SAPFLOW_TREE1_1_N, units: false, measurement: BOLE }
-    Sap_1S_Avg: { field: SAPFLOW_TREE1_1_S, units: false, measurement: BOLE }
-    Sap_30N_Avg: { field: SAPFLOW_TREE30_1_N, units: false, measurement: BOLE }
-    Sap_30S_Avg: { field: SAPFLOW_TREE30_1_S, units: false, measurement: BOLE }
-    Sap_33N_Avg: { field: SAPFLOW_TREE33_1_N, units: false, measurement: BOLE }
-    Sap_33S_Avg: { field: SAPFLOW_TREE33_1_S, units: false, measurement: BOLE }
-    Sap_34N_Avg: { field: SAPFLOW_TREE34_1_N, units: false, measurement: BOLE }
-    Sap_34S_Avg: { field: SAPFLOW_TREE34_1_S, units: false, measurement: BOLE }
-    Sap_37N_Avg: { field: SAPFLOW_TREE37_1_N, units: false, measurement: BOLE }
-    Sap_37S_Avg: { field: SAPFLOW_TREE37_1_S, units: false, measurement: BOLE }
-    Sap_147N_Avg: { field: SAPFLOW_TREE147_1_N, units: false, measurement: BOLE }
-    Sap_147S_Avg: { field: SAPFLOW_TREE147_1_S, units: false, measurement: BOLE }
-    Sap_148N_Avg: { field: SAPFLOW_TREE148_1_N, units: false, measurement: BOLE }
-    Sap_148S_Avg: { field: SAPFLOW_TREE148_1_S, units: false, measurement: BOLE }
-    Sap_150N_Avg: { field: SAPFLOW_TREE150_1_N, units: false, measurement: BOLE }
-    Sap_150S_Avg: { field: SAPFLOW_TREE150_1_S, units: false, measurement: BOLE }
-    Sap_296N_Avg: { field: SAPFLOW_TREE296_1_N, units: false, measurement: BOLE }
-    Sap_296S_Avg: { field: SAPFLOW_TREE296_1_S, units: false, measurement: BOLE }
-    Sap_411N_Avg: { field: SAPFLOW_TREE411_1_N, units: false, measurement: BOLE }
-    Sap_411S_Avg: { field: SAPFLOW_TREE411_1_S, units: false, measurement: BOLE }
+    Sap_1N_Avg: { field: SAPFLOW_TREE1_1_N, units: "g s-1", measurement: BOLE }
+    Sap_1S_Avg: { field: SAPFLOW_TREE1_1_S, units: "g s-1", measurement: BOLE }
+    Sap_30N_Avg: { field: SAPFLOW_TREE30_1_N, units: "g s-1", measurement: BOLE }
+    Sap_30S_Avg: { field: SAPFLOW_TREE30_1_S, units: "g s-1", measurement: BOLE }
+    Sap_33N_Avg: { field: SAPFLOW_TREE33_1_N, units: "g s-1", measurement: BOLE }
+    Sap_33S_Avg: { field: SAPFLOW_TREE33_1_S, units: "g s-1", measurement: BOLE }
+    Sap_34N_Avg: { field: SAPFLOW_TREE34_1_N, units: "g s-1", measurement: BOLE }
+    Sap_34S_Avg: { field: SAPFLOW_TREE34_1_S, units: "g s-1", measurement: BOLE }
+    Sap_37N_Avg: { field: SAPFLOW_TREE37_1_N, units: "g s-1", measurement: BOLE }
+    Sap_37S_Avg: { field: SAPFLOW_TREE37_1_S, units: "g s-1", measurement: BOLE }
+    Sap_147N_Avg: { field: SAPFLOW_TREE147_1_N, units: "g s-1", measurement: BOLE }
+    Sap_147S_Avg: { field: SAPFLOW_TREE147_1_S, units: "g s-1", measurement: BOLE }
+    Sap_148N_Avg: { field: SAPFLOW_TREE148_1_N, units: "g s-1", measurement: BOLE }
+    Sap_148S_Avg: { field: SAPFLOW_TREE148_1_S, units: "g s-1", measurement: BOLE }
+    Sap_150N_Avg: { field: SAPFLOW_TREE150_1_N, units: "g s-1", measurement: BOLE }
+    Sap_150S_Avg: { field: SAPFLOW_TREE150_1_S, units: "g s-1", measurement: BOLE }
+    Sap_296N_Avg: { field: SAPFLOW_TREE296_1_N, units: "g s-1", measurement: BOLE }
+    Sap_296S_Avg: { field: SAPFLOW_TREE296_1_S, units: "g s-1", measurement: BOLE }
+    Sap_411N_Avg: { field: SAPFLOW_TREE411_1_N, units: "g s-1", measurement: BOLE }
+    Sap_411S_Avg: { field: SAPFLOW_TREE411_1_S, units: "g s-1", measurement: BOLE }
     StemCO2_147_100_Avg: { field: CO2_BOLE_TREE147_1_1, units: false, measurement: BOLE }
     StemCO2_147_900_Avg: { field: CO2_BOLE_TREE147_9_1, units: false, measurement: BOLE }
     StemCO2_147_Soil_Avg: { field: CO2_BOLE_SOIL_TREE147_0_1, units: false, measurement: BOLE }

@@ -35,9 +35,9 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     AW_IN_AVG_T1_35_2: {  field: AW_IN_T1_35_2, units: "W m-2", gain: 1, measurement: SW }
     AW_OUT_AVG_T1_35_1: {  field: AW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
     AW_OUT_AVG_T1_35_2: {  field: AW_OUT_T1_35_2, units: "W m-2", gain: 1, measurement: SW }
-    Band_147_Avg: {  field: Band_147_Avg, units: "um", gain: 1, measurement: XXX }
-    Band_148_Avg: {  field: Band_148_Avg, units: "um", gain: 1, measurement: XXX }
-    Band_Rock_Avg: {  field: Band_Rock_Avg, units: "um", gain: 1, measurement: XXX }
+    Band_147_Avg: {  field: DENDRO_BAND_TREE147_1_1, units: "um", gain: 1, measurement: BOLE }
+    Band_148_Avg: {  field: DENDRO_BAND_TREE148_1_1, units: "um", gain: 1, measurement: BOLE }
+    Band_Rock_Avg: {  field: DENDRO_BAND_ROCK_0_1, units: "um", gain: 1, measurement: BOLE }
     Batt_V: {  field: Batt_V, units: "V", gain: 1, measurement: XXX }
     BV_LOGGER_AVG_FF0_1_1: {  field: BV_LOGGER_AVG_FF0_1_1, units: "V", gain: 1, measurement: XXX }
     BV_LOGGER_AVG_H1_1_1: {  field: BV_LOGGER_AVG_H1_1_1, units: "V", gain: 1, measurement: XXX }
@@ -493,135 +493,131 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     ULOGGER_FF3_0_1: {  field: ULOGGER_FF3_0_1, units: "V", gain: 1, measurement: XXX }
     ULOGGER_FF4_0_1: {  field: ULOGGER_FF4_0_1, units: "V", gain: 1, measurement: XXX }
     ULOGGER_FF5_0_1: {  field: ULOGGER_FF5_0_1, units: "V", gain: 1, measurement: XXX }
-    W_Dir_1m_DU_WVT: {  field: WD_CUP_PRF_T1_1_1, units: --, gain: 1, measurement: XXX }
-    W_Dir_1m_SDU_WVT: {  field: W_Dir_1m_SDU_WVT, units: --, gain: 1, measurement: XXX }
-    W_Dir_2m_DU_WVT: {  field: W_Dir_2m_DU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_2m_SDU_WVT: {  field: W_Dir_2m_SDU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_10m_DU_WVT: {  field: W_Dir_10m_DU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_10m_SDU_WVT: {  field: W_Dir_10m_SDU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_20m_DU_WVT: {  field: W_Dir_20m_DU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_20m_SDU_WVT: {  field: W_Dir_20m_SDU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_25m_DU_WVT: {  field: W_Dir_25m_DU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_25m_SDU_WVT: {  field: W_Dir_25m_SDU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_35m_DU_WVT: {  field: W_Dir_35m_DU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_35m_DU_WVT: {  field: W_Dir_35m_DU_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Dir_35m_SDU_WVT: {  field: W_Dir_35m_SDU_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Dir_35m_SDU_WVT: {  field: W_Dir_35m_SDU_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_1m_S_WVT: {  field: W_Vel_1m_S_WVT, units: --, gain: 1, measurement: XXX }
-    W_Vel_1m_U_WVT: {  field: W_Vel_1m_U_WVT, units: --, gain: 1, measurement: XXX }
-    W_Vel_2m_S_WVT: {  field: W_Vel_2m_S_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Vel_2m_S_WVT: {  field: W_Vel_2m_S_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_2m_U_WVT: {  field: W_Vel_2m_U_WVT, units: deg, gain: 1, measurement: XXX }
-    W_Vel_2m_U_WVT: {  field: W_Vel_2m_U_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_10m_S_WVT: {  field: W_Vel_10m_S_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_10m_U_WVT: {  field: W_Vel_10m_U_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_20m_S_WVT: {  field: W_Vel_20m_S_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_20m_U_WVT: {  field: W_Vel_20m_U_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_25m_S_WVT: {  field: W_Vel_25m_S_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_25m_U_WVT: {  field: W_Vel_25m_U_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_35m_S_WVT: {  field: W_Vel_35m_S_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    W_Vel_35m_U_WVT: {  field: W_Vel_35m_U_WVT, units: m+1s-1, gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_01_1: {  field: WD_COUNT_PRF_T1_01_1, units: --, gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_02_1: {  field: WD_COUNT_PRF_T1_02_1, units: --, gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_10_1: {  field: WD_COUNT_PRF_T1_10_1, units: --, gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_20_1: {  field: WD_COUNT_PRF_T1_20_1, units: --, gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_25_1: {  field: WD_COUNT_PRF_T1_25_1, units: --, gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_02_1: {  field: WD_SD_VANE_AVG_T1_02_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_10_1: {  field: WD_SD_VANE_AVG_T1_10_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_20_1: {  field: WD_SD_VANE_AVG_T1_20_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_25_1: {  field: WD_SD_VANE_AVG_T1_25_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_35_1: {  field: WD_SD_VANE_AVG_T1_35_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_2_1: {  field: WD_SD_VANE_PRF_AVG_T1_2_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_02_1: {  field: WD_SD_VANE_PRF_AVG_T1_02_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_10_1: {  field: WD_SD_VANE_PRF_AVG_T1_10_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_20_1: {  field: WD_SD_VANE_PRF_AVG_T1_20_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_25_1: {  field: WD_SD_VANE_PRF_AVG_T1_25_1, units: deg, gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_35_1: {  field: WD_SD_VANE_PRF_AVG_T1_35_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_02_1: {  field: WD_VANE_AVG_T1_02_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_10_1: {  field: WD_VANE_AVG_T1_10_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_20_1: {  field: WD_VANE_AVG_T1_20_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_25_1: {  field: WD_VANE_AVG_T1_25_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_35_1: {  field: WD_VANE_AVG_T1_35_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_NABEL_AVG_T1_35_2: {  field: WD_VANE_NABEL_AVG_T1_35_2, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_2_1: {  field: WD_VANE_PRF_AVG_T1_2_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_02_1: {  field: WD_VANE_PRF_AVG_T1_02_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_10_1: {  field: WD_VANE_PRF_AVG_T1_10_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_20_1: {  field: WD_VANE_PRF_AVG_T1_20_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_25_1: {  field: WD_VANE_PRF_AVG_T1_25_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_35_1: {  field: WD_VANE_PRF_AVG_T1_35_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_35_1.1: {  field: WD_VANE_PRF_AVG_T1_35_1.1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_02_1: {  field: WD_VANE_PRF_SD_T1_02_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_10_1: {  field: WD_VANE_PRF_SD_T1_10_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_20_1: {  field: WD_VANE_PRF_SD_T1_20_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_25_1: {  field: WD_VANE_PRF_SD_T1_25_1, units: deg, gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_35_1: {  field: WD_VANE_PRF_SD_T1_35_1, units: deg, gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T1_10_1: {  field: WD_WiSoGILL_PRF_AVG_T1_10_1, units: deg, gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T1_20_1: {  field: WD_WiSoGILL_PRF_AVG_T1_20_1, units: deg, gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T1_25_1: {  field: WD_WiSoGILL_PRF_AVG_T1_25_1, units: deg, gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T2_01_1: {  field: WD_WiSoGILL_PRF_AVG_T2_01_1, units: deg, gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T2_02_1: {  field: WD_WiSoGILL_PRF_AVG_T2_02_1, units: deg, gain: 1, measurement: XXX }
-    WIGE: {  field: WIGE, units: m+1s-1, gain: 1, measurement: XXX }
-    WIRI: {  field: WIRI, units: --, gain: 1, measurement: XXX }
+    W_Dir_1m_DU_WVT: {  field: WD_CUP_PRF_T1_1_1, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_1m_SDU_WVT: {  field: W_Dir_1m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_2m_DU_WVT: {  field: W_Dir_2m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_2m_SDU_WVT: {  field: W_Dir_2m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_10m_DU_WVT: {  field: W_Dir_10m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_10m_SDU_WVT: {  field: W_Dir_10m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_20m_DU_WVT: {  field: W_Dir_20m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_20m_SDU_WVT: {  field: W_Dir_20m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_25m_DU_WVT: {  field: W_Dir_25m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_25m_SDU_WVT: {  field: W_Dir_25m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_35m_DU_WVT: {  field: W_Dir_35m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_35m_SDU_WVT: {  field: W_Dir_35m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
+    W_Vel_1m_S_WVT: {  field: W_Vel_1m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_1m_U_WVT: {  field: W_Vel_1m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_2m_S_WVT: {  field: W_Vel_2m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_2m_U_WVT: {  field: W_Vel_2m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_10m_S_WVT: {  field: W_Vel_10m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_10m_U_WVT: {  field: W_Vel_10m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_20m_S_WVT: {  field: W_Vel_20m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_20m_U_WVT: {  field: W_Vel_20m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_25m_S_WVT: {  field: W_Vel_25m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_25m_U_WVT: {  field: W_Vel_25m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_35m_S_WVT: {  field: W_Vel_35m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    W_Vel_35m_U_WVT: {  field: W_Vel_35m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
+    WD_COUNT_PRF_T1_01_1: {  field: WD_COUNT_PRF_T1_01_1, units: "counts", gain: 1, measurement: XXX }
+    WD_COUNT_PRF_T1_02_1: {  field: WD_COUNT_PRF_T1_02_1, units: "counts", gain: 1, measurement: XXX }
+    WD_COUNT_PRF_T1_10_1: {  field: WD_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: XXX }
+    WD_COUNT_PRF_T1_20_1: {  field: WD_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: XXX }
+    WD_COUNT_PRF_T1_25_1: {  field: WD_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: XXX }
+    WD_SD_VANE_AVG_T1_02_1: {  field: WD_SD_VANE_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_AVG_T1_10_1: {  field: WD_SD_VANE_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_AVG_T1_20_1: {  field: WD_SD_VANE_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_AVG_T1_25_1: {  field: WD_SD_VANE_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_AVG_T1_35_1: {  field: WD_SD_VANE_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_PRF_AVG_T1_2_1: {  field: WD_SD_VANE_PRF_AVG_T1_2_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_PRF_AVG_T1_02_1: {  field: WD_SD_VANE_PRF_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_PRF_AVG_T1_10_1: {  field: WD_SD_VANE_PRF_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_PRF_AVG_T1_20_1: {  field: WD_SD_VANE_PRF_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_PRF_AVG_T1_25_1: {  field: WD_SD_VANE_PRF_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
+    WD_SD_VANE_PRF_AVG_T1_35_1: {  field: WD_SD_VANE_PRF_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_AVG_T1_02_1: {  field: WD_VANE_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_AVG_T1_10_1: {  field: WD_VANE_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_AVG_T1_20_1: {  field: WD_VANE_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_AVG_T1_25_1: {  field: WD_VANE_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_AVG_T1_35_1: {  field: WD_VANE_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_NABEL_AVG_T1_35_2: {  field: WD_VANE_NABEL_AVG_T1_35_2, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_AVG_T1_2_1: {  field: WD_VANE_PRF_AVG_T1_2_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_AVG_T1_02_1: {  field: WD_VANE_PRF_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_AVG_T1_10_1: {  field: WD_VANE_PRF_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_AVG_T1_20_1: {  field: WD_VANE_PRF_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_AVG_T1_25_1: {  field: WD_VANE_PRF_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_AVG_T1_35_1: {  field: WD_VANE_PRF_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_AVG_T1_35_1.1: {  field: WD_VANE_PRF_AVG_T1_35_1.1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_SD_T1_02_1: {  field: WD_VANE_PRF_SD_T1_02_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_SD_T1_10_1: {  field: WD_VANE_PRF_SD_T1_10_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_SD_T1_20_1: {  field: WD_VANE_PRF_SD_T1_20_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_SD_T1_25_1: {  field: WD_VANE_PRF_SD_T1_25_1, units: "deg", gain: 1, measurement: XXX }
+    WD_VANE_PRF_SD_T1_35_1: {  field: WD_VANE_PRF_SD_T1_35_1, units: "deg", gain: 1, measurement: XXX }
+    WD_WiSoGILL_PRF_AVG_T1_10_1: {  field: WD_WiSoGILL_PRF_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
+    WD_WiSoGILL_PRF_AVG_T1_20_1: {  field: WD_WiSoGILL_PRF_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
+    WD_WiSoGILL_PRF_AVG_T1_25_1: {  field: WD_WiSoGILL_PRF_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
+    WD_WiSoGILL_PRF_AVG_T2_01_1: {  field: WD_WiSoGILL_PRF_AVG_T2_01_1, units: "deg", gain: 1, measurement: XXX }
+    WD_WiSoGILL_PRF_AVG_T2_02_1: {  field: WD_WiSoGILL_PRF_AVG_T2_02_1, units: "deg", gain: 1, measurement: XXX }
+    WIGE: {  field: WIGE, units: "m s-1", gain: 1, measurement: XXX }
+    WIRI: {  field: WIRI, units: "deg", gain: 1, measurement: XXX }
     WP_AVG_FF0_0.05_1: {  field: WP_AVG_FF0_0.05_1, units: "kPa", gain: 1, measurement: XXX }
     WP_AVG_FF0_0.15_1: {  field: WP_AVG_FF0_0.15_1, units: "kPa", gain: 1, measurement: XXX }
     WP_AVG_FF0_0.45_1: {  field: WP_AVG_FF0_0.45_1, units: "kPa", gain: 1, measurement: XXX }
     WP_AVG_FF0_201_1: {  field: WP_AVG_FF0_201_1, units: "kPa", gain: 1, measurement: XXX }
     WP_AVG_FF0_201_2: {  field: WP_AVG_FF0_201_2, units: "kPa", gain: 1, measurement: XXX }
     WP_AVG_FF0_201_3: {  field: WP_AVG_FF0_201_3, units: "kPa", gain: 1, measurement: XXX }
-    WS_CUP_NABEL_AVG_T1_35_2: {  field: WS_CUP_NABEL_AVG_T1_35_2, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_2_1: {  field: WS_CUP_SCALAR_AVG_T1_2_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_02_1: {  field: WS_CUP_SCALAR_AVG_T1_02_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_10_1: {  field: WS_CUP_SCALAR_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_20_1: {  field: WS_CUP_SCALAR_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_25_1: {  field: WS_CUP_SCALAR_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_35_1: {  field: WS_CUP_SCALAR_AVG_T1_35_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_2_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_2_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_02_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_02_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_10_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_20_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_25_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_35_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_35_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_02_1: {  field: WS_CUP_VECTOR_AVG_T1_02_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_10_1: {  field: WS_CUP_VECTOR_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_20_1: {  field: WS_CUP_VECTOR_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_25_1: {  field: WS_CUP_VECTOR_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_35_1: {  field: WS_CUP_VECTOR_AVG_T1_35_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_2_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_2_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_02_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_02_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_10_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_20_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_25_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_35_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_35_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_MAX_NABEL_AVG_T1_35_2: {  field: WS_MAX_NABEL_AVG_T1_35_2, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_AVG_T1_02_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_AVG_T1_35_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_02_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_35_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_02_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_35_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_01_1: {  field: WS_SCALAR_COUNT_PRF_T1_01_1, units: --, gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_02_1: {  field: WS_SCALAR_COUNT_PRF_T1_02_1, units: --, gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_10_1: {  field: WS_SCALAR_COUNT_PRF_T1_10_1, units: --, gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_20_1: {  field: WS_SCALAR_COUNT_PRF_T1_20_1, units: --, gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_25_1: {  field: WS_SCALAR_COUNT_PRF_T1_25_1, units: --, gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_01_1: {  field: WS_VECTOR_COUNT_PRF_T1_01_1, units: --, gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_02_1: {  field: WS_VECTOR_COUNT_PRF_T1_02_1, units: --, gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_10_1: {  field: WS_VECTOR_COUNT_PRF_T1_10_1, units: --, gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_20_1: {  field: WS_VECTOR_COUNT_PRF_T1_20_1, units: --, gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_25_1: {  field: WS_VECTOR_COUNT_PRF_T1_25_1, units: --, gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T1_10_1: {  field: WS_WiSoGILL_PRF_AVG_T1_10_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T1_20_1: {  field: WS_WiSoGILL_PRF_AVG_T1_20_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T1_25_1: {  field: WS_WiSoGILL_PRF_AVG_T1_25_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T2_01_1: {  field: WS_WiSoGILL_PRF_AVG_T2_01_1, units: m+1s-1, gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T2_02_1: {  field: WS_WiSoGILL_PRF_AVG_T2_02_1, units: m+1s-1, gain: 1, measurement: XXX }
+    WS_CUP_NABEL_AVG_T1_35_2: {  field: WS_CUP_NABEL_AVG_T1_35_2, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_AVG_T1_2_1: {  field: WS_CUP_SCALAR_AVG_T1_2_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_AVG_T1_02_1: {  field: WS_CUP_SCALAR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_AVG_T1_10_1: {  field: WS_CUP_SCALAR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_AVG_T1_20_1: {  field: WS_CUP_SCALAR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_AVG_T1_25_1: {  field: WS_CUP_SCALAR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_AVG_T1_35_1: {  field: WS_CUP_SCALAR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_PRF_AVG_T1_2_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_2_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_PRF_AVG_T1_02_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_PRF_AVG_T1_10_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_PRF_AVG_T1_20_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_PRF_AVG_T1_25_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_SCALAR_PRF_AVG_T1_35_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_AVG_T1_02_1: {  field: WS_CUP_VECTOR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_AVG_T1_10_1: {  field: WS_CUP_VECTOR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_AVG_T1_20_1: {  field: WS_CUP_VECTOR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_AVG_T1_25_1: {  field: WS_CUP_VECTOR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_AVG_T1_35_1: {  field: WS_CUP_VECTOR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_PRF_AVG_T1_2_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_2_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_PRF_AVG_T1_02_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_PRF_AVG_T1_10_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_PRF_AVG_T1_20_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_PRF_AVG_T1_25_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_CUP_VECTOR_PRF_AVG_T1_35_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_MAX_NABEL_AVG_T1_35_2: {  field: WS_MAX_NABEL_AVG_T1_35_2, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_SCALAR_COUNT_PRF_T1_01_1: {  field: WS_SCALAR_COUNT_PRF_T1_01_1, units: "counts", gain: 1, measurement: XXX }
+    WS_SCALAR_COUNT_PRF_T1_02_1: {  field: WS_SCALAR_COUNT_PRF_T1_02_1, units: "counts", gain: 1, measurement: XXX }
+    WS_SCALAR_COUNT_PRF_T1_10_1: {  field: WS_SCALAR_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: XXX }
+    WS_SCALAR_COUNT_PRF_T1_20_1: {  field: WS_SCALAR_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: XXX }
+    WS_SCALAR_COUNT_PRF_T1_25_1: {  field: WS_SCALAR_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: XXX }
+    WS_VECTOR_COUNT_PRF_T1_01_1: {  field: WS_VECTOR_COUNT_PRF_T1_01_1, units: "counts", gain: 1, measurement: XXX }
+    WS_VECTOR_COUNT_PRF_T1_02_1: {  field: WS_VECTOR_COUNT_PRF_T1_02_1, units: "counts", gain: 1, measurement: XXX }
+    WS_VECTOR_COUNT_PRF_T1_10_1: {  field: WS_VECTOR_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: XXX }
+    WS_VECTOR_COUNT_PRF_T1_20_1: {  field: WS_VECTOR_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: XXX }
+    WS_VECTOR_COUNT_PRF_T1_25_1: {  field: WS_VECTOR_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: XXX }
+    WS_WiSoGILL_PRF_AVG_T1_10_1: {  field: WS_WiSoGILL_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_WiSoGILL_PRF_AVG_T1_20_1: {  field: WS_WiSoGILL_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_WiSoGILL_PRF_AVG_T1_25_1: {  field: WS_WiSoGILL_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_WiSoGILL_PRF_AVG_T2_01_1: {  field: WS_WiSoGILL_PRF_AVG_T2_01_1, units: "m s-1", gain: 1, measurement: XXX }
+    WS_WiSoGILL_PRF_AVG_T2_02_1: {  field: WS_WiSoGILL_PRF_AVG_T2_02_1, units: "m s-1", gain: 1, measurement: XXX }
     
     

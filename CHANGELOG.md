@@ -15,6 +15,7 @@
 - Assigned units `km` to all `LSD` variables
 - Assigned units `mV` to all `LW_IN_RAW`, `LW_OUT_RAW`, `LW_IN_IU` and `LW_OUT_IU` variables
 - Assigned units `g s-1` to all `SAPFLOW` variables
+- `BAND` variables are asssumed to be band dendrometers `DENDRO_BAND`
 
 ## 20240913 | 13 Sep 2024
 

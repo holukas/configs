@@ -32,8 +32,8 @@ DAV11-RAW-TBL1-201108250000-TOA5-DAT-10MIN:
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    Band_147_Avg: { field: BAND_TREE147_1_1, units: false, measurement: BAND }
-    Band_148_Avg: { field: BAND_TREE148_1_1, units: false, measurement: BAND }
+    Band_147_Avg: { field: DENDRO_BAND_TREE147_1_1, units: "um", measurement: BOLE }
+    Band_148_Avg: { field: DENDRO_BAND_TREE148_1_1, units: "um", measurement: BOLE }
     Batt_Volt_Avg: { field: BV_FF0_0_1, units: false, measurement: _instrumentmetrics }
     BodenFeu05_Avg: { field: SWC_FF0_0.05_1, units: "%", gain: 100.0, measurement: SWC }
     BodenFeu15_Avg: { field: SWC_FF0_0.15_1, units: "%", gain: 100.0, measurement: SWC }

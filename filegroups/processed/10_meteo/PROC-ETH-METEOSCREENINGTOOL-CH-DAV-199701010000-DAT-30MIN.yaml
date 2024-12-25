@@ -37,370 +37,370 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     AW_OUT_AVG_T1_35_2: {  field: AW_OUT_T1_35_2, units: "W m-2", gain: 1, measurement: SW }
     Band_147_Avg: {  field: DENDRO_BAND_TREE147_1_1, units: "um", gain: 1, measurement: BOLE }
     Band_148_Avg: {  field: DENDRO_BAND_TREE148_1_1, units: "um", gain: 1, measurement: BOLE }
-    Band_Rock_Avg: {  field: DENDRO_BAND_ROCK_0_1, units: "um", gain: 1, measurement: BOLE }
-    Batt_V: {  field: Batt_V, units: "V", gain: 1, measurement: XXX }
-    BV_LOGGER_AVG_FF0_1_1: {  field: BV_LOGGER_AVG_FF0_1_1, units: "V", gain: 1, measurement: XXX }
-    BV_LOGGER_AVG_H1_1_1: {  field: BV_LOGGER_AVG_H1_1_1, units: "V", gain: 1, measurement: XXX }
-    BV_LOGGER_AVG_T1_35_1: {  field: BV_LOGGER_AVG_T1_35_1, units: "V", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_FF6_1_06: {  field: CO2_IRGA70_PRF_AVG_FF6_1_06, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_FF6_1_07: {  field: CO2_IRGA70_PRF_AVG_FF6_1_07, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_FF6_1_08: {  field: CO2_IRGA70_PRF_AVG_FF6_1_08, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_FF6_1_09: {  field: CO2_IRGA70_PRF_AVG_FF6_1_09, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_FF6_1_10: {  field: CO2_IRGA70_PRF_AVG_FF6_1_10, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_FF6_1_11: {  field: CO2_IRGA70_PRF_AVG_FF6_1_11, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_FF6_1_12: {  field: CO2_IRGA70_PRF_AVG_FF6_1_12, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_T1_2_1: {  field: CO2_IRGA70_PRF_AVG_T1_2_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_T1_10_1: {  field: CO2_IRGA70_PRF_AVG_T1_10_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_T1_20_1: {  field: CO2_IRGA70_PRF_AVG_T1_20_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_T1_25_1: {  field: CO2_IRGA70_PRF_AVG_T1_25_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA70_PRF_AVG_T1_35_1: {  field: CO2_IRGA70_PRF_AVG_T1_35_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_FF6_1_06: {  field: CO2_IRGA_PRF_AVG_FF6_1_06, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_FF6_1_07: {  field: CO2_IRGA_PRF_AVG_FF6_1_07, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_FF6_1_08: {  field: CO2_IRGA_PRF_AVG_FF6_1_08, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_FF6_1_09: {  field: CO2_IRGA_PRF_AVG_FF6_1_09, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_FF6_1_10: {  field: CO2_IRGA_PRF_AVG_FF6_1_10, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_FF6_1_11: {  field: CO2_IRGA_PRF_AVG_FF6_1_11, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_FF6_1_12: {  field: CO2_IRGA_PRF_AVG_FF6_1_12, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_T1_2_1: {  field: CO2_IRGA_PRF_AVG_T1_2_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_T1_02_1: {  field: CO2_IRGA_PRF_AVG_T1_02_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_T1_10_1: {  field: CO2_IRGA_PRF_AVG_T1_10_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_T1_20_1: {  field: CO2_IRGA_PRF_AVG_T1_20_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_T1_25_1: {  field: CO2_IRGA_PRF_AVG_T1_25_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_IRGA_PRF_AVG_T1_35_1: {  field: CO2_IRGA_PRF_AVG_T1_35_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE147_1_1: {  field: CO2_STEM_AVG_TREE147_1_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE147_9_1: {  field: CO2_STEM_AVG_TREE147_9_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE147Soil_0_1: {  field: CO2_STEM_AVG_TREE147Soil_0_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE148_1_1: {  field: CO2_STEM_AVG_TREE148_1_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE296_1_1: {  field: CO2_STEM_AVG_TREE296_1_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE296_9_1: {  field: CO2_STEM_AVG_TREE296_9_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE296_1.5_1: {  field: CO2_STEM_AVG_TREE296_1.5_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE296Soil_0_1: {  field: CO2_STEM_AVG_TREE296Soil_0_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE411_1_1: {  field: CO2_STEM_AVG_TREE411_1_1, units: "%", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE411_6_1: {  field: CO2_STEM_AVG_TREE411_6_1, units: "ppm", gain: 1, measurement: XXX }
-    CO2_STEM_AVG_TREE411_9_1: {  field: CO2_STEM_AVG_TREE411_9_1, units: "%", gain: 1, measurement: XXX }
-    DENDRO_BAND_AVG_ROCK_1_1: {  field: DENDRO_BAND_AVG_ROCK_1_1, units: "um", gain: 1, measurement: XXX }
-    DENDRO_BAND_AVG_TREE147_1.3_1: {  field: DENDRO_BAND_AVG_TREE147_1.3_1, units: "um", gain: 1, measurement: XXX }
-    DENDRO_BAND_AVG_TREE148_1.3_1: {  field: DENDRO_BAND_AVG_TREE148_1.3_1, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_EMPTY_1_13: {  field: DENDRO_POINT_AVG_EMPTY_1_13, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_EMPTY_1_14: {  field: DENDRO_POINT_AVG_EMPTY_1_14, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_EMPTY_1_15: {  field: DENDRO_POINT_AVG_EMPTY_1_15, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_EMPTY_1_16: {  field: DENDRO_POINT_AVG_EMPTY_1_16, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_EMPTY_1_17: {  field: DENDRO_POINT_AVG_EMPTY_1_17, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_EMPTY_1_18: {  field: DENDRO_POINT_AVG_EMPTY_1_18, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE1_1_7: {  field: DENDRO_POINT_AVG_TREE1_1_7, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE30_1_10: {  field: DENDRO_POINT_AVG_TREE30_1_10, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE34_1_8: {  field: DENDRO_POINT_AVG_TREE34_1_8, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE37_1_4: {  field: DENDRO_POINT_AVG_TREE37_1_4, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE147_1_2: {  field: DENDRO_POINT_AVG_TREE147_1_2, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE148_1_3: {  field: DENDRO_POINT_AVG_TREE148_1_3, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE150_1_1: {  field: DENDRO_POINT_AVG_TREE150_1_1, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE296_1_5: {  field: DENDRO_POINT_AVG_TREE296_1_5, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE410_1_9: {  field: DENDRO_POINT_AVG_TREE410_1_9, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE410Xylem_1_11: {  field: DENDRO_POINT_AVG_TREE410Xylem_1_11, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE411N_1_1: {  field: DENDRO_POINT_AVG_TREE411N_1_1, units: "um", gain: 1, measurement: XXX }
-    DENDRO_POINT_AVG_TREE411RootS_1_12: {  field: DENDRO_POINT_AVG_TREE411RootS_1_12, units: "um", gain: 1, measurement: XXX }
-    G_AVG_FF1_0.06_1: {  field: G_AVG_FF1_0.06_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF1_0.06_1.1: {  field: G_AVG_FF1_0.06_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF2_0.06_1: {  field: G_AVG_FF2_0.06_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF2_0.06_1.1: {  field: G_AVG_FF2_0.06_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF3_0.05_1: {  field: G_AVG_FF3_0.05_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF3_0.05_1.1: {  field: G_AVG_FF3_0.05_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF4_0.05_1: {  field: G_AVG_FF4_0.05_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF4_0.05_1.1: {  field: G_AVG_FF4_0.05_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF5_0.05_1: {  field: G_AVG_FF5_0.05_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF5_0.05_1.1: {  field: G_AVG_FF5_0.05_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    G_AVG_FF0_0.02_1: {  field: G_AVG_FF0_0.02_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_STD_FF1_0.06_1: {  field: G_STD_FF1_0.06_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_STD_FF2_0.06_1: {  field: G_STD_FF2_0.06_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_STD_FF3_0.05_1: {  field: G_STD_FF3_0.05_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_STD_FF4_0.05_1: {  field: G_STD_FF4_0.05_1, units: "W m-2", gain: 1, measurement: XXX }
-    G_STD_FF5_0.05_1: {  field: G_STD_FF5_0.05_1, units: "W m-2", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_FF6_1_06: {  field: H2O_IRGA70_PRF_AVG_FF6_1_06, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_FF6_1_07: {  field: H2O_IRGA70_PRF_AVG_FF6_1_07, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_FF6_1_08: {  field: H2O_IRGA70_PRF_AVG_FF6_1_08, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_FF6_1_09: {  field: H2O_IRGA70_PRF_AVG_FF6_1_09, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_FF6_1_10: {  field: H2O_IRGA70_PRF_AVG_FF6_1_10, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_FF6_1_11: {  field: H2O_IRGA70_PRF_AVG_FF6_1_11, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_FF6_1_12: {  field: H2O_IRGA70_PRF_AVG_FF6_1_12, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_T1_2_1: {  field: H2O_IRGA70_PRF_AVG_T1_2_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_T1_10_1: {  field: H2O_IRGA70_PRF_AVG_T1_10_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_T1_20_1: {  field: H2O_IRGA70_PRF_AVG_T1_20_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_T1_25_1: {  field: H2O_IRGA70_PRF_AVG_T1_25_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA70_PRF_AVG_T1_35_1: {  field: H2O_IRGA70_PRF_AVG_T1_35_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_FF6_1_06: {  field: H2O_IRGA_PRF_AVG_FF6_1_06, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_FF6_1_07: {  field: H2O_IRGA_PRF_AVG_FF6_1_07, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_FF6_1_08: {  field: H2O_IRGA_PRF_AVG_FF6_1_08, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_FF6_1_09: {  field: H2O_IRGA_PRF_AVG_FF6_1_09, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_FF6_1_10: {  field: H2O_IRGA_PRF_AVG_FF6_1_10, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_FF6_1_11: {  field: H2O_IRGA_PRF_AVG_FF6_1_11, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_FF6_1_12: {  field: H2O_IRGA_PRF_AVG_FF6_1_12, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_T1_2_1: {  field: H2O_IRGA_PRF_AVG_T1_2_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_T1_10_1: {  field: H2O_IRGA_PRF_AVG_T1_10_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_T1_20_1: {  field: H2O_IRGA_PRF_AVG_T1_20_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_T1_25_1: {  field: H2O_IRGA_PRF_AVG_T1_25_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    H2O_IRGA_PRF_AVG_T1_35_1: {  field: H2O_IRGA_PRF_AVG_T1_35_1, units: "mmol mol-1", gain: 1, measurement: XXX }
-    HEAT_HS50_T1B1_35_1_FLAG: {  field: HEAT_HS50_T1B1_35_1_FLAG, units: false, gain: 1, measurement: XXX }
-    HEAT_LI72_T1B1_35_1_FLAG: {  field: HEAT_LI72_T1B1_35_1_FLAG, units: false, gain: 1, measurement: XXX }
-    HEAT_R350_T1B1_35_1_FLAG: {  field: HEAT_R350_T1B1_35_1_FLAG, units: false, gain: 1, measurement: XXX }
-    LW_IN_AVG_T1_35_1: {  field: LW_IN_AVG_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    LW_IN_AVG_T1_35_1.1: {  field: LW_IN_AVG_T1_35_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    LW_IN_STD_T1_35_1: {  field: LW_IN_STD_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    LW_OUT_AVG_T1_35_1: {  field: LW_OUT_AVG_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    LW_OUT_AVG_T1_35_1.1: {  field: LW_OUT_AVG_T1_35_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    LW_OUT_STD_T1_35_1: {  field: LW_OUT_STD_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    NETRAD_AVG_T1_35_1: {  field: NETRAD_AVG_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    NETRAD_NABEL_AVG_T1_35_2: {  field: NETRAD_NABEL_AVG_T1_35_2, units: "W m-2", gain: 1, measurement: XXX }
-    P_CELL_IRGA62_PRF_AVG_T1_35_1: {  field: P_CELL_IRGA62_PRF_AVG_T1_35_1, units: "kPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: P_CELL_IRGA70_PRF_AVG_FF6_1_06, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: P_CELL_IRGA70_PRF_AVG_FF6_1_07, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: P_CELL_IRGA70_PRF_AVG_FF6_1_08, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: P_CELL_IRGA70_PRF_AVG_FF6_1_09, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: P_CELL_IRGA70_PRF_AVG_FF6_1_10, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: P_CELL_IRGA70_PRF_AVG_FF6_1_11, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: P_CELL_IRGA70_PRF_AVG_FF6_1_12, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: P_CELL_IRGA70_PRF_AVG_T1_2_1, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: P_CELL_IRGA70_PRF_AVG_T1_02_1, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: P_CELL_IRGA70_PRF_AVG_T1_10_1, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: P_CELL_IRGA70_PRF_AVG_T1_20_1, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: P_CELL_IRGA70_PRF_AVG_T1_25_1, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: P_CELL_IRGA70_PRF_AVG_T1_35_1, units: "hPa", gain: 1, measurement: XXX }
-    P_CELL_IRGA_PRF_AVG_T1_1_1: {  field: P_CELL_IRGA_PRF_AVG_T1_1_1, units: "hPa", gain: 1, measurement: XXX }
-    P_Hum_1m_AVG: {  field: P_Hum_1m_AVG, units: "%", gain: 1, measurement: XXX }
-    P_Hum_2m_AVG: {  field: P_Hum_2m_AVG, units: "%", gain: 1, measurement: XXX }
-    P_Hum_10m_AVG: {  field: P_Hum_10m_AVG, units: "%", gain: 1, measurement: XXX }
-    P_Hum_20m_AVG: {  field: P_Hum_20m_AVG, units: "%", gain: 1, measurement: XXX }
-    P_Hum_25m_AVG: {  field: P_Hum_25m_AVG, units: "%", gain: 1, measurement: XXX }
-    P_Hum_35m_AVG: {  field: P_Hum_35m_AVG, units: "%", gain: 1, measurement: XXX }
-    P_Temp_1m_AVG: {  field: P_Temp_1m_AVG, units: "degC", gain: 1, measurement: XXX }
-    P_Temp_2m_AVG: {  field: P_Temp_2m_AVG, units: "degC", gain: 1, measurement: XXX }
-    P_Temp_10m_AVG: {  field: P_Temp_10m_AVG, units: "degC", gain: 1, measurement: XXX }
-    P_Temp_20m_AVG: {  field: P_Temp_20m_AVG, units: "degC", gain: 1, measurement: XXX }
-    P_Temp_25m_AVG: {  field: P_Temp_25m_AVG, units: "degC", gain: 1, measurement: XXX }
-    P_Temp_35m_AVG: {  field: P_Temp_35m_AVG, units: "degC", gain: 1, measurement: XXX }
-    PA_AVG_H1_2_1: {  field: PA_AVG_H1_2_1, units: "hPa", gain: 1, measurement: XXX }
-    PA_AVG_H1_2_1.1: {  field: PA_AVG_H1_2_1.1, units: "hPa", gain: 1, measurement: XXX }
-    PA_AVG_T1_35_1: {  field: PA_AVG_T1_35_1, units: "hPa", gain: 1, measurement: XXX }
-    PA_NABEL_AVG_H1_2_2: {  field: PA_NABEL_AVG_H1_2_2, units: "hPa", gain: 1, measurement: XXX }
-    PPFD_BULB_AVG_T1_35_1: {  field: PPFD_BULB_AVG_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: XXX }
-    PPFD_IN_AVG_T1_35_1: {  field: PPFD_IN_AVG_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: XXX }
-    PPFD_IN_AVG_T1_35_2: {  field: PPFD_IN_AVG_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: XXX }
-    PPFD_IN_STD_T1_35_2: {  field: PPFD_IN_STD_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: XXX }
-    PPFD_OUT_AVG_T1_35_1: {  field: PPFD_OUT_AVG_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: XXX }
-    PPFD_OUT_STD_T1_35_1: {  field: PPFD_OUT_STD_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: XXX }
-    PPFD_VBULB_AVG_T1_35_1: {  field: PPFD_VBULB_AVG_T1_35_1, units: "V", gain: 1, measurement: XXX }
-    PPFD_VIN_AVG_T1_35_1: {  field: PPFD_VIN_AVG_T1_35_1, units: "V", gain: 1, measurement: XXX }
-    PREC_NABEL_TOT_T1_25_2: {  field: PREC_NABEL_TOT_T1_25_2, units: "mm", gain: 1, measurement: XXX }
-    PREC_TOT_T1_25_1: {  field: PREC_TOT_T1_25_1, units: "mm", gain: 1, measurement: XXX }
-    Rad_Batt_V: {  field: Rad_Batt_V, units: "V", gain: 1, measurement: XXX }
-    RECORD: {  field: RECORD, units: --, gain: 1, measurement: XXX }
-    RH_AVG_T1_10_1: {  field: RH_AVG_T1_10_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T1_10_1.1: {  field: RH_AVG_T1_10_1.1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T1_20_1: {  field: RH_AVG_T1_20_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T1_20_1.1: {  field: RH_AVG_T1_20_1.1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T1_25_1: {  field: RH_AVG_T1_25_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T1_25_1.1: {  field: RH_AVG_T1_25_1.1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T1_35_1: {  field: RH_AVG_T1_35_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T1_35_1.1: {  field: RH_AVG_T1_35_1.1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T2_1_1: {  field: RH_AVG_T2_1_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T2_01_1: {  field: RH_AVG_T2_01_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T2_01_1.1: {  field: RH_AVG_T2_01_1.1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T2_2_1: {  field: RH_AVG_T2_2_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T2_02_1: {  field: RH_AVG_T2_02_1, units: "%", gain: 1, measurement: XXX }
-    RH_AVG_T2_02_1.1: {  field: RH_AVG_T2_02_1.1, units: "%", gain: 1, measurement: XXX }
-    RH_COUNT_T1_10_1: {  field: RH_COUNT_T1_10_1, units: "counts", gain: 1, measurement: XXX }
-    RH_COUNT_T1_20_1: {  field: RH_COUNT_T1_20_1, units: "counts", gain: 1, measurement: XXX }
-    RH_COUNT_T1_25_1: {  field: RH_COUNT_T1_25_1, units: "counts", gain: 1, measurement: XXX }
-    RH_COUNT_T1_35_1: {  field: RH_COUNT_T1_35_1, units: "counts", gain: 1, measurement: XXX }
-    RH_COUNT_T2_01_1: {  field: RH_COUNT_T2_01_1, units: "counts", gain: 1, measurement: XXX }
-    RH_COUNT_T2_02_1: {  field: RH_COUNT_T2_02_1, units: "counts", gain: 1, measurement: XXX }
-    RH_NABEL_AVG_T1_35_2: {  field: RH_NABEL_AVG_T1_35_2, units: "%", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE1N_1_1: {  field: SAPFLOW_AVG_TREE1N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE1S_1_1: {  field: SAPFLOW_AVG_TREE1S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE30N_1_1: {  field: SAPFLOW_AVG_TREE30N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE30S_1_1: {  field: SAPFLOW_AVG_TREE30S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE33N_1_1: {  field: SAPFLOW_AVG_TREE33N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE33S_1_1: {  field: SAPFLOW_AVG_TREE33S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE34N_1_1: {  field: SAPFLOW_AVG_TREE34N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE34S_1_1: {  field: SAPFLOW_AVG_TREE34S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE37N_1_1: {  field: SAPFLOW_AVG_TREE37N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE37S_1_1: {  field: SAPFLOW_AVG_TREE37S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE147N_1_1: {  field: SAPFLOW_AVG_TREE147N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE147S_1_1: {  field: SAPFLOW_AVG_TREE147S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE148N_1_1: {  field: SAPFLOW_AVG_TREE148N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE148S_1_1: {  field: SAPFLOW_AVG_TREE148S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE150N_1_1: {  field: SAPFLOW_AVG_TREE150N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE150S_1_1: {  field: SAPFLOW_AVG_TREE150S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE296N_1_1: {  field: SAPFLOW_AVG_TREE296N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE296S_1_1: {  field: SAPFLOW_AVG_TREE296S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE411N_1_1: {  field: SAPFLOW_AVG_TREE411N_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SAPFLOW_AVG_TREE411S_1_1: {  field: SAPFLOW_AVG_TREE411S_1_1, units: "g s-1", gain: 1, measurement: XXX }
-    SV_LOGGER_FF1_0_1: {  field: SV_LOGGER_FF1_0_1, units: "V", gain: 1, measurement: XXX }
-    SV_LOGGER_FF2_0_1: {  field: SV_LOGGER_FF2_0_1, units: "V", gain: 1, measurement: XXX }
-    SV_LOGGER_FF3_0_1: {  field: SV_LOGGER_FF3_0_1, units: "V", gain: 1, measurement: XXX }
-    SV_LOGGER_FF4_0_1: {  field: SV_LOGGER_FF4_0_1, units: "V", gain: 1, measurement: XXX }
-    SV_LOGGER_FF5_0_1: {  field: SV_LOGGER_FF5_0_1, units: "V", gain: 1, measurement: XXX }
-    SV_LOGGER_T1_35_1: {  field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: XXX }
-    SV_WIND_AVG_T1_1_1: {  field: SV_WIND_AVG_T1_1_1, units: "V", gain: 1, measurement: XXX }
-    SV_WIND_AVG_T1_35_1: {  field: SV_WIND_AVG_T1_35_1, units: "V", gain: 1, measurement: XXX }
-    SW_IN_AVG_T1_35_1: {  field: SW_IN_AVG_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    SW_IN_AVG_T1_35_1.1: {  field: SW_IN_AVG_T1_35_1.1, units: "W m-2", gain: 1, measurement: XXX }
-    SW_IN_AVG_T1_35_1.2: {  field: SW_IN_AVG_T1_35_1.2, units: "W m-2", gain: 1, measurement: XXX }
-    SW_IN_NABEL_AVG_T1_35_2: {  field: SW_IN_NABEL_AVG_T1_35_2, units: "W m-2", gain: 1, measurement: XXX }
-    SW_IN_STD_T1_35_1: {  field: SW_IN_STD_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    SW_OUT_AVG_T1_35_1: {  field: SW_OUT_AVG_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    SW_OUT_STD_T1_35_1: {  field: SW_OUT_STD_T1_35_1, units: "W m-2", gain: 1, measurement: XXX }
-    SWC_AVG_FF1_0.5_1: {  field: SWC_AVG_FF1_0.5_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF1_0.8_1: {  field: SWC_AVG_FF1_0.8_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF1_0.15_1: {  field: SWC_AVG_FF1_0.15_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF2_0.5_1: {  field: SWC_AVG_FF2_0.5_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF2_0.8_1: {  field: SWC_AVG_FF2_0.8_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF2_0.15_1: {  field: SWC_AVG_FF2_0.15_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF3_0.5_1: {  field: SWC_AVG_FF3_0.5_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF3_0.8_1: {  field: SWC_AVG_FF3_0.8_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF3_0.15_1: {  field: SWC_AVG_FF3_0.15_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF4_0.5_1: {  field: SWC_AVG_FF4_0.5_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF4_0.8_1: {  field: SWC_AVG_FF4_0.8_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF4_0.15_1: {  field: SWC_AVG_FF4_0.15_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_0.5_1: {  field: SWC_AVG_FF0_0.5_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_0.05_1: {  field: SWC_AVG_FF0_0.05_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_0.15_1: {  field: SWC_AVG_FF0_0.15_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_0.45_1: {  field: SWC_AVG_FF0_0.45_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_01_1: {  field: SWC_AVG_FF0_01_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_02_1: {  field: SWC_AVG_FF0_02_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_03_1: {  field: SWC_AVG_FF0_03_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_04_1: {  field: SWC_AVG_FF0_04_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_05_1: {  field: SWC_AVG_FF0_05_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_06_1: {  field: SWC_AVG_FF0_06_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_07_1: {  field: SWC_AVG_FF0_07_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_08_1: {  field: SWC_AVG_FF0_08_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_09_1: {  field: SWC_AVG_FF0_09_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_10_1: {  field: SWC_AVG_FF0_10_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_11_1: {  field: SWC_AVG_FF0_11_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_AVG_FF0_12_1: {  field: SWC_AVG_FF0_12_1, units: "Vol%", gain: 1, measurement: XXX }
-    SWC_FF1_005_1_AVG: {  field: SWC_FF1_005_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_005_1_STD: {  field: SWC_FF1_005_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_005_2_AVG: {  field: SWC_FF1_005_2_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_005_2_STD: {  field: SWC_FF1_005_2_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_010_1_AVG: {  field: SWC_FF1_010_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_010_1_STD: {  field: SWC_FF1_010_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_024_1_AVG: {  field: SWC_FF1_024_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_024_1_STD: {  field: SWC_FF1_024_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_050_1_AVG: {  field: SWC_FF1_050_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_050_1_STD: {  field: SWC_FF1_050_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_084_1_AVG: {  field: SWC_FF1_084_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF1_084_1_STD: {  field: SWC_FF1_084_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_004_2_AVG: {  field: SWC_FF2_004_2_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_004_2_STD: {  field: SWC_FF2_004_2_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_005_1_AVG: {  field: SWC_FF2_005_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_005_1_STD: {  field: SWC_FF2_005_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_010_1_AVG: {  field: SWC_FF2_010_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_010_1_STD: {  field: SWC_FF2_010_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_021_1_AVG: {  field: SWC_FF2_021_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_021_1_STD: {  field: SWC_FF2_021_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_050_1_AVG: {  field: SWC_FF2_050_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_050_1_STD: {  field: SWC_FF2_050_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_080_1_AVG: {  field: SWC_FF2_080_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF2_080_1_STD: {  field: SWC_FF2_080_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_005_1_AVG: {  field: SWC_FF3_005_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_005_1_STD: {  field: SWC_FF3_005_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_005_2_AVG: {  field: SWC_FF3_005_2_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_005_2_STD: {  field: SWC_FF3_005_2_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_010_1_AVG: {  field: SWC_FF3_010_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_010_1_STD: {  field: SWC_FF3_010_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_021_1_AVG: {  field: SWC_FF3_021_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_021_1_STD: {  field: SWC_FF3_021_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_052_1_AVG: {  field: SWC_FF3_052_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_052_1_STD: {  field: SWC_FF3_052_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_068_1_AVG: {  field: SWC_FF3_068_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF3_068_1_STD: {  field: SWC_FF3_068_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_005_1_AVG: {  field: SWC_FF4_005_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_005_1_STD: {  field: SWC_FF4_005_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_006_2_AVG: {  field: SWC_FF4_006_2_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_006_2_STD: {  field: SWC_FF4_006_2_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_010_1_AVG: {  field: SWC_FF4_010_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_010_1_STD: {  field: SWC_FF4_010_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_020_1_AVG: {  field: SWC_FF4_020_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_020_1_STD: {  field: SWC_FF4_020_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_049_1_AVG: {  field: SWC_FF4_049_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_049_1_STD: {  field: SWC_FF4_049_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_069_1_AVG: {  field: SWC_FF4_069_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF4_069_1_STD: {  field: SWC_FF4_069_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_006_1_AVG: {  field: SWC_FF5_006_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_006_1_STD: {  field: SWC_FF5_006_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_006_2_AVG: {  field: SWC_FF5_006_2_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_006_2_STD: {  field: SWC_FF5_006_2_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_010_1_AVG: {  field: SWC_FF5_010_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_010_1_STD: {  field: SWC_FF5_010_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_022_1_AVG: {  field: SWC_FF5_022_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_022_1_STD: {  field: SWC_FF5_022_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_050_1_AVG: {  field: SWC_FF5_050_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_050_1_STD: {  field: SWC_FF5_050_1_STD, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_079_1_AVG: {  field: SWC_FF5_079_1_AVG, units: "%", gain: 1, measurement: XXX }
-    SWC_FF5_079_1_STD: {  field: SWC_FF5_079_1_STD, units: "%", gain: 1, measurement: XXX }
-    T_BOLE_AVG_TREE148_1_1: {  field: T_BOLE_AVG_TREE148_1_1, units: "degC", gain: 1, measurement: XXX }
-    T_BOLE_AVG_TREE296_1_1: {  field: T_BOLE_AVG_TREE296_1_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA62_PRF_AVG_T1_35_1: {  field: T_CELL_IRGA62_PRF_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: T_CELL_IRGA70_PRF_AVG_FF6_1_06, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: T_CELL_IRGA70_PRF_AVG_FF6_1_07, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: T_CELL_IRGA70_PRF_AVG_FF6_1_08, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: T_CELL_IRGA70_PRF_AVG_FF6_1_09, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: T_CELL_IRGA70_PRF_AVG_FF6_1_10, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: T_CELL_IRGA70_PRF_AVG_FF6_1_11, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: T_CELL_IRGA70_PRF_AVG_FF6_1_12, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: T_CELL_IRGA70_PRF_AVG_T1_2_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: T_CELL_IRGA70_PRF_AVG_T1_02_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: T_CELL_IRGA70_PRF_AVG_T1_10_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: T_CELL_IRGA70_PRF_AVG_T1_20_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: T_CELL_IRGA70_PRF_AVG_T1_25_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: T_CELL_IRGA70_PRF_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_CELL_IRGA_PRF_AVG_T1_1_1: {  field: T_CELL_IRGA_PRF_AVG_T1_1_1, units: "degC", gain: 1, measurement: XXX }
-    T_CNR1_AVG_T1_35_1: {  field: T_CNR1_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_COOLER_AVG_H1_1_1: {  field: T_COOLER_AVG_H1_1_1, units: "degC", gain: 1, measurement: XXX }
-    T_HEATER_AVG_T1_35_1: {  field: T_HEATER_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_IDL_AVG_FF0_1_1: {  field: T_IDL_AVG_FF0_1_1, units: "degC", gain: 1, measurement: XXX }
-    T_IDL_AVG_H1_1_1: {  field: T_IDL_AVG_H1_1_1, units: "degC", gain: 1, measurement: XXX }
-    T_IDL_AVG_T1_35_1: {  field: T_IDL_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_AVG_FF0_1_1: {  field: T_LOGGER_AVG_FF0_1_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_AVG_T1_35_1: {  field: T_LOGGER_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_FF1_0_1: {  field: T_LOGGER_FF1_0_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_FF2_0_1: {  field: T_LOGGER_FF2_0_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_FF3_0_1: {  field: T_LOGGER_FF3_0_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_FF4_0_1: {  field: T_LOGGER_FF4_0_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_FF5_0_1: {  field: T_LOGGER_FF5_0_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_T1_35_1: {  field: T_LOGGER_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_LOGGER_T1_35_1.1: {  field: T_LOGGER_T1_35_1.1, units: "degC", gain: 1, measurement: XXX }
-    T_RAD_AVG_T1_35_1: {  field: T_RAD_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    T_RAD_STD_T1_35_1: {  field: T_RAD_STD_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_10_1: {  field: TA_AVG_T1_10_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_10_1.1: {  field: TA_AVG_T1_10_1.1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_20_1: {  field: TA_AVG_T1_20_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_20_1.1: {  field: TA_AVG_T1_20_1.1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_25_1: {  field: TA_AVG_T1_25_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_25_1.1: {  field: TA_AVG_T1_25_1.1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_35_1: {  field: TA_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T1_35_1.1: {  field: TA_AVG_T1_35_1.1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T2_1_1: {  field: TA_AVG_T2_1_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T2_01_1: {  field: TA_AVG_T2_01_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T2_01_1.1: {  field: TA_AVG_T2_01_1.1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T2_2_1: {  field: TA_AVG_T2_2_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T2_02_1: {  field: TA_AVG_T2_02_1, units: "degC", gain: 1, measurement: XXX }
-    TA_AVG_T2_02_1.1: {  field: TA_AVG_T2_02_1.1, units: "degC", gain: 1, measurement: XXX }
-    TA_COUNT_T1_10_1: {  field: TA_COUNT_T1_10_1, units: "counts", gain: 1, measurement: XXX }
-    TA_COUNT_T1_20_1: {  field: TA_COUNT_T1_20_1, units: "counts", gain: 1, measurement: XXX }
-    TA_COUNT_T1_25_1: {  field: TA_COUNT_T1_25_1, units: "counts", gain: 1, measurement: XXX }
-    TA_COUNT_T1_35_1: {  field: TA_COUNT_T1_35_1, units: "counts", gain: 1, measurement: XXX }
-    TA_COUNT_T2_01_1: {  field: TA_COUNT_T2_01_1, units: "counts", gain: 1, measurement: XXX }
-    TA_COUNT_T2_02_1: {  field: TA_COUNT_T2_02_1, units: "counts", gain: 1, measurement: XXX }
-    TA_HEAT_AVG_T1_35_1: {  field: TA_HEAT_AVG_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    TA_HEAT_AVG_T1_35_1.1: {  field: TA_HEAT_AVG_T1_35_1.1, units: "degC", gain: 1, measurement: XXX }
-    TA_HEAT_STD_T1_35_1: {  field: TA_HEAT_STD_T1_35_1, units: "degC", gain: 1, measurement: XXX }
-    TA_NABEL_AVG_T1_35_2: {  field: TA_NABEL_AVG_T1_35_2, units: "degC", gain: 1, measurement: XXX }
-    TIME_MEASUREMENT_H1_1_1: {  field: TIME_MEASUREMENT_H1_1_1, units: "s", gain: 1, measurement: XXX }
-    TLOGGER_FF1_0_1: {  field: TLOGGER_FF1_0_1, units: "degC", gain: 1, measurement: XXX }
-    TLOGGER_FF2_0_1: {  field: TLOGGER_FF2_0_1, units: "degC", gain: 1, measurement: XXX }
-    TLOGGER_FF3_0_1: {  field: TLOGGER_FF3_0_1, units: "degC", gain: 1, measurement: XXX }
-    TLOGGER_FF4_0_1: {  field: TLOGGER_FF4_0_1, units: "degC", gain: 1, measurement: XXX }
-    TLOGGER_FF5_0_1: {  field: TLOGGER_FF5_0_1, units: "degC", gain: 1, measurement: XXX }
+    Band_Rock_Avg: {  field: DENDRO_BAND_ROCK_1_1, units: "um", gain: 1, measurement: BOLE }
+    Batt_V: {  field: BV_FF0_1_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_LOGGER_AVG_FF0_1_1: {  field: BV_LOGGER_FF0_1_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_LOGGER_AVG_H1_1_1: {  field: BV_LOGGER_H1_1_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_LOGGER_AVG_T1_35_1: {  field: BV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    CO2_IRGA70_PRF_AVG_FF6_1_06: {  field: CO2_IRGA70_PRF_FF6_1_06, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_07: {  field: CO2_IRGA70_PRF_FF6_1_07, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_08: {  field: CO2_IRGA70_PRF_FF6_1_08, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_09: {  field: CO2_IRGA70_PRF_FF6_1_09, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_10: {  field: CO2_IRGA70_PRF_FF6_1_10, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_11: {  field: CO2_IRGA70_PRF_FF6_1_11, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_12: {  field: CO2_IRGA70_PRF_FF6_1_12, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_2_1: {  field: CO2_IRGA70_PRF_T1_2_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_10_1: {  field: CO2_IRGA70_PRF_T1_10_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_20_1: {  field: CO2_IRGA70_PRF_T1_20_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_25_1: {  field: CO2_IRGA70_PRF_T1_25_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_35_1: {  field: CO2_IRGA70_PRF_T1_35_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_FF6_1_06: {  field: CO2_IRGA_PRF_FF6_1_06, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_FF6_1_07: {  field: CO2_IRGA_PRF_FF6_1_07, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_FF6_1_08: {  field: CO2_IRGA_PRF_FF6_1_08, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_FF6_1_09: {  field: CO2_IRGA_PRF_FF6_1_09, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_FF6_1_10: {  field: CO2_IRGA_PRF_FF6_1_10, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_FF6_1_11: {  field: CO2_IRGA_PRF_FF6_1_11, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_FF6_1_12: {  field: CO2_IRGA_PRF_FF6_1_12, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_T1_2_1: {  field: CO2_IRGA_PRF_T1_2_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_T1_02_1: {  field: CO2_IRGA_PRF_T1_2_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_T1_10_1: {  field: CO2_IRGA_PRF_T1_10_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_T1_20_1: {  field: CO2_IRGA_PRF_T1_20_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_T1_25_1: {  field: CO2_IRGA_PRF_T1_25_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA_PRF_AVG_T1_35_1: {  field: CO2_IRGA_PRF_T1_35_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_STEM_AVG_TREE147_1_1: {  field: CO2_BOLE_TREE147_1_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE147_9_1: {  field: CO2_BOLE_TREE147_9_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE147Soil_0_1: {  field: CO2_BOLE_TREE147_0_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE148_1_1: {  field: CO2_BOLE_TREE148_1_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE296_1_1: {  field: CO2_BOLE_TREE296_1_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE296_9_1: {  field: CO2_BOLE_TREE296_9_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE296_1.5_1: {  field: CO2_BOLE_TREE296_1.5_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE296Soil_0_1: {  field: CO2_BOLE_TREE296_0_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE411_1_1: {  field: CO2_BOLE_TREE411_1_1, units: "%", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE411_6_1: {  field: CO2_BOLE_TREE411_6_1, units: "ppm", gain: 1, measurement: BOLE }
+    CO2_STEM_AVG_TREE411_9_1: {  field: CO2_BOLE_TREE411_9_1, units: "%", gain: 1, measurement: BOLE }
+    DENDRO_BAND_AVG_ROCK_1_1: {  field: DENDRO_BAND_ROCK_1_1, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_BAND_AVG_TREE147_1.3_1: {  field: DENDRO_BAND_TREE147_1.3_1, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_BAND_AVG_TREE148_1.3_1: {  field: DENDRO_BAND_TREE148_1.3_1, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_EMPTY_1_13: {  field: DENDRO_POINT_EMPTY_1_13, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_EMPTY_1_14: {  field: DENDRO_POINT_EMPTY_1_14, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_EMPTY_1_15: {  field: DENDRO_POINT_EMPTY_1_15, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_EMPTY_1_16: {  field: DENDRO_POINT_EMPTY_1_16, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_EMPTY_1_17: {  field: DENDRO_POINT_EMPTY_1_17, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_EMPTY_1_18: {  field: DENDRO_POINT_EMPTY_1_18, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE1_1_7: {  field: DENDRO_POINT_TREE1_1_7, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE30_1_10: {  field: DENDRO_POINT_TREE30_1_10, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE34_1_8: {  field: DENDRO_POINT_TREE34_1_8, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE37_1_4: {  field: DENDRO_POINT_TREE37_1_4, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE147_1_2: {  field: DENDRO_POINT_TREE147_1_2, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE148_1_3: {  field: DENDRO_POINT_TREE148_1_3, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE150_1_1: {  field: DENDRO_POINT_TREE150_1_1, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE296_1_5: {  field: DENDRO_POINT_TREE296_1_5, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE410_1_9: {  field: DENDRO_POINT_TREE410_1_9, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE410Xylem_1_11: {  field: DENDRO_POINT_XYLEM_TREE410_1_11, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE411N_1_1: {  field: DENDRO_POINT_TREE411_1_N, units: "um", gain: 1, measurement: BOLE }
+    DENDRO_POINT_AVG_TREE411RootS_1_12: {  field: DENDRO_POINT_RootS_TREE411_1_12, units: "um", gain: 1, measurement: BOLE }
+    G_AVG_FF1_0.06_1: {  field: G_FF1_0.06_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF1_0.06_1.1: {  field: G_FF1_0.06_X, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF2_0.06_1: {  field: G_FF2_0.06_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF2_0.06_1.1: {  field: G_FF2_0.06_X, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF3_0.05_1: {  field: G_FF3_0.05_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF3_0.05_1.1: {  field: G_FF3_0.05_X, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF4_0.05_1: {  field: G_FF4_0.05_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF4_0.05_1.1: {  field: G_FF4_0.05_X, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF5_0.05_1: {  field: G_FF5_0.05_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF5_0.05_1.1: {  field: G_FF5_0.05_X, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_FF0_0.02_1: {  field: G_FF0_0.02_1, units: "W m-2", gain: 1, measurement: G }
+    G_STD_FF1_0.06_1: {  field: G_STD_FF1_0.06_1, units: "W m-2", gain: 1, measurement: _SD }
+    G_STD_FF2_0.06_1: {  field: G_STD_FF2_0.06_1, units: "W m-2", gain: 1, measurement: _SD }
+    G_STD_FF3_0.05_1: {  field: G_STD_FF3_0.05_1, units: "W m-2", gain: 1, measurement: _SD }
+    G_STD_FF4_0.05_1: {  field: G_STD_FF4_0.05_1, units: "W m-2", gain: 1, measurement: _SD }
+    G_STD_FF5_0.05_1: {  field: G_STD_FF5_0.05_1, units: "W m-2", gain: 1, measurement: _SD }
+    H2O_IRGA70_PRF_AVG_FF6_1_06: {  field: H2O_IRGA70_PRF_FF6_1_06, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_07: {  field: H2O_IRGA70_PRF_FF6_1_07, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_08: {  field: H2O_IRGA70_PRF_FF6_1_08, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_09: {  field: H2O_IRGA70_PRF_FF6_1_09, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_10: {  field: H2O_IRGA70_PRF_FF6_1_10, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_11: {  field: H2O_IRGA70_PRF_FF6_1_11, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_12: {  field: H2O_IRGA70_PRF_FF6_1_12, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_2_1: {  field: H2O_IRGA70_PRF_T1_2_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_10_1: {  field: H2O_IRGA70_PRF_T1_10_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_20_1: {  field: H2O_IRGA70_PRF_T1_20_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_25_1: {  field: H2O_IRGA70_PRF_T1_25_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_35_1: {  field: H2O_IRGA70_PRF_T1_35_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_FF6_1_06: {  field: H2O_IRGA_PRF_FF6_1_06, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_FF6_1_07: {  field: H2O_IRGA_PRF_FF6_1_07, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_FF6_1_08: {  field: H2O_IRGA_PRF_FF6_1_08, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_FF6_1_09: {  field: H2O_IRGA_PRF_FF6_1_09, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_FF6_1_10: {  field: H2O_IRGA_PRF_FF6_1_10, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_FF6_1_11: {  field: H2O_IRGA_PRF_FF6_1_11, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_FF6_1_12: {  field: H2O_IRGA_PRF_FF6_1_12, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_T1_2_1: {  field: H2O_IRGA_PRF_T1_2_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_T1_10_1: {  field: H2O_IRGA_PRF_T1_10_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_T1_20_1: {  field: H2O_IRGA_PRF_T1_20_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_T1_25_1: {  field: H2O_IRGA_PRF_T1_25_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA_PRF_AVG_T1_35_1: {  field: H2O_IRGA_PRF_T1_35_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    HEAT_HS50_T1B1_35_1_FLAG: {  field: HEAT_FLAG_HS50_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
+    HEAT_LI72_T1B1_35_1_FLAG: {  field: HEAT_FLAG_LI72_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
+    HEAT_R350_T1B1_35_1_FLAG: {  field: HEAT_FLAG_R350_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
+    LW_IN_AVG_T1_35_1: {  field: LW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
+    LW_IN_AVG_T1_35_1.1: {  field: LW_IN_T1_35_X, units: "W m-2", gain: 1, measurement: LW }
+    LW_IN_STD_T1_35_1: {  field: LW_IN_SD_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
+    LW_OUT_AVG_T1_35_1: {  field: LW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
+    LW_OUT_AVG_T1_35_1.1: {  field: LW_OUT_T1_35_X, units: "W m-2", gain: 1, measurement: LW }
+    LW_OUT_STD_T1_35_1: {  field: LW_OUT_SD_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
+    NETRAD_AVG_T1_35_1: {  field: NETRAD_T1_35_1, units: "W m-2", gain: 1, measurement: NETRAD }
+    NETRAD_NABEL_AVG_T1_35_2: {  field: NETRAD_NABEL_T1_35_2, units: "W m-2", gain: 1, measurement: NETRAD }
+    P_CELL_IRGA62_PRF_AVG_T1_35_1: {  field: P_CELL_IRGA62_PRF_T1_35_1, units: "kPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: P_CELL_IRGA70_PRF_FF6_1_06, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: P_CELL_IRGA70_PRF_FF6_1_07, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: P_CELL_IRGA70_PRF_FF6_1_08, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: P_CELL_IRGA70_PRF_FF6_1_09, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: P_CELL_IRGA70_PRF_FF6_1_10, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: P_CELL_IRGA70_PRF_FF6_1_11, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: P_CELL_IRGA70_PRF_FF6_1_12, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: P_CELL_IRGA70_PRF_T1_2_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: P_CELL_IRGA70_PRF_T1_2_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: P_CELL_IRGA70_PRF_T1_10_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: P_CELL_IRGA70_PRF_T1_20_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: P_CELL_IRGA70_PRF_T1_25_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: P_CELL_IRGA70_PRF_T1_35_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA_PRF_AVG_T1_1_1: {  field: P_CELL_IRGA_PRF_T1_1_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_Hum_1m_AVG: {  field: RH_PRF_T1_1_1, units: "%", gain: 1, measurement: RH }
+    P_Hum_2m_AVG: {  field: RH_PRF_T1_2_1, units: "%", gain: 1, measurement: RH }
+    P_Hum_10m_AVG: {  field: RH_PRF_T1_10_1, units: "%", gain: 1, measurement: RH }
+    P_Hum_20m_AVG: {  field: RH_PRF_T1_20_1, units: "%", gain: 1, measurement: RH }
+    P_Hum_25m_AVG: {  field: RH_PRF_T1_25_1, units: "%", gain: 1, measurement: RH }
+    P_Hum_35m_AVG: {  field: RH_PRF_T1_35_1, units: "%", gain: 1, measurement: RH }
+    P_Temp_1m_AVG: {  field: TA_PRF_T1_1_1, units: "degC", gain: 1, measurement: TA }
+    P_Temp_2m_AVG: {  field: TA_PRF_T1_2_1, units: "degC", gain: 1, measurement: TA }
+    P_Temp_10m_AVG: {  field: TA_PRF_T1_10_1, units: "degC", gain: 1, measurement: TA }
+    P_Temp_20m_AVG: {  field: TA_PRF_T1_20_1, units: "degC", gain: 1, measurement: TA }
+    P_Temp_25m_AVG: {  field: TA_PRF_T1_25_1, units: "degC", gain: 1, measurement: TA }
+    P_Temp_35m_AVG: {  field: TA_PRF_T1_35_1, units: "degC", gain: 1, measurement: TA }
+    PA_AVG_H1_2_1: {  field: PA_H1_2_1, units: "hPa", gain: 1, measurement: XXX }
+    PA_AVG_H1_2_1.1: {  field: PA_H1_2_X, units: "hPa", gain: 1, measurement: XXX }
+    PA_AVG_T1_35_1: {  field: PA_T1_35_1, units: "hPa", gain: 1, measurement: XXX }
+    PA_NABEL_AVG_H1_2_2: {  field: PA_NABEL_H1_2_2, units: "hPa", gain: 1, measurement: XXX }
+    PPFD_BULB_AVG_T1_35_1: {  field: PPFD_BULB_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_T1_35_1: {  field: PPFD_IN_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_T1_35_2: {  field: PPFD_IN_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_STD_T1_35_2: {  field: PPFD_IN_SD_T1_35_2, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+    PPFD_OUT_AVG_T1_35_1: {  field: PPFD_OUT_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_OUT_STD_T1_35_1: {  field: PPFD_OUT_SD_T1_35_1, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+    PPFD_VBULB_AVG_T1_35_1: {  field: PPFD_VBULB_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    PPFD_VIN_AVG_T1_35_1: {  field: PPFD_VIN_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    PREC_NABEL_TOT_T1_25_2: {  field: PREC_NABEL_TOT_T1_25_2, units: "mm", gain: 1, measurement: PREC }
+    PREC_TOT_T1_25_1: {  field: PREC_TOT_T1_25_1, units: "mm", gain: 1, measurement: PREC }
+    Rad_Batt_V: {  field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    RECORD: {  field: RECORD_X_X_X, units: "#", gain: 1, measurement: _instrumentmetrics }
+    RH_AVG_T1_10_1: {  field: RH_T1_10_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T1_10_1.1: {  field: RH_T1_10_X, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T1_20_1: {  field: RH_T1_20_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T1_20_1.1: {  field: RH_T1_20_X, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T1_25_1: {  field: RH_T1_25_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T1_25_1.1: {  field: RH_T1_25_X, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T1_35_1: {  field: RH_T1_35_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T1_35_1.1: {  field: RH_T1_35_X, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T2_1_1: {  field: RH_T2_1_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T2_01_1: {  field: RH_T2_1_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T2_01_1.1: {  field: RH_T2_1_X, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T2_2_1: {  field: RH_T2_2_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T2_02_1: {  field: RH_T2_2_1, units: "%", gain: 1, measurement: RH }
+    RH_AVG_T2_02_1.1: {  field: RH_T2_2_X, units: "%", gain: 1, measurement: RH }
+    RH_COUNT_T1_10_1: {  field: RH_COUNT_T1_10_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    RH_COUNT_T1_20_1: {  field: RH_COUNT_T1_20_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    RH_COUNT_T1_25_1: {  field: RH_COUNT_T1_25_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    RH_COUNT_T1_35_1: {  field: RH_COUNT_T1_35_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    RH_COUNT_T2_01_1: {  field: RH_COUNT_T2_1_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    RH_COUNT_T2_02_1: {  field: RH_COUNT_T2_2_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    RH_NABEL_AVG_T1_35_2: {  field: RH_NABEL_T1_35_2, units: "%", gain: 1, measurement: RH }
+    SAPFLOW_AVG_TREE1N_1_1: {  field: SAPFLOW_TREE1_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE1S_1_1: {  field: SAPFLOW_TREE1_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE30N_1_1: {  field: SAPFLOW_TREE30_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE30S_1_1: {  field: SAPFLOW_TREE30_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE33N_1_1: {  field: SAPFLOW_TREE33_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE33S_1_1: {  field: SAPFLOW_TREE33_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE34N_1_1: {  field: SAPFLOW_TREE34_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE34S_1_1: {  field: SAPFLOW_TREE34_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE37N_1_1: {  field: SAPFLOW_TREE37_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE37S_1_1: {  field: SAPFLOW_TREE37_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE147N_1_1: {  field: SAPFLOW_TREE147_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE147S_1_1: {  field: SAPFLOW_TREE147_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE148N_1_1: {  field: SAPFLOW_TREE148_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE148S_1_1: {  field: SAPFLOW_TREE148_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE150N_1_1: {  field: SAPFLOW_TREE150_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE150S_1_1: {  field: SAPFLOW_TREE150_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE296N_1_1: {  field: SAPFLOW_TREE296_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE296S_1_1: {  field: SAPFLOW_TREE296_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE411N_1_1: {  field: SAPFLOW_TREE411_1_N, units: "g s-1", gain: 1, measurement: BOLE }
+    SAPFLOW_AVG_TREE411S_1_1: {  field: SAPFLOW_TREE411_1_S, units: "g s-1", gain: 1, measurement: BOLE }
+    SV_LOGGER_FF1_0_1: {  field: SV_LOGGER_FF1_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SV_LOGGER_FF2_0_1: {  field: SV_LOGGER_FF2_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SV_LOGGER_FF3_0_1: {  field: SV_LOGGER_FF3_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SV_LOGGER_FF4_0_1: {  field: SV_LOGGER_FF4_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SV_LOGGER_FF5_0_1: {  field: SV_LOGGER_FF5_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SV_LOGGER_T1_35_1: {  field: SV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SV_WIND_AVG_T1_1_1: {  field: SV_WIND_T1_1_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SV_WIND_AVG_T1_35_1: {  field: SV_WIND_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SW_IN_AVG_T1_35_1: {  field: SW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_IN_AVG_T1_35_1.1: {  field: SW_IN_T1_35_X1, units: "W m-2", gain: 1, measurement: SW }
+    SW_IN_AVG_T1_35_1.2: {  field: SW_IN_T1_35_X2, units: "W m-2", gain: 1, measurement: SW }
+    SW_IN_NABEL_AVG_T1_35_2: {  field: SW_IN_NABEL_T1_35_2, units: "W m-2", gain: 1, measurement: SW }
+    SW_IN_STD_T1_35_1: {  field: SW_IN_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
+    SW_OUT_AVG_T1_35_1: {  field: SW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_OUT_STD_T1_35_1: {  field: SW_OUT_SD_T1_35_1, units: "W m-2", gain: 1, measurement: _SD }
+    SWC_AVG_FF1_0.5_1: {  field: SWC_FF1_0.5_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF1_0.8_1: {  field: SWC_FF1_0.8_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF1_0.15_1: {  field: SWC_FF1_0.15_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF2_0.5_1: {  field: SWC_FF2_0.5_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF2_0.8_1: {  field: SWC_FF2_0.8_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF2_0.15_1: {  field: SWC_FF2_0.15_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF3_0.5_1: {  field: SWC_FF3_0.5_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF3_0.8_1: {  field: SWC_FF3_0.8_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF3_0.15_1: {  field: SWC_FF3_0.15_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF4_0.5_1: {  field: SWC_FF4_0.5_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF4_0.8_1: {  field: SWC_FF4_0.8_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF4_0.15_1: {  field: SWC_FF4_0.15_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_0.5_1: {  field: SWC_FF0_0.5_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_0.05_1: {  field: SWC_FF0_0.05_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_0.15_1: {  field: SWC_FF0_0.15_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_0.45_1: {  field: SWC_FF0_0.45_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_01_1: {  field: SWC_FF0_1_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_02_1: {  field: SWC_FF0_2_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_03_1: {  field: SWC_FF0_03_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_04_1: {  field: SWC_FF0_04_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_05_1: {  field: SWC_FF0_05_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_06_1: {  field: SWC_FF0_06_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_07_1: {  field: SWC_FF0_07_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_08_1: {  field: SWC_FF0_08_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_09_1: {  field: SWC_FF0_09_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_10_1: {  field: SWC_FF0_10_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_11_1: {  field: SWC_FF0_11_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_AVG_FF0_12_1: {  field: SWC_FF0_12_1, units: "Vol%", gain: 1, measurement: SWC }
+    SWC_FF1_005_1_AVG: {  field: SWC_FF1_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF1_005_1_STD: {  field: SWC_SD_FF1_0.05_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF1_005_2_AVG: {  field: SWC_FF1_0.05_2, units: "%", gain: 1, measurement: SWC }
+    SWC_FF1_005_2_STD: {  field: SWC_SD_FF1_0.05_2, units: "%", gain: 1, measurement: _SD }
+    SWC_FF1_010_1_AVG: {  field: SWC_FF1_0.1_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF1_010_1_STD: {  field: SWC_SD_FF1_0.1_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF1_024_1_AVG: {  field: SWC_FF1_0.24_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF1_024_1_STD: {  field: SWC_SD_FF1_0.24_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF1_050_1_AVG: {  field: SWC_FF1_0.5_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF1_050_1_STD: {  field: SWC_SD_FF1_0.5_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF1_084_1_AVG: {  field: SWC_FF1_0.84_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF1_084_1_STD: {  field: SWC_SD_FF1_0.84_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF2_004_2_AVG: {  field: SWC_FF2_0.04_2, units: "%", gain: 1, measurement: SWC }
+    SWC_FF2_004_2_STD: {  field: SWC_SD_FF2_0.04_2, units: "%", gain: 1, measurement: _SD }
+    SWC_FF2_005_1_AVG: { field: SWC_FF2_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF2_005_1_STD: {  field: SWC_SD_FF2_0.05_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF2_010_1_AVG: { field: SWC_FF2_0.1_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF2_010_1_STD: {  field: SWC_SD_FF2_0.1_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF2_021_1_AVG: { field: SWC_FF2_021_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF2_021_1_STD: {  field: SWC_SD_FF2_0.21_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF2_050_1_AVG: { field: SWC_FF2_0.5_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF2_050_1_STD: {  field: SWC_SD_FF2_0.5_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF2_080_1_AVG: { field: SWC_FF2_0.8_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF2_080_1_STD: {  field: SWC_SD_FF2_0.8_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF3_005_1_AVG: { field: SWC_FF3_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF3_005_1_STD: {  field: SWC_SD_FF3_0.05_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF3_005_2_AVG: { field: SWC_FF3_0.05_2, units: "%", gain: 1, measurement: SWC }
+    SWC_FF3_005_2_STD: {  field: SWC_SD_FF3_0.05_2, units: "%", gain: 1, measurement: _SD }
+    SWC_FF3_010_1_AVG: { field: SWC_FF3_0.1_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF3_010_1_STD: {  field: SWC_SD_FF3_0.1_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF3_021_1_AVG: { field: SWC_FF3_0.21_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF3_021_1_STD: {  field: SWC_SD_FF3_0.21_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF3_052_1_AVG: { field: SWC_FF3_052_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF3_052_1_STD: {  field: SWC_SD_FF3_052_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF3_068_1_AVG: { field: SWC_FF3_068_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF3_068_1_STD: {  field: SWC_SD_FF3_068_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF4_005_1_AVG: { field: SWC_FF4_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF4_005_1_STD: {  field: SWC_SD_FF4_0.05_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF4_006_2_AVG: { field: SWC_FF4_0.06_2, units: "%", gain: 1, measurement: SWC }
+    SWC_FF4_006_2_STD: {  field: SWC_SD_FF4_0.06_2, units: "%", gain: 1, measurement: _SD }
+    SWC_FF4_010_1_AVG: { field: SWC_FF4_0.1_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF4_010_1_STD: {  field: SWC_SD_FF4_0.1_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF4_020_1_AVG: { field: SWC_FF4_0.2_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF4_020_1_STD: {  field: SWC_SD_FF4_0.2_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF4_049_1_AVG: { field: SWC_FF4_0.49_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF4_049_1_STD: {  field: SWC_SD_FF4_0.49_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF4_069_1_AVG: { field: SWC_FF4_0.69_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF4_069_1_STD: {  field: SWC_SD_FF4_0.69_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_006_1_AVG: { field: SWC_FF5_0.06_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_006_1_STD: {  field: SWC_SD_FF5_0.06_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_006_2_AVG: { field: SWC_FF5_0.06_2, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_006_2_STD: {  field: SWC_SD_FF5_0.06_2, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_010_1_AVG: { field: SWC_FF5_0.1_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_010_1_STD: {  field: SWC_SD_FF5_0.1_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_022_1_AVG: { field: SWC_FF5_0.22_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_022_1_STD: {  field: SWC_SD_FF5_0.22_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_050_1_AVG: { field: SWC_FF5_0.5_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_050_1_STD: {  field: SWC_SD_FF5_0.5_1, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_079_1_AVG: { field: SWC_FF5_0.79_1, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_079_1_STD: {  field: SWC_SD_FF5_0.79_1, units: "%", gain: 1, measurement: _SD }
+    T_BOLE_AVG_TREE148_1_1: {  field: T_BOLE_TREE148_1_1, units: "degC", gain: 1, measurement: BOLE }
+    T_BOLE_AVG_TREE296_1_1: {  field: T_BOLE_TREE296_1_1, units: "degC", gain: 1, measurement: BOLE }
+    T_CELL_IRGA62_PRF_AVG_T1_35_1: {  field: T_CELL_IRGA62_PRF_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: T_CELL_IRGA70_PRF_FF6_1_06, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: T_CELL_IRGA70_PRF_FF6_1_07, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: T_CELL_IRGA70_PRF_FF6_1_08, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: T_CELL_IRGA70_PRF_FF6_1_09, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: T_CELL_IRGA70_PRF_FF6_1_10, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: T_CELL_IRGA70_PRF_FF6_1_11, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: T_CELL_IRGA70_PRF_FF6_1_12, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: T_CELL_IRGA70_PRF_T1_2_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: T_CELL_IRGA70_PRF_T1_2_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: T_CELL_IRGA70_PRF_T1_10_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: T_CELL_IRGA70_PRF_T1_20_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: T_CELL_IRGA70_PRF_T1_25_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: T_CELL_IRGA70_PRF_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA_PRF_AVG_T1_1_1: {  field: T_CELL_IRGA_PRF_T1_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CNR1_AVG_T1_35_1: {  field: T_CNR1_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_COOLER_AVG_H1_1_1: {  field: T_COOLER_H1_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_HEATER_AVG_T1_35_1: {  field: T_HEATER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_IDL_AVG_FF0_1_1: {  field: T_IDL_FF0_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_IDL_AVG_H1_1_1: {  field: T_IDL_H1_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_IDL_AVG_T1_35_1: {  field: T_IDL_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_AVG_FF0_1_1: {  field: T_LOGGER_FF0_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_AVG_T1_35_1: {  field: T_LOGGER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_FF1_0_1: {  field: T_LOGGER_FF1_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_FF2_0_1: {  field: T_LOGGER_FF2_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_FF3_0_1: {  field: T_LOGGER_FF3_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_FF4_0_1: {  field: T_LOGGER_FF4_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_FF5_0_1: {  field: T_LOGGER_FF5_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_T1_35_1: {  field: T_LOGGER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_LOGGER_T1_35_1.1: {  field: T_LOGGER_T1_35_X, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_RAD_AVG_T1_35_1: {  field: T_RAD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_RAD_STD_T1_35_1: {  field: T_RAD_SD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TA_AVG_T1_10_1: {  field: TA_T1_10_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T1_10_1.1: {  field: TA_T1_10_X, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T1_20_1: {  field: TA_T1_20_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T1_20_1.1: {  field: TA_T1_20_X, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T1_25_1: {  field: TA_T1_25_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T1_25_1.1: {  field: TA_T1_25_X, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T1_35_1: {  field: TA_T1_35_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T1_35_1.1: {  field: TA_T1_35_X, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T2_1_1: {  field: TA_T2_1_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T2_01_1: {  field: TA_T2_1_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T2_01_1.1: {  field: TA_T2_1_X, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T2_2_1: {  field: TA_T2_2_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T2_02_1: {  field: TA_T2_2_1, units: "degC", gain: 1, measurement: TA }
+    TA_AVG_T2_02_1.1: {  field: TA_T2_2_X, units: "degC", gain: 1, measurement: TA }
+    TA_COUNT_T1_10_1: {  field: TA_COUNT_T1_10_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    TA_COUNT_T1_20_1: {  field: TA_COUNT_T1_20_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    TA_COUNT_T1_25_1: {  field: TA_COUNT_T1_25_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    TA_COUNT_T1_35_1: {  field: TA_COUNT_T1_35_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    TA_COUNT_T2_01_1: {  field: TA_COUNT_T2_1_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    TA_COUNT_T2_02_1: {  field: TA_COUNT_T2_2_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    TA_HEAT_AVG_T1_35_1: {  field: TA_HEAT_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TA_HEAT_AVG_T1_35_1.1: {  field: TA_HEAT_T1_35_X, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TA_HEAT_STD_T1_35_1: {  field: TA_HEAT_SD_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TA_NABEL_AVG_T1_35_2: {  field: TA_NABEL_T1_35_2, units: "degC", gain: 1, measurement: TA }
+    TIME_MEASUREMENT_H1_1_1: {  field: TIME_MEASUREMENT_H1_1_1, units: "s", gain: 1, measurement: _instrumentmetrics }
+    TLOGGER_FF1_0_1: { field: TLOGGER_FF1_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TLOGGER_FF2_0_1: { field: TLOGGER_FF2_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TLOGGER_FF3_0_1: { field: TLOGGER_FF3_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TLOGGER_FF4_0_1: { field: TLOGGER_FF4_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    TLOGGER_FF5_0_1: { field: TLOGGER_FF5_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
     TRH.01m_N_rH: {  field: TRH.01m_N_rH, units: "#", gain: 1, measurement: XXX }
     TRH.01m_N_T: {  field: TRH.01m_N_T, units: "#", gain: 1, measurement: XXX }
     TRH.02m_N_rH: {  field: TRH.02m_N_rH, units: "#", gain: 1, measurement: XXX }
@@ -413,211 +413,209 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     TRH.25m_N_T: {  field: TRH.25m_N_T, units: "#", gain: 1, measurement: XXX }
     TRH.35m_N_rH: {  field: TRH.35m_N_rH, units: "#", gain: 1, measurement: XXX }
     TRH.35m_N_T: {  field: TRH.35m_N_T, units: "#", gain: 1, measurement: XXX }
-    TS_AVG_FF0_0.2_1: {  field: TS_AVG_FF0_0.2_1, units: "degC", gain: 1, measurement: XXX }
-    TS_AVG_FF0_0.5_1: {  field: TS_AVG_FF0_0.5_1, units: "degC", gain: 1, measurement: XXX }
-    TS_AVG_FF0_0.05_1: {  field: TS_AVG_FF0_0.05_1, units: "degC", gain: 1, measurement: XXX }
-    TS_AVG_FF0_0.05_1.1: {  field: TS_AVG_FF0_0.05_1.1, units: "degC", gain: 1, measurement: XXX }
-    TS_AVG_FF0_0.15_1: {  field: TS_AVG_FF0_0.15_1, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_003_1_AVG: {  field: TS_FF1_003_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_003_1_STD: {  field: TS_FF1_003_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_005_1_AVG: {  field: TS_FF1_005_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_005_1_STD: {  field: TS_FF1_005_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_005_2_AVG: {  field: TS_FF1_005_2_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_005_2_STD: {  field: TS_FF1_005_2_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_011_1_AVG: {  field: TS_FF1_011_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_011_1_STD: {  field: TS_FF1_011_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_021_1_AVG: {  field: TS_FF1_021_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_021_1_STD: {  field: TS_FF1_021_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_050_1_AVG: {  field: TS_FF1_050_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_050_1_STD: {  field: TS_FF1_050_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_080_1_AVG: {  field: TS_FF1_080_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF1_080_1_STD: {  field: TS_FF1_080_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_003_1_AVG: {  field: TS_FF2_003_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_003_1_STD: {  field: TS_FF2_003_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_005_1_AVG: {  field: TS_FF2_005_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_005_1_STD: {  field: TS_FF2_005_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_006_2_AVG: {  field: TS_FF2_006_2_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_006_2_STD: {  field: TS_FF2_006_2_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_011_1_AVG: {  field: TS_FF2_011_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_011_1_STD: {  field: TS_FF2_011_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_021_1_AVG: {  field: TS_FF2_021_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_021_1_STD: {  field: TS_FF2_021_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_053_1_AVG: {  field: TS_FF2_053_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_053_1_STD: {  field: TS_FF2_053_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_080_1_AVG: {  field: TS_FF2_080_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF2_080_1_STD: {  field: TS_FF2_080_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_003_1_AVG: {  field: TS_FF3_003_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_003_1_STD: {  field: TS_FF3_003_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_005_1_AVG: {  field: TS_FF3_005_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_005_1_STD: {  field: TS_FF3_005_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_005_2_AVG: {  field: TS_FF3_005_2_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_005_2_STD: {  field: TS_FF3_005_2_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_011_1_AVG: {  field: TS_FF3_011_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_011_1_STD: {  field: TS_FF3_011_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_020_1_AVG: {  field: TS_FF3_020_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_020_1_STD: {  field: TS_FF3_020_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_050_1_AVG: {  field: TS_FF3_050_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_050_1_STD: {  field: TS_FF3_050_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_060_1_AVG: {  field: TS_FF3_060_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF3_060_1_STD: {  field: TS_FF3_060_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_002_1_AVG: {  field: TS_FF4_002_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_002_1_STD: {  field: TS_FF4_002_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_005_2_AVG: {  field: TS_FF4_005_2_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_005_2_STD: {  field: TS_FF4_005_2_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_006_1_AVG: {  field: TS_FF4_006_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_006_1_STD: {  field: TS_FF4_006_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_011_1_AVG: {  field: TS_FF4_011_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_011_1_STD: {  field: TS_FF4_011_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_021_1_AVG: {  field: TS_FF4_021_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_021_1_STD: {  field: TS_FF4_021_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_051_1_AVG: {  field: TS_FF4_051_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_051_1_STD: {  field: TS_FF4_051_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_066_1_AVG: {  field: TS_FF4_066_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF4_066_1_STD: {  field: TS_FF4_066_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_002_1_AVG: {  field: TS_FF5_002_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_002_1_STD: {  field: TS_FF5_002_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_005_1_AVG: {  field: TS_FF5_005_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_005_1_STD: {  field: TS_FF5_005_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_005_2_AVG: {  field: TS_FF5_005_2_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_005_2_STD: {  field: TS_FF5_005_2_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_010_1_AVG: {  field: TS_FF5_010_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_010_1_STD: {  field: TS_FF5_010_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_021_1_AVG: {  field: TS_FF5_021_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_021_1_STD: {  field: TS_FF5_021_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_050_1_AVG: {  field: TS_FF5_050_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_050_1_STD: {  field: TS_FF5_050_1_STD, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_075_1_AVG: {  field: TS_FF5_075_1_AVG, units: "degC", gain: 1, measurement: XXX }
-    TS_FF5_075_1_STD: {  field: TS_FF5_075_1_STD, units: "degC", gain: 1, measurement: XXX }
-    ULOGGER_FF1_0_1: {  field: ULOGGER_FF1_0_1, units: "V", gain: 1, measurement: XXX }
-    ULOGGER_FF2_0_1: {  field: ULOGGER_FF2_0_1, units: "V", gain: 1, measurement: XXX }
-    ULOGGER_FF3_0_1: {  field: ULOGGER_FF3_0_1, units: "V", gain: 1, measurement: XXX }
-    ULOGGER_FF4_0_1: {  field: ULOGGER_FF4_0_1, units: "V", gain: 1, measurement: XXX }
-    ULOGGER_FF5_0_1: {  field: ULOGGER_FF5_0_1, units: "V", gain: 1, measurement: XXX }
-    W_Dir_1m_DU_WVT: {  field: WD_CUP_PRF_T1_1_1, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_1m_SDU_WVT: {  field: W_Dir_1m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_2m_DU_WVT: {  field: W_Dir_2m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_2m_SDU_WVT: {  field: W_Dir_2m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_10m_DU_WVT: {  field: W_Dir_10m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_10m_SDU_WVT: {  field: W_Dir_10m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_20m_DU_WVT: {  field: W_Dir_20m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_20m_SDU_WVT: {  field: W_Dir_20m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_25m_DU_WVT: {  field: W_Dir_25m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_25m_SDU_WVT: {  field: W_Dir_25m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_35m_DU_WVT: {  field: W_Dir_35m_DU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Dir_35m_SDU_WVT: {  field: W_Dir_35m_SDU_WVT, units: "deg", gain: 1, measurement: XXX }
-    W_Vel_1m_S_WVT: {  field: W_Vel_1m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_1m_U_WVT: {  field: W_Vel_1m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_2m_S_WVT: {  field: W_Vel_2m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_2m_U_WVT: {  field: W_Vel_2m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_10m_S_WVT: {  field: W_Vel_10m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_10m_U_WVT: {  field: W_Vel_10m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_20m_S_WVT: {  field: W_Vel_20m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_20m_U_WVT: {  field: W_Vel_20m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_25m_S_WVT: {  field: W_Vel_25m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_25m_U_WVT: {  field: W_Vel_25m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_35m_S_WVT: {  field: W_Vel_35m_S_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    W_Vel_35m_U_WVT: {  field: W_Vel_35m_U_WVT, units: "m s-1", gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_01_1: {  field: WD_COUNT_PRF_T1_01_1, units: "counts", gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_02_1: {  field: WD_COUNT_PRF_T1_02_1, units: "counts", gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_10_1: {  field: WD_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_20_1: {  field: WD_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: XXX }
-    WD_COUNT_PRF_T1_25_1: {  field: WD_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_02_1: {  field: WD_SD_VANE_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_10_1: {  field: WD_SD_VANE_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_20_1: {  field: WD_SD_VANE_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_25_1: {  field: WD_SD_VANE_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_AVG_T1_35_1: {  field: WD_SD_VANE_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_2_1: {  field: WD_SD_VANE_PRF_AVG_T1_2_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_02_1: {  field: WD_SD_VANE_PRF_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_10_1: {  field: WD_SD_VANE_PRF_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_20_1: {  field: WD_SD_VANE_PRF_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_25_1: {  field: WD_SD_VANE_PRF_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
-    WD_SD_VANE_PRF_AVG_T1_35_1: {  field: WD_SD_VANE_PRF_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_02_1: {  field: WD_VANE_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_10_1: {  field: WD_VANE_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_20_1: {  field: WD_VANE_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_25_1: {  field: WD_VANE_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_AVG_T1_35_1: {  field: WD_VANE_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_NABEL_AVG_T1_35_2: {  field: WD_VANE_NABEL_AVG_T1_35_2, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_2_1: {  field: WD_VANE_PRF_AVG_T1_2_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_02_1: {  field: WD_VANE_PRF_AVG_T1_02_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_10_1: {  field: WD_VANE_PRF_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_20_1: {  field: WD_VANE_PRF_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_25_1: {  field: WD_VANE_PRF_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_35_1: {  field: WD_VANE_PRF_AVG_T1_35_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_AVG_T1_35_1.1: {  field: WD_VANE_PRF_AVG_T1_35_1.1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_02_1: {  field: WD_VANE_PRF_SD_T1_02_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_10_1: {  field: WD_VANE_PRF_SD_T1_10_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_20_1: {  field: WD_VANE_PRF_SD_T1_20_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_25_1: {  field: WD_VANE_PRF_SD_T1_25_1, units: "deg", gain: 1, measurement: XXX }
-    WD_VANE_PRF_SD_T1_35_1: {  field: WD_VANE_PRF_SD_T1_35_1, units: "deg", gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T1_10_1: {  field: WD_WiSoGILL_PRF_AVG_T1_10_1, units: "deg", gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T1_20_1: {  field: WD_WiSoGILL_PRF_AVG_T1_20_1, units: "deg", gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T1_25_1: {  field: WD_WiSoGILL_PRF_AVG_T1_25_1, units: "deg", gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T2_01_1: {  field: WD_WiSoGILL_PRF_AVG_T2_01_1, units: "deg", gain: 1, measurement: XXX }
-    WD_WiSoGILL_PRF_AVG_T2_02_1: {  field: WD_WiSoGILL_PRF_AVG_T2_02_1, units: "deg", gain: 1, measurement: XXX }
-    WIGE: {  field: WIGE, units: "m s-1", gain: 1, measurement: XXX }
-    WIRI: {  field: WIRI, units: "deg", gain: 1, measurement: XXX }
-    WP_AVG_FF0_0.05_1: {  field: WP_AVG_FF0_0.05_1, units: "kPa", gain: 1, measurement: XXX }
-    WP_AVG_FF0_0.15_1: {  field: WP_AVG_FF0_0.15_1, units: "kPa", gain: 1, measurement: XXX }
-    WP_AVG_FF0_0.45_1: {  field: WP_AVG_FF0_0.45_1, units: "kPa", gain: 1, measurement: XXX }
-    WP_AVG_FF0_201_1: {  field: WP_AVG_FF0_201_1, units: "kPa", gain: 1, measurement: XXX }
-    WP_AVG_FF0_201_2: {  field: WP_AVG_FF0_201_2, units: "kPa", gain: 1, measurement: XXX }
-    WP_AVG_FF0_201_3: {  field: WP_AVG_FF0_201_3, units: "kPa", gain: 1, measurement: XXX }
-    WS_CUP_NABEL_AVG_T1_35_2: {  field: WS_CUP_NABEL_AVG_T1_35_2, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_2_1: {  field: WS_CUP_SCALAR_AVG_T1_2_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_02_1: {  field: WS_CUP_SCALAR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_10_1: {  field: WS_CUP_SCALAR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_20_1: {  field: WS_CUP_SCALAR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_25_1: {  field: WS_CUP_SCALAR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_AVG_T1_35_1: {  field: WS_CUP_SCALAR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_2_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_2_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_02_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_10_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_20_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_25_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_SCALAR_PRF_AVG_T1_35_1: {  field: WS_CUP_SCALAR_PRF_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_02_1: {  field: WS_CUP_VECTOR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_10_1: {  field: WS_CUP_VECTOR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_20_1: {  field: WS_CUP_VECTOR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_25_1: {  field: WS_CUP_VECTOR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_AVG_T1_35_1: {  field: WS_CUP_VECTOR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_2_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_2_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_02_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_10_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_20_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_25_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_CUP_VECTOR_PRF_AVG_T1_35_1: {  field: WS_CUP_VECTOR_PRF_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_MAX_NABEL_AVG_T1_35_2: {  field: WS_MAX_NABEL_AVG_T1_35_2, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_SCALAR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_SCALAR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_PROPELLER_PRF_VECTOR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_VECTOR_AVG_T1_35_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_01_1: {  field: WS_SCALAR_COUNT_PRF_T1_01_1, units: "counts", gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_02_1: {  field: WS_SCALAR_COUNT_PRF_T1_02_1, units: "counts", gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_10_1: {  field: WS_SCALAR_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_20_1: {  field: WS_SCALAR_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: XXX }
-    WS_SCALAR_COUNT_PRF_T1_25_1: {  field: WS_SCALAR_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_01_1: {  field: WS_VECTOR_COUNT_PRF_T1_01_1, units: "counts", gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_02_1: {  field: WS_VECTOR_COUNT_PRF_T1_02_1, units: "counts", gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_10_1: {  field: WS_VECTOR_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_20_1: {  field: WS_VECTOR_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: XXX }
-    WS_VECTOR_COUNT_PRF_T1_25_1: {  field: WS_VECTOR_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T1_10_1: {  field: WS_WiSoGILL_PRF_AVG_T1_10_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T1_20_1: {  field: WS_WiSoGILL_PRF_AVG_T1_20_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T1_25_1: {  field: WS_WiSoGILL_PRF_AVG_T1_25_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T2_01_1: {  field: WS_WiSoGILL_PRF_AVG_T2_01_1, units: "m s-1", gain: 1, measurement: XXX }
-    WS_WiSoGILL_PRF_AVG_T2_02_1: {  field: WS_WiSoGILL_PRF_AVG_T2_02_1, units: "m s-1", gain: 1, measurement: XXX }
-    
-    
+    TS_AVG_FF0_0.2_1: {  field: TS_FF0_0.2_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_FF0_0.5_1: {  field: TS_FF0_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_FF0_0.05_1: {  field: TS_FF0_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_FF0_0.05_1.1: {  field: TS_FF0_0.05_X, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_FF0_0.15_1: {  field: TS_FF0_0.15_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_003_1_AVG: {  field: TS_FF1_0.03_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_003_1_STD: {  field: TS_SD_FF1_0.03_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF1_005_1_AVG: {  field: TS_FF1_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_005_1_STD: {  field: TS_SD_FF1_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF1_005_2_AVG: {  field: TS_FF1_0.05_2, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_005_2_STD: {  field: TS_SD_FF1_0.05_2, units: "degC", gain: 1, measurement: _SD }
+    TS_FF1_011_1_AVG: {  field: TS_FF1_0.11_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_011_1_STD: {  field: TS_SD_FF1_0.11_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF1_021_1_AVG: {  field: TS_FF1_0.21_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_021_1_STD: {  field: TS_SD_FF1_0.21_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF1_050_1_AVG: {  field: TS_FF1_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_050_1_STD: {  field: TS_SD_FF1_0.5_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF1_080_1_AVG: {  field: TS_FF1_0.8_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF1_080_1_STD: {  field: TS_SD_FF1_0.8_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF2_003_1_AVG: {  field: TS_FF2_0.03_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF2_003_1_STD: {  field: TS_SD_FF2_0.03_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF2_005_1_AVG: { field: TS_FF2_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF2_005_1_STD: {  field: TS_SD_FF2_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF2_006_2_AVG: { field: TS_FF2_0.06_2, units: "degC", gain: 1, measurement: TS }
+    TS_FF2_006_2_STD: {  field: TS_SD_FF2_0.06_2, units: "degC", gain: 1, measurement: _SD }
+    TS_FF2_011_1_AVG: { field: TS_FF2_0.11_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF2_011_1_STD: {  field: TS_SD_FF2_0.11_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF2_021_1_AVG: { field: TS_FF2_0.21_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF2_021_1_STD: {  field: TS_SD_FF2_0.21_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF2_053_1_AVG: { field: TS_FF2_0.53_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF2_053_1_STD: { field: TS_SD_FF2_0.53_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF2_080_1_AVG: { field: TS_FF2_0.8_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF2_080_1_STD: { field: TS_SD_FF2_0.8_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF3_003_1_AVG: { field: TS_FF3_0.03_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF3_003_1_STD: { field: TS_SD_FF3_0.03_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF3_005_1_AVG: { field: TS_FF3_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF3_005_1_STD: { field: TS_SD_FF3_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF3_005_2_AVG: { field: TS_FF3_0.05_2, units: "degC", gain: 1, measurement: TS }
+    TS_FF3_005_2_STD: { field: TS_SD_FF3_0.05_2, units: "degC", gain: 1, measurement: _SD }
+    TS_FF3_011_1_AVG: { field: TS_FF3_0.11_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF3_011_1_STD: { field: TS_SD_FF3_0.11_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF3_020_1_AVG: { field: TS_FF3_0.2_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF3_020_1_STD: { field: TS_SD_FF3_0.2_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF3_050_1_AVG: { field: TS_FF3_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF3_050_1_STD: { field: TS_SD_FF3_0.5_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF3_060_1_AVG: { field: TS_FF3_0.6_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF3_060_1_STD: { field: TS_SD_FF3_0.6_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF4_002_1_AVG: { field: TS_FF4_0.02_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF4_002_1_STD: { field: TS_SD_FF4_0.02_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF4_005_2_AVG: { field: TS_FF4_0.05_2, units: "degC", gain: 1, measurement: TS }
+    TS_FF4_005_2_STD: { field: TS_SD_FF4_0.05_2, units: "degC", gain: 1, measurement: _SD }
+    TS_FF4_006_1_AVG: { field: TS_FF4_0.06_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF4_006_1_STD: { field: TS_SD_FF4_0.06_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF4_011_1_AVG: { field: TS_FF4_0.11_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF4_011_1_STD: { field: TS_SD_FF4_0.11_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF4_021_1_AVG: { field: TS_FF4_0.21_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF4_021_1_STD: { field: TS_SD_FF4_0.21_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF4_051_1_AVG: { field: TS_FF4_0.51_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF4_051_1_STD: { field: TS_SD_FF4_0.51_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF4_066_1_AVG: { field: TS_FF4_0.66_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF4_066_1_STD: { field: TS_SD_FF4_0.66_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_002_1_AVG: { field: TS_FF5_0.02_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_002_1_STD: { field: TS_SD_FF5_0.02_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_005_1_AVG: { field: TS_FF5_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_005_1_STD: { field: TS_SD_FF5_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_005_2_AVG: { field: TS_FF5_0.05_2, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_005_2_STD: { field: TS_SD_FF5_0.05_2, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_010_1_AVG: { field: TS_FF5_0.1_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_010_1_STD: { field: TS_SD_FF5_0.1_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_021_1_AVG: { field: TS_FF5_0.21_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_021_1_STD: { field: TS_SD_FF5_0.21_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_050_1_AVG: { field: TS_FF5_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_050_1_STD: { field: TS_SD_FF5_0.5_1, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_075_1_AVG: { field: TS_FF5_0.75_1, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_075_1_STD: { field: TS_SD_FF5_0.75_1, units: "degC", gain: 1, measurement: _SD }
+    ULOGGER_FF1_0_1: {  field: ULOGGER_FF1_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    ULOGGER_FF2_0_1: {  field: ULOGGER_FF2_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    ULOGGER_FF3_0_1: {  field: ULOGGER_FF3_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    ULOGGER_FF4_0_1: {  field: ULOGGER_FF4_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    ULOGGER_FF5_0_1: {  field: ULOGGER_FF5_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    W_Dir_1m_DU_WVT: {  field: WD_CUP_PRF_T1_1_1, units: "deg", gain: 1, measurement: WIND }
+    W_Dir_1m_SDU_WVT: {  field: WD_CUP_PRF_X_T1_1_1, units: "deg", gain: 1, measurement: XXX }  # Standard deviation?
+    W_Dir_2m_DU_WVT: {  field: WD_CUP_PRF_T1_2_1, units: "deg", gain: 1, measurement: WIND }
+    W_Dir_2m_SDU_WVT: {  field: WD_CUP_PRF_X_T1_2_1, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_10m_DU_WVT: {  field: WD_CUP_PRF_T1_10_1, units: "deg", gain: 1, measurement: WIND }
+    W_Dir_10m_SDU_WVT: {  field: WD_CUP_PRF_X_T1_10_1, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_20m_DU_WVT: {  field: WD_CUP_PRF_T1_20_1, units: "deg", gain: 1, measurement: WIND }
+    W_Dir_20m_SDU_WVT: {  field: WD_CUP_PRF_X_T1_20_1, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_25m_DU_WVT: {  field: WD_CUP_PRF_T1_25_1, units: "deg", gain: 1, measurement: WIND }
+    W_Dir_25m_SDU_WVT: {  field: WD_CUP_PRF_X_T1_25_1, units: "deg", gain: 1, measurement: XXX }
+    W_Dir_35m_DU_WVT: {  field: WD_CUP_PRF_T1_35_1, units: "deg", gain: 1, measurement: WIND }
+    W_Dir_35m_SDU_WVT: {  field: WD_CUP_PRF_X_T1_35_1, units: "deg", gain: 1, measurement: XXX }
+    W_Vel_1m_S_WVT: {  field: WS_CUP_PRF_T1_1_2, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_1m_U_WVT: {  field: WS_CUP_PRF_T1_1_1, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_2m_S_WVT: {  field: WS_CUP_PRF_T1_2_2, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_2m_U_WVT: {  field: WS_CUP_PRF_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_10m_S_WVT: {  field: WS_CUP_PRF_T1_10_2, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_10m_U_WVT: {  field: WS_CUP_PRF_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_20m_S_WVT: {  field: WS_CUP_PRF_T1_20_2, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_20m_U_WVT: {  field: WS_CUP_PRF_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_25m_S_WVT: {  field: WS_CUP_PRF_T1_25_2, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_25m_U_WVT: {  field: WS_CUP_PRF_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_35m_S_WVT: {  field: WS_CUP_PRF_T1_35_2, units: "m s-1", gain: 1, measurement: WIND }
+    W_Vel_35m_U_WVT: {  field: WS_CUP_PRF_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WD_COUNT_PRF_T1_01_1: {  field: WD_COUNT_PRF_T1_1_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WD_COUNT_PRF_T1_02_1: {  field: WD_COUNT_PRF_T1_2_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WD_COUNT_PRF_T1_10_1: {  field: WD_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WD_COUNT_PRF_T1_20_1: {  field: WD_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WD_COUNT_PRF_T1_25_1: {  field: WD_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WD_SD_VANE_AVG_T1_02_1: {  field: WD_VANE_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_AVG_T1_10_1: {  field: WD_VANE_SD_T1_10_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_AVG_T1_20_1: {  field: WD_VANE_SD_T1_20_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_AVG_T1_25_1: {  field: WD_VANE_SD_T1_25_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_AVG_T1_35_1: {  field: WD_VANE_SD_T1_35_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_PRF_AVG_T1_2_1: {  field: WD_VANE_PRF_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_PRF_AVG_T1_02_1: {  field: WD_VANE_PRF_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_PRF_AVG_T1_10_1: {  field: WD_VANE_PRF_SD_T1_10_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_PRF_AVG_T1_20_1: {  field: WD_VANE_PRF_SD_T1_20_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_PRF_AVG_T1_25_1: {  field: WD_VANE_PRF_SD_T1_25_1, units: "deg", gain: 1, measurement: _SD }
+    WD_SD_VANE_PRF_AVG_T1_35_1: {  field: WD_VANE_PRF_SD_T1_35_1, units: "deg", gain: 1, measurement: _SD }
+    WD_VANE_AVG_T1_02_1: {  field: WD_VANE_T1_2_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_AVG_T1_10_1: {  field: WD_VANE_T1_10_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_AVG_T1_20_1: {  field: WD_VANE_T1_20_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_AVG_T1_25_1: {  field: WD_VANE_T1_25_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_AVG_T1_35_1: {  field: WD_VANE_T1_35_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_NABEL_AVG_T1_35_2: {  field: WD_VANE_NABEL_T1_35_2, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_AVG_T1_2_1: {  field: WD_VANE_PRF_T1_2_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_AVG_T1_02_1: {  field: WD_VANE_PRF_T1_2_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_AVG_T1_10_1: {  field: WD_VANE_PRF_T1_10_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_AVG_T1_20_1: {  field: WD_VANE_PRF_T1_20_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_AVG_T1_25_1: {  field: WD_VANE_PRF_T1_25_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_AVG_T1_35_1: {  field: WD_VANE_PRF_T1_35_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_AVG_T1_35_1.1: {  field: WD_VANE_PRF_T1_35_X, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_PRF_SD_T1_02_1: {  field: WD_VANE_PRF_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
+    WD_VANE_PRF_SD_T1_10_1: {  field: WD_VANE_PRF_SD_T1_10_1, units: "deg", gain: 1, measurement: _SD }
+    WD_VANE_PRF_SD_T1_20_1: {  field: WD_VANE_PRF_SD_T1_20_1, units: "deg", gain: 1, measurement: _SD }
+    WD_VANE_PRF_SD_T1_25_1: {  field: WD_VANE_PRF_SD_T1_25_1, units: "deg", gain: 1, measurement: _SD }
+    WD_VANE_PRF_SD_T1_35_1: {  field: WD_VANE_PRF_SD_T1_35_1, units: "deg", gain: 1, measurement: _SD }
+    WD_WiSoGILL_PRF_AVG_T1_10_1: {  field: WD_SA_GILL_PRF_T1_10_1, units: "deg", gain: 1, measurement: WIND }
+    WD_WiSoGILL_PRF_AVG_T1_20_1: {  field: WD_SA_GILL_PRF_T1_20_1, units: "deg", gain: 1, measurement: WIND }
+    WD_WiSoGILL_PRF_AVG_T1_25_1: {  field: WD_SA_GILL_PRF_T1_25_1, units: "deg", gain: 1, measurement: WIND }
+    WD_WiSoGILL_PRF_AVG_T2_01_1: {  field: WD_SA_GILL_PRF_T2_1_1, units: "deg", gain: 1, measurement: WIND }
+    WD_WiSoGILL_PRF_AVG_T2_02_1: {  field: WD_SA_GILL_PRF_T2_2_1, units: "deg", gain: 1, measurement: WIND }
+    WIGE: {  field: WS_X_X_X, units: "m s-1", gain: 1, measurement: WIND }
+    WIRI: {  field: WD_X_X_X, units: "deg", gain: 1, measurement: WIND }
+    WP_AVG_FF0_0.05_1: {  field: WP_FF0_0.05_1, units: "kPa", gain: 1, measurement: WP }
+    WP_AVG_FF0_0.15_1: {  field: WP_FF0_0.15_1, units: "kPa", gain: 1, measurement: WP }
+    WP_AVG_FF0_0.45_1: {  field: WP_FF0_0.45_1, units: "kPa", gain: 1, measurement: WP }
+    WP_AVG_FF0_201_1: {  field: WP_FF0_201_1, units: "kPa", gain: 1, measurement: WP }  # unclear vertical position
+    WP_AVG_FF0_201_2: {  field: WP_FF0_201_2, units: "kPa", gain: 1, measurement: WP }  # unclear vertical position
+    WP_AVG_FF0_201_3: {  field: WP_FF0_201_3, units: "kPa", gain: 1, measurement: WP }  # unclear vertical position
+    WS_CUP_NABEL_AVG_T1_35_2: {  field: WS_CUP_NABEL_T1_35_2, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_2_1: {  field: WS_CUP_SCALAR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_02_1: {  field: WS_CUP_SCALAR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_10_1: {  field: WS_CUP_SCALAR_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_20_1: {  field: WS_CUP_SCALAR_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_25_1: {  field: WS_CUP_SCALAR_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_35_1: {  field: WS_CUP_SCALAR_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_PRF_AVG_T1_2_1: {  field: WS_CUP_SCALAR_PRF_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_PRF_AVG_T1_02_1: {  field: WS_CUP_SCALAR_PRF_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_PRF_AVG_T1_10_1: {  field: WS_CUP_SCALAR_PRF_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_PRF_AVG_T1_20_1: {  field: WS_CUP_SCALAR_PRF_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_PRF_AVG_T1_25_1: {  field: WS_CUP_SCALAR_PRF_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_PRF_AVG_T1_35_1: {  field: WS_CUP_SCALAR_PRF_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_AVG_T1_02_1: {  field: WS_CUP_VECTOR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_AVG_T1_10_1: {  field: WS_CUP_VECTOR_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_AVG_T1_20_1: {  field: WS_CUP_VECTOR_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_AVG_T1_25_1: {  field: WS_CUP_VECTOR_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_AVG_T1_35_1: {  field: WS_CUP_VECTOR_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_PRF_AVG_T1_2_1: {  field: WS_CUP_VECTOR_PRF_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_PRF_AVG_T1_02_1: {  field: WS_CUP_VECTOR_PRF_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_PRF_AVG_T1_10_1: {  field: WS_CUP_VECTOR_PRF_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_PRF_AVG_T1_20_1: {  field: WS_CUP_VECTOR_PRF_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_PRF_AVG_T1_25_1: {  field: WS_CUP_VECTOR_PRF_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_PRF_AVG_T1_35_1: {  field: WS_CUP_VECTOR_PRF_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_MAX_NABEL_AVG_T1_35_2: {  field: WS_MAX_NABEL_T1_35_2, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_SCALAR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_SCALAR_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_SCALAR_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_SCALAR_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_SCALAR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_SCALAR_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_02_1: {  field: WS_PROPELLER_PRF_VECTOR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_10_1: {  field: WS_PROPELLER_PRF_VECTOR_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_20_1: {  field: WS_PROPELLER_PRF_VECTOR_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_25_1: {  field: WS_PROPELLER_PRF_VECTOR_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_PROPELLER_PRF_VECTOR_AVG_T1_35_1: {  field: WS_PROPELLER_PRF_VECTOR_T1_35_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_SCALAR_COUNT_PRF_T1_01_1: {  field: WS_SCALAR_COUNT_PRF_T1_1_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_SCALAR_COUNT_PRF_T1_02_1: {  field: WS_SCALAR_COUNT_PRF_T1_2_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_SCALAR_COUNT_PRF_T1_10_1: {  field: WS_SCALAR_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_SCALAR_COUNT_PRF_T1_20_1: {  field: WS_SCALAR_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_SCALAR_COUNT_PRF_T1_25_1: {  field: WS_SCALAR_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_VECTOR_COUNT_PRF_T1_01_1: {  field: WS_VECTOR_COUNT_PRF_T1_1_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_VECTOR_COUNT_PRF_T1_02_1: {  field: WS_VECTOR_COUNT_PRF_T1_2_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_VECTOR_COUNT_PRF_T1_10_1: {  field: WS_VECTOR_COUNT_PRF_T1_10_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_VECTOR_COUNT_PRF_T1_20_1: {  field: WS_VECTOR_COUNT_PRF_T1_20_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_VECTOR_COUNT_PRF_T1_25_1: {  field: WS_VECTOR_COUNT_PRF_T1_25_1, units: "counts", gain: 1, measurement: _instrumentmetrics }
+    WS_WiSoGILL_PRF_AVG_T1_10_1: {  field: WS_SA_GILL_PRF_T1_10_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_WiSoGILL_PRF_AVG_T1_20_1: {  field: WS_SA_GILL_PRF_T1_20_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_WiSoGILL_PRF_AVG_T1_25_1: {  field: WS_SA_GILL_PRF_T1_25_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_WiSoGILL_PRF_AVG_T2_01_1: {  field: WS_SA_GILL_PRF_T2_1_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_WiSoGILL_PRF_AVG_T2_02_1: {  field: WS_SA_GILL_PRF_T2_2_1, units: "m s-1", gain: 1, measurement: WIND }

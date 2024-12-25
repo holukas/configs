@@ -54,7 +54,7 @@ DAV10-RAW-PROFILE-201308010000-NOFILEDATE-TOA5-DAT-10MIN:
   data_vars:
     Band_147_Avg: { field: DENDRO_BAND_TREE147_1_1, units: "um", measurement: BOLE }
     Band_148_Avg: { field: DENDRO_BAND_TREE148_1_1, units: "um", measurement: BOLE }
-    Band_Rock_Avg: { field: DENDRO_BAND_ROCK_0_1, units: "um", measurement: BOLE }
+    Band_Rock_Avg: { field: DENDRO_BAND_ROCK_1_1, units: "um", measurement: BOLE }
     Baro_Avg: { field: Baro_Avg_X_X_X, units: false, measurement: XXX }
     Batt_Volt_Avg: { field: BV_FF0_0_1, units: false, measurement: _instrumentmetrics }
     BodenFeu05_Avg: { field: SWC_FF0_0.05_1, units: "%", gain: 100.0, measurement: SWC }

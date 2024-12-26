@@ -42,18 +42,18 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     BV_LOGGER_AVG_FF0_1_1: {  field: BV_LOGGER_FF0_1_1, units: "V", gain: 1, measurement: _instrumentmetrics }
     BV_LOGGER_AVG_H1_1_1: {  field: BV_LOGGER_H1_1_1, units: "V", gain: 1, measurement: _instrumentmetrics }
     BV_LOGGER_AVG_T1_35_1: {  field: BV_LOGGER_T1_35_1, units: "V", gain: 1, measurement: _instrumentmetrics }
-    CO2_IRGA70_PRF_AVG_FF6_1_06: {  field: CO2_IRGA70_PRF_FF6_1_06, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_FF6_1_07: {  field: CO2_IRGA70_PRF_FF6_1_07, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_FF6_1_08: {  field: CO2_IRGA70_PRF_FF6_1_08, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_FF6_1_09: {  field: CO2_IRGA70_PRF_FF6_1_09, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_FF6_1_10: {  field: CO2_IRGA70_PRF_FF6_1_10, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_FF6_1_11: {  field: CO2_IRGA70_PRF_FF6_1_11, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_FF6_1_12: {  field: CO2_IRGA70_PRF_FF6_1_12, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_T1_2_1: {  field: CO2_IRGA70_PRF_T1_2_1, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_T1_10_1: {  field: CO2_IRGA70_PRF_T1_10_1, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_T1_20_1: {  field: CO2_IRGA70_PRF_T1_20_1, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_T1_25_1: {  field: CO2_IRGA70_PRF_T1_25_1, units: "ppm", gain: 1, measurement: CO2 }
-    CO2_IRGA70_PRF_AVG_T1_35_1: {  field: CO2_IRGA70_PRF_T1_35_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_06: {  field: CO2_IRGA_PRF_FF6_1_06, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_07: {  field: CO2_IRGA_PRF_FF6_1_07, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_08: {  field: CO2_IRGA_PRF_FF6_1_08, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_09: {  field: CO2_IRGA_PRF_FF6_1_09, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_10: {  field: CO2_IRGA_PRF_FF6_1_10, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_11: {  field: CO2_IRGA_PRF_FF6_1_11, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_FF6_1_12: {  field: CO2_IRGA_PRF_FF6_1_12, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_2_1: {  field: CO2_IRGA_PRF_T1_2_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_10_1: {  field: CO2_IRGA_PRF_T1_10_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_20_1: {  field: CO2_IRGA_PRF_T1_20_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_25_1: {  field: CO2_IRGA_PRF_T1_25_1, units: "ppm", gain: 1, measurement: CO2 }
+    CO2_IRGA70_PRF_AVG_T1_35_1: {  field: CO2_IRGA_PRF_T1_35_1, units: "ppm", gain: 1, measurement: CO2 }
     CO2_IRGA_PRF_AVG_FF6_1_06: {  field: CO2_IRGA_PRF_FF6_1_06, units: "ppm", gain: 1, measurement: CO2 }
     CO2_IRGA_PRF_AVG_FF6_1_07: {  field: CO2_IRGA_PRF_FF6_1_07, units: "ppm", gain: 1, measurement: CO2 }
     CO2_IRGA_PRF_AVG_FF6_1_08: {  field: CO2_IRGA_PRF_FF6_1_08, units: "ppm", gain: 1, measurement: CO2 }
@@ -115,18 +115,18 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     G_STD_FF3_0.05_1: {  field: G_STD_FF3_0.05_1, units: "W m-2", gain: 1, measurement: _SD }
     G_STD_FF4_0.05_1: {  field: G_STD_FF4_0.05_1, units: "W m-2", gain: 1, measurement: _SD }
     G_STD_FF5_0.05_1: {  field: G_STD_FF5_0.05_1, units: "W m-2", gain: 1, measurement: _SD }
-    H2O_IRGA70_PRF_AVG_FF6_1_06: {  field: H2O_IRGA70_PRF_FF6_1_06, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_FF6_1_07: {  field: H2O_IRGA70_PRF_FF6_1_07, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_FF6_1_08: {  field: H2O_IRGA70_PRF_FF6_1_08, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_FF6_1_09: {  field: H2O_IRGA70_PRF_FF6_1_09, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_FF6_1_10: {  field: H2O_IRGA70_PRF_FF6_1_10, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_FF6_1_11: {  field: H2O_IRGA70_PRF_FF6_1_11, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_FF6_1_12: {  field: H2O_IRGA70_PRF_FF6_1_12, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_T1_2_1: {  field: H2O_IRGA70_PRF_T1_2_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_T1_10_1: {  field: H2O_IRGA70_PRF_T1_10_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_T1_20_1: {  field: H2O_IRGA70_PRF_T1_20_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_T1_25_1: {  field: H2O_IRGA70_PRF_T1_25_1, units: "mmol mol-1", gain: 1, measurement: H2O }
-    H2O_IRGA70_PRF_AVG_T1_35_1: {  field: H2O_IRGA70_PRF_T1_35_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_06: {  field: H2O_IRGA_PRF_FF6_1_06, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_07: {  field: H2O_IRGA_PRF_FF6_1_07, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_08: {  field: H2O_IRGA_PRF_FF6_1_08, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_09: {  field: H2O_IRGA_PRF_FF6_1_09, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_10: {  field: H2O_IRGA_PRF_FF6_1_10, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_11: {  field: H2O_IRGA_PRF_FF6_1_11, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_FF6_1_12: {  field: H2O_IRGA_PRF_FF6_1_12, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_2_1: {  field: H2O_IRGA_PRF_T1_2_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_10_1: {  field: H2O_IRGA_PRF_T1_10_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_20_1: {  field: H2O_IRGA_PRF_T1_20_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_25_1: {  field: H2O_IRGA_PRF_T1_25_1, units: "mmol mol-1", gain: 1, measurement: H2O }
+    H2O_IRGA70_PRF_AVG_T1_35_1: {  field: H2O_IRGA_PRF_T1_35_1, units: "mmol mol-1", gain: 1, measurement: H2O }
     H2O_IRGA_PRF_AVG_FF6_1_06: {  field: H2O_IRGA_PRF_FF6_1_06, units: "mmol mol-1", gain: 1, measurement: H2O }
     H2O_IRGA_PRF_AVG_FF6_1_07: {  field: H2O_IRGA_PRF_FF6_1_07, units: "mmol mol-1", gain: 1, measurement: H2O }
     H2O_IRGA_PRF_AVG_FF6_1_08: {  field: H2O_IRGA_PRF_FF6_1_08, units: "mmol mol-1", gain: 1, measurement: H2O }
@@ -142,28 +142,35 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     HEAT_HS50_T1B1_35_1_FLAG: {  field: HEAT_FLAG_HS50_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
     HEAT_LI72_T1B1_35_1_FLAG: {  field: HEAT_FLAG_LI72_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
     HEAT_R350_T1B1_35_1_FLAG: {  field: HEAT_FLAG_R350_T1B1_35_1, units: "flag", gain: 1, measurement: _instrumentmetrics }
-    LW_IN_AVG_T1_35_1: {  field: LW_IN_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_IN_AVG_T1_35_1.1: {  field: LW_IN_T1_35_X, units: "W m-2", gain: 1, measurement: LW }
-    LW_IN_STD_T1_35_1: {  field: LW_IN_SD_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_AVG_T1_35_1: {  field: LW_OUT_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_AVG_T1_35_1.1: {  field: LW_OUT_T1_35_X, units: "W m-2", gain: 1, measurement: LW }
-    LW_OUT_STD_T1_35_1: {  field: LW_OUT_SD_T1_35_1, units: "W m-2", gain: 1, measurement: LW }
+
+    # Calculate Boltzmann corrected for LW_IN and LW_OUT b/c original variables look like raw units
+    T_CNR1_AVG_T1_35_1: { field: T_CNR1_T1_35_1, units: "degC", rawfunc: [ calc_lw, T_CNR1_AVG_T1_35_1, LW_IN_AVG_T1_35_1, LW_IN_T1_35_1 ], measurement: _instrumentmetrics }  # rawfunc
+    LW_IN_AVG_T1_35_1: { field: LW_IN_RAW_T1_35_1, units: "mV", rawfunc: [ calc_lw, T_CNR1_AVG_T1_35_1, LW_IN_AVG_T1_35_1, LW_IN_T1_35_1 ], measurement: _RAW }  # rawfunc
+    LW_OUT_AVG_T1_35_1: { field: LW_OUT_RAW_T1_35_1, units: "mV", rawfunc: [ calc_lw, T_CNR1_AVG_T1_35_1, LW_OUT_AVG_T1_35_1, LW_OUT_T1_35_1 ], measurement: _RAW }  # rawfunc
+    # T_CNR1_AVG_T1_35_1: {  field: T_CNR1_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    # LW_IN_AVG_T1_35_1: {  field: LW_IN_RAW_T1_35_1, units: "unknown", gain: 1, measurement: LW }  # Units "W m-2" listed in data files not possible
+    # LW_OUT_AVG_T1_35_1: {  field: LW_OUT_RAW_T1_35_1, units: "unknown", gain: 1, measurement: LW }  # Units "W m-2" listed in data files not possible
+
+    LW_IN_AVG_T1_35_1.1: {  field: LW_IN_RAW_T1_35_X, units: "unknown", gain: 1, measurement: LW }  # Units "W m-2" listed in data files not possible
+    LW_IN_STD_T1_35_1: {  field: LW_IN_RAW_SD_T1_35_1, units: "unknown", gain: 1, measurement: _SD }  # Units "W m-2" listed in data files not possible
+    LW_OUT_AVG_T1_35_1.1: {  field: LW_OUT_RAW_T1_35_X, units: "unknown", gain: 1, measurement: LW }  # Units "W m-2" listed in data files not possible
+    LW_OUT_STD_T1_35_1: {  field: LW_OUT_RAW_SD_T1_35_1, units: "unknown", gain: 1, measurement: _SD }  # Units "W m-2" listed in data files not possible
     NETRAD_AVG_T1_35_1: {  field: NETRAD_T1_35_1, units: "W m-2", gain: 1, measurement: NETRAD }
     NETRAD_NABEL_AVG_T1_35_2: {  field: NETRAD_NABEL_T1_35_2, units: "W m-2", gain: 1, measurement: NETRAD }
     P_CELL_IRGA62_PRF_AVG_T1_35_1: {  field: P_CELL_IRGA62_PRF_T1_35_1, units: "kPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: P_CELL_IRGA70_PRF_FF6_1_06, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: P_CELL_IRGA70_PRF_FF6_1_07, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: P_CELL_IRGA70_PRF_FF6_1_08, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: P_CELL_IRGA70_PRF_FF6_1_09, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: P_CELL_IRGA70_PRF_FF6_1_10, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: P_CELL_IRGA70_PRF_FF6_1_11, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: P_CELL_IRGA70_PRF_FF6_1_12, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: P_CELL_IRGA70_PRF_T1_2_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: P_CELL_IRGA70_PRF_T1_2_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: P_CELL_IRGA70_PRF_T1_10_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: P_CELL_IRGA70_PRF_T1_20_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: P_CELL_IRGA70_PRF_T1_25_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
-    P_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: P_CELL_IRGA70_PRF_T1_35_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: P_CELL_IRGA_PRF_FF6_1_06, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: P_CELL_IRGA_PRF_FF6_1_07, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: P_CELL_IRGA_PRF_FF6_1_08, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: P_CELL_IRGA_PRF_FF6_1_09, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: P_CELL_IRGA_PRF_FF6_1_10, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: P_CELL_IRGA_PRF_FF6_1_11, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: P_CELL_IRGA_PRF_FF6_1_12, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: P_CELL_IRGA_PRF_T1_2_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: P_CELL_IRGA_PRF_T1_2_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: P_CELL_IRGA_PRF_T1_10_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: P_CELL_IRGA_PRF_T1_20_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: P_CELL_IRGA_PRF_T1_25_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
+    P_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: P_CELL_IRGA_PRF_T1_35_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
     P_CELL_IRGA_PRF_AVG_T1_1_1: {  field: P_CELL_IRGA_PRF_T1_1_1, units: "hPa", gain: 1, measurement: _instrumentmetrics }
     P_Hum_1m_AVG: {  field: RH_PRF_T1_1_1, units: "%", gain: 1, measurement: RH }
     P_Hum_2m_AVG: {  field: RH_PRF_T1_2_1, units: "%", gain: 1, measurement: RH }
@@ -340,21 +347,21 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN:
     T_BOLE_AVG_TREE148_1_1: {  field: T_BOLE_TREE148_1_1, units: "degC", gain: 1, measurement: BOLE }
     T_BOLE_AVG_TREE296_1_1: {  field: T_BOLE_TREE296_1_1, units: "degC", gain: 1, measurement: BOLE }
     T_CELL_IRGA62_PRF_AVG_T1_35_1: {  field: T_CELL_IRGA62_PRF_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: T_CELL_IRGA70_PRF_FF6_1_06, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: T_CELL_IRGA70_PRF_FF6_1_07, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: T_CELL_IRGA70_PRF_FF6_1_08, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: T_CELL_IRGA70_PRF_FF6_1_09, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: T_CELL_IRGA70_PRF_FF6_1_10, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: T_CELL_IRGA70_PRF_FF6_1_11, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: T_CELL_IRGA70_PRF_FF6_1_12, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: T_CELL_IRGA70_PRF_T1_2_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: T_CELL_IRGA70_PRF_T1_2_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: T_CELL_IRGA70_PRF_T1_10_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: T_CELL_IRGA70_PRF_T1_20_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: T_CELL_IRGA70_PRF_T1_25_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: T_CELL_IRGA70_PRF_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_06: {  field: T_CELL_IRGA_PRF_FF6_1_06, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_07: {  field: T_CELL_IRGA_PRF_FF6_1_07, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_08: {  field: T_CELL_IRGA_PRF_FF6_1_08, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_09: {  field: T_CELL_IRGA_PRF_FF6_1_09, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_10: {  field: T_CELL_IRGA_PRF_FF6_1_10, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_11: {  field: T_CELL_IRGA_PRF_FF6_1_11, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_FF6_1_12: {  field: T_CELL_IRGA_PRF_FF6_1_12, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_2_1: {  field: T_CELL_IRGA_PRF_T1_2_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_02_1: {  field: T_CELL_IRGA_PRF_T1_2_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_10_1: {  field: T_CELL_IRGA_PRF_T1_10_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_20_1: {  field: T_CELL_IRGA_PRF_T1_20_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_25_1: {  field: T_CELL_IRGA_PRF_T1_25_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_CELL_IRGA70_PRF_AVG_T1_35_1: {  field: T_CELL_IRGA_PRF_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
     T_CELL_IRGA_PRF_AVG_T1_1_1: {  field: T_CELL_IRGA_PRF_T1_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
-    T_CNR1_AVG_T1_35_1: {  field: T_CNR1_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+
     T_COOLER_AVG_H1_1_1: {  field: T_COOLER_H1_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
     T_HEATER_AVG_T1_35_1: {  field: T_HEATER_T1_35_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
     T_IDL_AVG_FF0_1_1: {  field: T_IDL_FF0_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }

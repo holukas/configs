@@ -46,6 +46,7 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
     GlobRad_Avg: { field: SW_IN_M3_2.5_1, units: false, measurement: SW }
     SW_IN_M3_2x5_1_Avg: { field: SW_IN_M3_2.5_1, units: false, measurement: SW }
     GrassTemp_Avg: { field: TG_GF1_0.05_1, units: false, measurement: TG }
+    G_GF1_0x05_1_Avg: { field: G_GF1_0.05_1, units: false, measurement: G }  # since Oct 2024
     TG_GF1_0x05_1_Avg: { field: TG_GF1_0.05_1, units: false, measurement: TG }
     LeafWet_1_Avg: { field: LEAF_WET_GF1_0.05_1, units: false, measurement: LEAF_WET }
     LeafWet_2_Avg: { field: LEAF_WET_GF1_0.05_2, units: false, measurement: LEAF_WET }

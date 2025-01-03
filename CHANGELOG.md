@@ -16,6 +16,7 @@
 - Assigned units `mV` to all `LW_IN_RAW`, `LW_OUT_RAW`, `LW_IN_IU` and `LW_OUT_IU` variables
 - Assigned units `g s-1` to all `SAPFLOW` variables
 - `BAND` variables are asssumed to be band dendrometers `DENDRO_BAND`
+- Added new variable `G_GF1_0x05_1_Avg` to `AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN`
 
 ## 20240913 | 13 Sep 2024
 

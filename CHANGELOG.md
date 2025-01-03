@@ -17,6 +17,7 @@
 - Assigned units `g s-1` to all `SAPFLOW` variables
 - `BAND` variables are asssumed to be band dendrometers `DENDRO_BAND`
 - Added new variable `G_GF1_0x05_1_Avg` to `AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN`
+- Added new variable `TA_T1B2_4_2` to `HON10-RAW-202402261031-TOA5-DAT-1MIN`
 
 ## 20240913 | 13 Sep 2024
 

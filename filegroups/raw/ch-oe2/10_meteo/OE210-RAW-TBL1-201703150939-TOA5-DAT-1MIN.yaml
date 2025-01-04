@@ -72,6 +72,7 @@ OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN:
     RH_T1_2_1_Std: { field: RH_SD_T1_2_1, units: false, measurement: _SD }
     SDI12_PWR_Max: { field: SDI12_PWR_MAX_X_X_X, units: false, measurement: _instrumentmetrics }
     SDI12_PWR_TMx: { field: SDI12_PWR_TMX_X_X_X, units: false, measurement: _instrumentmetrics }
+
     SDP_CF1_0x05_1_Avg: { field: SDP_CF1_0.05_1, units: false, measurement: SDP }
     SDP_CF1_0x05_1_Std: { field: SDP_SD_CF1_0.05_1, units: false, measurement: _SD }
     SDP_CF1_0x15_1_Avg: { field: SDP_CF1_0.15_1, units: false, measurement: SDP }
@@ -80,6 +81,12 @@ OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN:
     SDP_CF1_0x30_1_Std: { field: SDP_SD_CF1_0.3_1, units: false, measurement: _SD }
     SDP_CF1_0x50_1_Avg: { field: SDP_CF1_0.5_1, units: false, measurement: SDP }
     SDP_CF1_0x50_1_Std: { field: SDP_SD_CF1_0.5_1, units: false, measurement: _SD }
+
+    SDP_CF1_0x3_1_Avg: { field: SDP_CF1_0.3_1, units: false, measurement: SDP }
+    SDP_CF1_0x5_1_Avg: { field: SDP_CF1_0.5_1, units: false, measurement: SDP }
+    SDP_CF1_0x3_1_Std: { field: SDP_SD_CF1_0.3_1, units: false, measurement: _SD }
+    SDP_CF1_0x5_1_Std: { field: SDP_SD_CF1_0.5_1, units: false, measurement: _SD }
+
     SW_IN_M1_1_1_Avg: { field: SW_IN_M1_1_1, units: false, measurement: SW }
     SW_IN_M1_1_1_Std: { field: SW_IN_SD_M1_1_1, units: false, measurement: _SD }
     SW_IN_M1_1_2_Avg: { field: SW_IN_M1_1_2, units: false, measurement: SW }

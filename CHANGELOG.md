@@ -20,6 +20,7 @@
 - Added new variable `TA_T1B2_4_2` to `HON10-RAW-202402261031-TOA5-DAT-1MIN`
 - Added variables and fixed depths in `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN`
 - Added `SDP` variables in `OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN`
+- Added more soil variables in `DAV12-RAW-FF6-TBL1-202107292014-TOA5-DAT-1MIN`
 
 ## 20240913 | 13 Sep 2024
 

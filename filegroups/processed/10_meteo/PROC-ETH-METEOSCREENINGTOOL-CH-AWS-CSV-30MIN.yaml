@@ -1,0 +1,167 @@
+# METEOSCREENINGTOOL
+# 10_meteo
+
+PROC-ETH-METEOSCREENINGTOOL-CH-AWS-CSV-30MIN:
+  # First file: -
+  # Last file:  -
+  can_be_used_by_filescanner: false
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: "*_METEOSCREENINGTOOL_CH-AWS_*.csv"
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: '__TIMESTAMP__'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: meteoscreening_mst
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    BV_CR1000_AVG_BOX2_0_1: { field: BV_CR1000_BOX2_0_1, units: "V", measurement: _instrumentmetrics }
+    BV_CR1000_AVG_BOX2_0_2: { field: BV_CR1000_BOX2_0_2, units: "V", measurement: _instrumentmetrics }
+    BV_CR1000_SD_BOX2_0_1: { field: BV_CR1000_SD_BOX2_0_1, units: "V", measurement: _instrumentmetrics }
+    CURRENT_EC_AVG_BOX4006_0_1: { field: CURRENT_EC_AVG_BOX4006_0_1, units: "A", measurement: _instrumentmetrics }
+    CURRENT_PANEL_AVG_BOX4006_0_1: { field: CURRENT_PANEL_AVG_BOX4006_0_1, units: "A", measurement: _instrumentmetrics }
+    DNTP_CR1000_SMP_BOX2_0_1: { field: DNTP_CR1000_SMP_BOX2_0_1, units: "ms", measurement: _instrumentmetrics }
+    G_AVG_GF2_0.02_1: { field: G_GF2_0.02_1, units: "W m-2", measurement: G }
+    G_AVG_GF2_0.02_2: { field: G_GF2_0.02_2, units: "W m-2", measurement: G }
+    G_AVG_GF2_0.02_3: { field: G_GF2_0.02_3, units: "W m-2", measurement: G }
+    G_AVG_GF2_0.05_1: { field: G_GF2_0.05_1, units: "W m-2", measurement: G }
+    G_AVG_GF2_0.05_2: { field: G_GF2_0.05_2, units: "W m-2", measurement: G }
+    G_SD_GF2_0.05_1: { field: G_SD_GF2_0.05_1, units: "W m-2", measurement: _SD }
+    HEAT_SMP_BOX4006_0_1: { field: HEAT_SMP_BOX4006_0_1, units: false, measurement: _instrumentmetrics }
+    LEAF_WET_AVG_M1_0_1: { field: LEAF_WET_M1_0_1, units: "%", measurement: LEAF_WET }
+    LEAF_WET_AVG_M1_0_2: { field: LEAF_WET_M1_0_2, units: "%", measurement: LEAF_WET }
+    LEAF_WET_AVG_M4006_0_1: { field: LEAF_WET_M4006_0_1, units: "%", measurement: LEAF_WET }
+    LEAF_WET_AVG_M4006_0_2: { field: LEAF_WET_M4006_0_2, units: "%", measurement: LEAF_WET }
+    LW_IN_AVG_M4006_1.4_1: { field: LW_IN_M4006_1.4_1, units: "W m-2", measurement: LW }
+    LW_IN_AVG_T1_1.4_1: { field: LW_IN_T1_1.4_1, units: "W m-2", measurement: LW }
+    LW_IN_RAW_AVG_T1_1.4_1: { field: LW_IN_RAW_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_IN_RAW_AVG_T1_1.4_2: { field: LW_IN_RAW_T1_1.4_2, units: "mV", measurement: _RAW }
+    LW_IN_RAW_SD_T1_1.4_1: { field: LW_IN_RAW_SD_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_OUT_AVG_M4006_1.4_1: { field: LW_OUT_M4006_1.4_1, units: "W m-2", measurement: LW }
+    LW_OUT_AVG_T1_1.4_1: { field: LW_OUT_T1_1.4_1, units: "W m-2", measurement: LW }
+    LW_OUT_RAW_AVG_T1_1.4_1: { field: LW_OUT_RAW_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_AVG_T1_1.4_2: { field: LW_OUT_RAW_T1_1.4_2, units: "mV", measurement: _RAW }
+    LW_OUT_RAW_SD_T1_1.4_1: { field: LW_OUT_RAW_SD_T1_1.4_1, units: "mV", measurement: _RAW }
+    LW_IN_SD_T1_1.4_1: { field: LW_IN_SD_T1_1.4_1, units: false, measurement: _SD }
+    LW_OUT_SD_T1_1.4_1: { field: LW_OUT_SD_T1_1.4_1, units: false, measurement: _SD }
+    N_PA_AVG_T1_1.3_1: { field: N_PA_T1_1.3_1, units: false, measurement: _instrumentmetrics }
+    OSO_CR1000_MAX_BOX2_0_1: { field: OSO_CR1000_MAX_BOX2_0_1, units: false, measurement: OSO }
+    PA_AVG_T1_1.3_1: { field: PA_T1_1.3_1, units: "hPa", measurement: PA }
+    PA_REPL_AVG_T1_1.3_1: { field: PA_REPL_T1_1.3_1, units: "hPa", measurement: PA }
+    PPFD_IN__REPL_CORRECTED_SETTO_0_AVG_T1_0.58_1: { field: PPFD_IN__REPL_CORRECTED_SETTO_0_T1_0.58_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_REPL_AVG_T1_0.58_1: { field: PPFD_IN_REPL_T1_0.58_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_REPL_CORRECTED_AVG_T1_0.58_1: { field: PPFD_IN_REPL_CORRECTED_T1_0.58_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_AVG_M4006_1_1: { field: PPFD_IN_M4006_1_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_AVG_T1_1.4_1: { field: PPFD_IN_T1_1.4_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_AVG_T1_1.4_2: { field: PPFD_IN_T1_1.4_2, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_CORRECTED_AVG_M4006_1_1: { field: PPFD_IN_CORRECTED_M4006_1_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_CORRECTED_AVG_T1_1.4_1: { field: PPFD_IN_CORRECTED_T1_1.4_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_CORRECTED_SETTO_0_AVG_M4006_1_1: { field: PPFD_IN_CORRECTED_SETTO_0_M4006_1_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_CORRECTED_SETTO_0_AVG_T1_0.46_1: { field: PPFD_IN_CORRECTED_SETTO_0_T1_0.46_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_CORRECTED_SETTO_0_AVG_T1_0.58_1: { field: PPFD_IN_CORRECTED_SETTO_0_T1_0.58_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_CORRECTED_SETTO_0_AVG_T1_0.83_1: { field: PPFD_IN_CORRECTED_SETTO_0_T1_0.83_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_CORRECTED_SETTO_0_AVG_T1_1.4_1: { field: PPFD_IN_CORRECTED_SETTO_0_T1_1.4_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_SD_T1_1.4_1: { field: PPFD_IN_SD_T1_1.4_1, units: "umol m-2 s-1", measurement: _SD }
+    PPFD_OUT_AVG_T1_1.4_1: { field: PPFD_OUT_T1_1.4_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_OUT_AVG_T1_1.4_2: { field: PPFD_OUT_T1_1.4_2, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_OUT_CORRECTED_AVG_T1_1.4_1: { field: PPFD_OUT_CORRECTED_T1_1.4_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_OUT_CORRECTED_SETTO_0_AVG_T1_1.4_1: { field: PPFD_OUT_CORRECTED_SETTO_0_T1_1.4_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_OUT_SD_T1_1.4_1: { field: PPFD_OUT_SD_T1_1.4_1, units: "umol m-2 s-1", measurement: _SD }
+    PREC_RAIN_TOT_M1_2_1: { field: PREC_RAIN_TOT_M1_2_1, units: "mm", measurement: PREC }
+    PREC_RAIN_TOT_M4006_2_1: { field: PREC_RAIN_TOT_M4006_2_1, units: "mm", measurement: PREC }
+    PREC_TOT_M2_3_1: { field: PREC_TOT_M2_3_1, units: "mm", measurement: PREC }
+    PREC_TOT_M2_3_2: { field: PREC_TOT_M2_3_2, units: "mm", measurement: PREC }
+    RH_AVG_M1_2_1: { field: RH_M1_2_1, units: "%", measurement: RH }
+    RH_AVG_M4006_2_1: { field: RH_M4006_2_1, units: "%", measurement: RH }
+    RH_AVG_T1_1.5_1: { field: RH_T1_1.5_1, units: "%", measurement: RH }
+    RH_AVG_T1_1.5_2: { field: RH_T1_1.5_2, units: "%", measurement: RH }
+    RH_SD_T1_1.5_1: { field: RH_SD_T1_1.5_1, units: "%", measurement: _SD }
+    SDP_AVG_GF2_0.05_1: { field: SDP_GF2_0.05_1, units: "unitless", measurement: SDP }
+    SDP_SD_GF2_0.05_1: { field: SDP_SD_GF2_0.05_1, units: "unitless", measurement: _SD }
+    SHUNTV_AVG_BOX2_0_1: { field: SHUNTV_BOX2_0_1, units: false, measurement: _instrumentmetrics }
+    SHUNTV_AVG_BOX2_0_2: { field: SHUNTV_BOX2_0_2, units: false, measurement: _instrumentmetrics }
+    SV_CR10X_AVG_BOX3_0_1: { field: SV_CR10X_BOX3_0_1, units: "V", measurement: _instrumentmetrics }
+    SV_CR10X_MIN_BOX4006_0_1: { field: SV_CR10X_MIN_BOX4006_0_1, units: "V", measurement: _instrumentmetrics }
+    SV_CR310_AVG_BOX3_0_1: { field: SV_CR310_BOX3_0_1, units: "V", measurement: _instrumentmetrics }
+    SV_CR310_SD_BOX3_0_1: { field: SV_CR310_SD_BOX3_0_1, units: "V", measurement: _instrumentmetrics }
+    SV_CR1000_AVG_BOX2_0_1: { field: SV_CR1000_BOX2_0_1, units: "V", measurement: _instrumentmetrics }
+    SV_CR1000_AVG_BOX2_0_2: { field: SV_CR1000_BOX2_0_2, units: "V", measurement: _instrumentmetrics }
+    SV_CR1000_MIN_BOX4_0_1: { field: SV_CR1000_MIN_BOX4_0_1, units: "V", measurement: _instrumentmetrics }
+    SV_CR1000_SD_BOX2_0_1: { field: SV_CR1000_SD_BOX2_0_1, units: "V", measurement: _instrumentmetrics }
+    SV_EC_AVG_BOX4006_0_1: { field: SV_EC_BOX4006_0_1, units: "V", measurement: _instrumentmetrics }
+    SW_IN_AVG_M1_2_1: { field: SW_IN_M1_2_1, units: "W m-2", measurement: SW }
+    SW_IN_AVG_M4006_2_2: { field: SW_IN_M4006_2_2, units: "W m-2", measurement: SW }
+    SW_IN_AVG_M4006_1.4_1: { field: SW_IN_M4006_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_AVG_T1_1.4_1: { field: SW_IN_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_AVG_T1_1.4_2: { field: SW_IN_T1_1.4_2, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_AVG_M4006_2_2: { field: SW_IN_CORRECTED_M4006_2_2, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_AVG_M4006_1.4_1: { field: SW_IN_CORRECTED_M4006_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_AVG_T1_1.4_1: { field: SW_IN_CORRECTED_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_SETTO_0_AVG_M4006_2_2: { field: SW_IN_CORRECTED_SETTO_0_M4006_2_2, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_SETTO_0_AVG_M4006_1.4_1: { field: SW_IN_CORRECTED_SETTO_0_M4006_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_SETTO_0_AVG_T1_0.6_1: { field: SW_IN_CORRECTED_SETTO_0_T1_0.6_1, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_SETTO_0_AVG_T1_0.46_1: { field: SW_IN_CORRECTED_SETTO_0_T1_0.46_1, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_SETTO_0_AVG_T1_0.58_1: { field: SW_IN_CORRECTED_SETTO_0_T1_0.58_1, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_SETTO_0_AVG_T1_0.83_1: { field: SW_IN_CORRECTED_SETTO_0_T1_0.83_1, units: "W m-2", measurement: SW }
+    SW_IN_CORRECTED_SETTO_0_AVG_T1_1.4_1: { field: SW_IN_CORRECTED_SETTO_0_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_IN_REPL_AVG_T1_0.58_1: { field: SW_IN_REPL_T1_0.58_1, units: "W m-2", measurement: SW }
+    SW_IN_REPL_CORRECTED_AVG_T1_0.58_1: { field: SW_IN_REPL_CORRECTED_T1_0.58_1, units: "W m-2", measurement: SW }
+    SW_IN_REPL_CORRECTED_SETTO_0_AVG_T1_0.58_1: { field: SW_IN_REPL_CORRECTED_SETTO_0_T1_0.58_1, units: "W m-2", measurement: SW }
+    SW_IN_SD_T1_1.4_1: { field: SW_IN_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    SW_OUT_AVG_M4006_1.4_1: { field: SW_OUT_M4006_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_AVG_T1_1.4_1: { field: SW_OUT_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_AVG_T1_1.4_2: { field: SW_OUT_T1_1.4_2, units: "W m-2", measurement: SW }
+    SW_OUT_CORRECTED_AVG_M4006_1.4_1: { field: SW_OUT_CORRECTED_M4006_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_CORRECTED_AVG_T1_1.4_1: { field: SW_OUT_CORRECTED_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_CORRECTED_SETTO_0_AVG_M4006_1.4_1: { field: SW_OUT_CORRECTED_SETTO_0_M4006_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_CORRECTED_SETTO_0_AVG_T1_1.4_1: { field: SW_OUT_CORRECTED_SETTO_0_T1_1.4_1, units: "W m-2", measurement: SW }
+    SW_OUT_SD_T1_1.4_1: { field: SW_OUT_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
+    SWC_AVG_GF2_0.05_1: { field: SWC_GF2_0.05_1, units: "%", gain: 100, measurement: SWC }
+    SWC_AVG_GF2_0.05_2: { field: SWC_GF2_0.05_2, units: "%", gain: 100, measurement: SWC }
+    SWC_SD_GF2_0.05_1: { field: SWC_SD_GF2_0.05_1, units: "%", gain: 100, measurement: _SD }
+    T_CR10X_AVG_BOX3_0_1: { field: T_CR10X_BOX3_0_1, units: "degC", measurement: _instrumentmetrics }
+    T_CR10X_AVG_BOX4006_0_1: { field: T_CR10X_BOX4006_0_1, units: "degC", measurement: _instrumentmetrics }
+    T_CR310_AVG_BOX3_0_1: { field: T_CR310_BOX3_0_1, units: "degC", measurement: _instrumentmetrics }
+    T_CR310_SD_BOX3_0_1: { field: T_CR310_SD_BOX3_0_1, units: "degC", measurement: _instrumentmetrics }
+    T_CR1000_AVG_BOX2_0_1: { field: T_CR1000_BOX2_0_1, units: "degC", measurement: _instrumentmetrics }
+    T_CR1000_SD_BOX2_0_1: { field: T_CR1000_SD_BOX2_0_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_AVG_M4006_1.4_1: { field: T_RAD_M4006_1.4_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_AVG_T1_1.4_1: { field: T_RAD_T1_1.4_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_AVG_T1_1.4_2: { field: T_RAD_T1_1.4_2, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_SD_T1_1.4_1: { field: T_RAD_SD_T1_1.4_1, units: "degC", measurement: _instrumentmetrics }
+    T_RAD_SD_T1_1.4_2: { field: T_RAD_SD_T1_1.4_2, units: "degC", measurement: _instrumentmetrics }
+    TA_AVG_M1_0.05_1: { field: TA_M1_0.05_1, units: "degC", measurement: TA }
+    TA_AVG_M1_2_1: { field: TA_M1_2_1, units: "degC", measurement: TA }
+    TA_AVG_M4006_0.05_1: { field: TA_M4006_0.05_1, units: "degC", measurement: TA }
+    TA_AVG_M4006_2_1: { field: TA_M4006_2_1, units: "degC", measurement: TA }
+    TA_AVG_T1_1.5_1: { field: TA_T1_1.5_1, units: "degC", measurement: TA }
+    TA_AVG_T1_1.5_2: { field: TA_T1_1.5_2, units: "degC", measurement: TA }
+    TA_SD_T1_1.5_1: { field: TA_SD_T1_1.5_1, units: "degC", measurement: _SD }
+    TS_AVG_GF2_0.05_1: { field: TS_GF2_0.05_1, units: "degC", measurement: TS }
+    TS_AVG_GF2_0.025_1: { field: TS_GF2_0.025_1, units: "degC", measurement: TS }
+    TS_AVG_GF2_0.025_2: { field: TS_GF2_0.025_2, units: "degC", measurement: TS }
+    TS_AVG_M1_0.05_1: { field: TS_M1_0.05_1, units: "degC", measurement: TS }
+    TS_AVG_M4006_0.05_1: { field: TS_M4006_0.05_1, units: "degC", measurement: TS }
+    TS_SD_GF2_0.05_1: { field: TS_SD_GF2_0.05_1, units: "degC", measurement: _SD }
+    TS_SD_GF2_0.025_1: { field: TS_SD_GF2_0.025_1, units: "degC", measurement: _SD }
+    WD_SCALAR_AVG_M1_2_1: { field: WD_SCALAR_M1_2_1, units: "deg", measurement: WIND }
+    WD_VECTOR_AVG_M1_2_1: { field: WD_VECTOR_M1_2_1, units: "deg", measurement: WIND }
+    WD_VECTOR_SD_M1_2_1: { field: WD_VECTOR_SD_M1_2_1, units: "deg", measurement: WIND }
+    WP_AVG_GF2_0.05_1: { field: WP_GF2_0.05_1, units: "kPa", measurement: WP }
+    WP_SD_GF2_0.05_1: { field: WP_SD_GF2_0.05_1, units: "kPa", measurement: _SD }
+    WS_AVG_T1_1.11_1: { field: WS_T1_1.11_1, units: "m s-1", measurement: WIND }
+    WS_SCALAR_AVG_M1_2_1: { field: WS_SCALAR_M1_2_1, units: "m s-1", measurement: WIND }
+    WS_VECTOR_AVG_M1_2_1: { field: WS_VECTOR_M1_2_1, units: "m s-1", measurement: WIND }

@@ -2,12 +2,12 @@
 # 10_meteo
 
 
-TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN:
+TAN10-RAW-BOX1-202311182304-TOA5-DAT-1MIN:
   # TOA5
-  # First file: CH-TAN_iDL_BOX1_0_1_20231128-1911.dat (the very first CH-TAN_iDL_BOX1_0_1_*.dat file)
+  # First file: CH-TAN_iDL_BOX1_0_1_20231118-2304.dat (the very first CH-TAN_iDL_BOX1_0_1_*.dat file)
   # Last file:  *currently running*
   can_be_used_by_filescanner: true
-  filetype_valid_from: 2023-11-28 19:11:00
+  filetype_valid_from: 2023-11-18 23:04:00
   filetype_valid_to: 2099-02-28 11:01:00
   filetype_id: CH-TAN_iDL_BOX1_0_1_*.dat
   filetype_dateparser: CH-TAN_iDL_BOX1_0_1_%Y%m%d-%H%M.dat
@@ -103,12 +103,12 @@ TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN:
     SWC_CF3_0x40_3: { field: SWC_CF3_0.4_3, units: false, measurement: SWC }
     SWC_CF3_0x50_3: { field: SWC_CF3_0.5_3, units: false, measurement: SWC }
 
-    SWC_CF3_0x05_3_frac: { field: SWC_CF3_0.05_3, units: "%", gain: 100, measurement: SWC }
-    SWC_CF3_0x10_3_frac: { field: SWC_CF3_0.1_3, units: "%", gain: 100, measurement: SWC }
-    SWC_CF3_0x20_3_frac: { field: SWC_CF3_0.2_3, units: "%", gain: 100, measurement: SWC }
-    SWC_CF3_0x30_3_frac: { field: SWC_CF3_0.3_3, units: "%", gain: 100, measurement: SWC }
-    SWC_CF3_0x40_3_frac: { field: SWC_CF3_0.4_3, units: "%", gain: 100, measurement: SWC }
-    SWC_CF3_0x50_3_frac: { field: SWC_CF3_0.5_3, units: "%", gain: 100, measurement: SWC }
+    SWC_CF3_0x05_3_frac: { field: SWC_CF3_0.05_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x10_3_frac: { field: SWC_CF3_0.1_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x20_3_frac: { field: SWC_CF3_0.2_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x30_3_frac: { field: SWC_CF3_0.3_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x40_3_frac: { field: SWC_CF3_0.4_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x50_3_frac: { field: SWC_CF3_0.5_3, units: false, gain: 1, measurement: SWC }
 
     TS_CF1_0x05_1: { field: TS_CF1_0.05_1, units: false, measurement: TS }
     T_CF1_0x05_1_Avg: { field: TS_CF1_0.05_1, units: false, measurement: TS }

@@ -1,6 +1,12 @@
 # Changelog
 
-## 20250106 | 6 Jan 2025
+## v202503XX | XX Mar 2025
+
+- Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-AWS-CSV-30MIN`
+- Renamed `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN` to `TAN10-RAW-BOX1-202311182304-TOA5-DAT-1MIN` because there is
+  one earlier meteo file with the same structure
+
+## v20250106 | 6 Jan 2025
 
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-DAV-199701010000-DAT-30MIN`
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-DAV-201601010000-CSV-30MIN`
@@ -22,7 +28,7 @@
 - Added `SDP` variables in `OE210-RAW-TBL1-201703150939-TOA5-DAT-1MIN`
 - Added more soil variables in `DAV12-RAW-FF6-TBL1-202107292014-TOA5-DAT-1MIN`
 
-## 20240913 | 13 Sep 2024
+## v20240913 | 13 Sep 2024
 
 - Added new filetype `CHA10-RAW-TBL1-202405291144-TOA5-DAT-1MIN`
 - Added new filetype `CHA10-RAW-TBL1-202111111500-TOA5-DAT-1MIN`
@@ -32,22 +38,22 @@
 - Added new variable to `AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN`
 - Added new allowed units in `units.yaml`
 
-## 20240829 | 29 Aug 2024
+## v20240829 | 29 Aug 2024
 
 - Changed `vol%` to `%` as given units for SWC in `OE210-RAW-TBL2-202002112120-TOA5-DAT-10MIN`
 
-## 20240828 | 28 Aug 2024
+## v20240828 | 28 Aug 2024
 
 - Added lag variables for `N2O` in filetype `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`
 - Units `vol%` was changed to `%`
 
-## 20240811 | 11 Aug 2024
+## v20240811 | 11 Aug 2024
 
 - `PROC-MS-MAIER2022-HH-CSV-30MIN` for [Maier et al. (2022)](https://doi.org/10.1016/j.scitotenv.2022.157541)
 - `PROC-MS-KREBS2024-CMB-CSV-D` for [Krebs et al. (2024)](https://doi.org/10.5194/bg-21-2005-2024)
 - `PROC-MS-KREBS2024-CMB-CSV-30MIN` for [Krebs et al. (2024)](https://doi.org/10.5194/bg-21-2005-2024)
 
-## 20240708 | 8 Jul 2024
+## v20240708 | 8 Jul 2024
 
 - Added new setting `parse_pos_indices` to parse position indices from specific variables where this information is
   available from the variable name (field). If set to 'true' (not capitalized because YAML), this overrides the setting
@@ -64,7 +70,7 @@
   manuscript [Krebs et al. (2024)](https://doi.org/10.5194/bg-21-2005-2024)
 - Updated filetype `HON10-RAW-202402261031-TOA5-DAT-1MIN`
 
-## 20240704 | 4 Jul 2024
+## v20240704 | 4 Jul 2024
 
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CSV-30MIN` for meteo data screened using the MeteoScreeningTool
 - Added new filetype `PROC-FLUXNET-WW2020-FULLSET-HH-CSV-30MIN` for

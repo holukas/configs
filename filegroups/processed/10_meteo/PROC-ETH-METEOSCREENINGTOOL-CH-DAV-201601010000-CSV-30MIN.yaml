@@ -431,7 +431,7 @@ PROC-ETH-METEOSCREENINGTOOL-CH-DAV-201601010000-CSV-30MIN:
     SWC_5_6_1_Std: { field: SWC_SD_FF5_0.5_1, units: "%", gain: 1, measurement: _SD }
     SWC_5_7_1_Std: { field: SWC_SD_FF5_0.79_1, units: "%", gain: 1, measurement: _SD }
     SWC_AVG_FF1_0.1_1: { field: SWC_FF1_0.1_1, units: "%", gain: 100, measurement: SWC }
-    SWC_AVG_FF1_0.5_1: { field: SWC_FF1_0.5_1, units: "%", gain: 100, measurement: SWC }
+    SWC_AVG_FF1_0.5_1: { field: SWC_FF1_0.5_2, units: "%", gain: 100, measurement: SWC }
     SWC_AVG_FF1_0.05_1: { field: SWC_FF1_0.05_1, units: "%", gain: 100, measurement: SWC }
     SWC_AVG_FF1_0.05_2: { field: SWC_FF1_0.05_2, units: "%", gain: 100, measurement: SWC }
     SWC_AVG_FF1_0.24_1: { field: SWC_FF1_0.24_1, units: "%", gain: 100, measurement: SWC }

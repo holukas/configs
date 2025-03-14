@@ -136,7 +136,7 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     SAPFLOW_TR9957_1x5_2_Avg: { field: SAPFLOW_TREE9957_1.35_2, units: "g s-1", measurement: BOLE }
     SAPFLOW_TR9959_1x5_1_Avg: { field: SAPFLOW_TREE9959_1.35_1, units: "g s-1", measurement: BOLE }
     SAPFLOW_TR9959_1x5_1_Std: { field: SAPFLOW_SD_TREE9959_1.35_1, units: "g s-1", measurement: _SD }
-    SAPFLOW_TR9959_1x5_2_Avg: { field: SAPFLOW_TREE9959_1.35_2, units: "g s-1", measurement: SAPFLOW }
+    SAPFLOW_TR9959_1x5_2_Avg: { field: SAPFLOW_TREE9959_1.35_2, units: "g s-1", measurement: BOLE }
     SAPFLOW_TR9959_1x5_2_Std: { field: SAPFLOW_SD_TREE9959_1.35_2, units: "g s-1", measurement: _SD }
     SW_BC_IN_M1_2_1_Avg: { field: SW_IN_BC_M1_2_1, units: false, measurement: SW }
     SW_BC_IN_M1_2_1_Std: { field: SW_IN_BC_SD_M1_2_1, units: false, measurement: _SD }

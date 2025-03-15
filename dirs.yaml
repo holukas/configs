@@ -8,22 +8,17 @@ raw_mount: /mnt/gl-raw-data/FluxData
 processed_mount: /mnt/gl-processing/
 
 # Basedirs custom
-#processed_local: F:\Sync\luhk_work\80 - SITES\AWS\Data\Datasets\METEOSCREENINGTOOL_METEO_2006-2020
-processed_local: F:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015
-#processed_local: F:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\csv_2016-2021
+processed_local: L:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_XXXX-XXXX
+#processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_A
+#processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_B
+#processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_C
 #processed_local: F:\Sync\luhk_work\80 - SITES\CH-DAV\Data\Datasets\2024_ICOSETC_CH-Dav_ARCHIVE_L2
-#processed_local: L:\Sync\luhk_work\80 - SITES\CHA\Data\Datasets\METEOSCREENINGTOOL_METEO_2005-2021
-#processed_local: F:\Sync\luhk_work\80 - SITES\AWS\Data\Datasets\FLX_CH-Aws_FLUXNET2015_FULLSET_2006-2023_1-3
-#processed_local: F:\Sync\luhk_work\80 - SITES\CHA\Data\Datasets\FLX_CH-Cha_FLUXNET2015_FULLSET_2005-2023_1-3
-#processed_local: F:\Sync\luhk_work\80 - SITES\FRU\Data\Datasets\FLX_CH-Fru_FLUXNET2015_FULLSET_2005-2023_1-3
-#processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\FLX_CH-Lae_FLUXNET2015_FULLSET_2004-2023_1-3
 #processed_local: F:\Sync\luhk_work\80 - SITES\OE2\Data\Datasets\FLX_CH-Oe2_FLUXNET2015_FULLSET_2004-2023_1-3
-#processed_local: L:\Sync\luhk_work\80 - SITES\AES\Data\Datasets\METEOSCREENINGTOOL_METEO_2019-2020
 #processed_local: L:\Sync\luhk_work\80 - SITES\AES\Data\Datasets
 
 # Output dirs
 out_dataflow_mount: /home/holukas/source_code/test_out
-out_dataflow: F:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
+out_dataflow: L:\Sync\luhk_work\20 - CODING\22 - POET\_OUT\dataflow
 
 # Sites subfolders
 ch-aws: CH-AWS_CrapAlv

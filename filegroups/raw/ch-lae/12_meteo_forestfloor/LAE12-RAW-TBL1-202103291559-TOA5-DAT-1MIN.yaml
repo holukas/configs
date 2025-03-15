@@ -66,7 +66,7 @@ LAE12-RAW-TBL1-202103291559-TOA5-DAT-1MIN:
     G_FF1_0x05_1_Std: { field: G_SD_FF1_0.05_1, units: false, measurement: _SD }
     G_FF1_0x05_2_Avg: { field: G_FF1_0.05_2, units: false, measurement: G }
     G_FF1_0x05_2_Std: { field: G_SD_FF1_0.05_2, units: false, measurement: _SD }
-    LEAF_WET_FF1_1x5_1_Avg: { field: LEAF_WET_FF1_1.5_1, units: false, measurement: LEAF_WET }
+    LEAF_WET_FF1_1x5_1_Avg: { field: LEAF_WET_FF1_1.5_1, units: false, measurement: LEAF }
     LEAF_WET_FF1_1x5_1_Std: { field: LEAF_WET_SD_FF1_1.5_1, units: false, measurement: _SD }
     LW_BC_IN_M1_2_1_Avg: { field: LW_IN_BC_M1_2_1, units: false, measurement: LW }
     LW_BC_IN_M1_2_1_Std: { field: LW_IN_BC_SD_M1_2_1, units: false, measurement: _SD }

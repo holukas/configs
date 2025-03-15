@@ -2,9 +2,11 @@
 
 ## v202503XX | XX Mar 2025
 
+- Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-LAE-CSV-30MIN`
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-AWS-CSV-30MIN`
 - Renamed `TAN10-RAW-BOX1-202311281911-TOA5-DAT-1MIN` to `TAN10-RAW-BOX1-202311182304-TOA5-DAT-1MIN` because there is
   one earlier meteo file with the same structure
+- Measurement `LEAF_WET` is now `LEAF`, this is more consistent with `BOLE`
 
 ## v20250106 | 6 Jan 2025
 

@@ -54,7 +54,7 @@ LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN:
     EC_RAW_FF1_0x3_1_Avg: { field: EC_RAW_FF1_0.3_1, units: false, measurement: _RAW }
     EC_RAW_FF1_0x5_1_Avg: { field: EC_RAW_FF1_0.5_1, units: false, measurement: _RAW }
     EC_RAW_FF1_0x05_1_Avg: { field: EC_RAW_FF1_0.05_1, units: false, measurement: _RAW }
-    LeafWetM_Avg: { field: LEAF_WET_FF1_1.5_1, units: false, measurement: LEAF_WET }
+    LeafWetM_Avg: { field: LEAF_WET_FF1_1.5_1, units: false, measurement: LEAF }
     # Depth info from AS
     MPS02HP_Avg(1): { field: SWP_H1_0.05_1, units: false, measurement: SWP }
     MPS02HP_Avg(2): { field: SWP_H1_0.1_1, units: false, measurement: SWP }

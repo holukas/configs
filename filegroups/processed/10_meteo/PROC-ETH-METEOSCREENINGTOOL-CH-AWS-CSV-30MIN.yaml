@@ -41,10 +41,10 @@ PROC-ETH-METEOSCREENINGTOOL-CH-AWS-CSV-30MIN:
     G_AVG_GF2_0.05_2: { field: G_GF2_0.05_2, units: "W m-2", measurement: G }
     G_SD_GF2_0.05_1: { field: G_SD_GF2_0.05_1, units: "W m-2", measurement: _SD }
     HEAT_SMP_BOX4006_0_1: { field: HEAT_SMP_BOX4006_0_1, units: false, measurement: _instrumentmetrics }
-    LEAF_WET_AVG_M1_0_1: { field: LEAF_WET_M1_0_1, units: "%", measurement: LEAF_WET }
-    LEAF_WET_AVG_M1_0_2: { field: LEAF_WET_M1_0_2, units: "%", measurement: LEAF_WET }
-    LEAF_WET_AVG_M4006_0_1: { field: LEAF_WET_M4006_0_1, units: "%", measurement: LEAF_WET }
-    LEAF_WET_AVG_M4006_0_2: { field: LEAF_WET_M4006_0_2, units: "%", measurement: LEAF_WET }
+    LEAF_WET_AVG_M1_0_1: { field: LEAF_WET_M1_0_1, units: "%", measurement: LEAF }
+    LEAF_WET_AVG_M1_0_2: { field: LEAF_WET_M1_0_2, units: "%", measurement: LEAF }
+    LEAF_WET_AVG_M4006_0_1: { field: LEAF_WET_M4006_0_1, units: "%", measurement: LEAF }
+    LEAF_WET_AVG_M4006_0_2: { field: LEAF_WET_M4006_0_2, units: "%", measurement: LEAF }
     LW_IN_AVG_M4006_1.4_1: { field: LW_IN_M4006_1.4_1, units: "W m-2", measurement: LW }
     LW_IN_AVG_T1_1.4_1: { field: LW_IN_T1_1.4_1, units: "W m-2", measurement: LW }
     LW_IN_RAW_AVG_T1_1.4_1: { field: LW_IN_RAW_T1_1.4_1, units: "mV", measurement: _RAW }

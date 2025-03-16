@@ -1,0 +1,98 @@
+# METEOSCREENINGTOOL
+# 10_meteo, data from forest floor FF
+
+PROC-ETH-METEOSCREENINGTOOL-FF-CH-LAE-CSV-30MIN:
+  # First file: -
+  # Last file:  -
+  can_be_used_by_filescanner: false
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: "*_METEOSCREENINGTOOL-FF_CH-LAE_*.csv"
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: '__INDEX__'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: meteoscreening_mst
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    BV_iDL_AVG_BOX_0_1: { field: BV_iDL_BOX_0_1, units: "V", measurement: _instrumentmetrics }
+
+    G_AVG_FF1_0,05_1: { field: G_FF1_0.05_1, units: "W m-2", measurement: G }
+    G_AVG_FF1_0,05_2: { field: G_FF1_0.05_2, units: "W m-2", measurement: G }
+    G_AVG_FF1_0,05_3: { field: G_FF1_0.05_3, units: "W m-2", measurement: G }
+    G_AVG_FF1_0,025_1: { field: G_FF1_0.025_1, units: "W m-2", measurement: G }
+    G_AVG_FF1_0,025_2: { field: G_FF1_0.025_2, units: "W m-2", measurement: G }
+    G_AVG_FF1_0,025_3: { field: G_FF1_0.025_3, units: "W m-2", measurement: G }
+    G_SD_FF1_0,05_1: { field: G_SD_FF1_0.05_1, units: "W m-2", measurement: _SD }
+    G_SD_FF1_0,05_2: { field: G_SD_FF1_0.05_2, units: "W m-2", measurement: _SD }
+    G_SD_FF1_0,05_3: { field: G_SD_FF1_0.05_3, units: "W m-2", measurement: _SD }
+
+    LEAF_WET_AVG_FF1_0,05_1: { field: LEAF_WET_FF1_0.05_1, units: "%", measurement: LEAF }
+    LEAF_WET_SD_FF1_0,05_1: { field: LEAF_WET_SD_FF1_0.05_1, units: "%", measurement: _SD }
+
+    NETRAD_AVG_FF1_2_1: { field: NETRAD_FF1_2_1, units: "W m-2", measurement: NETRAD }
+    NETRAD_SD_FF1_2_1: { field: NETRAD_SD_FF1_2_1, units: "W m-2", measurement: _SD }
+
+    PPFD_IN_AVG_FF1_2_1: { field: PPFD_IN_FF1_2_1, units: "umol m-2 s-1", measurement: PPFD }
+    PPFD_IN_SD_FF1_2_1: { field: PPFD_IN_SD_FF1_2_1, units: "umol m-2 s-1", measurement: _SD }
+
+    RH_AVG_FF1_2_1: { field: RH_FF1_2_1, units: "%", measurement: RH }
+    RH_SD_FF1_2_1: { field: RH_SD_FF1_2_1, units: "%", measurement: _SD }
+
+    SV_iDL_AVG_BOX_0_1: { field: SV_iDL_BOX_0_1, units: "V", measurement: _instrumentmetrics }
+
+    SWC_PRF_AVG_FF1_0,1_1: { field: SWC_FF1_0.1_1, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0,2_1: { field: SWC_FF1_0.2_1, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0,3_1: { field: SWC_FF1_0.3_1, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0,05_1: { field: SWC_FF1_0.05_1, units: "%", measurement: SWC }
+    SWC_PRF_SD_FF1_0,1_1: { field: SWC_SD_FF1_0.1_1, units: "%", measurement: _SD }
+    SWC_PRF_SD_FF1_0,2_1: { field: SWC_SD_FF1_0.2_1, units: "%", measurement: _SD }
+    SWC_PRF_SD_FF1_0,3_1: { field: SWC_SD_FF1_0.3_1, units: "%", measurement: _SD }
+    SWC_PRF_SD_FF1_0,05_1: { field: SWC_SD_FF1_0.05_1, units: "%", measurement: _SD }
+
+    T_iDL_AVG_BOX_0_1: { field: T_iD_BOX_0_1, units: "degC", measurement: _instrumentmetrics }
+
+    TA_AVG_FF1_2_1: { field: TA_FF1_2_1, units: "degC", measurement: TA }
+    TA_SD_FF1_2_1: { field: TA_SD_FF1_2_1, units: "degC", measurement: _SD }
+
+    TS_AVG_FF1_0,05_1: { field: TS_FF1_0.05_1, units: "degC", measurement: TS }
+    TS_AVG_FF1_0,05_2: { field: TS_FF1_0.05_2, units: "degC", measurement: TS }
+    TS_AVG_FF1_0,05_3: { field: TS_FF1_0.05_3, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,1_1: { field: TS_FF1_0.1_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,3_1: { field: TS_FF1_0.3_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,5_1: { field: TS_FF1_0.5_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,05_1: { field: TS_FF1_0.05_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,15_1: { field: TS_FF1_0.15_1, units: "degC", measurement: TS }
+
+    TS_SD_FF1_0,05_1: { field: TS_SD_FF1_0.05_1, units: "degC", measurement: _SD }
+    TS_SD_FF1_0,05_2: { field: TS_SD_FF1_0.05_2, units: "degC", measurement: _SD }
+    TS_SD_FF1_0,05_3: { field: TS_SD_FF1_0.05_3, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,1_1: { field: TS_SD_FF1_0.1_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,3_1: { field: TS_SD_FF1_0.3_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,5_1: { field: TS_SD_FF1_0.5_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,05_1: { field: TS_SD_FF1_0.05_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,15_1: { field: TS_SD_FF1_0.15_1, units: "degC", measurement: _SD }
+
+    WD_VANE_AVG_FF1_2_1: { field: WD_VANE_FF1_2_1, units: "deg", measurement: WIND }
+    WD_VANE_SD_FF1_2_1: { field: WD_VANE_SD_FF1_2_1, units: "deg", measurement: WIND }
+    WD_VANE_VECTOR_AVG_FF1_2_1: { field: WD_VANE_VECTOR_FF1_2_1, units: "deg", measurement: WIND }
+    WD_VANE_VECTOR_SD_FF1_2_1: { field: WD_VANE_VECTOR_SD_FF1_2_1, units: "deg", measurement: WIND }
+
+    WS_CUP_AVG_FF1_2_1: { field: WS_CUP_FF1_2_1, units: "m s-1", measurement: WIND }
+    WS_CUP_SCALAR_AVG_FF1_2_1: { field: WS_CUP_SCALAR_FF1_2_1, units: "m s-1", measurement: WIND }
+    WS_CUP_SD_FF1_2_1: { field: WS_CUP_SD_FF1_2_1, units: "m s-1", measurement: WIND }
+    WS_CUP_VECTOR_AVG_FF1_2_1: { field: WS_CUP_VECTOR_FF1_2_1, units: "m s-1", measurement: WIND }
+

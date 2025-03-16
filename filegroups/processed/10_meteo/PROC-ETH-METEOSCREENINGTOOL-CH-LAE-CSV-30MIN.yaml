@@ -230,14 +230,14 @@ PROC-ETH-METEOSCREENINGTOOL-CH-LAE-CSV-30MIN:
     SW_IN_SD_T1_47_1: { field: SW_IN_SD_T1_47_1, units: "W m-2", measurement: _SD }
     SW_OUT_SD_T1_47_1: { field: SW_OUT_SD_T1_47_1, units: "W m-2", measurement: _SD }
 
-    SWC_PRF_AVG_FF1_0.1_2: { field: SWC_PRF_FF1_0.1_2, units: "%", measurement: SWC }
-    SWC_PRF_AVG_FF1_0.2_1: { field: SWC_PRF_FF1_0.2_1, units: "%", measurement: SWC }
-    SWC_PRF_AVG_FF1_0.2_2: { field: SWC_PRF_FF1_0.2_2, units: "%", measurement: SWC }
-    SWC_PRF_AVG_FF1_0.3_1: { field: SWC_PRF_FF1_0.3_1, units: "%", measurement: SWC }
-    SWC_PRF_AVG_FF1_0.3_2: { field: SWC_PRF_FF1_0.3_2, units: "%", measurement: SWC }
-    SWC_PRF_AVG_FF1_0.05_1: { field: SWC_PRF_FF1_0.05_1, units: "%", measurement: SWC }
-    SWC_PRF_AVG_FF1_0.5_2: { field: SWC_PRF_FF1_0.5_2, units: "%", measurement: SWC }
-    SWC_PRF_AVG_FF1_0.05_2: { field: SWC_PRF_FF1_0.05_2, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.1_2: { field: SWC_FF1_0.1_2, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.2_1: { field: SWC_FF1_0.2_1, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.2_2: { field: SWC_FF1_0.2_2, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.3_1: { field: SWC_FF1_0.3_1, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.3_2: { field: SWC_FF1_0.3_2, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.05_1: { field: SWC_FF1_0.05_1, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.5_2: { field: SWC_FF1_0.5_2, units: "%", measurement: SWC }
+    SWC_PRF_AVG_FF1_0.05_2: { field: SWC_FF1_0.05_2, units: "%", measurement: SWC }
 
     T109DEV2_AVG_H1_0_1: { field: T109DEV2_H1_0_1, units: false, measurement: XXX }  # todo
     T109DEV2_SD_H1_0_1: { field: T109DEV2_SD_H1_0_1, units: false, measurement: XXX }  # todo

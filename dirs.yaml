@@ -8,7 +8,11 @@ raw_mount: /mnt/gl-raw-data/FluxData
 processed_mount: /mnt/gl-processing/
 
 # Basedirs custom
-processed_local: L:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_XXXX-XXXX
+#processed_local: L:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021/A
+#processed_local: L:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021/B
+processed_local: L:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021/C
+#processed_local: L:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021/NABEL
+#processed_local: L:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021/FORESTFLOOR
 #processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_A
 #processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_B
 #processed_local: L:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_C

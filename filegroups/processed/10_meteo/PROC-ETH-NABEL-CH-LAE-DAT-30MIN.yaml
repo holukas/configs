@@ -28,12 +28,12 @@ PROC-ETH-NABEL-CH-LAE-DAT-30MIN:
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    NETRAD_NABEL_AVG_T1_49_1: { field: NETRAD_NABEL_AVG_T1_49_1, units: false, measurement: NETRAD }  # W m-2
-    PA_NABEL_AVG_H1_2_1: { field: PA_NABEL_AVG_H1_2_1, units: false, measurement: PA }  # hPa
+    NETRAD_NABEL_AVG_T1_49_1: { field: NETRAD_NABEL_T1_49_1, units: false, measurement: NETRAD }  # W m-2
+    PA_NABEL_AVG_H1_2_1: { field: PA_NABEL_H1_2_1, units: false, measurement: PA }  # hPa
     PREC_NABEL_TOT_T1_27_1: { field: PREC_NABEL_TOT_T1_27_1, units: false, measurement: PREC }  # mm
-    RH_NABEL_AVG_T1_49_1: { field: RH_NABEL_AVG_T1_49_1, units: false, measurement: RH }  # %
-    SW_IN_NABEL_AVG_T1_49_1: { field: SW_IN_NABEL_AVG_T1_49_1, units: false, measurement: SW }  # W m-2
-    TA_NABEL_AVG_T1_49_1: { field: TA_NABEL_AVG_T1_49_1, units: false, measurement: TA }  # degC
-    WD_NABEL_AVG_T1_49_1: { field: WD_NABEL_AVG_T1_49_1, units: "deg", measurement: WIND }  # deg
-    WS_NABEL_AVG_T1_49_1: { field: WS_NABEL_AVG_T1_49_1, units: false, measurement: WIND }  # m s-1
+    RH_NABEL_AVG_T1_49_1: { field: RH_NABEL_T1_49_1, units: false, measurement: RH }  # %
+    SW_IN_NABEL_AVG_T1_49_1: { field: SW_IN_NABEL_T1_49_1, units: false, measurement: SW }  # W m-2
+    TA_NABEL_AVG_T1_49_1: { field: TA_NABEL_T1_49_1, units: false, measurement: TA }  # degC
+    WD_NABEL_AVG_T1_49_1: { field: WD_NABEL_T1_49_1, units: "deg", measurement: WIND }  # deg
+    WS_NABEL_AVG_T1_49_1: { field: WS_NABEL_T1_49_1, units: false, measurement: WIND }  # m s-1
     WS_NABEL_MAX_T1_49_1: { field: WS_NABEL_MAX_T1_49_1, units: false, measurement: WIND }  # m s-1

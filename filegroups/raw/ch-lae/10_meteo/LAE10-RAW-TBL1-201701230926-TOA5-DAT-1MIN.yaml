@@ -33,16 +33,16 @@ LAE10-RAW-TBL1-201701230926-TOA5-DAT-1MIN:
     BV_CR1000_INT_T1_47_1_Avg: { field: BV_CR1000_INT_T1_47_1, units: false, measurement: _instrumentmetrics }
     BV_CR1000_T1_47_1_Avg: { field: BV_CR1000_T1_47_1, units: false, measurement: _instrumentmetrics }
     HEAT_HS50_T1B4_47_1: { field: HEAT_HS50_T1B4_47_1, units: false, measurement: _instrumentmetrics }
-    LW_IN_COR_T1_47_1_Avg: { field: LW_IN_COR_T1_47_1, units: false, measurement: LW }
-    LW_IN_COR_T1_47_1_Std: { field: LW_IN_COR_SD_T1_47_1, units: false, measurement: _SD }
-    LW_IN_T1_47_1_Avg: { field: LW_IN_T1_47_1, units: false, measurement: LW }
-    LW_IN_T1_47_1_Std: { field: LW_IN_SD_T1_47_1, units: false, measurement: _SD }
-    LW_OUT_COR_T1_47_1_Avg: { field: LW_OUT_COR_T1_47_1, units: false, measurement: LW }
-    LW_OUT_COR_T1_47_1_Std: { field: LW_OUT_COR_SD_T1_47_1, units: false, measurement: _SD }
-    LW_OUT_T1_47_1_Avg: { field: LW_OUT_T1_47_1, units: false, measurement: LW }
-    LW_OUT_T1_47_1_Std: { field: LW_OUT_SD_T1_47_1, units: false, measurement: _SD }
-    LW_VIN_T1_47_1_Avg: { field: LW_VIN_T1_47_1, units: false, measurement: _RAW }
-    LW_VOUT_T1_47_1_Avg: { field: LW_VOUT_T1_47_1, units: false, measurement: _RAW }
+    LW_IN_COR_T1_47_1_Avg: { field: LW_IN_T1_47_1, units: false, measurement: LW }
+    LW_IN_COR_T1_47_1_Std: { field: LW_IN_SD_T1_47_1, units: false, measurement: _SD }
+    LW_IN_T1_47_1_Avg: { field: LW_IN_RAW_T1_47_1, units: false, measurement: _RAW }
+    LW_IN_T1_47_1_Std: { field: LW_IN_RAW_SD_T1_47_1, units: false, measurement: _RAW }
+    LW_OUT_COR_T1_47_1_Avg: { field: LW_OUT_T1_47_1, units: false, measurement: LW }
+    LW_OUT_COR_T1_47_1_Std: { field: LW_OUT_SD_T1_47_1, units: false, measurement: _SD }
+    LW_OUT_T1_47_1_Avg: { field: LW_OUT_RAW_T1_47_1, units: false, measurement: _RAW }
+    LW_OUT_T1_47_1_Std: { field: LW_OUT_RAW_SD_T1_47_1, units: false, measurement: _RAW }
+    LW_VIN_T1_47_1_Avg: { field: LW_VIN_RAW_T1_47_1, units: false, measurement: _RAW }
+    LW_VOUT_T1_47_1_Avg: { field: LW_VOUT_RAW_T1_47_1, units: false, measurement: _RAW }
     NTP_T1_47_1: { field: NTP_T1_47_1, units: false, measurement: _instrumentmetrics }
     PA_T1_47_1_Avg: { field: PA_T1_47_1, units: false, measurement: PA }
     PA_T1_47_1_Std: { field: PA_SD_T1_47_1, units: false, measurement: _SD }
@@ -65,8 +65,8 @@ LAE10-RAW-TBL1-201701230926-TOA5-DAT-1MIN:
     SW_IN_T1_47_1_Std: { field: SW_IN_SD_T1_47_1, units: false, measurement: _SD }
     SW_OUT_T1_47_1_Avg: { field: SW_OUT_T1_47_1, units: false, measurement: SW }
     SW_OUT_T1_47_1_Std: { field: SW_OUT_SD_T1_47_1, units: false, measurement: _SD }
-    SW_VIN_T1_47_1_Avg: { field: SW_VIN_T1_47_1, units: false, measurement: _RAW }
-    SW_VOUT_T1_47_1_Avg: { field: SW_VOUT_T1_47_1, units: false, measurement: _RAW }
+    SW_VIN_T1_47_1_Avg: { field: SW_VIN_RAW_T1_47_1, units: false, measurement: _RAW }
+    SW_VOUT_T1_47_1_Avg: { field: SW_VOUT_RAW_T1_47_1, units: false, measurement: _RAW }
     T_CR1000_T1_47_1_Avg: { field: T_CR1000_T1_47_1, units: false, measurement: _instrumentmetrics }
     T_CR1000_T1_47_1_Std: { field: T_CR1000_SD_T1_47_1, units: false, measurement: _instrumentmetrics }
     T_RAD_T1_47_1_Avg: { field: T_RAD_T1_47_1, units: false, measurement: _instrumentmetrics }

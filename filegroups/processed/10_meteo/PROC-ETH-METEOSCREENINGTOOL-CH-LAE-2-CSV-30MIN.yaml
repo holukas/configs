@@ -1,7 +1,13 @@
 # METEOSCREENINGTOOL
-# 10_meteo, data from forest floor FF
+# 10_meteo
+#
+# Difference to PROC-ETH-METEOSCREENINGTOOL-CH-LAE-1-CSV-30MIN:
+#     data_timestamp_column is named '__INDEX__'
+#     filetype_id: "*_METEOSCREENINGTOOL-FF_CH-LAE_*.csv"
+#
+# Used for some (not all) forest floor files from meteoscreening.
 
-PROC-ETH-METEOSCREENINGTOOL-FF-CH-LAE-CSV-30MIN:
+PROC-ETH-METEOSCREENINGTOOL-CH-LAE-2-CSV-30MIN:
   # First file: -
   # Last file:  -
   can_be_used_by_filescanner: false
@@ -71,28 +77,27 @@ PROC-ETH-METEOSCREENINGTOOL-FF-CH-LAE-CSV-30MIN:
     TS_AVG_FF1_0,05_1: { field: TS_FF1_0.05_1, units: "degC", measurement: TS }
     TS_AVG_FF1_0,05_2: { field: TS_FF1_0.05_2, units: "degC", measurement: TS }
     TS_AVG_FF1_0,05_3: { field: TS_FF1_0.05_3, units: "degC", measurement: TS }
-    TS_PRF_AVG_FF1_0,1_1: { field: TS_FF1_0.1_1, units: "degC", measurement: TS }
-    TS_PRF_AVG_FF1_0,3_1: { field: TS_FF1_0.3_1, units: "degC", measurement: TS }
-    TS_PRF_AVG_FF1_0,5_1: { field: TS_FF1_0.5_1, units: "degC", measurement: TS }
-    TS_PRF_AVG_FF1_0,05_1: { field: TS_FF1_0.05_1, units: "degC", measurement: TS }
-    TS_PRF_AVG_FF1_0,15_1: { field: TS_FF1_0.15_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,1_1: { field: TS_PRF_FF1_0.1_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,3_1: { field: TS_PRF_FF1_0.3_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,5_1: { field: TS_PRF_FF1_0.5_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,05_1: { field: TS_PRF_FF1_0.05_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0,15_1: { field: TS_PRF_FF1_0.15_1, units: "degC", measurement: TS }
 
     TS_SD_FF1_0,05_1: { field: TS_SD_FF1_0.05_1, units: "degC", measurement: _SD }
     TS_SD_FF1_0,05_2: { field: TS_SD_FF1_0.05_2, units: "degC", measurement: _SD }
     TS_SD_FF1_0,05_3: { field: TS_SD_FF1_0.05_3, units: "degC", measurement: _SD }
-    TS_PRF_SD_FF1_0,1_1: { field: TS_SD_FF1_0.1_1, units: "degC", measurement: _SD }
-    TS_PRF_SD_FF1_0,3_1: { field: TS_SD_FF1_0.3_1, units: "degC", measurement: _SD }
-    TS_PRF_SD_FF1_0,5_1: { field: TS_SD_FF1_0.5_1, units: "degC", measurement: _SD }
-    TS_PRF_SD_FF1_0,05_1: { field: TS_SD_FF1_0.05_1, units: "degC", measurement: _SD }
-    TS_PRF_SD_FF1_0,15_1: { field: TS_SD_FF1_0.15_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,1_1: { field: TS_PRF_SD_FF1_0.1_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,3_1: { field: TS_PRF_SD_FF1_0.3_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,5_1: { field: TS_PRF_SD_FF1_0.5_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,05_1: { field: TS_PRF_SD_FF1_0.05_1, units: "degC", measurement: _SD }
+    TS_PRF_SD_FF1_0,15_1: { field: TS_PRF_SD_FF1_0.15_1, units: "degC", measurement: _SD }
 
     WD_VANE_AVG_FF1_2_1: { field: WD_VANE_FF1_2_1, units: "deg", measurement: WIND }
-    WD_VANE_SD_FF1_2_1: { field: WD_VANE_SD_FF1_2_1, units: "deg", measurement: WIND }
+    WD_VANE_SD_FF1_2_1: { field: WD_VANE_SD_FF1_2_1, units: "deg", measurement: _SD }
     WD_VANE_VECTOR_AVG_FF1_2_1: { field: WD_VANE_VECTOR_FF1_2_1, units: "deg", measurement: WIND }
-    WD_VANE_VECTOR_SD_FF1_2_1: { field: WD_VANE_VECTOR_SD_FF1_2_1, units: "deg", measurement: WIND }
+    WD_VANE_VECTOR_SD_FF1_2_1: { field: WD_VANE_VECTOR_SD_FF1_2_1, units: "deg", measurement: _SD }
 
     WS_CUP_AVG_FF1_2_1: { field: WS_CUP_FF1_2_1, units: "m s-1", measurement: WIND }
     WS_CUP_SCALAR_AVG_FF1_2_1: { field: WS_CUP_SCALAR_FF1_2_1, units: "m s-1", measurement: WIND }
-    WS_CUP_SD_FF1_2_1: { field: WS_CUP_SD_FF1_2_1, units: "m s-1", measurement: WIND }
+    WS_CUP_SD_FF1_2_1: { field: WS_CUP_SD_FF1_2_1, units: "m s-1", measurement: _SD }
     WS_CUP_VECTOR_AVG_FF1_2_1: { field: WS_CUP_VECTOR_FF1_2_1, units: "m s-1", measurement: WIND }
-

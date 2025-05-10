@@ -1,7 +1,7 @@
 # METEOSCREENINGTOOL
 # 10_meteo
 
-PROC-ETH-METEOSCREENINGTOOL-CH-LAE-CSV-30MIN:
+PROC-ETH-METEOSCREENINGTOOL-CH-LAE-1-CSV-30MIN:
   # First file: -
   # Last file:  -
   can_be_used_by_filescanner: false
@@ -176,10 +176,10 @@ PROC-ETH-METEOSCREENINGTOOL-CH-LAE-CSV-30MIN:
     PPFD_OUT_SD_T1_47_1: { field: PPFD_OUT_SD_T1_47_1, units: "umol m-2 s-1", measurement: _SD }
     PPFD_OUT_SD_T1_47_2: { field: PPFD_OUT_SD_T1_47_2, units: "umol m-2 s-1", measurement: _SD }
 
-    PREC_NBL_SD_T1_47_1: { field: PREC_NABEL_SD_T1_47_1, units: "mm", measurement: PREC }
+    PREC_NBL_SD_T1_47_1: { field: PREC_NABEL_SD_T1_47_1, units: "mm", measurement: _SD }
     PREC_NBL_TOT_T1_47_1: { field: PREC_NABEL_TOT_T1_47_1, units: "mm", measurement: PREC }
 
-    PRESS_AVG_H1_0_1: { field: PRESS_H1_0_1, units: "kPa", measurement: PA }
+    PRESS_AVG_H1_0_1: { field: PA_H1_0_1, units: "kPa", measurement: PA }
     Ptemp_iDL_AVG_H1_0_1: { field: Ptemp_iDL_H1_0_1, units: false, measurement: _instrumentmetrics }
     Ptemp_iDL_SD_H1_0_1: { field: Ptemp_iDL_SD_H1_0_1, units: false, measurement: _instrumentmetrics }
 

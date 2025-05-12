@@ -1,11 +1,7 @@
 # METEOSCREENINGTOOL
 # 10_meteo
 #
-# Difference to PROC-ETH-METEOSCREENINGTOOL-CH-LAE-1-CSV-30MIN:
-#     data_timestamp_column is named '__INDEX__'
-#     filetype_id: "*_METEOSCREENINGTOOL-FF_CH-LAE_*.csv" (forest floor)
-#
-# Used for forest floor files 2004-2017 from meteoscreening.
+# Used for forest floor files 2004-2016 from meteoscreening.
 # Uses '__INDEX__' as name for timestamp index.
 
 

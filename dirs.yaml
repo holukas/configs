@@ -10,20 +10,19 @@ processed_mount: /mnt/gl-processing/
 # Basedirs custom
 #processed_local: F:\Sync\luhk_work\80 - SITES\FRU\Data\Datasets\METEOSCREENINGTOOL_METEO_2005-2020
 
-processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\METEOSCREENINGTOOL_2004-2021
 #processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\METEOSCREENINGTOOL_2004-2021\2004-2015
 #processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\METEOSCREENINGTOOL_2004-2021\2016-2018
 #processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\METEOSCREENINGTOOL_2004-2021\2019-2021
-
-#processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\FORESTFLOOR_2004-2017
-#processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\FORESTFLOOR_2019-2021
-
+#processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\FORESTFLOOR_2004-2016
+processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\FORESTFLOOR_2017-2021
 #processed_local: F:\Sync\luhk_work\80 - SITES\LAE\Data\Datasets\METEOSCREENINGTOOL_METEO_2004-2021\NABEL
 
 #processed_local: F:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_A
 #processed_local: F:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_B
 #processed_local: F:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\METEOSCREENINGTOOL_METEO_1997-2021\dat_1997-2015_C
-#processed_local: F:\Sync\luhk_work\80 - SITES\CH-DAV\Data\Datasets\2024_ICOSETC_CH-Dav_ARCHIVE_L2
+
+#processed_local: F:\Sync\luhk_work\80 - SITES\DAV\Data\Datasets\2025_ICOSETC_CH-Dav_ARCHIVE_L2
+
 #processed_local: F:\Sync\luhk_work\80 - SITES\OE2\Data\Datasets\FLX_CH-Oe2_FLUXNET2015_FULLSET_2004-2023_1-3
 #processed_local: F:\Sync\luhk_work\80 - SITES\AES\Data\Datasets
 

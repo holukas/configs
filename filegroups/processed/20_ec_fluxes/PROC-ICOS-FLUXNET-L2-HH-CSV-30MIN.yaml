@@ -27,7 +27,7 @@ PROC-ICOS-FLUXNET-L2-HH-CSV-30MIN:
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
-  data_version: icos_level-2_2024-1
+  data_version: icos_level-2_2025-1
   data_vars_parse_pos_indices: false
   data_vars_order: free
   data_vars:

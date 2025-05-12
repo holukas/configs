@@ -1,7 +1,7 @@
 # METEOSCREENINGTOOL
 # 10_meteo
 #
-# Used for forest floor files 2019-2021 from meteoscreening.
+# Used for forest floor files 2017-2021 from meteoscreening.
 # Uses '__TIMESTAMP__' as name for timestamp index.
 
 
@@ -63,6 +63,13 @@ PROC-ETH-METEOSCREENINGTOOL-CH-LAE-FF-B-201901010000-CSV-30MIN:
     SAPFLOW_AVG_TREE2591_1.5_S: { field: SAPFLOW_TREE2591_1.5_S, units: "g s-1", measurement: BOLE }
     SAPFLOW_AVG_TREE8002_1.5_N: { field: SAPFLOW_TREE8002_1.5_N, units: "g s-1", measurement: BOLE }
     SAPFLOW_AVG_TREE9957_1.5_N: { field: SAPFLOW_TREE9957_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2585_1.5_N: { field: SAPFLOW_TREE2585_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2586_1.5_S: { field: SAPFLOW_TREE2586_1.5_S, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2591_1.5_N: { field: SAPFLOW_TREE2591_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2632_1.5_N: { field: SAPFLOW_TREE2632_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE8001_1.5_S: { field: SAPFLOW_TREE8001_1.5_S, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE9957_1.5_S: { field: SAPFLOW_TREE9957_1.5_S, units: "g s-1", measurement: BOLE }
+    SWC_PRF_AVG_FF1_0.1_1: { field: SWC_FF1_0.1_1, units: "%", measurement: SWC }
     SWC_PRF_AVG_FF1_0.2_1: { field: SWC_FF1_0.2_1, units: "%", gain: 1, rawfunc: [ apply_gain_between_dates, "2021-01-01 00:00:00", "2022-01-01 00:00:00", 100 ], measurement: SWC }  # rawfunc
     SWC_PRF_AVG_FF1_0.3_1: { field: SWC_FF1_0.3_1, units: "%", gain: 1, rawfunc: [ apply_gain_between_dates, "2021-01-01 00:00:00", "2022-01-01 00:00:00", 100 ], measurement: SWC }  # rawfunc
     SWC_PRF_AVG_FF1_0.05_1: { field: SWC_FF1_0.05_1, units: "%", gain: 1, rawfunc: [ apply_gain_between_dates, "2021-01-01 00:00:00", "2022-01-01 00:00:00", 100 ], measurement: SWC }  # rawfunc
@@ -81,5 +88,12 @@ PROC-ETH-METEOSCREENINGTOOL-CH-LAE-FF-B-201901010000-CSV-30MIN:
     TS_PRF_AVG_FF1_0.05_1: { field: TS_PRF_FF1_0.05_1, units: "degC", measurement: TS }
     TS_PRF_AVG_FF1_0.5_2: { field: TS_PRF_FF1_0.5_2, units: "degC", measurement: TS }
     TS_PRF_AVG_FF1_0.15_1: { field: TS_PRF_FF1_0.15_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0.2_1: { field: TS_PRF_FF1_0.2_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_1.0_1: { field: TS_PRF_FF1_1.0_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_1.5_1: { field: TS_PRF_FF1_1.5_1, units: "degC", measurement: TS }
     WD_VANE_VECTOR_AVG_FF1_2_1: { field: WD_VANE_VECTOR_FF1_2_1, units: "deg", measurement: WIND }
     WS_CUP_VECTOR_AVG_FF1_2_1: { field: WS_CUP_VECTOR_FF1_2_1, units: "m s-1", measurement: WIND }
+    WP_PRF_AVG_FF1_0.2_1: { field: WP_PRF_FF1_0.2_1, units: "kPa", measurement: WP }
+    WP_PRF_AVG_FF1_0.5_1: { field: WP_PRF_FF1_0.5_1, units: "kPa", measurement: WP }
+    WP_PRF_AVG_FF1_1.0_1: { field: WP_PRF_FF1_1.0_1, units: "kPa", measurement: WP }
+    WP_PRF_AVG_FF1_1.5_1: { field: WP_PRF_FF1_1.5_1, units: "kPa", measurement: WP }

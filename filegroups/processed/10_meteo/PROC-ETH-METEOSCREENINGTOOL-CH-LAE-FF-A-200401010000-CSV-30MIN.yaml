@@ -3,17 +3,19 @@
 #
 # Difference to PROC-ETH-METEOSCREENINGTOOL-CH-LAE-1-CSV-30MIN:
 #     data_timestamp_column is named '__INDEX__'
-#     filetype_id: "*_METEOSCREENINGTOOL-FF_CH-LAE_*.csv"
+#     filetype_id: "*_METEOSCREENINGTOOL-FF_CH-LAE_*.csv" (forest floor)
 #
-# Used for some (not all) forest floor files from meteoscreening.
+# Used for forest floor files 2004-2017 from meteoscreening.
+# Uses '__INDEX__' as name for timestamp index.
 
-PROC-ETH-METEOSCREENINGTOOL-CH-LAE-2-CSV-30MIN:
+
+PROC-ETH-METEOSCREENINGTOOL-CH-LAE-FF-A-200401010000-CSV-30MIN:
   # First file: -
   # Last file:  -
   can_be_used_by_filescanner: false
   filetype_valid_from: 1900-01-01 00:00:00
   filetype_valid_to: 2099-12-31 23:59:59
-  filetype_id: "*_METEOSCREENINGTOOL-FF_CH-LAE_*.csv"
+  filetype_id: "*_METEOSCREENINGTOOL-FF-A_CH-LAE_*.csv"
   filetype_dateparser: false
   filetype_gzip: false
   filegroup: 10_meteo

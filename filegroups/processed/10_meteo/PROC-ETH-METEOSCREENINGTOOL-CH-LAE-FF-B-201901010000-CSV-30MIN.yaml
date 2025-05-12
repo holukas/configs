@@ -1,0 +1,85 @@
+# METEOSCREENINGTOOL
+# 10_meteo
+#
+# Used for forest floor files 2019-2021 from meteoscreening.
+# Uses '__TIMESTAMP__' as name for timestamp index.
+
+
+PROC-ETH-METEOSCREENINGTOOL-CH-LAE-FF-B-201901010000-CSV-30MIN:
+  # First file: -
+  # Last file:  -
+  can_be_used_by_filescanner: false
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: "*_METEOSCREENINGTOOL-FF-B_CH-LAE_*.csv"
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: '__TIMESTAMP__'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: meteoscreening_mst
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    BV_iDL_AVG_H1_0_1: { field: BV_iDL_AVG_H1_0_1, units: "V", measurement: _instrumentmetrics }
+    CO2_STEM_AVG_TREE2577_1.5_W: { field: CO2_STEM_TREE2577_1.5_W, units: "ppm", measurement: BOLE }
+    CO2_STEM_AVG_TREE2585_1.5_W: { field: CO2_STEM_TREE2585_1.5_W, units: "ppm", measurement: BOLE }
+    CO2_STEM_AVG_TREE2591_1.5_W: { field: CO2_STEM_TREE2591_1.5_W, units: "ppm", measurement: BOLE }
+    CO2_STEM_AVG_TREE8001_1.5_W: { field: CO2_STEM_TREE8001_1.5_W, units: "ppm", measurement: BOLE }
+    CO2_STEM_AVG_TREE8002_1.5_W: { field: CO2_STEM_TREE8002_1.5_W, units: "ppm", measurement: BOLE }
+    DENDRO_AVG_TREE2544_1.5_E: { field: DENDRO_TREE2544_1.5_E, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE2557_1.5_N: { field: DENDRO_TREE2557_1.5_N, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE2585_1.5_E: { field: DENDRO_TREE2585_1.5_E, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE2586_1.5_E: { field: DENDRO_TREE2586_1.5_E, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE2587_1.5_E: { field: DENDRO_TREE2587_1.5_E, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE2591_1.5_N: { field: DENDRO_TREE2591_1.5_N, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE2632_1.5_E: { field: DENDRO_TREE2632_1.5_E, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE8001_1.5_N: { field: DENDRO_TREE8001_1.5_N, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE8002_1.5_E: { field: DENDRO_TREE8002_1.5_E, units: "um", measurement: BOLE }
+    DENDRO_AVG_TREE9957_1.5_E: { field: DENDRO_TREE9957_1.5_E, units: "um", measurement: BOLE }
+    G_AVG_FF1_0.025_1: { field: G_FF1_0.025_1, units: "W m-2", measurement: G }
+    G_AVG_FF1_0.025_2: { field: G_FF1_0.025_2, units: "W m-2", measurement: G }
+    G_AVG_FF1_0.025_3: { field: G_FF1_0.025_3, units: "W m-2", measurement: G }
+    LEAF_WET_AVG_FF1_0.05_1: { field: LEAF_WET_FF1_0.05_1, units: "%", measurement: LEAF }
+    NETRAD_AVG_FF1_2_1: { field: NETRAD_FF1_2_1, units: "W m-2", measurement: NETRAD }
+    PPFD_IN_AVG_FF1_2_1: { field: PPFD_IN_FF1_2_1, units: "umol m-2 s-1", measurement: PPFD }
+    RH_AVG_FF1_2_1: { field: RH_FF1_2_1, units: "%", measurement: RH }
+    SAPFLOW_AVG_TREE2544_1.5_N: { field: SAPFLOW_TREE2544_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2577_1.5_S: { field: SAPFLOW_TREE2577_1.5_S, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2586_1.5_N: { field: SAPFLOW_TREE2586_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2587_1.5_N: { field: SAPFLOW_TREE2587_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2587_1.5_S: { field: SAPFLOW_TREE2587_1.5_S, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE2591_1.5_S: { field: SAPFLOW_TREE2591_1.5_S, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE8002_1.5_N: { field: SAPFLOW_TREE8002_1.5_N, units: "g s-1", measurement: BOLE }
+    SAPFLOW_AVG_TREE9957_1.5_N: { field: SAPFLOW_TREE9957_1.5_N, units: "g s-1", measurement: BOLE }
+    SWC_PRF_AVG_FF1_0.2_1: { field: SWC_FF1_0.2_1, units: "%", gain: 1, rawfunc: [ apply_gain_between_dates, "2021-01-01 00:00:00", "2022-01-01 00:00:00", 100 ], measurement: SWC }  # rawfunc
+    SWC_PRF_AVG_FF1_0.3_1: { field: SWC_FF1_0.3_1, units: "%", gain: 1, rawfunc: [ apply_gain_between_dates, "2021-01-01 00:00:00", "2022-01-01 00:00:00", 100 ], measurement: SWC }  # rawfunc
+    SWC_PRF_AVG_FF1_0.05_1: { field: SWC_FF1_0.05_1, units: "%", gain: 1, rawfunc: [ apply_gain_between_dates, "2021-01-01 00:00:00", "2022-01-01 00:00:00", 100 ], measurement: SWC }  # rawfunc
+    T109DEV3_AVG_H1_0_1: { field: T109DEV3_H1_0_1, units: false, measurement: XXX }  # todo
+    T109DEV3_SD_H1_0_1: { field: T109DEV3_SD_H1_0_1, units: false, measurement: XXX }  # todo
+    T_BOLE_AVG_TREE2577_1.5_W: { field: T_BOLE_TREE2577_1.5_W, units: "degC", measurement: BOLE }
+    T_BOLE_AVG_TREE2585_1.5_W: { field: T_BOLE_TREE2585_1.5_W, units: "degC", measurement: BOLE }
+    T_BOLE_AVG_TREE2591_1.5_W: { field: T_BOLE_TREE2591_1.5_W, units: "degC", measurement: BOLE }
+    T_BOLE_AVG_TREE8001_1.5_W: { field: T_BOLE_TREE8001_1.5_W, units: "degC", measurement: BOLE }
+    T_BOLE_AVG_TREE8002_1.5_W: { field: T_BOLE_TREE8002_1.5_W, units: "degC", measurement: BOLE }
+    TA_AVG_FF1_2_1: { field: TA_FF1_2_1, units: "degC", measurement: TA }
+    TS_AVG_FF1_0.05_1: { field: TS_FF1_0.05_1, units: "degC", measurement: TS }
+    TS_AVG_FF1_0.05_2: { field: TS_FF1_0.05_2, units: "degC", measurement: TS }
+    TS_AVG_FF1_0.05_3: { field: TS_FF1_0.05_3, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0.1_1: { field: TS_PRF_FF1_0.1_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0.05_1: { field: TS_PRF_FF1_0.05_1, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0.5_2: { field: TS_PRF_FF1_0.5_2, units: "degC", measurement: TS }
+    TS_PRF_AVG_FF1_0.15_1: { field: TS_PRF_FF1_0.15_1, units: "degC", measurement: TS }
+    WD_VANE_VECTOR_AVG_FF1_2_1: { field: WD_VANE_VECTOR_FF1_2_1, units: "deg", measurement: WIND }
+    WS_CUP_VECTOR_AVG_FF1_2_1: { field: WS_CUP_VECTOR_FF1_2_1, units: "m s-1", measurement: WIND }

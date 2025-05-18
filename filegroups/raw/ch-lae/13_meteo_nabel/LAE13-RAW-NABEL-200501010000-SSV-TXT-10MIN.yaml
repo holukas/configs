@@ -29,14 +29,15 @@ LAE13-RAW-NABEL-200501010000-SSV-TXT-10MIN:
   can_be_used_by_filescanner: true
   filetype_valid_from: 2005-01-01 00:00:00
   filetype_valid_to: 2015-01-01 00:00:00
-  filetype_id: [ 'LAE_NABEL.10min_2005.01-12.txt', 'LAE_NABEL.10min_2007.01-09.txt',
+  filetype_id: [ 'LAE_NABEL.10min_2005.01-2006.01.txt', 'LAE_NABEL.10min_2007.01-09.txt',
                  'LAE_NABEL.10min_2007.10-12.txt', 'LAE_NABEL.10min_2008.01-12.txt',
                  'LAE_NABEL.10min_2008.10-2009.03.txt', 'LAE_NABEL.10min_2009.04-12.txt',
                  'LAE_NABEL.10min_2010.01-12.txt', 'LAE_NABEL.10min_2011.01-10.txt',
                  'LAE_NABEL.10min_2013.01-12.txt', 'LAE_NABEL.10min_2014.01-12.txt',
                  'LAE_NABEL.10min_2015.01-12.txt' ]
-  filetype_dateparser: [ 'LAE_NABEL.10min_%Y.%m-12.txt', 'LAE_NABEL.10min_%Y.%m-09.txt',
-                         'LAE_NABEL.10min_%Y.%m-2009.03.txt', 'LAE_NABEL.10min_%Y.%m-10.txt']
+  filetype_dateparser: [ 'LAE_NABEL.10min_%Y.%m-2006.01.txt', 'LAE_NABEL.10min_%Y.%m-12.txt',
+                         'LAE_NABEL.10min_%Y.%m-09.txt', 'LAE_NABEL.10min_%Y.%m-2009.03.txt',
+                         'LAE_NABEL.10min_%Y.%m-10.txt']
   filetype_gzip: false
   filegroup: 13_meteo_nabel
   data_raw_freq: 10min

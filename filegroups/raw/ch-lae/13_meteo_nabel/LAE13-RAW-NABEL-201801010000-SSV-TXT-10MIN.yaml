@@ -1,0 +1,73 @@
+# CH-LAE
+# 13_meteo_nabel
+
+#   NABEL measurements
+#
+#   Complete year in one respective file
+#
+#   File has ANSI encoding, see filetype "DAV13-RAW-NABEL-CSV-1MIN-201901010000"
+#   for details about ANSI.
+#
+#   The timestamp is built from the first five columns. This settings file
+#   assigns the column names YEAR, MONTH, DAY, HOUR, MINUTE to these columns.
+#   pandas can recognizes columns with these names as time columns and
+#   timestamp-building is thus easy.
+#   Then the columns are combined into the full timestamp using the setting
+#   'data_build_timestamp'.
+#
+#   Similar to DAV13-RAW-200001010000-NABEL-SSV-TXT-10MIN.yaml, but different
+#   column order.
+#
+#   Since these are yearly datafiles, there or not many files and thus filetype_id
+#   gives the filenames of all valid files directly without wildcards.
+
+
+LAE13-RAW-NABEL-201801010000-SSV-TXT-10MIN:
+  # SSV: space-separated files
+  # First file: LAE_NABEL.10min_2018.01-12.txt
+  # Last file:  LAE_NABEL.10min_2018.01-12.txt
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2018-01-01 00:00:00
+  filetype_valid_to: 2018-01-01 00:00:00
+  filetype_id: LAE_NABEL.10min_2018.01-12.txt
+  filetype_dateparser: LAE_NABEL.10min_%Y.%m-12.txt
+  filetype_gzip: false
+  filegroup: 13_meteo_nabel
+  data_raw_freq: 10min
+  # Skip complete upper part, incl. column name info:
+  data_skiprows: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+#  data_skiprows: [ 0 ]
+  data_headerrows: 0
+#  data_headerrows: [ 0 ]
+  data_timestamp_column: -9999
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: false
+  data_build_timestamp: "YEAR0+MONTH1+DAY2+HOUR3+MINUTE4"
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: '\s+'
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: strict  # strict: the variables sequence must not be changed.
+  data_vars:
+    # Since this filetype does not have column names directly above the data columns,
+    # the sequence of the variables given here is IMPORTANT!
+    # The variable names are built from this sequence and therefore
+    # the sequence must not be changed.
+    YEAR: { field: YEAR_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    MONTH: { field: MONTH_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    DAY: { field: DAY_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    HOUR: { field: HOUR_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    MINUTE: { field: MINUTE_X_X_X, units: XXX, measurement: XXX }  # Removed after timestamp building
+    TEMP: { field: TA_NABEL_T1_49_1, units: "degC", measurement: TA }
+    FEUCHTE: { field: RH_NABEL_T1_49_1, units: "%", measurement: RH }
+    DRUCK: { field: PA_NABEL_H1_2_1, units: "hPa", measurement: PA }
+    WIRI: { field: WD_VANE_NABEL_T1_49_1, units: "deg", measurement: WIND }
+    WIGE: { field: WS_CUP_NABEL_T1_49_1, units: "m s-1", measurement: WIND }
+    WIGEM: { field: WS_CUP_NABEL_MAX_T1_49_1, units: "m s-1", measurement: WIND }
+    STRGLO: { field: SW_IN_NABEL_T1_49_1, units: "W m-2", measurement: NETRAD }
+    STRBIL: { field: NETRAD_NABEL_T1_49_1, units: "W m-2", measurement: SW }
+    REGEN: { field: PREC_NABEL_TOT_T1_27_1, units: "mm", measurement: PREC }

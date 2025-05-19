@@ -68,6 +68,6 @@ LAE13-RAW-NABEL-201601010000-SSV-TXT-10MIN:
     WIRI: { field: WD_VANE_NABEL_T1_49_1, units: "deg", measurement: WIND }
     WIGE: { field: WS_CUP_NABEL_T1_49_1, units: "m s-1", measurement: WIND }
     WIGEM: { field: WS_CUP_NABEL_MAX_T1_49_1, units: "m s-1", measurement: WIND }
-    STRGLO: { field: SW_IN_NABEL_T1_49_1, units: "W m-2", measurement: NETRAD }
-    STRBIL: { field: NETRAD_NABEL_T1_49_1, units: "W m-2", measurement: SW }
-    REGEN: { field: PREC_NABEL_TOT_T1_27_1, units: "mm", measurement: PREC }
+    STRGLO: { field: SW_IN_NABEL_T1_49_1, units: "W m-2", measurement: SW }
+    STRBIL: { field: NETRAD_NABEL_T1_49_1, units: "W m-2", measurement: NETRAD }
+    REGEN: { field: PREC_NABEL_TOT_T1_47_1, units: "mm", measurement: PREC }

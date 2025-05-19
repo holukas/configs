@@ -154,8 +154,10 @@ PROC-ETH-METEOSCREENINGTOOL-CH-LAE-CSV-30MIN:
     PPFD_OUT_SD_T1_47_1: { field: PPFD_OUT_SD_T1_47_1, units: "umol m-2 s-1", measurement: _SD }
     PPFD_OUT_SD_T1_47_2: { field: PPFD_OUT_SD_T1_47_2, units: "umol m-2 s-1", measurement: _SD }
 
-    PREC_NBL_SD_T1_47_1: { field: PREC_NABEL_SD_T1_47_1, units: "mm", measurement: _SD }
-    PREC_NBL_TOT_T1_47_1: { field: PREC_NABEL_TOT_T1_47_1, units: "mm", measurement: PREC }
+    # Precipitation from the original NABEL rain gauge can be ignored in 2018.
+    # These data are still available from the original NABEL files.
+    PREC_NBL_TOT_T1_47_1: { field: PREC_NABEL_TOT_T1_47_1, units: "mm", measurement: PREC, ignore_between: ["2018-01-01 00:00:01", "2019-01-01 00:00:01"]}
+    PREC_NBL_SD_T1_47_1: { field: PREC_NABEL_SD_T1_47_1, units: "mm", measurement: _SD, ignore_between: ["2018-01-01 00:00:01", "2019-01-01 00:00:01"]}
 
     PRESS_AVG_H1_0_1: { field: PA_H1_0_1, units: "kPa", measurement: PA }
     Ptemp_iDL_AVG_H1_0_1: { field: Ptemp_iDL_H1_0_1, units: false, measurement: _instrumentmetrics }

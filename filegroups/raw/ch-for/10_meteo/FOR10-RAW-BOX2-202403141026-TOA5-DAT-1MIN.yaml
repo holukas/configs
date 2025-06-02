@@ -1,0 +1,52 @@
+# CH-FOR
+# 10_meteo
+#
+# Raw data file from field used for validation.
+# Not the same location as FOR10-RAW-202403141026-TOA5-DAT-1MIN,
+# but in 3km distance.
+# Location: 46°30'30.8"N 6°45'03.3"E (46.508564, 6.750911)
+
+
+FOR10-RAW-BOX2-202402231450-TOA5-DAT-1MIN:
+  # TOA5
+  # First file: CH-FOR_iDL_BOX2_0_1_20240223-1450.dat (the very first CH-FOR_iDL_BOX2_0_1_*.dat file)
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2024-02-23 14:50:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-FOR_iDL_BOX2_0_1_*.dat
+  filetype_dateparser: CH-FOR_iDL_BOX2_0_1_%Y%m%d-%H%M.dat
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: min
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    RECORD: { field: RECORD_CF2_0_1, units: "RN", gain: 1, measurement: _instrumentmetrics }
+    Batt_volt_Min: { field: BV_MIN_CF2_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    SDP_CF2_0x05_1_Avg: { field: SDP_CF2_0.05_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_CF2_0x10_1_Avg: { field: SDP_CF2_0.1_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_CF2_0x20_1_Avg: { field: SDP_CF2_0.2_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_CF2_0x30_1_Avg: { field: SDP_CF2_0.3_1, units: "unitless", gain: 1, measurement: SDP }
+    TS_CF2_0x05_1_Avg: { field: TS_CF2_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_CF2_0x10_1_Avg: { field: TS_CF2_0.1_1, units: "degC", gain: 1, measurement: TS }
+    TS_CF2_0x20_1_Avg: { field: TS_CF2_0.2_1, units: "degC", gain: 1, measurement: TS }
+    TS_CF2_0x30_1_Avg: { field: TS_CF2_0.3_1, units: "degC", gain: 1, measurement: TS }
+    SWC_CF2_0x05_1_Avg: { field: SWC_CF2_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_CF2_0x10_1_Avg: { field: SWC_CF2_0.1_1, units: "%", gain: 1, measurement: SWC }
+    SWC_CF2_0x20_1_Avg: { field: SWC_CF2_0.2_1, units: "%", gain: 1, measurement: SWC }
+    SWC_CF2_0x30_1_Avg: { field: SWC_CF2_0.3_1, units: "%", gain: 1, measurement: SWC }
+    PTemp: { field: PTemp_X_X_X, units: "degC", gain: 1, measurement: _instrumentmetrics }

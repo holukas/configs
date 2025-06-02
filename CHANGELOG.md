@@ -1,6 +1,6 @@
 # Changelog
 
-## v2025XXXX | XX Jun 2025
+## v20250602 | 2 Jun 2025
 
 - Added new filetype `FOR10-RAW-BOX2-202402231450-TOA5-DAT-1MIN`
 - Added new filetype `LAE13-RAW-NABEL-200401010000-SSV-TXT-10MIN`

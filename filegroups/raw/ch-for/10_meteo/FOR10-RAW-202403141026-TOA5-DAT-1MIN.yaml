@@ -95,10 +95,10 @@ FOR10-RAW-202403141026-TOA5-DAT-1MIN:
     SWC_GF2_0x30_1_Avg: { field: SWC_GF2_0.3_1, units: "%", measurement: SWC }
     SWC_GF2_0x40_1_Avg: { field: SWC_GF2_0.4_1, units: "%", measurement: SWC }
     SWC_GF2_0x50_1_Avg: { field: SWC_GF2_0.5_1, units: "%", measurement: SWC }
-    SWC_GF3_0x10_1_Avg: { field: SWC_GF3_0.1_1, units: "%", gain: 100.0, measurement: SWC }
-    SWC_GF6_0x10_1_Avg: { field: SWC_GF6_0.1_1, units: "%", gain: 100.0, measurement: SWC }
-    SWC_GF8_0x10_1_Avg: { field: SWC_GF8_0.1_1, units: "%", gain: 100.0, measurement: SWC }
-    SWC_GF13_0x10_1_Avg: { field: SWC_GF13_0.1_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_GF3_0x10_1_Avg: { field: SWC_GF3_0.1_1, units: "%", gain: 1.0, measurement: SWC }
+    SWC_GF6_0x10_1_Avg: { field: SWC_GF6_0.1_1, units: "%", gain: 1.0, measurement: SWC }
+    SWC_GF8_0x10_1_Avg: { field: SWC_GF8_0.1_1, units: "%", gain: 1.0, measurement: SWC }
+    SWC_GF13_0x10_1_Avg: { field: SWC_GF13_0.1_1, units: "%", gain: 1.0, measurement: SWC }
     TA_M1_2_1: { field: TA_M1_2_1, units: "degC", measurement: TA }
     TRH_M1_2_1: { field: TRH_M1_2_1, units: "degC", measurement: _instrumentmetrics }
     TS_GF1_0x05_3: { field: TS_GF1_0.05_3, units: "degC", measurement: TS }

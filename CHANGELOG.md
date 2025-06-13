@@ -1,5 +1,10 @@
 # Changelog
 
+## v20250613 | 13 Jun 2025
+
+- Added new vars in `AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN`
+- Updated gain for SWC vars in `FOR10-RAW-202403141026-TOA5-DAT-1MIN`
+
 ## v20250602 | 2 Jun 2025
 
 - Added new filetype `FOR10-RAW-BOX2-202402231450-TOA5-DAT-1MIN`

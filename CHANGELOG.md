@@ -1,5 +1,9 @@
 # Changelog
 
+## v20250623 | 23 Jun 2025
+
+- Added more FN2O/N2O variables to `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`
+
 ## v20250613 | 13 Jun 2025
 
 - Added new vars in `AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN`

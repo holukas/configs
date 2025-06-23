@@ -108,12 +108,10 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     N2O_TLAG_MIN: { field: false, units: "s", measurement: LAG }
     N2O_TLAG_NOMINAL: { field: false, units: "s", measurement: LAG }
     N2O_TLAG_USED: { field: false, units: "s", measurement: LAG }
+    N2O: { field: false, units: "nmol mol-1", measurement: N2O }
+    N2O_MIXING_RATIO: { field: false, units: "nmol mol-1", measurement: N2O }
+    N2O_MOLAR_DENSITY: { field: false, units: "mmol m-3", measurement: N2O }
     NIGHT: { field: false, units: "1=nighttime", measurement: SW }
-#    NONE_TLAG_ACTUAL: { field: false, units: false, measurement: LAG }
-#    NONE_TLAG_MAX: { field: false, units: false, measurement: LAG }
-#    NONE_TLAG_MIN: { field: false, units: false, measurement: LAG }
-#    NONE_TLAG_NOMINAL: { field: false, units: false, measurement: LAG }
-#    NONE_TLAG_USED: { field: false, units: false, measurement: LAG }
     PA_EP: { field: false, units: "kPa", measurement: PA }
     RH_EP: { field: false, units: "%", measurement: RH }
     SC_SINGLE: { field: false, units: "umol m-2 s-1", measurement: FC }
@@ -217,7 +215,6 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     CH4_KID: { field: false, units: false, measurement: CH4 }
     CH4_MEAS_KUR: { field: false, units: "unitless", measurement: CH4 }
     CH4_MEAS_MEDIAN: { field: false, units: false, measurement: CH4 }
-#    CH4_MEAS_NONE_MEAS_COV: { field: false, units: false, measurement: CH4 }
     CH4_MEAS_P25: { field: false, units: false, measurement: CH4 }
     CH4_MEAS_P75: { field: false, units: false, measurement: CH4 }
     CH4_MEAS_SIGMA: { field: false, units: false, measurement: CH4 }
@@ -294,7 +291,6 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     FCH4_UNCORR: { field: false, units: false, measurement: FCH4 }
     FH2O_CELL_CH4: { field: false, units: false, measurement: _instrumentmetrics }
     FH2O_CELL_CO2: { field: false, units: false, measurement: _instrumentmetrics }
-#    FH2O_CELL_NONE: { field: false, units: false, measurement: XXX }
     FH2O_CORRDIFF: { field: false, units: false, measurement: FH2O }
     FH2O_NSR: { field: false, units: false, measurement: FH2O }
     FH2O_SS: { field: false, units: false, measurement: FH2O }
@@ -303,21 +299,16 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     FH2O_STAGE1: { field: false, units: false, measurement: FH2O }
     FH2O_STAGE2: { field: false, units: false, measurement: FH2O }
     FH2O_UNCORR: { field: false, units: false, measurement: FH2O }
+    FN2O_CORRDIFF: { field: false, units: false, measurement: FN2O }
+    FN2O_NSR: { field: false, units: false, measurement: FN2O }
+    FN2O_SS: { field: false, units: false, measurement: FN2O }
+    FN2O_SS_TEST: { field: false, units: false, measurement: FN2O }
+    FN2O_SSITC_TEST: { field: false, units: false, measurement: FN2O }
+    FN2O_STAGE1: { field: false, units: false, measurement: FN2O }
+    FN2O_STAGE2: { field: false, units: false, measurement: FN2O }
+    FN2O_UNCORR: { field: false, units: false, measurement: FN2O }
     FILE_TIME_DURATION: { field: false, units: false, measurement: _instrumentmetrics }
     FILENAME_HF: { field: false, units: false, measurement: _instrumentmetrics }
-#    FNONE: { field: false, units: false, measurement: XXX }
-#    FNONE_CORRDIFF: { field: false, units: false, measurement: XXX }
-#    FNONE_NR: { field: false, units: false, measurement: XXX }
-#    FNONE_NSR: { field: false, units: false, measurement: XXX }
-#    FNONE_RANDUNC_HF: { field: false, units: false, measurement: XXX }
-#    FNONE_SCF: { field: false, units: false, measurement: XXX }
-#    FNONE_SS: { field: false, units: false, measurement: XXX }
-#    FNONE_SS_TEST: { field: false, units: false, measurement: XXX }
-#    FNONE_SSITC_TEST: { field: false, units: false, measurement: XXX }
-#    FNONE_STAGE1: { field: false, units: false, measurement: XXX }
-#    FNONE_STAGE2: { field: false, units: false, measurement: XXX }
-#    FNONE_UNCORR: { field: false, units: false, measurement: XXX }
-#    FNONE_VADV: { field: false, units: false, measurement: XXX }
     H2O_ABSLIM_NREX: { field: false, units: false, measurement: H2O }
     H2O_DIAG_NREX: { field: false, units: false, measurement: H2O }
     H2O_KID: { field: false, units: false, measurement: H2O }
@@ -407,24 +398,20 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     MV_AIR_CELL_CO2: { field: false, units: false, measurement: _instrumentmetrics }
     MV_AIR_CELL_H2O: { field: false, units: false, measurement: _instrumentmetrics }
     MV_AIR_CELL_NONE: { field: false, units: false, measurement: _instrumentmetrics }
-#    NONE: { field: false, units: false, measurement: XXX }
-#    NONE_ABSLIM_NREX: { field: false, units: false, measurement: XXX }
-#    NONE_DIAG_NREX: { field: false, units: false, measurement: XXX }
-#    NONE_KID: { field: false, units: false, measurement: XXX }
-#    NONE_MEAS_KUR: { field: false, units: false, measurement: XXX }
-#    NONE_MEAS_MEDIAN: { field: false, units: false, measurement: XXX }
-#    NONE_MEAS_P25: { field: false, units: false, measurement: XXX }
-#    NONE_MEAS_P75: { field: false, units: false, measurement: XXX }
-#    NONE_MEAS_SIGMA: { field: false, units: false, measurement: XXX }
-#    NONE_MEAS_SKW: { field: false, units: false, measurement: XXX }
-#    NONE_MEAS_TYPE: { field: false, units: false, measurement: XXX }
-#    NONE_MIXING_RATIO: { field: false, units: false, measurement: XXX }
-#    NONE_MOLAR_DENSITY: { field: false, units: false, measurement: XXX }
-#    NONE_NR: { field: false, units: false, measurement: XXX }
-#    NONE_NUM_SPIKES: { field: false, units: false, measurement: XXX }
-#    NONE_SPIKE_NREX: { field: false, units: false, measurement: XXX }
-#    NONE_VM97_TEST: { field: false, units: false, measurement: XXX }
-#    NONE_ZCD: { field: false, units: false, measurement: XXX }
+    N2O_ABSLIM_NREX: { field: false, units: false, measurement: N2O }
+    N2O_DIAG_NREX: { field: false, units: false, measurement: N2O }
+    N2O_KID: { field: false, units: false, measurement: N2O }
+    N2O_MEAS_KUR: { field: false, units: "unitless", measurement: N2O }
+    N2O_MEAS_MEDIAN: { field: false, units: false, measurement: N2O }
+    N2O_MEAS_P25: { field: false, units: false, measurement: N2O }
+    N2O_MEAS_P75: { field: false, units: false, measurement: N2O }
+    N2O_MEAS_SIGMA: { field: false, units: false, measurement: N2O }
+    N2O_MEAS_SKW: { field: false, units: false, measurement: N2O }
+    N2O_MEAS_TYPE: { field: false, units: false, measurement: N2O }
+    N2O_NUM_SPIKES: { field: false, units: false, measurement: N2O }
+    N2O_SPIKE_NREX: { field: false, units: false, measurement: N2O }
+    N2O_VM97_TEST: { field: false, units: false, measurement: N2O }
+    N2O_ZCD: { field: false, units: false, measurement: N2O }
     NUM_BIOMET_VARS: { field: false, units: false, measurement: _instrumentmetrics }
     NUM_CUSTOM_VARS: { field: false, units: false, measurement: _instrumentmetrics }
     PA_1_1_1: { field: false, units: false, measurement: PA }
@@ -435,12 +422,10 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     RESPONSE_TIME_GA_H2O: { field: false, units: false, measurement: _instrumentmetrics }
     RESPONSE_TIME_GA_NONE: { field: false, units: false, measurement: _instrumentmetrics }
     RESPONSE_TIME_SA: { field: false, units: false, measurement: _instrumentmetrics }
-
     ROT_PITCH: { field: false, units: false, measurement: _instrumentmetrics }
     ROT_ROLL: { field: false, units: false, measurement: _instrumentmetrics }
     ROT_YAW: { field: false, units: false, measurement: _instrumentmetrics }
     ROUGHNESS_LENGTH: { field: false, units: false, measurement: TURBULENCE }
-#    SNONE_SINGLE: { field: false, units: false, measurement: XXX }
     SONIC_DIAG_NREX: { field: false, units: false, measurement: _instrumentmetrics }
     SPEC_CORR_LI7700_A: { field: false, units: false, measurement: _instrumentmetrics }
     SPEC_CORR_LI7700_B: { field: false, units: false, measurement: _instrumentmetrics }
@@ -448,10 +433,8 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     SPECIFIC_HEAT_EVAP: { field: false, units: false, measurement: AIR }
     SPECIFIC_HUMIDITY: { field: false, units: false, measurement: AIR }
     SPECTRAL_CORRECTION_METHOD: { field: false, units: false, measurement: _instrumentmetrics }
-
     RH_1_1_1: { field: false, units: "%", measurement: RH }
     SW_IN_1_1_1: { field: false, units: "W m-2", measurement: SW }
-
     T_CELL: { field: false, units: false, measurement: _instrumentmetrics }
     T_SONIC_ABSLIM_NREX: { field: false, units: false, measurement: _instrumentmetrics }
     T_SONIC_ITC: { field: false, units: false, measurement: _instrumentmetrics }
@@ -536,4 +519,3 @@ PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN:
     WD_FILTER_NREX: { field: false, units: false, measurement: WIND }
     WPL_APPLIED: { field: false, units: false, measurement: _instrumentmetrics }
     ZL_UNCORR: { field: false, units: false, measurement: TURBULENCE }
-

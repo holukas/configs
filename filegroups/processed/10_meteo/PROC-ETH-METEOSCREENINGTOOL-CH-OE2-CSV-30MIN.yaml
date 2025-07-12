@@ -1,0 +1,314 @@
+# METEOSCREENINGTOOL
+# 10_meteo
+#
+# Screened meteo data from ETH meteoscreening
+
+
+PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN:
+  # First file: -
+  # Last file:  -
+  can_be_used_by_filescanner: false
+  filetype_valid_from: 1900-01-01 00:00:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: "*_METEOSCREENINGTOOL_CH-OE2_*.csv"
+  filetype_dateparser: false
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 30min
+  data_skiprows: false
+  data_headerrows: [ 0 ]
+  data_timestamp_column: '__TIMESTAMP__'
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: meteoscreening_mst
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    BV_EC_AVG_T1_2_1: { field: BV_EC_T1_2_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_iDL_AVG_BOX1_0_1: { field: BV_iDL_BOX1_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_iDL_INT_AVG_BOX1_0_1: { field: BV_iDL_INT_BOX1_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_iDL_INT_SD_BOX1_0_1: { field: BV_iDL_INT_SD_BOX1_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_iDL_SD_BOX1_0_1: { field: BV_iDL_SD_BOX1_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_LOGGER_AVG_T1_0.5_1: { field: BV_LOGGER_T1_0.5_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    BV_LOGGER_INT_AVG_T1_0.5_1: { field: BV_LOGGER_INT_T1_0.5_1, units: "V", gain: 1, measurement: _instrumentmetrics }
+    DNTP_iDL_AVG_BOX1_0_1: { field: DNTP_iDL_BOX1_0_1, units: "ms", gain: 1, measurement: _instrumentmetrics }
+
+    EC_RAW_AVG_CF1_0.1_3: { field: EC_RAW_CF1_0.1_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_AVG_CF1_0.2_3: { field: EC_RAW_CF1_0.2_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_AVG_CF1_0.3_3: { field: EC_RAW_CF1_0.3_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_AVG_CF1_0.5_3: { field: EC_RAW_CF1_0.5_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_AVG_CF1_0.05_3: { field: EC_RAW_CF1_0.05_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_AVG_CF1_0.7_3: { field: EC_RAW_CF1_0.7_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_AVG_CF1_1_3: { field: EC_RAW_CF1_1_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_SD_CF1_0.1_3: { field: EC_RAW_SD_CF1_0.1_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_SD_CF1_0.2_3: { field: EC_RAW_SD_CF1_0.2_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_SD_CF1_0.3_3: { field: EC_RAW_SD_CF1_0.3_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_SD_CF1_0.5_3: { field: EC_RAW_SD_CF1_0.5_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_SD_CF1_0.05_3: { field: EC_RAW_SD_CF1_0.05_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_SD_CF1_0.7_3: { field: EC_RAW_SD_CF1_0.7_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+    EC_RAW_SD_CF1_1_3: { field: EC_RAW_SD_CF1_1_3, units: "uS cm-1", gain: 1, measurement: _RAW }
+
+    G_AVG_CF2_0.03_1: { field: G_CF2_0.03_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_CF3_0.03_1: { field: G_CF3_0.03_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_CF4_0.03_1: { field: G_CF4_0.03_1, units: "W m-2", gain: 1, measurement: G }
+    G_AVG_CF5_0.03_1: { field: G_CF5_0.03_1, units: "W m-2", gain: 1, measurement: G }
+    G_SD_CF2_0.03_1: { field: G_SD_CF2_0.03_1, units: "W m-2", gain: 1, measurement: _SD }
+    G_SD_CF3_0.03_1: { field: G_SD_CF3_0.03_1, units: "W m-2", gain: 1, measurement: _SD }
+    G_SD_CF4_0.03_1: { field: G_SD_CF4_0.03_1, units: "W m-2", gain: 1, measurement: _SD }
+    G_SD_CF5_0.03_1: { field: G_SD_CF5_0.03_1, units: "W m-2", gain: 1, measurement: _SD }
+
+    LW_IN_AVG_M1_1_1: { field: LW_IN_M1_1_1, units: "W m-2", gain: 1, measurement: LW }
+    LW_IN_RAW_AVG_M1_1_1: { field: LW_IN_RAW_M1_1_1, units: "mV", gain: 1, measurement: _RAW }
+    LW_IN_RAW_SD_M1_1_1: { field: LW_IN_RAW_SD_M1_1_1, units: "mV", gain: 1, measurement: _RAW }
+    LW_IN_SD_M1_1_1: { field: LW_IN_SD_M1_1_1, units: "W m-2", gain: 1, measurement: _SD }
+    LW_OUT_AVG_M1_1_1: { field: LW_OUT_M1_1_1, units: "W m-2", gain: 1, measurement: LW }
+    LW_OUT_RAW_AVG_M1_1_1: { field: LW_OUT_RAW_M1_1_1, units: "mV", gain: 1, measurement: _RAW }
+    LW_OUT_RAW_SD_M1_1_1: { field: LW_OUT_RAW_SD_M1_1_1, units: "mV", gain: 1, measurement: _RAW }
+    LW_OUT_SD_M1_1_1: { field: LW_OUT_SD_M1_1_1, units: "W m-2", gain: 1, measurement: _SD }
+    NETRAD_AVG_M1_1_1: { field: NETRAD_M1_1_1, units: "W m-2", gain: 1, measurement: NETRAD }
+    NETRAD_AVG_M1_2_1: { field: NETRAD_M1_2_1, units: "W m-2", gain: 1, measurement: NETRAD }
+
+    PA_AVG_CF1_1_1: { field: PA_CF1_1_1, units: "XXX", gain: 1, measurement: PA }
+    PA_SD_CF1_1_1: { field: PA_SD_CF1_1_1, units: "XXX", gain: 1, measurement: _SD }
+
+    PPFD_DIF_AVG_CORRECTED_M1_1_1: { field: PPFD_DIF_CORRECTED_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_DIF_AVG_CORRECTED_SETTO_0_M1_1_1: { field: PPFD_DIF_CORRECTED_SETTO_0_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_DIF_AVG_M1_1_1: { field: PPFD_DIF_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_CORRECTED_M1_1_1: { field: PPFD_IN_CORRECTED_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_CORRECTED_SETTO_0_M1_1_1: { field: PPFD_IN_CORRECTED_SETTO_0_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_M1_1_1: { field: PPFD_IN_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_IN_AVG_M1_1_1_GAPFILL: { field: PPFD_IN_GAPFILL_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+    PPFD_OUT_AVG_M1_1_1: { field: PPFD_OUT_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
+
+    PPFD_DIF_SD_M1_1_1: { field: PPFD_DIF_SD_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+    PPFD_IN_SD_M1_1_1: { field: PPFD_IN_SD_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+    PPFD_OUT_SD_M1_1_1: { field: PPFD_OUT_SD_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: _SD }
+
+    PREC_SD_M2_1_1: { field: PREC_SD_M2_1_1, units: "mm", gain: 1, measurement: _SD }
+    PREC_TOT_M2_1_1: { field: PREC_TOT_M2_1_1, units: "mm", gain: 1, measurement: PREC }
+
+    RH_AVG_T1_2_1: { field: RH_T1_2_1, units: "%", gain: 1, measurement: RH }
+    RH_SD_T1_2_1: { field: RH_SD_T1_2_1, units: "%", gain: 1, measurement: _SD }
+
+    SDI12_MAX_PWR_0_1: { field: SDI12_MAX_PWR_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+
+    SDP_AVG_CF1_0.1_2: { field: SDP_CF1_0.1_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.2_2: { field: SDP_CF1_0.2_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.3_1: { field: SDP_CF1_0.3_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.3_2: { field: SDP_CF1_0.3_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.4_2: { field: SDP_CF1_0.4_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.5_1: { field: SDP_CF1_0.5_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.05_1: { field: SDP_CF1_0.05_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.5_2: { field: SDP_CF1_0.5_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.05_2: { field: SDP_CF1_0.05_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.6_2: { field: SDP_CF1_0.6_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.15_1: { field: SDP_CF1_0.15_1, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_0.75_2: { field: SDP_CF1_0.75_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_AVG_CF1_1_2: { field: SDP_CF1_1_2, units: "unitless", gain: 1, measurement: SDP }
+    SDP_SD_CF1_0.1_2: { field: SDP_SD_CF1_0.1_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.2_2: { field: SDP_SD_CF1_0.2_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.3_1: { field: SDP_SD_CF1_0.3_1, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.3_2: { field: SDP_SD_CF1_0.3_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.4_2: { field: SDP_SD_CF1_0.4_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.5_1: { field: SDP_SD_CF1_0.5_1, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.05_1: { field: SDP_SD_CF1_0.05_1, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.5_2: { field: SDP_SD_CF1_0.5_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.05_2: { field: SDP_SD_CF1_0.05_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.6_2: { field: SDP_SD_CF1_0.6_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.15_1: { field: SDP_SD_CF1_0.15_1, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_0.75_2: { field: SDP_SD_CF1_0.75_2, units: "unitless", gain: 1, measurement: _SD }
+    SDP_SD_CF1_1_2: { field: SDP_SD_CF1_1_2, units: "unitless", gain: 1, measurement: _SD }
+
+    SEC_AVG_CF1_0.1_2: { field: SEC_CF1_0.1_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_0.2_2: { field: SEC_CF1_0.2_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_0.3_2: { field: SEC_CF1_0.3_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_0.4_2: { field: SEC_CF1_0.4_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_0.5_2: { field: SEC_CF1_0.5_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_0.05_2: { field: SEC_CF1_0.05_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_0.6_2: { field: SEC_CF1_0.6_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_0.75_2: { field: SEC_CF1_0.75_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_AVG_CF1_1_2: { field: SEC_CF1_1_2, units: "ds m-1", gain: 1, measurement: SEC }
+    SEC_SD_CF1_0.1_2: { field: SEC_SD_CF1_0.1_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_0.2_2: { field: SEC_SD_CF1_0.2_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_0.3_2: { field: SEC_SD_CF1_0.3_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_0.4_2: { field: SEC_SD_CF1_0.4_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_0.5_2: { field: SEC_SD_CF1_0.5_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_0.05_2: { field: SEC_SD_CF1_0.05_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_0.6_2: { field: SEC_SD_CF1_0.6_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_0.75_2: { field: SEC_SD_CF1_0.75_2, units: "ds m-1", gain: 1, measurement: _SD }
+    SEC_SD_CF1_1_2: { field: SEC_SD_CF1_1_2, units: "ds m-1", gain: 1, measurement: _SD }
+
+    SW_DIF_AVG_M1_1_1: { field: SW_DIF_M1_1_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_IN_AVG_CORRECTED_M1_1_1: { field: SW_IN_CORRECTED_M1_1_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_IN_AVG_CORRECTED_SETTO_0_M1_1_1: { field: SW_IN_CORRECTED_SETTO_0_M1_1_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_IN_AVG_M1_1_1: { field: SW_IN_M1_1_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_OUT_AVG_CORRECTED_M1_1_1: { field: SW_OUT_CORRECTED_M1_1_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_OUT_AVG_CORRECTED_SETTO_0_M1_1_1: { field: SW_OUT_CORRECTED_SETTO_0_M1_1_1, units: "W m-2", gain: 1, measurement: SW }
+    SW_OUT_AVG_M1_1_1: { field: SW_OUT_M1_1_1, units: "W m-2", gain: 1, measurement: SW }
+
+    SW_DIF_SD_M1_1_1: { field: SW_DIF_SD_M1_1_1, units: "W m-2", gain: 1, measurement: _SD }
+    SW_IN_SD_M1_1_1: { field: SW_IN_SD_M1_1_1, units: "W m-2", gain: 1, measurement: _SD }
+    SW_OUT_SD_M1_1_1: { field: SW_OUT_SD_M1_1_1, units: "W m-2", gain: 1, measurement: _SD }
+
+    SWC_AVG_CF1_0.1_2: { field: SWC_CF1_0.1_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.1_3: { field: SWC_CF1_0.1_3, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.2_2: { field: SWC_CF1_0.2_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.2_3: { field: SWC_CF1_0.2_3, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.3_1: { field: SWC_CF1_0.3_1, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.3_2: { field: SWC_CF1_0.3_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.3_3: { field: SWC_CF1_0.3_3, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.4_2: { field: SWC_CF1_0.4_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.5_1: { field: SWC_CF1_0.5_1, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.05_1: { field: SWC_CF1_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.5_2: { field: SWC_CF1_0.5_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.05_2: { field: SWC_CF1_0.05_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.5_3: { field: SWC_CF1_0.5_3, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.05_3: { field: SWC_CF1_0.05_3, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.6_2: { field: SWC_CF1_0.6_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.7_3: { field: SWC_CF1_0.7_3, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.15_1: { field: SWC_CF1_0.15_1, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.75_2: { field: SWC_CF1_0.75_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_1_2: { field: SWC_CF1_1_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_1_3: { field: SWC_CF1_1_3, units: "%", gain: 1, measurement: SWC }
+    SWC_RAW_AVG_CF1_0.1_3: { field: SWC_RAW_CF1_0.1_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_AVG_CF1_0.2_3: { field: SWC_RAW_CF1_0.2_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_AVG_CF1_0.3_3: { field: SWC_RAW_CF1_0.3_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_AVG_CF1_0.5_3: { field: SWC_RAW_CF1_0.5_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_AVG_CF1_0.05_3: { field: SWC_RAW_CF1_0.05_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_AVG_CF1_0.7_3: { field: SWC_RAW_CF1_0.7_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_AVG_CF1_1_3: { field: SWC_RAW_CF1_1_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_0.1_3: { field: SWC_RAW_SD_CF1_0.1_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_0.2_3: { field: SWC_RAW_SD_CF1_0.2_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_0.3_3: { field: SWC_RAW_SD_CF1_0.3_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_0.5_3: { field: SWC_RAW_SD_CF1_0.5_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_0.05_3: { field: SWC_RAW_SD_CF1_0.05_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_0.7_3: { field: SWC_RAW_SD_CF1_0.7_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_1_3: { field: SWC_RAW_SD_CF1_1_3, units: false, gain: 1, measurement: _RAW }
+    SWC_SD_CF1_0.1_2: { field: SWC_SD_CF1_0.1_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.2_2: { field: SWC_SD_CF1_0.2_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.3_1: { field: SWC_SD_CF1_0.3_1, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.3_2: { field: SWC_SD_CF1_0.3_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.4_2: { field: SWC_SD_CF1_0.4_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.5_1: { field: SWC_SD_CF1_0.5_1, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.05_1: { field: SWC_SD_CF1_0.05_1, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.5_2: { field: SWC_SD_CF1_0.5_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.05_2: { field: SWC_SD_CF1_0.05_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.6_2: { field: SWC_SD_CF1_0.6_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.15_1: { field: SWC_SD_CF1_0.15_1, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_0.75_2: { field: SWC_SD_CF1_0.75_2, units: "%", gain: 1, measurement: _SD }
+    SWC_SD_CF1_1_2: { field: SWC_SD_CF1_1_2, units: "%", gain: 1, measurement: _SD }
+
+    T_iDL_AVG_BOX1_0_1: { field: T_iDL_BOX1_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_iDL_SD_BOX1_0_1: { field: T_iDL_SD_BOX1_0_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_RAD_AVG_M1_1_1: { field: T_RAD_M1_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_RAD_SD_M1_1_1: { field: T_RAD_SD_M1_1_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    T_RAD_SD_M1_2_1: { field: T_RAD_SD_M1_2_1, units: "degC", gain: 1, measurement: _instrumentmetrics }
+
+    TA_AVG_T1_2_1: { field: TA_T1_2_1, units: "degC", gain: 1, measurement: TA }
+    TA_SD_T1_2_1: { field: TA_SD_T1_2_1, units: "degC", gain: 1, measurement: _SD }
+
+    TS_AVG_CF1_0.1_2: { field: TS_CF1_0.1_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.1_3: { field: TS_CF1_0.1_3, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.2_2: { field: TS_CF1_0.2_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.2_3: { field: TS_CF1_0.2_3, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.3_1: { field: TS_CF1_0.3_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.3_2: { field: TS_CF1_0.3_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.3_3: { field: TS_CF1_0.3_3, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.4_2: { field: TS_CF1_0.4_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.5_1: { field: TS_CF1_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.05_1: { field: TS_CF1_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.5_2: { field: TS_CF1_0.5_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.05_2: { field: TS_CF1_0.05_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.5_3: { field: TS_CF1_0.5_3, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.05_3: { field: TS_CF1_0.05_3, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.6_2: { field: TS_CF1_0.6_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.7_3: { field: TS_CF1_0.7_3, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.15_1: { field: TS_CF1_0.15_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_0.75_2: { field: TS_CF1_0.75_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_1_2: { field: TS_CF1_1_2, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF1_1_3: { field: TS_CF1_1_3, units: "degC", gain: 1, measurement: TS }
+
+    TS_AVG_CF2_0.015_1: { field: TS_CF2_0.015_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF3_0.015_1: { field: TS_CF3_0.015_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF4_0.015_1: { field: TS_CF4_0.015_1, units: "degC", gain: 1, measurement: TS }
+    TS_AVG_CF5_0.015_1: { field: TS_CF5_0.015_1, units: "degC", gain: 1, measurement: TS }
+
+    TS_PRF1_AVG_CF1_0.1_1: { field: TS_PRF1_CF1_0.1_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF1_AVG_CF1_0.3_1: { field: TS_PRF1_CF1_0.3_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF1_AVG_CF1_0.5_1: { field: TS_PRF1_CF1_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF1_AVG_CF1_0.05_1: { field: TS_PRF1_CF1_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF1_AVG_CF1_0.15_1: { field: TS_PRF1_CF1_0.15_1, units: "degC", gain: 1, measurement: TS }
+
+    TS_PRF2_AVG_CF1_0.1_1: { field: TS_PRF2_CF1_0.1_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF2_AVG_CF1_0.2_1: { field: TS_PRF2_CF1_0.2_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF2_AVG_CF1_0.3_1: { field: TS_PRF2_CF1_0.3_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF2_AVG_CF1_0.5_1: { field: TS_PRF2_CF1_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF2_AVG_CF1_0.05_1: { field: TS_PRF2_CF1_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF2_AVG_CF1_1_1: { field: TS_PRF2_CF1_1_1, units: "degC", gain: 1, measurement: TS }
+
+    TS_PRF_AVG_CF1_0.1_1: { field: TS_PRF_CF1_0.1_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF_AVG_CF1_0.2_1: { field: TS_PRF_CF1_0.2_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF_AVG_CF1_0.5_1: { field: TS_PRF_CF1_0.5_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF_AVG_CF1_0.05_1: { field: TS_PRF_CF1_0.05_1, units: "degC", gain: 1, measurement: TS }
+    TS_PRF_AVG_CF1_1_1: { field: TS_PRF_CF1_1_1, units: "degC", gain: 1, measurement: TS }
+
+    TS_PRF1_SD_CF1_0.1_1: { field: TS_PRF1_SD_CF1_0.1_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF1_SD_CF1_0.3_1: { field: TS_PRF1_SD_CF1_0.3_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF1_SD_CF1_0.5_1: { field: TS_PRF1_SD_CF1_0.5_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF1_SD_CF1_0.05_1: { field: TS_PRF1_SD_CF1_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF1_SD_CF1_0.15_1: { field: TS_PRF1_SD_CF1_0.15_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF2_SD_CF1_0.1_1: { field: TS_PRF2_SD_CF1_0.1_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF2_SD_CF1_0.2_1: { field: TS_PRF2_SD_CF1_0.2_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF2_SD_CF1_0.3_1: { field: TS_PRF2_SD_CF1_0.3_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF2_SD_CF1_0.5_1: { field: TS_PRF2_SD_CF1_0.5_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF2_SD_CF1_0.05_1: { field: TS_PRF2_SD_CF1_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF2_SD_CF1_1_1: { field: TS_PRF2_SD_CF1_1_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF_SD_CF1_0.1_1: { field: TS_PRF_SD_CF1_0.1_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF_SD_CF1_0.2_1: { field: TS_PRF_SD_CF1_0.2_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF_SD_CF1_0.5_1: { field: TS_PRF_SD_CF1_0.5_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF_SD_CF1_0.05_1: { field: TS_PRF_SD_CF1_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_PRF_SD_CF1_1_1: { field: TS_PRF_SD_CF1_1_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.1_2: { field: TS_SD_CF1_0.1_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.1_3: { field: TS_SD_CF1_0.1_3, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.2_2: { field: TS_SD_CF1_0.2_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.2_3: { field: TS_SD_CF1_0.2_3, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.3_1: { field: TS_SD_CF1_0.3_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.3_2: { field: TS_SD_CF1_0.3_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.3_3: { field: TS_SD_CF1_0.3_3, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.4_2: { field: TS_SD_CF1_0.4_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.5_1: { field: TS_SD_CF1_0.5_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.05_1: { field: TS_SD_CF1_0.05_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.5_2: { field: TS_SD_CF1_0.5_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.05_2: { field: TS_SD_CF1_0.05_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.5_3: { field: TS_SD_CF1_0.5_3, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.05_3: { field: TS_SD_CF1_0.05_3, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.6_2: { field: TS_SD_CF1_0.6_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.7_3: { field: TS_SD_CF1_0.7_3, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.15_1: { field: TS_SD_CF1_0.15_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_0.75_2: { field: TS_SD_CF1_0.75_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_1_2: { field: TS_SD_CF1_1_2, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF1_1_3: { field: TS_SD_CF1_1_3, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF2_0.015_1: { field: TS_SD_CF2_0.015_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF3_0.015_1: { field: TS_SD_CF3_0.015_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF4_0.015_1: { field: TS_SD_CF4_0.015_1, units: "degC", gain: 1, measurement: _SD }
+    TS_SD_CF5_0.015_1: { field: TS_SD_CF5_0.015_1, units: "degC", gain: 1, measurement: _SD }
+
+    WD_VANE_AVG_T1_2_1: { field: WD_VANE_T1_2_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_SCALAR_AVG_T1_2_1: { field: WD_VANE_SCALAR_T1_2_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_VECTOR_AVG_T1_2_1: { field: WD_VANE_VECTOR_T1_2_1, units: "deg", gain: 1, measurement: WIND }
+    WD_VANE_VECTOR_AVG_T1_2_2: { field: WD_VANE_VECTOR_T1_2_2, units: "deg", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_2_1: { field: WS_CUP_SCALAR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_SCALAR_AVG_T1_2_2: { field: WS_CUP_SCALAR_T1_2_2, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_AVG_T1_2_1: { field: WS_CUP_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    WS_CUP_VECTOR_AVG_T1_2_1: { field: WS_CUP_VECTOR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
+    
+    WD_VANE_SCALAR_SD_T1_2_1: { field: WD_VANE_SCALAR_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
+    WD_VANE_VECTOR_SD_T1_2_1: { field: WD_VANE_VECTOR_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
+    WS_CUP_SCALAR_SD_T1_2_1: { field: WS_CUP_SCALAR_SD_T1_2_1, units: "m s-1", gain: 1, measurement: _SD }

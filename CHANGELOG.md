@@ -1,5 +1,9 @@
 # Changelog
 
+## v202507XX | XX Jul 2025
+
+- Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN`
+
 ## v20250623 | 23 Jun 2025
 
 - Added more FN2O/N2O variables to `PROC-EDDYPRO-FLUXNET-CSV-L0-30MIN`

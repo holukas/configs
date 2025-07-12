@@ -75,8 +75,8 @@ PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN:
     NETRAD_AVG_M1_1_1: { field: NETRAD_M1_1_1, units: "W m-2", gain: 1, measurement: NETRAD }
     NETRAD_AVG_M1_2_1: { field: NETRAD_M1_2_1, units: "W m-2", gain: 1, measurement: NETRAD }
 
-    PA_AVG_CF1_1_1: { field: PA_CF1_1_1, units: "XXX", gain: 1, measurement: PA }
-    PA_SD_CF1_1_1: { field: PA_SD_CF1_1_1, units: "XXX", gain: 1, measurement: _SD }
+    PA_AVG_CF1_1_1: { field: PA_CF1_1_1, units: "Pa", gain: 1, measurement: PA }
+    PA_SD_CF1_1_1: { field: PA_SD_CF1_1_1, units: "Pa", gain: 1, measurement: _SD }
 
     PPFD_DIF_AVG_CORRECTED_M1_1_1: { field: PPFD_DIF_CORRECTED_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
     PPFD_DIF_AVG_CORRECTED_SETTO_0_M1_1_1: { field: PPFD_DIF_CORRECTED_SETTO_0_M1_1_1, units: "umol m-2 s-1", gain: 1, measurement: PPFD }
@@ -157,6 +157,10 @@ PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN:
     SW_IN_SD_M1_1_1: { field: SW_IN_SD_M1_1_1, units: "W m-2", gain: 1, measurement: _SD }
     SW_OUT_SD_M1_1_1: { field: SW_OUT_SD_M1_1_1, units: "W m-2", gain: 1, measurement: _SD }
 
+    SWC_AVG_CF1_0.05_1: { field: SWC_CF1_0.05_1, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.05_2: { field: SWC_CF1_0.05_2, units: "%", gain: 1, measurement: SWC }
+    SWC_AVG_CF1_0.05_3: { field: SWC_CF1_0.05_3, units: "%", gain: 1, measurement: SWC }
+
     SWC_AVG_CF1_0.1_2: { field: SWC_CF1_0.1_2, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.1_3: { field: SWC_CF1_0.1_3, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.2_2: { field: SWC_CF1_0.2_2, units: "%", gain: 1, measurement: SWC }
@@ -166,11 +170,9 @@ PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN:
     SWC_AVG_CF1_0.3_3: { field: SWC_CF1_0.3_3, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.4_2: { field: SWC_CF1_0.4_2, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.5_1: { field: SWC_CF1_0.5_1, units: "%", gain: 1, measurement: SWC }
-    SWC_AVG_CF1_0.05_1: { field: SWC_CF1_0.05_1, units: "%", gain: 1, measurement: SWC }
+
     SWC_AVG_CF1_0.5_2: { field: SWC_CF1_0.5_2, units: "%", gain: 1, measurement: SWC }
-    SWC_AVG_CF1_0.05_2: { field: SWC_CF1_0.05_2, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.5_3: { field: SWC_CF1_0.5_3, units: "%", gain: 1, measurement: SWC }
-    SWC_AVG_CF1_0.05_3: { field: SWC_CF1_0.05_3, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.6_2: { field: SWC_CF1_0.6_2, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.7_3: { field: SWC_CF1_0.7_3, units: "%", gain: 1, measurement: SWC }
     SWC_AVG_CF1_0.15_1: { field: SWC_CF1_0.15_1, units: "%", gain: 1, measurement: SWC }
@@ -183,12 +185,12 @@ PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN:
     SWC_RAW_AVG_CF1_0.5_3: { field: SWC_RAW_CF1_0.5_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_AVG_CF1_0.05_3: { field: SWC_RAW_CF1_0.05_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_AVG_CF1_0.7_3: { field: SWC_RAW_CF1_0.7_3, units: false, gain: 1, measurement: _RAW }
+    SWC_RAW_SD_CF1_0.05_3: { field: SWC_RAW_SD_CF1_0.05_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_AVG_CF1_1_3: { field: SWC_RAW_CF1_1_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_SD_CF1_0.1_3: { field: SWC_RAW_SD_CF1_0.1_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_SD_CF1_0.2_3: { field: SWC_RAW_SD_CF1_0.2_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_SD_CF1_0.3_3: { field: SWC_RAW_SD_CF1_0.3_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_SD_CF1_0.5_3: { field: SWC_RAW_SD_CF1_0.5_3, units: false, gain: 1, measurement: _RAW }
-    SWC_RAW_SD_CF1_0.05_3: { field: SWC_RAW_SD_CF1_0.05_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_SD_CF1_0.7_3: { field: SWC_RAW_SD_CF1_0.7_3, units: false, gain: 1, measurement: _RAW }
     SWC_RAW_SD_CF1_1_3: { field: SWC_RAW_SD_CF1_1_3, units: false, gain: 1, measurement: _RAW }
     SWC_SD_CF1_0.1_2: { field: SWC_SD_CF1_0.1_2, units: "%", gain: 1, measurement: _SD }
@@ -308,7 +310,7 @@ PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN:
     WS_CUP_SCALAR_AVG_T1_2_2: { field: WS_CUP_SCALAR_T1_2_2, units: "m s-1", gain: 1, measurement: WIND }
     WS_CUP_AVG_T1_2_1: { field: WS_CUP_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
     WS_CUP_VECTOR_AVG_T1_2_1: { field: WS_CUP_VECTOR_T1_2_1, units: "m s-1", gain: 1, measurement: WIND }
-    
+
     WD_VANE_SCALAR_SD_T1_2_1: { field: WD_VANE_SCALAR_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
     WD_VANE_VECTOR_SD_T1_2_1: { field: WD_VANE_VECTOR_SD_T1_2_1, units: "deg", gain: 1, measurement: _SD }
     WS_CUP_SCALAR_SD_T1_2_1: { field: WS_CUP_SCALAR_SD_T1_2_1, units: "m s-1", gain: 1, measurement: _SD }

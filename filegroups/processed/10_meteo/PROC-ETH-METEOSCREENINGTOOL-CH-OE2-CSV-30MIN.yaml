@@ -97,7 +97,7 @@ PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN:
     RH_AVG_T1_2_1: { field: RH_T1_2_1, units: "%", gain: 1, measurement: RH }
     RH_SD_T1_2_1: { field: RH_SD_T1_2_1, units: "%", gain: 1, measurement: _SD }
 
-    SDI12_MAX_PWR_0_1: { field: SDI12_MAX_PWR_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
+    SDI12_MAX_PWR_0_1: { field: SDI12_MAX_PWR_X_0_1, units: false, gain: 1, measurement: _instrumentmetrics }
 
     SDP_AVG_CF1_0.1_2: { field: SDP_CF1_0.1_2, units: "unitless", gain: 1, measurement: SDP }
     SDP_AVG_CF1_0.2_2: { field: SDP_CF1_0.2_2, units: "unitless", gain: 1, measurement: SDP }

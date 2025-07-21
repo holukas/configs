@@ -1,0 +1,292 @@
+# CH-REC
+# 10_meteo
+
+
+REC10-RAW-TOA5-DAT-TBL1-10MIN-202410031620:
+  # TOA5
+  # First file: CH-REC_iDL_BOX1_0_1_iDL_LYS_0_TBL1_20241003-1620.dat (the very first CH-REC_iDL_BOX1_0_1_iDL_LYS_0_TBL1_*.dat file)
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2024-10-03 16:20:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-REC_iDL_BOX1_0_1_iDL_LYS_0_TBL1_*.dat
+  filetype_dateparser: CH-REC_iDL_BOX1_0_1_iDL_LYS_0_TBL1_%Y%m%d-%H%M.dat
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 10min
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    EC_RAW_LYS_0x15_1_Avg: { field: EC_RAW_LYS_0.15_1, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_2_Avg: { field: EC_RAW_LYS_0.15_2, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_3_Avg: { field: EC_RAW_LYS_0.15_3, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_4_Avg: { field: EC_RAW_LYS_0.15_4, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_5_Avg: { field: EC_RAW_LYS_0.15_5, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_6_Avg: { field: EC_RAW_LYS_0.15_6, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_7_Avg: { field: EC_RAW_LYS_0.15_7, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_8_Avg: { field: EC_RAW_LYS_0.15_8, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_9_Avg: { field: EC_RAW_LYS_0.15_9, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_10_Avg: { field: EC_RAW_LYS_0.15_10, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_11_Avg: { field: EC_RAW_LYS_0.15_11, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_12_Avg: { field: EC_RAW_LYS_0.15_12, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_13_Avg: { field: EC_RAW_LYS_0.15_13, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_14_Avg: { field: EC_RAW_LYS_0.15_14, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_15_Avg: { field: EC_RAW_LYS_0.15_15, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_16_Avg: { field: EC_RAW_LYS_0.15_16, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_17_Avg: { field: EC_RAW_LYS_0.15_17, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_18_Avg: { field: EC_RAW_LYS_0.15_18, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_19_Avg: { field: EC_RAW_LYS_0.15_19, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_20_Avg: { field: EC_RAW_LYS_0.15_20, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_21_Avg: { field: EC_RAW_LYS_0.15_21, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_22_Avg: { field: EC_RAW_LYS_0.15_22, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_23_Avg: { field: EC_RAW_LYS_0.15_23, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_24_Avg: { field: EC_RAW_LYS_0.15_24, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_25_Avg: { field: EC_RAW_LYS_0.15_25, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_26_Avg: { field: EC_RAW_LYS_0.15_26, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_27_Avg: { field: EC_RAW_LYS_0.15_27, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_28_Avg: { field: EC_RAW_LYS_0.15_28, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_29_Avg: { field: EC_RAW_LYS_0.15_29, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_30_Avg: { field: EC_RAW_LYS_0.15_30, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_31_Avg: { field: EC_RAW_LYS_0.15_31, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_32_Avg: { field: EC_RAW_LYS_0.15_32, units: "uS cm-1", measurement: _RAW }
+    RECORD: { field: RECORD_X_X_X, units: "#", measurement: _instrumentmetrics }
+    SDP_LYS_0x15_1_Avg: { field: SDP_LYS_0.15_1, units: false, measurement: SDP }
+    SDP_LYS_0x15_2_Avg: { field: SDP_LYS_0.15_2, units: false, measurement: SDP }
+    SDP_LYS_0x15_3_Avg: { field: SDP_LYS_0.15_3, units: false, measurement: SDP }
+    SDP_LYS_0x15_4_Avg: { field: SDP_LYS_0.15_4, units: false, measurement: SDP }
+    SDP_LYS_0x15_5_Avg: { field: SDP_LYS_0.15_5, units: false, measurement: SDP }
+    SDP_LYS_0x15_6_Avg: { field: SDP_LYS_0.15_6, units: false, measurement: SDP }
+    SDP_LYS_0x15_7_Avg: { field: SDP_LYS_0.15_7, units: false, measurement: SDP }
+    SDP_LYS_0x15_8_Avg: { field: SDP_LYS_0.15_8, units: false, measurement: SDP }
+    SDP_LYS_0x15_9_Avg: { field: SDP_LYS_0.15_9, units: false, measurement: SDP }
+    SDP_LYS_0x15_10_Avg: { field: SDP_LYS_0.15_10, units: false, measurement: SDP }
+    SDP_LYS_0x15_11_Avg: { field: SDP_LYS_0.15_11, units: false, measurement: SDP }
+    SDP_LYS_0x15_12_Avg: { field: SDP_LYS_0.15_12, units: false, measurement: SDP }
+    SDP_LYS_0x15_13_Avg: { field: SDP_LYS_0.15_13, units: false, measurement: SDP }
+    SDP_LYS_0x15_14_Avg: { field: SDP_LYS_0.15_14, units: false, measurement: SDP }
+    SDP_LYS_0x15_15_Avg: { field: SDP_LYS_0.15_15, units: false, measurement: SDP }
+    SDP_LYS_0x15_16_Avg: { field: SDP_LYS_0.15_16, units: false, measurement: SDP }
+    SDP_LYS_0x15_17_Avg: { field: SDP_LYS_0.15_17, units: false, measurement: SDP }
+    SDP_LYS_0x15_18_Avg: { field: SDP_LYS_0.15_18, units: false, measurement: SDP }
+    SDP_LYS_0x15_19_Avg: { field: SDP_LYS_0.15_19, units: false, measurement: SDP }
+    SDP_LYS_0x15_20_Avg: { field: SDP_LYS_0.15_20, units: false, measurement: SDP }
+    SDP_LYS_0x15_21_Avg: { field: SDP_LYS_0.15_21, units: false, measurement: SDP }
+    SDP_LYS_0x15_22_Avg: { field: SDP_LYS_0.15_22, units: false, measurement: SDP }
+    SDP_LYS_0x15_23_Avg: { field: SDP_LYS_0.15_23, units: false, measurement: SDP }
+    SDP_LYS_0x15_24_Avg: { field: SDP_LYS_0.15_24, units: false, measurement: SDP }
+    SDP_LYS_0x15_25_Avg: { field: SDP_LYS_0.15_25, units: false, measurement: SDP }
+    SDP_LYS_0x15_26_Avg: { field: SDP_LYS_0.15_26, units: false, measurement: SDP }
+    SDP_LYS_0x15_27_Avg: { field: SDP_LYS_0.15_27, units: false, measurement: SDP }
+    SDP_LYS_0x15_28_Avg: { field: SDP_LYS_0.15_28, units: false, measurement: SDP }
+    SDP_LYS_0x15_29_Avg: { field: SDP_LYS_0.15_29, units: false, measurement: SDP }
+    SDP_LYS_0x15_30_Avg: { field: SDP_LYS_0.15_30, units: false, measurement: SDP }
+    SDP_LYS_0x15_31_Avg: { field: SDP_LYS_0.15_31, units: false, measurement: SDP }
+    SDP_LYS_0x15_32_Avg: { field: SDP_LYS_0.15_32, units: false, measurement: SDP }
+    SV_iDL_Avg: { field: SV_iDL_X_X_X, units: "V", measurement: _instrumentmetrics }
+    SWC_LYS_0x15_1_Avg: { field: SWC_LYS_0.15_1, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_2_Avg: { field: SWC_LYS_0.15_2, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_3_Avg: { field: SWC_LYS_0.15_3, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_4_Avg: { field: SWC_LYS_0.15_4, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_5_Avg: { field: SWC_LYS_0.15_5, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_6_Avg: { field: SWC_LYS_0.15_6, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_7_Avg: { field: SWC_LYS_0.15_7, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_8_Avg: { field: SWC_LYS_0.15_8, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_9_Avg: { field: SWC_LYS_0.15_9, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_10_Avg: { field: SWC_LYS_0.15_10, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_11_Avg: { field: SWC_LYS_0.15_11, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_12_Avg: { field: SWC_LYS_0.15_12, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_13_Avg: { field: SWC_LYS_0.15_13, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_14_Avg: { field: SWC_LYS_0.15_14, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_15_Avg: { field: SWC_LYS_0.15_15, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_16_Avg: { field: SWC_LYS_0.15_16, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_17_Avg: { field: SWC_LYS_0.15_17, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_18_Avg: { field: SWC_LYS_0.15_18, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_19_Avg: { field: SWC_LYS_0.15_19, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_20_Avg: { field: SWC_LYS_0.15_20, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_21_Avg: { field: SWC_LYS_0.15_21, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_22_Avg: { field: SWC_LYS_0.15_22, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_23_Avg: { field: SWC_LYS_0.15_23, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_24_Avg: { field: SWC_LYS_0.15_24, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_25_Avg: { field: SWC_LYS_0.15_25, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_26_Avg: { field: SWC_LYS_0.15_26, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_27_Avg: { field: SWC_LYS_0.15_27, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_28_Avg: { field: SWC_LYS_0.15_28, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_29_Avg: { field: SWC_LYS_0.15_29, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_30_Avg: { field: SWC_LYS_0.15_30, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_31_Avg: { field: SWC_LYS_0.15_31, units: "m3 m-3", measurement: SWC }
+    SWC_LYS_0x15_32_Avg: { field: SWC_LYS_0.15_32, units: "m3 m-3", measurement: SWC }
+    T_iDL_Avg: { field: T_iDL_X_X_X, units: "degC", measurement: _instrumentmetrics }
+    TS_LYS_0x15_1_Avg: { field: TS_LYS_0.15_1, units: "degC", measurement: TS }
+    TS_LYS_0x15_2_Avg: { field: TS_LYS_0.15_2, units: "degC", measurement: TS }
+    TS_LYS_0x15_3_Avg: { field: TS_LYS_0.15_3, units: "degC", measurement: TS }
+    TS_LYS_0x15_4_Avg: { field: TS_LYS_0.15_4, units: "degC", measurement: TS }
+    TS_LYS_0x15_5_Avg: { field: TS_LYS_0.15_5, units: "degC", measurement: TS }
+    TS_LYS_0x15_6_Avg: { field: TS_LYS_0.15_6, units: "degC", measurement: TS }
+    TS_LYS_0x15_7_Avg: { field: TS_LYS_0.15_7, units: "degC", measurement: TS }
+    TS_LYS_0x15_8_Avg: { field: TS_LYS_0.15_8, units: "degC", measurement: TS }
+    TS_LYS_0x15_9_Avg: { field: TS_LYS_0.15_9, units: "degC", measurement: TS }
+    TS_LYS_0x15_10_Avg: { field: TS_LYS_0.15_10, units: "degC", measurement: TS }
+    TS_LYS_0x15_11_Avg: { field: TS_LYS_0.15_11, units: "degC", measurement: TS }
+    TS_LYS_0x15_12_Avg: { field: TS_LYS_0.15_12, units: "degC", measurement: TS }
+    TS_LYS_0x15_13_Avg: { field: TS_LYS_0.15_13, units: "degC", measurement: TS }
+    TS_LYS_0x15_14_Avg: { field: TS_LYS_0.15_14, units: "degC", measurement: TS }
+    TS_LYS_0x15_15_Avg: { field: TS_LYS_0.15_15, units: "degC", measurement: TS }
+    TS_LYS_0x15_16_Avg: { field: TS_LYS_0.15_16, units: "degC", measurement: TS }
+    TS_LYS_0x15_17_Avg: { field: TS_LYS_0.15_17, units: "degC", measurement: TS }
+    TS_LYS_0x15_18_Avg: { field: TS_LYS_0.15_18, units: "degC", measurement: TS }
+    TS_LYS_0x15_19_Avg: { field: TS_LYS_0.15_19, units: "degC", measurement: TS }
+    TS_LYS_0x15_20_Avg: { field: TS_LYS_0.15_20, units: "degC", measurement: TS }
+    TS_LYS_0x15_21_Avg: { field: TS_LYS_0.15_21, units: "degC", measurement: TS }
+    TS_LYS_0x15_22_Avg: { field: TS_LYS_0.15_22, units: "degC", measurement: TS }
+    TS_LYS_0x15_23_Avg: { field: TS_LYS_0.15_23, units: "degC", measurement: TS }
+    TS_LYS_0x15_24_Avg: { field: TS_LYS_0.15_24, units: "degC", measurement: TS }
+    TS_LYS_0x15_25_Avg: { field: TS_LYS_0.15_25, units: "degC", measurement: TS }
+    TS_LYS_0x15_26_Avg: { field: TS_LYS_0.15_26, units: "degC", measurement: TS }
+    TS_LYS_0x15_27_Avg: { field: TS_LYS_0.15_27, units: "degC", measurement: TS }
+    TS_LYS_0x15_28_Avg: { field: TS_LYS_0.15_28, units: "degC", measurement: TS }
+    TS_LYS_0x15_29_Avg: { field: TS_LYS_0.15_29, units: "degC", measurement: TS }
+    TS_LYS_0x15_30_Avg: { field: TS_LYS_0.15_30, units: "degC", measurement: TS }
+    TS_LYS_0x15_31_Avg: { field: TS_LYS_0.15_31, units: "degC", measurement: TS }
+    TS_LYS_0x15_32_Avg: { field: TS_LYS_0.15_32, units: "degC", measurement: TS }
+
+    EC_RAW_LYS_0x15_1_Std: { field: EC_RAW_LYS_SD_0.15_1, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_2_Std: { field: EC_RAW_LYS_SD_0.15_2, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_3_Std: { field: EC_RAW_LYS_SD_0.15_3, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_4_Std: { field: EC_RAW_LYS_SD_0.15_4, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_5_Std: { field: EC_RAW_LYS_SD_0.15_5, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_6_Std: { field: EC_RAW_LYS_SD_0.15_6, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_7_Std: { field: EC_RAW_LYS_SD_0.15_7, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_8_Std: { field: EC_RAW_LYS_SD_0.15_8, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_9_Std: { field: EC_RAW_LYS_SD_0.15_9, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_10_Std: { field: EC_RAW_LYS_SD_0.15_10, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_11_Std: { field: EC_RAW_LYS_SD_0.15_11, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_12_Std: { field: EC_RAW_LYS_SD_0.15_12, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_13_Std: { field: EC_RAW_LYS_SD_0.15_13, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_14_Std: { field: EC_RAW_LYS_SD_0.15_14, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_15_Std: { field: EC_RAW_LYS_SD_0.15_15, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_16_Std: { field: EC_RAW_LYS_SD_0.15_16, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_17_Std: { field: EC_RAW_LYS_SD_0.15_17, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_18_Std: { field: EC_RAW_LYS_SD_0.15_18, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_19_Std: { field: EC_RAW_LYS_SD_0.15_19, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_20_Std: { field: EC_RAW_LYS_SD_0.15_20, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_21_Std: { field: EC_RAW_LYS_SD_0.15_21, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_22_Std: { field: EC_RAW_LYS_SD_0.15_22, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_23_Std: { field: EC_RAW_LYS_SD_0.15_23, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_24_Std: { field: EC_RAW_LYS_SD_0.15_24, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_25_Std: { field: EC_RAW_LYS_SD_0.15_25, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_26_Std: { field: EC_RAW_LYS_SD_0.15_26, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_27_Std: { field: EC_RAW_LYS_SD_0.15_27, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_28_Std: { field: EC_RAW_LYS_SD_0.15_28, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_29_Std: { field: EC_RAW_LYS_SD_0.15_29, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_30_Std: { field: EC_RAW_LYS_SD_0.15_30, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_31_Std: { field: EC_RAW_LYS_SD_0.15_31, units: "uS cm-1", measurement: _RAW }
+    EC_RAW_LYS_0x15_32_Std: { field: EC_RAW_LYS_SD_0.15_32, units: "uS cm-1", measurement: _RAW }
+    SDP_LYS_0x15_1_Std: { field: SDP_LYS_SD_0.15_1, units: false, measurement: _SD }
+    SDP_LYS_0x15_2_Std: { field: SDP_LYS_SD_0.15_2, units: false, measurement: _SD }
+    SDP_LYS_0x15_3_Std: { field: SDP_LYS_SD_0.15_3, units: false, measurement: _SD }
+    SDP_LYS_0x15_4_Std: { field: SDP_LYS_SD_0.15_4, units: false, measurement: _SD }
+    SDP_LYS_0x15_5_Std: { field: SDP_LYS_SD_0.15_5, units: false, measurement: _SD }
+    SDP_LYS_0x15_6_Std: { field: SDP_LYS_SD_0.15_6, units: false, measurement: _SD }
+    SDP_LYS_0x15_7_Std: { field: SDP_LYS_SD_0.15_7, units: false, measurement: _SD }
+    SDP_LYS_0x15_8_Std: { field: SDP_LYS_SD_0.15_8, units: false, measurement: _SD }
+    SDP_LYS_0x15_9_Std: { field: SDP_LYS_SD_0.15_9, units: false, measurement: _SD }
+    SDP_LYS_0x15_10_Std: { field: SDP_LYS_SD_0.15_10, units: false, measurement: _SD }
+    SDP_LYS_0x15_11_Std: { field: SDP_LYS_SD_0.15_11, units: false, measurement: _SD }
+    SDP_LYS_0x15_12_Std: { field: SDP_LYS_SD_0.15_12, units: false, measurement: _SD }
+    SDP_LYS_0x15_13_Std: { field: SDP_LYS_SD_0.15_13, units: false, measurement: _SD }
+    SDP_LYS_0x15_14_Std: { field: SDP_LYS_SD_0.15_14, units: false, measurement: _SD }
+    SDP_LYS_0x15_15_Std: { field: SDP_LYS_SD_0.15_15, units: false, measurement: _SD }
+    SDP_LYS_0x15_16_Std: { field: SDP_LYS_SD_0.15_16, units: false, measurement: _SD }
+    SDP_LYS_0x15_17_Std: { field: SDP_LYS_SD_0.15_17, units: false, measurement: _SD }
+    SDP_LYS_0x15_18_Std: { field: SDP_LYS_SD_0.15_18, units: false, measurement: _SD }
+    SDP_LYS_0x15_19_Std: { field: SDP_LYS_SD_0.15_19, units: false, measurement: _SD }
+    SDP_LYS_0x15_20_Std: { field: SDP_LYS_SD_0.15_20, units: false, measurement: _SD }
+    SDP_LYS_0x15_21_Std: { field: SDP_LYS_SD_0.15_21, units: false, measurement: _SD }
+    SDP_LYS_0x15_22_Std: { field: SDP_LYS_SD_0.15_22, units: false, measurement: _SD }
+    SDP_LYS_0x15_23_Std: { field: SDP_LYS_SD_0.15_23, units: false, measurement: _SD }
+    SDP_LYS_0x15_24_Std: { field: SDP_LYS_SD_0.15_24, units: false, measurement: _SD }
+    SDP_LYS_0x15_25_Std: { field: SDP_LYS_SD_0.15_25, units: false, measurement: _SD }
+    SDP_LYS_0x15_26_Std: { field: SDP_LYS_SD_0.15_26, units: false, measurement: _SD }
+    SDP_LYS_0x15_27_Std: { field: SDP_LYS_SD_0.15_27, units: false, measurement: _SD }
+    SDP_LYS_0x15_28_Std: { field: SDP_LYS_SD_0.15_28, units: false, measurement: _SD }
+    SDP_LYS_0x15_29_Std: { field: SDP_LYS_SD_0.15_29, units: false, measurement: _SD }
+    SDP_LYS_0x15_30_Std: { field: SDP_LYS_SD_0.15_30, units: false, measurement: _SD }
+    SDP_LYS_0x15_31_Std: { field: SDP_LYS_SD_0.15_31, units: false, measurement: _SD }
+    SDP_LYS_0x15_32_Std: { field: SDP_LYS_SD_0.15_32, units: false, measurement: _SD }
+    SWC_LYS_0x15_1_Std: { field: SWC_LYS_SD_0.15_1, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_2_Std: { field: SWC_LYS_SD_0.15_2, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_3_Std: { field: SWC_LYS_SD_0.15_3, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_4_Std: { field: SWC_LYS_SD_0.15_4, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_5_Std: { field: SWC_LYS_SD_0.15_5, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_6_Std: { field: SWC_LYS_SD_0.15_6, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_7_Std: { field: SWC_LYS_SD_0.15_7, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_8_Std: { field: SWC_LYS_SD_0.15_8, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_9_Std: { field: SWC_LYS_SD_0.15_9, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_10_Std: { field: SWC_LYS_SD_0.15_10, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_11_Std: { field: SWC_LYS_SD_0.15_11, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_12_Std: { field: SWC_LYS_SD_0.15_12, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_13_Std: { field: SWC_LYS_SD_0.15_13, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_14_Std: { field: SWC_LYS_SD_0.15_14, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_15_Std: { field: SWC_LYS_SD_0.15_15, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_16_Std: { field: SWC_LYS_SD_0.15_16, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_17_Std: { field: SWC_LYS_SD_0.15_17, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_18_Std: { field: SWC_LYS_SD_0.15_18, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_19_Std: { field: SWC_LYS_SD_0.15_19, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_20_Std: { field: SWC_LYS_SD_0.15_20, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_21_Std: { field: SWC_LYS_SD_0.15_21, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_22_Std: { field: SWC_LYS_SD_0.15_22, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_23_Std: { field: SWC_LYS_SD_0.15_23, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_24_Std: { field: SWC_LYS_SD_0.15_24, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_25_Std: { field: SWC_LYS_SD_0.15_25, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_26_Std: { field: SWC_LYS_SD_0.15_26, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_27_Std: { field: SWC_LYS_SD_0.15_27, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_28_Std: { field: SWC_LYS_SD_0.15_28, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_29_Std: { field: SWC_LYS_SD_0.15_29, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_30_Std: { field: SWC_LYS_SD_0.15_30, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_31_Std: { field: SWC_LYS_SD_0.15_31, units: "m3 m-3", measurement: _SD }
+    SWC_LYS_0x15_32_Std: { field: SWC_LYS_SD_0.15_32, units: "m3 m-3", measurement: _SD }
+    TS_LYS_0x15_1_Std: { field: TS_LYS_SD_0.15_1, units: "degC", measurement: _SD }
+    TS_LYS_0x15_2_Std: { field: TS_LYS_SD_0.15_2, units: "degC", measurement: _SD }
+    TS_LYS_0x15_3_Std: { field: TS_LYS_SD_0.15_3, units: "degC", measurement: _SD }
+    TS_LYS_0x15_4_Std: { field: TS_LYS_SD_0.15_4, units: "degC", measurement: _SD }
+    TS_LYS_0x15_5_Std: { field: TS_LYS_SD_0.15_5, units: "degC", measurement: _SD }
+    TS_LYS_0x15_6_Std: { field: TS_LYS_SD_0.15_6, units: "degC", measurement: _SD }
+    TS_LYS_0x15_7_Std: { field: TS_LYS_SD_0.15_7, units: "degC", measurement: _SD }
+    TS_LYS_0x15_8_Std: { field: TS_LYS_SD_0.15_8, units: "degC", measurement: _SD }
+    TS_LYS_0x15_9_Std: { field: TS_LYS_SD_0.15_9, units: "degC", measurement: _SD }
+    TS_LYS_0x15_10_Std: { field: TS_LYS_SD_0.15_10, units: "degC", measurement: _SD }
+    TS_LYS_0x15_11_Std: { field: TS_LYS_SD_0.15_11, units: "degC", measurement: _SD }
+    TS_LYS_0x15_12_Std: { field: TS_LYS_SD_0.15_12, units: "degC", measurement: _SD }
+    TS_LYS_0x15_13_Std: { field: TS_LYS_SD_0.15_13, units: "degC", measurement: _SD }
+    TS_LYS_0x15_14_Std: { field: TS_LYS_SD_0.15_14, units: "degC", measurement: _SD }
+    TS_LYS_0x15_15_Std: { field: TS_LYS_SD_0.15_15, units: "degC", measurement: _SD }
+    TS_LYS_0x15_16_Std: { field: TS_LYS_SD_0.15_16, units: "degC", measurement: _SD }
+    TS_LYS_0x15_17_Std: { field: TS_LYS_SD_0.15_17, units: "degC", measurement: _SD }
+    TS_LYS_0x15_18_Std: { field: TS_LYS_SD_0.15_18, units: "degC", measurement: _SD }
+    TS_LYS_0x15_19_Std: { field: TS_LYS_SD_0.15_19, units: "degC", measurement: _SD }
+    TS_LYS_0x15_20_Std: { field: TS_LYS_SD_0.15_20, units: "degC", measurement: _SD }
+    TS_LYS_0x15_21_Std: { field: TS_LYS_SD_0.15_21, units: "degC", measurement: _SD }
+    TS_LYS_0x15_22_Std: { field: TS_LYS_SD_0.15_22, units: "degC", measurement: _SD }
+    TS_LYS_0x15_23_Std: { field: TS_LYS_SD_0.15_23, units: "degC", measurement: _SD }
+    TS_LYS_0x15_24_Std: { field: TS_LYS_SD_0.15_24, units: "degC", measurement: _SD }
+    TS_LYS_0x15_25_Std: { field: TS_LYS_SD_0.15_25, units: "degC", measurement: _SD }
+    TS_LYS_0x15_26_Std: { field: TS_LYS_SD_0.15_26, units: "degC", measurement: _SD }
+    TS_LYS_0x15_27_Std: { field: TS_LYS_SD_0.15_27, units: "degC", measurement: _SD }
+    TS_LYS_0x15_28_Std: { field: TS_LYS_SD_0.15_28, units: "degC", measurement: _SD }
+    TS_LYS_0x15_29_Std: { field: TS_LYS_SD_0.15_29, units: "degC", measurement: _SD }
+    TS_LYS_0x15_30_Std: { field: TS_LYS_SD_0.15_30, units: "degC", measurement: _SD }
+    TS_LYS_0x15_31_Std: { field: TS_LYS_SD_0.15_31, units: "degC", measurement: _SD }
+    TS_LYS_0x15_32_Std: { field: TS_LYS_SD_0.15_32, units: "degC", measurement: _SD }

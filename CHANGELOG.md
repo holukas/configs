@@ -1,5 +1,9 @@
 # Changelog
 
+## v20250721 | 21 Jul 2025
+
+- Added new filetype `REC10-RAW-TOA5-DAT-TBL1-10MIN-202410031620`
+
 ## v20250713 | 13 Jul 2025
 
 - Added new filetype `PROC-ETH-METEOSCREENINGTOOL-CH-OE2-CSV-30MIN`

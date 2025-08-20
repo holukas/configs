@@ -1,6 +1,6 @@
 # Changelog
 
-# v202508XX | XX Aug 2025
+# v20250820 | 20 Aug 2025
 
 - Added new filetype `DAV12-RAW-FF1-TBL3-202507161347-TOA5-DAT-1MIN`
 - Added new filetype `DAV12-RAW-FF2-TBL3-202408091404-TOA5-DAT-1MIN`

@@ -1,5 +1,10 @@
 # Changelog
 
+# v2025XXXX |
+
+- Added parameter `ignore_after: "2025-07-14 00:00:00"` to several soil variables in filetypes:
+  - `DAV12-RAW-FF1-TBL1-202110221616-TOA5-DAT-1MIN`
+
 # v20250820 | 20 Aug 2025
 
 - Added new filetype `DAV12-RAW-FF1-TBL3-202507161347-TOA5-DAT-1MIN`

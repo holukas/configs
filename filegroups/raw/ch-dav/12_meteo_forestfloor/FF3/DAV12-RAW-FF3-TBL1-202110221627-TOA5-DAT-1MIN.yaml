@@ -21,6 +21,7 @@
 #Alias SoilVUE(15) = TS_3_5_1  'SoilVUE
 #Alias SoilVUE(19) = TS_3_6_1  'SoilVUE
 #Alias SoilVUE(23) = TS_3_7_2  'SoilVUE
+# For additional info see description for DAV12-RAW-FF1-TBL1-202110221616-TOA5-DAT-1MIN.
 
 
 DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
@@ -58,35 +59,35 @@ DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
     G_IU_3_1_1_Avg: { field: G_IU_FF3_0.05_1, units: false, measurement: _RAW }
     G_SF_3_1_1: { field: G_SF_FF3_0.05_1, units: false, measurement: _instrumentmetrics }
     RECORD: { field: RECORD_FF3_0_1, units: false, measurement: _instrumentmetrics }
-    SDP_FF3_0x05_1_Avg: { field: SDP_FF3_0.05_1, units: false, measurement: SDP }
-    SDP_FF3_0x10_1_Avg: { field: SDP_FF3_0.1_1, units: false, measurement: SDP }
-    SDP_FF3_0x20_1_Avg: { field: SDP_FF3_0.2_1, units: false, measurement: SDP }
-    SDP_FF3_0x30_1_Avg: { field: SDP_FF3_0.3_1, units: false, measurement: SDP }
-    SDP_FF3_0x40_1_Avg: { field: SDP_FF3_0.4_1, units: false, measurement: SDP }
-    SDP_FF3_0x50_1_Avg: { field: SDP_FF3_0.5_1, units: false, measurement: SDP }
-    SEC_FF3_0x05_1_Avg: { field: SEC_FF3_0.05_1, units: false, measurement: SEC }
-    SEC_FF3_0x10_1_Avg: { field: SEC_FF3_0.1_1, units: false, measurement: SEC }
-    SEC_FF3_0x20_1_Avg: { field: SEC_FF3_0.2_1, units: false, measurement: SEC }
-    SEC_FF3_0x30_1_Avg: { field: SEC_FF3_0.3_1, units: false, measurement: SEC }
-    SEC_FF3_0x40_1_Avg: { field: SEC_FF3_0.4_1, units: false, measurement: SEC }
-    SEC_FF3_0x50_1_Avg: { field: SEC_FF3_0.5_1, units: false, measurement: SEC }
+    SDP_FF3_0x05_1_Avg: { field: SDP_FF3_0.05_1, units: false, measurement: SDP, ignore_after: "2025-07-14 00:00:00" }
+    SDP_FF3_0x10_1_Avg: { field: SDP_FF3_0.1_1, units: false, measurement: SDP, ignore_after: "2025-07-14 00:00:00" }
+    SDP_FF3_0x20_1_Avg: { field: SDP_FF3_0.2_1, units: false, measurement: SDP, ignore_after: "2025-07-14 00:00:00" }
+    SDP_FF3_0x30_1_Avg: { field: SDP_FF3_0.3_1, units: false, measurement: SDP, ignore_after: "2025-07-14 00:00:00" }
+    SDP_FF3_0x40_1_Avg: { field: SDP_FF3_0.4_1, units: false, measurement: SDP, ignore_after: "2025-07-14 00:00:00" }
+    SDP_FF3_0x50_1_Avg: { field: SDP_FF3_0.5_1, units: false, measurement: SDP, ignore_after: "2025-07-14 00:00:00" }
+    SEC_FF3_0x05_1_Avg: { field: SEC_FF3_0.05_1, units: false, measurement: SEC, ignore_after: "2025-07-14 00:00:00" }
+    SEC_FF3_0x10_1_Avg: { field: SEC_FF3_0.1_1, units: false, measurement: SEC, ignore_after: "2025-07-14 00:00:00" }
+    SEC_FF3_0x20_1_Avg: { field: SEC_FF3_0.2_1, units: false, measurement: SEC, ignore_after: "2025-07-14 00:00:00" }
+    SEC_FF3_0x30_1_Avg: { field: SEC_FF3_0.3_1, units: false, measurement: SEC, ignore_after: "2025-07-14 00:00:00" }
+    SEC_FF3_0x40_1_Avg: { field: SEC_FF3_0.4_1, units: false, measurement: SEC, ignore_after: "2025-07-14 00:00:00" }
+    SEC_FF3_0x50_1_Avg: { field: SEC_FF3_0.5_1, units: false, measurement: SEC, ignore_after: "2025-07-14 00:00:00" }
     SV_LOGGER_FF3_0_1: { field: SV_LOGGER_FF3_0_1, units: false, measurement: _instrumentmetrics }
     SWC_3_1_1_Avg: { field: SWC_FF3_0.05_1, units: false, measurement: SWC }
     SWC_3_1_1_Std: { field: SWC_SD_FF3_0.05_1, units: false, measurement: _SD }
     SWC_3_1_2_Avg: { field: SWC_FF3_0.05_2, units: false, measurement: SWC }
     SWC_3_1_2_Std: { field: SWC_SD_FF3_0.05_2, units: false, measurement: _SD }
-    SWC_3_1_3_Avg: { field: SWC_FF3_0.05_3, units: false, measurement: SWC }
+    SWC_3_1_3_Avg: { field: SWC_FF3_0.05_3, units: false, measurement: SWC, ignore_after: "2025-07-14 00:00:00" }
     SWC_3_2_1_Avg: { field: SWC_FF3_0.1_1, units: false, measurement: SWC }
     SWC_3_2_1_Std: { field: SWC_SD_FF3_0.1_1, units: false, measurement: _SD }
-    SWC_3_2_2_Avg: { field: SWC_FF3_0.1_2, units: false, measurement: SWC }
+    SWC_3_2_2_Avg: { field: SWC_FF3_0.1_2, units: false, measurement: SWC, ignore_after: "2025-07-14 00:00:00" }
     SWC_3_3_1_Avg: { field: SWC_FF3_0.21_1, units: false, measurement: SWC }
     SWC_3_3_1_Std: { field: SWC_SD_FF3_0.21_1, units: false, measurement: _SD }
-    SWC_3_3_2_Avg: { field: SWC_FF3_0.2_2, units: false, measurement: SWC }
-    SWC_3_4_1_Avg: { field: SWC_FF3_0.3_1, units: false, measurement: SWC }
-    SWC_3_5_1_Avg: { field: SWC_FF3_0.4_1, units: false, measurement: SWC }
+    SWC_3_3_2_Avg: { field: SWC_FF3_0.2_2, units: false, measurement: SWC, ignore_after: "2025-07-14 00:00:00" }
+    SWC_3_4_1_Avg: { field: SWC_FF3_0.3_1, units: false, measurement: SWC, ignore_after: "2025-07-14 00:00:00" }
+    SWC_3_5_1_Avg: { field: SWC_FF3_0.4_1, units: false, measurement: SWC, ignore_after: "2025-07-14 00:00:00" }
     SWC_3_6_1_Avg: { field: SWC_FF3_0.52_1, units: false, measurement: SWC }
     SWC_3_6_1_Std: { field: SWC_SD_FF3_0.52_1, units: false, measurement: _SD }
-    SWC_3_6_2_Avg: { field: SWC_FF3_0.5_2, units: false, measurement: SWC }
+    SWC_3_6_2_Avg: { field: SWC_FF3_0.5_2, units: false, measurement: SWC, ignore_after: "2025-07-14 00:00:00" }
     SWC_3_7_1_Avg: { field: SWC_FF3_0.68_1, units: false, measurement: SWC }
     SWC_3_7_1_Std: { field: SWC_SD_FF3_0.68_1, units: false, measurement: _SD }
     SWC_IU_3_1_1_Avg: { field: SWC_IU_FF3_0.05_1, units: false, measurement: _RAW }
@@ -102,18 +103,18 @@ DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
     TS_3_2_1_Std: { field: TS_SD_FF3_0.05_1, units: false, measurement: _SD }
     TS_3_2_2_Avg: { field: TS_FF3_0.05_2, units: false, measurement: TS }
     TS_3_2_2_Std: { field: TS_SD_FF3_0.05_2, units: false, measurement: _SD }
-    TS_3_2_3_Avg: { field: TS_FF3_0.05_3, units: false, measurement: TS }
+    TS_3_2_3_Avg: { field: TS_FF3_0.05_3, units: false, measurement: TS, ignore_after: "2025-07-14 00:00:00" }
     TS_3_3_1_Avg: { field: TS_FF3_0.11_1, units: false, measurement: TS }
     TS_3_3_1_Std: { field: TS_SD_FF3_0.11_1, units: false, measurement: _SD }
-    TS_3_3_2_Avg: { field: TS_FF3_0.1_2, units: false, measurement: TS }
+    TS_3_3_2_Avg: { field: TS_FF3_0.1_2, units: false, measurement: TS, ignore_after: "2025-07-14 00:00:00" }
     TS_3_4_1_Avg: { field: TS_FF3_0.2_1, units: false, measurement: TS }
     TS_3_4_1_Std: { field: TS_SD_FF3_0.2_1, units: false, measurement: _SD }
-    TS_3_4_2_Avg: { field: TS_FF3_0.2_2, units: false, measurement: TS }
-    TS_3_5_1_Avg: { field: TS_FF3_0.3_1, units: false, measurement: TS }
-    TS_3_6_1_Avg: { field: TS_FF3_0.4_1, units: false, measurement: TS }
+    TS_3_4_2_Avg: { field: TS_FF3_0.2_2, units: false, measurement: TS, ignore_after: "2025-07-14 00:00:00" }
+    TS_3_5_1_Avg: { field: TS_FF3_0.3_1, units: false, measurement: TS, ignore_after: "2025-07-14 00:00:00" }
+    TS_3_6_1_Avg: { field: TS_FF3_0.4_1, units: false, measurement: TS, ignore_after: "2025-07-14 00:00:00" }
     TS_3_7_1_Avg: { field: TS_FF3_0.5_1, units: false, measurement: TS }
     TS_3_7_1_Std: { field: TS_SD_FF3_0.5_1, units: false, measurement: _SD }
-    TS_3_7_2_Avg: { field: TS_FF3_0.5_2, units: false, measurement: TS }
+    TS_3_7_2_Avg: { field: TS_FF3_0.5_2, units: false, measurement: TS, ignore_after: "2025-07-14 00:00:00" }
     TS_3_8_1_Avg: { field: TS_FF3_0.6_1, units: false, measurement: TS }
     TS_3_8_1_Std: { field: TS_SD_FF3_0.6_1, units: false, measurement: _SD }
     TS_IU_3_1_1_Avg: { field: TS_IU_FF3_0.02_1, units: false, measurement: _RAW }
@@ -123,5 +124,3 @@ DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN:
     TS_IU_3_4_1_Avg: { field: TS_IU_FF3_0.2_1, units: false, measurement: _RAW }
     TS_IU_3_7_1_Avg: { field: TS_IU_FF3_0.5_1, units: false, measurement: _RAW }
     TS_IU_3_8_1_Avg: { field: TS_IU_FF3_0.6_1, units: false, measurement: _RAW }
-
-

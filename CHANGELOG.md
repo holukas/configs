@@ -1,10 +1,13 @@
 # Changelog
 
-# v2025XXXX |
+# v20250930 | 30 Sep 2025
 
 - Added parameter `ignore_after: "2025-07-14 00:00:00"` to several soil variables in filetypes:
     - `DAV12-RAW-FF1-TBL1-202110221616-TOA5-DAT-1MIN`
     - `DAV12-RAW-FF2-TBL1-202110221618-TOA5-DAT-1MIN`
+    - `DAV12-RAW-FF3-TBL1-202110221627-TOA5-DAT-1MIN`
+    - `DAV12-RAW-FF4-TBL1-202006241033-TOA5-DAT-1MIN`
+    - `DAV12-RAW-FF5-TBL1-202006240958-TOA5-DAT-1MIN`
 - The respective variables are logged (using the same variable names) in the new files defined previously in `v20250820`
 
 # v20250820 | 20 Aug 2025

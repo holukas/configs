@@ -1,0 +1,79 @@
+# CH-DAV
+# 12_meteo_forestfloor
+#
+# Data files were erroneously named TBL4, but are TBL3 since 15 Aug 2025.
+
+DAV12-RAW-FF5-TBL3-202507161458-TOA5-DAT-1MIN:
+  # TOA5
+  # First file: CH-DAV_iDL_FF5_0_1_TBL3_2025_07_16_1458.dat
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2025-07-16 14:58:00
+  filetype_valid_to: 2099-12-31 23:59:59
+  filetype_id: CH-DAV_iDL_FF5_0_1_TBL3_*.dat
+  filetype_dateparser: CH-DAV_iDL_FF5_0_1_TBL3_%Y_%m_%d_%H%M.dat
+  filetype_gzip: false
+  filegroup: 12_meteo_forestfloor
+  data_raw_freq: min
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars:
+    RECORD: { field: RECORD_X_X_X, units: RN, gain: 1, measurement: _instrumentmetrics }
+    SWC_FF5_0x02_3_Avg: { field: SWC_FF5_0.02_3, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_0x02_3_Std: { field: SWC_SD_FF5_0.02_3, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_0x05_3_Avg: { field: SWC_FF5_0.05_3, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_0x05_3_Std: { field: SWC_SD_FF5_0.05_3, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_0x10_3_Avg: { field: SWC_FF5_0.1_3, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_0x10_3_Std: { field: SWC_SD_FF5_0.1_3, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_0x10_4_Avg: { field: SWC_FF5_0.1_4, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_0x10_4_Std: { field: SWC_FF5_0.1_4, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_0x25_4_Avg: { field: SWC_FF5_0.25_4, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_0x25_4_Std: { field: SWC_FF5_0.25_4, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_0x40_4_Avg: { field: SWC_FF5_0.4_4, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_0x40_4_Std: { field: SWC_FF5_0.4_4, units: "%", gain: 1, measurement: _SD }
+    SWC_FF5_0x55_4_Avg: { field: SWC_FF5_0.55_4, units: "%", gain: 1, measurement: SWC }
+    SWC_FF5_0x55_4_Std: { field: SWC_FF5_0.55_4, units: "%", gain: 1, measurement: _SD }
+    SWC_IU_FF5_0x02_3_Avg: { field: SWC_IU_FF5_0.02_3, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x02_3_Std: { field: SWC_IU_FF5_0.02_3, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x05_3_Avg: { field: SWC_IU_FF5_0.05_3, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x05_3_Std: { field: SWC_IU_FF5_0.05_3, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x10_3_Avg: { field: SWC_IU_FF5_0.1_3, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x10_3_Std: { field: SWC_IU_FF5_0.1_3, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x10_4_Avg: { field: SWC_IU_FF5_0.1_4, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x10_4_Std: { field: SWC_IU_FF5_0.1_4, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x25_4_Avg: { field: SWC_IU_FF5_0.25_4, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x25_4_Std: { field: SWC_IU_FF5_0.25_4, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x40_4_Avg: { field: SWC_IU_FF5_0.4_4, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x40_4_Std: { field: SWC_IU_FF5_0.4_4, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x55_4_Avg: { field: SWC_IU_FF5_0.55_4, units: false, gain: 1, measurement: _RAW }
+    SWC_IU_FF5_0x55_4_Std: { field: SWC_IU_FF5_0.55_4, units: false, gain: 1, measurement: _RAW }
+    SWP_FF5_0x05_1_Avg: { field: SWP_FF5_0.05_1, units: "kPa", gain: 1, measurement: SWP }
+    SWP_FF5_0x05_1_Std: { field: SWP_SD_FF5_0.05_1, units: "kPa", gain: 1, measurement: _SD }
+    TS_FF5_0x02_3_Avg: { field: TS_FF5_0.02_3, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x02_3_Std: { field: TS_SD_FF5_0.02_3, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_0x05_3_Avg: { field: TS_FF5_0.05_3, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x05_3_Std: { field: TS_SD_FF5_0.05_3, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_0x05_5_Avg: { field: TS_FF5_0.05_5, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x05_5_Std: { field: TS_SD_FF5_0.05_5, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_0x10_3_Avg: { field: TS_FF5_0.1_3, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x10_3_Std: { field: TS_SD_FF5_0.1_3, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_0x10_4_Avg: { field: TS_FF5_0.1_4, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x10_4_Std: { field: TS_SD_FF5_0.1_4, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_0x25_4_Avg: { field: TS_FF5_0.25_4, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x25_4_Std: { field: TS_SD_FF5_0.25_4, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_0x40_4_Avg: { field: TS_FF5_0.4_4, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x40_4_Std: { field: TS_SD_FF5_0.4_4, units: "degC", gain: 1, measurement: _SD }
+    TS_FF5_0x55_4_Avg: { field: TS_FF5_0.55_4, units: "degC", gain: 1, measurement: TS }
+    TS_FF5_0x55_4_Std: { field: TS_SD_FF5_0.55_4, units: "degC", gain: 1, measurement: _SD }

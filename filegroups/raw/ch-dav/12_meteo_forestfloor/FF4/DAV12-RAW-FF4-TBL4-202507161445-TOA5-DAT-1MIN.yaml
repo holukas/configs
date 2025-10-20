@@ -1,6 +1,7 @@
 # CH-DAV
 # 12_meteo_forestfloor
-
+#
+# Data files were erroneously named TBL4, but are TBL3 since 15 Aug 2025.
 
 DAV12-RAW-FF4-TBL4-202507161445-TOA5-DAT-1MIN:
   # TOA5
@@ -9,8 +10,8 @@ DAV12-RAW-FF4-TBL4-202507161445-TOA5-DAT-1MIN:
   can_be_used_by_filescanner: true
   filetype_valid_from: 2025-07-16 14:45:00
   filetype_valid_to: 2099-12-31 23:59:59
-  filetype_id: CH-DAV_iDL_FF4_0_1_TBL4_*.dat
-  filetype_dateparser: CH-DAV_iDL_FF4_0_1_TBL4_%Y_%m_%d_%H%M.dat
+  filetype_id: ['CH-DAV_iDL_FF4_0_1_TBL4_*.dat', 'CH-DAV_iDL_FF4_0_1_TBL3_*.dat']
+  filetype_dateparser: ['CH-DAV_iDL_FF4_0_1_TBL4_%Y_%m_%d_%H%M.dat', 'CH-DAV_iDL_FF4_0_1_TBL3_%Y_%m_%d_%H%M.dat']
   filetype_gzip: false
   filegroup: 12_meteo_forestfloor
   data_raw_freq: min

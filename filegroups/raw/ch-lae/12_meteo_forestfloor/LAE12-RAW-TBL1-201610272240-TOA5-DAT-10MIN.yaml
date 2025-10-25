@@ -93,10 +93,10 @@ LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN:
     SHFM1_05_Avg: { field: G_M1_0.05_1, units: false, measurement: G }
     SHFM2_05_Avg: { field: G_M2_0.05_1, units: false, measurement: G }
     SHFM3_05_Avg: { field: G_M3_0.05_1, units: false, measurement: G }
-    SoilMM5_05_Avg: { field: SWC_M5_0.05_1, units: "%", gain: 100.0, measurement: SWC }
-    SoilMM5_10_Avg: { field: SWC_M5_0.1_1, units: "%", gain: 100.0, measurement: SWC }
-    SoilMM5_20_Avg: { field: SWC_M5_0.2_1, units: "%", gain: 100.0, measurement: SWC }
-    SoilMM5_30_Avg: { field: SWC_M5_0.3_1, units: "%", gain: 100.0, measurement: SWC }
+    SoilMM5_05_Avg: { field: SWC_M5_0.05_1, units: false, gain: 1.0, measurement: SWC }
+    SoilMM5_10_Avg: { field: SWC_M5_0.1_1, units: false, gain: 1.0, measurement: SWC }
+    SoilMM5_20_Avg: { field: SWC_M5_0.2_1, units: false, gain: 1.0, measurement: SWC }
+    SoilMM5_30_Avg: { field: SWC_M5_0.3_1, units: false, gain: 1.0, measurement: SWC }
     SoilTM1_05_Avg: { field: TS_M1_0.05_1, units: false, measurement: TS }
     SoilTM2_05_Avg: { field: TS_M2_0.05_1, units: false, measurement: TS }
     SoilTM3_05_Avg: { field: TS_M3_0.05_1, units: false, measurement: TS }

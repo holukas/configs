@@ -15,6 +15,10 @@
     - `DAV12-RAW-FF5-TBL1-202006240958-TOA5-DAT-1MIN`
 - The respective variables are logged (using the same variable names) in the new files defined previously in `v20250820`
 
+# v202510XX | XX Oct 2025
+
+- Set fixed SWC units in `LAE12-RAW-TBL1-201610272240-TOA5-DAT-10MIN`
+
 # v20250820 | 20 Aug 2025
 
 - Added new filetype `DAV12-RAW-FF1-TBL3-202507161347-TOA5-DAT-1MIN`

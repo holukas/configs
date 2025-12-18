@@ -1,5 +1,10 @@
 # Changelog
 
+# v20251218 | 18 Dec 2025
+
+- Added new variables to `AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN`
+- Added new variables to `AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN`
+
 # v20251020 | 20 Oct 2025
 
 - Added new filetype `DAV12-RAW-FF5-TBL3-202507161458-TOA5-DAT-1MIN`

@@ -33,7 +33,7 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
   data_build_timestamp: false
   data_keep_good_rows: false
   data_remove_bad_rows: false
-  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999 ]
   data_special_format: false
   data_encoding: utf-8
   data_delimiter: ','
@@ -62,15 +62,43 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
     # These two RHs were wrongly labelled as M1:
     RH_M1_2x5_1_Avg: { field: RH_M3_2.5_1, units: false, measurement: RH }
     RH_M1_2x5_1_Std: { field: RH_SD_M3_2.5_1, units: false, measurement: _SD }
+    SDP_GF1_0x05_1: { field: SDP_GF1_0.05_1, units: "unitless", measurement: SDP }
+    SDP_GF1_0x10_1: { field: SDP_GF1_0.1_1, units: "unitless", measurement: SDP }
+    SDP_GF1_0x20_1: { field: SDP_GF1_0.2_1, units: "unitless", measurement: SDP }
+    SDP_GF1_0x30_1: { field: SDP_GF1_0.3_1, units: "unitless", measurement: SDP }
+    SDP_GF1_0x40_1: { field: SDP_GF1_0.4_1, units: "unitless", measurement: SDP }
+    SDP_GF1_0x50_1: { field: SDP_GF1_0.5_1, units: "unitless", measurement: SDP }
+    SDP_GF1_0x10_3: { field: SDP_GF1_0x10_3, units: "unitless", measurement: SDP }
+    SEC_GF1_0x05_1: { field: SEC_GF1_0.05_1, units: "ds m-1", measurement: SEC }
+    SEC_GF1_0x10_1: { field: SEC_GF1_0.1_1, units: "ds m-1", measurement: SEC }
+    SEC_GF1_0x20_1: { field: SEC_GF1_0.2_1, units: "ds m-1", measurement: SEC }
+    SEC_GF1_0x30_1: { field: SEC_GF1_0.3_1, units: "ds m-1", measurement: SEC }
+    SEC_GF1_0x40_1: { field: SEC_GF1_0.4_1, units: "ds m-1", measurement: SEC }
+    SEC_GF1_0x50_1: { field: SEC_GF1_0.5_1, units: "ds m-1", measurement: SEC }
+    SEC_GF1_0x10_3: { field: SEC_GF1_0x10_3, units: "ds m-1", measurement: SEC }
     SoilTemp_Avg: { field: TS_GF1_0.1_1, units: false, measurement: TS }
+    SWC_GF1_0x05_1: { field: SWC_GF1_0.05_1, units: "%", measurement: SWC }
+    SWC_GF1_0x10_1: { field: SWC_GF1_0.1_1, units: "%", measurement: SWC }
+    SWC_GF1_0x20_1: { field: SWC_GF1_0.2_1, units: "%", measurement: SWC }
+    SWC_GF1_0x30_1: { field: SWC_GF1_0.3_1, units: "%", measurement: SWC }
+    SWC_GF1_0x40_1: { field: SWC_GF1_0.4_1, units: "%", measurement: SWC }
+    SWC_GF1_0x50_1: { field: SWC_GF1_0.5_1, units: "%", measurement: SWC }
+    SWC_GF1_0x10_3: { field: SWC_GF1_0x10_3, units: "%", measurement: SWC }
     TS_GF1_0x1_1_Avg: { field: TS_GF1_0.1_1, units: false, measurement: TS }
     TS_GF1_0x1_2_Avg: { field: TS_GF1_0.1_2, units: false, measurement: TS }
     # Station: { field: Station_X_X_X, units: false, measurement: XXX }
     TA_M3_2x5_1_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
     TA_M3_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: false, measurement: _SD }
     # These two TAs were wrongly labelled as M1:
-    TA_M1_2x5_1_Avg: { field: TA_M3_2.5_1, units: false, measurement: TA }
-    TA_M1_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: false, measurement: _SD }
+    TA_M1_2x5_1_Avg: { field: TA_M3_2.5_1, units: "degC", measurement: TA }
+    TA_M1_2x5_1_Std: { field: TA_SD_M3_2.5_1, units: "degC", measurement: _SD }
+    TS_GF1_0x05_1: { field: TS_GF1_0.05_1, units: "degC", measurement: TS }
+    TS_GF1_0x10_1: { field: TS_GF1_0.1_1, units: "degC", measurement: TS }
+    TS_GF1_0x20_1: { field: TS_GF1_0.2_1, units: "degC", measurement: TS }
+    TS_GF1_0x30_1: { field: TS_GF1_0.3_1, units: "degC", measurement: TS }
+    TS_GF1_0x40_1: { field: TS_GF1_0.4_1, units: "degC", measurement: TS }
+    TS_GF1_0x50_1: { field: TS_GF1_0.5_1, units: "degC", measurement: TS }
+    TS_GF1_0x10_3: { field: TS_GF1_0x10_3, units: "degC", measurement: TS }
     WindDir_Avg: { field: WD_M3_3.5_1, units: false, measurement: WIND }
     WD_M3_3x5_1_Avg: { field: WD_M3_3.5_1, units: false, measurement: WIND }
     # Additional wind dirs WVT:
@@ -82,3 +110,4 @@ AWS11-RAW-TBL1-201909190000-TOA5-DAT-30MIN:
     WS_M3_3x5_1_Avg: { field: WS_M3_3.5_1, units: false, measurement: WIND }
     # This seems to be a duplicate of WindSpeed_Avg:
     # WS_ms_S_WVT: { field: WS_M3_X_2, units: false, measurement: WIND }
+    # WS_ms_S_WVT: { field: WS_ms_S_WVT, units: false, measurement: WIND }

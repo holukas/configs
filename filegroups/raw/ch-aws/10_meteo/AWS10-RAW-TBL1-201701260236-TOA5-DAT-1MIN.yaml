@@ -77,8 +77,20 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
     RH_T1B1_1x50_1_Std: { field: RH_SD_T1_1.5_1, units: false, measurement: _SD }
     SDP_GF2_0x05_1_Avg: { field: SDP_GF2_0.05_1, units: false, measurement: SDP }
     SDP_GF2_0x05_1_Std: { field: SDP_SD_GF2_0.05_1, units: false, measurement: _SD }
+    SDP_GF2_0x05_2: { field: SDP_GF2_0.05_2, units: "unitless", measurement: SDP }
+    SDP_GF2_0x10_1: { field: SDP_GF2_0.1_1, units: "unitless", measurement: SDP }
     SDP_GF2_0x15_1_Avg: { field: SDP_GF2_0.15_1, units: false, measurement: SDP }
     SDP_GF2_0x15_1_Std: { field: SDP_SD_GF2_0.15_1, units: false, measurement: _SD }
+    SDP_GF2_0x20_1: { field: SDP_GF2_0.2_1, units: "unitless", measurement: SDP }
+    SDP_GF2_0x30_1: { field: SDP_GF2_0.3_1, units: "unitless", measurement: SDP }
+    SDP_GF2_0x40_1: { field: SDP_GF2_0.4_1, units: "unitless", measurement: SDP }
+    SDP_GF2_0x50_1: { field: SDP_GF2_0.5_1, units: "unitless", measurement: SDP }
+    SEC_GF2_0x05_2: { field: SEC_GF2_0.05_2, units: "dS m-1", measurement: SEC }
+    SEC_GF2_0x10_1: { field: SEC_GF2_0.1_1, units: "dS m-1", measurement: SEC }
+    SEC_GF2_0x20_1: { field: SEC_GF2_0.2_1, units: "dS m-1", measurement: SEC }
+    SEC_GF2_0x30_1: { field: SEC_GF2_0.3_1, units: "dS m-1", measurement: SEC }
+    SEC_GF2_0x40_1: { field: SEC_GF2_0.4_1, units: "dS m-1", measurement: SEC }
+    SEC_GF2_0x50_1: { field: SEC_GF2_0.5_1, units: "dS m-1", measurement: SEC }
     SV_CR1000_BOX_0_1_Avg: { field: SV_CR1000_BOX_0_1, units: false, measurement: _instrumentmetrics }
     SV_CR1000_BOX_0_1_Std: { field: SV_CR1000_SD_BOX_0_1, units: false, measurement: _instrumentmetrics }
     SV_iDL_BOX_0_1_Avg: { field: SV_iDL_BOX_0_1, units: false, measurement: _instrumentmetrics }
@@ -93,8 +105,14 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
     SW_OUT_T1B2_1x40_1_Std: { field: SW_OUT_SD_T1_1.4_1, units: false, measurement: _SD }
     SWC_GF2_0x05_1_Avg: { field: SWC_GF2_0.05_1, units: "%", gain: 100.0, measurement: SWC }
     SWC_GF2_0x05_1_Std: { field: SWC_SD_GF2_0.05_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_GF2_0x05_2: { field: SWC_GF2_0.05_2, units: "%", measurement: SWC }
+    SWC_GF2_0x10_1: { field: SWC_GF2_0.1_1, units: "%", measurement: SWC }
     SWC_GF2_0x15_1_Avg: { field: SWC_GF2_0.15_1, units: "%", gain: 100.0, measurement: SWC }
     SWC_GF2_0x15_1_Std: { field: SWC_SD_GF2_0.15_1, units: "%", gain: 100.0, measurement: _SD }
+    SWC_GF2_0x20_1: { field: SWC_GF2_0.2_1, units: "%", measurement: SWC }
+    SWC_GF2_0x30_1: { field: SWC_GF2_0.3_1, units: "%", measurement: SWC }
+    SWC_GF2_0x40_1: { field: SWC_GF2_0.4_1, units: "%", measurement: SWC }
+    SWC_GF2_0x50_1: { field: SWC_GF2_0.5_1, units: "%", measurement: SWC }
     T_CR1000_BOX_0_1_Avg: { field: T_CR1000_BOX_0_1, units: false, measurement: _instrumentmetrics }
     T_CR1000_BOX_0_1_Std: { field: T_CR1000_SD_BOX_0_1, units: false, measurement: _instrumentmetrics }
     T_iDL_BOX_0_1_Avg: { field: T_iDL_BOX_0_1, units: false, measurement: _instrumentmetrics }
@@ -113,9 +131,15 @@ AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN:
     TA_T1B1_1x50_1_Std: { field: TA_SD_T1_1.5_1, units: false, measurement: _SD }
     TS_GF2_0x05_1_Avg: { field: TS_GF2_0.05_1, units: false, measurement: TS }
     TS_GF2_0x05_1_Std: { field: TS_SD_GF2_0.05_1, units: false, measurement: _SD }
+    TS_GF2_0x05_2: { field: TS_GF2_0.05_2, units: "degC", measurement: TS }
+    TS_GF2_0x10_1: { field: TS_GF2_0.1_1, units: "degC", measurement: TS }
     TS_GF2_0x15_1_Avg: { field: TS_GF2_0.15_1, units: false, measurement: TS }
     TS_GF2_0x15_1_Std: { field: TS_SD_GF2_0.15_1, units: false, measurement: _SD }
+    TS_GF2_0x20_1: { field: TS_GF2_0.2_1, units: "degC", measurement: TS }
     TS_GF2_0x025_1_Avg: { field: TS_GF2_0.025_1, units: false, measurement: TS }
     TS_GF2_0x025_1_Std: { field: TS_SD_GF2_0.025_1, units: false, measurement: _SD }
+    TS_GF2_0x30_1: { field: TS_GF2_0.3_1, units: "degC", measurement: TS }
+    TS_GF2_0x40_1: { field: TS_GF2_0.4_1, units: "degC", measurement: TS }
+    TS_GF2_0x50_1: { field: TS_GF2_0.5_1, units: "degC", measurement: TS }
     WP_GF2_0x05_1_Avg: { field: WP_GF2_0.05_1, units: false, measurement: WP }
     WP_GF2_0x05_1_Std: { field: WP_SD_GF2_0.05_1, units: false, measurement: _SD }

@@ -1,5 +1,11 @@
 # Changelog
 
+# v20251218b | 18 Dec 2025
+
+- Added new variables to `DAV12-RAW-FF2-TBL3-202408091404-TOA5-DAT-1MIN`
+- Added new variables to `TAN10-RAW-BOX1-202311182304-TOA5-DAT-1MIN`
+- Added folder locations for raw meteo measurements during the InnoFarm project
+
 # v20251218 | 18 Dec 2025
 
 - Added new variables to `AWS10-RAW-TBL1-201701260236-TOA5-DAT-1MIN`

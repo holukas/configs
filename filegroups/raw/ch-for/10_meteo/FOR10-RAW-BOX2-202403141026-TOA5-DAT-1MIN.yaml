@@ -35,18 +35,18 @@ FOR10-RAW-BOX2-202402231450-TOA5-DAT-1MIN:
   data_vars_parse_pos_indices: true
   data_vars_order: free
   data_vars:
-    RECORD: { field: RECORD_CF2_0_1, units: "RN", gain: 1, measurement: _instrumentmetrics }
-    Batt_volt_Min: { field: BV_MIN_CF2_0_1, units: "V", gain: 1, measurement: _instrumentmetrics }
-    SDP_CF2_0x05_1_Avg: { field: SDP_CF2_0.05_1, units: "unitless", gain: 1, measurement: SDP }
-    SDP_CF2_0x10_1_Avg: { field: SDP_CF2_0.1_1, units: "unitless", gain: 1, measurement: SDP }
-    SDP_CF2_0x20_1_Avg: { field: SDP_CF2_0.2_1, units: "unitless", gain: 1, measurement: SDP }
-    SDP_CF2_0x30_1_Avg: { field: SDP_CF2_0.3_1, units: "unitless", gain: 1, measurement: SDP }
-    TS_CF2_0x05_1_Avg: { field: TS_CF2_0.05_1, units: "degC", gain: 1, measurement: TS }
-    TS_CF2_0x10_1_Avg: { field: TS_CF2_0.1_1, units: "degC", gain: 1, measurement: TS }
-    TS_CF2_0x20_1_Avg: { field: TS_CF2_0.2_1, units: "degC", gain: 1, measurement: TS }
-    TS_CF2_0x30_1_Avg: { field: TS_CF2_0.3_1, units: "degC", gain: 1, measurement: TS }
-    SWC_CF2_0x05_1_Avg: { field: SWC_CF2_0.05_1, units: "%", gain: 1, measurement: SWC }
-    SWC_CF2_0x10_1_Avg: { field: SWC_CF2_0.1_1, units: "%", gain: 1, measurement: SWC }
-    SWC_CF2_0x20_1_Avg: { field: SWC_CF2_0.2_1, units: "%", gain: 1, measurement: SWC }
-    SWC_CF2_0x30_1_Avg: { field: SWC_CF2_0.3_1, units: "%", gain: 1, measurement: SWC }
-    PTemp: { field: PTemp_X_X_X, units: "degC", gain: 1, measurement: _instrumentmetrics }
+    RECORD: { field: RECORD_CF2_0_1, units: "RN", gain: 1.0, measurement: _instrumentmetrics }
+    Batt_volt_Min: { field: BV_MIN_CF2_0_1, units: "V", gain: 1.0, measurement: _instrumentmetrics }
+    SDP_CF2_0x05_1_Avg: { field: SDP_CF2_0.05_1, units: "unitless", gain: 1.0, measurement: SDP }
+    SDP_CF2_0x10_1_Avg: { field: SDP_CF2_0.1_1, units: "unitless", gain: 1.0, measurement: SDP }
+    SDP_CF2_0x20_1_Avg: { field: SDP_CF2_0.2_1, units: "unitless", gain: 1.0, measurement: SDP }
+    SDP_CF2_0x30_1_Avg: { field: SDP_CF2_0.3_1, units: "unitless", gain: 1.0, measurement: SDP }
+    TS_CF2_0x05_1_Avg: { field: TS_CF2_0.05_1, units: "degC", gain: 1.0, measurement: TS }
+    TS_CF2_0x10_1_Avg: { field: TS_CF2_0.1_1, units: "degC", gain: 1.0, measurement: TS }
+    TS_CF2_0x20_1_Avg: { field: TS_CF2_0.2_1, units: "degC", gain: 1.0, measurement: TS }
+    TS_CF2_0x30_1_Avg: { field: TS_CF2_0.3_1, units: "degC", gain: 1.0, measurement: TS }
+    SWC_CF2_0x05_1_Avg: { field: SWC_CF2_0.05_1, units: "%", gain: 1.0, measurement: SWC }
+    SWC_CF2_0x10_1_Avg: { field: SWC_CF2_0.1_1, units: "%", gain: 1.0, measurement: SWC }
+    SWC_CF2_0x20_1_Avg: { field: SWC_CF2_0.2_1, units: "%", gain: 1.0, measurement: SWC }
+    SWC_CF2_0x30_1_Avg: { field: SWC_CF2_0.3_1, units: "%", gain: 1.0, measurement: SWC }
+    PTemp: { field: PTemp_X_X_X, units: "degC", gain: 1.0, measurement: _instrumentmetrics }

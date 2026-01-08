@@ -129,9 +129,9 @@ PROC-ETH-METEOSCREENINGTOOL-CH-AWS-CSV-30MIN:
     SW_OUT_CORRECTED_SETTO_0_AVG_M4006_1.4_1: { field: SW_OUT_CORRECTED_SETTO_0_M4006_1.4_1, units: "W m-2", measurement: SW }
     SW_OUT_CORRECTED_SETTO_0_AVG_T1_1.4_1: { field: SW_OUT_CORRECTED_SETTO_0_T1_1.4_1, units: "W m-2", measurement: SW }
     SW_OUT_SD_T1_1.4_1: { field: SW_OUT_SD_T1_1.4_1, units: "W m-2", measurement: _SD }
-    SWC_AVG_GF2_0.05_1: { field: SWC_GF2_0.05_1, units: "%", gain: 100, measurement: SWC }
-    SWC_AVG_GF2_0.05_2: { field: SWC_GF2_0.05_2, units: "%", gain: 100, measurement: SWC }
-    SWC_SD_GF2_0.05_1: { field: SWC_SD_GF2_0.05_1, units: "%", gain: 100, measurement: _SD }
+    SWC_AVG_GF2_0.05_1: { field: SWC_GF2_0.05_1, units: "%", gain: 100.0, measurement: SWC }
+    SWC_AVG_GF2_0.05_2: { field: SWC_GF2_0.05_2, units: "%", gain: 100.0, measurement: SWC }
+    SWC_SD_GF2_0.05_1: { field: SWC_SD_GF2_0.05_1, units: "%", gain: 100.0, measurement: _SD }
     T_CR10X_AVG_BOX3_0_1: { field: T_CR10X_BOX3_0_1, units: "degC", measurement: _instrumentmetrics }
     T_CR10X_AVG_BOX4006_0_1: { field: T_CR10X_BOX4006_0_1, units: "degC", measurement: _instrumentmetrics }
     T_CR310_AVG_BOX3_0_1: { field: T_CR310_BOX3_0_1, units: "degC", measurement: _instrumentmetrics }

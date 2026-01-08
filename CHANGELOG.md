@@ -1,5 +1,11 @@
 # Changelog
 
+# v20260108 | 8 Jan 2026
+
+- Harmonized setting for `gain` across all filetypes: `gain: 1,` (using integer) was replaced with `gain: 1.0,` (using
+  float), all filetypes now use float
+- Added parameter setting `apply_gain_between_dates` for `SWC_` in `FRU10-RAW-TBL2-202112161520-TOA5-DAT-10MIN`
+
 # v20251218b | 18 Dec 2025
 
 - Added new variables to `DAV12-RAW-FF2-TBL3-202408091404-TOA5-DAT-1MIN`
@@ -264,7 +270,7 @@ that start with `202` use the variable info given in `data_vars2`.
   `LiBatt_V_AVG` and `LiBatt_V_STD`.
 - Added new setting in config files: it is now possible to assign a data function `rawfunc` to
   specific variables,
-  e.g., `Theta_11_STD: { field: SDP_SD_GF1_0.05_1, units: mV, gain: 1, rawfunc: calc_swc, measurement: _SD }`.
+  e.g., `Theta_11_STD: { field: SDP_SD_GF1_0.05_1, units: mV, gain: 1.0, rawfunc: calc_swc, measurement: _SD }`.
   In this example a function that calculates SWC (soil water content) from SDP is applied. This setting
   is currently picked up and applied by the Python script `dataflow`.
 - Two time resolutions can now be given for `-ALTERNATING-` formats, one for each ID: `data_raw_freq: [ 30min, 10min ]`.

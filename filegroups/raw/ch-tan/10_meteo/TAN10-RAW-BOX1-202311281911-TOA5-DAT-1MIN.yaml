@@ -107,12 +107,12 @@ TAN10-RAW-BOX1-202311182304-TOA5-DAT-1MIN:
     SWC_CF3_0x40_3: { field: SWC_CF3_0.4_3, units: false, measurement: SWC }
     SWC_CF3_0x50_3: { field: SWC_CF3_0.5_3, units: false, measurement: SWC }
 
-    SWC_CF3_0x05_3_frac: { field: SWC_CF3_0.05_3, units: false, gain: 1, measurement: SWC }
-    SWC_CF3_0x10_3_frac: { field: SWC_CF3_0.1_3, units: false, gain: 1, measurement: SWC }
-    SWC_CF3_0x20_3_frac: { field: SWC_CF3_0.2_3, units: false, gain: 1, measurement: SWC }
-    SWC_CF3_0x30_3_frac: { field: SWC_CF3_0.3_3, units: false, gain: 1, measurement: SWC }
-    SWC_CF3_0x40_3_frac: { field: SWC_CF3_0.4_3, units: false, gain: 1, measurement: SWC }
-    SWC_CF3_0x50_3_frac: { field: SWC_CF3_0.5_3, units: false, gain: 1, measurement: SWC }
+    SWC_CF3_0x05_3_frac: { field: SWC_CF3_0.05_3, units: false, gain: 1.0, measurement: SWC }
+    SWC_CF3_0x10_3_frac: { field: SWC_CF3_0.1_3, units: false, gain: 1.0, measurement: SWC }
+    SWC_CF3_0x20_3_frac: { field: SWC_CF3_0.2_3, units: false, gain: 1.0, measurement: SWC }
+    SWC_CF3_0x30_3_frac: { field: SWC_CF3_0.3_3, units: false, gain: 1.0, measurement: SWC }
+    SWC_CF3_0x40_3_frac: { field: SWC_CF3_0.4_3, units: false, gain: 1.0, measurement: SWC }
+    SWC_CF3_0x50_3_frac: { field: SWC_CF3_0.5_3, units: false, gain: 1.0, measurement: SWC }
 
     TS_CF1_0x05_1: { field: TS_CF1_0.05_1, units: false, measurement: TS }
     T_CF1_0x05_1_Avg: { field: TS_CF1_0.05_1, units: false, measurement: TS }

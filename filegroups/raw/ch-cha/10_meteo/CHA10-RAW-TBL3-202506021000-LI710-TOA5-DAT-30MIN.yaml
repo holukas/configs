@@ -1,0 +1,45 @@
+# CH-CHA
+# 10_meteo
+#
+# This file is a bit of a special case, b/c this is not meteo data per se,
+# but data from the LI-710 (water node) that contains water fluxes.
+
+CHA10-RAW-TBL3-202506021000-LI710-TOA5-DAT-30MIN:
+  # TOA5
+  # First file: CH-CHA_iDL_BOX1_0_1_TBL3_20250602-1000.dat (the very first CH-CHA_iDL_BOX1_0_1_TBL3_*.dat file)
+  # Last file:  *currently running*
+  can_be_used_by_filescanner: true
+  filetype_valid_from: 2020-01-28 17:50:00
+  filetype_valid_to: 2099-02-28 11:01:00
+  filetype_id: CH-CHA_iDL_BOX1_0_1_TBL3_*.dat
+  filetype_dateparser: CH-CHA_iDL_BOX1_0_1_TBL3_%Y%m%d-%H%M.dat
+  filetype_gzip: false
+  filegroup: 10_meteo
+  data_raw_freq: 30min
+  data_skiprows: [ 0, 3 ]
+  data_headerrows: [ 0, 1 ]
+  data_timestamp_column: 0
+  data_timestamp_timezone_offset_to_utc_hours: 1
+  data_timestamp_format: '%Y-%m-%d %H:%M:%S'
+  data_build_timestamp: false
+  data_keep_good_rows: false
+  data_remove_bad_rows: false
+  data_na_values: [ -9999, nan, NaN, NAN,  NA, -6999, '-' , 99999, -99999]
+  data_special_format: false
+  data_encoding: utf-8
+  data_delimiter: ','
+  data_version: raw
+  data_vars_parse_pos_indices: true
+  data_vars_order: free
+  data_vars:
+    RECORD: { field: RECORD_LI710_M2_0_1, units: "#", measurement: _instrumentmetrics }
+    ET_M2_2_1: { field: ET_LI710_M2_2_1, units: "mm", measurement: ET }
+    LE_M2_2_1: { field: LE_LI710_M2_2_1, units: "W m-2", measurement: LE }
+    H_M2_2_1: { field: H_LI710_M2_2_1, units: "W m-2", measurement: H }
+    VPD_M2_2_1: { field: VPD_LI710_M2_2_1, units: "kPa", measurement: VPD }
+    PA_M2_2_1: { field: PA_LI710_M2_2_1, units: "kPa", measurement: PA }
+    TA_M2_2_1: { field: TA_LI710_M2_2_1, units: "degC", measurement: TA }
+    RH_M2_2_1: { field: RH_LI710_M2_2_1, units: "%", measurement: RH }
+    SEQ_M2_2_1: { field: SEQ_LI710_M2_2_1, units: "#", measurement: _instrumentmetrics }
+    diag_M2_2_1: { field: DIAG_LI710_M2_2_1, units: "dimensionless", measurement: _instrumentmetrics }
+    DIAG_M2_2_1: { field: DIAG_LI710_M2_2_1, units: "dimensionless", measurement: _instrumentmetrics }

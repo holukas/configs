@@ -1,5 +1,11 @@
 # Changelog
 
+# v20260331 | 31 Mar 2026
+
+- Added new filetype `CHA10-RAW-TBL3-202506021000-LI710-TOA5-DAT-30MIN` for data from the Li-710 (water node). This is a
+  bit of a special case because it also contains water fluxes, which are normally `processed` data. Since the water node
+  outputs these fluxes directly, it is (for now) categorized as `raw` data.
+
 # v20260108 | 8 Jan 2026
 
 - Harmonized setting for `gain` across all filetypes: `gain: 1,` (using integer) was replaced with `gain: 1.0,` (using
